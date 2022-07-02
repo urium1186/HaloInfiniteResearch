@@ -2,21 +2,14 @@ import math
 
 import fbx
 import sys
-import os
-
-import json
-import pythreejs as ptj
-
-from fbx import FbxStatus
 
 from exporters.domain.domain_types import *
-from halo_infinite_tag_reader.config import Config
+from configs.config import Config
 from materials_utils import *
 
 import mapBones
 
 import utils
-import jsonref
 
 
 class FbxModel:

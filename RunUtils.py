@@ -1,13 +1,10 @@
-import utils
-
 import os
-import copy
 import shutil
 
 
 import json
 
-from halo_infinite_tag_reader.config import Config
+from configs.config import Config
 
 coating_data_path = Config.WEB_DOWNLOAD_DATA + 'seasson 2\\economy\\inventory_catalog.json'
 

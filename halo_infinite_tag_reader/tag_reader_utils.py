@@ -2,10 +2,9 @@ import os
 import pathlib
 import json
 import shutil
-import struct
 import sys
 
-from halo_infinite_tag_reader.config import Config
+from configs.config import Config
 
 
 def createDirAltNameID(in_dir: str):

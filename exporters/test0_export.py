@@ -1,15 +1,7 @@
-import codecs
-import json
-
 from exporters.model.model_exporter import ModelExporter
-from exporters.model.render_model_exporter import RenderModelExporter
-from halo_infinite_tag_reader.config import Config
-from halo_infinite_tag_reader.fullheader import FullHeader
+from configs.config import Config
 from halo_infinite_tag_reader.model import Model
-from halo_infinite_tag_reader.multilingual_unicode_string_list import MultilingualUnicodeStringList
-from halo_infinite_tag_reader.render_model import RenderModel
-from halo_infinite_tag_reader.stringlist import StringList
-from halo_infinite_tag_reader.stringlist_resource import StringListResource
+
 """
 filename = Config.BASE_UNPACKED_PATH + 'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'
 parse_string_list = StringList(filename)

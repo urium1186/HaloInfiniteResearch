@@ -2,15 +2,8 @@ import codecs
 import json
 import pathlib
 
-from halo_infinite_tag_reader.bitmap import Bitmap
-from halo_infinite_tag_reader.config import Config
-from halo_infinite_tag_reader.header import getGUID
-from halo_infinite_tag_reader.material import Material
-from halo_infinite_tag_reader.materialpalette import MaterialPalette
+from configs.config import Config
 from halo_infinite_tag_reader.materialstyles import MaterialStyles
-from halo_infinite_tag_reader.render_model import RenderModel
-from halo_infinite_tag_reader.swatch import Swatch
-from halo_infinite_tag_reader.tag_reader_utils import search_regions_names
 from halo_infinite_tag_reader.varnames import map_alt_name_id
 
 # search_regions_names()

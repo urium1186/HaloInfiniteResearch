@@ -1,4 +1,4 @@
-from halo_infinite_tag_reader.config import Config
+from configs.config import Config
 from halo_infinite_tag_reader.tag_reader_utils import createDirAltNameID
 
 import pymmh3 as mmh3
