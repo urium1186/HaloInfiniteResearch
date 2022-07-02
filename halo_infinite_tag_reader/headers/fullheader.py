@@ -1,9 +1,9 @@
-from halo_infinite_tag_reader.contenttable import ContentTable
-from halo_infinite_tag_reader.data_block_table import DataBlockTable
-from halo_infinite_tag_reader.datatable import DataTable
-from halo_infinite_tag_reader.header import Header
-from halo_infinite_tag_reader.stringtable import StringTable
-from halo_infinite_tag_reader.tag_ref_table import TagRefTable
+from halo_infinite_tag_reader.headers.contenttable import ContentTable
+from halo_infinite_tag_reader.headers.data_block_table import DataBlockTable
+from halo_infinite_tag_reader.headers.datatable import DataTable
+from halo_infinite_tag_reader.headers.header import Header
+from halo_infinite_tag_reader.headers.stringtable import StringTable
+from halo_infinite_tag_reader.headers.tag_ref_table import TagRefTable
 
 
 class FullHeader:

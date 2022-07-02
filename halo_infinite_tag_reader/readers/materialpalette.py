@@ -1,6 +1,6 @@
-from halo_infinite_tag_reader.base_template import BaseTemplate
+from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from configs.config import Config
-from halo_infinite_tag_reader.swatch import Swatch
+from halo_infinite_tag_reader.readers.swatch import Swatch
 
 
 class MaterialPalette(BaseTemplate):

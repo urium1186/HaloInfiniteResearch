@@ -1,7 +1,7 @@
-from halo_infinite_tag_reader.base_template import BaseTemplate
+from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from halo_infinite_tag_reader.common_tag_types import TagInstance
 from configs.config import Config
-from halo_infinite_tag_reader.stringlist_resource import StringListResource
+from halo_infinite_tag_reader.readers.stringlist_resource import StringListResource
 
 
 class StringList(BaseTemplate):

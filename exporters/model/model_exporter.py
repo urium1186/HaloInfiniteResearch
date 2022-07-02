@@ -1,8 +1,5 @@
 import io
-import math
 import os
-import struct
-
 
 import numpy as np
 import mathutils
@@ -10,8 +7,7 @@ import utils
 from exporters.base_exporter import BaseExporter
 from exporters.domain.domain_types import *
 from exporters.to.fbx.export_to_fbx import FbxModel
-from halo_infinite_tag_reader.model import Model
-from halo_infinite_tag_reader.render_model import RenderModel
+from halo_infinite_tag_reader.readers.model import Model
 
 
 class ModelExporter(BaseExporter):

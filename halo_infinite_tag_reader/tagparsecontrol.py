@@ -1,6 +1,5 @@
 from halo_infinite_tag_reader.common_tag_types import *
-from halo_infinite_tag_reader import common_tag_types
-from halo_infinite_tag_reader.fullheader import FullHeader
+from halo_infinite_tag_reader.headers.fullheader import FullHeader
 from halo_infinite_tag_reader.tag_reader_utils import analizarCabecera
 from halo_infinite_tag_reader.tag_struct import TagStruct
 

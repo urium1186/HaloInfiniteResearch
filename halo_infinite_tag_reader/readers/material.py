@@ -1,4 +1,4 @@
-from halo_infinite_tag_reader.base_template import BaseTemplate
+from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 
 
 class Material(BaseTemplate):

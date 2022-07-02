@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 
-from z3 import *
+from z3.z3 import *
 import sys
 
 """

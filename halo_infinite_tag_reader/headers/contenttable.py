@@ -1,7 +1,7 @@
 import struct
 
-from halo_infinite_tag_reader.datatable import DataTableEntry
-from halo_infinite_tag_reader.header import GUID
+from halo_infinite_tag_reader.headers.datatable import DataTableEntry
+from halo_infinite_tag_reader.headers.header import GUID
 
 
 class ContentTableEntry:

@@ -1,6 +1,6 @@
 import os
 
-from halo_infinite_tag_reader.base_template import BaseTemplate
+from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from halo_infinite_tag_reader.common_tag_types import TagInstance, readStringInPlace
 
 

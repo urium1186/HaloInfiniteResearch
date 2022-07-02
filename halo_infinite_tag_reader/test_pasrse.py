@@ -3,7 +3,7 @@ import json
 import pathlib
 
 from configs.config import Config
-from halo_infinite_tag_reader.materialstyles import MaterialStyles
+from halo_infinite_tag_reader.readers.materialstyles import MaterialStyles
 from halo_infinite_tag_reader.varnames import map_alt_name_id
 
 # search_regions_names()

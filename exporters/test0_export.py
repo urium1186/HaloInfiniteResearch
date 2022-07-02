@@ -1,6 +1,6 @@
 from exporters.model.model_exporter import ModelExporter
 from configs.config import Config
-from halo_infinite_tag_reader.model import Model
+from halo_infinite_tag_reader.readers.model import Model
 
 """
 filename = Config.BASE_UNPACKED_PATH + 'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'

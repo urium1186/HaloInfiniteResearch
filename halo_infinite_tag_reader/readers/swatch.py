@@ -1,4 +1,4 @@
-from halo_infinite_tag_reader.base_template import BaseTemplate
+from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from halo_infinite_tag_reader.tag_reader_utils import checkFileExistInUE5Project
 
 

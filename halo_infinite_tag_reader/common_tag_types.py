@@ -4,8 +4,7 @@ import struct
 
 from typing.io import BinaryIO
 
-import gf
-from halo_infinite_tag_reader.contenttable import ContentTableEntry
+from halo_infinite_tag_reader.headers.contenttable import ContentTableEntry
 from halo_infinite_tag_reader.taglayouts import TagLayouts
 from halo_infinite_tag_reader.varnames import Mmr3Hash_str
 
