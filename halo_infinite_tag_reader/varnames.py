@@ -4,16 +4,26 @@ from halo_infinite_tag_reader.tag_reader_utils import createDirAltNameID
 import pymmh3 as mmh3
 
 
-def getMmr3HashFrom(str_in:str) -> str:
+def getMmr3HashFrom(str_in: str) -> str:
     integer_val = mmh3.hash(str_in, seed=0)
-    #print(integer_val)
+    # print(integer_val)
     # converting int to bytes with length
     # of the array as 5 and byter order as
     # little
-    bytes_val = integer_val.to_bytes(4, 'little')
+    hash_str = getMmr3HashFromInt(integer_val)
 
     # printing integer in byte representation
+    return hash_str
+
+
+def getMmr3HashFromInt(integer: int) -> str:
+    unsigned_integer = integer
+    if integer<0:
+        unsigned_integer = integer + 2 ** 32
+
+    bytes_val = unsigned_integer.to_bytes(4, 'little')
     return bytes_val.hex().upper()
+
 
 #print(getMmr3HashFrom('r_shoulderpad_legendary'))
 
@@ -221,4 +231,4 @@ Mmr3Hash_str = {
 
 map_alt_name_id = createDirAltNameID(Config.INFOS_PATH)
 
-debug =""
+debug = ""
