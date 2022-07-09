@@ -2,7 +2,7 @@
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from configs.config import Config
 from halo_infinite_tag_reader.readers.materialpalette import MaterialPalette
-from halo_infinite_tag_reader.varnames import Mmr3Hash_str
+from halo_infinite_tag_reader.varnames import Mmr3Hash_str, getStrInMmr3Hash
 
 
 class MaterialStyles(BaseTemplate):
@@ -49,11 +49,7 @@ class MaterialStyles(BaseTemplate):
                 layers.append(lay_d)
             material = root['coatingMaterialSets'].childs[entry['Coating Material Set'].value]['coatingMaterialSet'].path
             material = material.split('\\')[-1]
-            r_name = entry['name'].value
-            if Mmr3Hash_str.keys().__contains__(r_name):
-                r_name = Mmr3Hash_str[r_name]
-            else:
-                debug = ''
+            r_name = getStrInMmr3Hash(entry['name'].value)
             regionLayers[r_name] = {"layers": layers,
                                      "material": material,
                                      "bodyPart": r_name

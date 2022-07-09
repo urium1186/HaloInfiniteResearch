@@ -13,7 +13,7 @@ class MaterialPalette(BaseTemplate):
         super().load()
 
         for i, key in enumerate(self.tag_parse.rootTagInst.childs[0]['swatches'].childs):
-            key['swatch'].path = self.tag_parse.full_header.string_table.entries[i].str_path
+            key['swatch'].path = self.tag_parse.full_header.tag_reference_fixup_table.entries[i].str_path
 
 
     def toJson(self):

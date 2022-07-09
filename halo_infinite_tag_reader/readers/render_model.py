@@ -1,6 +1,6 @@
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from halo_infinite_tag_reader.common_tag_types import TagInstance
-from halo_infinite_tag_reader.varnames import Mmr3Hash_str
+from halo_infinite_tag_reader.varnames import Mmr3Hash_str, getStrInMmr3Hash
 
 
 class RenderModel(BaseTemplate):
@@ -21,8 +21,7 @@ class RenderModel(BaseTemplate):
         i = 0
         for bone_inst in self.tag_parse.rootTagInst.childs[0]['nodes'].childs:
             b_name = bone_inst['name'].value
-            if Mmr3Hash_str.keys().__contains__(b_name):
-                b_name = Mmr3Hash_str[b_name]
+            b_name = getStrInMmr3Hash(b_name)
             bone = {'name': b_name,
                     'parent': bone_inst['parent node'].value,
                     'first_child_node': bone_inst['first child node'].value,

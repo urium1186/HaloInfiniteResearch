@@ -161,7 +161,7 @@ class Part:
 
 
 def getPartFromTR(tr):
-    offset = tr.data_offset
+    offset = tr.header_size
     length = tr.data_length
     subParts = []
     for o in range(offset, offset + length, 0x18):
@@ -304,10 +304,10 @@ class Mesh:
 
 def parse_index_data(m, ib, b_stride4):
     if b_stride4:
-        for j in range(ib.offset, ib.offset+ib.size, 12):
+        for j in range(ib.field_offset, ib.field_offset + ib.size, 12):
             m.faces.append([gf.get_uint32(chunk_data, j+k*4) for k in range(3)])
     else:
-        for j in range(ib.offset, ib.offset+ib.size, 6):
+        for j in range(ib.field_offset, ib.field_offset + ib.size, 6):
             m.faces.append([gf.get_uint16(chunk_data, j+k*2) for k in range(3)])
 
 
@@ -352,19 +352,19 @@ def read_udecn4(data):
 def parse_vertex_data(m, vbs):
     for vb in vbs:
         if vb.vertex_type == 0:  # Position
-            for j in range(vb.offset, vb.offset + vb.size, vb.vertex_stride):
+            for j in range(vb.field_offset, vb.field_offset + vb.size, vb.vertex_stride):
                 vert = [gf.get_float16(chunk_data, j + k * 2, signed=False) for k in range(3)]
                 m.vert_pos.append(vert)
             interpolate_coords(m.vert_pos, model_scale)
         elif vb.vertex_type == 1:  # UV0
-            for j in range(vb.offset, vb.offset + vb.size, vb.vertex_stride):
+            for j in range(vb.field_offset, vb.field_offset + vb.size, vb.vertex_stride):
                 vert = [gf.get_float16(chunk_data, j + k * 2, signed=False) for k in range(2)]
                 m.vert_uv0.append([vert[0], -vert[1]+1])
             interpolate_coords(m.vert_uv0, uv0_scale)
             for i in range(len(m.vert_uv0)):
                 m.vert_uv0[i][1] -= uv0_scale[1][0]*2 + uv0_scale[1][2] - 1
         elif vb.vertex_type == 2:  # UV1
-            for j in range(vb.offset, vb.offset + vb.size, vb.vertex_stride):
+            for j in range(vb.field_offset, vb.field_offset + vb.size, vb.vertex_stride):
                 vert = [gf.get_float16(chunk_data, j + k * 2, signed=False) for k in range(2)]
                 m.vert_uv1.append(vert)
             interpolate_coords(m.vert_uv1, uv1_scale)
@@ -374,24 +374,24 @@ def parse_vertex_data(m, vbs):
         #    print('Have vert 4')
         elif vb.vertex_type == 5:
             #continue
-            for j in range(vb.offset, vb.offset + vb.size, vb.vertex_stride):
+            for j in range(vb.field_offset, vb.field_offset + vb.size, vb.vertex_stride):
                 vert = read_udecn4(chunk_data[j:j+4])
                 m.vert_norm.append(vert)
         elif vb.vertex_type == 6:
             #continue
-            for j in range(vb.offset, vb.offset + vb.size, vb.vertex_stride):
+            for j in range(vb.field_offset, vb.field_offset + vb.size, vb.vertex_stride):
                 #vert = read_udecn4(chunk_data[j:j+4])
                 vert = [0, 0, 0]
                 m.vert_tangent.append(vert)
         elif vb.vertex_type == 7:
             #continue
-            for j in range(vb.offset, vb.offset + vb.size, vb.vertex_stride):
+            for j in range(vb.field_offset, vb.field_offset + vb.size, vb.vertex_stride):
                 temp = chunk_data[j:j+4]
                 weight_indices = [x for x in chunk_data[j:j+4]]
                 m.weight_indices.append(weight_indices)
         elif vb.vertex_type == 8:
             #continue
-            for j in range(vb.offset, vb.offset + vb.size, vb.vertex_stride):
+            for j in range(vb.field_offset, vb.field_offset + vb.size, vb.vertex_stride):
                 weights = [x for x in chunk_data[j:j+4]]
                 weights_flip = []
                 for y in range(4):

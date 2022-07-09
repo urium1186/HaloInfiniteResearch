@@ -1,5 +1,7 @@
+from commons.enums_struct_def import TagStructType
 from halo_infinite_tag_reader.common_tag_types import *
-from halo_infinite_tag_reader.headers.fullheader import FullHeader
+from halo_infinite_tag_reader.headers.tagbasereader import TagBaseReader
+from halo_infinite_tag_reader.headers.ver.tag import Tag
 from halo_infinite_tag_reader.tag_reader_utils import analizarCabecera
 from halo_infinite_tag_reader.tag_struct import TagStruct
 
@@ -27,12 +29,13 @@ class Event(object):
 class TagParseControl:
 
     def __init__(self, filename: str, tagLayoutTemplate: str):
+        self.tag = None
         self.tagLayout = None
         self.f: BinaryIO = None
         self.rootTagInst: TagInstance = None
         self.filename = filename
         self.tagLayoutTemplate = tagLayoutTemplate
-        self.full_header = FullHeader()
+        self.full_header = TagBaseReader()
         self.content_data_index = 0
         self.OnInstanceLoad = Event()
 
@@ -43,9 +46,9 @@ class TagParseControl:
 
             self.tagLayout = TagLayouts.Tags(self.tagLayoutTemplate)
             root_tag = TagLayouts.C('TagStructBlock', 'Root', self.tagLayout, p_P={"g": "true"})
-            self.rootTagInst = TagInstance(tag=root_tag, addressStart=self.full_header.content_table.entries
+            self.rootTagInst = TagInstance(tag=root_tag, addressStart=self.full_header.tag_struct_table.entries
             [0].data_reference.offset_plus, offset=0)
-            self.rootTagInst.content_entry = self.full_header.content_table.entries[0]
+            self.rootTagInst.content_entry = self.full_header.tag_struct_table.entries[0]
             self.readTagsAndCreateInstances(self.rootTagInst)
             self.f.close()
             # print("debug")
@@ -94,8 +97,9 @@ class TagParseControl:
             #print("Error")
             self.OnInstanceLoad(instance_parent)
             return
-
-        instance_parent.content_entry.property_name = instance_parent.tagDef.N
+        if instance_parent.content_entry.data_reference.unknown_property != 0:
+            debug = True
+        instance_parent.content_entry.field_name = instance_parent.tagDef.N
         n_items = -1
         read_result = {"parent": {}, "child_array": []}
         for data in instance_parent.content_entry.bin_datas:
@@ -106,7 +110,7 @@ class TagParseControl:
             n_items = read_result['child_array'].__len__()
             #print("debug")
 
-        if instance_parent.content_entry.type == 'ResourceHandle' and read_result['parent'] == {}:
+        if instance_parent.content_entry.type_id == TagStructType.ResourceHandle and read_result['parent'] == {}:
             self.OnInstanceLoad(instance_parent)
             return
 
@@ -119,15 +123,17 @@ class TagParseControl:
         else:
             if instance_parent.content_entry.childs.__len__() != 0:
                 count = divmod(instance_parent.content_entry.childs.__len__(), n_items)
-                if count[1] != 0:
-                    debug = "pposible error"
-                if count[0] != instance_parent.content_entry.bin_datas.__len__():
-                    debug = "pposible error"
+                if instance_parent.content_entry.type_id != TagStructType.ExternalFileDescriptor:
+                    if count[1] != 0:
+                        debug = "pposible error"
+                    if count[0] != instance_parent.content_entry.bin_datas.__len__():
+                        debug = "pposible error"
+                else:
+                    debug = True
 
         for i, entry in enumerate(instance_parent.content_entry.childs):
             tag_child_inst = tagBlocks[i]
-            if tag_child_inst.tagDef.N == 'render geometry':
-                debug = 1
+
             tag_child_inst.content_entry = entry
             tag_child_inst.parent = instance_parent
             self.readTagsAndCreateInstances(tag_child_inst)
@@ -174,7 +180,7 @@ class TagParseControl:
 
             if child_name == 'render geometry':
                 debug = 1
-            entry_size = 0 if entry.ref_index == -1 else entry.data_reference.size
+            entry_size = 0 if entry.target_index == -1 else entry.data_reference.size
             if tag_child_inst.tagDef.T == 'ResourceHandle':
                 tag_child_inst.tagDef.S = entry_size
                 continue
@@ -186,9 +192,9 @@ class TagParseControl:
                 tag_child_inst.content_entry = entry
                 tag_child_inst.parent = instance_parent
                 if entry_size != 0:
-                    if entry.data_reference.size_fill != 0:
+                    if entry.data_reference.unknown_property_bool_0_1 != 0:
                         continue
-                    if entry.data_reference.offset_type != 1:
+                    if entry.data_reference.section != 1:
                         continue
                     self.readTagsAndCreateInstances(tag_child_inst, tag_child_inst.childrenCount)
                 print('algo')
@@ -232,14 +238,14 @@ class TagParseControl:
                 bo = self.hasTagBlock(tag_inst.tagDef.B)
             n_childs = tag_inst.childrenCount
             t_size = tag_inst.tagDef.S
-            tag_inst.tagDef.content_data = self.full_header.content_table.entries[self.content_data_index]
+            tag_inst.tagDef.content_data = self.full_header.tag_struct_table.entries[self.content_data_index]
             tag_inst.content_entry = tag_inst.tagDef.content_data
             full_size = t_size * n_childs
             error = False
             sum = True
-            debug_before = self.full_header.content_table.entries[self.content_data_index - 1]
-            actual = self.full_header.content_table.entries[self.content_data_index]
-            debug_next = self.full_header.content_table.entries[self.content_data_index + 1]
+            debug_before = self.full_header.tag_struct_table.entries[self.content_data_index - 1]
+            actual = self.full_header.tag_struct_table.entries[self.content_data_index]
+            debug_next = self.full_header.tag_struct_table.entries[self.content_data_index + 1]
             if full_size == 0 and not (tag_inst.tagDef.content_data.data_reference is None):
                 error = True
             if tag_inst.tagDef.content_data.data_reference is None:

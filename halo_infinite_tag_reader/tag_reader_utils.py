@@ -119,7 +119,7 @@ def getContentEntryByRefIndex(conten: [], ref_index):
     count = 0
     entry_found = None
     for i, entry in enumerate(conten):
-        if entry.ref_index == ref_index:
+        if entry.target_index == ref_index:
             count = count + 1
             entry_found = i
     if count > 1:
@@ -141,25 +141,25 @@ def analizarCabecera(fh, execute=False):
     content_tree = {}
     root = None
     dict_type = {}
-    createTree(fh.content_table.entries, -1)
+    createTree(fh.tag_struct_table.entries, -1)
     return
     for index_ref in range(fh.data_table.entries.__len__()):
-        temp = getContentEntryByRefIndex(fh.content_table.entries, index_ref)
-        if fh.data_table.entries[index_ref].offset_type == 2:
+        temp = getContentEntryByRefIndex(fh.tag_struct_table.entries, index_ref)
+        if fh.data_table.entries[index_ref].section == 2:
             debug = 1
-        if dict_type.keys().__contains__(fh.data_table.entries[index_ref].offset_type):
-            dict_type[fh.data_table.entries[index_ref].offset_type].append(fh.data_table.entries[index_ref])
+        if dict_type.keys().__contains__(fh.data_table.entries[index_ref].section):
+            dict_type[fh.data_table.entries[index_ref].section].append(fh.data_table.entries[index_ref])
         else:
-            dict_type[fh.data_table.entries[index_ref].offset_type] = [fh.data_table.entries[index_ref]]
+            dict_type[fh.data_table.entries[index_ref].section] = [fh.data_table.entries[index_ref]]
 
     debug = 2
 
-    for entry in fh.content_table.entries:
-        key = entry.hash.guid + ' -- ' + str(entry.parent_index)
-        if entry.parent_index != -1:
-            p_i = getContentEntryByRefIndex(fh.content_table.entries, entry.parent_index)
-            fh.content_table.entries[p_i].childs.append(entry)
-            fh.content_table.entries[entry.parent_index].childs2.append(entry)
+    for entry in fh.tag_struct_table.entries:
+        key = entry.hash.guid + ' -- ' + str(entry.target_index)
+        if entry.target_index != -1:
+            p_i = getContentEntryByRefIndex(fh.tag_struct_table.entries, entry.target_index)
+            fh.tag_struct_table.entries[p_i].childs.append(entry)
+            fh.tag_struct_table.entries[entry.target_index].childs2.append(entry)
         else:
             root = entry
         if types_map.keys().__contains__(key):
@@ -167,7 +167,7 @@ def analizarCabecera(fh, execute=False):
         else:
             types_map[key] = [entry]
 
-    for entry in fh.content_table.entries:
+    for entry in fh.tag_struct_table.entries:
         k = 1
 
     print('asd')

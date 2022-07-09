@@ -1,8 +1,12 @@
+from commons.debug_utils import debug_hash
 from configs.config import Config
 from halo_infinite_tag_reader.tag_reader_utils import createDirAltNameID
 
 import pymmh3 as mmh3
 
+
+def getMmr3HashIntFrom(str_in: str) -> str:
+    return mmh3.hash(str_in, seed=0)
 
 def getMmr3HashFrom(str_in: str) -> str:
     integer_val = mmh3.hash(str_in, seed=0)
@@ -26,6 +30,19 @@ def getMmr3HashFromInt(integer: int) -> str:
 
 
 #print(getMmr3HashFrom('r_shoulderpad_legendary'))
+
+
+
+
+def getStrInMmr3Hash(p_hash) -> str:
+    if Mmr3Hash_str.keys().__contains__(p_hash):
+        return Mmr3Hash_str[p_hash]
+    else:
+        if debug_hash.keys().__contains__(p_hash):
+            debug_hash[p_hash] += 1
+        else:
+            debug_hash[p_hash] = 1
+        return p_hash
 
 Mmr3Hash_str = {
     '0A5BDF43': 'torso_belt',
@@ -227,6 +244,9 @@ Mmr3Hash_str = {
     # permutations
     'EFB1F099': 'chief',
     '000F3C92': 'fp_body_default',
+
+    # other
+    'D25A559B': '__default__',
 }
 
 map_alt_name_id = createDirAltNameID(Config.INFOS_PATH)

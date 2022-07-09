@@ -26,26 +26,26 @@ from typing.io import BinaryIO
 from halo_infinite_tag_reader.common_tag_types import readStringInPlace
 
 
-class StringTableEntry:
+class TagReferenceFixup:
 
     def __init__(self):
-        self.unknown_0x0 = -1
-        self.unknown_0x1 = -1
-        self.string_offset = -1
-        self.string_index = -1
+        self.field_block = -1
+        self.field_offset = -1
+        self.name_offset = -1
+        self.dependency_index = -1
         self.str_path = ""
         pass
 
     def readIn(self, f, header=None):
-        self.unknown_0x0 = struct.unpack('i', f.read(4))[0]
-        self.unknown_0x1 = struct.unpack('i', f.read(4))[0]
-        self.string_offset = struct.unpack('i', f.read(4))[0]
-        self.string_index = struct.unpack('i', f.read(4))[0]
-        temp_offset = (header.string_offset + (header.string_count * 0x10)) + self.string_offset
+        self.field_block = struct.unpack('i', f.read(4))[0]
+        self.field_offset = struct.unpack('i', f.read(4))[0]
+        self.name_offset = struct.unpack('i', f.read(4))[0]
+        self.dependency_index = struct.unpack('i', f.read(4))[0]
+        temp_offset = (header.tag_reference_offset + (header.tag_reference_count * 0x10)) + self.name_offset
         self.str_path = readStringInPlace(f, temp_offset, True)
 
 
-class StringTable:
+class TagReferenceFixupTable:
 
     def __init__(self):
         self.entries = []
@@ -64,13 +64,13 @@ class StringTable:
 
     def readStrings(self,f:BinaryIO,header,verbose=False):
         #f.readline()
-        f.seek(header.string_offset)
-        for x in range(header.string_count):
-            self.entries.append(StringTableEntry())
+        f.seek(header.tag_reference_offset)
+        for x in range(header.tag_reference_count):
+            self.entries.append(TagReferenceFixup())
             self.entries[x].readIn(f, header)
 
         offset_1 = f.tell()
-        lastPos = offset_1 + header.string_length
+        lastPos = offset_1 + header.string_table_size
         while offset_1<lastPos:
             self.strings.append(readStringInPlace(f, offset_1))
             offset_1 = f.tell()

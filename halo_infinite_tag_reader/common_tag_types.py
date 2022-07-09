@@ -4,23 +4,23 @@ import struct
 
 from typing.io import BinaryIO
 
-from halo_infinite_tag_reader.headers.contenttable import ContentTableEntry
+from halo_infinite_tag_reader.headers.tagstructtable import TagStruct
 from halo_infinite_tag_reader.taglayouts import TagLayouts
-from halo_infinite_tag_reader.varnames import Mmr3Hash_str
+from halo_infinite_tag_reader.varnames import Mmr3Hash_str, getStrInMmr3Hash
 
 
 def getStringsByRef(fh, ref_id, ref_id_sub, ref_id_center):
     index_ref_found = string_offset = -1
     str_found = None
     str_temp = ''
-    for item in fh.tag_ref_table.entries:
-        if item.ref_id == ref_id and item.ref_id_sub == ref_id_sub and item.ref_id_center == ref_id_center:
+    for item in fh.tag_dependency_table.entries:
+        if item.global_id == ref_id and item.ref_id_sub == ref_id_sub and item.ref_id_center == ref_id_center:
             str_found = item
             break
 
     if not (str_found is None):
-        for str_item in fh.string_table.entries:
-            if str_item.string_offset == str_found.string_offset:
+        for str_item in fh.tag_reference_fixup_table.entries:
+            if str_item.name_offset == str_found.name_offset:
                 return str_item.str_path
 
     return str_temp
@@ -53,7 +53,7 @@ class TagInstance:
 
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
         self.tagDef = tag
-        self.content_entry: ContentTableEntry = None
+        self.content_entry: TagStruct = None
         self.childs: [TagInstance] = []
         self.parent: TagInstance = None
         self.addressStart = addressStart
@@ -295,19 +295,19 @@ class TagRef(TagInstance):
         self.ref_id_center = None
         self.ref_id_sub = None
         self.ref_id = None
-        self.ini_offser = None
-        self.datNum = None
+        self.global_handle = None
+        self.local_handle = None
         self.tagGroup = None
 
     def readIn(self, f: BinaryIO, header=None):
         super().readIn(f, header)
         f.seek(self.addressStart + self.offset)
-        self.ini_offser = struct.unpack('q', f.read(8))[0]
+        self.global_handle = struct.unpack('q', f.read(8))[0]
         self.ref_id = f.read(4).hex().upper()
         self.ref_id_sub = f.read(4).hex().upper()
         self.ref_id_center = f.read(4).hex().upper()
         self.tagGroup = struct.unpack('4s', f.read(4))[0]
-        self.datNum = f.read(4).hex().upper()
+        self.local_handle = f.read(4).hex().upper()
         self.path = getStringsByRef(header, self.ref_id, self.ref_id_sub, self.ref_id_center)
 
 
@@ -526,10 +526,7 @@ class Mmr3Hash(TagInstance):
         super().readIn(f, header)
         f.seek(self.addressStart + self.offset)
         self.value = f.read(4).hex().upper()
-        if Mmr3Hash_str.keys().__contains__(self.value):
-            self.str_value = Mmr3Hash_str[self.value]
-        else:
-            self.str_value = self.value
+        self.str_value = getStrInMmr3Hash(self.value)
 
 
 class RGB(TagInstance):
