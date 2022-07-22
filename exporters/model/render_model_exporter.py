@@ -4,6 +4,8 @@ import os
 import numpy as np
 import mathutils
 import utils
+from commons.classes import Chunk
+from commons.debug_utils import fillDebugDict, vertx_data_arrays
 from exporters.base_exporter import BaseExporter
 from exporters.domain.domain_types import *
 from exporters.to.fbx.export_to_fbx import FbxModel
@@ -35,13 +37,13 @@ class RenderModelExporter(BaseExporter):
     def readVertBlockDesc(self, vert_block_desc, m_v_t_index):
         offset = vert_block_desc['offset'].value
         size = vert_block_desc['size'].value
+        sub_data_ = self.getChunkDataBy(offset, size)
         sub_data = self._chunk_data[offset:offset + size]
         vertex_count = vert_block_desc['vertex_count'].value
         vertex_stride = vert_block_desc['vertex_stride'].value
         vertex_type = vert_block_desc['vertex_type'].selected_index
-        self.debug_dict[vert_block_desc['vertex_type'].selected] = vert_block_desc['unknown_off_4_8'].value
         bin_stream = io.BytesIO(sub_data)
-        unknown_off_60_64 = vert_block_desc['unknown_off_60_64'].value
+
         if vertex_type == 0:
             return self.readPositionIn(bin_stream, vertex_count, vertex_stride, m_v_t_index)
         elif vertex_type == 1:
@@ -144,6 +146,7 @@ class RenderModelExporter(BaseExporter):
     def readNormalIn(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
         vertx_normal_array = []
         f_from_bytes = int.from_bytes
+        return vertx_normal_array
         for x in range(vertex_count):
             chunk_offset = j = 0
             chunk_data = bin_stream.read(vertex_stride)
@@ -178,8 +181,10 @@ class RenderModelExporter(BaseExporter):
         return vertx_normal_array
 
     def readIndexBlock(self, index_block_descr):
+        """
         self.fillChunkDataArray(index_block_descr['offset'].value, index_block_descr[
             'size'].value)
+        """
         sub_chunk_data = self._chunk_data[
                          index_block_descr['offset'].value:index_block_descr['offset'].value + index_block_descr[
                              'size'].value]
@@ -189,7 +194,7 @@ class RenderModelExporter(BaseExporter):
         for i in range(index_block_descr['index_count'].value):
             index = f_from_bytes(bin_stream.read(2), 'little')
             index_array.append(index)
-        if index_array.__len__()<1:
+        if index_array.__len__() < 1:
             debug = 1
         return index_array
 
@@ -220,7 +225,7 @@ class RenderModelExporter(BaseExporter):
                     export = False
                     temp_name = '-1'
                     mesh_name = ''
-                    for m_index in range(m_index_,m_index_+permutation['mesh_count'].value):
+                    for m_index in range(m_index_, m_index_ + permutation['mesh_count'].value):
                         mesh = self.render_model_inst['meshes'].childs[m_index]
                         self.readChunksData()
 
@@ -245,14 +250,13 @@ class RenderModelExporter(BaseExporter):
                         if mesh_name.find(self.filterArmorCore.getString()) == -1:
                             continue
 
-
                         t_m.name = mesh_name
                         t_m.name = utils.getNamePart(t_m)
                         self.obj_render_model.meshes.append(t_m)
                         fbx_model.add(t_m)
                         export = True
                     if export:
-                        temp_str =self.render_model.filename.split('\\')[-1].replace('.','_')
+                        temp_str = self.render_model.full_filepath.split('\\')[-1].replace('.', '_')
                         sub_dir = f"{temp_str}/{region['name'].str_value}/"
                         os.makedirs(f"{self.filepath_export}{sub_dir}", exist_ok=True)
                         save_path = f"{self.filepath_export}{sub_dir}{permutation['name'].str_value}-{mesh_name}.fbx"
@@ -270,7 +274,7 @@ class RenderModelExporter(BaseExporter):
                     continue
                 self.readChunksData()
 
-                if self._chunk_data is None:
+                if self._chunk_data is None or self._chunk_data == b'':
                     return
                 t_m = self.processMeshInst(mesh, mesh_resource, m_i)
 
@@ -306,6 +310,68 @@ class RenderModelExporter(BaseExporter):
 
         print('end Export')
 
+    def getMeshListByVariant(self, variant) -> []:
+        if not self.render_model.is_loaded():
+            self.render_model.load()
+        if self.render_model_inst is None:
+            self.render_model_inst = self.render_model.tag_parse.rootTagInst.childs[0]
+        mesh_resource = \
+            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource (unmapped type(_43)'].childs[0]
+        self.createScaleInfo()
+        temp_mesh_s = self.render_model_inst['meshes'].childs
+        temp_mesh_r = self.render_model_inst['regions'].childs
+        self.initChunksData()
+        self.readChunksData()
+
+        if self._chunk_data is None:
+            return
+        mesh_list = []
+        regions = variant['regions'].childs
+        for region in regions:
+            region_name = region['region name']
+            temp_mesh_r_i = -1
+            for rn in temp_mesh_r:
+                if rn['name'].value == region_name.value:
+                    temp_mesh_r_i = rn['permutations'].childs
+                    break
+            for per in region['permutations'].childs:
+
+                per_mesh_index = per['runtime permutation index'].value
+                if temp_mesh_s is None:
+                    continue
+                else:
+                    if per_mesh_index != -1 and not (temp_mesh_r_i is None):
+                        permutation = temp_mesh_r_i[per_mesh_index]
+                        per_mesh_index_1 = permutation['mesh_index'].value
+                        if per_mesh_index_1 == -1:
+                            continue
+                        temp_name = '-1'
+                        for m_index in range(per_mesh_index_1,
+                                             per_mesh_index_1 + permutation['mesh_count'].value):
+                            mesh = temp_mesh_s[m_index]
+
+                            t_m = self.processMeshInst(mesh, mesh_resource)
+
+                            material_path = t_m.LOD_render_data[0].parts[0].material_path
+                            mesh_name = ''
+                            if len(material_path.split('\\')) >= 1:
+                                mesh_name += material_path.split('\\')[-1]
+                            if temp_name == mesh_name:
+                                continue
+
+                            if mesh_name == '':
+                                mesh_name = "unknown mesh"
+
+                            temp_name = mesh_name
+                            print(mesh_name)
+
+                            t_m.name = mesh_name
+                            t_m.name = utils.getNamePart(t_m)
+                            mesh_list.append(t_m)
+                    else:
+                        continue
+        return mesh_list
+
     def initChunksData(self):
         if self._chunk_data is None:
             chunk_data_map: {str: []} = {}
@@ -315,9 +381,9 @@ class RenderModelExporter(BaseExporter):
             ch_offset = 0
             while more_chunks:
                 try:
-                    chunk_path = f"{self.render_model.filename}[{nChunk}_mesh_resource.chunk{nChunk}]"
+                    chunk_path = f"{self.render_model.full_filepath}[{nChunk}_mesh_resource.chunk{nChunk}]"
                     temp_len = os.path.getsize(chunk_path)
-                    self._chunk_data_map[ch_offset] = (chunk_path, temp_len)
+                    self._chunk_data_map[ch_offset] = Chunk(chunk_path, temp_len)
 
                     ch_offset += temp_len
                     """
@@ -331,8 +397,23 @@ class RenderModelExporter(BaseExporter):
                 except:
                     more_chunks = False
 
-            self._chunk_data = np.empty(ch_offset, dtype=object)
             print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
+
+    def getChunkDataBy(self, offset, size) -> bytes:
+        if False and self._chunk_data != b'':
+            return self._chunk_data[offset:offset+size]
+
+        keys = list(self._chunk_data_map.keys())
+        init_key = 0
+        if keys.__contains__(offset):
+            init_key = keys.index(offset)
+
+        ki = 0
+        # while offset >= keys[ki]:
+
+        for ki, k_offset in enumerate(keys, start=init_key):
+            if  k_offset<=  offset:
+                debug = True
 
     def fillChunkDataArray(self, offset, size):
         if not self._chunk_data[offset] is None and not self._chunk_data[offset + size] is None:
@@ -346,7 +427,7 @@ class RenderModelExporter(BaseExporter):
         for ki, k_offset in enumerate(keys, start=init_key):
             if k_offset <= offset <= keys[ki + 1]:
                 increasing = 1
-                self.readChunkData(self._chunk_data_map[keys[ki]],keys[ki])
+                self.readChunkData(self._chunk_data_map[keys[ki]], keys[ki])
                 print(self._chunk_data_map[keys[ki]][0])
                 while offset + size > keys[ki + increasing]:
                     self.readChunkData(self._chunk_data_map[keys[ki + increasing]], keys[ki + increasing])
@@ -368,7 +449,7 @@ class RenderModelExporter(BaseExporter):
             ch_file.close()
 
     def readChunksData(self):
-        if self._chunk_data is None:
+        if self._chunk_data is None or self._chunk_data == b'':
             chunk_data_map: {str: []} = {}
             more_chunks = True
             self._chunk_data = b""
@@ -376,7 +457,7 @@ class RenderModelExporter(BaseExporter):
             ch_offset = 0
             while more_chunks:
                 try:
-                    chunk_path = f"{self.render_model.filename}[{nChunk}_mesh_resource.chunk{nChunk}]"
+                    chunk_path = f"{self.render_model.full_filepath}[{nChunk}_mesh_resource.chunk{nChunk}]"
                     self._chunk_data_map[ch_offset] = chunk_path
                     # print(f"Trying to read chunk {chunk_path}")
                     chunk_data_temp = []
@@ -422,6 +503,7 @@ class RenderModelExporter(BaseExporter):
             max_offset = -1
             size_sum = 0
             last_size = -1
+            s_key = ''
             for xi, x in enumerate(lod['vertex_buffer_indices'].childs):
                 temp_vert_index_block = x.value
                 if temp_vert_index_block != -1:
@@ -430,9 +512,23 @@ class RenderModelExporter(BaseExporter):
                     vertex_type_index = vertx_block_descr['vertex_type'].selected_index
                     offset = vertx_block_descr['offset'].value
                     size = vertx_block_descr['size'].value
-                    print(f"{m_i}-{lod_i}-{vertex_type_}")
-                    self.fillChunkDataArray(offset, size)
+                    # print(f"{m_i}-{lod_i}-{vertex_type_}")
+                    # self.fillChunkDataArray(offset, size)
+                    s_key += str(vertex_type_) + f'-{vertx_block_descr["way_to_read_type"].value}-'
+                    assert vertx_block_descr["unknown_off_10_12"].value == -17220, "unknown_off_10_12"
+                    assert vertx_block_descr["unknown_off_28_32"].value == 32, "unknown_off_28_32"
+                    assert vertx_block_descr["unknown_off_32_36"].value == 0, "unknown_off_32_36"
 
+                    assert vertx_block_descr["unknown_array_off_36_56"].childrenCount == 0, "unknown_array_off_36_56"
+                    assert vertx_block_descr["unknown_off_56_60"].value == 0, "unknown_off_56_60"
+                    assert vertx_block_descr["vertex_buffer_index"].value == xi, "vertex_buffer_index"
+                    assert vertx_block_descr["vertex_type"].selected_index == xi, "vertex_type"
+                    assert vertx_block_descr["vertex_type"].selected_index == vertx_block_descr[
+                        "vertex_buffer_index"].value == xi, "vertex_buffer_index <-> vertex_type"
+                    assert vertx_block_descr["unknown_off_64_68"].value == 0, "unknown_off_64_68"
+                    assert vertx_block_descr["unknown_off_68_72"].value == 0, "unknown_off_68_72"
+                    assert vertx_block_descr["unknown_off_72_76"].value == 0, "unknown_off_72_76"
+                    assert vertx_block_descr["unknown_off_76_80"].value == 0, "unknown_off_76_80"
                     if max_offset == -1:
                         max_offset = offset
                         min_offset = offset
@@ -451,6 +547,9 @@ class RenderModelExporter(BaseExporter):
                     vertx_blocks[vertex_type_] = vertx_data
                     obj_lod.setVertBufferArray(vertex_type_index, vertx_data)
             s_t = (max_offset - min_offset) + last_size
+            main_key = str(mesh["vertex_type"].selected) + '<->' + str(m_v_t_index)
+
+            fillDebugDict(main_key, s_key, vertx_data_arrays)
             if s_t == size_sum:
                 debug = 1
             else:

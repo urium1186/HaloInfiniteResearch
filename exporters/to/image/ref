@@ -1,0 +1,6 @@
+from height2bump import readHeight2Bump
+result = readHeight2Bump( heightfilename, bumpfilename, options="tqa"
+
+https://www.pythonstuff.org/glsl/normalmaps_from_heightmaps_2.html
+
+https://modworkshop.net/mod/23266

@@ -16,16 +16,20 @@ class Model(BaseTemplate):
         super().load()
 
     def loadRenderModel(self):
-        filename = Config.BASE_UNPACKED_PATH + self.tag_parse.rootTagInst.childs[0]['render model'].path +'.render_model'
+        filename = self.tag_parse.rootTagInst.childs[0]['render model'].path + '.render_model'
+        # Config.BASE_UNPACKED_PATH +
         self.render_model = RenderModel(filename)
         self.render_model.load()
 
-
     def onInstanceLoad(self, instance: TagInstance):
+        if not (instance.content_entry is None) and not (instance.content_entry.data_reference is None):
+            if instance.content_entry.data_reference.unknown_property != 0:
+                p_name = instance.tagDef.N
+                debug = True
         variants = {}
         if instance.tagDef.N == 'variants':
             if not self.debug:
-                return 
+                return
             temp_mesh_s = None
             temp_mesh_r = None
             if not (self.render_model is None):
@@ -50,13 +54,14 @@ class Model(BaseTemplate):
                             runtime_permutation.append(str(per_mesh_index))
                         else:
                             if per_mesh_index != -1 and not (temp_mesh_r_i is None):
-                                per_mesh_index_1 =temp_mesh_r_i[per_mesh_index]['mesh_index'].value
+                                per_mesh_index_1 = temp_mesh_r_i[per_mesh_index]['mesh_index'].value
                                 for p in temp_mesh_s[per_mesh_index_1]['LOD_render_data'].childs[0]['parts'].childs:
                                     runtime_permutation.append(p['material_index'].extra_data['path'].split('\\')[-1])
 
                             else:
                                 runtime_permutation.append(str(per_mesh_index))
 
-                        variants[ch['name'].str_value][region_name.str_value].append((per['permutation name'].str_value, runtime_permutation))
+                        variants[ch['name'].str_value][region_name.str_value].append(
+                            (per['permutation name'].str_value, runtime_permutation))
 
             debug = 1

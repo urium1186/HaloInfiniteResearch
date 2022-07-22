@@ -82,6 +82,7 @@ class TagParseControl:
                     tagInstanceTemp[key].__class__ = TagStructData
                     if tagInstanceTemp[key].generateEntry:
                         tagBlocks.append(tagInstanceTemp[key])
+
             elif tagDefinitions[entry].T == "Tagblock":
                 tagBlocks.append(tagInstanceTemp[key])
             elif tagDefinitions[entry].T == "ResourceHandle":
@@ -93,13 +94,29 @@ class TagParseControl:
 
     def readTagsAndCreateInstances(self, instance_parent: TagInstance):
         tagBlocks = []
+        instance_parent.content_entry.field_name = instance_parent.tagDef.N
+        if instance_parent.tagDef.T == 'TagStructData':
+            typue_d = instance_parent.content_entry.type_id
+            name_1 = instance_parent.content_entry.field_name
+            bool_some = instance_parent.content_entry.unknown_property_bool_0_1
+            debug = True
+
+        if instance_parent.content_entry.unknown_property_bool_0_1 != 0:
+            typue_d = instance_parent.content_entry.type_id
+            name_1 = instance_parent.content_entry.field_name
+            debug = True
+
+        if instance_parent.content_entry.type_id == 4:
+            name_1 = instance_parent.content_entry.field_name
+            bool_some = instance_parent.content_entry.unknown_property_bool_0_1
+            debug= True
         if instance_parent.content_entry.data_reference is None:
             #print("Error")
             self.OnInstanceLoad(instance_parent)
             return
         if instance_parent.content_entry.data_reference.unknown_property != 0:
             debug = True
-        instance_parent.content_entry.field_name = instance_parent.tagDef.N
+
         n_items = -1
         read_result = {"parent": {}, "child_array": []}
         for data in instance_parent.content_entry.bin_datas:

@@ -1,5 +1,5 @@
 import struct
-
+import xml.etree.ElementTree as ET
 from commons.common_utils import getGUID
 from commons.debug_utils import debug_TagStruct, fillDebugDict, debug_TagStruct_Type
 from commons.enums_struct_def import TagStructType
@@ -125,19 +125,47 @@ class TagStruct:
                         blocks.append(f.read(sub_block_size))
                     f.seek(pos_on_init)
                     return blocks
-    """
-    def readAllIn(self, f, header=None) -> {}:
-        result = {"entry_data": None,
-                  "child_datas": {}}
-        if self.childs.__len__() != 0:
-            for entry in self.childs:
-                result["entry_data"] = self.readDataEntry(f)
-                result["child_datas"][entry] = entry.readAllIn(f, header)
-            return result
+
+    def getInstanceIndexInParent(self):
+        if self.bin_datas.__len__() != 0:
+            temp = len(self.bin_datas[0])
+            if temp == 0:
+                raise Exception('Data vacia en conteentry')
+
+            d_m = divmod(self.field_offset, temp)
+            return d_m[0]
         else:
-            result["entry_data"] = self.readDataEntry(f)
-            return result
-    """
+            return 0
+
+    def strXml(self):
+        return ET.tostring(self.generateXml(), encoding="unicode")
+
+    def generateXml(self, parent_node=None):
+
+        if self.childs.__len__() == 0:
+
+            if parent_node is None:
+                element = ET.Element(TagStructType(self.type_id).name)
+            else:
+                element = ET.Element(TagStructType(self.type_id).name)
+                parent_node.append(element)
+            for i, v in enumerate(self.bin_datas_hex):
+                data = ET.Element('data')
+                # data.text = v
+                element.append(data)
+            return element
+        else:
+            if parent_node is None:
+                element = ET.Element(TagStructType(self.type_id).name)
+            else:
+                element = ET.Element(TagStructType(self.type_id).name)
+                parent_node.append(element)
+
+            for item in self.childs:
+                index = item.getInstanceIndexInParent()
+                sub_element = item.generateXml(element)
+            return element
+
 
 class TagStructTable:
     def __init__(self) -> None:

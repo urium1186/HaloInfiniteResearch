@@ -7,3 +7,7 @@ class TagStructType(IntFlag):
     ExternalFileDescriptor = 2
     ResourceHandle = 3
     NoDataStartBlock = 4
+
+
+class TargetPlatform(IntFlag):
+    pc = 3

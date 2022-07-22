@@ -21,7 +21,7 @@ class MaterialPalette(BaseTemplate):
         i = 0
         swatches = []
         for key in self.tag_parse.rootTagInst.childs[0]['swatches'].childs:
-            parse_mwsw = Swatch(Config.BASE_UNPACKED_PATH + key['swatch'].path+'.materialswatch')
+            parse_mwsw = Swatch( key['swatch'].path+'.materialswatch') # Config.BASE_UNPACKED_PATH +
             parse_mwsw.load()
             parse_mwsw.default_color_variant = key['color'].value
             parse_mwsw.toJson()

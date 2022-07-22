@@ -2,7 +2,7 @@ import os
 import struct
 
 from commons.common_utils import getGUID, map_CUID
-from commons.debug_utils import debug_dict_1, debug_dict
+from commons.debug_utils import debug_dict_1, debug_dict, fillDebugDict, debug_data_ref_zoneInfo
 
 
 class FileHeader:
@@ -11,6 +11,7 @@ class FileHeader:
         debug = False
         self.f = pf
         name = self.f.name.split('\\')[-1]
+        ext =  name.split(".")[-1]
         self.f.seek(0x0)  #
         # [FieldOffset(0)]
         bytes_unk = self.f.read(16)
@@ -143,5 +144,8 @@ class FileHeader:
             #print(f"{self.UnknownProperty2}-{self.UnknownProperty3}-{self.UnknownProperty4}")
             #print(self.f.name)
             debug = False
+        main_key = f"{self.ZoneSetSize}" # <->{self.DataReferenceCount}
+        secund_key = ext
+        fillDebugDict(main_key,secund_key,debug_data_ref_zoneInfo)
 
 

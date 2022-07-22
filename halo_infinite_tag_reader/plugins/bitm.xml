@@ -499,17 +499,23 @@
 		<_43 v="bitmap resource handle">
             <_35 v="desconocido 16" length="16"/>
             <_6 v="temp posible cantidad" />
-            <_6 v="temp int 1" />
+            <_6 v="embed_data_len" />
             <_6 v="temp int 2" />
-            <_6 v="temp int 3" />
-            <_5 v="temp short" />
+            <_4 v="byte 0" />
+            <_5 v="format" />
+            <_5 v="short 1" />
+            <_4 v="byte 1" />
             <_35 v="padding 6" length="6"/>            
             <_7 v="Q data info" />
-            <_40 v="Arreglo de algo de 16">
-                <_6 v="temp1 int 0" />
-                <_6 v="temp1 int 1" />
-                <_6 v="temp1 int 2" />
-                <_6 v="temp1 int 3" />
+            <_40 v="mipmaps">
+                <_5 v="desconocido short 0" />
+                <_5 v="desconocido short 1" />
+                <_6 v="data_size" />
+                <_5 v="desconocido short 3" />
+                <_4 v="mipmap index" />
+                <_4 v="desconocido byte" />
+                <_5 v="width" />
+                <_5 v="height" />
             </_40>
             <_35 v="padding 4" length="4"/>
         </_43>

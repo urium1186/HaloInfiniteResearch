@@ -21,7 +21,7 @@ class StringList(BaseTemplate):
             for i, lang in enumerate(instance.childs):
                 if not (i in valid_lang):
                     continue
-                filename = Config.BASE_UNPACKED_PATH + f'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist[{i}_string_list_resource]'
+                filename = f'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist[{i}_string_list_resource]'
                 parse_string_list_r = StringListResource(filename)
                 parse_string_list_r.load()
                 self.resource.append(parse_string_list_r)
