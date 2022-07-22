@@ -31,7 +31,7 @@ class MaterialStyles(BaseTemplate):
         self.json_base["emissiveAmount"] = style_select['emissive_amount'].value
         self.json_base["grimeAmount"] = style_select['grime_amount'].value
         self.json_base["scratchAmount"] = style_select['scratch_amount'].value
-        parse_mwpl = MaterialPalette(Config.BASE_UNPACKED_PATH + style_select['palette'].path+".materialpalette")
+        parse_mwpl = MaterialPalette(style_select['palette'].path+".materialpalette") # Config.BASE_UNPACKED_PATH +
         parse_mwpl.load()
         parse_mwpl.toJson()
         self.json_base["swatches"] = parse_mwpl.json_base['swatches']

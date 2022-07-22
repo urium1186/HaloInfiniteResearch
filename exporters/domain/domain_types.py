@@ -87,6 +87,7 @@ class ObjMesh:
 class ObjLOD:
 
     def __init__(self):
+
         self.unique_pos_vert = {}
         self.parts: [ObjPart] = []
         self.sub_parts: [ObjSubPart] = []
@@ -106,6 +107,7 @@ class ObjLOD:
         self.vert_index = []
         self.weight_indices = []
         self.weights = []
+        self.dual_quat_weight = []
         self.weight_pairs = []
 
     def generateFaceIndex(self, index_buffer_type):
@@ -302,8 +304,14 @@ class ObjLOD:
             self.vert_norm = vertx_data
         elif vertex_type_index == BufferVertType.dual_quat_weight:
             self.weights = vertx_data
+            if len(self.dual_quat_weight) !=0:
+                pares = []
+                for ti, tupla in enumerate(self.weights):
+                    pares.append((tupla, self.dual_quat_weight[ti],[sum(tupla),sum(self.dual_quat_weight[ti])]))
+                debug = True
+
         elif vertex_type_index == BufferVertType.node_weights:
-            self.weights = vertx_data
+            self.dual_quat_weight = vertx_data
         elif vertex_type_index == BufferVertType.node_indices:
             self.weight_indices = vertx_data
 

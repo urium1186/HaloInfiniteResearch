@@ -45,9 +45,10 @@ class RenderModel(BaseTemplate):
 
     def onInstanceLoad(self, instance: TagInstance):
 
-        if instance.tagDef.N == "regions":
-            for ch in instance.childs:
-                print(ch["name"].str_value)
+        if instance.tagDef.N == "mesh resource groups":
+            xml = instance.content_entry.strXml()
+
+            debug = True
 
         elif instance.tagDef.N == "material_index":
             if instance.parent.tagDef.N == 'parts':
@@ -60,38 +61,7 @@ class RenderModel(BaseTemplate):
         elif instance.tagDef.N == 'render_geometry':
             debug = 0
         elif instance.tagDef.N == "meshes":
-            temp_dict = {}
-            for i, mesh in enumerate(instance.childs):
-                temp_dict[i] = \
-                mesh['LOD_render_data'].childs[0]['parts'].childs[0]['material_index'].extra_data['path'].split('\\')[
-                    -1]
-
-            for region in self.tag_parse.rootTagInst.childs[0]['regions'].childs:
-                permutations = region['permutations'].childs
-                for permutation in permutations:
-                    m_index = permutation['mesh_index'].value
-                    if m_index == -1:
-                        continue
-                    clone_index = instance.childs[m_index]['clone_index'].value
-                    if temp_dict.keys().__contains__(m_index):
-                        del temp_dict[m_index]
-                    if clone_index == -1:
-                        continue
-                    if temp_dict.keys().__contains__(clone_index):
-                        del temp_dict[clone_index]
-            keys = list(temp_dict.keys())
-            res_dict = {}
-            for k in keys:
-                if str(temp_dict[k]).__contains__('mc117'):
-                    del temp_dict[k]
-                else:
-                    core = temp_dict[k].split('_')[0]
-                    if res_dict.keys().__contains__(core):
-                        res_dict[core].append(temp_dict[k])
-                    else:
-                        res_dict[core] = [temp_dict[k]]
-            print(list(temp_dict.keys()))
-            debug = 1
+            debug = True
         elif instance.tagDef.N == "compression_info":
             debug = 1
         pass

@@ -966,19 +966,19 @@
                             <Flag v="change_17" />
                             <Flag v="change_18" />
                         </_C>
-                        <_6 v="unknown_off_4_8" />
+                        <_6 v="way_to_read_type" /> <!-- https://docs.microsoft.com/en-us/windows/win32/direct3d9/d3ddecltype -->
                         <_5 v="vertex_stride" />
-                        <_5 v="unknown_off_10_12" />
+                        <_5 v="unknown_off_10_12" /> <!-- -17220 -->
                         <_6 v="vertex_count" />
                         <_6 v="offset" />
                         <_6 v="size" />
                         <_6 v="type" />
-                        <_6 v="unknown_off_28_32" />
-                        <_6 v="unknown_off_32_36" />
+                        <_6 v="unknown_off_28_32" /> <!-- 32 -->
+                        <_6 v="unknown_off_32_36" /> <!-- 0 -->
                         <_40 v="unknown_array_off_36_56">
                         </_40>
                         <_6 v="unknown_off_56_60" /> <!-- posible tamano -->
-                        <_6 v="unknown_off_60_64" />
+                        <_6 v="vertex_buffer_index" />
                         <_6 v="unknown_off_64_68" />
                         <_6 v="unknown_off_68_72" />
                         <_6 v="unknown_off_72_76" />

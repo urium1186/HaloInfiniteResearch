@@ -1,0 +1,117 @@
+from enum import IntFlag
+from typing import List
+import numpy as np
+from dataclasses import dataclass, fields, field
+
+from exporters.to.image.dds_utilts.d3d10 import D3D10_RESOURCE_DIMENSION
+from exporters.to.image.dds_utilts.dxgiformat import DXGI_FORMAT
+
+DDS_MAGIC = 0x20534444  # "DDS "
+
+
+@dataclass
+class DDS_PIXELFORMAT:
+    size: np.uint32 = np.uint32(0)  # 0
+    flags: np.uint32 = np.uint32(0)  # 4
+    fourCC: np.uint32 = np.uint32(0)  # 8
+    RGBBitCount: np.uint32 = np.uint32(0)  # C
+    RBitMask: np.uint32 = np.uint32(0)  # 10
+    GBitMask: np.uint32 = np.uint32(0)  # 14
+    BBitMask: np.uint32 = np.uint32(0)  # 18
+    ABitMask: np.uint32 = np.uint32(0)  # 1C
+
+
+DDS_FOURCC = 0x00000004  # DDPF_FOURCC
+DDS_RGB = 0x00000040  # DDPF_RGB
+DDS_RGBA = 0x00000041  # DDPF_RGB | DDPF_ALPHAPIXELS
+DDS_LUMINANCE = 0x00020000  # DDPF_LUMINANCE
+DDS_LUMINANCEA = 0x00020001  # DDPF_LUMINANCE | DDPF_ALPHAPIXELS
+DDS_ALPHAPIXELS = 0x00000001  # DDPF_ALPHAPIXELS
+DDS_ALPHA = 0x00000002  # DDPF_ALPHA
+DDS_PAL8 = 0x00000020  # DDPF_PALETTEINDEXED8
+DDS_PAL8A = 0x00000021  # DDPF_PALETTEINDEXED8 | DDPF_ALPHAPIXELS
+DDS_BUMPDUDV = 0x00080000  # DDPF_BUMPDUDV
+
+DDS_HEADER_FLAGS_TEXTURE = 0x00001007  # DDSD_CAPS | DDSD_HEIGHT | DDSD_WIDTH | DDSD_PIXELFORMAT
+DDS_HEADER_FLAGS_MIPMAP = 0x00020000  # DDSD_MIPMAPCOUNT
+DDS_HEADER_FLAGS_VOLUME = 0x00800000  # DDSD_DEPTH
+DDS_HEADER_FLAGS_PITCH = 0x00000008  # DDSD_PITCH
+DDS_HEADER_FLAGS_LINEARSIZE = 0x00080000  # DDSD_LINEARSIZE
+
+DDS_HEIGHT = 0x00000002  # DDSD_HEIGHT
+DDS_WIDTH = 0x00000004  # DDSD_WIDTH
+
+DDS_SURFACE_FLAGS_TEXTURE = 0x00001000  # DDSCAPS_TEXTURE
+DDS_SURFACE_FLAGS_MIPMAP = 0x00400008  # DDSCAPS_COMPLEX | DDSCAPS_MIPMAP
+DDS_SURFACE_FLAGS_CUBEMAP = 0x00000008  # DDSCAPS_COMPLEX
+
+DDS_CUBEMAP_POSITIVEX = 0x00000600  # DDSCAPS2_CUBEMAP | DDSCAPS2_CUBEMAP_POSITIVEX
+DDS_CUBEMAP_NEGATIVEX = 0x00000a00  # DDSCAPS2_CUBEMAP | DDSCAPS2_CUBEMAP_NEGATIVEX
+DDS_CUBEMAP_POSITIVEY = 0x00001200  # DDSCAPS2_CUBEMAP | DDSCAPS2_CUBEMAP_POSITIVEY
+DDS_CUBEMAP_NEGATIVEY = 0x00002200  # DDSCAPS2_CUBEMAP | DDSCAPS2_CUBEMAP_NEGATIVEY
+DDS_CUBEMAP_POSITIVEZ = 0x00004200  # DDSCAPS2_CUBEMAP | DDSCAPS2_CUBEMAP_POSITIVEZ
+DDS_CUBEMAP_NEGATIVEZ = 0x00008200  # DDSCAPS2_CUBEMAP | DDSCAPS2_CUBEMAP_NEGATIVEZ
+
+DDS_CUBEMAP_ALLFACES = (DDS_CUBEMAP_POSITIVEX | DDS_CUBEMAP_NEGATIVEX | \
+                        DDS_CUBEMAP_POSITIVEY | DDS_CUBEMAP_NEGATIVEY | \
+                        DDS_CUBEMAP_POSITIVEZ | DDS_CUBEMAP_NEGATIVEZ)
+
+DDS_CUBEMAP = 0x00000200  # DDSCAPS2_CUBEMAP
+
+DDS_FLAGS_VOLUME = 0x00200000  # DDSCAPS2_VOLUME
+
+
+# Subset here matches D3D10_RESOURCE_DIMENSION and D3D11_RESOURCE_DIMENSION
+class DDS_RESOURCE_DIMENSION(IntFlag):
+    DDS_DIMENSION_TEXTURE1D = 2
+    DDS_DIMENSION_TEXTURE2D = 3
+    DDS_DIMENSION_TEXTURE3D = 4
+
+    # Subset here matches D3D10_RESOURCE_MISC_FLAG and D3D11_RESOURCE_MISC_FLAG
+
+
+class DDS_RESOURCE_MISC_FLAG(IntFlag):
+    DDS_RESOURCE_MISC_TEXTURECUBE = 0x4
+
+
+class DDS_MISC_FLAGS2(IntFlag):
+    DDS_MISC_FLAGS2_ALPHA_MODE_MASK = 0x7
+
+
+class DDS_ALPHA_MODE(IntFlag):
+    DDS_ALPHA_MODE_UNKNOWN = 0
+    DDS_ALPHA_MODE_STRAIGHT = 1
+    DDS_ALPHA_MODE_PREMULTIPLIED = 2
+    DDS_ALPHA_MODE_OPAQUE = 3
+    DDS_ALPHA_MODE_CUSTOM = 4
+
+
+@dataclass
+class DDS_HEADER:
+    size: np.uint32 = np.uint32(0)
+    flags: np.uint32 = np.uint32(0)
+    height: np.uint32 = np.uint32(0)
+    width: np.uint32 = np.uint32(0)
+    pitchOrLinearSize: np.uint32 = np.uint32(0)
+    depth: np.uint32 = np.uint32(0)  # only if DDS_HEADER_FLAGS_VOLUME is set in flags
+    mipMapCount: np.uint32 = np.uint32(0)
+    reserved1: List[np.uint32] = field(default_factory=list)  # size 11, [11]
+    ddspf: DDS_PIXELFORMAT = None
+    caps: np.uint32 = np.uint32(0)
+    caps2: np.uint32 = np.uint32(0)
+    caps3: np.uint32 = np.uint32(0)
+    caps4: np.uint32 = np.uint32(0)
+    reserved2: np.uint32 = np.uint32(0)
+
+
+@dataclass
+class DDS_HEADER_DXT10:
+    dxgiFormat: np.uint32 = np.uint32(DXGI_FORMAT.DXGI_FORMAT_UNKNOWN)
+    resourceDimension: np.uint32 = np.uint32(int(D3D10_RESOURCE_DIMENSION.D3D10_RESOURCE_DIMENSION_TEXTURE2D))
+    miscFlag: np.uint32 = np.uint32(0)  # see D3D11_RESOURCE_MISC_FLAG
+    arraySize: np.uint32 = np.uint32(0)
+    miscFlags2: np.uint32 = np.uint32(0)  # see DDS_MISC_FLAGS2
+
+
+# static_assert(sizeof(DDS_HEADER) == 124, "DDS Header size mismatch");
+# static_assert(sizeof(DDS_HEADER_DXT10) == 20, "DDS DX10 Extended Header size mismatch");

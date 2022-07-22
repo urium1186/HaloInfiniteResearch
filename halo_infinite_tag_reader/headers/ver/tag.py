@@ -123,11 +123,16 @@ class TagStruct(StructLayout):
 
         main_key = self.UnknownProperty
         #name_key = self.f.name.split('\\')[-1].split('.')[-1]
-        name_key = f"{self.TargetIndex}<->{self.Type}"
+        #name_key = f"{self.TargetIndex}<->{self.Type}"
+        name_key = self.Type
         fillDebugDict(main_key, name_key, debug_TagStruct)
-        if self.Type ==0 :
-            if self.FieldBlock !=-1:
-                debug = True
+
+        if self.Type == 1 and self.UnknownProperty == 1:
+            k = f"{self.TargetIndex}<->{self.UnknownProperty}"
+            print(k)
+            if True or k == '1<->1':
+                print(self.f.name.split('\\')[-1])
+
 
 
 class DataReference(StructLayout):
