@@ -9,7 +9,9 @@ from exporters.base_exporter import BaseExporter
 from exporters.domain.domain_types import *
 from exporters.model.render_model_exporter import RenderModelExporter
 from exporters.to.fbx.export_to_fbx import FbxModel
+from exporters.to.fbx.import_from_fbx import FbxModelImporter
 from halo_infinite_tag_reader.readers.model import Model
+from halo_infinite_tag_reader.readers.render_model import RenderModel
 
 
 class ModelExporter(BaseExporter):
@@ -26,20 +28,25 @@ class ModelExporter(BaseExporter):
         if not self.model.is_loaded():
             self.model.load()
         if self.model.render_model is None:
-            return
+            temp_filename = f'{self.model.tag_parse.rootTagInst.childs[0]["render model"].path}.render_model'
+            self.model.render_model = RenderModel(temp_filename)
+            self.model.render_model.load()
+
         
         nodes_data = self.model.render_model.getBonesInfo()
         instance = self.model.tag_parse.rootTagInst.childs[0]['variants']
         if self.render_model_exporter is None:
             self.render_model_exporter = RenderModelExporter(self.model.render_model)
+
         for ch in instance.childs:
-            if not ch['name'].str_value == 'chief':
+            if False and not ch['name'].str_value == 'chief':
                 continue
             fbx_model = FbxModel(p_skl_data=nodes_data)
             
             mesh_list = self.render_model_exporter.getMeshListByVariant(ch)
 
             for mesh in mesh_list:
+                mesh.bones_data = nodes_data
                 fbx_model.add(mesh)
 
             temp_str = self.model.full_filepath.split('\\')[-1].replace('.', '_')
@@ -48,5 +55,6 @@ class ModelExporter(BaseExporter):
             save_path = f"{self.filepath_export}{sub_dir}{ch['name'].str_value}.fbx"
             fbx_model.export(save_path, True)
             print(f"Saved model to {save_path}")
+            break
 
         print('end Export')

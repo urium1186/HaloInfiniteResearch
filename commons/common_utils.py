@@ -1,5 +1,7 @@
 import os
 
+import numpy as np
+
 from commons.tag_group_extension_map import map_ext
 from configs.config import Config
 
@@ -59,3 +61,19 @@ def resolvePathFile(path, grouptag, inSubPath=''):
     else:
         return path_to_find
     return ''
+
+
+"""
+point = [x,y,z] and ref = [x,y,z] and the radius should be a float.
+"""
+
+
+def inSphere(point, ref, radius):
+    # Calculate the difference between the reference and measuring point
+    diff = np.subtract(point, ref)
+
+    # Calculate square length of vector (distance between ref and point)^2
+    dist = np.sum(np.power(diff, 2))
+
+    # If dist is less than radius^2, return True, else return False
+    return dist < radius ** 2

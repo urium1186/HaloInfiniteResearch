@@ -1,3 +1,5 @@
+import pathlib
+
 from commons.debug_utils import debug_hash
 from configs.config import Config
 from halo_infinite_tag_reader.tag_reader_utils import createDirAltNameID
@@ -7,6 +9,7 @@ import pymmh3 as mmh3
 
 def getMmr3HashIntFrom(str_in: str) -> str:
     return mmh3.hash(str_in, seed=0)
+
 
 def getMmr3HashFrom(str_in: str) -> str:
     integer_val = mmh3.hash(str_in, seed=0)
@@ -22,20 +25,21 @@ def getMmr3HashFrom(str_in: str) -> str:
 
 def getMmr3HashFromInt(integer: int) -> str:
     unsigned_integer = integer
-    if integer<0:
+    if integer < 0:
         unsigned_integer = integer + 2 ** 32
 
     bytes_val = unsigned_integer.to_bytes(4, 'little')
     return bytes_val.hex().upper()
 
 
-#print(getMmr3HashFrom('r_shoulderpad_legendary'))
-
-
+# print(getMmr3HashFrom('r_shoulderpad_legendary'))
 
 
 def getStrInMmr3Hash(p_hash) -> str:
     if Mmr3Hash_str.keys().__contains__(p_hash):
+        if not Mmr3Hash_str_iu.__contains__(p_hash):
+            print(f'{p_hash}:{Mmr3Hash_str[p_hash]}')
+            Mmr3Hash_str_iu.append(p_hash)
         return Mmr3Hash_str[p_hash]
     else:
         if debug_hash.keys().__contains__(p_hash):
@@ -43,6 +47,7 @@ def getStrInMmr3Hash(p_hash) -> str:
         else:
             debug_hash[p_hash] = 1
         return p_hash
+
 
 Mmr3Hash_str = {
     '0A5BDF43': 'torso_belt',
@@ -249,6 +254,37 @@ Mmr3Hash_str = {
     'D25A559B': '__default__',
 }
 
+Mmr3Hash_str_dupl = {}
+Mmr3Hash_str_iu = []
+
+
+def loadAlternativeHashNamesFiles():
+    path_to_hash = Config.ROOT_DIR + '\\halo_infinite_tag_reader\\hash\\'
+    for path in pathlib.Path(path_to_hash).rglob('*.txt'):
+        if not path.name.__contains__('in_use'):
+            continue
+        with open(path, 'rb') as f:
+            hash_lines = f.readlines()
+            for h_l in hash_lines:
+                values = str(h_l).replace('\\r\\n\'','').split(':')
+                h_i = getMmr3HashFrom(values[1])
+                if Mmr3Hash_str.keys().__contains__(h_i):
+                    if not Mmr3Hash_str[h_i] == values[1]:
+                        debug = Mmr3Hash_str[h_i]
+                        b = values[1]
+                        if Mmr3Hash_str[h_i].__contains__(f'-error-{h_i}'):
+                            Mmr3Hash_str[h_i] = values[1]
+                        else:
+                            Mmr3Hash_str_dupl[h_i] = values[1]
+                            if not Mmr3Hash_str_dupl[h_i] == values[1]:
+                                debug = 1
+                    #assert Mmr3Hash_str[h_i] == values[1], 'Los hash deberian dar el mismo valor'
+
+                else:
+                    Mmr3Hash_str[h_i] = values[1]
+
+
+loadAlternativeHashNamesFiles()
 map_alt_name_id = createDirAltNameID(Config.INFOS_PATH)
 
 debug = ""

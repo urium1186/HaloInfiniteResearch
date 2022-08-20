@@ -69,6 +69,7 @@ class ObjMesh:
         self.LOD_render_data: [ObjLOD] = []
         self.name = ""
         self.bones = []
+        self.bones_data = {}
         self.parts = []
         self.rigid_node_index = -1
         self.use_dual_quat = False
@@ -86,7 +87,7 @@ class ObjMesh:
 
 class ObjLOD:
 
-    def __init__(self):
+    def __init__(self, p_mesh):
 
         self.unique_pos_vert = {}
         self.parts: [ObjPart] = []
@@ -109,6 +110,7 @@ class ObjLOD:
         self.weights = []
         self.dual_quat_weight = []
         self.weight_pairs = []
+        self.mesh_container: ObjMesh = p_mesh
 
     def generateFaceIndex(self, index_buffer_type):
         self.faces = []
@@ -169,7 +171,10 @@ class ObjLOD:
             self.weight_pairs = []
 
             for i in range(self.weight_indices.__len__()):
-                self.weight_pairs.append(self._processWeightPairs_1(self.weight_indices[i], self.weights[i]))
+                dq_weight = []
+                if len(self.dual_quat_weight) != 0:
+                    dq_weight = self.dual_quat_weight[i]
+                self.weight_pairs.append(self._processWeightPairs_2(i, self.weight_indices[i], self.weights[i], dq_weight))
 
         return self.weight_pairs
 
@@ -183,15 +188,68 @@ class ObjLOD:
     def getUniqVertPos(self, v_i):
         return self.unique_pos_vert[self.vert_pos[v_i]][0]
 
-    def _processWeightPairs_1(self, weight_indices, p_weights):
+    def _processWeightPairs_1(self, vert_index, weight_indices, p_weights, p_dq_weights = []):
         w_pairs = {}
+        _weights = p_weights
+        bone_name_list = []
+        repetidos = {}
+        repetidos_no_z = {}
+
         for i, wi in enumerate(weight_indices):
+            bone_info_name = self.mesh_container.bones_data['skeletons'][wi]['name']
+            bone_name_list.append(bone_info_name)
             if w_pairs.keys().__contains__(wi):
+                if repetidos.keys().__contains__(weight_indices[i]):
+                    repetidos[weight_indices[i]] += 1
+                else:
+                    repetidos[weight_indices[i]] = 1
+
                 if w_pairs[wi] !=0:
-                   debug = 1
-                w_pairs[wi] = w_pairs[wi] + p_weights[i]
+                    if repetidos_no_z.keys().__contains__(weight_indices[i]):
+                        repetidos_no_z[weight_indices[i]] += 1
+                    else:
+                        repetidos_no_z[weight_indices[i]] = 1
+
+                    if len(p_dq_weights) == 0:
+                        debug = True
+                    # assert len(p_dq_weights) != 0, f'Solo en QA m_name {self.parts[0].material_path}'
+                    if weight_indices[i] != weight_indices[i-1]:
+                        #assert i==3, 'el ultimo siempre es el primero si se repite'
+                        if i!=3:
+                            debug = True
+                        if weight_indices[i]!=3 or weight_indices[i]!=73:
+                            debug = True
+                        assert weight_indices[i]==3 or weight_indices[i]==73, f'solo pasa con pelvis y lef hand {weight_indices}'
+                        #assert weight_indices[i]==weight_indices[0], 'el ultimo siempre es el primero si se repite'
+                        if weight_indices[i]!=weight_indices[0]:
+                            debug = True
+
+                    # assert weight_indices[i] != weight_indices[i-1] and i==3, 'si tiena mas de 1 hueso y se repite, debe estar al final'
+
+                w_pairs[wi] = w_pairs[wi] + _weights[i]
             else:
-                w_pairs[wi] = p_weights[i]
+                w_pairs[wi] = _weights[i]
+
+        if len(repetidos_no_z) != 0:
+            if len(repetidos_no_z) != 1:
+                assert False, f'Solo se debe repetir un hueso vertex {vert_index}, {weight_indices}, {bone_name_list} and w {p_weights}, {repetidos_no_z}'
+
+        if sum(p_weights[0:4]) != 0:
+            last_index_0 = -1
+            for i, wi in enumerate(weight_indices):
+                if p_weights[i]==0:
+                    last_index_0 = i
+
+            if last_index_0 != -1 and weight_indices[last_index_0]!=weight_indices[last_index_0-1]:
+                arra_sub_w = p_weights[last_index_0:4]
+                arra_sub_i = weight_indices[last_index_0:4]
+                debug = True
+
+
+        #assert repetidos_no_z.keys()[0]==3 or repetidos_no_z.keys()[0]==73, f'Solo se debe repetir un hueso vertex {vert_index}, {weight_indices}, {bone_name_list} and w {p_weights}'
+        if len(repetidos)!=0 and len(repetidos)!=1:
+            print(f' Se repetir mas de un hueso, vertex {vert_index}, {weight_indices}, {bone_name_list} and w {p_weights}')
+
 
         suma_to_n = sum(w_pairs.values())
 
@@ -208,20 +266,47 @@ class ObjLOD:
             if w_pairs.__len__() == 1:
                 for key in w_pairs.keys():
                     if w_pairs[key] != 1:
+                        sum_w = sum(p_weights[4:8])
+                        r_sum_w = round(sum_w, 1)
+                        """
+                        if not (w_pairs[key] == 0):
+                            print(f'si es un solo hueso y no es 1 deberia ser 0, bone name {bone_name_list[0]} '
+                                  f'vert_inex {vert_index}, {w_pairs[key]}, {weight_indices}, {p_weights}, r_sum_w {r_sum_w}')
+                        no es significativo solo 156 puede ser error de lectura o descomprension
+                        
+                        """
                         w_pairs[key] = 1
             else:
                 keys = list(w_pairs.keys())
-
+                sum_w = sum(p_weights[4:8])
                 for key in keys:
+                    bone_info = self.mesh_container.bones_data['skeletons'][key]
                     if w_pairs[key] == 0:
                         del w_pairs[key]
+                        if sum_w>1:
+                            debug = True
                     else:
                         w_pairs[key] = w_pairs[key]/ suma_to_n
 
+                if len(w_pairs) == 1 and w_pairs[list(w_pairs.keys())[0]]!=1:
+                    debug = 1
+
         return [list(w_pairs.keys()), list(w_pairs.values())]
 
+    def _processWeightPairs_2(self, vert_index, weight_indices, p_weights, p_dq_weights = []):
+        _weights = p_weights[4:8]
+        initial_w = 1
+        rest = initial_w
+        w_pairs = {}
+        for i,b_i in enumerate(weight_indices):
+            temp_rest = rest - _weights[i]*0.5
+            if temp_rest < 0:
+                w_pairs[b_i] = 1 - temp_rest
+                break
+            w_pairs[b_i] = temp_rest
+            rest = temp_rest
 
-
+        return [list(w_pairs.keys()), list(w_pairs.values())]
 
 
 
@@ -283,7 +368,7 @@ class ObjLOD:
     def getFaceMaterialIndex(self, indexFace):
         if len(self.parts) > 1:
             for p, part in enumerate(self.parts):
-                if int(part.index_start / 3) <= indexFace <= int(
+                if int(part.index_start / 3) <= indexFace < int(
                         (part.index_start + part.index_count) / 3):
                     return p
         else:
@@ -303,15 +388,16 @@ class ObjLOD:
         elif vertex_type_index == BufferVertType.normal:
             self.vert_norm = vertx_data
         elif vertex_type_index == BufferVertType.dual_quat_weight:
-            self.weights = vertx_data
+            self.dual_quat_weight = vertx_data
+            """
             if len(self.dual_quat_weight) !=0:
                 pares = []
                 for ti, tupla in enumerate(self.weights):
                     pares.append((tupla, self.dual_quat_weight[ti],[sum(tupla),sum(self.dual_quat_weight[ti])]))
                 debug = True
-
+            """
         elif vertex_type_index == BufferVertType.node_weights:
-            self.dual_quat_weight = vertx_data
+            self.weights = vertx_data
         elif vertex_type_index == BufferVertType.node_indices:
             self.weight_indices = vertx_data
 

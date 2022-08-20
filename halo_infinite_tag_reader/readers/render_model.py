@@ -1,3 +1,5 @@
+import json
+
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from halo_infinite_tag_reader.common_tag_types import TagInstance
 from halo_infinite_tag_reader.varnames import Mmr3Hash_str, getStrInMmr3Hash
@@ -14,7 +16,18 @@ class RenderModel(BaseTemplate):
 
     def toJson(self):
         super().toJson()
+
         self.json_base['skeletons'] = self.getBonesInfo()['skeletons']
+        self.json_base['name'] = self.tag_parse.rootTagInst.childs[0]['name'].toJson()
+        regions = []
+        regions_json = self.tag_parse.rootTagInst.childs[0]['regions'].toJson()
+        # regions_json = self.tag_parse.rootTagInst.toJson()
+        meshes = self.tag_parse.rootTagInst.childs[0]['meshes'].toJson()
+
+        self.json_base['regions'] = regions_json
+        self.json_base['meshes'] = meshes
+        self.json_str_base = json.dumps(self.json_base)
+        return self.json_base
 
     def getBonesInfo(self):
         bones = {'skeletons': []}

@@ -3,8 +3,13 @@ import math
 import fbx
 import sys
 
+import numpy
+from fbx import FbxDeformer, FbxSkin, FbxCluster
+
+from commons.common_utils import inSphere
 from exporters.domain.domain_types import *
 from configs.config import Config
+from exporters.to.fbx.import_from_fbx import FbxModelImporter
 from materials_utils import *
 
 import mapBones
@@ -39,7 +44,8 @@ class FbxModel:
     def fillBonesFromSkeletalInfo(self, data=None, numerate_bones=True):
         tempBones = []
         if data is None:
-            f = open('H:\GameDev\games-tool\  _!ExtraerModelsHalo\HaloInfinite\HaloInfiniteModelExtractor-main\skeletonInfoG.json')
+            f = open(
+                'H:\GameDev\games-tool\  _!ExtraerModelsHalo\HaloInfinite\HaloInfiniteModelExtractor-main\skeletonInfoG.json')
             data = json.load(f)
             # Closing file
             f.close()
@@ -53,8 +59,8 @@ class FbxModel:
         for i in range(len(skelInfoList)):
             skelInfo = skelInfoList[i]
             index_bone = ''
-            if numerate_bones:
-                index_bone = str(i) + '_'
+            if True:
+                index_bone = f'{i}.joint_skel:'
             nodeatt = fbx.FbxSkeleton.Create(self.scene, index_bone + skelInfo['name'])
             nodeatt.SetSkeletonType(fbx.FbxSkeleton.eLimbNode)
 
@@ -118,13 +124,13 @@ class FbxModel:
             # if submesh.vert_col:
             #     self.add_vert_colours(mesh, submesh, layer)
 
-            if len(lod.weight_indices)>0 or submesh.rigid_node_index !=-1:
+            if len(lod.weight_indices) > 0 or submesh.rigid_node_index != -1:
                 self.add_weights(mesh, lod, submesh)
 
             # b_unreal = False
             # if not b_unreal and not submesh.weight_pairs:
             # node.LclRotation.Set(fbx.FbxDouble3(0, 90, 0))
-
+            self.compareToDataInFbx(lod)
             self.scene.GetRootNode().AddChild(node)
 
     def export(self, save_path=None, ascii_format=False):
@@ -163,9 +169,8 @@ class FbxModel:
         lTransformMatrix.SetTRS(lT, lR, lS)
         return lTransformMatrix.MultNormalize(fbx.FbxVector4(x, y, z))
 
-    def create_mesh(self, lod_n: ObjLOD, index_buffer_type = IndexBufferType.triangle_list):
+    def create_mesh(self, lod_n: ObjLOD, index_buffer_type=IndexBufferType.triangle_list):
         mesh = fbx.FbxMesh.Create(self.scene, lod_n.name)
-
 
         lT = fbx.FbxVector4(0.0, 0.0, 0.0)
         # lR = fbx.FbxVector4(0.0, 90.0, 0.0)
@@ -205,7 +210,7 @@ class FbxModel:
 
         # if self.converter.ComputePolygonSmoothingFromEdgeSmoothing(mesh):
         #    print("Converter grpou")
-        #lod_group_attr = fbx.FbxLODGroup.Create(self.scene, "LODGroup1")
+        # lod_group_attr = fbx.FbxLODGroup.Create(self.scene, "LODGroup1")
         #
         # lod_group_attr.WorldSpace.Set(False)
         # lod_group_attr.MinMaxDistance.Set(False)
@@ -214,16 +219,15 @@ class FbxModel:
         # lod_group_attr.
         # lod_group_attr.
         node.SetNodeAttribute(mesh)
-        #node.SetNodeAttribute(lod_group_attr)
+        # node.SetNodeAttribute(lod_group_attr)
         # node.LclRotation.Set(fbx.FbxDouble3(0, 90, 0))
         return node, mesh
-
 
     def add_norm(self, mesh, submesh, layer):
         # Dunno where to put this, norm quat -> norm vec conversion
         # return
         if not self.export_normals:
-            return 
+            return
         normElement = fbx.FbxLayerElementNormal.Create(mesh, 'norm')
         normElement.SetMappingMode(fbx.FbxLayerElement.eByControlPoint)
         normElement.SetReferenceMode(fbx.FbxLayerElement.eDirect)
@@ -245,7 +249,7 @@ class FbxModel:
 
     def add_vert_colours(self, mesh, submesh, layer):
         if not self.export_colours:
-            return 
+            return
         vertColourElement = fbx.FbxLayerElementVertexColor.Create(mesh, f'colour')
         vertColourElement.SetMappingMode(fbx.FbxLayerElement.eByControlPoint)
         vertColourElement.SetReferenceMode(fbx.FbxLayerElement.eDirect)
@@ -285,6 +289,7 @@ class FbxModel:
         self.scene.GetRootNode().AddChild(self.bones[0])
 
     def getFbxCluster(self, bone_index):
+        bone_index = bone_index
         if self.bones_index_used.keys().__contains__(bone_index):
             return self.bones_index_used[bone_index]
         else:
@@ -344,18 +349,33 @@ class FbxModel:
                 self.getFbxCluster(bone_index).AddControlPointIndex(v_i, 1)
         else:
             skin.SetSkinningType(fbx.FbxSkin.eLinear)
-
             if obj_mesh.vert_type == VertType.skinned:
                 skin.SetSkinningType(fbx.FbxSkin.eLinear)
+                assert len(submesh.dual_quat_weight) == 0, 'Si es linear no deberia tener DQ'
             elif obj_mesh.vert_type == VertType.dq_skinned:
-                debug = 1
-                #skin.SetSkinningType(fbx.FbxSkin.eDualQuaternion)
+                if len(submesh.weights) == len(submesh.dual_quat_weight):
+                    skin.SetSkinningType(fbx.FbxSkin.eBlend)
+                elif len(submesh.weights) == 0:
+                    skin.SetSkinningType(fbx.FbxSkin.eDualQuaternion)
+                    assert False, 'Debug si es posible q sea solo dual_Q'
+                else:
+                    assert len(submesh.dual_quat_weight) != 0, 'Deberia tener pesos en dual_Q'
+            else:
+                raise NotImplementedError('Tipo de vertice no implementado')
+
             """"""
             submesh.generateWeightPairs()
             for i, w in enumerate(submesh.weight_pairs):
                 indices = w[0]
                 weights = w[1]
-                skin.AddControlPointIndex(i, 1)
+                if obj_mesh.vert_type == VertType.skinned:
+                    skin.AddControlPointIndex(i, 0)
+                else:
+                    assert submesh.dual_quat_weight[i][4] <= 1, 'quat pesso siempre menor q 1 float'
+                    skin.AddControlPointIndex(i, submesh.dual_quat_weight[i][4])
+
+                ctrl_ponit = mesh.GetControlPoints()[i]
+                check_w = []
                 for j in range(len(indices)):
                     if len(self.bones) < indices[j]:
                         print(
@@ -368,11 +388,219 @@ class FbxModel:
                             bone_index = index
                         if math.isnan(weights[j]):
                             debug = -1
-                        self.getFbxCluster(bone_index).AddControlPointIndex(i, weights[j])
+                        bone_cluster = self.getFbxCluster(bone_index)
+                        """
+                        lMatrix = fbx.FbxAMatrix()
+                        
+                        lMatrix = bone_cluster.GetTransformMatrix(lMatrix)
+                        print("        Transform Translation: ", lMatrix.GetT())
+                        print("        Transform Rotation: ", lMatrix.GetR())
+                        print("        Transform Scaling: ", lMatrix.GetS())
+
+                        lMatrix = bone_cluster.GetTransformLinkMatrix(lMatrix)
+                        
+                        print("        Transform Link Translation: ", lMatrix.GetT())
+                        print("        Transform Link Rotation: ", lMatrix.GetR())
+                        print("        Transform Link Scaling: ", lMatrix.GetS())
+                        
+                        lMatrix = bone_cluster.GetTransformLinkMatrix(lMatrix)
+                        bone_transl = lMatrix.GetT()
+                        a = numpy.array((ctrl_ponit[0], ctrl_ponit[1], ctrl_ponit[2]))
+                        b = numpy.array((bone_transl[0], bone_transl[1], bone_transl[2]))
+                        dist = numpy.linalg.norm(a - b)
+                        check_w.append((bone_index, weights[j], dist))
+                        """
+                        bone_cluster.AddControlPointIndex(i, weights[j])
                     except IndexError:
                         pass
+                if False and len(check_w) > 1:
+                    sorted_by_dist = sorted(check_w, key=lambda tup: tup[2])
+                    sorted_by_W = sorted(check_w, key=lambda tup: tup[1])
+                    sorted_by_W_rev = sorted(check_w, key=lambda tup: tup[1], reverse=True)
+                    temp_l = sorted_by_dist[-1][2] - sorted_by_dist[0][2]
+                    if temp_l != 0:
+                        for pos_w in enumerate(sorted_by_dist, start=1):
+                            temp_l
+                    if sorted_by_dist != sorted_by_W_rev:
+                        debug = True
+                        # for v in check_w:
+                        #     print(f'w {v[1]} dist {v[2]}')
 
         for c_k in self.bones_index_used:
             skin.AddCluster(self.bones_index_used[c_k])
 
         mesh.AddDeformer(skin)
+
+    def _getMeshData(self, mesh):
+        lVertexCount = lControlPointsCount = mesh.GetControlPointsCount()
+        lControlPoints = mesh.GetControlPoints()
+        map_ref_vertex_key_pos = {}
+
+        for i in range(lControlPointsCount):
+            print("        Control Point ", i)
+            print("            Coordinates: ", lControlPoints[i])
+            coordenate = f"{lControlPoints[i][0]}_{lControlPoints[i][1]}_{lControlPoints[i][2]}"  # _{lControlPoints_iu[i][3]}
+            if map_ref_vertex_key_pos.keys().__contains__(coordenate):
+                map_ref_vertex_key_pos[coordenate].append(i)
+            else:
+                map_ref_vertex_key_pos[coordenate] = [i]
+
+        dict_skin_w_info = {}
+
+        lSkinCount = mesh.GetDeformerCount(FbxDeformer.eSkin)
+        bones_name_pos = {}
+        lSkinDeformer: FbxSkin = None
+        for lSkinIndex in range(lSkinCount):
+            lSkinDeformer = mesh.GetDeformer(lSkinIndex, FbxDeformer.eSkin)
+            lClusterCount = lSkinDeformer.GetClusterCount()
+            for lClusterIndex in range(lClusterCount):
+                lCluster: FbxCluster = lSkinDeformer.GetCluster(lClusterIndex)
+                link = lCluster.GetLink()
+                link_name = str(link.GetName())
+                if link_name.__contains__(':'):
+                    link_name = link_name.split(':')[-1]
+
+                lMatrix = fbx.FbxAMatrix()
+                lMatrix = lCluster.GetTransformLinkMatrix(lMatrix)
+                bone_transl = lMatrix.GetT()
+                bones_name_pos[link_name] = (lMatrix.GetT(), lMatrix.GetR(), lMatrix.GetS())
+                print(f'{link_name}_{(bone_transl[0], bone_transl[1], bone_transl[2])}')
+
+                lVertexIndexCount = lCluster.GetControlPointIndicesCount()
+                for k in range(lVertexIndexCount):
+                    lIndex = lCluster.GetControlPointIndices()[k]
+                    # Sometimes, the mesh can have less points than at the time of the skinning
+                    # because a smooth operator was active when skinning but has been deactivated during export.
+                    if (lIndex >= lVertexCount):
+                        continue
+                    lWeight = lCluster.GetControlPointWeights()[k]
+                    debug = True
+                    if dict_skin_w_info.keys().__contains__(lIndex):
+                        dict_skin_w_info[lIndex][link_name] = lWeight
+                    else:
+                        dict_skin_w_info[lIndex] = {link_name: lWeight}
+
+        return map_ref_vertex_key_pos, lControlPoints, dict_skin_w_info, bones_name_pos, lSkinDeformer
+
+    def compareToDataInFbx(self, lod: ObjLOD):
+        importer_model = FbxModelImporter(Config.ROOT_DIR + "\\exporters\\ref\\lef_glove_ref.fbx")
+        importer_model.importModel()
+        mesh_ref = importer_model.getMesh()[0]
+        mesh_ref_data = self._getMeshData(mesh_ref)
+        # importer_model_iu = FbxModelImporter(Config.MODEL_EXPORT_PATH + "\\exporters\\ref\\lef_shoulder_iu.fbx")
+        # importer_model_iu.importModel()
+        # mesh_iu = importer_model_iu.getMesh()[0]
+        # mesh_iu_data = self._getMeshData(mesh_iu)
+
+        geo_count = self.scene.GetGeometryCount()
+        mesh_array = []
+        for i in range(geo_count):
+            mesh = self.scene.GetGeometry(i)
+            mesh_array.append(mesh)
+        mesh_in_use = mesh_array[0]
+        mesh_in_use_data = self._getMeshData(mesh_in_use)
+
+        map_ref_vertex_key_pos = mesh_ref_data[0]
+        map_ref_vertex_key_pos_iu = mesh_in_use_data[0]
+
+        lControlPoints = mesh_ref_data[1]
+        lControlPoints_iu = mesh_in_use_data[1]
+
+        dict_skin_w_info = mesh_ref_data[2]
+        dict_skin_w_info_iu = mesh_in_use_data[2]
+
+        bones_name_pos = mesh_ref_data[3]
+        bones_name_pos_iu = mesh_in_use_data[3]
+
+        count = 0
+        # 248
+        vert_pos_pair = {}
+        w_maps = {}
+        for key in map_ref_vertex_key_pos.keys():
+            if not map_ref_vertex_key_pos_iu.__contains__(key):
+                for key_iu in map_ref_vertex_key_pos_iu.keys():
+                    ref = [lControlPoints[map_ref_vertex_key_pos[key][0]][0],
+                           lControlPoints[map_ref_vertex_key_pos[key][0]][1],
+                           lControlPoints[map_ref_vertex_key_pos[key][0]][2]]
+                    ref_iu = [lControlPoints_iu[map_ref_vertex_key_pos_iu[key_iu][0]][0],
+                              lControlPoints_iu[map_ref_vertex_key_pos_iu[key_iu][0]][1],
+                              lControlPoints_iu[map_ref_vertex_key_pos_iu[key_iu][0]][2]]
+                    if inSphere(ref, ref_iu, 0.2):
+                        count += 1
+                        if vert_pos_pair.keys().__contains__(key):
+                            debug = True
+                            if vert_pos_pair.values().__contains__(key_iu):
+                                debug = True
+                        else:
+                            if list(vert_pos_pair.values()).__contains__(key_iu):
+                                debug = True
+                            vert_pos_pair[key] = key_iu
+
+                        break
+
+                debug = True
+            else:
+                count += 1
+
+        contar_casos = {'caso len 1':0, 'caso len 2 inv':0, 'caso len 2 same':0, 'others': 0}
+        for key in vert_pos_pair.keys():
+            bone_name_list = []
+            bone_w_map = dict_skin_w_info[map_ref_vertex_key_pos[key][0]]
+            v_i = map_ref_vertex_key_pos_iu[vert_pos_pair[key]][0]
+
+            wi_list = lod.weight_indices[v_i]
+            b_weights = lod.weights[v_i]
+            wi_w={}
+            for i in map_ref_vertex_key_pos_iu[vert_pos_pair[key]]:
+                for b_name in bone_w_map:
+                    bone_index = self.getBoneIndexByName(lod, b_name)
+                    bone_cluster = self.getFbxCluster(bone_index)
+                    bone_cluster.AddControlPointIndex(i, bone_w_map[b_name])
+
+            for i, wi in enumerate(wi_list):
+                bone_info_name = lod.mesh_container.bones_data['skeletons'][wi]['name']
+                bone_name_list.append(bone_info_name)
+                if wi_w.__contains__(bone_info_name):
+                    debug = True
+                ws = b_weights[4+i]
+                wi_w[bone_info_name] = ws
+                if w_maps.keys().__contains__(ws):
+                    w_maps[ws] += 1
+                else:
+                    w_maps[ws] = 1
+
+            contained = True
+            for b_n in bone_w_map.keys():
+                if not bone_name_list.__contains__(b_n):
+                    contained = False
+                    break
+
+            if len(bone_w_map.keys()) == len(wi_w.keys()) and len(wi_w.keys())!=1:
+                l1 = list(bone_w_map.keys())
+                l2 = list(wi_w.keys())
+                if l1[0] == l2[0] and l1[1] == l2[1]:
+                    razon1 = bone_w_map[l1[0]]/bone_w_map[l1[1]]
+                    razon2 = wi_w[l2[0]]/wi_w[l2[1]]
+                    debug = True
+                    contar_casos['caso len 2 same']+=1
+                elif l1[0] == l2[1] and l1[1] == l2[0]:
+                    contar_casos['caso len 2 inv'] += 1
+                else:
+                    contar_casos['others'] += 1
+            else:
+                contar_casos['caso len 1'] += 1
+
+            if contained:
+                debug = True
+
+        for c_k in self.bones_index_used:
+            mesh_in_use_data[4].AddCluster(self.bones_index_used[c_k])
+            debug = True
+        print('Fin compa')
+
+    def getBoneIndexByName(self, lod: ObjLOD, name):
+        for i, bone in enumerate(lod.mesh_container.bones_data['skeletons']):
+            if bone['name'] == name:
+                return i
+
+

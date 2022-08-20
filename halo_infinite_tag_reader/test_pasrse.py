@@ -366,10 +366,13 @@ for path in pathlib.Path(Config.SPARTAN_STYLE_PATH).rglob('*spartan_style{ct}.ma
                 coat_file_name = map_alt_name_id[coat_file_name]
             else:
                 depo = 1
-            saveTo = Config.EXPORT_JSON + coat_file_name + '.json'
+            saveTo = Config.EXPORT_JSON+'coating\\' + coat_file_name + '.json'
             with open(saveTo, 'wb') as fw:
                 json.dump(parse_mwsy.json_base, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
                 fw.close()
 
         f.close()
 print("parse_mwsy")
+
+if __name__ == "__main__":
+    print('comienzo')

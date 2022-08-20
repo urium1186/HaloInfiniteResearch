@@ -1,3 +1,5 @@
+import codecs
+import json
 import os
 import shutil
 
@@ -7,6 +9,8 @@ from commons.debug_utils import normal_artifact_files, Intersection_meth3, Diffe
 from exporters.model.bitmap_exporter import BitmapExporter
 from exporters.model.model_exporter import ModelExporter
 from configs.config import Config
+from exporters.model.render_model_exporter import RenderModelExporter
+from exporters.to.fbx.import_from_fbx import  FbxModelImporter
 from exporters.to.image.export_to_img_pillow import ExportImgPillowImpl
 
 from halo_infinite_tag_reader.readers.bitmap import Bitmap
@@ -36,14 +40,33 @@ with open(filename, 'rb') as f:
     f.close()
 
 """
+
+
+
+
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
 parse_render_model = RenderModel(filename)
 parse_render_model.load()
+"""
+parse_render_model.toJson()
+saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.json'
+with open(saveTo, 'wb') as fw:
+    json.dump(parse_render_model.json_base, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
+    fw.close()
+"""
+#exporter = RenderModelExporter(parse_render_model)
+#exporter.export()
 
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.model'
 parse_model = Model(filename, parse_render_model)
 parse_model.load()
-
+"""
+parse_model.toJson()
+saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_model.json'
+with open(saveTo, 'wb') as fw:
+    json.dump(parse_model.json_base, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
+    fw.close()
+"""
 exporter = ModelExporter(parse_model)
 exporter.export()
 print(vertx_data_arrays)

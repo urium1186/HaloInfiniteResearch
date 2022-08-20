@@ -1,3 +1,5 @@
+import json
+
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from halo_infinite_tag_reader.common_tag_types import TagInstance
 from configs.config import Config
@@ -14,6 +16,13 @@ class Model(BaseTemplate):
 
     def load(self):
         super().load()
+
+    def toJson(self):
+        super().toJson()
+        json_obj = self.tag_parse.rootTagInst.childs[0]['variants'].toJson()
+        self.json_base['variants'] = json_obj
+        self.json_str_base = json.dumps(self.json_base)
+        return self.json_base
 
     def loadRenderModel(self):
         filename = self.tag_parse.rootTagInst.childs[0]['render model'].path + '.render_model'
