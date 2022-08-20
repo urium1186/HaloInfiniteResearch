@@ -1,4 +1,5 @@
 import io
+import json
 import math
 import struct
 
@@ -6,7 +7,7 @@ from typing.io import BinaryIO
 
 from halo_infinite_tag_reader.headers.tagstructtable import TagStruct
 from halo_infinite_tag_reader.taglayouts import TagLayouts
-from halo_infinite_tag_reader.varnames import Mmr3Hash_str, getStrInMmr3Hash
+from halo_infinite_tag_reader.varnames import Mmr3Hash_str, getStrInMmr3Hash, getMmr3HashFromInt
 
 
 def getStringsByRef(fh, ref_id, ref_id_sub, ref_id_center):
@@ -67,6 +68,19 @@ class TagInstance:
         self.inst_address = f.tell()
         self.inst_parent_offset = self.inst_address - self.addressStart
 
+    def toJson(self):
+        dict = {'extra_data': self.extra_data,
+                'items': []}
+        for ch in self.childs:
+            temp_dict = {}
+            if ch.__class__ == {}.__class__:
+                for key in ch.keys():
+                    temp_dict[key] = ch[key].toJson()
+                dict['items'].append(temp_dict)
+            else:
+                dict['items'].append(ch.toJson())
+        return dict
+
 
 class DebugDataBlock(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -78,6 +92,12 @@ class DebugDataBlock(TagInstance):
         super().readIn(f, header)
         self.comment = self.tagDef.N
 
+    def toJson(self):
+        json_obj = super(DebugDataBlock, self).toJson()
+        json_obj['comment'] = self.comment
+        return json_obj
+
+
 
 class Comment(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -88,6 +108,9 @@ class Comment(TagInstance):
     def readIn(self, f: BinaryIO, header=None):
         super().readIn(f, header)
         self.comment = self.tagDef.N
+
+    def toJson(self):
+        return self.comment
 
 
 class ArrayFixLen(TagInstance):
@@ -105,6 +128,11 @@ class ArrayFixLen(TagInstance):
             temp.readIn(f,header)
             self.childs.append(temp)
 
+    def toJson(self):
+        json_obj = super(ArrayFixLen, self).toJson()
+        json_obj['comment'] = self.comment
+        return json_obj
+
 
 class GenericBlock(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -117,6 +145,12 @@ class GenericBlock(TagInstance):
         super().readIn(f, header)
         self.comment = self.tagDef.N
         self.binary_data = f.read(self.tagDef.S)
+
+    def toJson(self):
+        json_obj = super(GenericBlock, self).toJson()
+        json_obj['comment'] = self.comment
+        json_obj['binary_data'] = self.binary_data.hex()
+        return json_obj
 
 
 class TagStructData(TagInstance):
@@ -239,6 +273,12 @@ class EnumGroup(TagInstance):
         else:
             print("the enum below is broken :(")
 
+    def toJson(self):
+        json_obj = super(EnumGroup, self).toJson()
+        json_obj['selected_index'] = self.selected_index
+        json_obj['selected'] = self.selected
+        json_obj['options'] = self.options
+        return json_obj
 
 class FourByte(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -250,6 +290,10 @@ class FourByte(TagInstance):
         super().readIn(f, header)
         f.seek(self.addressStart + self.offset)
         self.value = struct.unpack('i', f.read(4))[0]
+
+    def toJson(self):
+        json_obj = super(FourByte, self).toJson()
+        return self.value
 
 
 class TwoByte(TagInstance):
@@ -263,6 +307,10 @@ class TwoByte(TagInstance):
         f.seek(self.addressStart + self.offset)
         self.value = struct.unpack('h', f.read(2))[0]
 
+    def toJson(self):
+        json_obj = super(TwoByte, self).toJson()
+        return self.value
+
 
 class Byte(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -275,6 +323,10 @@ class Byte(TagInstance):
         f.seek(self.addressStart + self.offset)
         self.value = struct.unpack('b', f.read(1))[0]
 
+    def toJson(self):
+        json_obj = super(Byte, self).toJson()
+        return self.value
+
 
 class Float(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -286,6 +338,10 @@ class Float(TagInstance):
         super().readIn(f, header)
         f.seek(self.addressStart + self.offset)
         self.value = round(struct.unpack('f', f.read(4))[0], 2)
+
+    def toJson(self):
+        json_obj = super(Float, self).toJson()
+        return self.value
 
 
 class TagRef(TagInstance):
@@ -310,6 +366,10 @@ class TagRef(TagInstance):
         self.local_handle = f.read(4).hex().upper()
         self.path = getStringsByRef(header, self.ref_id, self.ref_id_sub, self.ref_id_center)
 
+    def toJson(self):
+        json_obj = super(TagRef, self).toJson()
+        return self.path
+
 
 class Pointer(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -321,6 +381,10 @@ class Pointer(TagInstance):
         super().readIn(f, header)
         f.seek(self.addressStart + self.offset)
         self.value = struct.unpack('q', f.read(8))[0]
+
+    def toJson(self):
+        json_obj = super(Pointer, self).toJson()
+        return self.value
 
 
 class ResourceHandle(TagInstance):
@@ -388,6 +452,10 @@ class String(TagInstance):
         f.seek(self.addressStart + self.offset)
         self.string = readStringInPlace(f, self.addressStart + self.offset)
         # Revisar ojo puede estar mal
+
+    def toJson(self):
+        json_obj = super(String, self).toJson()
+        return self.string
 
 
 class Flags(TagInstance):
@@ -521,12 +589,24 @@ class Mmr3Hash(TagInstance):
         super().__init__(tag, addressStart, offset)
         self.value = None
         self.str_value = ''
+        self.int_value = ''
 
     def readIn(self, f: BinaryIO, header=None):
         super().readIn(f, header)
         f.seek(self.addressStart + self.offset)
-        self.value = f.read(4).hex().upper()
+        bin_data = f.read(4)
+        self.value = bin_data.hex().upper()
         self.str_value = getStrInMmr3Hash(self.value)
+        self.int_value = int.from_bytes(bin_data,byteorder="little", signed=True)
+        assert self.value == getMmr3HashFromInt(self.int_value), "Han de ser iguales"
+
+    def toJson(self):
+        super(Mmr3Hash, self).toJson()
+        return {
+            'value': self.value,
+            'str_value': self.str_value,
+            'int_value': self.int_value
+            }
 
 
 class RGB(TagInstance):
@@ -542,6 +622,14 @@ class RGB(TagInstance):
         self.r_value = round(struct.unpack('f', f.read(4))[0], 4)
         self.g_value = round(struct.unpack('f', f.read(4))[0], 4)
         self.b_value = round(struct.unpack('f', f.read(4))[0], 4)
+
+    def toJson(self):
+        json_obj = super(RGB, self).toJson()
+        return {
+            'r_value': self.r_value,
+            'g_value': self.g_value,
+            'b_value': self.b_value,
+        }
 
 
 class ARGB(TagInstance):
@@ -560,6 +648,14 @@ class ARGB(TagInstance):
         self.g_value = round(struct.unpack('f', f.read(4))[0], 4)
         self.b_value = round(struct.unpack('f', f.read(4))[0], 4)
 
+    def toJson(self):
+        json_obj = super(ARGB, self).toJson()
+        return {
+            'a_value': self.a_value,
+            'r_value': self.r_value,
+            'g_value': self.g_value,
+            'b_value': self.b_value,
+        }
 
 class BoundsFloat(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -572,6 +668,13 @@ class BoundsFloat(TagInstance):
         f.seek(self.addressStart + self.offset)
         self.min = round(struct.unpack('f', f.read(4))[0], 4)
         self.max = round(struct.unpack('f', f.read(4))[0], 4)
+
+    def toJson(self):
+        json_obj = super(BoundsFloat, self).toJson()
+        return {
+            'min': self.min,
+            'max': self.max,
+        }
 
 
 class Bounds2Byte(TagInstance):
@@ -588,6 +691,13 @@ class Bounds2Byte(TagInstance):
         # Reviar pq en el C leen float 4byte
         debug = "debug"
 
+    def toJson(self):
+        json_obj = super(Bounds2Byte, self).toJson()
+        return {
+            'min': self.min,
+            'max': self.max,
+        }
+
 
 class Point2D_Float(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -600,6 +710,13 @@ class Point2D_Float(TagInstance):
         f.seek(self.addressStart + self.offset)
         self.x = round(struct.unpack('f', f.read(4))[0], 4)
         self.y = round(struct.unpack('f', f.read(4))[0], 4)
+
+    def toJson(self):
+        json_obj = super(Point2D_Float, self).toJson()
+        return {
+            'x': self.x,
+            'y': self.y,
+        }
 
 
 class Point2D_2Byte(TagInstance):
@@ -616,6 +733,12 @@ class Point2D_2Byte(TagInstance):
         # Reviar pq en el C leen float 4byte
         debug = "debug"
 
+    def toJson(self):
+        json_obj = super(Point2D_2Byte, self).toJson()
+        return {
+            'x': self.x,
+            'y': self.y,
+        }
 
 class Point3D(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -630,6 +753,14 @@ class Point3D(TagInstance):
         self.x = round(struct.unpack('f', f.read(4))[0], 4)
         self.y = round(struct.unpack('f', f.read(4))[0], 4)
         self.z = round(struct.unpack('f', f.read(4))[0], 4)
+
+    def toJson(self):
+        json_obj = super(Point3D, self).toJson()
+        return {
+            'x': self.x,
+            'y': self.y,
+            'z': self.z,
+        }
 
 
 class Quaternion(TagInstance):
@@ -648,6 +779,15 @@ class Quaternion(TagInstance):
         self.z = round(struct.unpack('f', f.read(4))[0], 4)
         self.w = round(struct.unpack('f', f.read(4))[0], 4)
 
+    def toJson(self):
+        json_obj = super(Quaternion, self).toJson()
+        return {
+            'x': self.x,
+            'y': self.y,
+            'z': self.z,
+            'w': self.w,
+        }
+
 
 class Plane3D(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -664,6 +804,15 @@ class Plane3D(TagInstance):
         self.y = round(struct.unpack('f', f.read(4))[0], 4)
         self.z = round(struct.unpack('f', f.read(4))[0], 4)
         self.point = round(struct.unpack('f', f.read(4))[0], 4)
+
+    def toJson(self):
+        json_obj = super(Plane3D, self).toJson()
+        return {
+            'x': self.x,
+            'y': self.y,
+            'z': self.z,
+            'point': self.point,
+        }
 
 
 def tagInstanceFactoryCreate(tag, addressStart, offset):
