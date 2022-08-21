@@ -38,7 +38,7 @@ def getMmr3HashFromInt(integer: int) -> str:
 def getStrInMmr3Hash(p_hash) -> str:
     if Mmr3Hash_str.keys().__contains__(p_hash):
         if not Mmr3Hash_str_iu.__contains__(p_hash):
-            print(f'{p_hash}:{Mmr3Hash_str[p_hash]}')
+            # print(f'{p_hash}:{Mmr3Hash_str[p_hash]}')
             Mmr3Hash_str_iu.append(p_hash)
         return Mmr3Hash_str[p_hash]
     else:
@@ -259,6 +259,7 @@ Mmr3Hash_str_iu = []
 
 
 def loadAlternativeHashNamesFiles():
+    return
     path_to_hash = Config.ROOT_DIR + '\\halo_infinite_tag_reader\\hash\\'
     for path in pathlib.Path(path_to_hash).rglob('*.txt'):
         if not path.name.__contains__('in_use'):

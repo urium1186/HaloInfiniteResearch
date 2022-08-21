@@ -130,7 +130,7 @@ class FbxModel:
             # b_unreal = False
             # if not b_unreal and not submesh.weight_pairs:
             # node.LclRotation.Set(fbx.FbxDouble3(0, 90, 0))
-            self.compareToDataInFbx(lod)
+            #self.compareToDataInFbx(lod)
             self.scene.GetRootNode().AddChild(node)
 
     def export(self, save_path=None, ascii_format=False):

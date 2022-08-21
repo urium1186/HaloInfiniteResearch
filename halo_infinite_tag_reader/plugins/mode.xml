@@ -1011,6 +1011,11 @@
                         </_40>
                     </_40>
                     <_40 v="array_4">
+                        <_5 v="temp_1_short" />
+                        <_6 v="temp_int_1" />
+                        <_5 v="temp_2_short" />
+                        <_5 v="temp_3_short" />
+                        <_5 v="temp_4_short" />
                     </_40>
                     <_40 v="array_5">
                         <_5 v="temp 1 short" />
