@@ -1,7 +1,9 @@
 import codecs
+from datetime import datetime
 import json
 import os
 import shutil
+import time
 
 import configs
 from commons.debug_utils import normal_artifact_files, Intersection_meth3, Difference_meth3, artifact_on_all_comp, \
@@ -10,13 +12,25 @@ from exporters.model.bitmap_exporter import BitmapExporter
 from exporters.model.model_exporter import ModelExporter
 from configs.config import Config
 from exporters.model.render_model_exporter import RenderModelExporter
-from exporters.to.fbx.import_from_fbx import  FbxModelImporter
+from exporters.to.fbx.import_from_fbx import FbxModelImporter
 from exporters.to.image.export_to_img_pillow import ExportImgPillowImpl
 
 from halo_infinite_tag_reader.readers.bitmap import Bitmap
 from halo_infinite_tag_reader.readers.model import Model
 from halo_infinite_tag_reader.readers.render_model import RenderModel
 
+print(time.time())
+now = datetime.now()
+
+current_time = now.strftime("%H:%M:%S")
+print("Current Time =", current_time)
+
+filename = '__chore\\gen__\\objects\\characters\\jacob_keyes\\5c7777b9614e46b3{g}.model'
+parse_model = Model(filename)
+parse_model.load()
+
+exporter = ModelExporter(parse_model)
+exporter.export()
 """
 filename = 'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'
 parse_string_list = StringList(filename)
@@ -39,56 +53,55 @@ with open(filename, 'rb') as f:
     full_header.readIn(f)
     f.close()
 
-"""
-
-
 
 
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
 parse_render_model = RenderModel(filename)
 parse_render_model.load()
-"""
+
 parse_render_model.toJson()
 saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.json'
 with open(saveTo, 'wb') as fw:
     json.dump(parse_render_model.json_base, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
     fw.close()
-"""
-#exporter = RenderModelExporter(parse_render_model)
-#exporter.export()
+
+exporter = RenderModelExporter(parse_render_model)
+# exporter.export()
+# exporter.debugAnalyzeMeshInfo()
 
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.model'
 parse_model = Model(filename, parse_render_model)
 parse_model.load()
-"""
+
 parse_model.toJson()
 saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_model.json'
 with open(saveTo, 'wb') as fw:
     json.dump(parse_model.json_base, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
     fw.close()
-"""
+
 exporter = ModelExporter(parse_model)
 exporter.export()
 print(vertx_data_arrays)
 debug = True
-"""
+
 
 filename = 'objects\\characters\\spartans\\spartans.render_model'
 parse_render_model = RenderModel(filename)
 parse_render_model.load()
 
+exporter = RenderModelExporter(parse_render_model)
+exporter.export_by_regions = True
+exporter.debugAnalyzeMeshInfo()
+#exporter.export()
+
 
 filename = 'objects\\characters\\spartans\\spartans.model'
 parse_model = Model(filename, parse_render_model)
 parse_model.load()
-exporter = RenderModelExporter(parse_render_model)
-exporter.export_by_regions = True
-exporter.export()
 
 exporter = ModelExporter(parse_model)
 exporter.export()
-"""
-"""
+
 filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.model'
 filename = '__chore\\gen__\\objects\\characters\\spartan_eklund\\cf5c5fd3383d7f8c{g}.model'
 #filename = '__chore\\gen__\\objects\\characters\\marine\\9b04ff325d614e30{g}.model'
@@ -105,10 +118,10 @@ exporter = ModelExporter(parse_model)
 exporter.export()
 # parse_mat.toJson
 """
-#if __name__ == "__main__":
+# if __name__ == "__main__":
 
-#exporter = RenderModelExporter(parse_render_model)
-#exporter.export()
+# exporter = RenderModelExporter(parse_render_model)
+# exporter.export()
 # parse_mat.toJson()
 """
 filename = '__chore\\pc__\\materials\\generic\\base\\human\\fabric\\oriental_pattern_02\\hum_base_fabric_oriental_pattern_02_normal{pc}.bitmap'
@@ -145,7 +158,6 @@ exporter = BitmapExporter(parse_bitm)
 exporter.export()
 
 """
-
 
 """
 with open('../normals_posible_error_unpacked_nocompresed.txt') as f:
@@ -203,5 +215,8 @@ difference_3 = Difference_meth3(difference_2, difference)
 """
 print(artifact_on_all_comp)
 
+print(time.time())
+now = datetime.now()
 
-
+current_time = now.strftime("%H:%M:%S")
+print("Current Time =", current_time)
