@@ -24,14 +24,21 @@ now = datetime.now()
 
 current_time = now.strftime("%H:%M:%S")
 print("Current Time =", current_time)
-
-filename = '__chore\\gen__\\objects\\characters\\jacob_keyes\\5c7777b9614e46b3{g}.model'
+"""
+#filename = '__chore\\gen__\\objects\\characters\\jacob_keyes\\5c7777b9614e46b3{g}.model'
+#filename = '__chore\\gen__\\objects\\characters\\inquisitor\\889eab6be2c9348f{g}.model'
+#filename = '__chore\\gen__\\objects\\characters\\halsey\\d80c3413b6b7139d{g}.model'
+#filename = '__chore\\gen__\\objects\\characters\\cortana\\4bb7743c2a8ef0a9{g}.model'
+#filename = '__chore\\gen__\\objects\\characters\\civilian_mother\\66034be81ab43bdc{g}.model'
+#filename = '__chore\\gen__\\objects\\characters\\brute_atriox\\dc3fefb59fe7509b{g}.model'
+filename = '__chore\\gen__\\objects\\characters\\brute\\d84ff668256ab6e8{g}.model'
+#filename = '__chore\\gen__\\objects\\characters\\pilot\\810314e64aa263ae{g}.model'
 parse_model = Model(filename)
 parse_model.load()
 
 exporter = ModelExporter(parse_model)
 exporter.export()
-"""
+
 filename = 'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'
 parse_string_list = StringList(filename)
 parse_string_list.load()
@@ -54,11 +61,11 @@ with open(filename, 'rb') as f:
     f.close()
 
 
-
+"""
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
 parse_render_model = RenderModel(filename)
 parse_render_model.load()
-
+"""
 parse_render_model.toJson()
 saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.json'
 with open(saveTo, 'wb') as fw:
@@ -66,21 +73,25 @@ with open(saveTo, 'wb') as fw:
     fw.close()
 
 exporter = RenderModelExporter(parse_render_model)
-# exporter.export()
-# exporter.debugAnalyzeMeshInfo()
 
+exporter.export()
+"""
+"""
+# exporter.debugAnalyzeMeshInfo()
+"""
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.model'
 parse_model = Model(filename, parse_render_model)
 parse_model.load()
-
+"""
 parse_model.toJson()
 saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_model.json'
 with open(saveTo, 'wb') as fw:
     json.dump(parse_model.json_base, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
     fw.close()
-
+"""
 exporter = ModelExporter(parse_model)
 exporter.export()
+"""
 print(vertx_data_arrays)
 debug = True
 

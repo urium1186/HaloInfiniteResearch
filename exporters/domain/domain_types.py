@@ -1,3 +1,4 @@
+from commons.enums_struct_def import PcVertexBuffersUsage
 from exporters.domain.enums import *
 
 
@@ -89,6 +90,7 @@ class ObjLOD:
 
     def __init__(self, p_mesh):
 
+        self.vertex_colour = []
         self.unique_pos_vert = {}
         self.parts: [ObjPart] = []
         self.sub_parts: [ObjSubPart] = []
@@ -174,7 +176,7 @@ class ObjLOD:
                 dq_weight = []
                 if len(self.dual_quat_weight) != 0:
                     dq_weight = self.dual_quat_weight[i]
-                self.weight_pairs.append(self._processWeightPairs_2(i, self.weight_indices[i], self.weights[i], dq_weight))
+                self.weight_pairs.append(self._processWeightPairs_3(i, self.weight_indices[i], self.weights[i], dq_weight))
 
         return self.weight_pairs
 
@@ -308,6 +310,26 @@ class ObjLOD:
 
         return [list(w_pairs.keys()), list(w_pairs.values())]
 
+    def _processWeightPairs_3(self, vert_index, weight_indices, p_weights, p_dq_weights = []):
+        _weights = p_weights
+        initial_w = 1
+        rest = initial_w
+        w_pairs = {}
+        for i,b_i in enumerate(weight_indices):
+            if i ==3:
+                temp_rest = 1-sum(list(w_pairs.values()))
+            else:
+                temp_rest = rest - _weights[i]
+
+            if temp_rest < 0:
+                w_pairs[b_i] = 1 - temp_rest
+                break
+            w_pairs[b_i] = temp_rest
+            rest = temp_rest
+        if sum(list(w_pairs.values())) != 1:
+            debug = True
+        return [list(w_pairs.keys()), list(w_pairs.values())]
+
 
 
 
@@ -375,19 +397,19 @@ class ObjLOD:
             return 0
 
     def setVertBufferArray(self, vertex_type_index, vertx_data):
-        if vertex_type_index == BufferVertType.position:
+        if vertex_type_index == PcVertexBuffersUsage.Position:
             self.vert_pos = vertx_data[0]
             self.unique_pos_vert = vertx_data[1]
             self.vert_count = len(self.vert_pos)
-        elif vertex_type_index == BufferVertType.texcoord:
+        elif vertex_type_index == PcVertexBuffersUsage.UV0:
             self.vert_uv0 = vertx_data
-        elif vertex_type_index == BufferVertType.texcoord1:
+        elif vertex_type_index == PcVertexBuffersUsage.UV1:
             self.vert_uv1 = vertx_data
-        elif vertex_type_index == BufferVertType.tangent:
+        elif vertex_type_index == PcVertexBuffersUsage.Tangent:
             self.vert_tangent = vertx_data
-        elif vertex_type_index == BufferVertType.normal:
+        elif vertex_type_index == PcVertexBuffersUsage.Normal:
             self.vert_norm = vertx_data
-        elif vertex_type_index == BufferVertType.dual_quat_weight:
+        elif vertex_type_index == PcVertexBuffersUsage.BlendWeights1:
             self.dual_quat_weight = vertx_data
             """
             if len(self.dual_quat_weight) !=0:
@@ -396,10 +418,12 @@ class ObjLOD:
                     pares.append((tupla, self.dual_quat_weight[ti],[sum(tupla),sum(self.dual_quat_weight[ti])]))
                 debug = True
             """
-        elif vertex_type_index == BufferVertType.node_weights:
+        elif vertex_type_index == PcVertexBuffersUsage.BlendWeights0:
             self.weights = vertx_data
-        elif vertex_type_index == BufferVertType.node_indices:
+        elif vertex_type_index == PcVertexBuffersUsage.BlendIndices0:
             self.weight_indices = vertx_data
+        elif vertex_type_index == PcVertexBuffersUsage.Color:
+            self.vertex_colour = vertx_data
 
 
 class ObjPart:

@@ -1,3 +1,4 @@
+import binascii
 import io
 import os
 import struct
@@ -8,6 +9,7 @@ import mathutils
 import utils
 from commons.classes import Chunk
 from commons.debug_utils import fillDebugDict, vertx_data_arrays
+from commons.enums_struct_def import PcVertexBuffersFormat, PcVertexBuffersUsage
 from configs.config import Config
 from exporters.base_exporter import BaseExporter
 from exporters.domain.domain_types import *
@@ -44,34 +46,63 @@ class RenderModelExporter(BaseExporter):
 
     def readVertBlockDesc(self, vert_block_desc, m_v_t_index):
         offset = vert_block_desc['offset'].value
-        size = vert_block_desc['size'].value
+        size = vert_block_desc['byte width'].value
         sub_data = self.getChunkDataBy(offset, size)
         # sub_data = self._chunk_data[offset:offset + size]
-        vertex_count = vert_block_desc['vertex_count'].value
-        vertex_stride = vert_block_desc['vertex_stride'].value
-        vertex_type = vert_block_desc['vertex_type'].selected_index
+        vertex_count = vert_block_desc['count'].value
+        vertex_stride = vert_block_desc['stride'].value
+        vertex_usage = vert_block_desc['usage'].selected_index
+        vertex_usage_str = vert_block_desc['usage'].selected
+        vertex_format = vert_block_desc['format'].selected_index
+        vertex_format_str = vert_block_desc['format'].selected
         bin_stream = io.BytesIO(sub_data)
 
-        if vertex_type == 0:
-            return self.readPositionIn(bin_stream, vertex_count, vertex_stride, m_v_t_index)
-        elif vertex_type == 1:
-            return self.readTexcoordIn(bin_stream, vertex_count, 0, vertex_stride, m_v_t_index)
-        elif vertex_type == 2:
-            return self.readTexcoordIn(bin_stream, vertex_count, 1, vertex_stride, m_v_t_index)
-        elif vertex_type == 5:
-            return self.readNormalIn(bin_stream, vertex_count, vertex_stride, m_v_t_index)
-        elif vertex_type == 7:
-            return self.readNodeIndicesIn(bin_stream, vertex_count, vertex_stride, m_v_t_index)
-        elif vertex_type == 8:
-            return self.readNodeWeightsIn(bin_stream, vertex_count, vertex_stride, m_v_t_index)
-        elif vertex_type == 10:
-            return self.readDualQuatWeightIn(bin_stream, vertex_count, vertex_stride, m_v_t_index)
+        if vertex_format == PcVertexBuffersFormat.wordVector4DNormalized:
+            return self.readWordVector4DNormalized(bin_stream, vertex_count, vertex_stride, m_v_t_index)
+        elif vertex_format == PcVertexBuffersFormat.wordVector2DNormalized:
+            n = 0
+            if vertex_usage == PcVertexBuffersUsage.UV0:
+                n = 0
+            elif vertex_usage == PcVertexBuffersUsage.UV1:
+                n = 1
+            elif vertex_usage == PcVertexBuffersUsage.UV2:
+                n = 2
+            return self.readWordVector2DNormalized(bin_stream, vertex_count, n, vertex_stride, m_v_t_index)
+        elif vertex_format == PcVertexBuffersFormat.wordVector2DNormalized:
+            return self.readWordVector2DNormalized(bin_stream, vertex_count, 1, vertex_stride, m_v_t_index)
+        elif vertex_format == PcVertexBuffersFormat.byteARGBColor:
+            return self.readByteARGBColor(bin_stream, vertex_count, vertex_stride, m_v_t_index)
+        elif vertex_format == PcVertexBuffersFormat.f_10_10_10_2_signedNormalizedPackedAsUnorm:
+            return self.readF_10_10_10_2_signedNormalizedPackedAsUnorm(bin_stream, vertex_count, vertex_stride,
+                                                                       m_v_t_index)
+        elif vertex_format == PcVertexBuffersFormat.byteUnitVector3D:
+            return self.readByteUnitVector3D(bin_stream, vertex_count, vertex_stride, m_v_t_index)
+        elif vertex_format == PcVertexBuffersFormat.byteVector4D:
+            return self.readByteVector4D(bin_stream, vertex_count, vertex_stride, m_v_t_index)
+        elif vertex_format == PcVertexBuffersFormat.f_10_10_10_normalized:
+            return self.readF_10_10_10_normalized(bin_stream, vertex_count, vertex_stride, m_v_t_index)
+        elif vertex_format == PcVertexBuffersFormat.real:
+            return self.readReal(bin_stream, vertex_count, vertex_stride, m_v_t_index)
         else:
             array = [0.0] * vertex_count
 
             return array
 
-    def readPositionIn(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
+    def readByteARGBColor(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
+        vertx_pos_array = []
+        f_from_bytes = int.from_bytes
+        for x in range(vertex_count):
+            chunk_data = bin_stream.read(vertex_stride)
+            A = f_from_bytes(chunk_data[0:1], 'little')
+            R = f_from_bytes(chunk_data[1:2], 'little')
+            G = f_from_bytes(chunk_data[2:3], 'little')
+            B = f_from_bytes(chunk_data[3:4], 'little')
+
+            vertx_pos_array.append((A, R, G, B))
+
+        return vertx_pos_array
+
+    def readWordVector4DNormalized(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
         vertx_pos_array = []
         model_scale = self.obj_render_model.render_geometry.compression_info[0].scale["model_scale"]
         f_from_bytes = int.from_bytes
@@ -90,7 +121,7 @@ class RenderModelExporter(BaseExporter):
             vertx_pos_array.append(pos)
         return vertx_pos_array, dict_vert
 
-    def readTexcoordIn(self, bin_stream, vertex_count, n, vertex_stride, m_v_t_index):
+    def readWordVector2DNormalized(self, bin_stream, vertex_count, n, vertex_stride, m_v_t_index):
         vertx_texcoor_array = []
         uv0_scale = self.obj_render_model.render_geometry.compression_info[0].scale["uv" + str(n) + "_scale"]
         f_from_bytes = int.from_bytes
@@ -106,45 +137,28 @@ class RenderModelExporter(BaseExporter):
             vertx_texcoor_array.append((u, v))
         return vertx_texcoor_array
 
-    def readNodeIndicesIn(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
+    def readReal(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
         vert_data_array = []
         f_from_bytes = int.from_bytes
         for x in range(vertex_count):
             chunk_data = bin_stream.read(vertex_stride)
-            x = f_from_bytes(chunk_data[0:1], 'little')
-            y = f_from_bytes(chunk_data[1:2], 'little')
-            z = f_from_bytes(chunk_data[2:3], 'little')
-            w = f_from_bytes(chunk_data[3:4], 'little')
-            if x > 120 or y > 120 or z > 120 or w > 120:
-                debug = 1
-            vert_data_array.append((x, y, z, w))
-        return vert_data_array
+            vert_data_array.append(struct.unpack('f', chunk_data)[0])
 
-    def readNodeWeightsIn(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
+        return  vert_data_array
+
+
+    def readByteUnitVector3D(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
         vert_data_array = []
         f_from_bytes = int.from_bytes
-        model_scale = self.obj_render_model.render_geometry.compression_info[0].scale["model_scale"]
         for x in range(vertex_count):
             chunk_data = bin_stream.read(vertex_stride)
             x = f_from_bytes(chunk_data[0:1], 'little', signed=False)
             y = f_from_bytes(chunk_data[1:2], 'little', signed=False)
             z = f_from_bytes(chunk_data[2:3], 'little', signed=False)
-            w = f_from_bytes(chunk_data[3:4], 'little', signed=False)
-            short_1 = struct.unpack('h', chunk_data[0:2])[0]
-            short_2 = struct.unpack('h', chunk_data[2:4])[0]
-            short_3 = struct.unpack('h', chunk_data[2:4])[0]
-            divisor = ((2 ** 8) - 1)
-            vert_data_array.append(
-                (x, y, z, w, float(x) / divisor, float(y) / divisor, float(z) / divisor, float(w) / divisor,
-                 chunk_data.hex()
-                 ))
-        if m_v_t_index == 1:
-            debug = 1
-        if m_v_t_index == 26:
-            debug = 1
+            vert_data_array.append((x, y, z))
         return vert_data_array
 
-    def readDualQuatWeightIn(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
+    def readByteVector4D(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
         vert_data_array = []
         f_from_bytes = int.from_bytes
         for x in range(vertex_count):
@@ -153,16 +167,61 @@ class RenderModelExporter(BaseExporter):
             y = f_from_bytes(chunk_data[1:2], 'little')
             z = f_from_bytes(chunk_data[2:3], 'little')
             w = f_from_bytes(chunk_data[3:4], 'little')
-            float_value = struct.unpack('f', chunk_data[0:4])[0]
-            vert_data_array.append((x, y, z, w, float_value))
-        if m_v_t_index != 26:
-            debug = 1
+            vert_data_array.append((x, y, z, w))
         return vert_data_array
 
-    def readNormalIn(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
+    def readF_10_10_10_normalized(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
+        vert_data_array = []
+        f_from_bytes = int.from_bytes
+        for x in range(vertex_count):
+            chunk_data = bin_stream.read(vertex_stride)
+            binary_string = binascii.unhexlify(chunk_data.hex())
+            x_big = f_from_bytes(chunk_data[0:1], 'big')
+            x_big_bit = '{:>08b}'.format(x_big)
+            y_big = f_from_bytes(chunk_data[1:2], 'big')
+            y_big_bit = '{:>08b}'.format(y_big)
+            z_big = f_from_bytes(chunk_data[2:3], 'big')
+            z_big_bit = '{:>08b}'.format(z_big)
+            w_big = f_from_bytes(chunk_data[3:4], 'big')
+            w_big_bit = '{:>08b}'.format(w_big)
+            full = f'{x_big_bit}{y_big_bit}{z_big_bit}{w_big_bit}'
+            temp = f_from_bytes(chunk_data[0:4], 'little')
+            data = f_from_bytes(chunk_data[0:4], 'little')
+            m = ((data & 0x3FF) / 1023 - 0.5) / 2 ** 0.5
+            n = ((((data >> 10) & 0x3FF) - 0.5) / 1023) / 2 ** 0.5
+            o = ((((data >> 20) & 0x3FF) - 0.5) / 1023) / 2 ** 0.5
+            p = (data >> 30)
+
+            m1 = ((data & 0x3FF) / 1023)
+            n1 = ((((data >> 10) & 0x3FF)) / 1023)
+            o1 = ((((data >> 20) & 0x3FF)) / 1023)
+            p1 = (data >> 30)/3
+            temp_bin =  '{:<032b}'.format(temp)[::-1] # format(temp, "b").zfill(32, ) [::-1]
+            n = 10
+            chunks = [full[i:i + n] for i in range(0, len(full), n)]
+            if len(chunks)<4:
+                debug = True
+            v1 = temp & 0x3ff
+            v11 = int(chunks[0][::-1], 2) # [::-1]
+
+            temp >>= 10
+            v2 = temp & 0x3ff
+            v22 = int(chunks[1][::-1], 2) # [::-1]
+
+            temp >>= 10
+            v3 = temp & 0x3ff
+            v33 = int(chunks[2][::-1], 2) #[::-1]
+            Wnormalized = (v11/(2 ** 10-1), v22/(2 ** 10-1), v33/(2 ** 10-1))
+            normalized = (m1,n1,o1)
+            rest = 1- m1 -n1 -o1
+            if rest>1 or rest <0:
+                debug =True
+            vert_data_array.append(normalized)
+        return vert_data_array
+
+    def readF_10_10_10_2_signedNormalizedPackedAsUnorm(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
         vertx_normal_array = []
         f_from_bytes = int.from_bytes
-        return vertx_normal_array
         for x in range(vertex_count):
             chunk_offset = j = 0
             chunk_data = bin_stream.read(vertex_stride)
@@ -201,11 +260,11 @@ class RenderModelExporter(BaseExporter):
         self.fillChunkDataArray(index_block_descr['offset'].value, index_block_descr[
             'size'].value)
         """
-        sub_chunk_data = self.getChunkDataBy(index_block_descr['offset'].value, index_block_descr['size'].value)
+        sub_chunk_data = self.getChunkDataBy(index_block_descr['offset'].value, index_block_descr['byte width'].value)
         bin_stream = io.BytesIO(sub_chunk_data)
         f_from_bytes = int.from_bytes
         index_array = []
-        for i in range(index_block_descr['index_count'].value):
+        for i in range(index_block_descr['count'].value):
             index = f_from_bytes(bin_stream.read(2), 'little')
             index_array.append(index)
         if index_array.__len__() < 1:
@@ -392,14 +451,16 @@ class RenderModelExporter(BaseExporter):
         self.mesh_lod_count = []
         mesh_unic = 0
         mesh_no_unic = 0
+        self.Remap_Table = {}
+        self.map_part_type = {}
         for i, mesh in enumerate(temp_mesh_s):
             t_m = self.analyzeMeshInst(mesh, mesh_resource, i)
             file_name = self.render_model.in_game_path.split('\\')[-1].replace('.', '_')
             t_m.name = f"{file_name}_mesh_{i}"
             if mesh['clone_index'].value != -1:
-                mesh_unic+= 1
+                mesh_unic += 1
             else:
-                mesh_no_unic+= 1
+                mesh_no_unic += 1
         print(str(result[4].keys()))
         print("Fin de análice")
 
@@ -515,9 +576,15 @@ class RenderModelExporter(BaseExporter):
 
                             t_m.name = mesh_name
                             t_m.name = utils.getNamePart(t_m)
-                            if False and not t_m.name.__contains__(
-                                    'olympus_spartan_l_glove_001_s001'):  # False and olympus_spartan_l_armup_001_s001_2_lod_0
+                            """
+                            if t_m.name.__contains__(
+                                    'hair') \
+                                    or t_m.name.__contains__('beard')\
+                                    or t_m.name.__contains__('lashes'):
+
+                                # False and olympus_spartan_l_armup_001_s001_2_lod_0
                                 continue
+                            """
                             print(mesh_name)
                             mesh_list.append(t_m)
                     else:
@@ -526,105 +593,6 @@ class RenderModelExporter(BaseExporter):
 
     def analyzeMeshResource(self):
         result = []
-        mesh_resource = \
-            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource (unmapped type(_43)'].childs[0]
-        temp_mesh_s = self.render_model_inst['meshes'].childs
-
-        result.append({
-            'len_mesh': len(temp_mesh_s),
-            'len_vertex_blocks': len(mesh_resource['vertex_blocks'].childs),
-            'len_index_blocks': len(mesh_resource['index_blocks'].childs),
-            'len_array_3': len(mesh_resource["array_3"].childs),
-            'len_array_4': len(mesh_resource["array_4"].childs),
-            'len_array_5': len(mesh_resource["array_5"].childs),
-        })
-
-        dict_a3_int_byte = {}
-        result.append(dict_a3_int_byte)
-        dict_a3_array_3_1 = {}
-        result.append(dict_a3_array_3_1)
-        dict_a3_array_3_1_in = {}
-        result.append(dict_a3_array_3_1_in)
-        dict_a3_array_3_1_in_ = {}
-        result.append(dict_a3_array_3_1_in_)
-        dict_a3_array_3_1_in_3_1_1 = {}
-        result.append(dict_a3_array_3_1_in_3_1_1)
-        for i, array_3_item in enumerate(mesh_resource["array_3"].childs):
-            item_temp = array_3_item
-            item_temp['int byte']
-            fillDebugDict(item_temp['int byte'].value, item_temp['array 3_1'].childrenCount, dict_a3_int_byte)
-            fillDebugDict(item_temp['array 3_1'].childrenCount, 1, dict_a3_array_3_1)
-            if item_temp['int byte'].value != -1:
-                debug = True
-            for item_in in item_temp['array 3_1'].childs:
-                fillDebugDict(i, item_in['temp int 3_1_'].value, dict_a3_array_3_1_in)
-                fillDebugDict(item_in['temp int 3_1_'].value, 1, dict_a3_array_3_1_in_)
-                fillDebugDict(i, item_in['array 3_1_1'].childrenCount, dict_a3_array_3_1_in_3_1_1)
-
-        array_4_dict_debug = {
-            'temp_1_short': {},
-            'temp_int_1': {},
-            'temp_2_short': {},
-            'temp_3_short': {},
-            'temp_4_short': {}
-        }
-        result.append(array_4_dict_debug)
-        l = len(mesh_resource["array_4"].childs)
-        for i, array_4_item in enumerate(mesh_resource["array_4"].childs):
-            item_temp = array_4_item
-            fillDebugDict(item_temp['temp_1_short'].value, 1, array_4_dict_debug['temp_1_short'])
-            fillDebugDict(item_temp['temp_int_1'].value, 1, array_4_dict_debug['temp_int_1'])
-            fillDebugDict(item_temp['temp_2_short'].value, 1, array_4_dict_debug['temp_2_short'])
-            fillDebugDict(item_temp['temp_3_short'].value, 1, array_4_dict_debug['temp_3_short'])
-            fillDebugDict(item_temp['temp_4_short'].value, 1, array_4_dict_debug['temp_4_short'])
-            assert item_temp['temp_1_short'].value==0
-            temp_int_1 = item_temp['temp_int_1'].value
-            if i==0:
-                assert (item_temp['temp_int_1'].value==0), f'{temp_int_1}'
-            else:
-                if item_temp['temp_int_1'].value != 1:
-                    asdasd = 1
-                    """
-                    if not (i == 0 or i == l - 1):
-                        print(f'{i}, {l - 1}, {temp_int_1}', {item_temp['temp_2_short'].value},
-                              {item_temp['temp_4_short'].value},{item_temp['temp_4_short'].value-item_temp['temp_2_short'].value})
-                    """
-            if not (item_temp['temp_4_short'].value <= mesh_resource["array_5"].childs[0][
-                'temp 2 short'].value):
-                debug = 0
-
-            if item_temp['temp_3_short'].value != 0:
-                assert i == l-1
-                # assert item_temp['temp_4_short'].value == item_temp['temp_2_short'].value
-                if not item_temp['temp_4_short'].value == item_temp['temp_2_short'].value:
-                    debug = True
-                assert item_temp['temp_3_short'].value == mesh_resource["array_5"].childs[0][
-                    'temp 1 short'].value
-            else:
-                assert item_temp['temp_4_short'].value != item_temp['temp_2_short'].value
-            if i == l-1:
-                if not (item_temp['temp_4_short'].value == mesh_resource["array_5"].childs[0][
-                'temp 2 short'].value):
-                    debug = 0
-
-        array_5_dict_debug = {
-            'temp 1 short': {},
-            'temp 2 short': {},
-            'temp 3 short': {},
-            'temp 4 short': {},
-            'posible len': {},
-            'temp int 1': {},
-        }
-        result.append(array_5_dict_debug)
-        for array_s_item in mesh_resource["array_5"].childs:
-            item_temp = array_s_item
-            fillDebugDict(item_temp['temp 1 short'].value, 1, array_5_dict_debug['temp 1 short'])
-            fillDebugDict(item_temp['temp 2 short'].value, 1, array_5_dict_debug['temp 2 short'])
-            fillDebugDict(item_temp['temp 3 short'].value, 1, array_5_dict_debug['temp 3 short'])
-            fillDebugDict(item_temp['temp 4 short'].value, 1, array_5_dict_debug['temp 4 short'])
-            fillDebugDict(item_temp['posible len'].value, 1, array_5_dict_debug['posible len'])
-            fillDebugDict(item_temp['temp int 1'].value, 1, array_5_dict_debug['temp int 1'])
-
         return result
 
     def initChunksData(self):
@@ -775,28 +743,19 @@ class RenderModelExporter(BaseExporter):
             for xi, x in enumerate(lod['vertex_buffer_indices'].childs):
                 temp_vert_index_block = x.value
                 if temp_vert_index_block != -1:
-                    vertx_block_descr = mesh_resource['vertex_blocks'].childs[temp_vert_index_block]
-                    vertex_type_ = vertx_block_descr['vertex_type'].selected
-                    vertex_type_index = vertx_block_descr['vertex_type'].selected_index
+                    vertx_block_descr = mesh_resource['pc vertex buffers'].childs[temp_vert_index_block]
+                    vertex_type_ = vertx_block_descr['usage'].selected
+                    vertex_buffers_usage = vertx_block_descr['usage'].selected_index
+                    vertex_type_index = vertx_block_descr['format'].selected_index
                     offset = vertx_block_descr['offset'].value
-                    size = vertx_block_descr['size'].value
+                    size = vertx_block_descr['byte width'].value
                     # print(f"{m_i}-{lod_i}-{vertex_type_}")
                     # self.fillChunkDataArray(offset, size)
-                    s_key += str(vertex_type_) + f'-{vertx_block_descr["way_to_read_type"].value}-'
-                    assert vertx_block_descr["unknown_off_10_12"].value == -17220, "unknown_off_10_12"
-                    assert vertx_block_descr["unknown_off_28_32"].value == 32, "unknown_off_28_32"
-                    assert vertx_block_descr["unknown_off_32_36"].value == 0, "unknown_off_32_36"
+                    s_key += str(vertex_type_) + f'-{vertx_block_descr["format"].selected}-'
 
-                    assert vertx_block_descr["unknown_array_off_36_56"].childrenCount == 0, "unknown_array_off_36_56"
-                    assert vertx_block_descr["unknown_off_56_60"].value == 0, "unknown_off_56_60"
-                    assert vertx_block_descr["vertex_buffer_index"].value == xi, "vertex_buffer_index"
-                    assert vertx_block_descr["vertex_type"].selected_index == xi, "vertex_type"
-                    assert vertx_block_descr["vertex_type"].selected_index == vertx_block_descr[
-                        "vertex_buffer_index"].value == xi, "vertex_buffer_index <-> vertex_type"
-                    assert vertx_block_descr["unknown_off_64_68"].value == 0, "unknown_off_64_68"
-                    assert vertx_block_descr["unknown_off_68_72"].value == 0, "unknown_off_68_72"
-                    assert vertx_block_descr["unknown_off_72_76"].value == 0, "unknown_off_72_76"
-                    assert vertx_block_descr["unknown_off_76_80"].value == 0, "unknown_off_76_80"
+                    if vertex_buffers_usage == PcVertexBuffersUsage.BlendIndices1:
+                        debug = True
+
                     if max_offset == -1:
                         max_offset = offset
                         min_offset = offset
@@ -813,7 +772,7 @@ class RenderModelExporter(BaseExporter):
                     size_sum += size
                     vertx_data = self.readVertBlockDesc(vertx_block_descr, m_v_t_index)
                     vertx_blocks[vertex_type_] = vertx_data
-                    obj_lod.setVertBufferArray(vertex_type_index, vertx_data)
+                    obj_lod.setVertBufferArray(vertex_buffers_usage, vertx_data)
             s_t = (max_offset - min_offset) + last_size
             main_key = str(mesh["vertex_type"].selected) + '<->' + str(m_v_t_index)
 
@@ -827,7 +786,7 @@ class RenderModelExporter(BaseExporter):
             if index_buffer_index == -1:
                 continue
             else:
-                index_block_descr = mesh_resource['index_blocks'].childs[index_buffer_index]
+                index_block_descr = mesh_resource['pc index buffers'].childs[index_buffer_index]
             s_t_1 = max_offset + last_size
             if index_block_descr['offset'].value == s_t_1:
                 debug = 1
@@ -873,24 +832,49 @@ class RenderModelExporter(BaseExporter):
         obj_mesh.use_dual_quat = mesh["use_dual_quat"].value
         obj_mesh.index_buffer_type = mesh["index_buffer_type"].selected_index
         obj_mesh.clone_index = mesh["clone_index"].value
-        info_item_array_3 = mesh_resource["array_3"].childs[m_i]
-        str_hex = str(mesh_resource["array_3"].content_entry.bin_datas_hex[m_i])
+
+        if mesh["clone_index"].value != -1:
+            temp_mesh_s = self.render_model_inst['meshes'].childs
+            clone_mesh = temp_mesh_s[mesh["clone_index"].value]
+            assert mesh["LOD_render_data"].childrenCount == clone_mesh["LOD_render_data"].childrenCount
+            assert mesh["mesh_flags"].options == clone_mesh["mesh_flags"].options
+            assert mesh["rigid_node_index"].value == clone_mesh["rigid_node_index"].value
+            assert mesh["vertex_type"].selected_index == clone_mesh["vertex_type"].selected_index
+            assert mesh["use_dual_quat"].value == clone_mesh["use_dual_quat"].value
+            assert mesh["index_buffer_type"].selected_index == clone_mesh["index_buffer_type"].selected_index
+            assert mesh["pca_mesh_index"].value == clone_mesh["pca_mesh_index"].value
+            assert mesh["vertex_keys"].childrenCount == clone_mesh["vertex_keys"].childrenCount
+            assert mesh["optional_LOD_volume_index"].value == clone_mesh["optional_LOD_volume_index"].value
+
+            assert mesh["lod_state_cache_slot"].value == clone_mesh["lod_state_cache_slot"].value
+
+            if not mesh["Procedural_Deformation_Remap_Table"].value == clone_mesh[
+                "Procedural_Deformation_Remap_Table"].value:
+                debug = 1
+        self.Remap_Table[mesh["Procedural_Deformation_Remap_Table"].value] = 1
+
+        info_item_array_3 = mesh_resource['Streaming Meshes'].childs[m_i]
+        str_hex = str(mesh_resource['Streaming Meshes'].content_entry.bin_datas_hex[m_i])
         sub_str = str_hex[10:48]
         assert str_hex[0:8] == 'ffffffff'
         assert sub_str == 'bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc'
         if obj_mesh.use_dual_quat == 1:
             if info_item_array_3['int byte'].value + obj_mesh.use_dual_quat != 0:
-                asd= 1
+                asd = 1
 
         if info_item_array_3['int byte'].value != mesh["index_buffer_type"].selected_index:
-            asd= 1
+            asd = 1
         if not self.mesh_lod_count.__contains__(len(mesh['LOD_render_data'].childs)):
             self.mesh_lod_count.append(len(mesh['LOD_render_data'].childs))
 
         for lod_i, lod in enumerate(mesh['LOD_render_data'].childs):
-            self.lod_count+=1
+            self.lod_count += 1
+            for t_part in lod['parts'].childs:
+                self.map_part_type[t_part['part_type'].value] = 1
+            for sub_part in lod['subparts'].childs:
+                self.map_part_type[sub_part['part_type'].value] = 1
             if mesh["clone_index"].value == -1:
-                self.lod_unic_count+=1
+                self.lod_unic_count += 1
             if False and not (self.minLOD <= lod_i <= self.maxLOD):
                 continue
             obj_lod = ObjLOD(obj_mesh)
@@ -907,14 +891,14 @@ class RenderModelExporter(BaseExporter):
 
                     if self.vertext_block_dict.keys().__contains__(temp_vert_index_block):
                         clone_i = mesh['clone_index'].value
-                        assert  clone_i != -1, 'mesh clone reuse vertext block'
-                        assert  f'{clone_i}-{xi}-{temp_vert_index_block}'== self.vertext_block_dict[temp_vert_index_block], 'mesh clone reuse vertext block'
+                        assert clone_i != -1, 'mesh clone reuse vertext block'
+                        assert f'{clone_i}-{xi}-{temp_vert_index_block}' == self.vertext_block_dict[
+                            temp_vert_index_block], 'mesh clone reuse vertext block'
                     else:
                         assert mesh['clone_index'].value == -1, 'mesh clone reuse vertext block'
                         self.vertext_block_dict[temp_vert_index_block] = f'{m_i}-{xi}-{temp_vert_index_block}'
 
-
-                    vertx_block_descr = mesh_resource['vertex_blocks'].childs[temp_vert_index_block]
+                    vertx_block_descr = mesh_resource['pc vertex buffers'].childs[temp_vert_index_block]
                     vertex_type_ = vertx_block_descr['vertex_type'].selected
                     vertex_type_index = vertx_block_descr['vertex_type'].selected_index
                     offset = vertx_block_descr['offset'].value
@@ -966,11 +950,11 @@ class RenderModelExporter(BaseExporter):
             if index_buffer_index == -1:
                 continue
             else:
-                index_block_descr = mesh_resource['index_blocks'].childs[index_buffer_index]
-                self.index_block+=1
+                index_block_descr = mesh_resource['pc index buffers'].childs[index_buffer_index]
+                self.index_block += 1
                 if self.index_block_dict.keys().__contains__(index_buffer_index):
                     debug = True
-                    assert mesh['clone_index'].value!=-1, 'mesh clone reuse index block'
+                    assert mesh['clone_index'].value != -1, 'mesh clone reuse index block'
                 else:
                     assert mesh['clone_index'].value == -1, 'mesh clone reuse index block'
                 self.index_block_dict[index_buffer_index] = 1

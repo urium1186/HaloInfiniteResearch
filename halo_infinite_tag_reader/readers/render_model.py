@@ -16,8 +16,10 @@ class RenderModel(BaseTemplate):
 
     def toJson(self):
         super().toJson()
-
+        self.json_base = self.tag_parse.rootTagInst.toJson()['items'][0]
         self.json_base['skeletons'] = self.getBonesInfo()['skeletons']
+        """
+        self.json_base['name'] = self.tag_parse.rootTagInst.childs[0]['name'].toJson()
         self.json_base['name'] = self.tag_parse.rootTagInst.childs[0]['name'].toJson()
         regions = []
         regions_json = self.tag_parse.rootTagInst.childs[0]['regions'].toJson()
@@ -26,6 +28,7 @@ class RenderModel(BaseTemplate):
 
         self.json_base['regions'] = regions_json
         self.json_base['meshes'] = meshes
+        """
         self.json_str_base = json.dumps(self.json_base)
         return self.json_base
 
