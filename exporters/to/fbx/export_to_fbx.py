@@ -19,9 +19,10 @@ import utils
 
 class FbxModel:
     def __init__(self, p_export_skl=True, p_skl_filepath='', p_skl_data=None):
-        self.export_colours = False
+        self.export_colours = True
         self.export_skl = p_export_skl
         self.export_normals = False
+        self.export_tangent = False
         self.skl_data = p_skl_data
         self.skl_filepath = p_skl_filepath
         self.manager = fbx.FbxManager.Create()
@@ -193,7 +194,7 @@ class FbxModel:
         lMaterialLayer.SetReferenceMode(fbx.FbxLayerElement.eIndexToDirect)
         layer.SetMaterials(lMaterialLayer)
         temp = lod_n.vertex_buffer_indices
-        vert_pos = temp['position'][0]
+        vert_pos = temp['Position'][0]
         controlpoints = [self.scaleVector(-x[0], x[2], x[1]) for x in vert_pos]
         for i, p in enumerate(controlpoints):
             mesh.SetControlPointAt(p, i)
@@ -222,6 +223,16 @@ class FbxModel:
         # node.SetNodeAttribute(lod_group_attr)
         # node.LclRotation.Set(fbx.FbxDouble3(0, 90, 0))
         return node, mesh
+
+    def add_tangent(self, mesh, submesh, layer):
+        if not self.export_tangent:
+            return
+        tangentElement = fbx.FbxLayerElementTangent.Create(mesh, 'tangent')
+        tangentElement.SetMappingMode(fbx.FbxLayerElement.eByControlPoint)
+        tangentElement.SetReferenceMode(fbx.FbxLayerElement.eDirect)
+        for i, vec in enumerate(submesh.vert_tangent):
+            tangentElement.GetDirectArray().Add(fbx.FbxVector4(-vec[0], vec[2], vec[1], vec[3]))
+        layer.SetNormals(tangentElement)
 
     def add_norm(self, mesh, submesh, layer):
         # Dunno where to put this, norm quat -> norm vec conversion
@@ -314,7 +325,7 @@ class FbxModel:
     
             Search for all occurrences
             """
-            def_cluster.SetLinkMode(fbx.FbxCluster.eTotalOne)
+            def_cluster.SetLinkMode(fbx.FbxCluster.eNormalize)
 
             transform = bone.EvaluateGlobalTransform()
             def_cluster.SetTransformLinkMatrix(transform)
@@ -371,8 +382,9 @@ class FbxModel:
                 if obj_mesh.vert_type == VertType.skinned:
                     skin.AddControlPointIndex(i, 0)
                 else:
-                    assert submesh.dual_quat_weight[i][4] <= 1, 'quat pesso siempre menor q 1 float'
-                    skin.AddControlPointIndex(i, submesh.dual_quat_weight[i][4])
+                   # assert submesh.dual_quat_weight[i][4] <= 1, 'quat pesso siempre menor q 1 float'
+                    assert submesh.dual_quat_weight[i] <= 1, 'quat pesso siempre menor q 1 float'
+                    skin.AddControlPointIndex(i, submesh.dual_quat_weight[i])
 
                 ctrl_ponit = mesh.GetControlPoints()[i]
                 check_w = []

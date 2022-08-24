@@ -479,6 +479,10 @@ class Flags(TagInstance):
         vb9.flag8.IsChecked = flags_value.GetBit(7);
         """
 
+    def toJson(self):
+        json_obj = super(Flags, self).toJson()
+        return self.options
+
 
 def clamp(num, min_value, max_value):
     return max(min(num, max_value), min_value)
@@ -515,8 +519,14 @@ class FlagGroup(TagInstance):
         if self.flags_value == '':
             return
         for i, key_option in enumerate(self.tagDef.STR):
-            self.options[key_option] = (self.tagDef.STR[key_option],self.flags_value[i] == '1')
+            if self.options.keys().__contains__(self.tagDef.STR[key_option]):
+                assert False
+            self.options[self.tagDef.STR[key_option]] = self.flags_value[i] == '1'
         debug = self.options
+
+    def toJson(self):
+        json_obj = super(FlagGroup, self).toJson()
+        return self.options
 
     def generateBits(self, startAddress, amountOfBytes: int, maxBit: int, descriptions: {}, f: BinaryIO):
         """

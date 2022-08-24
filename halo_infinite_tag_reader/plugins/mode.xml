@@ -944,90 +944,163 @@
 			<_3D v="total vertex buffer count" />
 			<_40 v="mesh resource groups">
 				<_43 v="mesh resource" >
-                    <_40 v="vertex_blocks">
-                        <_C v="vertex_type">
-                            <Flag v="position" />
-                            <Flag v="texcoord" />
-                            <Flag v="texcoord1" />
-                            <Flag v="texcoord2" />
-                            <Flag v="lightmap_texcoord" />
-                            <Flag v="normal" />
-                            <Flag v="tangent" />
-                            <Flag v="node_indices" />
-                            <Flag v="node_weights" />
-                            <Flag v="binormal" />
-                            <Flag v="dual_quat_weight" />
-                            <Flag v="vertex_color" />
-                            <Flag v="vertex_alpha" />
-                            <Flag v="tangent_UV2" />
-                            <Flag v="tangent_UV3" />
-                            <Flag v="change_15" />
-                            <Flag v="change_16" />
-                            <Flag v="change_17" />
-                            <Flag v="change_18" />
-                        </_C>
-                        <_6 v="way_to_read_type" /> <!-- https://docs.microsoft.com/en-us/windows/win32/direct3d9/d3ddecltype -->
-                        <_5 v="vertex_stride" />
-                        <_5 v="unknown_off_10_12" /> <!-- -17220 -->
-                        <_6 v="vertex_count" />
-                        <_6 v="offset" />
-                        <_6 v="size" />
-                        <_6 v="type" />
-                        <_6 v="unknown_off_28_32" /> <!-- 32 -->
-                        <_6 v="unknown_off_32_36" /> <!-- 0 -->
-                        <_40 v="unknown_array_off_36_56">
-                        </_40>
-                        <_6 v="unknown_off_56_60" /> <!-- posible tamano -->
-                        <_6 v="vertex_buffer_index" />
-                        <_6 v="unknown_off_64_68" />
-                        <_6 v="unknown_off_68_72" />
-                        <_6 v="unknown_off_72_76" />
-                        <_6 v="unknown_off_76_80" />
-                    </_40>
-                    <_40 v="index_blocks">
-                        <_6 v="temp int unknown_off_0_4" />
-                        <_6 v="index_count" />
-                        <_6 v="offset" />
-                        <_6 v="size" />
-                        <_6 v="type" />
-                        <_6 v="unknown_off_20_24" />
-                        <_6 v="unknown_off_24_28" />
-                        <_40 v="unknown_array_off_28_48">
-                        </_40>
-                        <_6 v="unknown_off_48_52" />
-                        <_6 v="unknown_off_52_56" />
-                        <_6 v="unknown_off_60_64" />
-                        <_6 v="unknown_off_64_68" />
-                        <_6 v="unknown_off_68_72" />
-                    </_40>
-                    <_40 v="array_3">
-                        <_35 v="padding 4" length="4"/> 
-                        <_4 v="int byte" /> 
-                        <_35 v="padding 3" length="3"/> 
-                        <_40 v="array 3_1">
-                            <_40 v="array 3_1_1">
-                            </_40>
-                            <_6 v="temp int 3_1_" />
-                        </_40>
-                    </_40>
-                    <_40 v="array_4">
-                        <_5 v="temp_1_short" />
-                        <_6 v="temp_int_1" />
-                        <_5 v="temp_2_short" />
-                        <_5 v="temp_3_short" />
-                        <_5 v="temp_4_short" />
-                    </_40>
-                    <_40 v="array_5">
-                        <_5 v="temp 1 short" />
-                        <_5 v="temp 2 short" />
-                        <_5 v="temp 3 short" />
-                        <_5 v="temp 4 short" />
-                        <_35 v="padding 16" length="16"/> 
-                        <_6 v="posible len" />
-                        <_6 v="temp int 1" />
-                    </_40>
-                    <_35 v="padding 4" length="4"/> 
-                    <_35 v="padding 192" length="192"/> 
+                    <_40 v="pc vertex buffers">
+						<_C v="usage">
+							<Flag v="Position" />
+							<Flag v="UV0" />
+							<Flag v="UV1" />
+							<Flag v="UV2" />
+							<Flag v="Color" />
+							<Flag v="Normal" />
+							<Flag v="Tangent" />
+							<Flag v="BlendIndices0" />
+							<Flag v="BlendWeights0" />
+							<Flag v="BlendIndices1" />
+							<Flag v="BlendWeights1" />
+							<Flag v="PrevPosition" />
+							<Flag v="InstanceData" />
+							<Flag v="BlendshapePosition" />
+							<Flag v="BlendshapeNormal" />
+							<Flag v="BlendshapeIndex" />
+							<Flag v="Edge" />
+							<Flag v="EdgeIndex" />
+							<Flag v="EdgeIndexInfo" />
+						</_C>
+						<_C v="format">
+							<Flag v="real" />
+							<Flag v="realVector2D" />
+							<Flag v="realVector3D" />
+							<Flag v="realVector4D" />
+							<Flag v="byteVector4D" />
+							<Flag v="byteARGBColor" />
+							<Flag v="shortVector2D" />
+							<Flag v="shortVector2DNormalized" />
+							<Flag v="shortVector4DNormalized" />
+							<Flag v="wordVector2DNormalized" />
+							<Flag v="wordVector4DNormalized" />
+							<Flag v="real16Vector2D" />
+							<Flag v="real16Vector4D" />
+							<Flag v="10_10_10_normalized" />
+							<Flag v="10_10_10_2" />
+							<Flag v="10_10_10_2_signedNormalizedPackedAsUnorm" />
+							<Flag v="dword" />
+							<Flag v="dwordVector2D" />
+							<Flag v="11_11_10_float" />
+							<Flag v="byteUnitVector3D" />
+							<Flag v="wordVector3DNormalizedWith4Word" />
+						</_C>
+						<_3C v="stride" />
+						<_3C v="ownsD3DResource" />
+						<_34 v="generated_pad9e95" length="2" />
+						<_3E v="count" />
+						<_3E v="offset" />
+						<_38 v="d3dbuffer">
+							<_3E v="byte width" />
+							<_3E v="bind flags" />
+							<_3E v="misc flags" />
+							<_3E v="stride" />
+							<_42 v="d3d buffer" />
+							<_3D v="usage" />
+							<_3D v="cpu flags" />
+							<_3B v="" />
+						</_38>
+						<_7 v="m_resource" />
+						<_7 v="m_resourceView" />
+						<_3B v="" />
+					</_40>
+					<_40 v="pc index buffers">
+						<_3C v="declaration type" />
+						<_3C v="stride" />
+						<_3C v="ownsD3DResource" />
+						<_34 v="generated_pad8bf7" length="1" />
+						<_3E v="count" />
+						<_3E v="offset" />
+						<_38 v="d3dbuffer">
+							<_3E v="byte width" />
+							<_3E v="bind flags" />
+							<_3E v="misc flags" />
+							<_3E v="stride" />
+							<_42 v="d3d buffer" />
+							<_3D v="usage" />
+							<_3D v="cpu flags" />
+							<_3B v="" />
+						</_38>
+						<_7 v="m_resource" />
+						<_7 v="m_resourceView" />
+						<_3B v="" />
+					</_40>
+					<_40 v="Streaming Meshes">
+						<_6 v="lod state cache slot" />
+						<_4 v="required lod" />
+						<_34 v="generated_pad413f" length="3" />
+						<_40 v="mesh lod chunks">
+							<_42 v="chunks" />
+							<_3B v="" />
+						</_40>
+						<_3B v="" />
+					</_40>
+					<_40 v="Streaming Chunks">
+						<_3D v="buffer index" />
+						<_3D v="allocation priority" />
+						<_3E v="buffer start" />
+						<_3E v="buffer end" />
+						<_3B v="" />
+					</_40>
+					<_40 v="Streaming Buffers">
+						<_3E v="buffer size" />
+						<_3E v="bind flags" />
+						<_42 v="Temp buffer for pipeline" />
+						<_3B v="" />
+					</_40>
+					<_34 v="generated_pad1319" length="4" />
+					<_7 v="m_sharedDXResources" />
+					<_7 v="m_sharedDXResourceRawView" />
+					<_39 v="m_sharedDXResourceTypedViews">
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+						<_7 v="IResourceView" />
+						<_3B v="" />
+					</_39>
+					<_7 v="Runtime Data" />
+					<_3B v="" />
                 </_43>
 				<_3B v="" />
 			</_40>
