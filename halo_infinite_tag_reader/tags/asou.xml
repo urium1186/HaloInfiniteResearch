@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="AssetSoundTag" item_name_2="AssetSoundTag" item_name_3="AssetSoundTag" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_A v="Use model hit">
+		<Flag v="Disabled" />
+		<Flag v="Enabled" />
+	</_A>
+	<_34 v="generated_padddab" length="3" />
+	<_40 v="Per-variant model hit" item_name_1="i343::ContentTags::VariantModelHitType" item_name_2="i343::ContentTags::VariantModelHitType" item_name_3="i343::ContentTags::VariantModelHitType" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Variant name" />
+		<_A v="Use model hit override">
+			<Flag v="Use default" />
+			<Flag v="Disabled" />
+			<Flag v="Enabled" />
+		</_A>
+		<_34 v="generated_padf148" length="3" />
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

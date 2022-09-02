@@ -79,8 +79,8 @@ class BitmapToDds:
         self.bitmaps_0 = self.bitmap_ti['bitmaps'].childs[0]
         self.dds_file: DdsFile = None
         self.mipmap_index = p_mipmap_index
-        if self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childrenCount != 0:
-            if not (p_mipmap_index < self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0][
+        if self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childrenCount != 0:
+            if not (p_mipmap_index < self.bitmaps_0['bitmap resource handle'].childs[0][
                 'mipmaps'].childrenCount):
                 raise MipmapIndexException('mipmap_index es mayor q lo permitido')
         self._fillDdsFile()
@@ -190,11 +190,11 @@ class BitmapToDds:
 
     def load2DTexture(self):
 
-        if self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childrenCount == 0:
+        if self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childrenCount == 0:
             # assert bitmaps_0['mipmap count'].value == 0, f'El numero de mimap deberia ser 0'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0][
+            assert self.bitmaps_0['bitmap resource handle'].childs[0][
                        'embed_data_len'].value != 0, f'debe tener la data embebida'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['embed_data_len'].value == \
+            assert self.bitmaps_0['bitmap resource handle'].childs[0]['embed_data_len'].value == \
                    len(self.bitmap.tag_parse.full_header.file_header.section_3_bin_data), f'la data deberia estar en sect 3 '
 
             self.dds_file.loadDefaultValues(map_select_format[self.bitmaps_0['format'].selected])
@@ -209,18 +209,18 @@ class BitmapToDds:
             self.dds_file.bdata = self.bitmap.tag_parse.full_header.file_header.section_3_bin_data
         else:
             assert self.bitmaps_0['mipmap count'].value != 0, f'El numero de mimap no deberia ser 0'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0][
+            assert self.bitmaps_0['bitmap resource handle'].childs[0][
                        'embed_data_len'].value == 0, f'No debe tener la data embebida'
             assert len(self.bitmap.tag_parse.full_header.file_header.section_3_bin_data) == 0 \
                 , f'la data deberia estar en sect 3 por tanto 0'
-            selected = self.mipmap_index  # len(bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs)-1
-            minmap = self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs[selected]
+            selected = self.mipmap_index  # len(bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs)-1
+            minmap = self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs[selected]
             f_name = self.bitmap.in_game_path.split('\\')[-1]
             print(f"======== {f_name} ===========")
             print(f"======== {self.bitmap_ti['Usage'].value} ===========")
             print(f"======== {self.bitmap_ti['UsageId'].value} ===========")
             print(f"======== {self.bitmap_ti['texture group'].str_value} ===========")
-            for x in self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs:
+            for x in self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs:
                 if x['mipmap index'].value == selected:
                     minmap = x
                 print(f"desconocido short 0 - {x['desconocido short 0'].value}")
@@ -233,7 +233,7 @@ class BitmapToDds:
                 print(f"height - {x['height'].value}")
                 print(f"===========================================================")
 
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['format'].value == \
+            assert self.bitmaps_0['bitmap resource handle'].childs[0]['format'].value == \
                    map_select_format[self.bitmaps_0['format'].selected], 'deberian ser el mismo tipo de formato'
 
             self.dds_file.loadDefaultValues(map_select_format[self.bitmaps_0['format'].selected])
@@ -259,11 +259,11 @@ class BitmapToDds:
 
     def load3DTexture(self):
 
-        if self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childrenCount == 0:
+        if self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childrenCount == 0:
             # assert bitmaps_0['mipmap count'].value == 0, f'El numero de mimap deberia ser 0'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0][
+            assert self.bitmaps_0['bitmap resource handle'].childs[0][
                        'embed_data_len'].value != 0, f'debe tener la data embebida'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['embed_data_len'].value == \
+            assert self.bitmaps_0['bitmap resource handle'].childs[0]['embed_data_len'].value == \
                    len(self.bitmap.tag_parse.full_header.file_header.section_3_bin_data), f'la data deberia estar en sect 3 '
 
             self.dds_file.loadDefaultValues(map_select_format[self.bitmaps_0['format'].selected])
@@ -277,18 +277,18 @@ class BitmapToDds:
             self.dds_file.bdata = self.bitmap.tag_parse.full_header.file_header.section_3_bin_data
         else:
             assert self.bitmaps_0['mipmap count'].value != 0, f'El numero de mimap no deberia ser 0'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0][
+            assert self.bitmaps_0['bitmap resource handle'].childs[0][
                        'embed_data_len'].value == 0, f'No debe tener la data embebida'
             assert len(self.bitmap.tag_parse.full_header.file_header.section_3_bin_data) == 0 \
                 , f'la data deberia estar en sect 3 por tanto 0'
-            selected = 0  # len(bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs)-1
-            minmap = self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs[selected]
+            selected = 0  # len(bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs)-1
+            minmap = self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs[selected]
             f_name = self.bitmap.in_game_path.split('\\')[-1]
             print(f"======== {f_name} ===========")
             print(f"======== {self.bitmap_ti['Usage'].value} ===========")
             print(f"======== {self.bitmap_ti['UsageId'].value} ===========")
             print(f"======== {self.bitmap_ti['texture group'].str_value} ===========")
-            for x in self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs:
+            for x in self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs:
                 if x['mipmap index'].value == selected:
                     minmap = x
                 print(f"desconocido short 0 - {x['desconocido short 0'].value}")
@@ -301,7 +301,7 @@ class BitmapToDds:
                 print(f"height - {x['height'].value}")
                 print(f"===========================================================")
 
-            if self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['format'].value != \
+            if self.bitmaps_0['bitmap resource handle'].childs[0]['format'].value != \
                     map_select_format[self.bitmaps_0['format'].selected]:
                 debug = True
             self.dds_file.loadDefaultValues(map_select_format[self.bitmaps_0['format'].selected])
@@ -322,11 +322,11 @@ class BitmapToDds:
 
     def loadCubeMapTexture(self):
 
-        if self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childrenCount == 0:
+        if self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childrenCount == 0:
             # assert bitmaps_0['mipmap count'].value == 0, f'El numero de mimap deberia ser 0'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0][
+            assert self.bitmaps_0['bitmap resource handle'].childs[0][
                        'embed_data_len'].value != 0, f'debe tener la data embebida'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['embed_data_len'].value == \
+            assert self.bitmaps_0['bitmap resource handle'].childs[0]['embed_data_len'].value == \
                    len(self.bitmap.tag_parse.full_header.file_header.section_3_bin_data), f'la data deberia estar en sect 3 '
 
             self.dds_file.loadDefaultValues(map_select_format[self.bitmaps_0['format'].selected])
@@ -340,18 +340,18 @@ class BitmapToDds:
             self.dds_file.bdata = self.bitmap.tag_parse.full_header.file_header.section_3_bin_data
         else:
             assert self.bitmaps_0['mipmap count'].value != 0, f'El numero de mimap no deberia ser 0'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0][
+            assert self.bitmaps_0['bitmap resource handle'].childs[0][
                        'embed_data_len'].value == 0, f'No debe tener la data embebida'
             assert len(self.bitmap.tag_parse.full_header.file_header.section_3_bin_data) == 0 \
                 , f'la data deberia estar en sect 3 por tanto 0'
-            selected = 0  # len(bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs)-1
-            minmap = self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs[selected]
+            selected = 0  # len(bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs)-1
+            minmap = self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs[selected]
             f_name = self.bitmap.in_game_path.split('\\')[-1]
             print(f"======== {f_name} ===========")
             print(f"======== {self.bitmap_ti['Usage'].value} ===========")
             print(f"======== {self.bitmap_ti['UsageId'].value} ===========")
             print(f"======== {self.bitmap_ti['texture group'].str_value} ===========")
-            for x in self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs:
+            for x in self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs:
                 if x['mipmap index'].value == selected:
                     minmap = x
                 print(f"desconocido short 0 - {x['desconocido short 0'].value}")
@@ -364,7 +364,7 @@ class BitmapToDds:
                 print(f"height - {x['height'].value}")
                 print(f"===========================================================")
 
-            if self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['format'].value != \
+            if self.bitmaps_0['bitmap resource handle'].childs[0]['format'].value != \
                     map_select_format[self.bitmaps_0['format'].selected]:
                 debug = True
             self.dds_file.loadDefaultValues(map_select_format[self.bitmaps_0['format'].selected])
@@ -385,11 +385,11 @@ class BitmapToDds:
 
     def loadArrayTexture(self):
 
-        if self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childrenCount == 0:
+        if self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childrenCount == 0:
             # assert bitmaps_0['mipmap count'].value == 0, f'El numero de mimap deberia ser 0'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0][
+            assert self.bitmaps_0['bitmap resource handle'].childs[0][
                        'embed_data_len'].value != 0, f'debe tener la data embebida'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['embed_data_len'].value == \
+            assert self.bitmaps_0['bitmap resource handle'].childs[0]['embed_data_len'].value == \
                    len(self.bitmap.tag_parse.full_header.file_header.section_3_bin_data), f'la data deberia estar en sect 3 '
 
             self.dds_file.loadDefaultValues(map_select_format[self.bitmaps_0['format'].selected])
@@ -403,18 +403,18 @@ class BitmapToDds:
             self.dds_file.bdata = self.bitmap.tag_parse.full_header.file_header.section_3_bin_data
         else:
             assert self.bitmaps_0['mipmap count'].value != 0, f'El numero de mimap no deberia ser 0'
-            assert self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0][
+            assert self.bitmaps_0['bitmap resource handle'].childs[0][
                        'embed_data_len'].value == 0, f'No debe tener la data embebida'
             assert len(self.bitmap.tag_parse.full_header.file_header.section_3_bin_data) == 0 \
                 , f'la data deberia estar en sect 3 por tanto 0'
-            selected = 0  # len(bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs)-1
-            minmap = self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs[selected]
+            selected = 0  # len(bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs)-1
+            minmap = self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs[selected]
             f_name = self.bitmap.in_game_path.split('\\')[-1]
             print(f"======== {f_name} ===========")
             print(f"======== {self.bitmap_ti['Usage'].value} ===========")
             print(f"======== {self.bitmap_ti['UsageId'].value} ===========")
             print(f"======== {self.bitmap_ti['texture group'].str_value} ===========")
-            for x in self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['mipmaps'].childs:
+            for x in self.bitmaps_0['bitmap resource handle'].childs[0]['mipmaps'].childs:
                 if x['mipmap index'].value == selected:
                     minmap = x
                 print(f"desconocido short 0 - {x['desconocido short 0'].value}")
@@ -427,7 +427,7 @@ class BitmapToDds:
                 print(f"height - {x['height'].value}")
                 print(f"===========================================================")
 
-            if self.bitmaps_0['bitmap resource handle (unmapped type(_43)'].childs[0]['format'].value != \
+            if self.bitmaps_0['bitmap resource handle'].childs[0]['format'].value != \
                     map_select_format[self.bitmaps_0['format'].selected]:
                 debug = True
             self.dds_file.loadDefaultValues(map_select_format[self.bitmaps_0['format'].selected])

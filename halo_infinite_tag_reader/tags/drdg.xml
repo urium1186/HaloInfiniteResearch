@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="Interface::DamageReportingDisplayGlobals" item_name_2="Interface::DamageReportingDisplayGlobals" item_name_3="Interface::DamageReportingDisplayGlobals" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_36 v="Damage Reporting Display Map" />
+	<_40 v="damageDisplayMap" item_name_1="Interface::DamageDisplayByDamageSource" item_name_2="Interface::DamageDisplayByDamageSource" item_name_3="Interface::DamageDisplayByDamageSource" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_37 v="Damage Source" />
+		<_36 v="Explanation" />
+		<_38 v="damageSource" item_name_3="i343::Damage::DamageSourceReference" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_36 v="NOTE" />
+			<_2 v="Damage Source Name" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_40 v="displayByAttachmentList" item_name_1="Interface::DamageDisplayByAttachmentList" item_name_2="Interface::DamageDisplayByAttachmentList" item_name_3="Interface::DamageDisplayByAttachmentList" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_37 v="Attachment List" />
+			<_36 v="Explanation" />
+			<_40 v="attachmentList" item_name_1="i343::Damage::AttachmentNameReferenceParam" item_name_2="i343::Damage::AttachmentNameReferenceParam" item_name_3="i343::Damage::AttachmentNameReferenceParam" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_37 v="Attachment Name" />
+				<_36 v="Explanation" />
+				<_38 v="attachmentName" item_name_3="i343::Damage::AttachmentNameReference" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_36 v="NOTE" />
+					<_2 v="Attachment Name" />
+					<_3B v="" />
+				</_38>
+				<_37 v="" />
+				<_3B v="" />
+			</_40>
+			<_37 v="" />
+			<_40 v="displayByDamageType" item_name_1="Interface::DamageDisplayByDamageType" item_name_2="Interface::DamageDisplayByDamageType" item_name_3="Interface::DamageDisplayByDamageType" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="275">
+				<_37 v="Damage Type" />
+				<_36 v="Explanation" />
+				<_38 v="damageType" item_name_3="i343::Damage::DamageTypeReference" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_36 v="NOTE" />
+					<_2 v="Damage Type Name" />
+					<_3B v="" />
+				</_38>
+				<_37 v="" />
+				<_38 v="displayDefinition" item_name_3="Interface::DamageDisplayDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+					<_2 v="display name" />
+					<_41 v="sprite sheet" />
+					<_6 v="sprite index" />
+					<_3B v="" />
+				</_38>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_padfae4" length="4" />
+	<_3B v="" />
+</root>

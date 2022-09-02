@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="AnimationLibraryEffects" item_name_2="AnimationLibraryEffects" item_name_3="AnimationLibraryEffects" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Effects" item_name_1="AnimationEffects" item_name_2="AnimationEffects" item_name_3="AnimationEffects" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="277">
+		<_6 v="Unique ID" />
+		<_2 v="Name" />
+		<_40 v="Effects" item_name_1="EffectDefinition" item_name_2="EffectDefinition" item_name_3="EffectDefinition" db1="96" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_41 v="Effect" />
+			<_E v="Key event flags">
+				<Flag v="AllowOnPlayer" />
+				<Flag v="LeftArmOnly" />
+				<Flag v="RightArmOnly" />
+				<Flag v="FirstPersonOnly" />
+				<Flag v="ThirdPersonOnly" />
+				<Flag v="ForwardOnly" />
+				<Flag v="BackwardsOnly" />
+				<Flag v="FPNoAgedWeapons" />
+			</_E>
+			<_34 v="generated_padf5ee" length="2" />
+			<_41 v="Model reference" />
+			<_2 v="Model variant" />
+			<_41 v="Weapon reference" />
+			<_2 v="Weapon variant" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pad7c9f" length="4" />
+	<_3B v="" />
+</root>

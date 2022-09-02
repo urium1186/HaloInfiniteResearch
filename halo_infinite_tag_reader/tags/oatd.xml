@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::Objects::ObjectAttachments" item_name_2="i343::Objects::ObjectAttachments" item_name_3="i343::Objects::ObjectAttachments" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" item_name_3="object_attachment_definition" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="name" />
+		<_41 v="type" />
+		<_41 v="tag graph output" />
+		<_2 v="output node name" />
+		<_40 v="tag graph float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" item_name_3="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="name" />
+			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_41 v="override type" />
+		<_36 v="variant names" />
+		<_40 v="variant names" item_name_1="i343::Objects::AttachmentVariantName" item_name_2="i343::Objects::AttachmentVariantName" item_name_3="i343::Objects::AttachmentVariantName" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="variant name" />
+			<_3B v="" />
+		</_40>
+		<_37 v="" />
+		<_2 v="marker" />
+		<_A v="change color">
+			<Flag v="none" />
+			<Flag v="primary" />
+			<Flag v="secondary" />
+			<Flag v="tertiary" />
+			<Flag v="quaternary" />
+		</_A>
+		<_F v="flags">
+			<Flag v="always create" />
+			<Flag v="effect size scale from object scale" />
+			<Flag v="update on create" />
+			<Flag v="always update" />
+		</_F>
+		<_34 v="generated_padbd3f" length="2" />
+		<_2 v="primary scale" />
+		<_2 v="secondary scale" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pad85d0" length="4" />
+	<_3B v="" />
+</root>

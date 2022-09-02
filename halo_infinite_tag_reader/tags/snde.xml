@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="sound_environment" item_name_2="sound_environment" item_name_3="sound_environment" db1="56" db2="0" db3="4" db4="0" db5="0" db6="0" db7="40" db8="1331">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_A v="Type">
+		<Flag v="Exterior" />
+		<Flag v="Interior" />
+	</_A>
+	<_34 v="generated_pad0fb7" length="3" />
+	<_36 v="Reverb Settings" />
+	<_38 v="reverb settings" item_name_3="s_sound_reverb_settings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="929">
+		<_36 v="WWise Environment" />
+		<_2 v="Environment name" />
+		<_C v="weapon environment">
+			<Flag v="default" />
+			<Flag v="InteriorNarrow" />
+			<Flag v="InteriorSmall" />
+			<Flag v="InteriorMed" />
+			<Flag v="InteriorLarge" />
+			<Flag v="ExteriorSmall" />
+			<Flag v="ExteriorMed" />
+			<Flag v="ExteriorLarge" />
+			<Flag v="ExteriorHalfOpen" />
+			<Flag v="ExteriorOpen" />
+		</_C>
+		<_3B v="" />
+	</_38>
+	<_41 v="Sound Bank" />
+	<_3B v="" />
+</root>

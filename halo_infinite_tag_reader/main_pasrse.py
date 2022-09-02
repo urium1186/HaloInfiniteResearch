@@ -9,11 +9,14 @@ from commons.debug_utils import *
 from configs.config import Config
 from halo_infinite_tag_reader.common_tag_types import readStringInPlace
 from halo_infinite_tag_reader.headers.ver.tag import Tag
+from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from halo_infinite_tag_reader.readers.bitmap import Bitmap
+from halo_infinite_tag_reader.readers.generic import Generic
 from halo_infinite_tag_reader.readers.material import Material
 from halo_infinite_tag_reader.readers.materialpalette import MaterialPalette
 from halo_infinite_tag_reader.readers.materialstyles import MaterialStyles
 from halo_infinite_tag_reader.readers.model import Model
+from halo_infinite_tag_reader.readers.reader_factory import ReaderFactory
 from halo_infinite_tag_reader.readers.render_model import RenderModel
 from halo_infinite_tag_reader.readers.stringlist import StringList
 from halo_infinite_tag_reader.readers.swatch import Swatch
@@ -54,6 +57,26 @@ test_path_r = [
              ]
 tag_zone_list = {}
 
+filename = 'objects\\characters\\spartans\\spartans.render_model'
+render_model_0 = RenderModel(filename)
+#render_model_0.load()
+
+filename = 'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'
+
+parse_string_list = StringList(filename)
+#parse_string_list.load()
+
+
+filename = '__chore\\gen__\\compositions\\mainmenu_customization\\camera{g}.camera_animation_graph'
+filename = '__chore\\gen__\\compositions\\mainmenu_customization\\mainmenu_customization{trim}.composition'
+filename = 'objects\\characters\\spartan_armor\\spartan_armor.model_animation_graph'
+filename = 'objects\\characters\\storm_masterchief\\damage_effects\\wraith_board_melee.effect'
+#filename = 'objects\\vehicles\\forerunner\\forerunner_vtol\\fx\\boarding\parts\\boarding_bits.particle'
+filename = '__chore\\pc__\\shaders\\default_bitmaps\\arrays\white{pc}.bitmap'
+filename = 'objects\\characters\\spartan_armor\\materials\\olympus\\armfor\\armfor_001\\olympus_spartan_l_armfor_001_s001.material'
+parse = ReaderFactory.create_reader(filename)
+parse.load()
+
 
 def evaluateTag(p_tag):
     #if p_tag.ZoneSetInfoHeader.ZoneSetCount1 == 1:
@@ -92,7 +115,7 @@ def evaluateTag(p_tag):
 
 def recursiveTags(p_tag: Tag, p_filename: str, p_tag_zone_list, recursive_list: [], pcount):
     pcount.append(1)
-    #print(pcount.__len__())
+    ##print(pcount.__len__())
     if pcount.__len__() == 1933:
         debug = True
     if p_tag.TagDependencyList.__len__()>0:
@@ -107,18 +130,23 @@ def recursiveTags(p_tag: Tag, p_filename: str, p_tag_zone_list, recursive_list: 
                     continue
                 if recursive_list.__contains__(key):
                     continue
+
                 with open(path_full, 'rb') as f:
                     in_tag = Tag(f)
                     f.close()
+                parse_g = ReaderFactory.create_reader(path_full.replace(Config.BASE_UNPACKED_PATH,''))
+                parse_g.load()
 
                 recursiveTags(in_tag, path_full, p_tag_zone_list, recursive_list, pcount)
 
             debug = 1
     else:
         key = p_filename.split('\\')[-1]
+        """ 
         if key.__contains__('bitmap'):
             temp_bitm = Bitmap(p_filename.replace(Config.BASE_UNPACKED_PATH,''))
             temp_bitm.load()
+        """
         #int_hash = getMmr3HashIntFrom(key)
         if not recursive_list.__contains__(key):
             recursive_list.append(key)
@@ -138,8 +166,8 @@ def recursiveTags(p_tag: Tag, p_filename: str, p_tag_zone_list, recursive_list: 
 
 r_path_list = []
 count = []
-"""
-"""
+
+
 for p in test_path_r:
     filename = Config.BASE_UNPACKED_PATH + p
     tag = None
@@ -147,7 +175,7 @@ for p in test_path_r:
         tag = Tag(f)
         f.close()
     recursiveTags(tag, filename, tag_zone_list, r_path_list,count)
-
+""""""
 for p in test_path:
     filename = Config.BASE_UNPACKED_PATH + p
     tag = None
@@ -163,15 +191,15 @@ for p in test_path:
 
 # search_regions_names()
 """
-print(' Scale data Block : ' + getGUID('ACFD51FE7847FF625430C3A86CA923A0'))
-print(' Mesh data Block : ' + getGUID('9D84814AB442EEFBAC56C9A3180F53E6'))
-print(' Mesh meta data block : ' + getGUID('97c4fa677D4E3D88a2f794b7f893ff8d'))
-print(' Entry for the parts : ' + getGUID('2973dd1080487fe09ab78bbcee273225'))
+#print(' Scale data Block : ' + getGUID('ACFD51FE7847FF625430C3A86CA923A0'))
+#print(' Mesh data Block : ' + getGUID('9D84814AB442EEFBAC56C9A3180F53E6'))
+#print(' Mesh meta data block : ' + getGUID('97c4fa677D4E3D88a2f794b7f893ff8d'))
+#print(' Entry for the parts : ' + getGUID('2973dd1080487fe09ab78bbcee273225'))
 """
-print(len(map_CUID))
-print(len(debug_dict))
-print(len(debug_dict_1))
-print(len(debug_hash))
+#print(len(map_CUID))
+#print(len(debug_dict))
+#print(len(debug_dict_1))
+#print(len(debug_hash))
 
 _debug_DataBlock = OrderedDict(sorted(debug_DataBlock.items()))
 _debug_TagStruct = OrderedDict(sorted(debug_TagStruct.items()))
@@ -181,6 +209,7 @@ _debug_data_ref_zoneInfo = OrderedDict(sorted(debug_data_ref_zoneInfo.items()))
 
 
 filename = 'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'
+
 parse_string_list = StringList(filename)
 parse_string_list.load()
 """
@@ -211,7 +240,7 @@ parse_bitm = Bitmap(filename)
 parse_bitm.load()
 """
 # parse_bitm.toJson()
-print("parse_bitm")
+#print("parse_bitm")
 """
 
 filename = '__chore\\pc__\\materials\\generic\\base\\banished\\grime\\oil_caked_a\\ban_base_grime_oil_caked_a_normal{pc}.bitmap'
@@ -224,7 +253,7 @@ parse_bitm_1 = Bitmap(filename)
 parse_bitm_1.load()
 """
 # parse_bitm.toJson()
-print("parse_bitm")
+#print("parse_bitm")
 """
 filename = '__chore\\pc__\\materials\\generic\\base\\banished\\grime\\oil_caked_a\\ban_base_grime_oil_caked_a_rohg{pc}.bitmap'
 tag_bitm_2 = None
@@ -235,14 +264,14 @@ with open(Config.BASE_UNPACKED_PATH + filename, 'rb') as f:
 parse_bitm_2 = Bitmap(filename)
 parse_bitm_2.load()
 # parse_bitm.toJson()
-print("parse_bitm")
+#print("parse_bitm")
 
 
 filename = '__chore\\pc__\\materials\\generic\\base\\banished\\grime\\oil_caked_a\\ban_base_grime_oil_caked_a_gradientmask{pc}.bitmap'
 parse_bitm_3 = Bitmap(filename)
 parse_bitm_3.load()
 # parse_bitm.toJson()
-print("parse_bitm")
+#print("parse_bitm")
 """
 
 """
@@ -254,7 +283,7 @@ with open(Config.BASE_UNPACKED_PATH + filename, 'rb') as f:
 parse_mwsw = Swatch(filename)
 parse_mwsw.load()
 # parse_mwsw.toJson()
-print("parse_mwsw")
+#print("parse_mwsw")
 
 filename = 'objects\\characters\\spartan_armor\\coatings\\olympus\\oly_mil_stone_green.materialpalette'
 tag_mwpl = None
@@ -264,7 +293,7 @@ with open(Config.BASE_UNPACKED_PATH + filename, 'rb') as f:
 parse_mwpl = MaterialPalette(filename)
 parse_mwpl.load()
 # parse_mwpl.toJson()
-print("parse_mwpl")
+#print("parse_mwpl")
 
 filename = '__chore\\gen__\\objects\\characters\\spartan_armor\\coatings\\olympus\\olympus_spartan_style{ct}.materialstyles'
 tag_mwsy = None
@@ -273,7 +302,7 @@ with open(Config.BASE_UNPACKED_PATH + filename, 'rb') as f:
     f.close()
 parse_mwsy = MaterialStyles(filename)
 parse_mwsy.load()
-print("parse_mwsy")
+#print("parse_mwsy")
 
 # search_regions_names()
 
@@ -285,7 +314,7 @@ filename = 'objects\\characters\\spartan_armor\\materials\\olympus\\armfor\\armf
 parse_mat_1 = Material(filename)
 parse_mat_1.load()
 # parse_mat.toJson()
-print("parse_mat")
+#print("parse_mat")
 
 
 filename = 'objects\\characters\\spartans\\spartans.render_model'
@@ -297,7 +326,7 @@ parse_mode = RenderModel(filename)
 parse_mode.load()
 #parse_mode.getMeshXLod()
 # parse_mat.toJson()
-print("parse_mode")
+#print("parse_mode")
 
 
 
@@ -309,7 +338,7 @@ tag_mode_1 = None
 parse_mode = RenderModel(filename)
 parse_mode.load()
 # parse_mat.toJson()
-print("parse_mode")
+#print("parse_mode")
 
 filename = 'objects\\weapons\\pistol\\magnum\\magnum.render_model'
 tag_mode_2 = None
@@ -319,7 +348,7 @@ with open(Config.BASE_UNPACKED_PATH + filename, 'rb') as f:
 parse_mode_2 = RenderModel(filename)
 parse_mode_2.load()
 # parse_mat.toJson()
-print("parse_mode")
+#print("parse_mode")
 
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
 parse_mode_3 = RenderModel(filename)
@@ -327,22 +356,22 @@ parse_mode_3.load()
 """
 """
 # parse_mat.toJson()
-print("parse_mode")
+#print("parse_mode")
 _bitmap_id_usage = OrderedDict(sorted(bitmap_id_usage.items()))
 
 filename = '__chore\\gen__\\objects\\characters\\spartan_armor\\coatings\\olympus\\olympus_spartan_style{ct}.materialstyles'
-
 dict_core = {
-    'iron_eagle_spartan_style{ct}': "eag",
-    'lone_wolves_spartan_style{ct}': "wlv",
-    'mc117_spartan_style{ct}': "mc117",
-    'olympus_spartan_style{ct}': "olympus",
-    'reach_spartan_style{ct}': "reach",
-    'samurai_spartan_style{ct}': "samurai"
+        'iron_eagle_spartan_style{ct}': "eag",
+        'lone_wolves_spartan_style{ct}': "wlv",
+        'mc117_spartan_style{ct}': "mc117",
+        'olympus_spartan_style{ct}': "olympus",
+        'reach_spartan_style{ct}': "reach",
+        'samurai_spartan_style{ct}': "samurai"
 
-}
-print(debug_hash)
-print(debug_TagStruct)
+    }
+
+##print(debug_hash)
+##print(debug_TagStruct)
 _debug_TagStruct_Type = OrderedDict(sorted(debug_TagStruct_Type.items()))
 for path in pathlib.Path(Config.SPARTAN_STYLE_PATH).rglob('*spartan_style{ct}.materialstyles'):
     #continue
@@ -351,12 +380,12 @@ for path in pathlib.Path(Config.SPARTAN_STYLE_PATH).rglob('*spartan_style{ct}.ma
 
         parse_mwsy = MaterialStyles(filename)
         parse_mwsy.load()
-        print("------------------------" + dict_core[path.stem] + "------------------------")
+        ##print("------------------------" + dict_core[path.stem] + "------------------------")
 
         for i in range(parse_mwsy.tag_parse.rootTagInst.childs[0]['style'].childrenCount):
             temp_palette = parse_mwsy.tag_parse.rootTagInst.childs[0]['style'].childs[i]
 
-            # print(temp_palette['palette'].path)
+            # #print(temp_palette['palette'].path)
 
             parse_mwsy.default_style = i
             parse_mwsy.toJson()
@@ -372,7 +401,8 @@ for path in pathlib.Path(Config.SPARTAN_STYLE_PATH).rglob('*spartan_style{ct}.ma
                 fw.close()
 
         f.close()
-print("parse_mwsy")
+#print("parse_mwsy")
+print("fin")
 
 if __name__ == "__main__":
     print('comienzo')

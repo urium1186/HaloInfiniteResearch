@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="ParticleAssetTag" item_name_2="ParticleAssetTag" item_name_3="ParticleAssetTag" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="88" db8="3411">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_41 v="Asset" />
+	<_2 v="Variant" />
+	<_6 v="LOD Level" />
+	<_1C v="Rotation" />
+	<_19 v="Scale" />
+	<_41 v="Generated ParticleModel" />
+	<_3B v="" />
+</root>

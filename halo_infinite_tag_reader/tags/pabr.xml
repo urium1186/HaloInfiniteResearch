@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::Graphics::Painter::BrushDefinition" item_name_2="i343::Graphics::Painter::BrushDefinition" item_name_3="i343::Graphics::Painter::BrushDefinition" db1="304" db2="0" db3="0" db4="0" db5="0" db6="0" db7="288" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_D v="Flags">
+		<Flag v="Only Live Preview During Brush Strokes" />
+		<Flag v="Use Paint Targets as UAVs" />
+		<Flag v="Allow Grouped Textures" />
+		<Flag v="Disallow Ungrouped Textures" />
+	</_D>
+	<_41 v="Brush Material" />
+	<_41 v="Generate Data Graph" />
+	<_41 v="Paint Graph" />
+	<_41 v="Highlight Graph" />
+	<_41 v="Live Preview Graph" />
+	<_41 v="Begin Stroke Generate Data Graph" />
+	<_41 v="Begin Stroke Graph" />
+	<_41 v="End Stroke Graph" />
+	<_41 v="On Activate Graph" />
+	<_41 v="On Deactivate Graph" />
+	<_34 v="generated_pad576a" length="4" />
+	<_3B v="" />
+</root>

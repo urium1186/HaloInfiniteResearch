@@ -1,14 +1,15 @@
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
-from halo_infinite_tag_reader.common_tag_types import TagInstance
+from halo_infinite_tag_reader.common_tag_types import TagInstance, readStringInPlace
 from configs.config import Config
 from halo_infinite_tag_reader.readers.stringlist_resource import StringListResource
+from halo_infinite_tag_reader.tagparsecontrol import TagParseControl
 
 
 class StringList(BaseTemplate):
 
     def __init__(self, filename):
         super().__init__(filename, 'uslg')
-        self.resource = []
+        #self.resource = []
         self.json_str_base = '{"root":[]}'
 
     def load(self):
@@ -21,7 +22,14 @@ class StringList(BaseTemplate):
             for i, lang in enumerate(instance.childs):
                 if not (i in valid_lang):
                     continue
-                filename = f'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist[{i}_string_list_resource]'
-                parse_string_list_r = StringListResource(filename)
-                parse_string_list_r.load()
-                self.resource.append(parse_string_list_r)
+                filename = f'{self.full_filepath}[{i}_string_list_resource]'
+                temp = TagParseControl(filename,p_tagLayout=lang['string list resource'].tagDef.B)
+                temp.readFile()
+                instance_s = temp.rootTagInst.childs[0]['string lookup info']
+                init_adress = instance_s.content_entry.data_reference.offset_plus + instance_s.content_entry.data_reference.size
+                with open(filename, 'rb') as f_temp:
+                    for x in instance_s.childs:
+                        offset_temp = init_adress + x['offset'].value
+                        x['string id'].extra_data = {"str_": readStringInPlace(f_temp, offset_temp, True)}
+                lang['string list resource'].childs = temp.rootTagInst.childs
+                # self.resource.append(temp)

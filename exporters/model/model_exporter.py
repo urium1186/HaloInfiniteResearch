@@ -55,6 +55,6 @@ class ModelExporter(BaseExporter):
             save_path = f"{self.filepath_export}{sub_dir}{ch['name'].str_value}.fbx"
             fbx_model.export(save_path, True)
             print(f"Saved model to {save_path}")
-            break
+            #break
 
         print('end Export')

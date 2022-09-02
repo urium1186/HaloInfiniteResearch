@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::ValorRewards::ValorUnlocks" item_name_2="i343::ValorRewards::ValorUnlocks" item_name_3="i343::ValorRewards::ValorUnlocks" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="80" db8="1299">
+	<_38 v="AnyTag" item_name_3="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_3="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Valor Rewards" item_name_1="i343::ValorRewards::Reward" item_name_2="i343::ValorRewards::Reward" item_name_3="i343::ValorRewards::Reward" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Reward Name" />
+		<_2 v="Is Read Key" />
+		<_2E v="Icon" />
+		<_2E v="Background" />
+		<_6 v="Sprite Index" />
+		<_B v="Damage Type">
+			<Flag v="None" />
+			<Flag v="Kinetic" />
+			<Flag v="Plasma" />
+			<Flag v="Hardlight" />
+			<Flag v="Shock" />
+			<Flag v="Power" />
+			<Flag v="Melee" />
+		</_B>
+		<_34 v="generated_pad0c76" length="2" />
+		<_41 v="Vehicle Sprite" />
+		<_41 v="Weapon Sprite" />
+		<_41 v="Marine Sprite" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Valor Points" item_name_1="i343::ValorRewards::Points" item_name_2="i343::ValorRewards::Points" item_name_3="i343::ValorRewards::Points" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Persistence Key" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Icons" item_name_1="i343::ValorRewards::IconBitmap" item_name_2="i343::ValorRewards::IconBitmap" item_name_3="i343::ValorRewards::IconBitmap" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Name" />
+		<_41 v="Sprite" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Backgrounds" item_name_1="i343::ValorRewards::BackgroundBitmap" item_name_2="i343::ValorRewards::BackgroundBitmap" item_name_3="i343::ValorRewards::BackgroundBitmap" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Name" />
+		<_41 v="Sprite" />
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

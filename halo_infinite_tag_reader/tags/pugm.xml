@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::PowerUp::PowerupDefinition" item_name_2="i343::PowerUp::PowerupDefinition" item_name_3="i343::PowerUp::PowerupDefinition" db1="88" db2="0" db3="3" db4="0" db5="0" db6="0" db7="72" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_2 v="type" />
+	<_1F v="color" />
+	<_1F v="UI fill meter color" />
+	<_1F v="UI backer bitmap color" />
+	<_41 v="Generic modifiers" />
+	<_34 v="generated_pad6516" length="4" />
+	<_3B v="" />
+</root>

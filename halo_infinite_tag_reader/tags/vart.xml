@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::Graphics::VectorArtTag" item_name_2="i343::Graphics::VectorArtTag" item_name_3="i343::Graphics::VectorArtTag" db1="104" db2="0" db3="0" db4="0" db5="1" db6="2" db7="88" db8="1299">
+	<_38 v="AnyTag" item_name_3="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_3="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="m_vectorVertices" item_name_1="i343::Graphics::VectorVertex" item_name_2="i343::Graphics::VectorVertex" item_name_3="i343::Graphics::VectorVertex" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_16 v="position" />
+		<_6 v="region index" />
+		<_17 v="texcoord" />
+		<_6 v="render type" />
+		<_3B v="" />
+	</_40>
+	<_40 v="m_vectorIndices" item_name_1="i343::Graphics::VectorIndex" item_name_2="i343::Graphics::VectorIndex" item_name_3="i343::Graphics::VectorIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_3D v="index" />
+		<_3B v="" />
+	</_40>
+	<_40 v="m_drawInformation" item_name_1="i343::Graphics::VectorDrawInformation" item_name_2="i343::Graphics::VectorDrawInformation" item_name_3="i343::Graphics::VectorDrawInformation" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_3D v="entry point" />
+		<_3D v="vertex start" />
+		<_3D v="index start" />
+		<_3D v="index count" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_padc0a6" length="4" />
+	<_7 v="vertexBuffer" />
+	<_7 v="indexBuffer" />
+	<_14 v="aspectRatio" />
+	<_34 v="generated_pad0d5b" length="4" />
+	<_3B v="" />
+</root>

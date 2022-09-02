@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="StructureMetadata" item_name_2="StructureMetadata" item_name_3="StructureMetadata" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="80" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Effects markers" item_name_1="StructureFxPlacementMarker" item_name_2="StructureFxPlacementMarker" item_name_3="StructureFxPlacementMarker" db1="88" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_0 v="marker name" />
+		<_1A v="rotation" />
+		<_17 v="position" />
+		<_41 v="optional attached effect" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Light Cones" item_name_1="StructureMetadataLightConeMarker" item_name_2="StructureMetadataLightConeMarker" item_name_3="StructureMetadataLightConeMarker" db1="116" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_0 v="marker name" />
+		<_1A v="rotation" />
+		<_17 v="position" />
+		<_14 v="length" />
+		<_14 v="width" />
+		<_14 v="intensity" />
+		<_20 v="light color" />
+		<_41 v="light cone tag" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Object Palette" item_name_1="structure_environment_object_palette_entry" item_name_2="structure_environment_object_palette_entry" item_name_3="structure_environment_object_palette_entry" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="definition" />
+		<_41 v="model" />
+		<_6 v="GVEYN" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Objects" item_name_1="structure_environment_object" item_name_2="structure_environment_object" item_name_3="structure_environment_object" db1="84" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+		<_0 v="name" />
+		<_1A v="rotation" />
+		<_17 v="translation" />
+		<_14 v="scale" />
+		<_2E v="palette_index" />
+		<_F v="flags">
+			<Flag v="scripts always run" />
+		</_F>
+		<_34 v="generated_pad238b" length="1" />
+		<_6 v="unique id" />
+		<_9 v="exported object type" />
+		<_2 v="scenario object name" />
+		<_2 v="variant name" />
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="BspLightingVolumes" item_name_2="BspLightingVolumes" item_name_3="BspLightingVolumes" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="80" db8="1331">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Lightmap Priority Volumes" item_name_1="LightmapPriorityVolume" item_name_2="LightmapPriorityVolume" item_name_3="LightmapPriorityVolume" db1="164" db2="0" db3="2" db4="0" db5="1" db6="2" db7="0" db8="2355">
+		<_2 v="Name" />
+		<_37 v="Volume settings" />
+		<_38 v="Volume" item_name_3="GenericVolume" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_40 v="Points" item_name_1="s_real_sector_point_generic_volume" item_name_2="s_real_sector_point_generic_volume" item_name_3="s_real_sector_point_generic_volume" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_17 v="position" />
+				<_3B v="" />
+			</_40>
+			<_14 v="height" />
+			<_14 v="sink" />
+			<_17 v="center point" />
+			<_14 v="trivial cull radius squared" />
+			<_17 v="aabbCenter" />
+			<_17 v="aabbExtents" />
+			<_40 v="nativePoints2D" item_name_1="GenericVolumeNativePoint2D" item_name_2="GenericVolumeNativePoint2D" item_name_3="GenericVolumeNativePoint2D" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_16 v="point" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_14 v="Volume Priority" />
+		<_14 v="Lightmap Priority" />
+		<_B v="Exclude Shadow Geometry">
+			<Flag v="No" />
+			<Flag v="Yes" />
+		</_B>
+		<_B v="Exclude Per Pixel Lighting">
+			<Flag v="No" />
+			<Flag v="Yes" />
+		</_B>
+		<_B v="Exclude Analytic Sun Contribution">
+			<Flag v="No" />
+			<Flag v="Yes" />
+		</_B>
+		<_B v="Exclude Analytic Light Contribution">
+			<Flag v="No" />
+			<Flag v="Yes" />
+		</_B>
+		<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="folder name" />
+			<_17 v="local space pivot point position" />
+			<_3B v="" />
+		</_40>
+		<_41 v="owner bsp" />
+		<_2 v="owner variant" />
+		<_5 v="runtime bsp index" />
+		<_5 v="runtime variant index" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Air Probe Density Volumes" item_name_1="AirProbeDensityVolume" item_name_2="AirProbeDensityVolume" item_name_3="AirProbeDensityVolume" db1="152" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="2355">
+		<_2 v="Name" />
+		<_37 v="Volume settings" />
+		<_38 v="Volume" item_name_3="GenericVolume" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_40 v="Points" item_name_1="s_real_sector_point_generic_volume" item_name_2="s_real_sector_point_generic_volume" item_name_3="s_real_sector_point_generic_volume" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_17 v="position" />
+				<_3B v="" />
+			</_40>
+			<_14 v="height" />
+			<_14 v="sink" />
+			<_17 v="center point" />
+			<_14 v="trivial cull radius squared" />
+			<_17 v="aabbCenter" />
+			<_17 v="aabbExtents" />
+			<_40 v="nativePoints2D" item_name_1="GenericVolumeNativePoint2D" item_name_2="GenericVolumeNativePoint2D" item_name_3="GenericVolumeNativePoint2D" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_16 v="point" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_14 v="Air Probe Density" />
+		<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="folder name" />
+			<_17 v="local space pivot point position" />
+			<_3B v="" />
+		</_40>
+		<_41 v="owner bsp" />
+		<_2 v="owner variant" />
+		<_5 v="runtime bsp index" />
+		<_5 v="runtime variant index" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Air Probe Region Volumes" item_name_1="AirProbeRegionVolume" item_name_2="AirProbeRegionVolume" item_name_3="AirProbeRegionVolume" db1="180" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="2355">
+		<_2 v="Name" />
+		<_37 v="Volume settings" />
+		<_38 v="Volume" item_name_3="GenericVolume" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_40 v="Points" item_name_1="s_real_sector_point_generic_volume" item_name_2="s_real_sector_point_generic_volume" item_name_3="s_real_sector_point_generic_volume" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_17 v="position" />
+				<_3B v="" />
+			</_40>
+			<_14 v="height" />
+			<_14 v="sink" />
+			<_17 v="center point" />
+			<_14 v="trivial cull radius squared" />
+			<_17 v="aabbCenter" />
+			<_17 v="aabbExtents" />
+			<_40 v="nativePoints2D" item_name_1="GenericVolumeNativePoint2D" item_name_2="GenericVolumeNativePoint2D" item_name_3="GenericVolumeNativePoint2D" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_16 v="point" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="folder name" />
+			<_17 v="local space pivot point position" />
+			<_3B v="" />
+		</_40>
+		<_41 v="owner bsp" />
+		<_2 v="owner variant" />
+		<_5 v="runtime bsp index" />
+		<_5 v="runtime variant index" />
+		<_14 v="Probe XY spacing" />
+		<_14 v="Probe Z spacing" />
+		<_6 v="Volume priority" />
+		<_14 v="Blend radius XY" />
+		<_14 v="Blend radius Z" />
+		<_E v="Flags">
+			<Flag v="Enable Terrain Following" />
+			<Flag v="Disable Occlusion" />
+		</_E>
+		<_34 v="generated_pad0802" length="2" />
+		<_14 v="Probe offset above ground" />
+		<_6 v="Number of Z layers" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Cubemap Volumes" item_name_1="CubemapVolume" item_name_2="CubemapVolume" item_name_3="CubemapVolume" db1="284" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="2355">
+		<_2 v="Name" />
+		<_D v="Flags">
+			<Flag v="Enable Intensity Correction" />
+			<Flag v="Capture With Effects" />
+			<Flag v="Affects Adjacent Bsps" />
+			<Flag v="Capture Dynamic Objects" />
+		</_D>
+		<_38 v="Dumpling" item_name_3="s_scenario_dumpling" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_40 v="inner points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" item_name_3="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_17 v="position" />
+				<_3B v="" />
+			</_40>
+			<_40 v="outer points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" item_name_3="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_17 v="position" />
+				<_3B v="" />
+			</_40>
+			<_14 v="height" />
+			<_14 v="sink" />
+			<_14 v="inner value" />
+			<_14 v="outer value" />
+			<_17 v="center point" />
+			<_14 v="trivial cull radius squared" />
+			<_14 v="bound volume" />
+			<_3B v="" />
+		</_38>
+		<_41 v="Cubemap Bitmap" />
+		<_B v="Enable Parallax Correction">
+			<Flag v="Off" />
+			<Flag v="On" />
+		</_B>
+		<_5 v="Cubemap Volume Priority" />
+		<_17 v="Cubemap Origin" />
+		<_19 v="Depth Positive" />
+		<_19 v="Depth Negative" />
+		<_B v="Active Volume">
+			<Flag v="Off" />
+			<Flag v="On" />
+		</_B>
+		<_B v="Maximum cubemap size">
+			<Flag v="128x128" />
+			<Flag v="256x256" />
+			<Flag v="512x512" />
+		</_B>
+		<_17 v="Intensity" />
+		<_14 v="Self-illum Scale Down" />
+		<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="folder name" />
+			<_17 v="local space pivot point position" />
+			<_3B v="" />
+		</_40>
+		<_41 v="owner bsp" />
+		<_2 v="owner variant" />
+		<_5 v="runtime bsp index" />
+		<_5 v="runtime variant index" />
+		<_14 v="Blend Distance" />
+		<_C v="Cubemap Volume Type">
+			<Flag v="Prism" />
+			<Flag v="Sphere" />
+		</_C>
+		<_14 v="Orientation" />
+		<_41 v="Cubemap Depth Bitmap" />
+		<_14 v="Depth Blend Range" />
+		<_14 v="Intensity Scale" />
+		<_B v="Tintable">
+			<Flag v="Off" />
+			<Flag v="On" />
+		</_B>
+		<_34 v="generated_pad93d5" length="2" />
+		<_14 v="Relevancy Radius" />
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

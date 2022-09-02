@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::Curve::CurveDefinitionTag" item_name_2="i343::Curve::CurveDefinitionTag" item_name_3="i343::Curve::CurveDefinitionTag" db1="96" db2="0" db3="1" db4="0" db5="1" db6="0" db7="80" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Curves 1D" item_name_1="i343::Curve::Named1dCurve" item_name_2="i343::Curve::Named1dCurve" item_name_3="i343::Curve::Named1dCurve" db1="44" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_2 v="Name" />
+		<_38 v="Definition" item_name_3="i343::Curve::Curve1dDefinition" db1="20" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="control points" item_name_1="i343::Curve::Curve1dControlPoint" item_name_2="i343::Curve::Curve1dControlPoint" item_name_3="i343::Curve::Curve1dControlPoint" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_14 v="value" />
+				<_14 v="tangent in" />
+				<_14 v="tangent out" />
+				<_14 v="curviness" />
+				<_A v="segment type">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="tangent mode">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_34 v="generated_pad7103" length="2" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_40 v="Metadata" item_name_1="i343::Curve::CurveDefinitionTagMetadata" item_name_2="i343::Curve::CurveDefinitionTagMetadata" item_name_3="i343::Curve::CurveDefinitionTagMetadata" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_14 v="input" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Curves 2D" item_name_1="i343::Curve::Named2dCurve" item_name_2="i343::Curve::Named2dCurve" item_name_3="i343::Curve::Named2dCurve" db1="44" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_2 v="Name" />
+		<_38 v="Definition" item_name_3="i343::Curve::Curve2dDefinition" db1="20" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="control points" item_name_1="i343::Curve::Curve2dControlPoint" item_name_2="i343::Curve::Curve2dControlPoint" item_name_3="i343::Curve::Curve2dControlPoint" db1="32" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_18 v="value" />
+				<_18 v="tangent in" />
+				<_18 v="tangent out" />
+				<_14 v="curviness" />
+				<_A v="segment type x">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="segment type y">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="tangent mode x">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_A v="tangent mode y">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_40 v="Metadata" item_name_1="i343::Curve::CurveDefinitionTagMetadata" item_name_2="i343::Curve::CurveDefinitionTagMetadata" item_name_3="i343::Curve::CurveDefinitionTagMetadata" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_14 v="input" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Curves 3D" item_name_1="i343::Curve::Named3dCurve" item_name_2="i343::Curve::Named3dCurve" item_name_3="i343::Curve::Named3dCurve" db1="44" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_2 v="Name" />
+		<_38 v="Definition" item_name_3="i343::Curve::Curve3dDefinition" db1="20" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="control points" item_name_1="i343::Curve::Curve3dControlPoint" item_name_2="i343::Curve::Curve3dControlPoint" item_name_3="i343::Curve::Curve3dControlPoint" db1="68" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2321">
+				<_19 v="value" />
+				<_19 v="tangent in" />
+				<_19 v="tangent out" />
+				<_14 v="curviness" />
+				<_A v="segment type x">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="segment type y">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="segment type z">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="tangent mode x">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_A v="tangent mode y">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_A v="tangent mode z">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_34 v="generated_pad30cd" length="2" />
+				<_40 v="pointMetadata" item_name_1="i343::Curve::CurveControlPointMetadata" item_name_2="i343::Curve::CurveControlPointMetadata" item_name_3="i343::Curve::CurveControlPointMetadata" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="spline road metadata" item_name_1="i343::Curve::RoadCurveControlPointMetadata" item_name_2="i343::Curve::RoadCurveControlPointMetadata" item_name_3="i343::Curve::RoadCurveControlPointMetadata" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_14 v="width" />
+						<_14 v="opacity" />
+						<_14 v="falloffLeft" />
+						<_14 v="falloffRight" />
+						<_14 v="bank" />
+						<_3B v="" />
+					</_40>
+					<_40 v="road decal metadata" item_name_1="i343::Curve::RoadDecalControlPointMetadata" item_name_2="i343::Curve::RoadDecalControlPointMetadata" item_name_3="i343::Curve::RoadDecalControlPointMetadata" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+						<_40 v="Road Decal Textures" item_name_1="i343::Curve::RoadDecalBitmapReference" item_name_2="i343::Curve::RoadDecalBitmapReference" item_name_3="i343::Curve::RoadDecalBitmapReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+							<_41 v="Reference" />
+							<_3B v="" />
+						</_40>
+						<_18 v="Road Decal Scale" />
+						<_18 v="Road Decal Offset" />
+						<_14 v="Road Decal Tile Repeat Count" />
+						<_14 v="Road Decal Height Strength" />
+						<_14 v="Road Decal Mask Strength" />
+						<_14 v="Road Decal Height Contrast" />
+						<_14 v="Road Decal Mask Contrast" />
+						<_14 v="Road Decal Edge Fade" />
+						<_6 v="Road Decal Random Seed" />
+						<_3B v="" />
+					</_40>
+					<_40 v="animated spline metadata" item_name_1="i343::Curve::AnimatedSplineControlPointMetadata" item_name_2="i343::Curve::AnimatedSplineControlPointMetadata" item_name_3="i343::Curve::AnimatedSplineControlPointMetadata" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_14 v="Time" />
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_40 v="Metadata" item_name_1="i343::Curve::CurveDefinitionTagMetadata" item_name_2="i343::Curve::CurveDefinitionTagMetadata" item_name_3="i343::Curve::CurveDefinitionTagMetadata" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_14 v="input" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Curves Transform" item_name_1="i343::Curve::NamedTransformCurve" item_name_2="i343::Curve::NamedTransformCurve" item_name_3="i343::Curve::NamedTransformCurve" db1="64" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_2 v="Name" />
+		<_38 v="Position Definition" item_name_3="i343::Curve::Curve3dDefinition" db1="20" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="control points" item_name_1="i343::Curve::Curve3dControlPoint" item_name_2="i343::Curve::Curve3dControlPoint" item_name_3="i343::Curve::Curve3dControlPoint" db1="68" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2321">
+				<_19 v="value" />
+				<_19 v="tangent in" />
+				<_19 v="tangent out" />
+				<_14 v="curviness" />
+				<_A v="segment type x">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="segment type y">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="segment type z">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="tangent mode x">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_A v="tangent mode y">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_A v="tangent mode z">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_34 v="generated_pad30cd" length="2" />
+				<_40 v="pointMetadata" item_name_1="i343::Curve::CurveControlPointMetadata" item_name_2="i343::Curve::CurveControlPointMetadata" item_name_3="i343::Curve::CurveControlPointMetadata" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="spline road metadata" item_name_1="i343::Curve::RoadCurveControlPointMetadata" item_name_2="i343::Curve::RoadCurveControlPointMetadata" item_name_3="i343::Curve::RoadCurveControlPointMetadata" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_14 v="width" />
+						<_14 v="opacity" />
+						<_14 v="falloffLeft" />
+						<_14 v="falloffRight" />
+						<_14 v="bank" />
+						<_3B v="" />
+					</_40>
+					<_40 v="road decal metadata" item_name_1="i343::Curve::RoadDecalControlPointMetadata" item_name_2="i343::Curve::RoadDecalControlPointMetadata" item_name_3="i343::Curve::RoadDecalControlPointMetadata" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+						<_40 v="Road Decal Textures" item_name_1="i343::Curve::RoadDecalBitmapReference" item_name_2="i343::Curve::RoadDecalBitmapReference" item_name_3="i343::Curve::RoadDecalBitmapReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+							<_41 v="Reference" />
+							<_3B v="" />
+						</_40>
+						<_18 v="Road Decal Scale" />
+						<_18 v="Road Decal Offset" />
+						<_14 v="Road Decal Tile Repeat Count" />
+						<_14 v="Road Decal Height Strength" />
+						<_14 v="Road Decal Mask Strength" />
+						<_14 v="Road Decal Height Contrast" />
+						<_14 v="Road Decal Mask Contrast" />
+						<_14 v="Road Decal Edge Fade" />
+						<_6 v="Road Decal Random Seed" />
+						<_3B v="" />
+					</_40>
+					<_40 v="animated spline metadata" item_name_1="i343::Curve::AnimatedSplineControlPointMetadata" item_name_2="i343::Curve::AnimatedSplineControlPointMetadata" item_name_3="i343::Curve::AnimatedSplineControlPointMetadata" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_14 v="Time" />
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_38 v="Orientation Definition" item_name_3="i343::Curve::Curve3dDefinition" db1="20" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="control points" item_name_1="i343::Curve::Curve3dControlPoint" item_name_2="i343::Curve::Curve3dControlPoint" item_name_3="i343::Curve::Curve3dControlPoint" db1="68" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2321">
+				<_19 v="value" />
+				<_19 v="tangent in" />
+				<_19 v="tangent out" />
+				<_14 v="curviness" />
+				<_A v="segment type x">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="segment type y">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="segment type z">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="tangent mode x">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_A v="tangent mode y">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_A v="tangent mode z">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_34 v="generated_pad30cd" length="2" />
+				<_40 v="pointMetadata" item_name_1="i343::Curve::CurveControlPointMetadata" item_name_2="i343::Curve::CurveControlPointMetadata" item_name_3="i343::Curve::CurveControlPointMetadata" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="spline road metadata" item_name_1="i343::Curve::RoadCurveControlPointMetadata" item_name_2="i343::Curve::RoadCurveControlPointMetadata" item_name_3="i343::Curve::RoadCurveControlPointMetadata" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_14 v="width" />
+						<_14 v="opacity" />
+						<_14 v="falloffLeft" />
+						<_14 v="falloffRight" />
+						<_14 v="bank" />
+						<_3B v="" />
+					</_40>
+					<_40 v="road decal metadata" item_name_1="i343::Curve::RoadDecalControlPointMetadata" item_name_2="i343::Curve::RoadDecalControlPointMetadata" item_name_3="i343::Curve::RoadDecalControlPointMetadata" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+						<_40 v="Road Decal Textures" item_name_1="i343::Curve::RoadDecalBitmapReference" item_name_2="i343::Curve::RoadDecalBitmapReference" item_name_3="i343::Curve::RoadDecalBitmapReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+							<_41 v="Reference" />
+							<_3B v="" />
+						</_40>
+						<_18 v="Road Decal Scale" />
+						<_18 v="Road Decal Offset" />
+						<_14 v="Road Decal Tile Repeat Count" />
+						<_14 v="Road Decal Height Strength" />
+						<_14 v="Road Decal Mask Strength" />
+						<_14 v="Road Decal Height Contrast" />
+						<_14 v="Road Decal Mask Contrast" />
+						<_14 v="Road Decal Edge Fade" />
+						<_6 v="Road Decal Random Seed" />
+						<_3B v="" />
+					</_40>
+					<_40 v="animated spline metadata" item_name_1="i343::Curve::AnimatedSplineControlPointMetadata" item_name_2="i343::Curve::AnimatedSplineControlPointMetadata" item_name_3="i343::Curve::AnimatedSplineControlPointMetadata" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_14 v="Time" />
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_40 v="Metadata" item_name_1="i343::Curve::CurveDefinitionTagMetadata" item_name_2="i343::Curve::CurveDefinitionTagMetadata" item_name_3="i343::Curve::CurveDefinitionTagMetadata" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_14 v="input" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

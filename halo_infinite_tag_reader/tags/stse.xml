@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="s_structure_seams" item_name_2="s_structure_seams" item_name_3="s_structure_seams" db1="152" db2="0" db3="0" db4="0" db5="1" db6="0" db7="136" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="structure manifest" item_name_3="s_structure_manifest_definition" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_36 v="build identifer" />
+		<_38 v="build identifer" item_name_3="s_structure_manifest_build_identifier_definition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="manifest_id0" />
+			<_6 v="manifest_id1" />
+			<_6 v="manifest_id2" />
+			<_6 v="manifest_id3" />
+			<_6 v="build_index" />
+			<_6 v="structure importer version" />
+			<_3B v="" />
+		</_38>
+		<_36 v="parent build identifier" />
+		<_38 v="parent build identifer" item_name_3="s_structure_manifest_build_identifier_definition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="manifest_id0" />
+			<_6 v="manifest_id1" />
+			<_6 v="manifest_id2" />
+			<_6 v="manifest_id3" />
+			<_6 v="build_index" />
+			<_6 v="structure importer version" />
+			<_3B v="" />
+		</_38>
+		<_40 v="bsp manifest" item_name_1="s_structure_manifest_bsp_definition" item_name_2="s_structure_manifest_bsp_definition" item_name_3="s_structure_manifest_bsp_definition" db1="304" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="build identifer" item_name_3="s_structure_manifest_build_identifier_definition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_6 v="manifest_id0" />
+				<_6 v="manifest_id1" />
+				<_6 v="manifest_id2" />
+				<_6 v="manifest_id3" />
+				<_6 v="build_index" />
+				<_6 v="structure importer version" />
+				<_3B v="" />
+			</_38>
+			<_38 v="parent build identifer" item_name_3="s_structure_manifest_build_identifier_definition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_6 v="manifest_id0" />
+				<_6 v="manifest_id1" />
+				<_6 v="manifest_id2" />
+				<_6 v="manifest_id3" />
+				<_6 v="build_index" />
+				<_6 v="structure importer version" />
+				<_3B v="" />
+			</_38>
+			<_1 v="bsp name" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_38>
+	<_36 v="This tag defines the geometry between seam connected structures bsp." />
+	<_6 v="version" />
+	<_40 v="errors" item_name_1="error_report_category" item_name_2="error_report_category" item_name_3="error_report_category" db1="288" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+		<_1 v="name" />
+		<_A v="report type">
+			<Flag v="silent" />
+			<Flag v="comment" />
+			<Flag v="warning" />
+			<Flag v="error" />
+		</_A>
+		<_34 v="generated_padf276" length="1" />
+		<_E v="flags">
+			<Flag v="rendered" />
+			<Flag v="tangent-space" />
+			<Flag v="non-critical" />
+			<Flag v="lightmap light" />
+			<Flag v="report key is valid" />
+		</_E>
+		<_3D v="runtime generation flags" />
+		<_34 v="generated_pad3f2b" length="2" />
+		<_6 v="runtime something" />
+		<_40 v="reports" item_name_1="error_report" item_name_2="error_report" item_name_3="error_report" db1="236" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_A v="type">
+				<Flag v="silent" />
+				<Flag v="comment" />
+				<Flag v="warning" />
+				<Flag v="error" />
+			</_A>
+			<_A v="source">
+				<Flag v="none" />
+				<Flag v="structure" />
+				<Flag v="poop" />
+				<Flag v="lightmap" />
+				<Flag v="pathfinding" />
+			</_A>
+			<_E v="flags">
+				<Flag v="rendered" />
+				<Flag v="tangent-space" />
+				<Flag v="non-critical" />
+				<Flag v="lightmap light" />
+				<Flag v="report key is valid" />
+			</_E>
+			<_42 v="text" />
+			<_6 v="source identifier" />
+			<_0 v="source filename" />
+			<_6 v="source line number" />
+			<_40 v="vertices" item_name_1="error_report_vertex" item_name_2="error_report_vertex" item_name_3="error_report_vertex" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_17 v="position" />
+					<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_3C v="node index" />
+						<_3B v="" />
+						<_3C v="node index" />
+						<_3B v="" />
+						<_3C v="node index" />
+						<_3B v="" />
+						<_3C v="node index" />
+						<_3B v="" />
+					</_39>
+					<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_14 v="node weight" />
+						<_3B v="" />
+						<_14 v="node weight" />
+						<_3B v="" />
+						<_14 v="node weight" />
+						<_3B v="" />
+						<_14 v="node weight" />
+						<_3B v="" />
+					</_39>
+					<_3B v="" />
+				</_38>
+				<_20 v="color" />
+				<_14 v="screen size" />
+				<_3B v="" />
+			</_40>
+			<_40 v="vectors" item_name_1="error_report_vector" item_name_2="error_report_vector" item_name_3="error_report_vector" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_17 v="position" />
+					<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_3C v="node index" />
+						<_3B v="" />
+						<_3C v="node index" />
+						<_3B v="" />
+						<_3C v="node index" />
+						<_3B v="" />
+						<_3C v="node index" />
+						<_3B v="" />
+					</_39>
+					<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_14 v="node weight" />
+						<_3B v="" />
+						<_14 v="node weight" />
+						<_3B v="" />
+						<_14 v="node weight" />
+						<_3B v="" />
+						<_14 v="node weight" />
+						<_3B v="" />
+					</_39>
+					<_3B v="" />
+				</_38>
+				<_20 v="color" />
+				<_19 v="normal" />
+				<_14 v="screen length" />
+				<_3B v="" />
+			</_40>
+			<_40 v="lines" item_name_1="error_report_line" item_name_2="error_report_line" item_name_3="error_report_line" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="points" item_name_3="ErrorReportLinePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+				</_39>
+				<_20 v="color" />
+				<_3B v="" />
+			</_40>
+			<_40 v="triangles" item_name_1="error_report_triangle" item_name_2="error_report_triangle" item_name_3="error_report_triangle" db1="112" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="points" item_name_3="ErrorReportTrianglePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+				</_39>
+				<_20 v="color" />
+				<_3B v="" />
+			</_40>
+			<_40 v="quads" item_name_1="error_report_quad" item_name_2="error_report_quad" item_name_3="error_report_quad" db1="144" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="points" item_name_3="ErrorReportQuadPoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+				</_39>
+				<_20 v="color" />
+				<_3B v="" />
+			</_40>
+			<_40 v="comments" item_name_1="error_report_comment" item_name_2="error_report_comment" item_name_3="error_report_comment" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+				<_42 v="text" />
+				<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_17 v="position" />
+					<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_3C v="node index" />
+						<_3B v="" />
+						<_3C v="node index" />
+						<_3B v="" />
+						<_3C v="node index" />
+						<_3B v="" />
+						<_3C v="node index" />
+						<_3B v="" />
+					</_39>
+					<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_14 v="node weight" />
+						<_3B v="" />
+						<_14 v="node weight" />
+						<_3B v="" />
+						<_14 v="node weight" />
+						<_3B v="" />
+						<_14 v="node weight" />
+						<_3B v="" />
+					</_39>
+					<_3B v="" />
+				</_38>
+				<_20 v="color" />
+				<_3B v="" />
+			</_40>
+			<_6 v="report key" />
+			<_6 v="node index" />
+			<_25 v="bounds x" />
+			<_25 v="bounds y" />
+			<_25 v="bounds z" />
+			<_20 v="color" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="seams" item_name_1="s_structure_seam" item_name_2="s_structure_seam" item_name_3="s_structure_seam" db1="116" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_38 v="identifier" item_name_3="s_structure_seam_identifier" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="seam_id0" />
+			<_6 v="seam_id1" />
+			<_6 v="seam_id2" />
+			<_6 v="seam_id3" />
+			<_3B v="" />
+		</_38>
+		<_38 v="original" item_name_3="s_structure_seam_original_geometry" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="original vertices" item_name_1="s_structure_seam_original_vertex" item_name_2="s_structure_seam_original_vertex" item_name_3="s_structure_seam_original_vertex" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_17 v="original vertex" />
+				<_6 v="final point index" />
+				<_40 v="plane normals" item_name_1="StructureSeamOriginalVertexPlaneNormals" item_name_2="StructureSeamOriginalVertexPlaneNormals" item_name_3="StructureSeamOriginalVertexPlaneNormals" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_19 v="triangle normal" />
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_38 v="final" item_name_3="s_structure_seam_final_geometry" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="planes" item_name_1="StructureSeamFinalPlanesParam" item_name_2="StructureSeamFinalPlanesParam" item_name_3="StructureSeamFinalPlanesParam" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_1E v="plane" />
+				<_3B v="" />
+			</_40>
+			<_40 v="points" item_name_1="StructureSeamFinalPointsParam" item_name_2="StructureSeamFinalPointsParam" item_name_3="StructureSeamFinalPointsParam" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_17 v="final point" />
+				<_3B v="" />
+			</_40>
+			<_40 v="triangles" item_name_1="s_structure_seam_final_triangle" item_name_2="s_structure_seam_final_triangle" item_name_3="s_structure_seam_final_triangle" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_6 v="final plane" />
+				<_2E v="final point0" />
+				<_2E v="final point1" />
+				<_2E v="final point2" />
+				<_34 v="generated_pad4b3a" length="2" />
+				<_3B v="" />
+			</_40>
+			<_40 v="edges" item_name_1="s_structure_seam_final_edge" item_name_2="s_structure_seam_final_edge" item_name_3="s_structure_seam_final_edge" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_2E v="final point0" />
+				<_2E v="final point1" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_40>
+	<_40 v="seam triangle mopp code block" item_name_1="s_havok_mopp_code_definition" item_name_2="s_havok_mopp_code_definition" item_name_3="s_havok_mopp_code_definition" db1="112" db2="4" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+		<_7 v="field pointer skip" />
+		<_7 v="property bag skip" />
+		<_5 v="size" />
+		<_5 v="count" />
+		<_34 v="pad0" length="12" />
+		<_14 v="v.i" />
+		<_14 v="v.j" />
+		<_14 v="v.k" />
+		<_14 v="v.w" />
+		<_34 v="pad64_0" length="4" />
+		<_7 v="m_data pointer" />
+		<_6 v="int m_size" />
+		<_6 v="int m_capacityAndFlags" />
+		<_4 v="int8 m_buildType" />
+		<_34 v="pad1_0" length="1" />
+		<_34 v="pad1_1" length="2" />
+		<_34 v="pad1_2" length="4" />
+		<_34 v="pad64_1" length="4" />
+		<_37 v="" />
+		<_40 v="mopp data block " item_name_1="MoppCodeDataDefinitionParams" item_name_2="MoppCodeDataDefinitionParams" item_name_3="MoppCodeDataDefinitionParams" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_3C v="mopp data" />
+			<_3B v="" />
+		</_40>
+		<_37 v="" />
+		<_4 v="mopp build type" />
+		<_34 v="pad2_0" length="1" />
+		<_34 v="pad2_1" length="2" />
+		<_34 v="generated_pad27be" length="8" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_padf765" length="4" />
+	<_3B v="" />
+</root>

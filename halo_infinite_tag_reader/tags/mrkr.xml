@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="MarkerTag" item_name_2="MarkerTag" item_name_3="MarkerTag" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="80" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Marker Groups" item_name_1="MarkerGroupBlockWithHiddenVisualRegion" item_name_2="MarkerGroupBlockWithHiddenVisualRegion" item_name_3="MarkerGroupBlockWithHiddenVisualRegion" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="Group" />
+		<_40 v="Markers" item_name_1="ModelMarkerBlockWithHiddenVisualRegion" item_name_2="ModelMarkerBlockWithHiddenVisualRegion" item_name_3="ModelMarkerBlockWithHiddenVisualRegion" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Visual region name" />
+			<_2 v="Name" />
+			<_2 v="Parent" />
+			<_17 v="Position" />
+			<_1C v="Rotation" />
+			<_19 v="Scale" />
+			<_19 v="Direction" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Hint Marker Groups" item_name_1="HintMarkerGroupBlockWithHiddenVisualRegion" item_name_2="HintMarkerGroupBlockWithHiddenVisualRegion" item_name_3="HintMarkerGroupBlockWithHiddenVisualRegion" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_C v="Hint Type">
+			<Flag v="Bunker" />
+			<Flag v="Corner Left" />
+			<Flag v="Corner Right" />
+			<Flag v="Vault Step" />
+			<Flag v="Vault Crouch" />
+			<Flag v="Hoist Stand" />
+			<Flag v="Hoist Crouch" />
+		</_C>
+		<_40 v="Hint Markers" item_name_1="HintMarkerBlockWithHiddenVisualRegion" item_name_2="HintMarkerBlockWithHiddenVisualRegion" item_name_3="HintMarkerBlockWithHiddenVisualRegion" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Visual region name" />
+			<_2 v="Name" />
+			<_2 v="Parent" />
+			<_17 v="Position" />
+			<_1C v="Rotation" />
+			<_19 v="Scale" />
+			<_14 v="Length" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Pathfinding Markers" item_name_1="PathfindingMarkerBlock" item_name_2="PathfindingMarkerBlock" item_name_3="PathfindingMarkerBlock" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Name" />
+		<_2 v="Parent" />
+		<_17 v="Position" />
+		<_14 v="Radius" />
+		<_D v="Flags">
+			<Flag v="Vehicle Only" />
+			<Flag v="Remains When Open" />
+		</_D>
+		<_3B v="" />
+	</_40>
+	<_40 v="Target Marker Groups" item_name_1="TargetMarkerGroupBlockWithHiddenVisualRegion" item_name_2="TargetMarkerGroupBlockWithHiddenVisualRegion" item_name_3="TargetMarkerGroupBlockWithHiddenVisualRegion" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="Group" />
+		<_40 v="Target Markers" item_name_1="TargetMarkerBlockWithHiddenVisualRegion" item_name_2="TargetMarkerBlockWithHiddenVisualRegion" item_name_3="TargetMarkerBlockWithHiddenVisualRegion" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Visual region name" />
+			<_2 v="Name" />
+			<_2 v="Parent" />
+			<_17 v="Position" />
+			<_14 v="Radius" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="ForgeEngine::ForgeObjectData" item_name_2="ForgeEngine::ForgeObjectData" item_name_3="ForgeEngine::ForgeObjectData" db1="472" db2="0" db3="10" db4="0" db5="1" db6="0" db7="456" db8="3411">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_41 v="Static IO Representation" />
+	<_2 v="Asset variant to be used with the Static IO Representation." />
+	<_40 v="Object Representations" item_name_1="ForgeEngine::ForgeObjectDefinitionVariant" item_name_2="ForgeEngine::ForgeObjectDefinitionVariant" item_name_3="ForgeEngine::ForgeObjectDefinitionVariant" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Representation Name" />
+		<_2 v="Crate Variant" />
+		<_41 v="Configuration" />
+		<_41 v="Object Definition (Crate)" />
+		<_41 v="Menu Item Definitions" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Runtime Variants" item_name_1="ForgeEngine::ForgeAssetVariant" item_name_2="ForgeEngine::ForgeAssetVariant" item_name_3="ForgeEngine::ForgeAssetVariant" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Variant Name" />
+		<_41 v="Runtime Underlying Geo (Static IO)" />
+		<_41 v="Runtime Underlying Collision Geo (Static IO)" />
+		<_41 v="Runtime Underlying Material Palette (Static IO)" />
+		<_2 v="Style" />
+		<_3B v="" />
+	</_40>
+	<_41 v="Runtime Telescoping Asset" />
+	<_41 v="Forge Kit" />
+	<_2 v="Default Representation (Asset Variant or Object Representation Name)" />
+	<_38 v="Configuration Options" item_name_3="ForgeEngine::ForgeObjectConfigOptions" db1="200" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
+		<_E v="Property Flags">
+			<Flag v="Yaw Rotation Only" />
+			<Flag v="Allow In-Game Variant Toggle" />
+			<Flag v="Disable Primary Color" />
+			<Flag v="Disable Secondary Color" />
+			<Flag v="Disable Teritary Color" />
+			<Flag v="Disable Normal Physics" />
+			<Flag v="Disable Fixed Physics" />
+			<Flag v="Disable Phased Physics" />
+			<Flag v="Allow Boundary Scale" />
+			<Flag v="Disable Rotation" />
+		</_E>
+		<_34 v="generated_padffaf" length="2" />
+		<_19 v="Starting yaw/pitch/roll" />
+		<_B v="Default Physics Mode">
+			<Flag v="Phased" />
+			<Flag v="Fixed" />
+		</_B>
+		<_B v="Collision Mode">
+			<Flag v="Edit time (Forge) and Run Time (Game)" />
+			<Flag v="Edit Time (Forge)" />
+		</_B>
+		<_F v="Exclude from NavMesh generation">
+			<Flag v="Exclude" />
+		</_F>
+		<_34 v="generated_padb2fa" length="1" />
+		<_37 v="Scale Limits" />
+		<_B v="Scale Limit Type">
+			<Flag v="Unset" />
+			<Flag v="Scale Multiplier" />
+			<Flag v="World Size" />
+		</_B>
+		<_19 v="Starting Scale" />
+		<_19 v="Minimum Scale" />
+		<_19 v="Maximum Scale" />
+		<_19 v="Unscaled Size" />
+		<_37 v="" />
+		<_37 v="Material Settings" />
+		<_37 v="Region 1" />
+		<_38 v="Settings (Region 1)" item_name_3="ForgeEngine::MaterialRegionSettings" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_40 v="Swatch Groups" item_name_1="ForgeEngine::SwatchGroupName" item_name_2="ForgeEngine::SwatchGroupName" item_name_3="ForgeEngine::SwatchGroupName" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="Swatch Group Name" />
+				<_3B v="" />
+			</_40>
+			<_A v="Force Region Always Visible">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Swatch Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Color Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Roughness Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Metalness  Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_34 v="generated_padc70f" length="3" />
+			<_2 v="Color Variant" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="Region 2" />
+		<_38 v="Settings (Region 2)" item_name_3="ForgeEngine::MaterialRegionSettings" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_40 v="Swatch Groups" item_name_1="ForgeEngine::SwatchGroupName" item_name_2="ForgeEngine::SwatchGroupName" item_name_3="ForgeEngine::SwatchGroupName" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="Swatch Group Name" />
+				<_3B v="" />
+			</_40>
+			<_A v="Force Region Always Visible">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Swatch Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Color Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Roughness Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Metalness  Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_34 v="generated_padc70f" length="3" />
+			<_2 v="Color Variant" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="Region 3" />
+		<_38 v="Settings (Region 3)" item_name_3="ForgeEngine::MaterialRegionSettings" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_40 v="Swatch Groups" item_name_1="ForgeEngine::SwatchGroupName" item_name_2="ForgeEngine::SwatchGroupName" item_name_3="ForgeEngine::SwatchGroupName" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="Swatch Group Name" />
+				<_3B v="" />
+			</_40>
+			<_A v="Force Region Always Visible">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Swatch Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Color Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Roughness Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Metalness  Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_34 v="generated_padc70f" length="3" />
+			<_2 v="Color Variant" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="Overlay" />
+		<_38 v="Settings (Overlay)" item_name_3="ForgeEngine::MaterialRegionSettings" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_40 v="Swatch Groups" item_name_1="ForgeEngine::SwatchGroupName" item_name_2="ForgeEngine::SwatchGroupName" item_name_3="ForgeEngine::SwatchGroupName" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="Swatch Group Name" />
+				<_3B v="" />
+			</_40>
+			<_A v="Force Region Always Visible">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Swatch Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Color Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Roughness Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_A v="Is Metalness  Editable">
+				<Flag v="enabled" />
+				<Flag v="disabled" />
+			</_A>
+			<_34 v="generated_padc70f" length="3" />
+			<_2 v="Color Variant" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="" />
+		<_3B v="" />
+	</_38>
+	<_38 v="scriptable properties" item_name_3="s_property_collection" db1="120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="bool properties" item_name_1="s_bool_property" item_name_2="s_bool_property" item_name_3="s_bool_property" db1="257" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="name" />
+			<_3C v="Value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="numeric properties" item_name_1="s_numeric_property" item_name_2="s_numeric_property" item_name_3="s_numeric_property" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="name" />
+			<_14 v="Value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="string properties" item_name_1="s_string_property" item_name_2="s_string_property" item_name_3="s_string_property" db1="512" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="name" />
+			<_1 v="Value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="tag properties" item_name_1="s_tag_property" item_name_2="s_tag_property" item_name_3="s_tag_property" db1="288" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_1 v="name" />
+			<_41 v="Value" />
+			<_2 v="load variant" />
+			<_3B v="" />
+		</_40>
+		<_40 v="color properties" item_name_1="s_color_property" item_name_2="s_color_property" item_name_3="s_color_property" db1="272" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="name" />
+			<_20 v="Value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="vector properties" item_name_1="s_vector_property" item_name_2="s_vector_property" item_name_3="s_vector_property" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="name" />
+			<_19 v="Value" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_38>
+	<_34 v="generated_pad750f" length="4" />
+	<_3B v="" />
+</root>

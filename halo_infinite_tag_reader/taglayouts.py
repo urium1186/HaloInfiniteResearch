@@ -6,12 +6,13 @@ import xml.etree.ElementTree as ET
 class TagLayouts:
     class C:
 
-        def __init__(self, p_T='', p_N='', p_B=None, p_S=0, p_P={}):
+        def __init__(self, p_T='', p_N='', p_B=None, p_S=0, p_P={},p_E={}):
             if p_B is None:
                 p_B = {}
             self.T = p_T  # T = type
             self.B = p_B  # Dictionary<long, C>? B { get set } = null  # B = blocks? i forgot what B stands for
             self.P = p_P
+            self.E = p_E
             """
             #/ <summary>
             #/ Length of the tagblock
@@ -117,7 +118,8 @@ class TagLayouts:
 
             filename = inspect.getframeinfo(inspect.currentframe()).filename
             path = os.path.dirname(os.path.abspath(filename))
-            predicted_file = path + '\\plugins\\' + file_to_find + '.xml'
+            predicted_file = path + '\\tags\\' + file_to_find + '.xml'
+            #predicted_file = path + '\\plugins\\' + file_to_find + '.xml'
 
             if os.path.exists(predicted_file):
                 xd = ET.parse(predicted_file)
@@ -410,10 +412,23 @@ class TagLayouts:
                 """
                 temp_index = offset + self.evalutated_index_PREVENT_DICTIONARYERROR
                 p_P = {"generateEntry": False}
+                p_E = {}
                 if xn.attrib.keys().__contains__('g'):
                     p_P = {"generateEntry": xn.attrib['g'] == "true"}
+                #elif xn.attrib.keys().__contains__('db1'):
+                #    p_P = {"generateEntry": xn.attrib['db5'] == '1' and xn.attrib['db3'] != "0"}
+                if xn.attrib.keys().__contains__('db1'):
+                    p_E['db1'] = xn.attrib['db1']
+                    p_E['db2'] = xn.attrib['db2']
+                    p_E['db3'] = xn.attrib['db3']
+                    p_E['db4'] = xn.attrib['db4']
+                    p_E['db5'] = xn.attrib['db5']
+                    p_E['db6'] = xn.attrib['db6']
+                    p_E['db7'] = xn.attrib['db7']
+                    p_E['db8'] = xn.attrib['db8']
 
-                pairs[temp_index] = TagLayouts.C("TagStructData", xn.attrib["v"], p_P=p_P)
+
+                pairs[temp_index] = TagLayouts.C("TagStructData", xn.attrib["v"], p_P=p_P, p_E=p_E)
 
                 self.evalutated_index_PREVENT_DICTIONARYERROR = self.evalutated_index_PREVENT_DICTIONARYERROR + 1
                 current_offset1 = current_offset_temp1 = offset
@@ -472,6 +487,16 @@ class TagLayouts:
                                              p_S=TagLayouts.run_parse.group_lengths_dict[xn.tag])
                 return TagLayouts.run_parse.group_lengths_dict[xn.tag]
             elif xn.tag == "_40":
+                p_E = {}
+                if xn.attrib.keys().__contains__('db1'):
+                    p_E['db1'] = xn.attrib['db1']
+                    p_E['db2'] = xn.attrib['db2']
+                    p_E['db3'] = xn.attrib['db3']
+                    p_E['db4'] = xn.attrib['db4']
+                    p_E['db5'] = xn.attrib['db5']
+                    p_E['db6'] = xn.attrib['db6']
+                    p_E['db7'] = xn.attrib['db7']
+                    p_E['db8'] = xn.attrib['db8']
                 if len(xn) > 0:
                     subthings = {}
                     current_offset2 = current_offset2_temp = 0
@@ -479,10 +504,10 @@ class TagLayouts:
                         current_offset2 = current_offset2 + self.the_switch_statement(xntwo2, current_offset2,
                                                                                       subthings)
                         # its gonna append that to the main, rather than our struct
-                    pairs[offset] = TagLayouts.C("Tagblock", xn.attrib["v"], subthings, current_offset2)
+                    pairs[offset] = TagLayouts.C("Tagblock", xn.attrib["v"], subthings, current_offset2, p_E=p_E)
                 else:
                     pairs[offset] = TagLayouts.C("Tagblock", xn.attrib["v"],
-                                                 p_S=TagLayouts.run_parse.group_lengths_dict[xn.tag])
+                                                 p_S=TagLayouts.run_parse.group_lengths_dict[xn.tag], p_E=p_E)
                 return TagLayouts.run_parse.group_lengths_dict[xn.tag]
             elif xn.tag == "_41":
                 pairs[offset] = TagLayouts.C("TagRef", xn.attrib["v"],
@@ -495,12 +520,22 @@ class TagLayouts:
             elif xn.tag == "_43":  # unmapped - This case isn't found in any tag file
                 subthings = {}
                 current_offset2 = current_offset2_temp = 0
+                p_E = {}
+                if xn.attrib.keys().__contains__('db1'):
+                    p_E['db1'] = xn.attrib['db1']
+                    p_E['db2'] = xn.attrib['db2']
+                    p_E['db3'] = xn.attrib['db3']
+                    p_E['db4'] = xn.attrib['db4']
+                    p_E['db5'] = xn.attrib['db5']
+                    p_E['db6'] = xn.attrib['db6']
+                    p_E['db7'] = xn.attrib['db7']
+                    p_E['db8'] = xn.attrib['db8']
                 for xntwo2 in xn:
                     current_offset2 = current_offset2 + self.the_switch_statement(xntwo2, current_offset2,
                                                                                   subthings)
                     # its gonna append that to the main, rather than our struct
-                pairs[offset] = TagLayouts.C("ResourceHandle", xn.attrib["v"] + " (unmapped type(" + xn.tag + ")",
-                                             subthings, current_offset2)
+                pairs[offset] = TagLayouts.C("ResourceHandle", xn.attrib["v"],
+                                             subthings, current_offset2, p_E=p_E)
                 return TagLayouts.run_parse.group_lengths_dict[xn.tag]
             elif xn.tag == "_44":  # unmapped - This case isn't found in any tag file
                 pairs[offset] = TagLayouts.C("Comment",

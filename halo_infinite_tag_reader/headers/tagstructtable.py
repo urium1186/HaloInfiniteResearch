@@ -15,6 +15,7 @@ class TagStruct:
         self.GUID1 = ''
         self.GUID2 = ''
         self.type_id = -1
+        self.type_id_tg: TagStructType = -1
         self.unknown_property_bool_0_1 = -1
         self.target_index = -1
         self.field_block = -1
@@ -36,14 +37,19 @@ class TagStruct:
         self.GUID2 = f.read(8).hex()
         self.GUID = getGUID(self.GUID1 + self.GUID2)
         self.type_id = struct.unpack('H', f.read(2))[0]
+        self.type_id_tg = TagStructType(self.type_id)
         self.unknown_property_bool_0_1 = struct.unpack('H', f.read(2))[0]
         self.target_index = struct.unpack('i', f.read(4))[0]
         self.field_block = struct.unpack('i', f.read(4))[0]
         self.field_offset = struct.unpack('i', f.read(4))[0]
-
+        """
+        if self.type_id_tg == TagStructType.NoDataStartBlock:
+            assert self.target_index == -1, f'{f}'
+            assert self.unknown_property_bool_0_1 == 1, f'{f}'
+        """
         main_key = self.type_id
 
-        name_key = f.name.split('\\')[-1]
+        name_key = self.unknown_property_bool_0_1
         fillDebugDict(main_key, name_key, debug_TagStruct)
 
     def readTagStructInfo(self, f):
@@ -101,8 +107,9 @@ class TagStruct:
         elif self.type_id == TagStructType.ExternalFileDescriptor:
             if self.info["n_childs"] != 0:
                 raise Exception("Error de interpretacion de Datos, ya q son externos")
-            f.seek(self.data_reference.offset_plus)
-            blocks.append(f.read(self.data_reference.size))
+            if self.unknown_property_bool_0_1 != 0:
+                f.seek(self.data_reference.offset_plus)
+                blocks.append(f.read(self.data_reference.size))
             f.seek(pos_on_init)
             return blocks
         else:

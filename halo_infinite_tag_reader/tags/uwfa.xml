@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::Units::WeaponFrameAttachmentDefinition" item_name_2="i343::Units::WeaponFrameAttachmentDefinition" item_name_3="i343::Units::WeaponFrameAttachmentDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="64" db8="1299">
+	<_38 v="AnyTag" item_name_3="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_3="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_A v="Slot">
+		<Flag v="Primary" />
+		<Flag v="Secondary" />
+		<Flag v="Backpack" />
+	</_A>
+	<_34 v="generated_pad89c5" length="3" />
+	<_41 v="Weapon" />
+	<_41 v="Configuration" />
+	<_34 v="generated_pad6fe4" length="4" />
+	<_3B v="" />
+</root>
