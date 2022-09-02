@@ -68,6 +68,12 @@ class TagInstance:
         self.inst_address = f.tell()
         self.inst_parent_offset = self.inst_address - self.addressStart
 
+    def getFirstChild(self):
+        if len(self.childs)>0:
+            return self.childs[0]
+        else:
+            return None
+
     def toJson(self):
         dict = {'extra_data': self.extra_data,
                 'items': []}
@@ -401,6 +407,8 @@ class ResourceHandle(TagInstance):
         self.addres_dir_1 = struct.unpack('Q', f.read(8))[0]
         self.n_sub = struct.unpack('i', f.read(4))[0]
         self.childrenCount = struct.unpack('i', f.read(4))[0]
+        if self.childrenCount != 0:
+            debug =True
 
 
 class Tagblock(TagInstance):
@@ -428,6 +436,9 @@ class Tagblock(TagInstance):
         }
         """
         self.childrenCount = struct.unpack('i', f.read(4))[0]
+        if self.childrenCount < 0:
+            debug = True
+            assert False, 'no puede tener la cantidad de hijos en -1'
 
 
 class TagStructBlock(TagInstance):
@@ -435,6 +446,7 @@ class TagStructBlock(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
         super().__init__(tag, addressStart, offset)
         self.comment = tag.N
+        self.childrenCount = 0
         pass
 
     def readIn(self, f: BinaryIO, header=None):

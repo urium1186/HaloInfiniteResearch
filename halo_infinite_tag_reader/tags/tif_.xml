@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="TifSourceFileTag" item_name_2="TifSourceFileTag" item_name_3="TifSourceFileTag" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="72" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_7 v="width" />
+	<_7 v="height" />
+	<_6 v="format" />
+	<_34 v="generated_pad09ba" length="4" />
+	<_7 v="rowPitch" />
+	<_7 v="slicePitch" />
+	<_7 v="pixels" />
+	<_42 v="pixel data" />
+	<_3B v="" />
+</root>

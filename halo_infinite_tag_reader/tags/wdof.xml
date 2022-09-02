@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::Weapon::DepthOfFieldDefinition" item_name_2="i343::Weapon::DepthOfFieldDefinition" item_name_3="i343::Weapon::DepthOfFieldDefinition" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="48" db8="1955">
+	<_38 v="AnyTag" item_name_3="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_3="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="dof" item_name_3="i343::Weapon::DepthOfFieldInternalDefinition" db1="44" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_36 v="depth of field" />
+		<_14 v="world blur aperture" />
+		<_14 v="world blur focus max distance" />
+		<_15 v="World blur focus smoothing value" />
+		<_15 v="World blur trend smoothing value" />
+		<_15 v="world blur half width ratio" />
+		<_14 v="weapon blur aperture" />
+		<_14 v="weapon blur focus distance" />
+		<_14 v="weapon blur half width" />
+		<_36 v="vignette" />
+		<_26 v="vignette radius bounds" />
+		<_15 v="vignette intensity" />
+		<_3B v="" />
+	</_38>
+	<_34 v="generated_paddff6" length="4" />
+	<_3B v="" />
+</root>

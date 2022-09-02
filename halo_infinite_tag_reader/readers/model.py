@@ -65,7 +65,7 @@ class Model(BaseTemplate):
                             if per_mesh_index != -1 and not (temp_mesh_r_i is None):
                                 per_mesh_index_1 = temp_mesh_r_i[per_mesh_index]['mesh_index'].value
                                 for p in temp_mesh_s[per_mesh_index_1]['LOD_render_data'].childs[0]['parts'].childs:
-                                    runtime_permutation.append(p['material_index'].extra_data['path'].split('\\')[-1])
+                                    runtime_permutation.append(p['material index'].extra_data['path'].split('\\')[-1])
 
                             else:
                                 runtime_permutation.append(str(per_mesh_index))

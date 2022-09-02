@@ -66,7 +66,7 @@ class RenderModel(BaseTemplate):
 
             debug = True
 
-        elif instance.tagDef.N == "material_index":
+        elif instance.tagDef.N == "material index":
             if instance.parent.tagDef.N == 'parts':
                 materials = instance.parent.parent.parent.parent.childs[0]['materials'].childs
                 if instance.value != -1:
@@ -74,10 +74,10 @@ class RenderModel(BaseTemplate):
                     instance.extra_data = {'path': path}
                 else:
                     debug = 1
-        elif instance.tagDef.N == 'render_geometry':
+        elif instance.tagDef.N == 'render geometry':
             debug = 0
         elif instance.tagDef.N == "meshes":
             debug = True
-        elif instance.tagDef.N == "compression_info":
+        elif instance.tagDef.N == "compression info":
             debug = 1
         pass

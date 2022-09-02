@@ -14,10 +14,12 @@ class BaseTemplate:
         self.tag_parse = TagParseControl(self.full_filepath, self.tagLayoutExt)
         self.tag_parse.AddSubscribersForOnInstanceLoad(self.onInstanceLoad)
         self._loaded = False
+        self.first_child = None
 
     def load(self):
         self.tag_parse.readFile()
         self._loaded = True
+        self.first_child = self.tag_parse.rootTagInst.childs[0]
 
     def is_loaded(self):
         return self._loaded

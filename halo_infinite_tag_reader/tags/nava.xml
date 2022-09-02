@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="Interface::NavPoint::NavPointAnimationDefinition" item_name_2="Interface::NavPoint::NavPointAnimationDefinition" item_name_3="Interface::NavPoint::NavPointAnimationDefinition" db1="448" db2="0" db3="0" db4="0" db5="1" db6="0" db7="432" db8="3379">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_C v="loop type">
+		<Flag v="LoopForward" />
+		<Flag v="LoopReversed" />
+		<Flag v="LoopForwardThenReversed" />
+		<Flag v="PlayOnceThenHold" />
+		<Flag v="PlayOnceReversedThenHold" />
+		<Flag v="PlayOnceForwardThenReversed" />
+	</_C>
+	<_14 v="total time animation runs for" />
+	<_14 v="delay before looping" />
+	<_38 v="progress-time function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_37 v="function" />
+		<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_36 v="center sprite bg" />
+	<_38 v="center sprite bg" item_name_3="Interface::NavPoint::SpriteKeyframe" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="SequenceIndexValid" />
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="ColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_C v="sequenceIndex">
+			<Flag v="TacticalObjective" />
+			<Flag v="SubObjective" />
+			<Flag v="MainObjective" />
+			<Flag v="SupplyCache" />
+			<Flag v="MoveToIndicator" />
+			<Flag v="ChatterIndicator" />
+			<Flag v="AttackCommandFg" />
+			<Flag v="ReviveFg" />
+			<Flag v="ReviveBg" />
+			<Flag v="BleedoutTimerStroke" />
+			<Flag v="ReviveCommand" />
+			<Flag v="ReviveHelpPulse" />
+			<Flag v="WzBossFg" />
+			<Flag v="WzBossBg" />
+			<Flag v="WzReqFg" />
+			<Flag v="WzHomeBaseFg" />
+			<Flag v="AttackFg" />
+			<Flag v="DefendFg" />
+			<Flag v="CircleBg" />
+			<Flag v="DiamondBg" />
+			<Flag v="SquareBg" />
+			<Flag v="HexBg" />
+			<Flag v="CircleStroke" />
+			<Flag v="DiamondStroke" />
+			<Flag v="SquareStroke" />
+			<Flag v="HexStroke" />
+			<Flag v="ExclamationFg" />
+			<Flag v="DeadIndicator" />
+			<Flag v="SpeakingIndicator" />
+			<Flag v="WeaponPadFg" />
+			<Flag v="CubeFg" />
+			<Flag v="FlagFg" />
+			<Flag v="LetterAFg" />
+			<Flag v="LetterBFg" />
+			<Flag v="LetterCFg" />
+			<Flag v="BombFg" />
+			<Flag v="CrownFg" />
+			<Flag v="SmallOffscreenArrow" />
+			<Flag v="FriendlyArrow" />
+			<Flag v="EnemyArrow" />
+			<Flag v="SeekIndicator" />
+			<Flag v="LockOnIndicator" />
+			<Flag v="ReqBg" />
+			<Flag v="Num0Fg" />
+			<Flag v="Num1Fg" />
+			<Flag v="Num2Fg" />
+			<Flag v="Num3Fg" />
+			<Flag v="Num4Fg" />
+			<Flag v="Num5Fg" />
+			<Flag v="Num6Fg" />
+			<Flag v="Num7Fg" />
+			<Flag v="Num8Fg" />
+			<Flag v="Num9Fg" />
+			<Flag v="FrameIdentifier1" />
+			<Flag v="FrameIdentifier2" />
+			<Flag v="FrameIdentifier3" />
+			<Flag v="FrameIdentifier4" />
+			<Flag v="AbilityAutoTurret" />
+			<Flag v="AbilityCloak" />
+			<Flag v="AbilityGravSphere" />
+			<Flag v="AbilityHealthBlast" />
+			<Flag v="AbilityHex" />
+			<Flag v="AbilityHologram" />
+			<Flag v="AbilityLocationDart" />
+			<Flag v="AbilityMedicDrone" />
+			<Flag v="AbilityTrap" />
+		</_C>
+		<_16 v="width and height" />
+		<_1F v="color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="center sprite fg" />
+	<_38 v="center sprite fg" item_name_3="Interface::NavPoint::SpriteKeyframe" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="SequenceIndexValid" />
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="ColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_C v="sequenceIndex">
+			<Flag v="TacticalObjective" />
+			<Flag v="SubObjective" />
+			<Flag v="MainObjective" />
+			<Flag v="SupplyCache" />
+			<Flag v="MoveToIndicator" />
+			<Flag v="ChatterIndicator" />
+			<Flag v="AttackCommandFg" />
+			<Flag v="ReviveFg" />
+			<Flag v="ReviveBg" />
+			<Flag v="BleedoutTimerStroke" />
+			<Flag v="ReviveCommand" />
+			<Flag v="ReviveHelpPulse" />
+			<Flag v="WzBossFg" />
+			<Flag v="WzBossBg" />
+			<Flag v="WzReqFg" />
+			<Flag v="WzHomeBaseFg" />
+			<Flag v="AttackFg" />
+			<Flag v="DefendFg" />
+			<Flag v="CircleBg" />
+			<Flag v="DiamondBg" />
+			<Flag v="SquareBg" />
+			<Flag v="HexBg" />
+			<Flag v="CircleStroke" />
+			<Flag v="DiamondStroke" />
+			<Flag v="SquareStroke" />
+			<Flag v="HexStroke" />
+			<Flag v="ExclamationFg" />
+			<Flag v="DeadIndicator" />
+			<Flag v="SpeakingIndicator" />
+			<Flag v="WeaponPadFg" />
+			<Flag v="CubeFg" />
+			<Flag v="FlagFg" />
+			<Flag v="LetterAFg" />
+			<Flag v="LetterBFg" />
+			<Flag v="LetterCFg" />
+			<Flag v="BombFg" />
+			<Flag v="CrownFg" />
+			<Flag v="SmallOffscreenArrow" />
+			<Flag v="FriendlyArrow" />
+			<Flag v="EnemyArrow" />
+			<Flag v="SeekIndicator" />
+			<Flag v="LockOnIndicator" />
+			<Flag v="ReqBg" />
+			<Flag v="Num0Fg" />
+			<Flag v="Num1Fg" />
+			<Flag v="Num2Fg" />
+			<Flag v="Num3Fg" />
+			<Flag v="Num4Fg" />
+			<Flag v="Num5Fg" />
+			<Flag v="Num6Fg" />
+			<Flag v="Num7Fg" />
+			<Flag v="Num8Fg" />
+			<Flag v="Num9Fg" />
+			<Flag v="FrameIdentifier1" />
+			<Flag v="FrameIdentifier2" />
+			<Flag v="FrameIdentifier3" />
+			<Flag v="FrameIdentifier4" />
+			<Flag v="AbilityAutoTurret" />
+			<Flag v="AbilityCloak" />
+			<Flag v="AbilityGravSphere" />
+			<Flag v="AbilityHealthBlast" />
+			<Flag v="AbilityHex" />
+			<Flag v="AbilityHologram" />
+			<Flag v="AbilityLocationDart" />
+			<Flag v="AbilityMedicDrone" />
+			<Flag v="AbilityTrap" />
+		</_C>
+		<_16 v="width and height" />
+		<_1F v="color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="center radial progress bar" />
+	<_38 v="center radial progress bar" item_name_3="Interface::NavPoint::TwoColorKeyframe" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="LeftColorValid" />
+			<Flag v="RightColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_16 v="width and height" />
+		<_1F v="left color" />
+		<_1F v="right color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="top sprite" />
+	<_38 v="top sprite" item_name_3="Interface::NavPoint::SpriteKeyframe" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="SequenceIndexValid" />
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="ColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_C v="sequenceIndex">
+			<Flag v="TacticalObjective" />
+			<Flag v="SubObjective" />
+			<Flag v="MainObjective" />
+			<Flag v="SupplyCache" />
+			<Flag v="MoveToIndicator" />
+			<Flag v="ChatterIndicator" />
+			<Flag v="AttackCommandFg" />
+			<Flag v="ReviveFg" />
+			<Flag v="ReviveBg" />
+			<Flag v="BleedoutTimerStroke" />
+			<Flag v="ReviveCommand" />
+			<Flag v="ReviveHelpPulse" />
+			<Flag v="WzBossFg" />
+			<Flag v="WzBossBg" />
+			<Flag v="WzReqFg" />
+			<Flag v="WzHomeBaseFg" />
+			<Flag v="AttackFg" />
+			<Flag v="DefendFg" />
+			<Flag v="CircleBg" />
+			<Flag v="DiamondBg" />
+			<Flag v="SquareBg" />
+			<Flag v="HexBg" />
+			<Flag v="CircleStroke" />
+			<Flag v="DiamondStroke" />
+			<Flag v="SquareStroke" />
+			<Flag v="HexStroke" />
+			<Flag v="ExclamationFg" />
+			<Flag v="DeadIndicator" />
+			<Flag v="SpeakingIndicator" />
+			<Flag v="WeaponPadFg" />
+			<Flag v="CubeFg" />
+			<Flag v="FlagFg" />
+			<Flag v="LetterAFg" />
+			<Flag v="LetterBFg" />
+			<Flag v="LetterCFg" />
+			<Flag v="BombFg" />
+			<Flag v="CrownFg" />
+			<Flag v="SmallOffscreenArrow" />
+			<Flag v="FriendlyArrow" />
+			<Flag v="EnemyArrow" />
+			<Flag v="SeekIndicator" />
+			<Flag v="LockOnIndicator" />
+			<Flag v="ReqBg" />
+			<Flag v="Num0Fg" />
+			<Flag v="Num1Fg" />
+			<Flag v="Num2Fg" />
+			<Flag v="Num3Fg" />
+			<Flag v="Num4Fg" />
+			<Flag v="Num5Fg" />
+			<Flag v="Num6Fg" />
+			<Flag v="Num7Fg" />
+			<Flag v="Num8Fg" />
+			<Flag v="Num9Fg" />
+			<Flag v="FrameIdentifier1" />
+			<Flag v="FrameIdentifier2" />
+			<Flag v="FrameIdentifier3" />
+			<Flag v="FrameIdentifier4" />
+			<Flag v="AbilityAutoTurret" />
+			<Flag v="AbilityCloak" />
+			<Flag v="AbilityGravSphere" />
+			<Flag v="AbilityHealthBlast" />
+			<Flag v="AbilityHex" />
+			<Flag v="AbilityHologram" />
+			<Flag v="AbilityLocationDart" />
+			<Flag v="AbilityMedicDrone" />
+			<Flag v="AbilityTrap" />
+		</_C>
+		<_16 v="width and height" />
+		<_1F v="color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="top center sprite" />
+	<_38 v="top center sprite" item_name_3="Interface::NavPoint::SpriteKeyframe" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="SequenceIndexValid" />
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="ColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_C v="sequenceIndex">
+			<Flag v="TacticalObjective" />
+			<Flag v="SubObjective" />
+			<Flag v="MainObjective" />
+			<Flag v="SupplyCache" />
+			<Flag v="MoveToIndicator" />
+			<Flag v="ChatterIndicator" />
+			<Flag v="AttackCommandFg" />
+			<Flag v="ReviveFg" />
+			<Flag v="ReviveBg" />
+			<Flag v="BleedoutTimerStroke" />
+			<Flag v="ReviveCommand" />
+			<Flag v="ReviveHelpPulse" />
+			<Flag v="WzBossFg" />
+			<Flag v="WzBossBg" />
+			<Flag v="WzReqFg" />
+			<Flag v="WzHomeBaseFg" />
+			<Flag v="AttackFg" />
+			<Flag v="DefendFg" />
+			<Flag v="CircleBg" />
+			<Flag v="DiamondBg" />
+			<Flag v="SquareBg" />
+			<Flag v="HexBg" />
+			<Flag v="CircleStroke" />
+			<Flag v="DiamondStroke" />
+			<Flag v="SquareStroke" />
+			<Flag v="HexStroke" />
+			<Flag v="ExclamationFg" />
+			<Flag v="DeadIndicator" />
+			<Flag v="SpeakingIndicator" />
+			<Flag v="WeaponPadFg" />
+			<Flag v="CubeFg" />
+			<Flag v="FlagFg" />
+			<Flag v="LetterAFg" />
+			<Flag v="LetterBFg" />
+			<Flag v="LetterCFg" />
+			<Flag v="BombFg" />
+			<Flag v="CrownFg" />
+			<Flag v="SmallOffscreenArrow" />
+			<Flag v="FriendlyArrow" />
+			<Flag v="EnemyArrow" />
+			<Flag v="SeekIndicator" />
+			<Flag v="LockOnIndicator" />
+			<Flag v="ReqBg" />
+			<Flag v="Num0Fg" />
+			<Flag v="Num1Fg" />
+			<Flag v="Num2Fg" />
+			<Flag v="Num3Fg" />
+			<Flag v="Num4Fg" />
+			<Flag v="Num5Fg" />
+			<Flag v="Num6Fg" />
+			<Flag v="Num7Fg" />
+			<Flag v="Num8Fg" />
+			<Flag v="Num9Fg" />
+			<Flag v="FrameIdentifier1" />
+			<Flag v="FrameIdentifier2" />
+			<Flag v="FrameIdentifier3" />
+			<Flag v="FrameIdentifier4" />
+			<Flag v="AbilityAutoTurret" />
+			<Flag v="AbilityCloak" />
+			<Flag v="AbilityGravSphere" />
+			<Flag v="AbilityHealthBlast" />
+			<Flag v="AbilityHex" />
+			<Flag v="AbilityHologram" />
+			<Flag v="AbilityLocationDart" />
+			<Flag v="AbilityMedicDrone" />
+			<Flag v="AbilityTrap" />
+		</_C>
+		<_16 v="width and height" />
+		<_1F v="color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="top label" />
+	<_38 v="top label" item_name_3="Interface::NavPoint::Keyframe" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="ColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_16 v="width and height" />
+		<_1F v="color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="right progress bar" />
+	<_38 v="right progress bar" item_name_3="Interface::NavPoint::TwoColorKeyframe" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="LeftColorValid" />
+			<Flag v="RightColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_16 v="width and height" />
+		<_1F v="left color" />
+		<_1F v="right color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="right progress bar 2" />
+	<_38 v="right progress bar 2" item_name_3="Interface::NavPoint::TwoColorKeyframe" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="LeftColorValid" />
+			<Flag v="RightColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_16 v="width and height" />
+		<_1F v="left color" />
+		<_1F v="right color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="right label" />
+	<_38 v="right label" item_name_3="Interface::NavPoint::Keyframe" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="ColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_16 v="width and height" />
+		<_1F v="color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="right timer" />
+	<_38 v="right timer" item_name_3="Interface::NavPoint::Keyframe" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="ColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_16 v="width and height" />
+		<_1F v="color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="left timer" />
+	<_38 v="left timer" item_name_3="Interface::NavPoint::Keyframe" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="ColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_16 v="width and height" />
+		<_1F v="color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_36 v="yaw sprite" />
+	<_38 v="yaw sprite" item_name_3="Interface::NavPoint::SpriteKeyframe" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_D v="flags">
+			<Flag v="SequenceIndexValid" />
+			<Flag v="WidthValid" />
+			<Flag v="HeightValid" />
+			<Flag v="ColorValid" />
+			<Flag v="AlphaValid" />
+		</_D>
+		<_C v="sequenceIndex">
+			<Flag v="TacticalObjective" />
+			<Flag v="SubObjective" />
+			<Flag v="MainObjective" />
+			<Flag v="SupplyCache" />
+			<Flag v="MoveToIndicator" />
+			<Flag v="ChatterIndicator" />
+			<Flag v="AttackCommandFg" />
+			<Flag v="ReviveFg" />
+			<Flag v="ReviveBg" />
+			<Flag v="BleedoutTimerStroke" />
+			<Flag v="ReviveCommand" />
+			<Flag v="ReviveHelpPulse" />
+			<Flag v="WzBossFg" />
+			<Flag v="WzBossBg" />
+			<Flag v="WzReqFg" />
+			<Flag v="WzHomeBaseFg" />
+			<Flag v="AttackFg" />
+			<Flag v="DefendFg" />
+			<Flag v="CircleBg" />
+			<Flag v="DiamondBg" />
+			<Flag v="SquareBg" />
+			<Flag v="HexBg" />
+			<Flag v="CircleStroke" />
+			<Flag v="DiamondStroke" />
+			<Flag v="SquareStroke" />
+			<Flag v="HexStroke" />
+			<Flag v="ExclamationFg" />
+			<Flag v="DeadIndicator" />
+			<Flag v="SpeakingIndicator" />
+			<Flag v="WeaponPadFg" />
+			<Flag v="CubeFg" />
+			<Flag v="FlagFg" />
+			<Flag v="LetterAFg" />
+			<Flag v="LetterBFg" />
+			<Flag v="LetterCFg" />
+			<Flag v="BombFg" />
+			<Flag v="CrownFg" />
+			<Flag v="SmallOffscreenArrow" />
+			<Flag v="FriendlyArrow" />
+			<Flag v="EnemyArrow" />
+			<Flag v="SeekIndicator" />
+			<Flag v="LockOnIndicator" />
+			<Flag v="ReqBg" />
+			<Flag v="Num0Fg" />
+			<Flag v="Num1Fg" />
+			<Flag v="Num2Fg" />
+			<Flag v="Num3Fg" />
+			<Flag v="Num4Fg" />
+			<Flag v="Num5Fg" />
+			<Flag v="Num6Fg" />
+			<Flag v="Num7Fg" />
+			<Flag v="Num8Fg" />
+			<Flag v="Num9Fg" />
+			<Flag v="FrameIdentifier1" />
+			<Flag v="FrameIdentifier2" />
+			<Flag v="FrameIdentifier3" />
+			<Flag v="FrameIdentifier4" />
+			<Flag v="AbilityAutoTurret" />
+			<Flag v="AbilityCloak" />
+			<Flag v="AbilityGravSphere" />
+			<Flag v="AbilityHealthBlast" />
+			<Flag v="AbilityHex" />
+			<Flag v="AbilityHologram" />
+			<Flag v="AbilityLocationDart" />
+			<Flag v="AbilityMedicDrone" />
+			<Flag v="AbilityTrap" />
+		</_C>
+		<_16 v="width and height" />
+		<_1F v="color" />
+		<_14 v="alpha" />
+		<_3B v="" />
+	</_38>
+	<_34 v="generated_pada240" length="4" />
+	<_3B v="" />
+</root>

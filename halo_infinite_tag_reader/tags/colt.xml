@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="CustomObjectLightingTag" item_name_2="CustomObjectLightingTag" item_name_3="CustomObjectLightingTag" db1="72" db2="0" db3="1" db4="0" db5="1" db6="0" db7="56" db8="3379">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="Probe" item_name_3="CustomObjectLighting" db1="52" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_36 v="Character Lighting" />
+		<_40 v="Authored Light Probes" item_name_1="AuthoredLightProbe" item_name_2="AuthoredLightProbe" item_name_3="AuthoredLightProbe" db1="268" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="275">
+			<_40 v="Lights" item_name_1="AuthoredLightProbeLights" item_name_2="AuthoredLightProbeLights" item_name_3="AuthoredLightProbeLights" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_37 v="Authored Light Probe" />
+				<_37 v="Direction 1" />
+				<_14 v="Direction 1" />
+				<_37 v="Front-Back 1" />
+				<_14 v="Front-Back 1" />
+				<_1F v="Direct color 1" />
+				<_37 v="Direct intensity 1" />
+				<_14 v="Direct intensity 1" />
+				<_37 v="Direction 2" />
+				<_14 v="Direction 2" />
+				<_37 v="Front-Back 2" />
+				<_14 v="Front-Back 2" />
+				<_1F v="Direct color 2" />
+				<_37 v="Direct intensity 2" />
+				<_14 v="Direct intensity 2" />
+				<_1F v="Ambient Color" />
+				<_37 v="Ambient intensity" />
+				<_14 v="Ambient intensity" />
+				<_1F v="Sun Color" />
+				<_37 v="Sun intensity" />
+				<_14 v="Sun intensity" />
+				<_1F v="Cubemap Scale Color" />
+				<_37 v="Cubemap Scale intensity" />
+				<_14 v="Cubemap Scale intensity" />
+				<_37 v="Authored Light Probe Intensity Scale" />
+				<_14 v="Authored Light Probe Intensity Scale" />
+				<_37 v="Generated Air Probe Intensity Scale" />
+				<_14 v="Generated Air Probe Intensity Scale" />
+				<_3B v="" />
+			</_40>
+			<_37 v="Generated Air Probe Intensity Scale" />
+			<_14 v="Generated Air Probe Intensity Scale" />
+			<_39 v="raw sh data" item_name_3="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+			</_39>
+			<_39 v="per frame sh data" item_name_3="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+				<_14 v="sh data" />
+				<_3B v="" />
+			</_39>
+			<_17 v="Sun Color" />
+			<_17 v="Cubemap Scale" />
+			<_36 v="" />
+			<_E v="Flags">
+				<Flag v="Characters" />
+				<Flag v="First Person Geometry" />
+				<Flag v="Vehicles" />
+			</_E>
+			<_34 v="generated_padb28a" length="2" />
+			<_3B v="" />
+		</_40>
+		<_A v="Is Camera-space">
+			<Flag v="Off" />
+			<Flag v="On" />
+		</_A>
+		<_F v="Flags">
+			<Flag v="Force Always Sun" />
+		</_F>
+		<_34 v="generated_pad79fe" length="2" />
+		<_41 v="cubemap override" />
+		<_3B v="" />
+	</_38>
+	<_34 v="generated_pad8a18" length="4" />
+	<_3B v="" />
+</root>

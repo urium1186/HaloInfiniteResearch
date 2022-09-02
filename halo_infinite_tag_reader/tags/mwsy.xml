@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="MaterialStylesTag" item_name_2="MaterialStylesTag" item_name_3="MaterialStylesTag" db1="168" db2="0" db3="1" db4="0" db5="1" db6="2" db7="152" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="regions" item_name_1="MaterialRegion" item_name_2="MaterialRegion" item_name_3="MaterialRegion" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="name" />
+		<_3B v="" />
+	</_40>
+	<_6 v="regions Flags" />
+	<_6 v="regions Vector1" />
+	<_6 v="regions Vector2" />
+	<_40 v="coatingMaterialSets" item_name_1="CoatingMaterialSetReference" item_name_2="CoatingMaterialSetReference" item_name_3="CoatingMaterialSetReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="coatingMaterialSet" />
+		<_3B v="" />
+	</_40>
+	<_6 v="coatingMaterialSets Flags" />
+	<_6 v="coatingMaterialSets Vector1" />
+	<_6 v="coatingMaterialSets Vector2" />
+	<_40 v="style" item_name_1="MaterialStyle" item_name_2="MaterialStyle" item_name_3="MaterialStyle" db1="92" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="273">
+		<_2 v="name" />
+		<_41 v="palette" />
+		<_2 v="global_damage" />
+		<_2 v="hero_damage" />
+		<_2 v="global_emissive" />
+		<_14 v="emissive_amount" />
+		<_14 v="scratch_amount" />
+		<_2 v="grime_type" />
+		<_14 v="grime_amount" />
+		<_40 v="regions" item_name_1="MaterialStyleRegion" item_name_2="MaterialStyleRegion" item_name_3="MaterialStyleRegion" db1="40" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+			<_2 v="name" />
+			<_2E v="Coating Material Set" />
+			<_34 v="generated_pad4b96" length="2" />
+			<_40 v="layers" item_name_1="MaterialLayer" item_name_2="MaterialLayer" item_name_3="MaterialLayer" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+				<_2 v="name" />
+				<_A v="Hero_Reveal">
+					<Flag v="disabled" />
+					<Flag v="enabled" />
+				</_A>
+				<_A v="Color_Blend">
+					<Flag v="disabled" />
+					<Flag v="enabled" />
+				</_A>
+				<_A v="Normal_Blend">
+					<Flag v="disabled" />
+					<Flag v="enabled" />
+				</_A>
+				<_A v="Ignore_Texel_Density_Scalar">
+					<Flag v="disabled" />
+					<Flag v="enabled" />
+				</_A>
+				<_1F v="forge_color_top" />
+				<_1F v="forge_color_mid" />
+				<_1F v="forge_color_bottom" />
+				<_14 v="forge_color_intensity" />
+				<_14 v="forge_layer_opacity" />
+				<_14 v="forge_max_roughness" />
+				<_A v="forge_override_metallic">
+					<Flag v="disabled" />
+					<Flag v="enabled" />
+				</_A>
+				<_A v="forge_metallic">
+					<Flag v="disabled" />
+					<Flag v="enabled" />
+				</_A>
+				<_34 v="generated_pad910e" length="2" />
+				<_3B v="" />
+			</_40>
+			<_6 v="layers Flags" />
+			<_6 v="layers Vector1" />
+			<_6 v="layers Vector2" />
+			<_3B v="" />
+		</_40>
+		<_6 v="regions Flags" />
+		<_6 v="regions Vector1" />
+		<_6 v="regions Vector2" />
+		<_3B v="" />
+	</_40>
+	<_6 v="style Flags" />
+	<_6 v="style Vector1" />
+	<_6 v="style Vector2" />
+	<_2E v="defaultLookIndex" />
+	<_34 v="generated_pad7113" length="2" />
+	<_41 v="visorSwatch" />
+	<_F v="Preload Swatch Options">
+		<Flag v="Preload All Swatches" />
+		<Flag v="Dont Preload Swatches" />
+	</_F>
+	<_34 v="generated_pad245e" length="3" />
+	<_40 v="Preloaded Swatches" item_name_1="PreloadSwatchEntry" item_name_2="PreloadSwatchEntry" item_name_3="PreloadSwatchEntry" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="swatch" />
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

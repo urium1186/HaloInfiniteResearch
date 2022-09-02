@@ -6,7 +6,7 @@ class Config:
 
     BASE_UNPACKED_PATH = "J:\\Games\\Halo Infinite Stuf\\Extracted\\UnPacked\\season2\\"
     BASE_UNPACKED_PATH_CAMPAIGN = "J:\\Games\\Halo Infinite Stuf\\Extracted\\UnPacked\\campaign\\"
-    BASE_UNPACKED_PATH = BASE_UNPACKED_PATH_CAMPAIGN
+    #BASE_UNPACKED_PATH = BASE_UNPACKED_PATH_CAMPAIGN
     MODEL_EXPORT_PATH = "J:\\Games\\Halo Infinite Stuf\\Extracted\\Converted\\RE_OtherGames\\HI\\models\\"
     INFOS_PATH = 'C:\\Users\\Jorge\\Downloads\\Mover\\infos\\'
     EXPORT_JSON = 'J:\\Games\\Halo Infinite Stuf\\Extracted\\HI\\json\\'

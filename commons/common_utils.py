@@ -19,7 +19,7 @@ def resolvePathFile(path, grouptag, inSubPath=''):
     if inSubPath != '':
         base_path = inSubPath
     path_to_find = base_path + path
-    t_tag_group = grouptag.replace(' ', '')
+    t_tag_group = grouptag # .replace(' ', '')
     if not map_ext.keys().__contains__(t_tag_group):
         print(grouptag)
         print(path)

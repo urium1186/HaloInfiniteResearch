@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="c_animation_frame_event_list_effect" item_name_2="c_animation_frame_event_list_effect" item_name_3="c_animation_frame_event_list_effect" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="40" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="effect references" item_name_1="EffectEventReferenceSet" item_name_2="EffectEventReferenceSet" item_name_3="EffectEventReferenceSet" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="name" />
+		<_40 v="effects" item_name_1="EffectEventReference" item_name_2="EffectEventReference" item_name_3="EffectEventReference" db1="96" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_41 v="effect" />
+			<_E v="flags">
+				<Flag v="allow on player" />
+				<Flag v="left arm only" />
+				<Flag v="right arm only" />
+				<Flag v="first-person only" />
+				<Flag v="third-person only" />
+				<Flag v="forward only" />
+				<Flag v="reverse only" />
+				<Flag v="fp no aged weapons" />
+			</_E>
+			<_34 v="generated_pad9456" length="2" />
+			<_41 v="model" />
+			<_2 v="model variant" />
+			<_41 v="weapon" />
+			<_2 v="weapon variant" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="frame event containers" item_name_1="EffectFrameEventContainer" item_name_2="EffectFrameEventContainer" item_name_3="EffectFrameEventContainer" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="animation name" />
+		<_40 v="effect events" item_name_1="EffectFrameEventDescriptor" item_name_2="EffectFrameEventDescriptor" item_name_3="EffectFrameEventDescriptor" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+			<_2 v="linked frame event id" />
+			<_2E v="effect" />
+			<_5 v="frame offset" />
+			<_37 v="" />
+			<_2 v="marker name" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

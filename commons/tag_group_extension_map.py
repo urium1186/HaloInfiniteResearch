@@ -7,7 +7,7 @@ map_ext = {
     'fogg': 'atmosphere_fog',
     'cfxs': 'camera_fx_settings',
     'scgt': 'static_collision',
-    'mat': 'material',
+    'mat ': 'material',
     'smet': 'structure_meta',
     'rtrn': 'runtime_terrain',
     'dcrt': 'runtime_dec',

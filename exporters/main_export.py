@@ -61,10 +61,11 @@ with open(filename, 'rb') as f:
     f.close()
 
 
-"""
-filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
+
+# filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
+filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.render_model'
 parse_render_model = RenderModel(filename)
-parse_render_model.load()
+parse_render_model.load()"""
 """
 parse_render_model.toJson()
 saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.json'
@@ -80,7 +81,9 @@ exporter.export()
 # exporter.debugAnalyzeMeshInfo()
 """
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.model'
-parse_model = Model(filename, parse_render_model)
+filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.model'
+
+parse_model = Model(filename)
 parse_model.load()
 """
 parse_model.toJson()

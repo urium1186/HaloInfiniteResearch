@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="s_wind_definition" item_name_2="s_wind_definition" item_name_3="s_wind_definition" db1="264" db2="0" db3="0" db4="0" db5="1" db6="0" db7="248" db8="3383">
+	<_38 v="AnyTag" item_name_3="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_3="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_36 v="WIND DIRECTION" />
+	<_18 v="wind_direction_radian" />
+	<_38 v="speed" item_name_3="s_wind_function" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_37 v="Mapping" />
+		<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_36 v="DECORATOR WIND MOTION" />
+	<_38 v="bend" item_name_3="s_wind_function" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_37 v="Mapping" />
+		<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="oscillation" item_name_3="s_wind_function" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_37 v="Mapping" />
+		<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_14 v="gust size" />
+	<_41 v="gust noise bitmap" />
+	<_14 v="cloud influence" />
+	<_14 v="fog influence" />
+	<_14 v="materials speed influence" />
+	<_38 v="materials gust breakup" item_name_3="s_wind_function" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_37 v="Mapping" />
+		<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="materials gust strength" item_name_3="s_wind_function" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_37 v="Mapping" />
+		<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="materials world uv max x" item_name_3="s_wind_function" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_37 v="Mapping" />
+		<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="materials world uv max y" item_name_3="s_wind_function" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_37 v="Mapping" />
+		<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="materials world uv max z" item_name_3="s_wind_function" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_37 v="Mapping" />
+		<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_34 v="generated_padb4ac" length="4" />
+	<_3B v="" />
+</root>

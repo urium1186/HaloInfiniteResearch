@@ -300,7 +300,7 @@ class RenderModelExporter(BaseExporter):
         self.obj_render_model.name = self.render_model_inst['name'].value
         self.obj_render_model.nodes_data = self.render_model.getBonesInfo()
         mesh_resource = \
-            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource (unmapped type(_43)'].childs[0]
+            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource'].childs[0]
         self.initChunksData()
         if self.export_by_regions:
             for region in self.render_model_inst['regions'].childs:
@@ -407,7 +407,7 @@ class RenderModelExporter(BaseExporter):
         if self.render_model_inst is None:
             self.render_model_inst = self.render_model.tag_parse.rootTagInst.childs[0]
         mesh_resource = \
-            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource (unmapped type(_43)'].childs[0]
+            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource'].childs[0]
         self.createScaleInfo()
         temp_mesh_s = self.render_model_inst['meshes'].childs
         self.initChunksData()
@@ -434,7 +434,7 @@ class RenderModelExporter(BaseExporter):
         mesh_resource = None
         try:
             mesh_resource = \
-                self.render_model_inst['mesh resource groups'].childs[0]['mesh resource (unmapped type(_43)'].childs[0]
+                self.render_model_inst['mesh resource groups'].childs[0]['mesh resource'].childs[0]
         except:
             return {}
 
@@ -470,7 +470,7 @@ class RenderModelExporter(BaseExporter):
         if self.render_model_inst is None:
             self.render_model_inst = self.render_model.tag_parse.rootTagInst.childs[0]
         mesh_resource = \
-            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource (unmapped type(_43)'].childs[0]
+            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource'].childs[0]
         self.createScaleInfo()
         temp_mesh_s = self.render_model_inst['meshes'].childs
         self.initChunksData()
@@ -527,7 +527,7 @@ class RenderModelExporter(BaseExporter):
         if self.render_model_inst is None:
             self.render_model_inst = self.render_model.tag_parse.rootTagInst.childs[0]
         mesh_resource = \
-            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource (unmapped type(_43)'].childs[0]
+            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource'].childs[0]
         self.createScaleInfo()
         temp_mesh_s = self.render_model_inst['meshes'].childs
         temp_mesh_r = self.render_model_inst['regions'].childs
@@ -539,7 +539,7 @@ class RenderModelExporter(BaseExporter):
         regions = variant['regions'].childs
         for region in regions:
             region_name = region['region name']
-            temp_mesh_r_i = -1
+            temp_mesh_r_i = None
             for rn in temp_mesh_r:
                 if rn['name'].value == region_name.value:
                     temp_mesh_r_i = rn['permutations'].childs
@@ -550,14 +550,16 @@ class RenderModelExporter(BaseExporter):
                 if temp_mesh_s is None:
                     continue
                 else:
+                    if temp_mesh_r_i is None:
+                        continue
                     if per_mesh_index != -1 and not (temp_mesh_r_i is None):
                         permutation = temp_mesh_r_i[per_mesh_index]
-                        per_mesh_index_1 = permutation['mesh_index'].value
+                        per_mesh_index_1 = permutation['mesh index'].value
                         if per_mesh_index_1 == -1:
                             continue
                         temp_name = '-1'
                         for m_index in range(per_mesh_index_1,
-                                             per_mesh_index_1 + permutation['mesh_count'].value):
+                                             per_mesh_index_1 + permutation['mesh count'].value):
                             mesh = temp_mesh_s[m_index]
 
                             t_m = self.processMeshInst(mesh, mesh_resource)
@@ -720,17 +722,17 @@ class RenderModelExporter(BaseExporter):
 
     def processMeshInst(self, mesh, mesh_resource, m_i=-1) -> ObjMesh:
         obj_mesh = ObjMesh()
-        obj_mesh.clone_index = mesh["clone_index"].value
-        obj_mesh.mesh_flags = mesh["mesh_flags"].options
-        obj_mesh.rigid_node_index = mesh["rigid_node_index"].value
-        m_v_t_index = mesh["vertex_type"].selected_index
+        obj_mesh.clone_index = mesh["clone index"].value
+        obj_mesh.mesh_flags = mesh["mesh flags"].options
+        obj_mesh.rigid_node_index = mesh["rigid node index"].value
+        m_v_t_index = mesh["vertex type"].selected_index
         obj_mesh.vertex_type = m_v_t_index
         obj_mesh.vert_type = m_v_t_index
-        obj_mesh.use_dual_quat = mesh["use_dual_quat"].value
-        obj_mesh.index_buffer_type = mesh["index_buffer_type"].selected_index
-        obj_mesh.clone_index = mesh["clone_index"].value
+        obj_mesh.use_dual_quat = mesh["use dual quat"].value
+        obj_mesh.index_buffer_type = mesh["index buffer type"].selected_index
+        obj_mesh.clone_index = mesh["clone index"].value
 
-        for lod_i, lod in enumerate(mesh['LOD_render_data'].childs):
+        for lod_i, lod in enumerate(mesh['LOD render data'].childs):
             if not (self.minLOD <= lod_i <= self.maxLOD):
                 continue
             obj_lod = ObjLOD(obj_mesh)
@@ -740,7 +742,7 @@ class RenderModelExporter(BaseExporter):
             size_sum = 0
             last_size = -1
             s_key = ''
-            for xi, x in enumerate(lod['vertex_buffer_indices'].childs):
+            for xi, x in enumerate(lod['vertex buffer indices'].childs):
                 temp_vert_index_block = x.value
                 if temp_vert_index_block != -1:
                     vertx_block_descr = mesh_resource['pc vertex buffers'].childs[temp_vert_index_block]
@@ -774,14 +776,14 @@ class RenderModelExporter(BaseExporter):
                     vertx_blocks[vertex_type_] = vertx_data
                     obj_lod.setVertBufferArray(vertex_buffers_usage, vertx_data)
             s_t = (max_offset - min_offset) + last_size
-            main_key = str(mesh["vertex_type"].selected) + '<->' + str(m_v_t_index)
+            main_key = str(mesh["vertex type"].selected) + '<->' + str(m_v_t_index)
 
             fillDebugDict(main_key, s_key, vertx_data_arrays)
             if s_t == size_sum:
                 debug = 1
             else:
                 debug = 1
-            index_buffer_index = lod['index_buffer_index'].value
+            index_buffer_index = lod['index buffer index'].value
 
             if index_buffer_index == -1:
                 continue
@@ -792,30 +794,30 @@ class RenderModelExporter(BaseExporter):
                 debug = 1
             else:
                 debug = 1
-            obj_lod.lod_flags = lod['lod_flags'].options
-            obj_lod.lod_render_flags = lod['lod_render_flags'].options
+            obj_lod.lod_flags = lod['lod flags'].options
+            obj_lod.lod_render_flags = lod['lod render flags'].options
             obj_lod.index_buffer_index = self.readIndexBlock(index_block_descr)
             obj_lod.vertex_buffer_indices = vertx_blocks
 
             for part in lod['parts'].childs:
                 obj_part = ObjPart()
-                path_mat = part['material_index'].extra_data['path']
-                obj_part.index_start = part['index_start'].value
-                obj_part.part_type = part['part_type'].value
-                obj_part.index_count = part['index_count'].value
-                obj_part.budget_vertex_count = part['budget_vertex_count'].value
-                obj_part.part_flags = part['part_flags'].options
-                obj_part.material_index = part['material_index'].value
+                path_mat = part['material index'].extra_data['path']
+                obj_part.index_start = part['index start'].value
+                obj_part.part_type = part['part type'].value
+                obj_part.index_count = part['index count'].value
+                obj_part.budget_vertex_count = part['budget vertex count'].value
+                obj_part.part_flags = part['part flags'].options
+                obj_part.material_index = part['material index'].value
                 obj_part.mat_string = path_mat
                 obj_part.material_path = path_mat
                 obj_lod.parts.append(obj_part)
 
             for subpart in lod['subparts'].childs:
                 obj_subpart = ObjSubPart()
-                obj_subpart.index_start = subpart['index_start'].value
-                obj_subpart.index_count = subpart['index_count'].value
-                obj_subpart.part_index = subpart['part_index'].value
-                obj_subpart.budget_vertex_count = subpart['budget_vertex_count'].value
+                obj_subpart.index_start = subpart['index start'].value
+                obj_subpart.index_count = subpart['index count'].value
+                obj_subpart.part_index = subpart['part index'].value
+                obj_subpart.budget_vertex_count = subpart['budget vertex count'].value
                 obj_lod.sub_parts.append(obj_subpart)
 
             obj_mesh.LOD_render_data.append(obj_lod)
@@ -823,35 +825,35 @@ class RenderModelExporter(BaseExporter):
 
     def analyzeMeshInst(self, mesh, mesh_resource, m_i=-1) -> ObjMesh:
         obj_mesh = ObjMesh()
-        obj_mesh.clone_index = mesh["clone_index"].value
-        obj_mesh.mesh_flags = mesh["mesh_flags"].options
-        obj_mesh.rigid_node_index = mesh["rigid_node_index"].value
-        m_v_t_index = mesh["vertex_type"].selected_index
+        obj_mesh.clone_index = mesh["clone index"].value
+        obj_mesh.mesh_flags = mesh["mesh flags"].options
+        obj_mesh.rigid_node_index = mesh["rigid node index"].value
+        m_v_t_index = mesh["vertex type"].selected_index
         obj_mesh.vertex_type = m_v_t_index
         obj_mesh.vert_type = m_v_t_index
-        obj_mesh.use_dual_quat = mesh["use_dual_quat"].value
-        obj_mesh.index_buffer_type = mesh["index_buffer_type"].selected_index
-        obj_mesh.clone_index = mesh["clone_index"].value
+        obj_mesh.use_dual_quat = mesh["use dual quat"].value
+        obj_mesh.index_buffer_type = mesh["index buffer type"].selected_index
+        obj_mesh.clone_index = mesh["clone index"].value
 
-        if mesh["clone_index"].value != -1:
+        if mesh["clone index"].value != -1:
             temp_mesh_s = self.render_model_inst['meshes'].childs
-            clone_mesh = temp_mesh_s[mesh["clone_index"].value]
-            assert mesh["LOD_render_data"].childrenCount == clone_mesh["LOD_render_data"].childrenCount
-            assert mesh["mesh_flags"].options == clone_mesh["mesh_flags"].options
-            assert mesh["rigid_node_index"].value == clone_mesh["rigid_node_index"].value
-            assert mesh["vertex_type"].selected_index == clone_mesh["vertex_type"].selected_index
-            assert mesh["use_dual_quat"].value == clone_mesh["use_dual_quat"].value
-            assert mesh["index_buffer_type"].selected_index == clone_mesh["index_buffer_type"].selected_index
-            assert mesh["pca_mesh_index"].value == clone_mesh["pca_mesh_index"].value
-            assert mesh["vertex_keys"].childrenCount == clone_mesh["vertex_keys"].childrenCount
-            assert mesh["optional_LOD_volume_index"].value == clone_mesh["optional_LOD_volume_index"].value
+            clone_mesh = temp_mesh_s[mesh["clone index"].value]
+            assert mesh["LOD render data"].childrenCount == clone_mesh["LOD render data"].childrenCount
+            assert mesh["mesh flags"].options == clone_mesh["mesh flags"].options
+            assert mesh["rigid node index"].value == clone_mesh["rigid node index"].value
+            assert mesh["vertex type"].selected_index == clone_mesh["vertex type"].selected_index
+            assert mesh["use dual quat"].value == clone_mesh["use dual quat"].value
+            assert mesh["index buffer type"].selected_index == clone_mesh["index buffer type"].selected_index
+            assert mesh["pca mesh index"].value == clone_mesh["pca mesh index"].value
+            assert mesh["vertex keys"].childrenCount == clone_mesh["vertex keys"].childrenCount
+            assert mesh["optional LOD volume index"].value == clone_mesh["optional LOD volume index"].value
 
-            assert mesh["lod_state_cache_slot"].value == clone_mesh["lod_state_cache_slot"].value
+            assert mesh["lod state cache slot"].value == clone_mesh["lod state cache slot"].value
 
-            if not mesh["Procedural_Deformation_Remap_Table"].value == clone_mesh[
-                "Procedural_Deformation_Remap_Table"].value:
+            if not mesh["Procedural Deformation Remap Table"].value == clone_mesh[
+                "Procedural Deformation Remap Table"].value:
                 debug = 1
-        self.Remap_Table[mesh["Procedural_Deformation_Remap_Table"].value] = 1
+        self.Remap_Table[mesh["Procedural Deformation Remap Table"].value] = 1
 
         info_item_array_3 = mesh_resource['Streaming Meshes'].childs[m_i]
         str_hex = str(mesh_resource['Streaming Meshes'].content_entry.bin_datas_hex[m_i])
@@ -994,6 +996,44 @@ class RenderModelExporter(BaseExporter):
         return obj_mesh
 
     def createScaleInfo(self):
+        for compression_info in self.render_model_inst['compression info'].childs:
+            obj_compression_inf = ObjCompressionInfo()
+            obj_compression_inf.compression_flags = compression_info['compression flags']
+            obj_compression_inf.scale["model_scale"] = [
+                [compression_info['position bounds 0'].x,
+                 compression_info['position bounds 0'].y,
+                 compression_info['position bounds 0'].y - compression_info['position bounds 0'].x],
+                [compression_info['position bounds 0'].z,
+                 compression_info['position bounds 1'].x,
+                 compression_info['position bounds 1'].x - compression_info['position bounds 0'].z],
+                [compression_info['position bounds 1'].y,
+                 compression_info['position bounds 1'].z,
+                 compression_info['position bounds 1'].z - compression_info['position bounds 1'].y],
+            ]
+
+            obj_compression_inf.scale["uv0_scale"] = [
+                [compression_info["texcoord bounds 0"].x, compression_info["texcoord bounds 0"].y,
+                 compression_info["texcoord bounds 0"].y - compression_info["texcoord bounds 0"].x],
+                [compression_info["texcoord bounds 1"].x, compression_info["texcoord bounds 1"].y,
+                 compression_info["texcoord bounds 1"].y - compression_info["texcoord bounds 1"].x],
+            ]
+
+            obj_compression_inf.scale["uv1_scale"] = [
+                [compression_info["texcoord bounds2 0"].x, compression_info["texcoord bounds2 0"].y,
+                 compression_info["texcoord bounds2 0"].y - compression_info["texcoord bounds2 0"].x],
+                [compression_info["texcoord bounds2 1"].x, compression_info["texcoord bounds2 1"].y,
+                 compression_info["texcoord bounds2 1"].y - compression_info["texcoord bounds2 1"].x],
+            ]
+
+            obj_compression_inf.scale["uv2_scale"] = [
+                [compression_info["texcoord bounds3 0"].x, compression_info["texcoord bounds3 0"].y,
+                 compression_info["texcoord bounds3 0"].y - compression_info["texcoord bounds3 0"].x],
+                [compression_info["texcoord bounds3 1"].x, compression_info["texcoord bounds3 1"].y,
+                 compression_info["texcoord bounds3 1"].y - compression_info["texcoord bounds3 1"].x],
+            ]
+            self.obj_render_model.render_geometry.compression_info.append(obj_compression_inf)
+
+    def createScaleInfo_save(self):
         for compression_info in self.render_model_inst['compression_info'].childs:
             obj_compression_inf = ObjCompressionInfo()
             obj_compression_inf.compression_flags = compression_info['compression_flags']

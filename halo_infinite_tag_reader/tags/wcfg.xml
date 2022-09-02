@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::Weapon::WeaponConfigurationDefinition" item_name_2="i343::Weapon::WeaponConfigurationDefinition" item_name_3="i343::Weapon::WeaponConfigurationDefinition" db1="368" db2="0" db3="0" db4="0" db5="1" db6="0" db7="280" db8="1331">
+	<_38 v="object_configuration" item_name_3="i343::Objects::ObjectConfigurationDefinition" db1="88" db2="0" db3="1" db4="0" db5="0" db6="0" db7="72" db8="1299">
+		<_38 v="AnyTag" item_name_3="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+			<_7 v="" />
+			<_38 v="" item_name_3="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_6 v="" />
+				<_34 v="" length="4" />
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_38>
+		<_37 v="OBJECT" />
+		<_38 v="object" item_name_3="i343::Objects::ObjectConfigurationDefinitionInternal" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_41 v="Object Definition" />
+			<_2 v="Variant name" />
+			<_2 v="Style Id" />
+			<_41 v="frame override" />
+			<_37 v="Customization" />
+			<_2 v="customization set override" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_34 v="generated_pad01af" length="4" />
+		<_3B v="" />
+	</_38>
+	<_37 v="WEAPON" />
+	<_38 v="weapon" item_name_3="i343::Weapon::WeaponConfigurationDefinitionInternal" db1="276" db2="0" db3="5" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="variant name" />
+		<_40 v="generic attachments" item_name_1="i343::Weapon::GenericAttachmentDefinition" item_name_2="i343::Weapon::GenericAttachmentDefinition" item_name_3="i343::Weapon::GenericAttachmentDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_41 v="attachment" />
+			<_3B v="" />
+		</_40>
+		<_41 v="barrel attachment" />
+		<_41 v="heat attachment" />
+		<_41 v="magazine attachment" />
+		<_41 v="melee attachment" />
+		<_41 v="sight attachment" />
+		<_41 v="target tracking attachment" />
+		<_41 v="trigger attachment" />
+		<_36 v="WARNING" />
+		<_41 v="unit modifier set" />
+		<_41 v="UI Display Info" />
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_34 v="generated_padb818" length="4" />
+	<_3B v="" />
+</root>

@@ -37,9 +37,13 @@ def getMmr3HashFromInt(integer: int) -> str:
 
 def getStrInMmr3Hash(p_hash) -> str:
     if Mmr3Hash_str.keys().__contains__(p_hash):
-        if not Mmr3Hash_str_iu.__contains__(p_hash):
-            # print(f'{p_hash}:{Mmr3Hash_str[p_hash]}')
-            Mmr3Hash_str_iu.append(p_hash)
+        if not Mmr3Hash_str_iu.keys().__contains__(p_hash):
+            hash_str = f'{p_hash}:{Mmr3Hash_str[p_hash]}'
+            print(hash_str)
+            Mmr3Hash_str_iu[p_hash] = Mmr3Hash_str[p_hash]
+            path_to_hash = Config.ROOT_DIR + '\\halo_infinite_tag_reader\\hash\\in_use.txt'
+            with open(path_to_hash, 'a') as f:
+                f.write(hash_str+'\n')
         return Mmr3Hash_str[p_hash]
     else:
         if debug_hash.keys().__contains__(p_hash):
@@ -49,7 +53,8 @@ def getStrInMmr3Hash(p_hash) -> str:
         return p_hash
 
 
-Mmr3Hash_str = {
+Mmr3Hash_str = {}
+Mmr3Hash_str_save = {
     '0A5BDF43': 'torso_belt',
     '580AAD54': 'mp_visor',
     '0F9BB6DC': 'l_armup',
@@ -255,19 +260,34 @@ Mmr3Hash_str = {
 }
 
 Mmr3Hash_str_dupl = {}
-Mmr3Hash_str_iu = []
+Mmr3Hash_str_iu = {}
+
+
+def loadInUseHashNamesFile():
+    path_to_hash = Config.ROOT_DIR + '\\halo_infinite_tag_reader\\hash\\in_use.txt'
+    with open(path_to_hash, 'rb') as f:
+        hash_lines = f.readlines()
+        for h_l in hash_lines:
+            values = str(h_l).replace('\\r\\n\'', '').split(':')
+            if len(values) < 2:
+                continue
+            Mmr3Hash_str_iu[str(values[0]).replace("b'", "")] = values[1]
+
+    debug = True
 
 
 def loadAlternativeHashNamesFiles():
     return
     path_to_hash = Config.ROOT_DIR + '\\halo_infinite_tag_reader\\hash\\'
     for path in pathlib.Path(path_to_hash).rglob('*.txt'):
-        if not path.name.__contains__('in_use'):
-            continue
+        #if not (path.name.__contains__('asdtag') or path.name.__contains__('in_use')):
+        #    continue
         with open(path, 'rb') as f:
             hash_lines = f.readlines()
             for h_l in hash_lines:
                 values = str(h_l).replace('\\r\\n\'','').split(':')
+                if len(values)<2:
+                    continue
                 h_i = getMmr3HashFrom(values[1])
                 if Mmr3Hash_str.keys().__contains__(h_i):
                     if not Mmr3Hash_str[h_i] == values[1]:
@@ -285,6 +305,7 @@ def loadAlternativeHashNamesFiles():
                     Mmr3Hash_str[h_i] = values[1]
 
 
+loadInUseHashNamesFile()
 loadAlternativeHashNamesFiles()
 map_alt_name_id = createDirAltNameID(Config.INFOS_PATH)
 

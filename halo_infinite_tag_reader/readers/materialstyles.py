@@ -49,10 +49,11 @@ class MaterialStyles(BaseTemplate):
                 layers.append(lay_d)
             material = root['coatingMaterialSets'].childs[entry['Coating Material Set'].value]['coatingMaterialSet'].path
             material = material.split('\\')[-1]
-            r_name = getStrInMmr3Hash(entry['name'].value)
+            r_name = entry['name'].str_value
             regionLayers[r_name] = {"layers": layers,
                                      "material": material,
-                                     "bodyPart": r_name
+                                     "bodyPart": r_name,
+                                        "name_data":entry['name'].toJson()
                                      }
 
         self.json_base["regionLayers"] = regionLayers

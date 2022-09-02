@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="s_squad_template_definition" item_name_2="s_squad_template_definition" item_name_3="s_squad_template_definition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_2 v="name" />
+	<_40 v="cell templates" item_name_1="s_cell_template_definition" item_name_2="s_cell_template_definition" item_name_3="s_cell_template_definition" db1="132" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_2 v="name" />
+		<_38 v="place on" item_name_3="s_ai_spawn_conditions" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_E v="difficulty flags">
+				<Flag v="easy" />
+				<Flag v="normal" />
+				<Flag v="heroic" />
+				<Flag v="legendary" />
+			</_E>
+			<_34 v="pad0" length="2" />
+			<_3B v="" />
+		</_38>
+		<_5 v="normal diff count" />
+		<_B v="major upgrade">
+			<Flag v="normal" />
+			<Flag v="few" />
+			<Flag v="many" />
+			<Flag v="none" />
+			<Flag v="all" />
+		</_B>
+		<_36 v="Character Build" />
+		<_40 v="character type" item_name_1="AICharacterChoiceWeakRef" item_name_2="AICharacterChoiceWeakRef" item_name_3="AICharacterChoiceWeakRef" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
+			<_38 v="place on" item_name_3="s_ai_spawn_conditions" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_E v="difficulty flags">
+					<Flag v="easy" />
+					<Flag v="normal" />
+					<Flag v="heroic" />
+					<Flag v="legendary" />
+				</_E>
+				<_34 v="pad0" length="2" />
+				<_3B v="" />
+			</_38>
+			<_41 v="character type" />
+			<_5 v="chance" />
+			<_34 v="generated_padf39f" length="2" />
+			<_3B v="" />
+		</_40>
+		<_40 v="initial weapon" item_name_1="AIWeaponChoiceWeakRef" item_name_2="AIWeaponChoiceWeakRef" item_name_3="AIWeaponChoiceWeakRef" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
+			<_38 v="place on" item_name_3="s_ai_spawn_conditions" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_E v="difficulty flags">
+					<Flag v="easy" />
+					<Flag v="normal" />
+					<Flag v="heroic" />
+					<Flag v="legendary" />
+				</_E>
+				<_34 v="pad0" length="2" />
+				<_3B v="" />
+			</_38>
+			<_41 v="weapon type" />
+			<_5 v="chance" />
+			<_34 v="generated_pad39d2" length="2" />
+			<_3B v="" />
+		</_40>
+		<_40 v="initial secondary weapon" item_name_1="AIWeaponChoiceWeakRef" item_name_2="AIWeaponChoiceWeakRef" item_name_3="AIWeaponChoiceWeakRef" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
+			<_38 v="place on" item_name_3="s_ai_spawn_conditions" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_E v="difficulty flags">
+					<Flag v="easy" />
+					<Flag v="normal" />
+					<Flag v="heroic" />
+					<Flag v="legendary" />
+				</_E>
+				<_34 v="pad0" length="2" />
+				<_3B v="" />
+			</_38>
+			<_41 v="weapon type" />
+			<_5 v="chance" />
+			<_34 v="generated_pad39d2" length="2" />
+			<_3B v="" />
+		</_40>
+		<_40 v="initial equipment" item_name_1="AIEquipmentChoiceWeakRef" item_name_2="AIEquipmentChoiceWeakRef" item_name_3="AIEquipmentChoiceWeakRef" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
+			<_38 v="place on" item_name_3="s_ai_spawn_conditions" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_E v="difficulty flags">
+					<Flag v="easy" />
+					<Flag v="normal" />
+					<Flag v="heroic" />
+					<Flag v="legendary" />
+				</_E>
+				<_34 v="pad0" length="2" />
+				<_3B v="" />
+			</_38>
+			<_41 v="equipment type" />
+			<_5 v="chance" />
+			<_34 v="generated_pad84ac" length="2" />
+			<_3B v="" />
+		</_40>
+		<_A v="grenade type">
+			<Flag v="none" />
+			<Flag v="fragmentation grenade" />
+			<Flag v="plasma grenade" />
+			<Flag v="lightning grenade" />
+			<Flag v="spike grenade" />
+			<Flag v="sapper grenade" />
+			<Flag v="stasis grenade" />
+		</_A>
+		<_34 v="generated_padf847" length="3" />
+		<_41 v="vehicle type" />
+		<_2 v="vehicle variant" />
+		<_2 v="activity name" />
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

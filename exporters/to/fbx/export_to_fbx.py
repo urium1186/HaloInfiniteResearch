@@ -19,8 +19,8 @@ import utils
 
 class FbxModel:
     def __init__(self, p_export_skl=True, p_skl_filepath='', p_skl_data=None):
-        self.export_colours = True
-        self.export_skl = p_export_skl
+        self.export_colours = False
+        self.export_skl = False # p_export_skl
         self.export_normals = False
         self.export_tangent = False
         self.skl_data = p_skl_data

@@ -126,12 +126,13 @@ class TagStruct(StructLayout):
         #name_key = f"{self.TargetIndex}<->{self.Type}"
         name_key = self.Type
         fillDebugDict(main_key, name_key, debug_TagStruct)
-
+        """
         if self.Type == 1 and self.UnknownProperty == 1:
             k = f"{self.TargetIndex}<->{self.UnknownProperty}"
             print(k)
             if True or k == '1<->1':
                 print(self.f.name.split('\\')[-1])
+        """
 
 
 

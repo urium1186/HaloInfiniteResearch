@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="Interface::UIVehicleDisplayInfo" item_name_2="Interface::UIVehicleDisplayInfo" item_name_3="Interface::UIVehicleDisplayInfo" db1="72" db2="0" db3="1" db4="0" db5="1" db6="0" db7="56" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_2 v="name" />
+	<_2 v="Vehicle Flip String" />
+	<_2 v="Tint Color" />
+	<_40 v="UI Info" item_name_1="Interface::UIItemInfo" item_name_2="Interface::UIItemInfo" item_name_3="Interface::UIItemInfo" db1="116" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="name" />
+		<_2 v="alt name " />
+		<_2 v="description" />
+		<_2 v="help text" />
+		<_2 v="icon string id" />
+		<_41 v="sprite" />
+		<_6 v="sprite index" />
+		<_41 v="alt sprite" />
+		<_6 v="alt sprite index" />
+		<_6 v="damage sprite index" />
+		<_41 v="ui vehicle screen reference" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Seats" item_name_1="Interface::UIVehicleSeatTagBlock" item_name_2="Interface::UIVehicleSeatTagBlock" item_name_3="Interface::UIVehicleSeatTagBlock" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="label" />
+		<_2 v="Boarding Grenade String" />
+		<_2 v="Boarding Melee String" />
+		<_2 v="In Seat String" />
+		<_2 v="Enter Seat String" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pad1d69" length="4" />
+	<_3B v="" />
+</root>

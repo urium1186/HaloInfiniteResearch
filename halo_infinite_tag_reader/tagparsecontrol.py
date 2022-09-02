@@ -1,3 +1,7 @@
+import os
+import pathlib
+from builtins import range
+
 from commons.enums_struct_def import TagStructType
 from halo_infinite_tag_reader.common_tag_types import *
 from halo_infinite_tag_reader.headers.tagbasereader import TagBaseReader
@@ -28,9 +32,15 @@ class Event(object):
 
 class TagParseControl:
 
-    def __init__(self, filename: str, tagLayoutTemplate: str):
+    def __init__(self, filename: str, tagLayoutTemplate: str = '', p_tagLayout = None):
+        if tagLayoutTemplate == '':
+            if p_tagLayout is None:
+                raise Exception('Debe tener o una ext o tagLayout')
+        if p_tagLayout is None:
+            if tagLayoutTemplate == '':
+                raise Exception('Debe tener o una ext o tagLayout')
         self.tag = None
-        self.tagLayout = None
+        self.tagLayout = p_tagLayout
         self.f: BinaryIO = None
         self.rootTagInst: TagInstance = None
         self.filename = filename
@@ -43,8 +53,8 @@ class TagParseControl:
         with open(self.filename, 'rb') as self.f:
             self.full_header.readIn(self.f)
             analizarCabecera(self.full_header)
-
-            self.tagLayout = TagLayouts.Tags(self.tagLayoutTemplate)
+            if self.tagLayout is None:
+                self.tagLayout = TagLayouts.Tags(self.tagLayoutTemplate)
             root_tag = TagLayouts.C('TagStructBlock', 'Root', self.tagLayout, p_P={"g": "true"})
             self.rootTagInst = TagInstance(tag=root_tag, addressStart=self.full_header.tag_struct_table.entries
             [0].data_reference.offset_plus, offset=0)
@@ -59,7 +69,7 @@ class TagParseControl:
                 return True
         return False
 
-    def readTagDefinition(self, parent, parcial_address=0, f=None):
+    def readTagDefinition(self, parent, parcial_address=0, f=None, ref_it = {'i':0}):
         tagInstanceTemp = {}
         tagBlocks = []
         tagDefinitions = parent.tagDef.B
@@ -80,13 +90,25 @@ class TagParseControl:
             if tagDefinitions[entry].T == "TagStructData":
                 if tagInstanceTemp[key].__class__ == TagStructData:
                     tagInstanceTemp[key].__class__ = TagStructData
-                    if tagInstanceTemp[key].generateEntry:
+                    if len(parent.content_entry.childs)>ref_it['i']:
+                        temp_entry = parent.content_entry.childs[ref_it['i']]
+                        assert not (temp_entry.type_id_tg == TagStructType.NoDataStartBlock and len(temp_entry.bin_datas) != 0),\
+                            f'Error in {self.filename}'
+
+                        if parent.content_entry.childs[ref_it['i']].type_id_tg == TagStructType.NoDataStartBlock:
+                            tagBlocks.append(tagInstanceTemp[key])
+                            ref_it['i'] += 1
+                    if False and tagInstanceTemp[key].generateEntry:
+                        #tagInstanceTemp[key].childrenCount = 1
                         tagBlocks.append(tagInstanceTemp[key])
+                        ref_it['i'] += 1
 
             elif tagDefinitions[entry].T == "Tagblock":
                 tagBlocks.append(tagInstanceTemp[key])
+                ref_it['i']+=1
             elif tagDefinitions[entry].T == "ResourceHandle":
                 tagBlocks.append(tagInstanceTemp[key])
+                ref_it['i'] += 1
             else:
                 tagInstanceTemp[key].parent = parent
                 self.OnInstanceLoad(tagInstanceTemp[key])
@@ -119,9 +141,10 @@ class TagParseControl:
 
         n_items = -1
         read_result = {"parent": {}, "child_array": []}
+        ref_count={'i':0}
         for data in instance_parent.content_entry.bin_datas:
             bin_stream = io.BytesIO(data)
-            read_result = self.readTagDefinition(instance_parent, f=bin_stream)
+            read_result = self.readTagDefinition(instance_parent, f=bin_stream, ref_it= ref_count)
             instance_parent.childs.append(read_result['parent'])
             tagBlocks = tagBlocks + read_result['child_array']
             n_items = read_result['child_array'].__len__()
@@ -137,6 +160,9 @@ class TagParseControl:
         elif n_items == 0:
             if instance_parent.content_entry.childs.__len__() != 0:
                 debug = 'error'
+                print(f"Error entry childs mayor q tag lay in {self.filename}, {instance_parent.tagDef.N}")
+                self.OnInstanceLoad(instance_parent)
+                return
         else:
             if instance_parent.content_entry.childs.__len__() != 0:
                 count = divmod(instance_parent.content_entry.childs.__len__(), n_items)
@@ -150,7 +176,42 @@ class TagParseControl:
 
         for i, entry in enumerate(instance_parent.content_entry.childs):
             tag_child_inst = tagBlocks[i]
+            #assert len(entry.bin_datas) == tag_child_inst.childrenCount, 'Deberia tener la misma cantidad de data por hijos a leer'
+            if tag_child_inst.__class__ == TagStructData:
+                #assert entry.unknown_property_bool_0_1 == 1
+                assert entry.type_id_tg == TagStructType.NoDataStartBlock, 'Coinciden en tipo NoDataStartBlock'
+                assert len(entry.bin_datas) == 0, f'Error in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+            elif tag_child_inst.__class__ == ResourceHandle:
+                assert entry.type_id_tg == TagStructType.ResourceHandle or entry.type_id_tg ==TagStructType.ExternalFileDescriptor, f'Coinciden en tipo ResourceHandle in {self.filename},  {instance_parent.tagDef.N}'
+                if entry.type_id_tg == TagStructType.ResourceHandle:
+                    path_to_hash = os.path.dirname(self.filename)
+                    ext = pathlib.Path(self.filename).suffix
+                    exter = False
+                    for path in pathlib.Path(path_to_hash).rglob(f'*{ext}[0_*'):
+                        exter = True
+                        break
 
+                    if exter:
+                        assert entry.unknown_property_bool_0_1 == 1, f'Error in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+                    else:
+                        if self.full_header.file_header.section_3_size == 0:
+                            assert entry.unknown_property_bool_0_1 == 0, f'Error in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+                        else:
+                            assert entry.unknown_property_bool_0_1 == 1, f'Error in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+
+                    assert len(entry.bin_datas) == 1, f'Error in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+                if entry.type_id_tg ==TagStructType.ExternalFileDescriptor:
+                    assert entry.unknown_property_bool_0_1 == 0, f'Error in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+                    assert len(entry.bin_datas) == 0, f'Error in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+                assert len(entry.bin_datas) == tag_child_inst.childrenCount, f'Error in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+            else:
+                if not len(entry.bin_datas) == tag_child_inst.childrenCount:
+                    debug = True
+                assert len(entry.bin_datas) == tag_child_inst.childrenCount, f'Error in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+                assert entry.type_id_tg == TagStructType.Tagblock, f'Coinciden en tipo Tagblock in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
+                if entry.unknown_property_bool_0_1 == 1:
+                    debug = True
+                    assert self.full_header.file_header.section_2_size != 0 or self.full_header.file_header.section_3_size != 0
             tag_child_inst.content_entry = entry
             tag_child_inst.parent = instance_parent
             self.readTagsAndCreateInstances(tag_child_inst)

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::MalleableProperty::GenericModifierDefinitionTag" item_name_2="i343::MalleableProperty::GenericModifierDefinitionTag" item_name_3="i343::MalleableProperty::GenericModifierDefinitionTag" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="64" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="modifiers" item_name_3="i343::MalleableProperty::GenericModifierDefinitionBlock" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="modifiers float" item_name_1="i343::MalleableProperty::GenericModifierDefinitionFloatParam" item_name_2="i343::MalleableProperty::GenericModifierDefinitionFloatParam" item_name_3="i343::MalleableProperty::GenericModifierDefinitionFloatParam" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="modifier float" item_name_3="i343::MalleableProperty::GenericModifierDefinitionFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="property" />
+				<_A v="scope">
+					<Flag v="global" />
+					<Flag v="object" />
+					<Flag v="player" />
+					<Flag v="team" />
+					<Flag v="mount" />
+				</_A>
+				<_34 v="generated_pad531a" length="3" />
+				<_14 v="duration" />
+				<_14 v="modifier" />
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_40>
+		<_40 v="modifiers int" item_name_1="i343::MalleableProperty::GenericModifierDefinitionIntParam" item_name_2="i343::MalleableProperty::GenericModifierDefinitionIntParam" item_name_3="i343::MalleableProperty::GenericModifierDefinitionIntParam" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="modifier int" item_name_3="i343::MalleableProperty::GenericModifierDefinitionInt" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="property" />
+				<_A v="scope">
+					<Flag v="global" />
+					<Flag v="object" />
+					<Flag v="player" />
+					<Flag v="team" />
+					<Flag v="mount" />
+				</_A>
+				<_34 v="generated_pad531a" length="3" />
+				<_14 v="duration" />
+				<_6 v="modifier" />
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_40>
+		<_40 v="modifiers bool" item_name_1="i343::MalleableProperty::GenericModifierDefinitionBoolParam" item_name_2="i343::MalleableProperty::GenericModifierDefinitionBoolParam" item_name_3="i343::MalleableProperty::GenericModifierDefinitionBoolParam" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="modifier bool" item_name_3="i343::MalleableProperty::GenericModifierDefinitionBool" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="property" />
+				<_A v="scope">
+					<Flag v="global" />
+					<Flag v="object" />
+					<Flag v="player" />
+					<Flag v="team" />
+					<Flag v="mount" />
+				</_A>
+				<_34 v="generated_pad531a" length="3" />
+				<_14 v="duration" />
+				<_A v="modifier">
+					<Flag v="false" />
+					<Flag v="true" />
+				</_A>
+				<_34 v="generated_pad900e" length="3" />
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_38>
+	<_34 v="generated_pad3c2c" length="4" />
+	<_3B v="" />
+</root>

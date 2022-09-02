@@ -1,7 +1,7 @@
  Scale data Block : {FE51FDAC-4778-FF62-5430-3A86CA923A0} compression info
  Mesh data Block : {4A81849D-42B4-EEFB-AC56-9A3180F53E6} 'parts'
  Mesh meta data block : {67FAC497-4E7D-3D88-A2F7-4B7F893FF8D} 'LOD render data'
- entry for the parts : {10DD7329-4880-7FE0-9AB7-BBCEE273225} 'mesh resource (unmapped type(_43)' 'array 1'
+ entry for the parts : {10DD7329-4880-7FE0-9AB7-BBCEE273225} 'mesh resource' 'array 1'
  
  77,956-36 77920
  

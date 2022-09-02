@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::SkillRankingGlobals" item_name_2="i343::SkillRankingGlobals" item_name_3="i343::SkillRankingGlobals" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_6 v="number of games to qualify for CSR" />
+	<_40 v="skill ranking globals" item_name_1="i343::SkillRankingDefinition" item_name_2="i343::SkillRankingDefinition" item_name_3="i343::SkillRankingDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="display_name" />
+		<_6 v="icon_index" />
+		<_40 v="tier" item_name_1="i343::SkillRankingTierDefinition" item_name_2="i343::SkillRankingTierDefinition" item_name_3="i343::SkillRankingTierDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="display_name " />
+			<_6 v="beginning_points" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

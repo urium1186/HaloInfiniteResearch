@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="AnimationFrameEventListAudio_v0" item_name_2="AnimationFrameEventListAudio_v0" item_name_3="AnimationFrameEventListAudio_v0" db1="104" db2="0" db3="0" db4="0" db5="1" db6="0" db7="88" db8="1299">
+	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_41 v="Library" />
+	<_40 v="Sounds" item_name_1="AnimationSounds" item_name_2="AnimationSounds" item_name_3="AnimationSounds" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="277">
+		<_6 v="Unique ID" />
+		<_2 v="Name" />
+		<_40 v="Sounds" item_name_1="SoundEventEntry" item_name_2="SoundEventEntry" item_name_3="SoundEventEntry" db1="96" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_41 v="Sound" />
+			<_E v="Key event flags">
+				<Flag v="AllowOnPlayer" />
+				<Flag v="LeftArmOnly" />
+				<Flag v="RightArmOnly" />
+				<Flag v="FirstPersonOnly" />
+				<Flag v="ThirdPersonOnly" />
+				<Flag v="ForwardOnly" />
+				<Flag v="BackwardsOnly" />
+				<Flag v="FPNoAgedWeapons" />
+			</_E>
+			<_34 v="generated_padb649" length="2" />
+			<_41 v="Model reference" />
+			<_2 v="Model variant" />
+			<_41 v="Weapon reference" />
+			<_2 v="Weapon variant" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Dialogues" item_name_1="AnimationDialogues" item_name_2="AnimationDialogues" item_name_3="AnimationDialogues" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="901">
+		<_6 v="Unique ID" />
+		<_2 v="Vocialization name" />
+		<_A v="Dialogue play restrictions">
+			<Flag v="Unrestricted" />
+			<Flag v="OnlyWithShield" />
+			<Flag v="OnlyWithShieldEmpty" />
+		</_A>
+		<_34 v="generated_pad2391" length="3" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Animations" item_name_1="AudioFrameEvents" item_name_2="AudioFrameEvents" item_name_3="AudioFrameEvents" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="Name" />
+		<_6 v="Guid" />
+		<_40 v="Sound events" item_name_1="SoundEvent" item_name_2="SoundEvent" item_name_3="SoundEvent" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+			<_5 v="Frame" />
+			<_34 v="generated_pad4191" length="2" />
+			<_2 v="Marker name" />
+			<_6 v="Sound ID" />
+			<_2E v="Sound" />
+			<_34 v="generated_pad27b0" length="2" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Dialogue events" item_name_1="DialogEvent" item_name_2="DialogEvent" item_name_3="DialogEvent" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+			<_5 v="Frame" />
+			<_34 v="generated_pade448" length="2" />
+			<_2 v="Marker name" />
+			<_6 v="Dialogue ID" />
+			<_2E v="Dialogue" />
+			<_34 v="generated_padfe29" length="2" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>
