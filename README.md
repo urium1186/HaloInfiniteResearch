@@ -7,6 +7,6 @@ Halo Infinite © Microsoft Corporation. HaloInfiniteResearch was created under M
 
 # Index
 
-> exporters/test0_export.py --> exports render_models to FBX
+> exporters/test0_export.py --> main exporter
 
-> halo_infinite_tag_reader/test_pasrse.py --> exports materialstyles to JSON
+> halo_infinite_tag_reader/test_pasrse.py --> main parser
