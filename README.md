@@ -7,6 +7,6 @@ Halo Infinite © Microsoft Corporation. HaloInfiniteResearch was created under M
 
 # Index
 
-> exporters/test0_export.py --> main exporter
+> exporters/main_export.py --> main model exporter
 
-> halo_infinite_tag_reader/test_pasrse.py --> main parser
+> halo_infinite_tag_reader/main_pasrse.py --> coating extractor
