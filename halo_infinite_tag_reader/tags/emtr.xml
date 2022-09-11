@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="EmitterTag" item_name_2="EmitterTag" item_name_3="EmitterTag" db1="1368" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1352" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="EmitterTag" item_name_2="EmitterTag" db1="1368" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1352" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="emitter" item_name_3="c_particle_emitter_definition" db1="1348" db2="0" db3="8" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="emitter" item_name_1="c_particle_emitter_definition" item_name_2="c_particle_emitter_definition" db1="1348" db2="0" db3="8" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_14 v="estimatedSize" />
 		<_3E v="runtime m_constant_per_particle_properties" />
 		<_3E v="runtime m_constant_over_time_properties" />
@@ -71,7 +71,7 @@
 		<_41 v="custom shape" />
 		<_17 v="axis scale" />
 		<_19 v="particle emission direction" />
-		<_38 v="emission radius" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="emission radius" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -144,7 +144,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -175,7 +175,7 @@
 		<_14 v="curvature" />
 		<_14 v="angle fade range" />
 		<_14 v="angle fade cutoff" />
-		<_40 v="particle attachments" item_name_1="s_particle_attachment" item_name_2="s_particle_attachment" item_name_3="s_particle_attachment" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_40 v="particle attachments" item_name_1="s_particle_attachment" item_name_2="s_particle_attachment" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_F v="flags">
 				<Flag v="disabled for debugging" />
 			</_F>
@@ -234,7 +234,7 @@
 			</_A>
 			<_3B v="" />
 		</_40>
-		<_38 v="relative direction" item_name_3="ParticlePropertyRealEulerAngles3d" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="relative direction" item_name_1="ParticlePropertyRealEulerAngles3d" item_name_2="ParticlePropertyRealEulerAngles3d" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -307,7 +307,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -323,7 +323,7 @@
 			<_1C v="Direction at 1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="emission angle" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="emission angle" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -396,7 +396,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -410,7 +410,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="translational offset" item_name_3="ParticlePropertyRealPoint3d" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="translational offset" item_name_1="ParticlePropertyRealPoint3d" item_name_2="ParticlePropertyRealPoint3d" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -483,7 +483,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -500,7 +500,7 @@
 			<_3B v="" />
 		</_38>
 		<_16 v="particle center offset" />
-		<_38 v="particle lifespan" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle lifespan" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -573,7 +573,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -588,7 +588,7 @@
 			<_3B v="" />
 		</_38>
 		<_37 v="EMISSION SETTINGS" />
-		<_38 v="particle starting count" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle starting count" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -661,7 +661,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -675,7 +675,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle max count" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle max count" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -748,7 +748,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -762,7 +762,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle emission rate" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle emission rate" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -835,7 +835,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -849,7 +849,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle emission per distance" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle emission per distance" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -922,7 +922,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -937,7 +937,7 @@
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
-		<_38 v="particle size" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle size" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1010,7 +1010,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1024,7 +1024,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle scale" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle scale" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1097,7 +1097,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1111,7 +1111,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle scale x" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle scale x" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1184,7 +1184,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1198,7 +1198,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle scale y" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle scale y" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1271,7 +1271,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1285,7 +1285,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle aspect ratio" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle aspect ratio" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1358,7 +1358,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1372,7 +1372,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle rotation" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle rotation" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1445,7 +1445,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1459,7 +1459,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle initial rotation rate" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle initial rotation rate" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1532,7 +1532,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1546,7 +1546,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle initial velocity" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle initial velocity" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1619,7 +1619,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1633,7 +1633,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle self-acceleration" item_name_3="ParticlePropertyRealVector3d" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle self-acceleration" item_name_1="ParticlePropertyRealVector3d" item_name_2="ParticlePropertyRealVector3d" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1706,7 +1706,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1724,8 +1724,8 @@
 		</_38>
 		<_14 v="min velocity" />
 		<_14 v="max velocity" />
-		<_40 v="particle attractor/repulsor" item_name_1="c_particle_emitter_definition::ParticleEmitterGlobalForce" item_name_2="c_particle_emitter_definition::ParticleEmitterGlobalForce" item_name_3="c_particle_emitter_definition::ParticleEmitterGlobalForce" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="931">
-			<_38 v="global force" item_name_3="EffectGlobalForceDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="particle attractor/repulsor" item_name_1="c_particle_emitter_definition::ParticleEmitterGlobalForce" item_name_2="c_particle_emitter_definition::ParticleEmitterGlobalForce" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="931">
+			<_38 v="global force" item_name_1="EffectGlobalForceDefinition" item_name_2="EffectGlobalForceDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_F v="flags">
 					<Flag v="is infinitely long cylinder" />
 					<Flag v="multiply force by attached object speed" />
@@ -1751,7 +1751,7 @@
 			<_19 v="axis" />
 			<_3B v="" />
 		</_40>
-		<_40 v="particle clip sphere" item_name_1="c_particle_emitter_definition::ParticleEmitterClipSphere" item_name_2="c_particle_emitter_definition::ParticleEmitterClipSphere" item_name_3="c_particle_emitter_definition::ParticleEmitterClipSphere" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="particle clip sphere" item_name_1="c_particle_emitter_definition::ParticleEmitterClipSphere" item_name_2="c_particle_emitter_definition::ParticleEmitterClipSphere" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_19 v="offset" />
 			<_14 v="radius" />
 			<_3B v="" />
@@ -1759,7 +1759,7 @@
 		<_37 v="PARTICLE MOTION" />
 		<_37 v="particle physics template" />
 		<_37 v="" />
-		<_38 v="particle movement" item_name_3="c_particle_movement_definition" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+		<_38 v="particle movement" item_name_1="c_particle_movement_definition" item_name_2="c_particle_movement_definition" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 			<_41 v="template" />
 			<_E v="flags">
 				<Flag v="physics" />
@@ -1780,7 +1780,7 @@
 			<_4 v="turbulence controller index" />
 			<_4 v="global force controller index" />
 			<_34 v="generated_pad0c06" length="3" />
-			<_40 v="movements" item_name_1="c_particle_controller" item_name_2="c_particle_controller" item_name_3="c_particle_controller" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_40 v="movements" item_name_1="c_particle_controller" item_name_2="c_particle_controller" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 				<_B v="type">
 					<Flag v="physics" />
 					<Flag v="collider" />
@@ -1793,9 +1793,9 @@
 					<Flag v="properties fully indexed" />
 				</_F>
 				<_34 v="generated_padc087" length="1" />
-				<_40 v="parameters" item_name_1="c_particle_controller_parameter" item_name_2="c_particle_controller_parameter" item_name_3="c_particle_controller_parameter" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="parameters" item_name_1="c_particle_controller_parameter" item_name_2="c_particle_controller_parameter" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_6 v="parameter id" />
-					<_38 v="property" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="property" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_A v="Input Variable">
 							<Flag v="particle age" />
 							<Flag v="system age" />
@@ -1868,7 +1868,7 @@
 							<Flag v="invalid state --- please set again" />
 						</_A>
 						<_37 v="Mapping" />
-						<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+						<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 							<_37 v="" />
 							<_42 v="data" />
 							<_37 v="" />
@@ -1893,7 +1893,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="" />
-		<_38 v="particle intensity" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle intensity" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -1966,7 +1966,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1988,7 +1988,7 @@
 			<Flag v="DWS Sun Color" />
 		</_A>
 		<_34 v="generated_pad2838" length="3" />
-		<_38 v="particle tint" item_name_3="ParticlePropertyColor" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle tint" item_name_1="ParticlePropertyColor" item_name_2="ParticlePropertyColor" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -2061,7 +2061,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -2083,7 +2083,7 @@
 			<Flag v="DWS Sun Color" />
 		</_A>
 		<_34 v="generated_paddb83" length="3" />
-		<_38 v="particle tint 2" item_name_3="ParticlePropertyColor" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle tint 2" item_name_1="ParticlePropertyColor" item_name_2="ParticlePropertyColor" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -2156,7 +2156,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -2170,7 +2170,7 @@
 			<_34 v="generated_padd216" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle alpha" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle alpha" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -2243,7 +2243,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -2257,7 +2257,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle alpha 2" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle alpha 2" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -2330,7 +2330,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -2344,7 +2344,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle alpha black point" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle alpha black point" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -2417,7 +2417,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -2431,7 +2431,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="particle alpha white point" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="particle alpha white point" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -2504,7 +2504,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -2525,7 +2525,7 @@
 			<Flag v="2x2" />
 		</_A>
 		<_34 v="generated_pad5bfa" length="3" />
-		<_38 v="frame index" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="frame index" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -2598,7 +2598,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -2612,7 +2612,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="animation rate" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="animation rate" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -2685,7 +2685,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -2699,7 +2699,7 @@
 			<_34 v="generated_pad859b" length="1" />
 			<_3B v="" />
 		</_38>
-		<_38 v="palette animation" item_name_3="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="palette animation" item_name_1="ParticlePropertyScalar" item_name_2="ParticlePropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="particle age" />
 				<Flag v="system age" />
@@ -2772,7 +2772,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />

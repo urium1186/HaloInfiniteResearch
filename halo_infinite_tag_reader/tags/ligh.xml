@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="DynamicLight" item_name_2="DynamicLight" item_name_3="DynamicLight" db1="632" db2="0" db3="0" db4="0" db5="1" db6="0" db7="616" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="DynamicLight" item_name_2="DynamicLight" db1="632" db2="0" db3="0" db4="0" db5="1" db6="0" db7="616" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="Midnight_Light_Parameters" item_name_3="LightDefinition" db1="612" db2="0" db3="12" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="Midnight_Light_Parameters" item_name_1="LightDefinition" item_name_2="LightDefinition" db1="612" db2="0" db3="12" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_36 v="Dynamic/Static Shared Light Parameters" />
 		<_2 v="haloLightNode" />
 		<_C v="Type">
@@ -34,7 +34,7 @@
 		</_A>
 		<_34 v="generated_pade39f" length="3" />
 		<_14 v="Override Source Intensity Multiplier" />
-		<_38 v="Intensity Function" item_name_3="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="Intensity Function" item_name_1="ScalarLightFunction" item_name_2="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="Input Variable" />
 			<_2 v="Range Variable" />
 			<_B v="Output Modifier">
@@ -45,7 +45,7 @@
 			<_34 v="generated_padc7e0" length="2" />
 			<_2 v="Output Modifier Input" />
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -54,7 +54,7 @@
 			<_3B v="" />
 		</_38>
 		<_41 v="Light Group" />
-		<_38 v="Dimmer Function" item_name_3="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="Dimmer Function" item_name_1="ScalarLightFunction" item_name_2="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="Input Variable" />
 			<_2 v="Range Variable" />
 			<_B v="Output Modifier">
@@ -65,7 +65,7 @@
 			<_34 v="generated_padc7e0" length="2" />
 			<_2 v="Output Modifier Input" />
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -74,7 +74,7 @@
 			<_3B v="" />
 		</_38>
 		<_14 v="Near Attenuation" />
-		<_38 v="Outer Attenuation Function" item_name_3="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="Outer Attenuation Function" item_name_1="ScalarLightFunction" item_name_2="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="Input Variable" />
 			<_2 v="Range Variable" />
 			<_B v="Output Modifier">
@@ -85,7 +85,7 @@
 			<_34 v="generated_padc7e0" length="2" />
 			<_2 v="Output Modifier Input" />
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -110,7 +110,7 @@
 		<_36 v="Shared Spot Parameters" />
 		<_14 v="Inner Cone Angle" />
 		<_14 v="Outer Cone Angle" />
-		<_38 v="Outer Cone Angle Function" item_name_3="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="Outer Cone Angle Function" item_name_1="ScalarLightFunction" item_name_2="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="Input Variable" />
 			<_2 v="Range Variable" />
 			<_B v="Output Modifier">
@@ -121,7 +121,7 @@
 			<_34 v="generated_padc7e0" length="2" />
 			<_2 v="Output Modifier Input" />
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -230,7 +230,7 @@
 		<_1F v="Target Color" />
 		<_14 v="destroy light after" />
 		<_36 v="Color Change" />
-		<_38 v="Interpolation Function" item_name_3="ColorLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="Interpolation Function" item_name_1="ColorLightFunction" item_name_2="ColorLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="Input Variable" />
 			<_2 v="Range Variable" />
 			<_B v="Output Modifier">
@@ -241,7 +241,7 @@
 			<_34 v="generated_pad8f6d" length="2" />
 			<_2 v="Output Modifier Input" />
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />

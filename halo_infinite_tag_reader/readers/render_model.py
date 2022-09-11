@@ -1,8 +1,8 @@
 import json
 
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
-from halo_infinite_tag_reader.common_tag_types import TagInstance
-from halo_infinite_tag_reader.varnames import Mmr3Hash_str, getStrInMmr3Hash
+from halo_infinite_tag_reader.tag_instance import TagInstance
+from halo_infinite_tag_reader.varnames import  getStrInMmr3Hash
 
 
 class RenderModel(BaseTemplate):
@@ -60,9 +60,15 @@ class RenderModel(BaseTemplate):
         print(count)
 
     def onInstanceLoad(self, instance: TagInstance):
-
-        if instance.tagDef.N == "mesh resource groups":
+        super(RenderModel, self).onInstanceLoad(instance)
+        if instance.tagDef.N == 'mesh lod chunks':
             xml = instance.content_entry.strXml()
+            for funct in instance.childs:
+                if funct['chunks'].byteLengthCount > 0:
+                    with open(self.full_filepath, 'rb') as f:
+                        funct['chunks'].readBinData(f)
+                    temp = int.from_bytes(funct['chunks'].bin_data, byteorder="little", signed=True)
+                    funct['chunks'].extra_data['value'] = temp
 
             debug = True
 

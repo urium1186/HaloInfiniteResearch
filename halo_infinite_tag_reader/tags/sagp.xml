@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::SpartanAbilities::GroundPoundDefinitionTag" item_name_2="i343::SpartanAbilities::GroundPoundDefinitionTag" item_name_3="i343::SpartanAbilities::GroundPoundDefinitionTag" db1="1144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1128" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::SpartanAbilities::GroundPoundDefinitionTag" item_name_2="i343::SpartanAbilities::GroundPoundDefinitionTag" db1="1144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1128" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="data" item_name_3="i343::SpartanAbilities::GroundPoundDefinition" db1="1128" db2="0" db3="21" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="common ability parameters" item_name_3="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
+	<_38 v="data" item_name_1="i343::SpartanAbilities::GroundPoundDefinition" item_name_2="i343::SpartanAbilities::GroundPoundDefinition" db1="1128" db2="0" db3="21" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="common ability parameters" item_name_1="i343::SpartanAbilities::SpartanAbilityCommonParameters" item_name_2="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
 			<_37 v="common ability parameters" />
 			<_C v="input">
 				<Flag v="Default" />
@@ -70,8 +70,8 @@
 		</_D>
 		<_14 v="minimum height above floor" />
 		<_36 v="Stabilization/Charge up" />
-		<_38 v="stabilizer definition" item_name_3="i343::SpartanAbilities::StabilizerDefinition" db1="220" db2="0" db3="7" db4="0" db5="1" db6="0" db7="0" db8="2355">
-			<_38 v="common ability parameters" item_name_3="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
+		<_38 v="stabilizer definition" item_name_1="i343::SpartanAbilities::StabilizerDefinition" item_name_2="i343::SpartanAbilities::StabilizerDefinition" db1="220" db2="0" db3="7" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="common ability parameters" item_name_1="i343::SpartanAbilities::SpartanAbilityCommonParameters" item_name_2="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
 				<_37 v="common ability parameters" />
 				<_C v="input">
 					<Flag v="Default" />
@@ -127,22 +127,22 @@
 			<_14 v="activation deceleration" />
 			<_14 v="stall duration" />
 			<_37 v="malleable time limit" />
-			<_38 v="malleable time limit" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="malleable time limit" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_14 v="cooldown" />
 			<_37 v="malleable time scale" />
-			<_38 v="malleable time scale" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="malleable time scale" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_14 v="max horizontal speed" />
-			<_38 v="vertical speed boost at exit" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="vertical speed boost at exit" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -157,13 +157,13 @@
 		<_14 v="charge up min time" />
 		<_14 v="charge up auto release time" />
 		<_37 v="charge up min time scale" />
-		<_38 v="charge up min time scale" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="charge up min time scale" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
 		</_38>
 		<_37 v="charge up auto release time scale" />
-		<_38 v="charge up auto release time scale" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="charge up auto release time scale" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
@@ -205,7 +205,7 @@
 		<_8 v="max slope angle" />
 		<_8 v="max opposing contact angle" />
 		<_37 v="pound fall speed (malleable)" />
-		<_38 v="pound fall speed (malleable)" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="pound fall speed (malleable)" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
@@ -216,19 +216,19 @@
 		<_36 v="Impact" />
 		<_14 v="aoe contact offset" />
 		<_37 v="knockback scalar" />
-		<_38 v="knockback scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="knockback scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
 		</_38>
 		<_37 v="pound ground damage scalar" />
-		<_38 v="pound ground damage scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="pound ground damage scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
 		</_38>
 		<_37 v="pound ground aoe radius scalar" />
-		<_38 v="pound ground aoe radius scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="pound ground aoe radius scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
@@ -273,7 +273,7 @@
 		<_8 v="maximum assist angular velocity" />
 		<_36 v="FOV delta function (charge up)" />
 		<_37 v="FOV delta function (charge up)" />
-		<_38 v="FOV delta function charge up" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="FOV delta function charge up" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />

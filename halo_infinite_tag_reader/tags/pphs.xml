@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="PhysicsPhantomsSoundDefinition" item_name_2="PhysicsPhantomsSoundDefinition" item_name_3="PhysicsPhantomsSoundDefinition" db1="200" db2="0" db3="2" db4="0" db5="1" db6="0" db7="184" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="PhysicsPhantomsSoundDefinition" item_name_2="PhysicsPhantomsSoundDefinition" db1="200" db2="0" db3="2" db4="0" db5="1" db6="0" db7="184" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="Sound events" item_name_1="PhysicsPhantomSoundEventPair" item_name_2="PhysicsPhantomSoundEventPair" item_name_3="PhysicsPhantomSoundEventPair" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Sound events" item_name_1="PhysicsPhantomSoundEventPair" item_name_2="PhysicsPhantomSoundEventPair" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_A v="Object type">
 			<Flag v="Local player biped" />
 			<Flag v="Other biped" />
@@ -21,14 +21,14 @@
 		<_34 v="generated_padad5f" length="3" />
 		<_2 v="Enter event" />
 		<_2 v="Exit event" />
-		<_40 v="Restrict to phantoms" item_name_1="PhysicsPhantomIndices" item_name_2="PhysicsPhantomIndices" item_name_3="PhysicsPhantomIndices" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Restrict to phantoms" item_name_1="PhysicsPhantomIndices" item_name_2="PhysicsPhantomIndices" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_4 v="Phantom index" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_40>
 	<_2 v="Biped travel event" />
-	<_40 v="(Legacy) Sound tags" item_name_1="PhysicsPhantomSoundTagPair" item_name_2="PhysicsPhantomSoundTagPair" item_name_3="PhysicsPhantomSoundTagPair" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="(Legacy) Sound tags" item_name_1="PhysicsPhantomSoundTagPair" item_name_2="PhysicsPhantomSoundTagPair" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_A v="Object type">
 			<Flag v="Local player biped" />
 			<Flag v="Other biped" />
@@ -40,7 +40,7 @@
 		<_34 v="generated_pad7bb7" length="3" />
 		<_41 v="Enter sound tag" />
 		<_41 v="Exit sound tag" />
-		<_40 v="Restrict to phantoms" item_name_1="PhysicsPhantomIndices" item_name_2="PhysicsPhantomIndices" item_name_3="PhysicsPhantomIndices" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Restrict to phantoms" item_name_1="PhysicsPhantomIndices" item_name_2="PhysicsPhantomIndices" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_4 v="Phantom index" />
 			<_3B v="" />
 		</_40>

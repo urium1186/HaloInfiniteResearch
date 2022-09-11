@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::CageSystem::CageGlobalsDefinitionTag" item_name_2="i343::CageSystem::CageGlobalsDefinitionTag" item_name_3="i343::CageSystem::CageGlobalsDefinitionTag" db1="360" db2="0" db3="2" db4="0" db5="1" db6="0" db7="344" db8="3347">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::CageSystem::CageGlobalsDefinitionTag" item_name_2="i343::CageSystem::CageGlobalsDefinitionTag" db1="360" db2="0" db3="2" db4="0" db5="1" db6="0" db7="344" db8="3347">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="Global Default Cage Points" item_name_1="i343::CageSystem::CagePointDefault" item_name_2="i343::CageSystem::CagePointDefault" item_name_3="i343::CageSystem::CagePointDefault" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Global Default Cage Points" item_name_1="i343::CageSystem::CagePointDefault" item_name_2="i343::CageSystem::CagePointDefault" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
 		<_41 v="Cage Definition" />
 		<_2 v="Point Name" />
@@ -27,7 +27,7 @@
 	<_8 v="Default Gaze Inner Angle" />
 	<_8 v="Default Gaze Velocity" />
 	<_37 v="Gaze Velocity Curve" />
-	<_38 v="Default Gaze Velocity Curve" item_name_3="i343::Curve::CurveReference" db1="36" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_38 v="Default Gaze Velocity Curve" item_name_1="i343::Curve::CurveReference" item_name_2="i343::Curve::CurveReference" db1="36" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_A v="Curve Type">
 			<Flag v="None" />
 			<Flag v="Linear" />
@@ -64,7 +64,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Transform Blend Curve" />
-	<_38 v="Default Blend Curve (Transform)" item_name_3="i343::Curve::CurveReference" db1="36" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_38 v="Default Blend Curve (Transform)" item_name_1="i343::Curve::CurveReference" item_name_2="i343::Curve::CurveReference" db1="36" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_A v="Curve Type">
 			<Flag v="None" />
 			<Flag v="Linear" />
@@ -101,7 +101,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Properties Blend Curve" />
-	<_38 v="Default Blend Curve (Properties)" item_name_3="i343::Curve::CurveReference" db1="36" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_38 v="Default Blend Curve (Properties)" item_name_1="i343::Curve::CurveReference" item_name_2="i343::Curve::CurveReference" db1="36" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_A v="Curve Type">
 			<Flag v="None" />
 			<Flag v="Linear" />
@@ -138,7 +138,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="From Gameplay Transition" />
-	<_38 v="From Gameplay Transition" item_name_3="i343::CageSystem::CageTransitionCurve" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_38 v="From Gameplay Transition" item_name_1="i343::CageSystem::CageTransitionCurve" item_name_2="i343::CageSystem::CageTransitionCurve" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_41 v="Animation Curve" />
 		<_2 v="Transform Curve Name" />
 		<_2 v="Focal Length Curve Name" />
@@ -154,7 +154,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="To Gameplay Transition" />
-	<_38 v="To Gameplay Transition" item_name_3="i343::CageSystem::CageTransitionCurve" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_38 v="To Gameplay Transition" item_name_1="i343::CageSystem::CageTransitionCurve" item_name_2="i343::CageSystem::CageTransitionCurve" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_41 v="Animation Curve" />
 		<_2 v="Transform Curve Name" />
 		<_2 v="Focal Length Curve Name" />

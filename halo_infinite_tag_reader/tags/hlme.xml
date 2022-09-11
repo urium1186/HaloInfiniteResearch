@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="HlodMetadata" item_name_2="HlodMetadata" item_name_3="HlodMetadata" db1="232" db2="0" db3="1" db4="0" db5="1" db6="0" db7="216" db8="3347">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="HlodMetadata" item_name_2="HlodMetadata" db1="232" db2="0" db3="1" db4="0" db5="1" db6="0" db7="216" db8="3347">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -14,7 +14,7 @@
 	<_19 v="Position" />
 	<_19 v="VolumeMin" />
 	<_19 v="VolumeMax" />
-	<_40 v="Child static geo" item_name_1="HlodObject" item_name_2="HlodObject" item_name_3="HlodObject" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Child static geo" item_name_1="HlodObject" item_name_2="HlodObject" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_6 v="Guid" />
 		<_41 v="Parent Layer Ref" />
 		<_A v="Included In Geo">
@@ -24,7 +24,7 @@
 		<_34 v="generated_pad944a" length="3" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Child HLOD Volumes" item_name_1="HlodObject" item_name_2="HlodObject" item_name_3="HlodObject" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Child HLOD Volumes" item_name_1="HlodObject" item_name_2="HlodObject" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_6 v="Guid" />
 		<_41 v="Parent Layer Ref" />
 		<_A v="Included In Geo">
@@ -54,12 +54,12 @@
 		<Flag v="Use Distance" />
 	</_B>
 	<_34 v="generated_pad77b4" length="2" />
-	<_40 v="BSPs" item_name_1="HlodBsp" item_name_2="HlodBsp" item_name_3="HlodBsp" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="BSPs" item_name_1="HlodBsp" item_name_2="HlodBsp" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="BSP" />
 		<_6 v="ioCount" />
 		<_3B v="" />
 	</_40>
-	<_40 v="BSPs involved by all children" item_name_1="HlodBsp" item_name_2="HlodBsp" item_name_3="HlodBsp" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="BSPs involved by all children" item_name_1="HlodBsp" item_name_2="HlodBsp" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="BSP" />
 		<_6 v="ioCount" />
 		<_3B v="" />
@@ -73,7 +73,7 @@
 		<Flag v="Do Not Use Visibility" />
 	</_B>
 	<_34 v="generated_pad9195" length="2" />
-	<_38 v="Visibility Camera Sphere Settings" item_name_3="HlodSimplygonCustomSphereCameraPath" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Visibility Camera Sphere Settings" item_name_1="HlodSimplygonCustomSphereCameraPath" item_name_2="HlodSimplygonCustomSphereCameraPath" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_3E v="Quality" />
 		<_14 v="Semisphere Center Pitch Angle" />
 		<_14 v="Semisphere Center Yaw Angle" />

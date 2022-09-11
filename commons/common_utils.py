@@ -40,9 +40,14 @@ def resolvePathFile(path, grouptag, inSubPath=''):
                 debug = 1
             else:
                 return path_to_find
-        elif t_tag_group == 'shdv':
+        elif t_tag_group == 'shdv' or t_tag_group == 'shbc':
             path_to_find = f"{base_path}{path}{plataform}.{ext}"
             if not os.path.isfile(path_to_find):
+                path_to_find = path_to_find.replace('__chore\\gen__\\','__chore\\gen__\\pc__\\')
+                if not os.path.isfile(path_to_find):
+                    debug = 1
+                else:
+                    return path_to_find
                 """
                 print(grouptag)
                 print(path)
@@ -51,15 +56,25 @@ def resolvePathFile(path, grouptag, inSubPath=''):
                 debug = 1
             else:
                 return path_to_find
+
+        elif t_tag_group == 'mwsy':
+            extra = '{ct}'
+            path_to_find = f'{base_path}__chore\\gen__\\{path}{extra}.{ext}'
+            if not os.path.isfile(path_to_find):
+                return ''
+            else:
+                return path_to_find
         else:
-            """
-            print(grouptag)
-            print(path)
-            print(path_to_find)
-            """
+            path_to_find = f'{base_path}__chore\\gen__\\{path}.{ext}'
+            if not os.path.isfile(path_to_find):
+                return ''
+            else:
+                return path_to_find
             debug = 1
     else:
         return path_to_find
+
+
     return ''
 
 

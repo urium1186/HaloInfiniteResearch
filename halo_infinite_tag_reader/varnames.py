@@ -273,6 +273,7 @@ def loadInUseHashNamesFile():
                 continue
             Mmr3Hash_str_iu[str(values[0]).replace("b'", "")] = values[1]
 
+
     debug = True
 
 
@@ -280,8 +281,8 @@ def loadAlternativeHashNamesFiles():
     return
     path_to_hash = Config.ROOT_DIR + '\\halo_infinite_tag_reader\\hash\\'
     for path in pathlib.Path(path_to_hash).rglob('*.txt'):
-        #if not (path.name.__contains__('asdtag') or path.name.__contains__('in_use')):
-        #    continue
+        if not (path.name.__contains__('asdtag')):
+            continue
         with open(path, 'rb') as f:
             hash_lines = f.readlines()
             for h_l in hash_lines:
@@ -306,6 +307,8 @@ def loadAlternativeHashNamesFiles():
 
 
 loadInUseHashNamesFile()
+if True:
+    Mmr3Hash_str = Mmr3Hash_str_iu
 loadAlternativeHashNamesFiles()
 map_alt_name_id = createDirAltNameID(Config.INFOS_PATH)
 

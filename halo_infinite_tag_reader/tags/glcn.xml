@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::ControlGlobals" item_name_2="i343::ControlGlobals" item_name_3="i343::ControlGlobals" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="64" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::ControlGlobals" item_name_2="i343::ControlGlobals" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="64" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="controller input" item_name_1="s_game_globals_input_abstraction" item_name_2="s_game_globals_input_abstraction" item_name_3="s_game_globals_input_abstraction" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="controller input" item_name_1="s_game_globals_input_abstraction" item_name_2="s_game_globals_input_abstraction" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="axial dead zone" />
 		<_14 v="radial dead zone" />
 		<_3B v="" />
 	</_40>
-	<_40 v="player control" item_name_1="s_game_globals_player_control" item_name_2="s_game_globals_player_control" item_name_3="s_game_globals_player_control" db1="500" db2="0" db3="4" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="player control" item_name_1="s_game_globals_player_control" item_name_2="s_game_globals_player_control" db1="500" db2="0" db3="4" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_36 v="controller bindings" />
-		<_40 v="controller button mappings" item_name_1="s_controller_mapping_reference" item_name_2="s_controller_mapping_reference" item_name_3="s_controller_mapping_reference" db1="40" db2="0" db3="4" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="controller button mappings" item_name_1="s_controller_mapping_reference" item_name_2="s_controller_mapping_reference" db1="40" db2="0" db3="4" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_2 v="Default Binding Preset Name" />
 			<_2 v="UI String ID" />
 			<_2 v="UI Description String ID" />
@@ -37,7 +37,7 @@
 		<_2 v="Secondary (in vehicle)" />
 		<_36 v="Axis Defaults" />
 		<_37 v="Sprint" />
-		<_38 v="sprint info" item_name_3="i343::PlayerControlGlobals::AxisPairType" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_38 v="sprint info" item_name_1="i343::PlayerControlGlobals::AxisPairType" item_name_2="i343::PlayerControlGlobals::AxisPairType" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="toggle axis id" />
 			<_2 v="hold axis id" />
 			<_F v="flags">
@@ -48,7 +48,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="Zoom" />
-		<_38 v="zoom info" item_name_3="i343::PlayerControlGlobals::AxisPairType" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_38 v="zoom info" item_name_1="i343::PlayerControlGlobals::AxisPairType" item_name_2="i343::PlayerControlGlobals::AxisPairType" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="toggle axis id" />
 			<_2 v="hold axis id" />
 			<_F v="flags">
@@ -59,7 +59,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="Crouch" />
-		<_38 v="crouch info" item_name_3="i343::PlayerControlGlobals::AxisPairType" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_38 v="crouch info" item_name_1="i343::PlayerControlGlobals::AxisPairType" item_name_2="i343::PlayerControlGlobals::AxisPairType" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="toggle axis id" />
 			<_2 v="hold axis id" />
 			<_F v="flags">
@@ -72,7 +72,7 @@
 		<_36 v="inventory peek" />
 		<_14 v="auto close inventory peek time" />
 		<_36 v="sticks" />
-		<_40 v="move stick info" item_name_1="s_gamepad_stick_settings" item_name_2="s_gamepad_stick_settings" item_name_3="s_gamepad_stick_settings" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+		<_40 v="move stick info" item_name_1="s_gamepad_stick_settings" item_name_2="s_gamepad_stick_settings" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 			<_A v="input shape">
 				<Flag v="none" />
 				<Flag v="unit_circle" />
@@ -83,10 +83,10 @@
 			<_16 v="pegged time" />
 			<_16 v="pegged scale" />
 			<_8 v="peg max angular velocity" />
-			<_40 v="input mapping function" item_name_1="InputMappingFunctionBlock" item_name_2="InputMappingFunctionBlock" item_name_3="InputMappingFunctionBlock" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-				<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_40 v="input mapping function" item_name_1="InputMappingFunctionBlock" item_name_2="InputMappingFunctionBlock" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_37 v="function" />
-					<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -98,7 +98,7 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="look stick info" item_name_1="s_gamepad_stick_settings" item_name_2="s_gamepad_stick_settings" item_name_3="s_gamepad_stick_settings" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+		<_40 v="look stick info" item_name_1="s_gamepad_stick_settings" item_name_2="s_gamepad_stick_settings" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 			<_A v="input shape">
 				<Flag v="none" />
 				<Flag v="unit_circle" />
@@ -109,10 +109,10 @@
 			<_16 v="pegged time" />
 			<_16 v="pegged scale" />
 			<_8 v="peg max angular velocity" />
-			<_40 v="input mapping function" item_name_1="InputMappingFunctionBlock" item_name_2="InputMappingFunctionBlock" item_name_3="InputMappingFunctionBlock" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-				<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_40 v="input mapping function" item_name_1="InputMappingFunctionBlock" item_name_2="InputMappingFunctionBlock" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_37 v="function" />
-					<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -203,7 +203,7 @@
 		<_14 v="jump_stationary_height" />
 		<_3B v="" />
 	</_40>
-	<_40 v="input abstraction globals" item_name_1="InputScopeTagRef" item_name_2="InputScopeTagRef" item_name_3="InputScopeTagRef" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="input abstraction globals" item_name_1="InputScopeTagRef" item_name_2="InputScopeTagRef" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="scope" />
 		<_3B v="" />
 	</_40>

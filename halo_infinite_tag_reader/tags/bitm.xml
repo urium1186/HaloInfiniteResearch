@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="BitmapGroup" item_name_2="BitmapGroup" item_name_3="BitmapGroup" db1="232" db2="0" db3="21" db4="0" db5="1" db6="0" db7="216" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="BitmapGroup" item_name_2="BitmapGroup" db1="232" db2="0" db3="21" db4="0" db5="1" db6="0" db7="216" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -119,7 +119,7 @@
 	<_4 v="target platform" />
 	<_5 v="spread factor" />
 	<_34 v="generated_pad8ed2" length="2" />
-	<_40 v="usage override" item_name_1="BitmapUsage" item_name_2="BitmapUsage" item_name_3="BitmapUsage" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="usage override" item_name_1="BitmapUsage" item_name_2="BitmapUsage" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_2 v="editor group" />
 		<_14 v="source gamma" />
@@ -365,11 +365,11 @@
 		</_A>
 		<_3B v="" />
 	</_40>
-	<_40 v="manual_sequences" item_name_1="BitmapGroupSequence" item_name_2="BitmapGroupSequence" item_name_3="BitmapGroupSequence" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="manual_sequences" item_name_1="BitmapGroupSequence" item_name_2="BitmapGroupSequence" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_0 v="name" />
 		<_5 v="first bitmap index" />
 		<_5 v="bitmap count" />
-		<_40 v="sprites" item_name_1="BitmapGroupSprite" item_name_2="BitmapGroupSprite" item_name_3="BitmapGroupSprite" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="sprites" item_name_1="BitmapGroupSprite" item_name_2="BitmapGroupSprite" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_5 v="bitmap index" />
 			<_34 v="generated_pad2095" length="2" />
 			<_14 v="left" />
@@ -383,9 +383,9 @@
 	</_40>
 	<_36 v="IMPORT DATA" />
 	<_42 v="source data" />
-	<_40 v="source paths" item_name_1="SourcePaths" item_name_2="SourcePaths" item_name_3="SourcePaths" db1="276" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="source paths" item_name_1="SourcePaths" item_name_2="SourcePaths" db1="276" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_44 v="source path" />
-		<_40 v="intermediate paths" item_name_1="BitmapSourceFile" item_name_2="BitmapSourceFile" item_name_3="BitmapSourceFile" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="intermediate paths" item_name_1="BitmapSourceFile" item_name_2="BitmapSourceFile" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_44 v="path" />
 			<_3B v="" />
 		</_40>
@@ -394,11 +394,11 @@
 	<_3F v="source checksum" />
 	<_20 v="min color" />
 	<_20 v="max color" />
-	<_40 v="sequences" item_name_1="BitmapGroupSequence" item_name_2="BitmapGroupSequence" item_name_3="BitmapGroupSequence" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="sequences" item_name_1="BitmapGroupSequence" item_name_2="BitmapGroupSequence" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_0 v="name" />
 		<_5 v="first bitmap index" />
 		<_5 v="bitmap count" />
-		<_40 v="sprites" item_name_1="BitmapGroupSprite" item_name_2="BitmapGroupSprite" item_name_3="BitmapGroupSprite" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="sprites" item_name_1="BitmapGroupSprite" item_name_2="BitmapGroupSprite" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_5 v="bitmap index" />
 			<_34 v="generated_pad2095" length="2" />
 			<_14 v="left" />
@@ -410,7 +410,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="bitmaps" item_name_1="BitmapData" item_name_2="BitmapData" item_name_3="BitmapData" db1="40" db2="0" db3="26" db4="0" db5="1" db6="0" db7="0" db8="305">
+	<_40 v="bitmaps" item_name_1="BitmapData" item_name_2="BitmapData" db1="40" db2="0" db3="26" db4="0" db5="1" db6="0" db7="0" db8="305">
 		<_5 v="width" />
 		<_5 v="height" />
 		<_3D v="depth" />
@@ -496,7 +496,7 @@
 		<_14 v="streaming scale" />
 		<_5 v="sourceWidth" />
 		<_5 v="sourceHeight" />
-		<_43 v="bitmap resource handle" item_name_3="BitmapDataResource" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_43 v="bitmap resource handle" item_name_1="BitmapDataResource" item_name_2="BitmapDataResource" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_42 v="pixels" />
 			<_6 v="hardware format" />
 			<_4 v="tileMode" />
@@ -512,7 +512,7 @@
 			<_3C v="mipCountPerArraySlice" />
 			<_34 v="generated_padff1b" length="6" />
 			<_7 v="runtime data" />
-			<_40 v="streamingData" item_name_1="StreamingBitmapData" item_name_2="StreamingBitmapData" item_name_3="StreamingBitmapData" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="streamingData" item_name_1="StreamingBitmapData" item_name_2="StreamingBitmapData" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_6 v="offset" />
 				<_6 v="size" />
 				<_6 v="chunkInfo" />

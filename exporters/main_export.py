@@ -12,11 +12,14 @@ from exporters.model.bitmap_exporter import BitmapExporter
 from exporters.model.model_exporter import ModelExporter
 from configs.config import Config
 from exporters.model.render_model_exporter import RenderModelExporter
+from exporters.model.shader_bytecode_exporter import ShaderBytecodeExporter
+from exporters.model.shader_root_signature_exporter import ShaderRootSignatureExporter
 from exporters.to.fbx.import_from_fbx import FbxModelImporter
 from exporters.to.image.export_to_img_pillow import ExportImgPillowImpl
 
 from halo_infinite_tag_reader.readers.bitmap import Bitmap
 from halo_infinite_tag_reader.readers.model import Model
+from halo_infinite_tag_reader.readers.reader_factory import ReaderFactory
 from halo_infinite_tag_reader.readers.render_model import RenderModel
 
 print(time.time())
@@ -80,8 +83,22 @@ exporter.export()
 """
 # exporter.debugAnalyzeMeshInfo()
 """
+filename = '__chore\\gen__\\shaders\\bytecode\\ffe\\9549cd680282f0b704a503b96b920_pc.shader_bytecode'
+parse_shader_bytecode = ReaderFactory.create_reader(filename)
+parse_shader_bytecode.load()
+
+exporter = ShaderBytecodeExporter(parse_shader_bytecode)
+exporter.export()
+
+filename = '__chore\\gen__\\shaders\\bytecode\\3a4\\f04d0c92e2c0fb434bcbbadaa51bc.shader_root_signature'
+parse_shader_root_signature = ReaderFactory.create_reader(filename)
+parse_shader_root_signature.load()
+
+exporter = ShaderRootSignatureExporter(parse_shader_root_signature)
+exporter.export()
+
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.model'
-filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.model'
+# filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.model'
 
 parse_model = Model(filename)
 parse_model.load()

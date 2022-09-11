@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="Interface::FastHud::ComponentDefinition" item_name_2="Interface::FastHud::ComponentDefinition" item_name_3="Interface::FastHud::ComponentDefinition" db1="872" db2="0" db3="2" db4="0" db5="1" db6="0" db7="856" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="Interface::FastHud::ComponentDefinition" item_name_2="Interface::FastHud::ComponentDefinition" db1="872" db2="0" db3="2" db4="0" db5="1" db6="0" db7="856" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -11,32 +11,32 @@
 	</_38>
 	<_2 v="name" />
 	<_0 v="class" />
-	<_38 v="resources" item_name_3="Interface::FastHud::ComponentResourcesDefinition" db1="820" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-		<_40 v="entries" item_name_1="Interface::FastHud::ResourceEntryDefinition" item_name_2="Interface::FastHud::ResourceEntryDefinition" item_name_3="Interface::FastHud::ResourceEntryDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_38 v="resources" item_name_1="Interface::FastHud::ComponentResourcesDefinition" item_name_2="Interface::FastHud::ComponentResourcesDefinition" db1="820" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="entries" item_name_1="Interface::FastHud::ResourceEntryDefinition" item_name_2="Interface::FastHud::ResourceEntryDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 			<_2 v="name" />
-			<_38 v="handle" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="handle" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_3E v="resource type" />
 				<_6 v="resource index" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="booleans" item_name_1="Interface::FastHud::BooleanDefinition" item_name_2="Interface::FastHud::BooleanDefinition" item_name_3="Interface::FastHud::BooleanDefinition" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="booleans" item_name_1="Interface::FastHud::BooleanDefinition" item_name_2="Interface::FastHud::BooleanDefinition" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="value">
 				<Flag v="Enabled" />
 			</_F>
 			<_3B v="" />
 		</_40>
-		<_40 v="ints" item_name_1="Interface::FastHud::IntegerDefinition" item_name_2="Interface::FastHud::IntegerDefinition" item_name_3="Interface::FastHud::IntegerDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="ints" item_name_1="Interface::FastHud::IntegerDefinition" item_name_2="Interface::FastHud::IntegerDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="floats" item_name_1="Interface::FastHud::FloatDefinition" item_name_2="Interface::FastHud::FloatDefinition" item_name_3="Interface::FastHud::FloatDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="floats" item_name_1="Interface::FastHud::FloatDefinition" item_name_2="Interface::FastHud::FloatDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="colors" item_name_1="Interface::FastHud::FastHudColor" item_name_2="Interface::FastHud::FastHudColor" item_name_3="Interface::FastHud::FastHudColor" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="value" item_name_3="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="colors" item_name_1="Interface::FastHud::FastHudColor" item_name_2="Interface::FastHud::FastHudColor" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="value" item_name_1="Interface::FastHud::FastHudColorActualData" item_name_2="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_20 v="value" />
 				<_3B v="" />
@@ -44,24 +44,24 @@
 			<_20 v="value old " />
 			<_3B v="" />
 		</_40>
-		<_40 v="point2fs" item_name_1="Interface::FastHud::Point2FDefinition" item_name_2="Interface::FastHud::Point2FDefinition" item_name_3="Interface::FastHud::Point2FDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="point2fs" item_name_1="Interface::FastHud::Point2FDefinition" item_name_2="Interface::FastHud::Point2FDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_16 v="value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="string ids" item_name_1="Interface::FastHud::StringIdDefinition" item_name_2="Interface::FastHud::StringIdDefinition" item_name_3="Interface::FastHud::StringIdDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="string ids" item_name_1="Interface::FastHud::StringIdDefinition" item_name_2="Interface::FastHud::StringIdDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="bitmaps" item_name_1="Interface::FastHud::BitmapGroupReferenceDefinition" item_name_2="Interface::FastHud::BitmapGroupReferenceDefinition" item_name_3="Interface::FastHud::BitmapGroupReferenceDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="bitmaps" item_name_1="Interface::FastHud::BitmapGroupReferenceDefinition" item_name_2="Interface::FastHud::BitmapGroupReferenceDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="asset reference" />
 			<_3D v="sprite index" />
 			<_34 v="generated_padbdbe" length="2" />
 			<_3B v="" />
 		</_40>
-		<_40 v="floatanimations" item_name_1="Interface::FastHud::FloatAnimationDefinition" item_name_2="Interface::FastHud::FloatAnimationDefinition" item_name_3="Interface::FastHud::FloatAnimationDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="animation base" item_name_3="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="floatanimations" item_name_1="Interface::FastHud::FloatAnimationDefinition" item_name_2="Interface::FastHud::FloatAnimationDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="animation base" item_name_1="Interface::FastHud::AnimationBaseDefinition" item_name_2="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_2 v="target" />
-				<_38 v="repeat behavior" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="repeat behavior" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -78,10 +78,10 @@
 			<_14 v="duration" />
 			<_3B v="" />
 		</_40>
-		<_40 v="coloranimations" item_name_1="Interface::FastHud::ColorAnimationDefinition" item_name_2="Interface::FastHud::ColorAnimationDefinition" item_name_3="Interface::FastHud::ColorAnimationDefinition" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="animation base" item_name_3="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="coloranimations" item_name_1="Interface::FastHud::ColorAnimationDefinition" item_name_2="Interface::FastHud::ColorAnimationDefinition" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="animation base" item_name_1="Interface::FastHud::AnimationBaseDefinition" item_name_2="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_2 v="target" />
-				<_38 v="repeat behavior" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="repeat behavior" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -93,13 +93,13 @@
 				<Flag v="To valid" />
 			</_F>
 			<_34 v="generated_pada026" length="3" />
-			<_38 v="from" item_name_3="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="from" item_name_1="Interface::FastHud::FastHudColorActualData" item_name_2="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_20 v="value" />
 				<_3B v="" />
 			</_38>
 			<_20 v="from old " />
-			<_38 v="to" item_name_3="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="to" item_name_1="Interface::FastHud::FastHudColorActualData" item_name_2="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_20 v="value" />
 				<_3B v="" />
@@ -108,10 +108,10 @@
 			<_14 v="duration" />
 			<_3B v="" />
 		</_40>
-		<_40 v="point2fanimations" item_name_1="Interface::FastHud::Point2FAnimationDefinition" item_name_2="Interface::FastHud::Point2FAnimationDefinition" item_name_3="Interface::FastHud::Point2FAnimationDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="animation base" item_name_3="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="point2fanimations" item_name_1="Interface::FastHud::Point2FAnimationDefinition" item_name_2="Interface::FastHud::Point2FAnimationDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="animation base" item_name_1="Interface::FastHud::AnimationBaseDefinition" item_name_2="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_2 v="target" />
-				<_38 v="repeat behavior" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="repeat behavior" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -128,10 +128,10 @@
 			<_14 v="duration" />
 			<_3B v="" />
 		</_40>
-		<_40 v="integeranimations" item_name_1="Interface::FastHud::IntegerAnimationDefinition" item_name_2="Interface::FastHud::IntegerAnimationDefinition" item_name_3="Interface::FastHud::IntegerAnimationDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="animation base" item_name_3="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="integeranimations" item_name_1="Interface::FastHud::IntegerAnimationDefinition" item_name_2="Interface::FastHud::IntegerAnimationDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="animation base" item_name_1="Interface::FastHud::AnimationBaseDefinition" item_name_2="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_2 v="target" />
-				<_38 v="repeat behavior" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="repeat behavior" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -148,9 +148,9 @@
 			<_14 v="duration" />
 			<_3B v="" />
 		</_40>
-		<_40 v="storyboards" item_name_1="Interface::FastHud::StoryboardDefinition" item_name_2="Interface::FastHud::StoryboardDefinition" item_name_3="Interface::FastHud::StoryboardDefinition" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="timelines" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" item_name_3="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="handle" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="storyboards" item_name_1="Interface::FastHud::StoryboardDefinition" item_name_2="Interface::FastHud::StoryboardDefinition" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="timelines" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="handle" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -159,10 +159,10 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="numericdisplay" item_name_1="Interface::FastHud::NumericDisplayDefinition" item_name_2="Interface::FastHud::NumericDisplayDefinition" item_name_3="Interface::FastHud::NumericDisplayDefinition" db1="108" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="275">
+		<_40 v="numericdisplay" item_name_1="Interface::FastHud::NumericDisplayDefinition" item_name_2="Interface::FastHud::NumericDisplayDefinition" db1="108" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="275">
 			<_0 v="extra characters used in display in addition to 0 to 9" />
 			<_41 v="asset reference" />
-			<_38 v="tint color of the numeric display" item_name_3="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="tint color of the numeric display" item_name_1="Interface::FastHud::FastHudColorActualData" item_name_2="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_20 v="value" />
 				<_3B v="" />
@@ -180,18 +180,18 @@
 			<_34 v="generated_padc1d6" length="1" />
 			<_3B v="" />
 		</_40>
-		<_40 v="visualstates" item_name_1="Interface::FastHud::VisualStateDefinition" item_name_2="Interface::FastHud::VisualStateDefinition" item_name_3="Interface::FastHud::VisualStateDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="visualstates" item_name_1="Interface::FastHud::VisualStateDefinition" item_name_2="Interface::FastHud::VisualStateDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 			<_2 v="name" />
-			<_38 v="storyboard" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="storyboard" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_3E v="resource type" />
 				<_6 v="resource index" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="visualstategroups" item_name_1="Interface::FastHud::VisualStateGroupDefinition" item_name_2="Interface::FastHud::VisualStateGroupDefinition" item_name_3="Interface::FastHud::VisualStateGroupDefinition" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="visual states" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" item_name_3="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="handle" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="visualstategroups" item_name_1="Interface::FastHud::VisualStateGroupDefinition" item_name_2="Interface::FastHud::VisualStateGroupDefinition" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="visual states" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="handle" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -200,18 +200,18 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="floatanimationusingkeyframes" item_name_1="Interface::FastHud::FloatAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::FloatAnimationUsingKeyFramesDefinition" item_name_3="Interface::FastHud::FloatAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-			<_38 v="animation base" item_name_3="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="floatanimationusingkeyframes" item_name_1="Interface::FastHud::FloatAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::FloatAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_38 v="animation base" item_name_1="Interface::FastHud::AnimationBaseDefinition" item_name_2="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_2 v="target" />
-				<_38 v="repeat behavior" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="repeat behavior" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" item_name_3="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="handle" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="handle" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -220,34 +220,34 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="linearfloatkeyframes" item_name_1="Interface::FastHud::LinearFloatKeyFrameDefinition" item_name_2="Interface::FastHud::LinearFloatKeyFrameDefinition" item_name_3="Interface::FastHud::LinearFloatKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="keyframebase" item_name_3="Interface::FastHud::FloatKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="linearfloatkeyframes" item_name_1="Interface::FastHud::LinearFloatKeyFrameDefinition" item_name_2="Interface::FastHud::LinearFloatKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="keyframebase" item_name_1="Interface::FastHud::FloatKeyFrameBaseDefinition" item_name_2="Interface::FastHud::FloatKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="key time" />
 				<_14 v="key value" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="discretefloatkeyframes" item_name_1="Interface::FastHud::DiscreteFloatKeyFrameDefinition" item_name_2="Interface::FastHud::DiscreteFloatKeyFrameDefinition" item_name_3="Interface::FastHud::DiscreteFloatKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="keyframebase" item_name_3="Interface::FastHud::FloatKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="discretefloatkeyframes" item_name_1="Interface::FastHud::DiscreteFloatKeyFrameDefinition" item_name_2="Interface::FastHud::DiscreteFloatKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="keyframebase" item_name_1="Interface::FastHud::FloatKeyFrameBaseDefinition" item_name_2="Interface::FastHud::FloatKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="key time" />
 				<_14 v="key value" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="coloranimationusingkeyframes" item_name_1="Interface::FastHud::ColorAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::ColorAnimationUsingKeyFramesDefinition" item_name_3="Interface::FastHud::ColorAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-			<_38 v="animation base" item_name_3="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="coloranimationusingkeyframes" item_name_1="Interface::FastHud::ColorAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::ColorAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_38 v="animation base" item_name_1="Interface::FastHud::AnimationBaseDefinition" item_name_2="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_2 v="target" />
-				<_38 v="repeat behavior" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="repeat behavior" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" item_name_3="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="handle" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="handle" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -256,10 +256,10 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="linearcolorkeyframes" item_name_1="Interface::FastHud::LinearColorKeyFrameDefinition" item_name_2="Interface::FastHud::LinearColorKeyFrameDefinition" item_name_3="Interface::FastHud::LinearColorKeyFrameDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="keyframebase" item_name_3="Interface::FastHud::ColorKeyFrameBaseDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="linearcolorkeyframes" item_name_1="Interface::FastHud::LinearColorKeyFrameDefinition" item_name_2="Interface::FastHud::LinearColorKeyFrameDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="keyframebase" item_name_1="Interface::FastHud::ColorKeyFrameBaseDefinition" item_name_2="Interface::FastHud::ColorKeyFrameBaseDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_14 v="key time" />
-				<_38 v="key value" item_name_3="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_38 v="key value" item_name_1="Interface::FastHud::FastHudColorActualData" item_name_2="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="name" />
 					<_20 v="value" />
 					<_3B v="" />
@@ -269,10 +269,10 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="discretecolorkeyframes" item_name_1="Interface::FastHud::DiscreteColorKeyFrameDefinition" item_name_2="Interface::FastHud::DiscreteColorKeyFrameDefinition" item_name_3="Interface::FastHud::DiscreteColorKeyFrameDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="keyframebase" item_name_3="Interface::FastHud::ColorKeyFrameBaseDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="discretecolorkeyframes" item_name_1="Interface::FastHud::DiscreteColorKeyFrameDefinition" item_name_2="Interface::FastHud::DiscreteColorKeyFrameDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="keyframebase" item_name_1="Interface::FastHud::ColorKeyFrameBaseDefinition" item_name_2="Interface::FastHud::ColorKeyFrameBaseDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_14 v="key time" />
-				<_38 v="key value" item_name_3="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_38 v="key value" item_name_1="Interface::FastHud::FastHudColorActualData" item_name_2="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="name" />
 					<_20 v="value" />
 					<_3B v="" />
@@ -282,18 +282,18 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="booleananimationusingkeyframes" item_name_1="Interface::FastHud::BooleanAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::BooleanAnimationUsingKeyFramesDefinition" item_name_3="Interface::FastHud::BooleanAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-			<_38 v="animation base" item_name_3="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="booleananimationusingkeyframes" item_name_1="Interface::FastHud::BooleanAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::BooleanAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_38 v="animation base" item_name_1="Interface::FastHud::AnimationBaseDefinition" item_name_2="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_2 v="target" />
-				<_38 v="repeat behavior" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="repeat behavior" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" item_name_3="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="handle" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="handle" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -302,8 +302,8 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="discretebooleankeyframes" item_name_1="Interface::FastHud::DiscreteBooleanKeyFrameDefinition" item_name_2="Interface::FastHud::DiscreteBooleanKeyFrameDefinition" item_name_3="Interface::FastHud::DiscreteBooleanKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="keyframebase" item_name_3="Interface::FastHud::BooleanKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="discretebooleankeyframes" item_name_1="Interface::FastHud::DiscreteBooleanKeyFrameDefinition" item_name_2="Interface::FastHud::DiscreteBooleanKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="keyframebase" item_name_1="Interface::FastHud::BooleanKeyFrameBaseDefinition" item_name_2="Interface::FastHud::BooleanKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="key time" />
 				<_F v="key value">
 					<Flag v="Enabled" />
@@ -313,18 +313,18 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="point2fanimationusingkeyframes" item_name_1="Interface::FastHud::Point2FAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::Point2FAnimationUsingKeyFramesDefinition" item_name_3="Interface::FastHud::Point2FAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-			<_38 v="animation base" item_name_3="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="point2fanimationusingkeyframes" item_name_1="Interface::FastHud::Point2FAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::Point2FAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_38 v="animation base" item_name_1="Interface::FastHud::AnimationBaseDefinition" item_name_2="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_2 v="target" />
-				<_38 v="repeat behavior" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="repeat behavior" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" item_name_3="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="handle" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="handle" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -333,34 +333,34 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="linearpoint2fkeyframes" item_name_1="Interface::FastHud::LinearPoint2FKeyFrameDefinition" item_name_2="Interface::FastHud::LinearPoint2FKeyFrameDefinition" item_name_3="Interface::FastHud::LinearPoint2FKeyFrameDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="keyframebase" item_name_3="Interface::FastHud::Point2FKeyFrameBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="linearpoint2fkeyframes" item_name_1="Interface::FastHud::LinearPoint2FKeyFrameDefinition" item_name_2="Interface::FastHud::LinearPoint2FKeyFrameDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="keyframebase" item_name_1="Interface::FastHud::Point2FKeyFrameBaseDefinition" item_name_2="Interface::FastHud::Point2FKeyFrameBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="key time" />
 				<_16 v="key value" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="discretepoint2fkeyframes" item_name_1="Interface::FastHud::DiscretePoint2FKeyFrameDefinition" item_name_2="Interface::FastHud::DiscretePoint2FKeyFrameDefinition" item_name_3="Interface::FastHud::DiscretePoint2FKeyFrameDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="keyframebase" item_name_3="Interface::FastHud::Point2FKeyFrameBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="discretepoint2fkeyframes" item_name_1="Interface::FastHud::DiscretePoint2FKeyFrameDefinition" item_name_2="Interface::FastHud::DiscretePoint2FKeyFrameDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="keyframebase" item_name_1="Interface::FastHud::Point2FKeyFrameBaseDefinition" item_name_2="Interface::FastHud::Point2FKeyFrameBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="key time" />
 				<_16 v="key value" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="integeranimationusingkeyframes" item_name_1="Interface::FastHud::IntegerAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::IntegerAnimationUsingKeyFramesDefinition" item_name_3="Interface::FastHud::IntegerAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-			<_38 v="animation base" item_name_3="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="integeranimationusingkeyframes" item_name_1="Interface::FastHud::IntegerAnimationUsingKeyFramesDefinition" item_name_2="Interface::FastHud::IntegerAnimationUsingKeyFramesDefinition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_38 v="animation base" item_name_1="Interface::FastHud::AnimationBaseDefinition" item_name_2="Interface::FastHud::AnimationBaseDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_2 v="target" />
-				<_38 v="repeat behavior" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="repeat behavior" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" item_name_3="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="handle" item_name_3="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="key frames" item_name_1="Interface::FastHud::ResourceHandle" item_name_2="Interface::FastHud::ResourceHandle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="handle" item_name_1="Interface::FastHud::ResourceHandleDefinition" item_name_2="Interface::FastHud::ResourceHandleDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="resource type" />
 					<_6 v="resource index" />
 					<_3B v="" />
@@ -369,23 +369,23 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="linearintegerkeyframes" item_name_1="Interface::FastHud::LinearIntegerKeyFrameDefinition" item_name_2="Interface::FastHud::LinearIntegerKeyFrameDefinition" item_name_3="Interface::FastHud::LinearIntegerKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="keyframebase" item_name_3="Interface::FastHud::IntegerKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="linearintegerkeyframes" item_name_1="Interface::FastHud::LinearIntegerKeyFrameDefinition" item_name_2="Interface::FastHud::LinearIntegerKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="keyframebase" item_name_1="Interface::FastHud::IntegerKeyFrameBaseDefinition" item_name_2="Interface::FastHud::IntegerKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="key time" />
 				<_6 v="key value" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="discreteintegerkeyframes" item_name_1="Interface::FastHud::DiscreteIntegerKeyFrameDefinition" item_name_2="Interface::FastHud::DiscreteIntegerKeyFrameDefinition" item_name_3="Interface::FastHud::DiscreteIntegerKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="keyframebase" item_name_3="Interface::FastHud::IntegerKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="discreteintegerkeyframes" item_name_1="Interface::FastHud::DiscreteIntegerKeyFrameDefinition" item_name_2="Interface::FastHud::DiscreteIntegerKeyFrameDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="keyframebase" item_name_1="Interface::FastHud::IntegerKeyFrameBaseDefinition" item_name_2="Interface::FastHud::IntegerKeyFrameBaseDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="key time" />
 				<_6 v="key value" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="repeatbehaviors" item_name_1="Interface::FastHud::RepeatBehaviorDefinition" item_name_2="Interface::FastHud::RepeatBehaviorDefinition" item_name_3="Interface::FastHud::RepeatBehaviorDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="repeatbehaviors" item_name_1="Interface::FastHud::RepeatBehaviorDefinition" item_name_2="Interface::FastHud::RepeatBehaviorDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="flags">
 				<Flag v="Count valid" />
 				<Flag v="Duration valid" />
@@ -395,41 +395,41 @@
 			<_14 v="duration" />
 			<_3B v="" />
 		</_40>
-		<_40 v="sound" item_name_1="Interface::FastHud::SoundDefinition" item_name_2="Interface::FastHud::SoundDefinition" item_name_3="Interface::FastHud::SoundDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="sound" item_name_1="Interface::FastHud::SoundDefinition" item_name_2="Interface::FastHud::SoundDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="asset reference" />
 			<_3B v="" />
 		</_40>
-		<_40 v="soundloop" item_name_1="Interface::FastHud::SoundLoopDefinition" item_name_2="Interface::FastHud::SoundLoopDefinition" item_name_3="Interface::FastHud::SoundLoopDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="soundloop" item_name_1="Interface::FastHud::SoundLoopDefinition" item_name_2="Interface::FastHud::SoundLoopDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="asset reference" />
 			<_3B v="" />
 		</_40>
-		<_40 v="navpointlayouts" item_name_1="Interface::FastHud::NavPointLayoutReferenceDefinition" item_name_2="Interface::FastHud::NavPointLayoutReferenceDefinition" item_name_3="Interface::FastHud::NavPointLayoutReferenceDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="navpointlayouts" item_name_1="Interface::FastHud::NavPointLayoutReferenceDefinition" item_name_2="Interface::FastHud::NavPointLayoutReferenceDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="tag reference" />
 			<_3B v="" />
 		</_40>
-		<_40 v="navpointanimations" item_name_1="Interface::FastHud::NavPointAnimationReferenceDefinition" item_name_2="Interface::FastHud::NavPointAnimationReferenceDefinition" item_name_3="Interface::FastHud::NavPointAnimationReferenceDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="navpointanimations" item_name_1="Interface::FastHud::NavPointAnimationReferenceDefinition" item_name_2="Interface::FastHud::NavPointAnimationReferenceDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="tag reference" />
 			<_3B v="" />
 		</_40>
-		<_40 v="stringtables" item_name_1="Interface::FastHud::StringTableDefinition" item_name_2="Interface::FastHud::StringTableDefinition" item_name_3="Interface::FastHud::StringTableDefinition" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="entires" item_name_1="Interface::FastHud::StringTableEntryDefinition" item_name_2="Interface::FastHud::StringTableEntryDefinition" item_name_3="Interface::FastHud::StringTableEntryDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="stringtables" item_name_1="Interface::FastHud::StringTableDefinition" item_name_2="Interface::FastHud::StringTableDefinition" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="entires" item_name_1="Interface::FastHud::StringTableEntryDefinition" item_name_2="Interface::FastHud::StringTableEntryDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="data" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="subcomponents" item_name_1="Interface::FastHud::SubComponentDefinition" item_name_2="Interface::FastHud::SubComponentDefinition" item_name_3="Interface::FastHud::SubComponentDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="subcomponents" item_name_1="Interface::FastHud::SubComponentDefinition" item_name_2="Interface::FastHud::SubComponentDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="sub component reference" />
 			<_3B v="" />
 		</_40>
-		<_40 v="hudtwotonegradient" item_name_1="Interface::FastHud::HudTwoToneGradientDefinition" item_name_2="Interface::FastHud::HudTwoToneGradientDefinition" item_name_3="Interface::FastHud::HudTwoToneGradientDefinition" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="left color" item_name_3="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="hudtwotonegradient" item_name_1="Interface::FastHud::HudTwoToneGradientDefinition" item_name_2="Interface::FastHud::HudTwoToneGradientDefinition" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="left color" item_name_1="Interface::FastHud::FastHudColorActualData" item_name_2="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_20 v="value" />
 				<_3B v="" />
 			</_38>
 			<_20 v="left color old " />
-			<_38 v="right color" item_name_3="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="right color" item_name_1="Interface::FastHud::FastHudColorActualData" item_name_2="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_20 v="value" />
 				<_3B v="" />
@@ -445,9 +445,9 @@
 			<_34 v="generated_pad6488" length="3" />
 			<_3B v="" />
 		</_40>
-		<_40 v="font" item_name_1="Interface::FastHud::FontDefinition" item_name_2="Interface::FastHud::FontDefinition" item_name_3="Interface::FastHud::FontDefinition" db1="296" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="font" item_name_1="Interface::FastHud::FontDefinition" item_name_2="Interface::FastHud::FontDefinition" db1="296" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 			<_1 v="font family name" />
-			<_38 v="tint color" item_name_3="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="tint color" item_name_1="Interface::FastHud::FastHudColorActualData" item_name_2="Interface::FastHud::FastHudColorActualData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_20 v="value" />
 				<_3B v="" />
@@ -456,7 +456,7 @@
 			<_14 v="font size" />
 			<_3B v="" />
 		</_40>
-		<_40 v="highcontrastadditive" item_name_1="Interface::FastHud::HighContrastAdditiveDefinition" item_name_2="Interface::FastHud::HighContrastAdditiveDefinition" item_name_3="Interface::FastHud::HighContrastAdditiveDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="highcontrastadditive" item_name_1="Interface::FastHud::HighContrastAdditiveDefinition" item_name_2="Interface::FastHud::HighContrastAdditiveDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="dynamic threshold min" />
 			<_14 v="dynamic threshold max" />
 			<_14 v="dynamic threshold clamp" />
@@ -466,7 +466,7 @@
 			<_34 v="generated_pad7bd5" length="3" />
 			<_3B v="" />
 		</_40>
-		<_40 v="vertexwarp" item_name_1="Interface::FastHud::VertexWarpDefinition" item_name_2="Interface::FastHud::VertexWarpDefinition" item_name_3="Interface::FastHud::VertexWarpDefinition" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="vertexwarp" item_name_1="Interface::FastHud::VertexWarpDefinition" item_name_2="Interface::FastHud::VertexWarpDefinition" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_17 v="ellipsoid scale" />
 			<_17 v="ellipsoid center" />
 			<_17 v="output offset" />

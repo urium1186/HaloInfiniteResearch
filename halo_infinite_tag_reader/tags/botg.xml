@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="BotGlobals" item_name_2="BotGlobals" item_name_3="BotGlobals" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="80" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="BotGlobals" item_name_2="BotGlobals" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="80" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="Bot Backfill" item_name_3="BotBackfillTuningDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Bot Backfill" item_name_1="BotBackfillTuningDefinition" item_name_2="BotBackfillTuningDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_37 v="Bot Backfill" />
 		<_14 v="MMR threshold for Recruit" />
 		<_14 v="MMR threshold for Marine" />
@@ -18,7 +18,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_38>
-	<_40 v="Difficulty Specific Tuning" item_name_1="BotDifficultyLevelTuningDefinition" item_name_2="BotDifficultyLevelTuningDefinition" item_name_3="BotDifficultyLevelTuningDefinition" db1="592" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
+	<_40 v="Difficulty Specific Tuning" item_name_1="BotDifficultyLevelTuningDefinition" item_name_2="BotDifficultyLevelTuningDefinition" db1="592" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
 		<_B v="Difficulty Level">
 			<Flag v="Unused 1" />
 			<Flag v="Unused 2" />
@@ -46,14 +46,14 @@
 			<Flag v="can use guard ranking system" />
 			<Flag v="Switch weapons at low ammo mid combat" />
 		</_D>
-		<_38 v="Hysteresis" item_name_3="BotHysteresisTuningDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="Hysteresis" item_name_1="BotHysteresisTuningDefinition" item_name_2="BotHysteresisTuningDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_37 v="Hysteresis" />
 			<_14 v="Hysteresis Max Amount" />
 			<_14 v="Hysteresis Timeout Seconds" />
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
-		<_38 v="Traversal Tuning" item_name_3="BotTraversalPropertiesDefinition" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+		<_38 v="Traversal Tuning" item_name_1="BotTraversalPropertiesDefinition" item_name_2="BotTraversalPropertiesDefinition" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 			<_37 v="Traversal Properties" />
 			<_14 v="Destination Evaluation Tolerance" />
 			<_14 v="Random Neighbor Selection Chance" />
@@ -73,9 +73,9 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
-		<_38 v="Combat Tuning" item_name_3="BotCombatTuningDefinition" db1="288" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
+		<_38 v="Combat Tuning" item_name_1="BotCombatTuningDefinition" item_name_2="BotCombatTuningDefinition" db1="288" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
 			<_37 v="Combat" />
-			<_38 v="Melee" item_name_3="BotMeleeTuningDefinition" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+			<_38 v="Melee" item_name_1="BotMeleeTuningDefinition" item_name_2="BotMeleeTuningDefinition" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 				<_37 v="Melee" />
 				<_14 v="Melee min delay time" />
 				<_14 v="Melee max delay time" />
@@ -165,7 +165,7 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
-		<_38 v="Awareness Tuning" item_name_3="BotAwarenessTuningDefinition" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="Awareness Tuning" item_name_1="BotAwarenessTuningDefinition" item_name_2="BotAwarenessTuningDefinition" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="Awareness" />
 			<_14 v="Max ground awareness distance" />
 			<_14 v="Max air awareness distance" />
@@ -184,7 +184,7 @@
 			<_14 v="Dangerous object danger radius scalar" />
 			<_14 v="Target Hysteresis Max Amount" />
 			<_14 v="Target Hysteresis Timeout Seconds" />
-			<_40 v="Target Priority Calculation Inputs" item_name_1="BotTargetPriorityInputDefinition" item_name_2="BotTargetPriorityInputDefinition" item_name_3="BotTargetPriorityInputDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+			<_40 v="Target Priority Calculation Inputs" item_name_1="BotTargetPriorityInputDefinition" item_name_2="BotTargetPriorityInputDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 				<_B v="Input">
 					<Flag v="Distance to Target" />
 					<Flag v="Target Shields Popped" />
@@ -198,7 +198,7 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
-		<_38 v="Guard Behavior Tuning" item_name_3="BotGuardBehaviorTuningDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+		<_38 v="Guard Behavior Tuning" item_name_1="BotGuardBehaviorTuningDefinition" item_name_2="BotGuardBehaviorTuningDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 			<_37 v="Guard" />
 			<_14 v="Min guard look time" />
 			<_14 v="Max guard look time" />
@@ -213,13 +213,13 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
-		<_38 v="Guard Ranked Behavior Tuning" item_name_3="BotGuardRankedBehaviorTuningDefinition" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="Guard Ranked Behavior Tuning" item_name_1="BotGuardRankedBehaviorTuningDefinition" item_name_2="BotGuardRankedBehaviorTuningDefinition" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="GuardRanked" />
 			<_14 v="Max Guard Distance" />
 			<_14 v="Non-Owning AmbitionOwnershipState Input Score" />
 			<_14 v="Owning AmbitionOwnershipState Input Score" />
 			<_14 v="Max Ally Interaction Radius" />
-			<_40 v="Ambition Priority Calculation Inputs" item_name_1="BotAmbitionPriorityInputDefinition" item_name_2="BotAmbitionPriorityInputDefinition" item_name_3="BotAmbitionPriorityInputDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+			<_40 v="Ambition Priority Calculation Inputs" item_name_1="BotAmbitionPriorityInputDefinition" item_name_2="BotAmbitionPriorityInputDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 				<_B v="Input">
 					<Flag v="Distance to Ambition" />
 					<Flag v="Ambition Ownership State" />
@@ -232,7 +232,7 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
-		<_38 v="Pickup Tuning" item_name_3="BotPickupTuningDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+		<_38 v="Pickup Tuning" item_name_1="BotPickupTuningDefinition" item_name_2="BotPickupTuningDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 			<_37 v="Pickup" />
 			<_14 v="Pickup distance sq" />
 			<_14 v="Pathless distance sq" />
@@ -242,7 +242,7 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
-		<_38 v="Vehicle Tuning" item_name_3="BotVehicleTuningDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+		<_38 v="Vehicle Tuning" item_name_1="BotVehicleTuningDefinition" item_name_2="BotVehicleTuningDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 			<_37 v="Vehicles" />
 			<_14 v="Vehicle observation radius" />
 			<_14 v="Max linear velocity for enterable vehicle sq" />
@@ -253,7 +253,7 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
-		<_40 v="Weapon Tuning" item_name_1="BotWeaponDefTagBlock" item_name_2="BotWeaponDefTagBlock" item_name_3="BotWeaponDefTagBlock" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_40 v="Weapon Tuning" item_name_1="BotWeaponDefTagBlock" item_name_2="BotWeaponDefTagBlock" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_41 v="Approved Weapon Definition Tag" />
 			<_D v="Weapon usage flags">
 				<Flag v="Aims at head" />
@@ -274,11 +274,11 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Approved Bot Equipment" item_name_1="BotEquipmentDefTagBlock" item_name_2="BotEquipmentDefTagBlock" item_name_3="BotEquipmentDefTagBlock" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Approved Bot Equipment" item_name_1="BotEquipmentDefTagBlock" item_name_2="BotEquipmentDefTagBlock" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Approved Equipment Definition Tag" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Adaptive Difficulty Tuning" item_name_1="BotAdaptiveTuningDefinition" item_name_2="BotAdaptiveTuningDefinition" item_name_3="BotAdaptiveTuningDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Adaptive Difficulty Tuning" item_name_1="BotAdaptiveTuningDefinition" item_name_2="BotAdaptiveTuningDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_37 v="Adaptive Difficulty" />
 		<_14 v="Player Health Shooting Threshold" />
 		<_14 v="Max Movement" />

@@ -144,8 +144,7 @@ class RenderModelExporter(BaseExporter):
             chunk_data = bin_stream.read(vertex_stride)
             vert_data_array.append(struct.unpack('f', chunk_data)[0])
 
-        return  vert_data_array
-
+        return vert_data_array
 
     def readByteUnitVector3D(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
         vert_data_array = []
@@ -195,27 +194,27 @@ class RenderModelExporter(BaseExporter):
             m1 = ((data & 0x3FF) / 1023)
             n1 = ((((data >> 10) & 0x3FF)) / 1023)
             o1 = ((((data >> 20) & 0x3FF)) / 1023)
-            p1 = (data >> 30)/3
-            temp_bin =  '{:<032b}'.format(temp)[::-1] # format(temp, "b").zfill(32, ) [::-1]
+            p1 = (data >> 30) / 3
+            temp_bin = '{:<032b}'.format(temp)[::-1]  # format(temp, "b").zfill(32, ) [::-1]
             n = 10
             chunks = [full[i:i + n] for i in range(0, len(full), n)]
-            if len(chunks)<4:
+            if len(chunks) < 4:
                 debug = True
             v1 = temp & 0x3ff
-            v11 = int(chunks[0][::-1], 2) # [::-1]
+            v11 = int(chunks[0][::-1], 2)  # [::-1]
 
             temp >>= 10
             v2 = temp & 0x3ff
-            v22 = int(chunks[1][::-1], 2) # [::-1]
+            v22 = int(chunks[1][::-1], 2)  # [::-1]
 
             temp >>= 10
             v3 = temp & 0x3ff
-            v33 = int(chunks[2][::-1], 2) #[::-1]
-            Wnormalized = (v11/(2 ** 10-1), v22/(2 ** 10-1), v33/(2 ** 10-1))
-            normalized = (m1,n1,o1)
-            rest = 1- m1 -n1 -o1
-            if rest>1 or rest <0:
-                debug =True
+            v33 = int(chunks[2][::-1], 2)  # [::-1]
+            Wnormalized = (v11 / (2 ** 10 - 1), v22 / (2 ** 10 - 1), v33 / (2 ** 10 - 1))
+            normalized = (m1, n1, o1)
+            rest = 1 - m1 - n1 - o1
+            if rest > 1 or rest < 0:
+                debug = True
             vert_data_array.append(normalized)
         return vert_data_array
 
@@ -598,6 +597,22 @@ class RenderModelExporter(BaseExporter):
         return result
 
     def initChunksData(self):
+        if self._chunk_data is None:
+            mesh_resource = \
+                self.render_model_inst['mesh resource groups'].childs[0]['mesh resource'].childs[0]
+            self._chunk_data = b""
+            nChunk = 0
+            ch_offset = 0
+            for nChunk, chunk in enumerate(mesh_resource['Streaming Chunks'].childs):
+                chunk_path = f"{self.render_model.full_filepath}[{nChunk}_mesh_resource.chunk{nChunk}]"
+                temp_len = chunk['buffer end'].value - chunk['buffer start'].value
+                self._chunk_data_map[ch_offset] = Chunk(chunk_path, temp_len)
+                ch_offset += temp_len
+                self._chunk_data += bytes(temp_len)
+            assert mesh_resource['Streaming Buffers'].childs[0]['buffer size'].value == len(self._chunk_data)
+            print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
+
+    def initChunksDataSave(self):
         if self._chunk_data is None:
             chunk_data_map: {str: []} = {}
             more_chunks = True

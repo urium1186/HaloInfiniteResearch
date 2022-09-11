@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="PresetDefinitionsTag" item_name_2="PresetDefinitionsTag" item_name_3="PresetDefinitionsTag" db1="576" db2="0" db3="0" db4="0" db5="1" db6="0" db7="560" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="PresetDefinitionsTag" item_name_2="PresetDefinitionsTag" db1="576" db2="0" db3="0" db4="0" db5="1" db6="0" db7="560" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="Basic Presets" item_name_1="BasicPresetDefinition" item_name_2="BasicPresetDefinition" item_name_3="BasicPresetDefinition" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Basic Presets" item_name_1="BasicPresetDefinition" item_name_2="BasicPresetDefinition" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_A v="Reflections">
 			<Flag v="Off" />
@@ -137,7 +137,7 @@
 		</_A>
 		<_34 v="generated_pad3000" length="3" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -146,7 +146,7 @@
 		<_3B v="" />
 	</_40>
 	<_37 v="Preset Details" />
-	<_40 v="Reflection Presets" item_name_1="ReflectionPresetDefinition" item_name_2="ReflectionPresetDefinition" item_name_3="ReflectionPresetDefinition" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Reflection Presets" item_name_1="ReflectionPresetDefinition" item_name_2="ReflectionPresetDefinition" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_A v="Mode">
 			<Flag v="None" />
@@ -154,7 +154,7 @@
 			<Flag v="SSR Full Resolution" />
 		</_A>
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="ReflectionPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Single Screen Preset" item_name_1="ReflectionPresetDefinition::SplitscreenPreset" item_name_2="ReflectionPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_A v="Mode">
 				<Flag v="None" />
 				<Flag v="SSR" />
@@ -164,7 +164,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="ReflectionPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="ReflectionPresetDefinition::SplitscreenPreset" item_name_2="ReflectionPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_A v="Mode">
 				<Flag v="None" />
 				<Flag v="SSR" />
@@ -174,7 +174,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="ReflectionPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="ReflectionPresetDefinition::SplitscreenPreset" item_name_2="ReflectionPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_A v="Mode">
 				<Flag v="None" />
 				<Flag v="SSR" />
@@ -184,7 +184,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="ReflectionPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="ReflectionPresetDefinition::SplitscreenPreset" item_name_2="ReflectionPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_A v="Mode">
 				<Flag v="None" />
 				<Flag v="SSR" />
@@ -195,7 +195,7 @@
 		<_34 v="generated_padeff7" length="3" />
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -203,7 +203,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Volumetric Fog Presets" item_name_1="VolumetricFogPresetDefinition" item_name_2="VolumetricFogPresetDefinition" item_name_3="VolumetricFogPresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Volumetric Fog Presets" item_name_1="VolumetricFogPresetDefinition" item_name_2="VolumetricFogPresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_6 v="Resolution" />
 		<_F v="Volumetric Fog Flags">
@@ -211,7 +211,7 @@
 		</_F>
 		<_34 v="generated_pad0612" length="3" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="VolumetricFogPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Single Screen Preset" item_name_1="VolumetricFogPresetDefinition::SplitscreenPreset" item_name_2="VolumetricFogPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Resolution" />
 			<_F v="Volumetric Fog Flags">
 				<Flag v="Enabled" />
@@ -221,7 +221,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="VolumetricFogPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="VolumetricFogPresetDefinition::SplitscreenPreset" item_name_2="VolumetricFogPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Resolution" />
 			<_F v="Volumetric Fog Flags">
 				<Flag v="Enabled" />
@@ -231,7 +231,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="VolumetricFogPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="VolumetricFogPresetDefinition::SplitscreenPreset" item_name_2="VolumetricFogPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Resolution" />
 			<_F v="Volumetric Fog Flags">
 				<Flag v="Enabled" />
@@ -241,7 +241,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="VolumetricFogPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="VolumetricFogPresetDefinition::SplitscreenPreset" item_name_2="VolumetricFogPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Resolution" />
 			<_F v="Volumetric Fog Flags">
 				<Flag v="Enabled" />
@@ -251,7 +251,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -259,7 +259,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Shadow Presets" item_name_1="ShadowPresetDefinition" item_name_2="ShadowPresetDefinition" item_name_3="ShadowPresetDefinition" db1="140" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Shadow Presets" item_name_1="ShadowPresetDefinition" item_name_2="ShadowPresetDefinition" db1="140" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_6 v="Dynamic Shadowmap Atlas Resolution" />
 		<_6 v="Dynamic Shadowmap Atlas Resolution No Sun" />
@@ -278,7 +278,7 @@
 		</_F>
 		<_14 v="Local Lights Shadow Sampling Falloff" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="ShadowPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="ShadowPresetDefinition::SplitscreenPreset" item_name_2="ShadowPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Dynamic Shadowmap Atlas Resolution" />
 			<_6 v="Dynamic Shadowmap Atlas Resolution No Sun" />
 			<_6 v="Static Shadowmap Atlas Resolution" />
@@ -299,7 +299,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="ShadowPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="ShadowPresetDefinition::SplitscreenPreset" item_name_2="ShadowPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Dynamic Shadowmap Atlas Resolution" />
 			<_6 v="Dynamic Shadowmap Atlas Resolution No Sun" />
 			<_6 v="Static Shadowmap Atlas Resolution" />
@@ -320,7 +320,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="ShadowPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="ShadowPresetDefinition::SplitscreenPreset" item_name_2="ShadowPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Dynamic Shadowmap Atlas Resolution" />
 			<_6 v="Dynamic Shadowmap Atlas Resolution No Sun" />
 			<_6 v="Static Shadowmap Atlas Resolution" />
@@ -341,7 +341,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="ShadowPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="ShadowPresetDefinition::SplitscreenPreset" item_name_2="ShadowPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Dynamic Shadowmap Atlas Resolution" />
 			<_6 v="Dynamic Shadowmap Atlas Resolution No Sun" />
 			<_6 v="Static Shadowmap Atlas Resolution" />
@@ -362,7 +362,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -370,7 +370,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Sky Quality Presets" item_name_1="SkyQualityPresetDefinition" item_name_2="SkyQualityPresetDefinition" item_name_3="SkyQualityPresetDefinition" db1="300" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Sky Quality Presets" item_name_1="SkyQualityPresetDefinition" item_name_2="SkyQualityPresetDefinition" db1="300" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_F v="Volumetric Clouds Enable Flag">
 			<Flag v="Enabled" />
@@ -389,7 +389,7 @@
 		<_14 v="Volumetric Clouds Coverage Strength" />
 		<_6 v="Volumetric Clouds Perf Tier" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="SkyQualityPresetDefinition::SplitscreenPreset" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Single Screen Preset" item_name_1="SkyQualityPresetDefinition::SplitscreenPreset" item_name_2="SkyQualityPresetDefinition::SplitscreenPreset" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Volumetric Clouds Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -410,7 +410,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="SkyQualityPresetDefinition::SplitscreenPreset" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="SkyQualityPresetDefinition::SplitscreenPreset" item_name_2="SkyQualityPresetDefinition::SplitscreenPreset" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Volumetric Clouds Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -431,7 +431,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="SkyQualityPresetDefinition::SplitscreenPreset" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="SkyQualityPresetDefinition::SplitscreenPreset" item_name_2="SkyQualityPresetDefinition::SplitscreenPreset" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Volumetric Clouds Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -452,7 +452,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="SkyQualityPresetDefinition::SplitscreenPreset" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="SkyQualityPresetDefinition::SplitscreenPreset" item_name_2="SkyQualityPresetDefinition::SplitscreenPreset" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Volumetric Clouds Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -473,7 +473,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -481,7 +481,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Temporal AA Presets" item_name_1="TemporalAAPresetDefinition" item_name_2="TemporalAAPresetDefinition" item_name_3="TemporalAAPresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Temporal AA Presets" item_name_1="TemporalAAPresetDefinition" item_name_2="TemporalAAPresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_F v="Enable Flag">
 			<Flag v="Enabled" />
@@ -489,7 +489,7 @@
 		<_34 v="generated_pad3998" length="3" />
 		<_6 v="Quality" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="TemporalAAPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Single Screen Preset" item_name_1="TemporalAAPresetDefinition::SplitscreenPreset" item_name_2="TemporalAAPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -499,7 +499,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="TemporalAAPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="TemporalAAPresetDefinition::SplitscreenPreset" item_name_2="TemporalAAPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -509,7 +509,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="TemporalAAPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="TemporalAAPresetDefinition::SplitscreenPreset" item_name_2="TemporalAAPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -519,7 +519,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="TemporalAAPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="TemporalAAPresetDefinition::SplitscreenPreset" item_name_2="TemporalAAPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -529,7 +529,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -537,7 +537,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="AO Presets" item_name_1="AoPresetDefinition" item_name_2="AoPresetDefinition" item_name_3="AoPresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="AO Presets" item_name_1="AoPresetDefinition" item_name_2="AoPresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_F v="Flags">
 			<Flag v="AO Disabled" />
@@ -545,7 +545,7 @@
 		<_34 v="generated_paddfa8" length="3" />
 		<_6 v="Quality" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="AoPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Single Screen Preset" item_name_1="AoPresetDefinition::SplitscreenPreset" item_name_2="AoPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Flags">
 				<Flag v="AO Disabled" />
 			</_F>
@@ -555,7 +555,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="AoPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="AoPresetDefinition::SplitscreenPreset" item_name_2="AoPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Flags">
 				<Flag v="AO Disabled" />
 			</_F>
@@ -565,7 +565,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="AoPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="AoPresetDefinition::SplitscreenPreset" item_name_2="AoPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Flags">
 				<Flag v="AO Disabled" />
 			</_F>
@@ -575,7 +575,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="AoPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="AoPresetDefinition::SplitscreenPreset" item_name_2="AoPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Flags">
 				<Flag v="AO Disabled" />
 			</_F>
@@ -585,7 +585,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -593,7 +593,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Depth of Field Presets" item_name_1="DepthOfFieldPresetDefinition" item_name_2="DepthOfFieldPresetDefinition" item_name_3="DepthOfFieldPresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Depth of Field Presets" item_name_1="DepthOfFieldPresetDefinition" item_name_2="DepthOfFieldPresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_6 v="Ring Count" />
 		<_A v="Blur Type">
@@ -602,7 +602,7 @@
 		</_A>
 		<_34 v="generated_pad9984" length="3" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="DepthOfFieldPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Single Screen Preset" item_name_1="DepthOfFieldPresetDefinition::SplitscreenPreset" item_name_2="DepthOfFieldPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Ring Count" />
 			<_A v="Blur Type">
 				<Flag v="Hex" />
@@ -613,7 +613,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="DepthOfFieldPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="DepthOfFieldPresetDefinition::SplitscreenPreset" item_name_2="DepthOfFieldPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Ring Count" />
 			<_A v="Blur Type">
 				<Flag v="Hex" />
@@ -624,7 +624,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="DepthOfFieldPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="DepthOfFieldPresetDefinition::SplitscreenPreset" item_name_2="DepthOfFieldPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Ring Count" />
 			<_A v="Blur Type">
 				<Flag v="Hex" />
@@ -635,7 +635,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="DepthOfFieldPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="DepthOfFieldPresetDefinition::SplitscreenPreset" item_name_2="DepthOfFieldPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Ring Count" />
 			<_A v="Blur Type">
 				<Flag v="Hex" />
@@ -646,7 +646,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -654,7 +654,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Anisotropic Filtering Presets" item_name_1="AnisotropicFilteringPresetDefinition" item_name_2="AnisotropicFilteringPresetDefinition" item_name_3="AnisotropicFilteringPresetDefinition" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Anisotropic Filtering Presets" item_name_1="AnisotropicFilteringPresetDefinition" item_name_2="AnisotropicFilteringPresetDefinition" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_A v="Level">
 			<Flag v="0" />
@@ -664,7 +664,7 @@
 			<Flag v="16" />
 		</_A>
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="AnisotropicFilteringPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Single Screen Preset" item_name_1="AnisotropicFilteringPresetDefinition::SplitscreenPreset" item_name_2="AnisotropicFilteringPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_A v="Level">
 				<Flag v="0" />
 				<Flag v="2" />
@@ -676,7 +676,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="AnisotropicFilteringPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="AnisotropicFilteringPresetDefinition::SplitscreenPreset" item_name_2="AnisotropicFilteringPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_A v="Level">
 				<Flag v="0" />
 				<Flag v="2" />
@@ -688,7 +688,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="AnisotropicFilteringPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="AnisotropicFilteringPresetDefinition::SplitscreenPreset" item_name_2="AnisotropicFilteringPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_A v="Level">
 				<Flag v="0" />
 				<Flag v="2" />
@@ -700,7 +700,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="AnisotropicFilteringPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="AnisotropicFilteringPresetDefinition::SplitscreenPreset" item_name_2="AnisotropicFilteringPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_A v="Level">
 				<Flag v="0" />
 				<Flag v="2" />
@@ -713,7 +713,7 @@
 		<_34 v="generated_padc853" length="3" />
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -721,35 +721,35 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Terrain Presets" item_name_1="TerrainPresetDefinition" item_name_2="TerrainPresetDefinition" item_name_3="TerrainPresetDefinition" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Terrain Presets" item_name_1="TerrainPresetDefinition" item_name_2="TerrainPresetDefinition" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_14 v="LOD Radius Factor" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="TerrainPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="TerrainPresetDefinition::SplitscreenPreset" item_name_2="TerrainPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="LOD Radius Factor" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="TerrainPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="TerrainPresetDefinition::SplitscreenPreset" item_name_2="TerrainPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="LOD Radius Factor" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="TerrainPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="TerrainPresetDefinition::SplitscreenPreset" item_name_2="TerrainPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="LOD Radius Factor" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="TerrainPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="TerrainPresetDefinition::SplitscreenPreset" item_name_2="TerrainPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="LOD Radius Factor" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -757,10 +757,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Lighting Presets" item_name_1="LightingPresetDefinition" item_name_2="LightingPresetDefinition" item_name_3="LightingPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Lighting Presets" item_name_1="LightingPresetDefinition" item_name_2="LightingPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -768,7 +768,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Decorators Presets" item_name_1="DecoratorsPresetDefinition" item_name_2="DecoratorsPresetDefinition" item_name_3="DecoratorsPresetDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Decorators Presets" item_name_1="DecoratorsPresetDefinition" item_name_2="DecoratorsPresetDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_A v="Push Bending">
 			<Flag v="Off" />
 			<Flag v="Low" />
@@ -778,7 +778,7 @@
 		<_0 v="Preset" />
 		<_34 v="generated_pad704e" length="3" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -786,10 +786,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Asset Category Presets" item_name_1="AssetCategoryPresetDefinition" item_name_2="AssetCategoryPresetDefinition" item_name_3="AssetCategoryPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Asset Category Presets" item_name_1="AssetCategoryPresetDefinition" item_name_2="AssetCategoryPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -797,10 +797,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Dynamic Wind Presets" item_name_1="DynamicWindPresetDefinition" item_name_2="DynamicWindPresetDefinition" item_name_3="DynamicWindPresetDefinition" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Dynamic Wind Presets" item_name_1="DynamicWindPresetDefinition" item_name_2="DynamicWindPresetDefinition" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="DynamicWindPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="DynamicWindPresetDefinition::SplitscreenPreset" item_name_2="DynamicWindPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_F v="Flags">
 				<Flag v="Disabled" />
 			</_F>
@@ -813,7 +813,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="DynamicWindPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="DynamicWindPresetDefinition::SplitscreenPreset" item_name_2="DynamicWindPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_F v="Flags">
 				<Flag v="Disabled" />
 			</_F>
@@ -826,7 +826,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="DynamicWindPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="DynamicWindPresetDefinition::SplitscreenPreset" item_name_2="DynamicWindPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_F v="Flags">
 				<Flag v="Disabled" />
 			</_F>
@@ -839,7 +839,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="DynamicWindPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="DynamicWindPresetDefinition::SplitscreenPreset" item_name_2="DynamicWindPresetDefinition::SplitscreenPreset" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_F v="Flags">
 				<Flag v="Disabled" />
 			</_F>
@@ -852,7 +852,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -860,10 +860,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Push Bending Presets" item_name_1="InteractionPresetDefinition" item_name_2="InteractionPresetDefinition" item_name_3="InteractionPresetDefinition" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Push Bending Presets" item_name_1="InteractionPresetDefinition" item_name_2="InteractionPresetDefinition" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="InteractionPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="InteractionPresetDefinition::SplitscreenPreset" item_name_2="InteractionPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Resolution" />
 			<_F v="Flags">
 				<Flag v="Disabled" />
@@ -873,7 +873,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="InteractionPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="InteractionPresetDefinition::SplitscreenPreset" item_name_2="InteractionPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Resolution" />
 			<_F v="Flags">
 				<Flag v="Disabled" />
@@ -883,7 +883,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="InteractionPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="InteractionPresetDefinition::SplitscreenPreset" item_name_2="InteractionPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Resolution" />
 			<_F v="Flags">
 				<Flag v="Disabled" />
@@ -893,7 +893,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="InteractionPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="InteractionPresetDefinition::SplitscreenPreset" item_name_2="InteractionPresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Resolution" />
 			<_F v="Flags">
 				<Flag v="Disabled" />
@@ -903,7 +903,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -911,10 +911,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Hlod Presets" item_name_1="HlodPresetDefinition" item_name_2="HlodPresetDefinition" item_name_3="HlodPresetDefinition" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Hlod Presets" item_name_1="HlodPresetDefinition" item_name_2="HlodPresetDefinition" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="HlodPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="HlodPresetDefinition::SplitscreenPreset" item_name_2="HlodPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="HLOD Switch Distance Multiplier" />
 			<_14 v="HLOD Switch Distance Buffer" />
 			<_14 v="HLOD Texture Streaming Multiplier" />
@@ -923,7 +923,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="HlodPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="HlodPresetDefinition::SplitscreenPreset" item_name_2="HlodPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="HLOD Switch Distance Multiplier" />
 			<_14 v="HLOD Switch Distance Buffer" />
 			<_14 v="HLOD Texture Streaming Multiplier" />
@@ -932,7 +932,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="HlodPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="HlodPresetDefinition::SplitscreenPreset" item_name_2="HlodPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="HLOD Switch Distance Multiplier" />
 			<_14 v="HLOD Switch Distance Buffer" />
 			<_14 v="HLOD Texture Streaming Multiplier" />
@@ -941,7 +941,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="HlodPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="HlodPresetDefinition::SplitscreenPreset" item_name_2="HlodPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="HLOD Switch Distance Multiplier" />
 			<_14 v="HLOD Switch Distance Buffer" />
 			<_14 v="HLOD Texture Streaming Multiplier" />
@@ -950,7 +950,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -958,10 +958,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Animation Quality Presets" item_name_1="AnimationQualityPresetDefinition" item_name_2="AnimationQualityPresetDefinition" item_name_3="AnimationQualityPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Animation Quality Presets" item_name_1="AnimationQualityPresetDefinition" item_name_2="AnimationQualityPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -969,7 +969,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Visual Damage Presets" item_name_1="VisualDamagePresetDefinition" item_name_2="VisualDamagePresetDefinition" item_name_3="VisualDamagePresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Visual Damage Presets" item_name_1="VisualDamagePresetDefinition" item_name_2="VisualDamagePresetDefinition" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_F v="Enable Flag">
 			<Flag v="Enabled" />
@@ -977,7 +977,7 @@
 		<_34 v="generated_pada34f" length="3" />
 		<_6 v="Mask Resolution" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="VisualDamagePresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="VisualDamagePresetDefinition::SplitscreenPreset" item_name_2="VisualDamagePresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_F v="Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -987,7 +987,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="VisualDamagePresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="VisualDamagePresetDefinition::SplitscreenPreset" item_name_2="VisualDamagePresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_F v="Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -997,7 +997,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="VisualDamagePresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="VisualDamagePresetDefinition::SplitscreenPreset" item_name_2="VisualDamagePresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_F v="Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -1007,7 +1007,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="VisualDamagePresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="VisualDamagePresetDefinition::SplitscreenPreset" item_name_2="VisualDamagePresetDefinition::SplitscreenPreset" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_F v="Enable Flag">
 				<Flag v="Enabled" />
 			</_F>
@@ -1017,7 +1017,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -1025,10 +1025,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Virtual Texturing Presets" item_name_1="VirtualTexturingPresetDefinition" item_name_2="VirtualTexturingPresetDefinition" item_name_3="VirtualTexturingPresetDefinition" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Virtual Texturing Presets" item_name_1="VirtualTexturingPresetDefinition" item_name_2="VirtualTexturingPresetDefinition" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="VirtualTexturingPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="VirtualTexturingPresetDefinition::SplitscreenPreset" item_name_2="VirtualTexturingPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Desired Page Count" />
 			<_6 v="Max Pages Per Frame" />
 			<_6 v="Low Priority Pages Per Frame" />
@@ -1045,7 +1045,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="VirtualTexturingPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="VirtualTexturingPresetDefinition::SplitscreenPreset" item_name_2="VirtualTexturingPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Desired Page Count" />
 			<_6 v="Max Pages Per Frame" />
 			<_6 v="Low Priority Pages Per Frame" />
@@ -1062,7 +1062,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="VirtualTexturingPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="VirtualTexturingPresetDefinition::SplitscreenPreset" item_name_2="VirtualTexturingPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Desired Page Count" />
 			<_6 v="Max Pages Per Frame" />
 			<_6 v="Low Priority Pages Per Frame" />
@@ -1079,7 +1079,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="VirtualTexturingPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="VirtualTexturingPresetDefinition::SplitscreenPreset" item_name_2="VirtualTexturingPresetDefinition::SplitscreenPreset" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Desired Page Count" />
 			<_6 v="Max Pages Per Frame" />
 			<_6 v="Low Priority Pages Per Frame" />
@@ -1096,7 +1096,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -1104,10 +1104,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Flocks Presets" item_name_1="FlocksQualityPresetDefinition" item_name_2="FlocksQualityPresetDefinition" item_name_3="FlocksQualityPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Flocks Presets" item_name_1="FlocksQualityPresetDefinition" item_name_2="FlocksQualityPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -1115,10 +1115,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Simulation Quality Presets" item_name_1="SimulationQualityPresetDefinition" item_name_2="SimulationQualityPresetDefinition" item_name_3="SimulationQualityPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Simulation Quality Presets" item_name_1="SimulationQualityPresetDefinition" item_name_2="SimulationQualityPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -1126,7 +1126,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Effects Presets" item_name_1="EffectsPresetDefinition" item_name_2="EffectsPresetDefinition" item_name_3="EffectsPresetDefinition" db1="428" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Effects Presets" item_name_1="EffectsPresetDefinition" item_name_2="EffectsPresetDefinition" db1="428" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_F v="Effect Quality Options Flags">
 			<Flag v="Enable CPU Particle Collisions" />
@@ -1165,7 +1165,7 @@
 		</_A>
 		<_34 v="generated_padc352" length="2" />
 		<_37 v="Effect Streaming Relevancy Settings" />
-		<_38 v="Effect Streaming Relevancy Settings" item_name_3="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Effect Streaming Relevancy Settings" item_name_1="EffectsPresetDefinition::EffectStreamingRelevancySettings" item_name_2="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="inner radius" />
 			<_14 v="outer radius" />
 			<_14 v="front-facing radius" />
@@ -1177,7 +1177,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="EffectsPresetDefinition::SplitscreenPreset" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="Single Screen Preset" item_name_1="EffectsPresetDefinition::SplitscreenPreset" item_name_2="EffectsPresetDefinition::SplitscreenPreset" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_F v="Effect Quality Options Flags">
 				<Flag v="Enable CPU Particle Collisions" />
 				<Flag v="Disable Low Priority Parts" />
@@ -1196,7 +1196,7 @@
 			<_14 v="Cheap Light Falloff Throttle" />
 			<_14 v="Material Effects Distance Scalar" />
 			<_37 v="Effect Streaming Relevancy Settings" />
-			<_38 v="Effect Streaming Relevancy Settings" item_name_3="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Effect Streaming Relevancy Settings" item_name_1="EffectsPresetDefinition::EffectStreamingRelevancySettings" item_name_2="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="inner radius" />
 				<_14 v="outer radius" />
 				<_14 v="front-facing radius" />
@@ -1211,7 +1211,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="EffectsPresetDefinition::SplitscreenPreset" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="EffectsPresetDefinition::SplitscreenPreset" item_name_2="EffectsPresetDefinition::SplitscreenPreset" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_F v="Effect Quality Options Flags">
 				<Flag v="Enable CPU Particle Collisions" />
 				<Flag v="Disable Low Priority Parts" />
@@ -1230,7 +1230,7 @@
 			<_14 v="Cheap Light Falloff Throttle" />
 			<_14 v="Material Effects Distance Scalar" />
 			<_37 v="Effect Streaming Relevancy Settings" />
-			<_38 v="Effect Streaming Relevancy Settings" item_name_3="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Effect Streaming Relevancy Settings" item_name_1="EffectsPresetDefinition::EffectStreamingRelevancySettings" item_name_2="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="inner radius" />
 				<_14 v="outer radius" />
 				<_14 v="front-facing radius" />
@@ -1245,7 +1245,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="EffectsPresetDefinition::SplitscreenPreset" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="EffectsPresetDefinition::SplitscreenPreset" item_name_2="EffectsPresetDefinition::SplitscreenPreset" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_F v="Effect Quality Options Flags">
 				<Flag v="Enable CPU Particle Collisions" />
 				<Flag v="Disable Low Priority Parts" />
@@ -1264,7 +1264,7 @@
 			<_14 v="Cheap Light Falloff Throttle" />
 			<_14 v="Material Effects Distance Scalar" />
 			<_37 v="Effect Streaming Relevancy Settings" />
-			<_38 v="Effect Streaming Relevancy Settings" item_name_3="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Effect Streaming Relevancy Settings" item_name_1="EffectsPresetDefinition::EffectStreamingRelevancySettings" item_name_2="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="inner radius" />
 				<_14 v="outer radius" />
 				<_14 v="front-facing radius" />
@@ -1279,7 +1279,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="EffectsPresetDefinition::SplitscreenPreset" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="EffectsPresetDefinition::SplitscreenPreset" item_name_2="EffectsPresetDefinition::SplitscreenPreset" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_F v="Effect Quality Options Flags">
 				<Flag v="Enable CPU Particle Collisions" />
 				<Flag v="Disable Low Priority Parts" />
@@ -1298,7 +1298,7 @@
 			<_14 v="Cheap Light Falloff Throttle" />
 			<_14 v="Material Effects Distance Scalar" />
 			<_37 v="Effect Streaming Relevancy Settings" />
-			<_38 v="Effect Streaming Relevancy Settings" item_name_3="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Effect Streaming Relevancy Settings" item_name_1="EffectsPresetDefinition::EffectStreamingRelevancySettings" item_name_2="EffectsPresetDefinition::EffectStreamingRelevancySettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="inner radius" />
 				<_14 v="outer radius" />
 				<_14 v="front-facing radius" />
@@ -1313,7 +1313,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -1321,35 +1321,35 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Emblem Quality Presets" item_name_1="EmblemQualityPresetDefinition" item_name_2="EmblemQualityPresetDefinition" item_name_3="EmblemQualityPresetDefinition" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Emblem Quality Presets" item_name_1="EmblemQualityPresetDefinition" item_name_2="EmblemQualityPresetDefinition" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_3E v="Resolution" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="EmblemQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="EmblemQualityPresetDefinition::SplitscreenPreset" item_name_2="EmblemQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_3E v="Resolution" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="EmblemQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="EmblemQualityPresetDefinition::SplitscreenPreset" item_name_2="EmblemQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_3E v="Resolution" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="EmblemQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="EmblemQualityPresetDefinition::SplitscreenPreset" item_name_2="EmblemQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_3E v="Resolution" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="EmblemQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="EmblemQualityPresetDefinition::SplitscreenPreset" item_name_2="EmblemQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_3E v="Resolution" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -1357,7 +1357,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Texture Quality Presets" item_name_1="TextureQualityPresetDefinition" item_name_2="TextureQualityPresetDefinition" item_name_3="TextureQualityPresetDefinition" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Texture Quality Presets" item_name_1="TextureQualityPresetDefinition" item_name_2="TextureQualityPresetDefinition" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_14 v="Texture Prediction Resolution Limit" />
 		<_14 v="Texture Prediction Target Resolution" />
@@ -1375,31 +1375,31 @@
 		</_A>
 		<_34 v="generated_pad880c" length="2" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="TextureQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="TextureQualityPresetDefinition::SplitscreenPreset" item_name_2="TextureQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Texture Array Bias" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="TextureQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="TextureQualityPresetDefinition::SplitscreenPreset" item_name_2="TextureQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Texture Array Bias" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="TextureQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="TextureQualityPresetDefinition::SplitscreenPreset" item_name_2="TextureQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Texture Array Bias" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="TextureQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="TextureQualityPresetDefinition::SplitscreenPreset" item_name_2="TextureQualityPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Texture Array Bias" />
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -1408,18 +1408,18 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Chromatic Aberration Presets" item_name_1="ChromaticAberrationPresetDefinition" item_name_2="ChromaticAberrationPresetDefinition" item_name_3="ChromaticAberrationPresetDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Chromatic Aberration Presets" item_name_1="ChromaticAberrationPresetDefinition" item_name_2="ChromaticAberrationPresetDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_0 v="Preset" />
 		<_6 v="Number of samples" />
 		<_3B v="" />
 	</_40>
-	<_40 v="UI Presets" item_name_1="UIPresetDefinition" item_name_2="UIPresetDefinition" item_name_3="UIPresetDefinition" db1="37" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="UI Presets" item_name_1="UIPresetDefinition" item_name_2="UIPresetDefinition" db1="37" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_F v="Bloom">
 			<Flag v="Enabled" />
 		</_F>
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="UIPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Single Screen Preset" item_name_1="UIPresetDefinition::SplitscreenPreset" item_name_2="UIPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Bloom">
 				<Flag v="Enabled" />
 			</_F>
@@ -1427,7 +1427,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="UIPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="UIPresetDefinition::SplitscreenPreset" item_name_2="UIPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Bloom">
 				<Flag v="Enabled" />
 			</_F>
@@ -1435,7 +1435,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="UIPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="UIPresetDefinition::SplitscreenPreset" item_name_2="UIPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Bloom">
 				<Flag v="Enabled" />
 			</_F>
@@ -1443,7 +1443,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="UIPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="UIPresetDefinition::SplitscreenPreset" item_name_2="UIPresetDefinition::SplitscreenPreset" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Bloom">
 				<Flag v="Enabled" />
 			</_F>
@@ -1452,7 +1452,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Decal Presets" item_name_1="DecalsPresetDefinition" item_name_2="DecalsPresetDefinition" item_name_3="DecalsPresetDefinition" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Decal Presets" item_name_1="DecalsPresetDefinition" item_name_2="DecalsPresetDefinition" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
 		<_6 v="Max Decal Count" />
 		<_14 v="Decal Lifetime Scale" />
@@ -1472,7 +1472,7 @@
 		</_F>
 		<_34 v="generated_pada386" length="1" />
 		<_37 v="Single Screen" />
-		<_38 v="Single Screen Preset" item_name_3="DecalsPresetDefinition::SplitscreenPreset" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Screen Preset" item_name_1="DecalsPresetDefinition::SplitscreenPreset" item_name_2="DecalsPresetDefinition::SplitscreenPreset" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Max Decal Count" />
 			<_14 v="Decal Lifetime Scale" />
 			<_A v="Max Clustered Decals">
@@ -1494,7 +1494,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen Preset" item_name_3="DecalsPresetDefinition::SplitscreenPreset" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen Preset" item_name_1="DecalsPresetDefinition::SplitscreenPreset" item_name_2="DecalsPresetDefinition::SplitscreenPreset" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Max Decal Count" />
 			<_14 v="Decal Lifetime Scale" />
 			<_A v="Max Clustered Decals">
@@ -1516,7 +1516,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen Preset" item_name_3="DecalsPresetDefinition::SplitscreenPreset" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen Preset" item_name_1="DecalsPresetDefinition::SplitscreenPreset" item_name_2="DecalsPresetDefinition::SplitscreenPreset" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Max Decal Count" />
 			<_14 v="Decal Lifetime Scale" />
 			<_A v="Max Clustered Decals">
@@ -1538,7 +1538,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen Preset" item_name_3="DecalsPresetDefinition::SplitscreenPreset" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen Preset" item_name_1="DecalsPresetDefinition::SplitscreenPreset" item_name_2="DecalsPresetDefinition::SplitscreenPreset" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="Max Decal Count" />
 			<_14 v="Decal Lifetime Scale" />
 			<_A v="Max Clustered Decals">
@@ -1560,7 +1560,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />
@@ -1568,10 +1568,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Shader Quality Presets" item_name_1="ShaderQualityPresetDefinition" item_name_2="ShaderQualityPresetDefinition" item_name_3="ShaderQualityPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Shader Quality Presets" item_name_1="ShaderQualityPresetDefinition" item_name_2="ShaderQualityPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_0 v="Preset" />
 		<_37 v="VRAM" />
-		<_38 v="vram" item_name_3="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />
 			<_6 v="VRAM per 1 million pixels" />
 			<_3B v="" />

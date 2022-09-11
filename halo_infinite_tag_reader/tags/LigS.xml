@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="LightingSettings" item_name_2="LightingSettings" item_name_3="LightingSettings" db1="3760" db2="0" db3="11" db4="0" db5="1" db6="0" db7="3744" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="LightingSettings" item_name_2="LightingSettings" db1="3760" db2="0" db3="11" db4="0" db5="1" db6="0" db7="3744" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -11,7 +11,7 @@
 	</_38>
 	<_6 v="Version" />
 	<_37 v="GLOBAL QUALITY SETTINGS" />
-	<_38 v="Global lightmapper settings" item_name_3="LightingSettingsGlobal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Global lightmapper settings" item_name_1="LightingSettingsGlobal" item_name_2="LightingSettingsGlobal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_D v="Global flags">
 			<Flag v="Use high resolution point shadows" />
 			<Flag v="Include Adjacent BSPs" />
@@ -39,7 +39,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="LOCAL SETTINGS" />
-	<_38 v="Local lightmapper settings" item_name_3="LightingSettingsLocal" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
+	<_38 v="Local lightmapper settings" item_name_1="LightingSettingsLocal" item_name_2="LightingSettingsLocal" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
 		<_C v="size class">
 			<Flag v="32x32" />
 			<Flag v="64x64" />
@@ -112,7 +112,7 @@
 		<_14 v="Skydome amplification factor" />
 		<_14 v="Indirect amplification factor" />
 		<_37 v="Ambient occlusion settings" />
-		<_38 v="AO settings" item_name_3="LightingSettingsAO" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="AO settings" item_name_1="LightingSettingsAO" item_name_2="LightingSettingsAO" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Radius" />
 			<_14 v="Falloff Power" />
 			<_14 v="Multiplier" />
@@ -120,7 +120,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="Quality Overrides" />
-		<_38 v="Local lightmapper override settings" item_name_3="LightingSettingsLocalOverrides" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Local lightmapper override settings" item_name_1="LightingSettingsLocalOverrides" item_name_2="LightingSettingsLocalOverrides" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="High Quality Average Jitter Samples" />
 			<_6 v="Per Vertex Supersample Count" />
 			<_6 v="Indirect Quality Offset" />
@@ -152,7 +152,7 @@
 			<Flag v="6144x6144" />
 			<Flag v="8192x8192" />
 		</_C>
-		<_40 v="Adjacent BSPs" item_name_1="AdjacentBSPLighting" item_name_2="AdjacentBSPLighting" item_name_3="AdjacentBSPLighting" db1="8" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Adjacent BSPs" item_name_1="AdjacentBSPLighting" item_name_2="AdjacentBSPLighting" db1="8" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="name" />
 			<_2 v="lighting variant name" />
 			<_3B v="" />
@@ -161,14 +161,14 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="RUNTIME SETTINGS" />
-	<_38 v="Runtime settings" item_name_3="LightingSettingsRuntime" db1="3504" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="visual environment" item_name_3="VisualEnvironment" db1="136" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="Runtime settings" item_name_1="LightingSettingsRuntime" item_name_2="LightingSettingsRuntime" db1="3504" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="visual environment" item_name_1="VisualEnvironment" item_name_2="VisualEnvironment" db1="136" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_41 v="Camera Settings" />
 			<_41 v="Fog Settings" />
-			<_38 v="Custom Object Lighting" item_name_3="CustomObjectLighting" db1="52" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Custom Object Lighting" item_name_1="CustomObjectLighting" item_name_2="CustomObjectLighting" db1="52" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_36 v="Character Lighting" />
-				<_40 v="Authored Light Probes" item_name_1="AuthoredLightProbe" item_name_2="AuthoredLightProbe" item_name_3="AuthoredLightProbe" db1="268" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="275">
-					<_40 v="Lights" item_name_1="AuthoredLightProbeLights" item_name_2="AuthoredLightProbeLights" item_name_3="AuthoredLightProbeLights" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="Authored Light Probes" item_name_1="AuthoredLightProbe" item_name_2="AuthoredLightProbe" db1="268" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="275">
+					<_40 v="Lights" item_name_1="AuthoredLightProbeLights" item_name_2="AuthoredLightProbeLights" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_37 v="Authored Light Probe" />
 						<_37 v="Direction 1" />
 						<_14 v="Direction 1" />
@@ -201,7 +201,7 @@
 					</_40>
 					<_37 v="Generated Air Probe Intensity Scale" />
 					<_14 v="Generated Air Probe Intensity Scale" />
-					<_39 v="raw sh data" item_name_3="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="raw sh data" item_name_1="RGBLightprobe" item_name_2="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="sh data" />
 						<_3B v="" />
 						<_14 v="sh data" />
@@ -257,7 +257,7 @@
 						<_14 v="sh data" />
 						<_3B v="" />
 					</_39>
-					<_39 v="per frame sh data" item_name_3="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="per frame sh data" item_name_1="RGBLightprobe" item_name_2="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="sh data" />
 						<_3B v="" />
 						<_14 v="sh data" />
@@ -339,7 +339,7 @@
 			<_3B v="" />
 		</_38>
 		<_41 v="Custom Fallback Airprobe" />
-		<_39 v="raw sh data" item_name_3="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_39 v="raw sh data" item_name_1="RGBLightprobe" item_name_2="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="sh data" />
 			<_3B v="" />
 			<_14 v="sh data" />
@@ -412,8 +412,8 @@
 		<_37 v="" />
 		<_14 v="max shadow count scale" />
 		<_37 v="floating shadows" />
-		<_38 v="floating shadow settings" item_name_3="FloatingShadowSettings" db1="3164" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
-			<_38 v="number of cascades" item_name_3="SpecControlNodeByteExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="floating shadow settings" item_name_1="FloatingShadowSettings" item_name_2="FloatingShadowSettings" db1="3164" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="number of cascades" item_name_1="SpecControlNodeByteExact" item_name_2="SpecControlNodeByteExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_A v="Type">
 					<Flag v="Default" />
 					<Flag v="Sync" />
@@ -441,28 +441,28 @@
 					<Flag v="Texture Quality" />
 					<Flag v="Decals" />
 				</_A>
-				<_38 v="Low" item_name_3="SpecControlSplitscreenValuesByte" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Low" item_name_1="SpecControlSplitscreenValuesByte" item_name_2="SpecControlSplitscreenValuesByte" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_3C v="Single Player" />
 					<_3C v="2 Player Splitscreen" />
 					<_3C v="3 Player Splitscreen" />
 					<_3C v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesByte" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesByte" item_name_2="SpecControlSplitscreenValuesByte" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_3C v="Single Player" />
 					<_3C v="2 Player Splitscreen" />
 					<_3C v="3 Player Splitscreen" />
 					<_3C v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="High" item_name_3="SpecControlSplitscreenValuesByte" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="High" item_name_1="SpecControlSplitscreenValuesByte" item_name_2="SpecControlSplitscreenValuesByte" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_3C v="Single Player" />
 					<_3C v="2 Player Splitscreen" />
 					<_3C v="3 Player Splitscreen" />
 					<_3C v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesByte" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesByte" item_name_2="SpecControlSplitscreenValuesByte" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_3C v="Single Player" />
 					<_3C v="2 Player Splitscreen" />
 					<_3C v="3 Player Splitscreen" />
@@ -471,7 +471,7 @@
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_38 v="quality" item_name_3="SpecControlNodeShadowQuality" db1="5" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="quality" item_name_1="SpecControlNodeShadowQuality" item_name_2="SpecControlNodeShadowQuality" db1="5" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_A v="Very Low">
 					<Flag v="8 tap" />
 					<Flag v="12 tap" />
@@ -527,9 +527,9 @@
 			<_14 v="PCSS Maximum Filter Width" />
 			<_37 v="" />
 			<_2 v="Rotating Sun Device Machine Driver Name" />
-			<_39 v="Dynamic Cascades" item_name_3="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_39 v="Dynamic Cascades" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_37 v="CASCADE" />
-				<_38 v="cascade half-width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -558,28 +558,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -589,7 +589,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -638,7 +638,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -692,7 +692,7 @@
 					<Flag v="Enable parallax corrected interpolation" />
 					<Flag v="Center cascade around camera" />
 				</_E>
-				<_38 v="DisableDynamicObjectShadows" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="DisableDynamicObjectShadows" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -720,7 +720,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -735,7 +735,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -750,7 +750,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -765,7 +765,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -782,7 +782,7 @@
 					</_38>
 					<_3B v="" />
 				</_38>
-				<_38 v="isLowFrequency" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="isLowFrequency" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -810,7 +810,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -825,7 +825,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -840,7 +840,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -855,7 +855,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -873,7 +873,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -922,7 +922,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -971,7 +971,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1021,7 +1021,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1071,7 +1071,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1121,7 +1121,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="PCSS Minimum Filter Width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="PCSS Minimum Filter Width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1150,28 +1150,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -1183,7 +1183,7 @@
 				<_37 v="" />
 				<_3B v="" />
 				<_37 v="CASCADE" />
-				<_38 v="cascade half-width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1212,28 +1212,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -1243,7 +1243,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1292,7 +1292,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1346,7 +1346,7 @@
 					<Flag v="Enable parallax corrected interpolation" />
 					<Flag v="Center cascade around camera" />
 				</_E>
-				<_38 v="DisableDynamicObjectShadows" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="DisableDynamicObjectShadows" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1374,7 +1374,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -1389,7 +1389,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -1404,7 +1404,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -1419,7 +1419,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -1436,7 +1436,7 @@
 					</_38>
 					<_3B v="" />
 				</_38>
-				<_38 v="isLowFrequency" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="isLowFrequency" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1464,7 +1464,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -1479,7 +1479,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -1494,7 +1494,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -1509,7 +1509,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -1527,7 +1527,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1576,7 +1576,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1625,7 +1625,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1675,7 +1675,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1725,7 +1725,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1775,7 +1775,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="PCSS Minimum Filter Width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="PCSS Minimum Filter Width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1804,28 +1804,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -1837,7 +1837,7 @@
 				<_37 v="" />
 				<_3B v="" />
 				<_37 v="CASCADE" />
-				<_38 v="cascade half-width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1866,28 +1866,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -1897,7 +1897,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -1946,7 +1946,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2000,7 +2000,7 @@
 					<Flag v="Enable parallax corrected interpolation" />
 					<Flag v="Center cascade around camera" />
 				</_E>
-				<_38 v="DisableDynamicObjectShadows" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="DisableDynamicObjectShadows" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2028,7 +2028,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2043,7 +2043,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2058,7 +2058,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2073,7 +2073,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2090,7 +2090,7 @@
 					</_38>
 					<_3B v="" />
 				</_38>
-				<_38 v="isLowFrequency" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="isLowFrequency" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2118,7 +2118,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2133,7 +2133,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2148,7 +2148,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2163,7 +2163,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2181,7 +2181,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2230,7 +2230,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2279,7 +2279,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2329,7 +2329,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2379,7 +2379,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2429,7 +2429,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="PCSS Minimum Filter Width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="PCSS Minimum Filter Width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2458,28 +2458,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -2491,7 +2491,7 @@
 				<_37 v="" />
 				<_3B v="" />
 				<_37 v="CASCADE" />
-				<_38 v="cascade half-width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2520,28 +2520,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -2551,7 +2551,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2600,7 +2600,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2654,7 +2654,7 @@
 					<Flag v="Enable parallax corrected interpolation" />
 					<Flag v="Center cascade around camera" />
 				</_E>
-				<_38 v="DisableDynamicObjectShadows" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="DisableDynamicObjectShadows" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2682,7 +2682,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2697,7 +2697,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2712,7 +2712,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2727,7 +2727,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2744,7 +2744,7 @@
 					</_38>
 					<_3B v="" />
 				</_38>
-				<_38 v="isLowFrequency" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="isLowFrequency" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2772,7 +2772,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2787,7 +2787,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2802,7 +2802,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2817,7 +2817,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -2835,7 +2835,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2884,7 +2884,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2933,7 +2933,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2983,7 +2983,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3033,7 +3033,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3083,7 +3083,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="PCSS Minimum Filter Width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="PCSS Minimum Filter Width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3112,28 +3112,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -3145,7 +3145,7 @@
 				<_37 v="" />
 				<_3B v="" />
 				<_37 v="CASCADE" />
-				<_38 v="cascade half-width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3174,28 +3174,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -3205,7 +3205,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3254,7 +3254,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3308,7 +3308,7 @@
 					<Flag v="Enable parallax corrected interpolation" />
 					<Flag v="Center cascade around camera" />
 				</_E>
-				<_38 v="DisableDynamicObjectShadows" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="DisableDynamicObjectShadows" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3336,7 +3336,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -3351,7 +3351,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -3366,7 +3366,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -3381,7 +3381,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -3398,7 +3398,7 @@
 					</_38>
 					<_3B v="" />
 				</_38>
-				<_38 v="isLowFrequency" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="isLowFrequency" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3426,7 +3426,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -3441,7 +3441,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -3456,7 +3456,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -3471,7 +3471,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -3489,7 +3489,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3538,7 +3538,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3587,7 +3587,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3637,7 +3637,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3687,7 +3687,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3737,7 +3737,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="PCSS Minimum Filter Width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="PCSS Minimum Filter Width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3766,28 +3766,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -3799,7 +3799,7 @@
 				<_37 v="" />
 				<_3B v="" />
 				<_37 v="CASCADE" />
-				<_38 v="cascade half-width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3828,28 +3828,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -3859,7 +3859,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3908,7 +3908,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3962,7 +3962,7 @@
 					<Flag v="Enable parallax corrected interpolation" />
 					<Flag v="Center cascade around camera" />
 				</_E>
-				<_38 v="DisableDynamicObjectShadows" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="DisableDynamicObjectShadows" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3990,7 +3990,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -4005,7 +4005,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -4020,7 +4020,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -4035,7 +4035,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -4052,7 +4052,7 @@
 					</_38>
 					<_3B v="" />
 				</_38>
-				<_38 v="isLowFrequency" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="isLowFrequency" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4080,7 +4080,7 @@
 						<Flag v="Texture Quality" />
 						<Flag v="Decals" />
 					</_A>
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -4095,7 +4095,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -4110,7 +4110,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -4125,7 +4125,7 @@
 						</_F>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Single Player">
 							<Flag v="True" />
 						</_F>
@@ -4143,7 +4143,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4192,7 +4192,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4241,7 +4241,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4291,7 +4291,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4341,7 +4341,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_3="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4391,7 +4391,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="PCSS Minimum Filter Width" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="PCSS Minimum Filter Width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4420,28 +4420,28 @@
 						<Flag v="Decals" />
 					</_A>
 					<_34 v="generated_pad4417" length="3" />
-					<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
 						<_14 v="4 Player Splitscreen" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_14 v="Single Player" />
 						<_14 v="2 Player Splitscreen" />
 						<_14 v="3 Player Splitscreen" />
@@ -4462,17 +4462,17 @@
 		<_3B v="" />
 	</_38>
 	<_37 v="" />
-	<_38 v="Indirect irradiance probe settings" item_name_3="IndirectIrradianceProbeSettings" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_38 v="Indirect irradiance probe settings" item_name_1="IndirectIrradianceProbeSettings" item_name_2="IndirectIrradianceProbeSettings" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_A v="Auto-load neighboring BSPs">
 			<Flag v="Disabled" />
 			<Flag v="Enabled" />
 		</_A>
 		<_34 v="generated_pad8dc5" length="3" />
-		<_40 v="Additional BSPs to load for baking" item_name_1="LightingSettingsAdditionalBSP" item_name_2="LightingSettingsAdditionalBSP" item_name_3="LightingSettingsAdditionalBSP" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Additional BSPs to load for baking" item_name_1="LightingSettingsAdditionalBSP" item_name_2="LightingSettingsAdditionalBSP" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="BSP reference" />
 			<_3B v="" />
 		</_40>
-		<_40 v="TOD Settings" item_name_1="IndirectIrradianceTODSettings" item_name_2="IndirectIrradianceTODSettings" item_name_3="IndirectIrradianceTODSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="TOD Settings" item_name_1="IndirectIrradianceTODSettings" item_name_2="IndirectIrradianceTODSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="DWS event list to apply for baking" />
 			<_2 v="DWS state to apply for baking" />
 			<_A v="Lights on during bake">

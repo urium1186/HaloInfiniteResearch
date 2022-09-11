@@ -1,91 +1,19 @@
 import io
 import json
 import math
+import os
 import struct
 
 from typing.io import BinaryIO
 
-from halo_infinite_tag_reader.headers.tagstructtable import TagStruct
+from commons.constant import ADDRESS_UNSET
+from halo_infinite_tag_reader.headers.data_reference_table import DataReference
+
+#from halo_infinite_tag_reader.readers.reader_factory import ReaderFactory
+from halo_infinite_tag_reader.tag_instance import TagInstance
+from halo_infinite_tag_reader.tag_reader_utils import getStringsByRef, readStringInPlace
 from halo_infinite_tag_reader.taglayouts import TagLayouts
-from halo_infinite_tag_reader.varnames import Mmr3Hash_str, getStrInMmr3Hash, getMmr3HashFromInt
-
-
-def getStringsByRef(fh, ref_id, ref_id_sub, ref_id_center):
-    index_ref_found = string_offset = -1
-    str_found = None
-    str_temp = ''
-    for item in fh.tag_dependency_table.entries:
-        if item.global_id == ref_id and item.ref_id_sub == ref_id_sub and item.ref_id_center == ref_id_center:
-            str_found = item
-            break
-
-    if not (str_found is None):
-        for str_item in fh.tag_reference_fixup_table.entries:
-            if str_item.name_offset == str_found.name_offset:
-                return str_item.str_path
-
-    return str_temp
-
-
-def readStringInPlace(f, start, inplace=False):
-    toBack = f.tell()
-    f.seek(start)
-    string = []
-    while True:
-        char = f.read(1)
-        if char == b'\x00':
-            if inplace:
-                f.seek(toBack)
-            return "".join(string)
-        try:
-            string.append(char.decode("utf-8"))
-        except:
-            try:
-                char+= f.read(1)
-                string.append(char.decode("utf-8"))
-            except:
-                if inplace:
-                    f.seek(toBack)
-                return "".join(string)
-
-
-
-class TagInstance:
-
-    def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
-        self.tagDef = tag
-        self.content_entry: TagStruct = None
-        self.childs: [TagInstance] = []
-        self.parent: TagInstance = None
-        self.addressStart = addressStart
-        self.offset = offset
-        self.inst_parent_offset = -1
-        self.inst_address = -1
-        self.extra_data = {}
-        pass
-
-    def readIn(self, f: BinaryIO, header=None):
-        self.inst_address = f.tell()
-        self.inst_parent_offset = self.inst_address - self.addressStart
-
-    def getFirstChild(self):
-        if len(self.childs)>0:
-            return self.childs[0]
-        else:
-            return None
-
-    def toJson(self):
-        dict = {'extra_data': self.extra_data,
-                'items': []}
-        for ch in self.childs:
-            temp_dict = {}
-            if ch.__class__ == {}.__class__:
-                for key in ch.keys():
-                    temp_dict[key] = ch[key].toJson()
-                dict['items'].append(temp_dict)
-            else:
-                dict['items'].append(ch.toJson())
-        return dict
+from halo_infinite_tag_reader.varnames import getStrInMmr3Hash, getMmr3HashFromInt
 
 
 class DebugDataBlock(TagInstance):
@@ -102,7 +30,6 @@ class DebugDataBlock(TagInstance):
         json_obj = super(DebugDataBlock, self).toJson()
         json_obj['comment'] = self.comment
         return json_obj
-
 
 
 class Comment(TagInstance):
@@ -130,8 +57,8 @@ class ArrayFixLen(TagInstance):
         self.comment = self.tagDef.N
         for entry in self.tagDef.B.keys():
             temp = tagInstanceFactoryCreate(tag=self.tagDef.B[entry], addressStart=self.addressStart,
-                                                            offset=entry+self.offset)
-            temp.readIn(f,header)
+                                            offset=entry + self.offset)
+            temp.readIn(f, header)
             self.childs.append(temp)
 
     def toJson(self):
@@ -167,9 +94,7 @@ class TagStructData(TagInstance):
 
     def hasMoreTagStructData(self):
         if self.tagDef.B != {}:
-            print(self.tagDef.B )
-
-
+            print(self.tagDef.B)
 
     def readIn(self, f: BinaryIO, header=None):
         super().readIn(f, header)
@@ -179,6 +104,8 @@ class FUNCTION(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
         super().__init__(tag, addressStart, offset)
         self.functAddress = -1
+        self.functAddress_2 = -1
+        self.byteOffset = - 1
         self.byteLengthCount = - 1
         self._1st_byte = None
         self._2nd_byte = None
@@ -192,15 +119,22 @@ class FUNCTION(TagInstance):
         self.unk_max = -1
         self.leftover_bytes = -1
         self.curvature_bytes = []
+        self.data_reference: DataReference = None
+        self.bin_data = b''
+        self.bin_data_hex = ""
+        self.loaded_bin_data = False
         pass
 
     def readIn(self, f: BinaryIO, header=None):
         super().readIn(f, header)
         f.seek(self.addressStart + self.offset)
         self.functAddress = struct.unpack('Q', f.read(8))[0]  # ReadLong
-        f.seek(self.addressStart + self.offset + 20)
+        self.functAddress_2 = struct.unpack('Q', f.read(8))[0]  # ReadLong
+        f.seek(self.addressStart + self.offset + 16)
+        self.byteOffset = struct.unpack('i', f.read(4))[0]
+        assert self.byteOffset == 0
         self.byteLengthCount = struct.unpack('i', f.read(4))[0]
-        if self.functAddress != 0 and f.tell() + self.functAddress < io.DEFAULT_BUFFER_SIZE:
+        if self.functAddress != ADDRESS_UNSET and self.functAddress != 0 and f.tell() + self.functAddress < io.DEFAULT_BUFFER_SIZE:
             f.seek(self.functAddress)
             self._1st_byte = struct.unpack('c', f.read(1))[0]
             self._2nd_byte = struct.unpack('c', f.read(1))[0]
@@ -215,6 +149,16 @@ class FUNCTION(TagInstance):
             self.leftover_bytes = struct.unpack('i', f.read(4))[0]
             if self.leftoverbytes > 0:
                 self.curvature_bytes = struct.unpack(f'{self.leftoverbytes}p', f.read(self.leftoverbytes))[0]
+
+    def readBinData(self, f, header=None):
+        if self.data_reference is not None:
+            if not self.data_reference.loaded_bin_data:
+                self.data_reference.readBinData(f)
+            bin_stream = io.BytesIO(self.data_reference.bin_data)
+            bin_stream.seek(self.byteOffset)
+            self.bin_data = bin_stream.read(self.byteLengthCount)
+            self.bin_data_hex = self.bin_data.hex()
+        self.loaded_bin_data = True
 
 
 class EnumGroup(TagInstance):
@@ -277,7 +221,8 @@ class EnumGroup(TagInstance):
         if self.options.__len__() > self.selected_index > -1:
             self.selected = self.options[self.selected_index]
         else:
-            print("the enum below is broken :(")
+            debug = True
+            # print("the enum below is broken :(")
 
     def toJson(self):
         json_obj = super(EnumGroup, self).toJson()
@@ -285,6 +230,7 @@ class EnumGroup(TagInstance):
         json_obj['selected'] = self.selected
         json_obj['options'] = self.options
         return json_obj
+
 
 class FourByte(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -354,27 +300,47 @@ class TagRef(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
         super().__init__(tag, addressStart, offset)
         self.path = None
+        self.parse = None
+        self.tag_ref = None
         self.ref_id_center = None
         self.ref_id_sub = None
         self.ref_id = None
+        self.ref_id_center_int = None
+        self.ref_id_sub_int = None
+        self.ref_id_int = None
         self.global_handle = None
         self.local_handle = None
         self.tagGroup = None
+        self.tagGroupRev = None
 
     def readIn(self, f: BinaryIO, header=None):
         super().readIn(f, header)
         f.seek(self.addressStart + self.offset)
         self.global_handle = struct.unpack('q', f.read(8))[0]
-        self.ref_id = f.read(4).hex().upper()
-        self.ref_id_sub = f.read(4).hex().upper()
-        self.ref_id_center = f.read(4).hex().upper()
+        self.ref_id = f.read(4)
+        self.ref_id_int = struct.unpack('i', self.ref_id)[0]
+        self.ref_id = self.ref_id.hex().upper()
+        self.ref_id_sub = f.read(4)
+        self.ref_id_sub_int = struct.unpack('i', self.ref_id_sub)[0]
+        self.ref_id_sub = self.ref_id_sub.hex().upper()
+        self.ref_id_center = f.read(4)
+        self.ref_id_center_int = struct.unpack('i', self.ref_id_center)[0]
+        self.ref_id_center = self.ref_id_center.hex().upper()
         self.tagGroup = struct.unpack('4s', f.read(4))[0]
+        if self.tagGroup != b'\xff\xff\xff\xff':
+            self.tagGroupRev = self.tagGroup[::-1].decode("utf-8")
         self.local_handle = f.read(4).hex().upper()
-        self.path = getStringsByRef(header, self.ref_id, self.ref_id_sub, self.ref_id_center)
+        self.path = getStringsByRef(header, self.ref_id, self.ref_id_sub, self.ref_id_center, self.tagGroupRev)
 
     def toJson(self):
         json_obj = super(TagRef, self).toJson()
         return self.path
+
+    def loadPath(self):
+        temp_path = self.path
+        if temp_path != self.tag_ref.str_path:
+            debug = True
+        self.path = self.tag_ref.str_path
 
 
 class Pointer(TagInstance):
@@ -408,7 +374,7 @@ class ResourceHandle(TagInstance):
         self.n_sub = struct.unpack('i', f.read(4))[0]
         self.childrenCount = struct.unpack('i', f.read(4))[0]
         if self.childrenCount != 0:
-            debug =True
+            debug = True
 
 
 class Tagblock(TagInstance):
@@ -462,8 +428,29 @@ class String(TagInstance):
     def readIn(self, f: BinaryIO, header=None):
         super().readIn(f, header)
         f.seek(self.addressStart + self.offset)
+        temp_field_data = f.read(self.tagDef.S)
+        temp_field_data_hex = temp_field_data.hex()
+
         self.string = readStringInPlace(f, self.addressStart + self.offset)
         # Revisar ojo puede estar mal
+
+    def toJson(self):
+        json_obj = super(String, self).toJson()
+        return self.string
+
+
+class StringTag(TagInstance):
+    def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
+        super().__init__(tag, addressStart, offset)
+        self.tag_string = ""
+        self.tag_string_rev = ""
+
+    def readIn(self, f: BinaryIO, header=None):
+        super().readIn(f, header)
+        f.seek(self.addressStart + self.offset)
+
+        self.tag_string = struct.unpack('4s', f.read(4))[0]
+        self.tag_string_rev = self.tag_string[::-1].decode("utf-8")
 
     def toJson(self):
         json_obj = super(String, self).toJson()
@@ -619,7 +606,7 @@ class Mmr3Hash(TagInstance):
         bin_data = f.read(4)
         self.value = bin_data.hex().upper()
         self.str_value = getStrInMmr3Hash(self.value)
-        self.int_value = int.from_bytes(bin_data,byteorder="little", signed=True)
+        self.int_value = int.from_bytes(bin_data, byteorder="little", signed=True)
         assert self.value == getMmr3HashFromInt(self.int_value), "Han de ser iguales"
 
     def toJson(self):
@@ -628,7 +615,7 @@ class Mmr3Hash(TagInstance):
             'value': self.value,
             'str_value': self.str_value,
             'int_value': self.int_value
-            }
+        }
 
 
 class RGB(TagInstance):
@@ -678,6 +665,7 @@ class ARGB(TagInstance):
             'g_value': self.g_value,
             'b_value': self.b_value,
         }
+
 
 class BoundsFloat(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
@@ -762,6 +750,7 @@ class Point2D_2Byte(TagInstance):
             'y': self.y,
         }
 
+
 class Point3D(TagInstance):
     def __init__(self, tag: TagLayouts.C, addressStart: int, offset: int):
         super().__init__(tag, addressStart, offset)
@@ -843,13 +832,13 @@ def tagInstanceFactoryCreate(tag, addressStart, offset):
                        offset=offset)
     elif tag.T == "ArrayFixLen":
         return ArrayFixLen(tag=tag, addressStart=addressStart,
-                       offset=offset)
+                           offset=offset)
     elif tag.T == "GenericBlock":
         return GenericBlock(tag=tag, addressStart=addressStart,
-                       offset=offset)
+                            offset=offset)
     elif tag.T == "TagStructData":
         return TagStructData(tag=tag, addressStart=addressStart,
-                       offset=offset)
+                             offset=offset)
     elif tag.T == "FUNCTION":
         return FUNCTION(tag=tag, addressStart=addressStart,
                         offset=offset)
@@ -885,6 +874,9 @@ def tagInstanceFactoryCreate(tag, addressStart, offset):
     elif tag.T == "String":
         return String(tag=tag, addressStart=addressStart,
                       offset=offset)
+    elif tag.T == "StringTag":
+        return StringTag(tag=tag, addressStart=addressStart,
+                         offset=offset)
     elif tag.T == "Flags":
         return Flags(tag=tag, addressStart=addressStart,
                      offset=offset)

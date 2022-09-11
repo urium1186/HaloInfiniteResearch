@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="AutoHlodSettings" item_name_2="AutoHlodSettings" item_name_3="AutoHlodSettings" db1="152" db2="0" db3="0" db4="0" db5="0" db6="0" db7="136" db8="3347">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="AutoHlodSettings" item_name_2="AutoHlodSettings" db1="152" db2="0" db3="0" db4="0" db5="0" db6="0" db7="136" db8="3347">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -17,8 +17,8 @@
 	<_37 v="" />
 	<_37 v="HLOD settings" />
 	<_37 v="Multi BSP HLOD Settings" />
-	<_38 v="Multi BSP HLOD Settings" item_name_3="AutoHlodLevelSettings" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
-		<_38 v="Hlod Settings" item_name_3="NamedHlodSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_38 v="Multi BSP HLOD Settings" item_name_1="AutoHlodLevelSettings" item_name_2="AutoHlodLevelSettings" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
+		<_38 v="Hlod Settings" item_name_1="NamedHlodSettings" item_name_2="NamedHlodSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_41 v="HLOD settings preset list" />
 			<_2 v="HLOD settings name" />
 			<_3B v="" />
@@ -48,8 +48,8 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="BSP HLOD Settings" />
-	<_38 v="BSP HLOD Settings" item_name_3="AutoHlodLevelSettings" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
-		<_38 v="Hlod Settings" item_name_3="NamedHlodSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_38 v="BSP HLOD Settings" item_name_1="AutoHlodLevelSettings" item_name_2="AutoHlodLevelSettings" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
+		<_38 v="Hlod Settings" item_name_1="NamedHlodSettings" item_name_2="NamedHlodSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_41 v="HLOD settings preset list" />
 			<_2 v="HLOD settings name" />
 			<_3B v="" />
@@ -79,8 +79,8 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="BSP Cell HLOD Settings" />
-	<_38 v="BSP Cell Hlod Settings" item_name_3="AutoHlodLevelSettings" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
-		<_38 v="Hlod Settings" item_name_3="NamedHlodSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_38 v="BSP Cell Hlod Settings" item_name_1="AutoHlodLevelSettings" item_name_2="AutoHlodLevelSettings" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
+		<_38 v="Hlod Settings" item_name_1="NamedHlodSettings" item_name_2="NamedHlodSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_41 v="HLOD settings preset list" />
 			<_2 v="HLOD settings name" />
 			<_3B v="" />

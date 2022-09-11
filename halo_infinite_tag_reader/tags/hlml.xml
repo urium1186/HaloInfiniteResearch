@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="HlodMaterialCutOffList" item_name_2="HlodMaterialCutOffList" item_name_3="HlodMaterialCutOffList" db1="56" db2="0" db3="1" db4="0" db5="1" db6="0" db7="40" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="HlodMaterialCutOffList" item_name_2="HlodMaterialCutOffList" db1="56" db2="0" db3="1" db4="0" db5="1" db6="0" db7="40" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="HLOD Materials to cut off mesh parts" item_name_1="HlodMaterialCutOffMeshParts" item_name_2="HlodMaterialCutOffMeshParts" item_name_3="HlodMaterialCutOffMeshParts" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="HLOD Materials to cut off mesh parts" item_name_1="HlodMaterialCutOffMeshParts" item_name_2="HlodMaterialCutOffMeshParts" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Cut off mesh parts by this material" />
 		<_3B v="" />
 	</_40>
-	<_40 v="HLOD Materials to put the geo directly into the HLOD, bypassing simplygon" item_name_1="HlodMaterialCutOffMeshParts" item_name_2="HlodMaterialCutOffMeshParts" item_name_3="HlodMaterialCutOffMeshParts" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="HLOD Materials to put the geo directly into the HLOD, bypassing simplygon" item_name_1="HlodMaterialCutOffMeshParts" item_name_2="HlodMaterialCutOffMeshParts" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Cut off mesh parts by this material" />
 		<_3B v="" />
 	</_40>

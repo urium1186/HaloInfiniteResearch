@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="c_animation_frame_event_list_audio" item_name_2="c_animation_frame_event_list_audio" item_name_3="c_animation_frame_event_list_audio" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="64" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="c_animation_frame_event_list_audio" item_name_2="c_animation_frame_event_list_audio" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="64" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="sound references" item_name_1="SoundEventReferenceSet" item_name_2="SoundEventReferenceSet" item_name_3="SoundEventReferenceSet" db1="24" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="sound references" item_name_1="SoundEventReferenceSet" item_name_2="SoundEventReferenceSet" db1="24" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="name" />
-		<_40 v="sounds" item_name_1="SoundEventReference" item_name_2="SoundEventReference" item_name_3="SoundEventReference" db1="96" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="sounds" item_name_1="SoundEventReference" item_name_2="SoundEventReference" db1="96" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="sound" />
 			<_E v="flags">
 				<Flag v="allow on player" />
@@ -32,7 +32,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="dialogue references" item_name_1="AnimationGraphDialogueReference" item_name_2="AnimationGraphDialogueReference" item_name_3="AnimationGraphDialogueReference" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="dialogue references" item_name_1="AnimationGraphDialogueReference" item_name_2="AnimationGraphDialogueReference" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="vocalization name" />
 		<_A v="play restriction">
 			<Flag v="Unrestricted" />
@@ -42,9 +42,9 @@
 		<_34 v="generated_padf213" length="3" />
 		<_3B v="" />
 	</_40>
-	<_40 v="frame event containers" item_name_1="AudioFrameEventContainer" item_name_2="AudioFrameEventContainer" item_name_3="AudioFrameEventContainer" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="frame event containers" item_name_1="AudioFrameEventContainer" item_name_2="AudioFrameEventContainer" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="animation name" />
-		<_40 v="sound events" item_name_1="SoundFrameEventDescriptor" item_name_2="SoundFrameEventDescriptor" item_name_3="SoundFrameEventDescriptor" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+		<_40 v="sound events" item_name_1="SoundFrameEventDescriptor" item_name_2="SoundFrameEventDescriptor" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 			<_2 v="linked frame event id" />
 			<_2E v="sound" />
 			<_5 v="frame offset" />
@@ -52,7 +52,7 @@
 			<_2 v="marker name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="dialogue events" item_name_1="DialogueFrameEventDescriptor" item_name_2="DialogueFrameEventDescriptor" item_name_3="DialogueFrameEventDescriptor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+		<_40 v="dialogue events" item_name_1="DialogueFrameEventDescriptor" item_name_2="DialogueFrameEventDescriptor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 			<_2 v="linked frame event id" />
 			<_2E v="dialogue reference" />
 			<_5 v="frame offset" />

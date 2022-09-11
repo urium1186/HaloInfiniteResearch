@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="TypefaceDefinition" item_name_2="TypefaceDefinition" item_name_3="TypefaceDefinition" db1="40" db2="0" db3="1" db4="0" db5="1" db6="0" db7="24" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="TypefaceDefinition" item_name_2="TypefaceDefinition" db1="40" db2="0" db3="1" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="typefaces" item_name_1="LocTypeface" item_name_2="LocTypeface" item_name_3="LocTypeface" db1="288" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+	<_40 v="typefaces" item_name_1="LocTypeface" item_name_2="LocTypeface" db1="288" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 		<_2 v="Typeface name" />
-		<_38 v="Default typeface" item_name_3="Typeface" db1="264" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Default typeface" item_name_1="Typeface" item_name_2="Typeface" db1="264" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_1 v="font name" />
 			<_C v="font weight">
 				<Flag v="ExtraLight (200)" />
@@ -32,7 +32,7 @@
 			<_34 v="generated_pad6635" length="2" />
 			<_3B v="" />
 		</_38>
-		<_40 v="Language-specific typefaces" item_name_1="LanguageTypeface" item_name_2="LanguageTypeface" item_name_3="LanguageTypeface" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="Language-specific typefaces" item_name_1="LanguageTypeface" item_name_2="LanguageTypeface" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 			<_C v="Language">
 				<Flag v="English" />
 				<Flag v="Japanese" />
@@ -53,7 +53,7 @@
 				<Flag v="Norwegian" />
 				<Flag v="Brazilian-Portuguese" />
 			</_C>
-			<_38 v="Replacement typeface" item_name_3="Typeface" db1="264" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="Replacement typeface" item_name_1="Typeface" item_name_2="Typeface" db1="264" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="font name" />
 				<_C v="font weight">
 					<Flag v="ExtraLight (200)" />

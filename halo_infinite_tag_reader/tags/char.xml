@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="character_definition" item_name_2="character_definition" item_name_3="character_definition" db1="2232" db2="0" db3="7" db4="0" db5="1" db6="0" db7="2216" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="character_definition" item_name_2="character_definition" db1="2232" db2="0" db3="7" db4="0" db5="1" db6="0" db7="2216" db8="1331">
+	<_38 v="" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -20,18 +20,18 @@
 	<_41 v="style" />
 	<_41 v="major character" />
 	<_41 v="mythic skull character" />
-	<_40 v="variants" item_name_1="character_variant" item_name_2="character_variant" item_name_3="character_variant" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="variants" item_name_1="character_variant" item_name_2="character_variant" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="variant name" />
 		<_5 v="variant index" />
 		<_34 v="generated_padedbf" length="2" />
 		<_2 v="Style Id" />
-		<_40 v="voices" item_name_1="s_character_voice" item_name_2="s_character_voice" item_name_3="s_character_voice" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="voices" item_name_1="s_character_voice" item_name_2="s_character_voice" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_41 v="dialogue" />
 			<_2 v="designator" />
 			<_14 v="weight" />
-			<_40 v="region filters" item_name_1="s_character_voice_region_filter" item_name_2="s_character_voice_region_filter" item_name_3="s_character_voice_region_filter" db1="24" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="region filters" item_name_1="s_character_voice_region_filter" item_name_2="s_character_voice_region_filter" db1="24" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="region name" />
-				<_40 v="permutation filters" item_name_1="s_character_voice_region_permutation_filter" item_name_2="s_character_voice_region_permutation_filter" item_name_3="s_character_voice_region_permutation_filter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="permutation filters" item_name_1="s_character_voice_region_permutation_filter" item_name_2="s_character_voice_region_permutation_filter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="permutation name" />
 					<_3B v="" />
 				</_40>
@@ -41,14 +41,14 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="voice" item_name_1="c_character_voice_properties_internal" item_name_2="c_character_voice_properties_internal" item_name_3="c_character_voice_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-		<_40 v="voices" item_name_1="s_character_voice" item_name_2="s_character_voice" item_name_3="s_character_voice" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="voice" item_name_1="c_character_voice_properties_internal" item_name_2="c_character_voice_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="voices" item_name_1="s_character_voice" item_name_2="s_character_voice" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_41 v="dialogue" />
 			<_2 v="designator" />
 			<_14 v="weight" />
-			<_40 v="region filters" item_name_1="s_character_voice_region_filter" item_name_2="s_character_voice_region_filter" item_name_3="s_character_voice_region_filter" db1="24" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="region filters" item_name_1="s_character_voice_region_filter" item_name_2="s_character_voice_region_filter" db1="24" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="region name" />
-				<_40 v="permutation filters" item_name_1="s_character_voice_region_permutation_filter" item_name_2="s_character_voice_region_permutation_filter" item_name_3="s_character_voice_region_permutation_filter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="permutation filters" item_name_1="s_character_voice_region_permutation_filter" item_name_2="s_character_voice_region_permutation_filter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="permutation name" />
 					<_3B v="" />
 				</_40>
@@ -58,7 +58,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Development Status" item_name_1="c_character_development_status_properties_internal" item_name_2="c_character_development_status_properties_internal" item_name_3="c_character_development_status_properties_internal" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Development Status" item_name_1="c_character_development_status_properties_internal" item_name_2="c_character_development_status_properties_internal" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_B v="Stage">
 			<Flag v="Unknown" />
 			<Flag v="Prototype" />
@@ -68,7 +68,7 @@
 		<_34 v="padding1" length="2" />
 		<_3B v="" />
 	</_40>
-	<_40 v="general properties" item_name_1="c_character_general_properties_internal" item_name_2="c_character_general_properties_internal" item_name_3="c_character_general_properties_internal" db1="292" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="general properties" item_name_1="c_character_general_properties_internal" item_name_2="c_character_general_properties_internal" db1="292" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_D v="general flags">
 			<Flag v="swarm" />
 			<Flag v="flying" />
@@ -153,7 +153,7 @@
 			<Flag v="Test" />
 		</_B>
 		<_41 v="Data Behavior Tree" />
-		<_40 v="disallowed weapons from trading" item_name_1="s_disallowed_weapons_from_trading" item_name_2="s_disallowed_weapons_from_trading" item_name_3="s_disallowed_weapons_from_trading" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="disallowed weapons from trading" item_name_1="s_disallowed_weapons_from_trading" item_name_2="s_disallowed_weapons_from_trading" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="weapon" />
 			<_3B v="" />
 		</_40>
@@ -165,17 +165,17 @@
 		<_2 v="Shield Frame Attachment" />
 		<_5 v="Token Priority" />
 		<_34 v="generated_padba33" length="2" />
-		<_40 v="Designer Metadata" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" item_name_3="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Designer Metadata" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="meta label" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Dialogue System Metadata" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" item_name_3="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Dialogue System Metadata" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="meta label" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="proto spawn properties" item_name_1="c_character_proto_spawn_properties_internal" item_name_2="c_character_proto_spawn_properties_internal" item_name_3="c_character_proto_spawn_properties_internal" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="proto spawn properties" item_name_1="c_character_proto_spawn_properties_internal" item_name_2="c_character_proto_spawn_properties_internal" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_B v="Proto Spawn Type ">
 			<Flag v="None" />
 			<Flag v="Limbo" />
@@ -184,7 +184,7 @@
 		</_B>
 		<_3B v="" />
 	</_40>
-	<_40 v="interact properties" item_name_1="c_character_interact_properties_internal" item_name_2="c_character_interact_properties_internal" item_name_3="c_character_interact_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="interact properties" item_name_1="c_character_interact_properties_internal" item_name_2="c_character_interact_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_F v="Interact Flags">
 			<Flag v="Do not shoot while moving" />
 		</_F>
@@ -192,8 +192,8 @@
 		<_14 v="default maximum object interact range" />
 		<_3B v="" />
 	</_40>
-	<_40 v="emotion properties" item_name_1="c_character_emotions_properties_internal" item_name_2="c_character_emotions_properties_internal" item_name_3="c_character_emotions_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
-		<_40 v="situational danger" item_name_1="s_ai_character_emotion_situational_danger_properties" item_name_2="s_ai_character_emotion_situational_danger_properties" item_name_3="s_ai_character_emotion_situational_danger_properties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="emotion properties" item_name_1="c_character_emotions_properties_internal" item_name_2="c_character_emotions_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="situational danger" item_name_1="s_ai_character_emotion_situational_danger_properties" item_name_2="s_ai_character_emotion_situational_danger_properties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_B v="highest prop class">
 				<Flag v="none - actor has no targets whatsoever" />
 				<Flag v="dead enemy- my only target is a dead enemy" />
@@ -220,7 +220,7 @@
 		<_14 v="Perceived Danger Combat Threshold" />
 		<_3B v="" />
 	</_40>
-	<_40 v="vitality properties" item_name_1="c_character_vitality_properties_internal" item_name_2="c_character_vitality_properties_internal" item_name_3="c_character_vitality_properties_internal" db1="224" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="305">
+	<_40 v="vitality properties" item_name_1="c_character_vitality_properties_internal" item_name_2="c_character_vitality_properties_internal" db1="224" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="305">
 		<_D v="vitality flags">
 			<Flag v="auto resurrect" />
 			<Flag v="disable vitality override" />
@@ -265,7 +265,7 @@
 		<_14 v="stun cooldown (legendary)" />
 		<_3B v="" />
 	</_40>
-	<_40 v="placement properties" item_name_1="c_character_placement_properties_internal" item_name_2="c_character_placement_properties_internal" item_name_3="c_character_placement_properties_internal" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="placement properties" item_name_1="c_character_placement_properties_internal" item_name_2="c_character_placement_properties_internal" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="few upgrade chance (easy)" />
 		<_14 v="few upgrade chance (normal)" />
 		<_14 v="few upgrade chance (heroic)" />
@@ -280,7 +280,7 @@
 		<_14 v="many upgrade chance (legendary)" />
 		<_3B v="" />
 	</_40>
-	<_40 v="base perception properties" item_name_1="c_character_base_perception_properties_internal" item_name_2="c_character_base_perception_properties_internal" item_name_3="c_character_base_perception_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="base perception properties" item_name_1="c_character_base_perception_properties_internal" item_name_2="c_character_base_perception_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_F v="flags">
 			<Flag v="Has Magic Sight" />
 			<Flag v="More Frequent Prop Perception" />
@@ -296,7 +296,7 @@
 		<_14 v="Postcombat clump state time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="perception properties" item_name_1="c_character_perception_properties_internal" item_name_2="c_character_perception_properties_internal" item_name_3="c_character_perception_properties_internal" db1="192" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="perception properties" item_name_1="c_character_perception_properties_internal" item_name_2="c_character_perception_properties_internal" db1="192" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_B v="perception_mode">
 			<Flag v="idle" />
 			<Flag v="alert" />
@@ -341,14 +341,14 @@
 		<_25 v="hologram ignore timer" />
 		<_14 v="hologram ignore timer shot penalty" />
 		<_37 v="Parital Perception/Distance distribution function" />
-		<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
 		<_37 v="Normal active-camo perception" />
-		<_38 v="normal active camo perception" item_name_3="s_active_camo_perception_properties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="normal active camo perception" item_name_1="s_active_camo_perception_properties" item_name_2="s_active_camo_perception_properties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_15 v="partial invisibility amount" />
 			<_14 v="partial invisibility vision distance" />
 			<_15 v="full invisibility amount" />
@@ -357,7 +357,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="Legendary active-camo perception" />
-		<_38 v="legendary active camo perception" item_name_3="s_active_camo_perception_properties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="legendary active camo perception" item_name_1="s_active_camo_perception_properties" item_name_2="s_active_camo_perception_properties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_15 v="partial invisibility amount" />
 			<_14 v="partial invisibility vision distance" />
 			<_15 v="full invisibility amount" />
@@ -367,11 +367,11 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="target properties" item_name_1="c_character_target_properties_internal" item_name_2="c_character_target_properties_internal" item_name_3="c_character_target_properties_internal" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="target properties" item_name_1="c_character_target_properties_internal" item_name_2="c_character_target_properties_internal" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="player preference" />
 		<_3B v="" />
 	</_40>
-	<_40 v="look properties" item_name_1="c_character_look_properties_internal" item_name_2="c_character_look_properties_internal" item_name_3="c_character_look_properties_internal" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+	<_40 v="look properties" item_name_1="c_character_look_properties_internal" item_name_2="c_character_look_properties_internal" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 		<_1B v="maximum aiming deviation" />
 		<_1B v="maximum looking deviation" />
 		<_1B v="runtime aiming deviation cosines" />
@@ -386,16 +386,16 @@
 		<_25 v="combat idle aiming" />
 		<_3B v="" />
 	</_40>
-	<_40 v="hopping properties" item_name_1="c_character_hopping_properties_internal" item_name_2="c_character_hopping_properties_internal" item_name_3="c_character_hopping_properties_internal" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="hopping properties" item_name_1="c_character_hopping_properties_internal" item_name_2="c_character_hopping_properties_internal" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_D v="Hopping Flags">
 			<Flag v="to cover path segements" />
 			<Flag v="to end of path" />
 			<Flag v="forward only" />
 			<Flag v="force fire" />
 		</_D>
-		<_40 v="Hopping Definition" item_name_1="CharacterHopDefinitionSet" item_name_2="CharacterHopDefinitionSet" item_name_3="CharacterHopDefinitionSet" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_40 v="Hopping Definition" item_name_1="CharacterHopDefinitionSet" item_name_2="CharacterHopDefinitionSet" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_37 v="Default" />
-			<_38 v="Default" item_name_3="CharacterHopDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Default" item_name_1="CharacterHopDefinition" item_name_2="CharacterHopDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Min hop distance" />
 				<_14 v="Min hop distance to path end" />
 				<_25 v="Hop wait timer min/max" />
@@ -405,7 +405,7 @@
 			</_38>
 			<_37 v="" />
 			<_37 v="Passive" />
-			<_38 v="Passive" item_name_3="CharacterHopDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Passive" item_name_1="CharacterHopDefinition" item_name_2="CharacterHopDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Min hop distance" />
 				<_14 v="Min hop distance to path end" />
 				<_25 v="Hop wait timer min/max" />
@@ -415,7 +415,7 @@
 			</_38>
 			<_37 v="" />
 			<_37 v="Aggressive" />
-			<_38 v="Aggressive" item_name_3="CharacterHopDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Aggressive" item_name_1="CharacterHopDefinition" item_name_2="CharacterHopDefinition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Min hop distance" />
 				<_14 v="Min hop distance to path end" />
 				<_25 v="Hop wait timer min/max" />
@@ -428,10 +428,10 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="warp properties" item_name_1="c_character_warp_properties_internal" item_name_2="c_character_warp_properties_internal" item_name_3="c_character_warp_properties_internal" db1="104" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-		<_40 v="Warp Definition" item_name_1="CharacterWarpDefinitionSet" item_name_2="CharacterWarpDefinitionSet" item_name_3="CharacterWarpDefinitionSet" db1="84" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="warp properties" item_name_1="c_character_warp_properties_internal" item_name_2="c_character_warp_properties_internal" db1="104" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Warp Definition" item_name_1="CharacterWarpDefinitionSet" item_name_2="CharacterWarpDefinitionSet" db1="84" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_37 v="Default" />
-			<_38 v="Default" item_name_3="CharacterWarpDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Default" item_name_1="CharacterWarpDefinition" item_name_2="CharacterWarpDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="min warp distance" />
 				<_14 v="max warp distance" />
 				<_14 v="warp speed" />
@@ -443,7 +443,7 @@
 			</_38>
 			<_37 v="" />
 			<_37 v="Passive" />
-			<_38 v="Passive" item_name_3="CharacterWarpDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Passive" item_name_1="CharacterWarpDefinition" item_name_2="CharacterWarpDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="min warp distance" />
 				<_14 v="max warp distance" />
 				<_14 v="warp speed" />
@@ -455,7 +455,7 @@
 			</_38>
 			<_37 v="" />
 			<_37 v="Aggressive" />
-			<_38 v="Aggressive" item_name_3="CharacterWarpDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Aggressive" item_name_1="CharacterWarpDefinition" item_name_2="CharacterWarpDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="min warp distance" />
 				<_14 v="max warp distance" />
 				<_14 v="warp speed" />
@@ -473,7 +473,7 @@
 		<_41 v="Outro Effect" />
 		<_3B v="" />
 	</_40>
-	<_40 v="movement properties" item_name_1="c_character_movement_properties_internal" item_name_2="c_character_movement_properties_internal" item_name_3="c_character_movement_properties_internal" db1="192" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="movement properties" item_name_1="c_character_movement_properties_internal" item_name_2="c_character_movement_properties_internal" db1="192" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_D v="movement flags">
 			<Flag v="danger crouch allow movement" />
 			<Flag v="no side-step" />
@@ -579,7 +579,7 @@
 			<Flag v="unused8" />
 		</_D>
 		<_37 v="Throttle and inertia" />
-		<_40 v="change direction pause" item_name_1="s_character_movement_stationary_pause_settings" item_name_2="s_character_movement_stationary_pause_settings" item_name_3="s_character_movement_stationary_pause_settings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="change direction pause" item_name_1="s_character_movement_stationary_pause_settings" item_name_2="s_character_movement_stationary_pause_settings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="Inertial pause settings" />
 			<_8 v="direction change angle" />
 			<_6 v="stationary change" />
@@ -588,7 +588,7 @@
 		<_14 v="maximum throttle" />
 		<_14 v="minimum throttle" />
 		<_14 v="throttle smoothing rate" />
-		<_40 v="movement throttle control" item_name_1="s_character_movement_throttle_per_combat_status_settings" item_name_2="s_character_movement_throttle_per_combat_status_settings" item_name_3="s_character_movement_throttle_per_combat_status_settings" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="movement throttle control" item_name_1="s_character_movement_throttle_per_combat_status_settings" item_name_2="s_character_movement_throttle_per_combat_status_settings" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_B v="combat status">
 				<Flag v="asleep" />
 				<Flag v="idle" />
@@ -602,7 +602,7 @@
 				<Flag v="dangerous enemy" />
 			</_B>
 			<_34 v="generated_padd966" length="2" />
-			<_40 v="throttle settings" item_name_1="s_character_movement_throttle_control_settings" item_name_2="s_character_movement_throttle_control_settings" item_name_3="s_character_movement_throttle_control_settings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="throttle settings" item_name_1="s_character_movement_throttle_control_settings" item_name_2="s_character_movement_throttle_control_settings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="distance" />
 				<_14 v="throttle scale" />
 				<_3B v="" />
@@ -625,7 +625,7 @@
 		<_36 v="Movement Facing" />
 		<_8 v="Maximum Deviation Angle" />
 		<_37 v="" />
-		<_38 v="locomotion settings" item_name_3="CharacterLocomotionSettings" db1="16" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="2464">
+		<_38 v="locomotion settings" item_name_1="CharacterLocomotionSettings" item_name_2="CharacterLocomotionSettings" db1="16" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="2464">
 			<_37 v="Locomotion Settings" />
 			<_15 v="Sharp Turn Throttle" />
 			<_8 v="Sharp Turn Angle" />
@@ -644,7 +644,7 @@
 		<_34 v="generated_padb596" length="3" />
 		<_3B v="" />
 	</_40>
-	<_40 v="aiming-facing properties" item_name_1="c_character_AimingFacing_properties_internal" item_name_2="c_character_AimingFacing_properties_internal" item_name_3="c_character_AimingFacing_properties_internal" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="aiming-facing properties" item_name_1="c_character_AimingFacing_properties_internal" item_name_2="c_character_AimingFacing_properties_internal" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_F v="Flags">
 			<Flag v="Disallow behaviors forcing baseball runs" />
 			<Flag v="Disallow firing during 'running' phase in baseball run" />
@@ -666,10 +666,10 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="decelerated turns properties" item_name_1="c_character_DeceleratedTurns_properties_internal" item_name_2="c_character_DeceleratedTurns_properties_internal" item_name_3="c_character_DeceleratedTurns_properties_internal" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="decelerated turns properties" item_name_1="c_character_DeceleratedTurns_properties_internal" item_name_2="c_character_DeceleratedTurns_properties_internal" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_37 v="Turn Slerp Blend Table" />
 		<_37 v="Turn Slerp Blend Table Table" />
-		<_38 v="Turn Slerp Blend Table" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="Turn Slerp Blend Table" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -678,7 +678,7 @@
 		<_37 v="" />
 		<_37 v="Turn Anticipation Blend Table" />
 		<_37 v="Turn Anticipation Blend Table" />
-		<_38 v="Turn Anticipation Blend Table" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="Turn Anticipation Blend Table" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -687,7 +687,7 @@
 		<_37 v="" />
 		<_37 v="Turn Reaction Blend Table" />
 		<_37 v="Turn Reaction Blend Table" />
-		<_38 v="Turn Reaction Blend Table" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="Turn Reaction Blend Table" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -698,8 +698,8 @@
 		<_14 v="Turn reaction cosine factor" />
 		<_3B v="" />
 	</_40>
-	<_40 v="locomotion overrides" item_name_1="c_character_LocomotionOverrides_properties_internal" item_name_2="c_character_LocomotionOverrides_properties_internal" item_name_3="c_character_LocomotionOverrides_properties_internal" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
-		<_38 v="locomotion overrides" item_name_3="i343::Biped::LocomotionPropertiesDefinition" db1="144" db2="0" db3="5" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="locomotion overrides" item_name_1="c_character_LocomotionOverrides_properties_internal" item_name_2="c_character_LocomotionOverrides_properties_internal" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
+		<_38 v="locomotion overrides" item_name_1="i343::Biped::LocomotionPropertiesDefinition" item_name_2="i343::Biped::LocomotionPropertiesDefinition" db1="144" db2="0" db3="5" db4="0" db5="1" db6="0" db7="0" db8="2321">
 			<_F v="Flags">
 				<Flag v="Disable STAS (Stick-To-Authored-Samples)" />
 			</_F>
@@ -745,7 +745,7 @@
 			<_8 v="max angular velocity clamp" />
 			<_8 v="turn accel/decel rate" />
 			<_36 v="Speed/acceleration scales based on mode" />
-			<_40 v="Mode specific scaling" item_name_1="i343::Biped::ModeSpecificLocomotionScaleDefinition" item_name_2="i343::Biped::ModeSpecificLocomotionScaleDefinition" item_name_3="i343::Biped::ModeSpecificLocomotionScaleDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="Mode specific scaling" item_name_1="i343::Biped::ModeSpecificLocomotionScaleDefinition" item_name_2="i343::Biped::ModeSpecificLocomotionScaleDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 				<_2 v="mode name" />
 				<_14 v="speed scale" />
 				<_14 v="acceleration scale" />
@@ -756,7 +756,7 @@
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="movement tweak properties" item_name_1="c_character_MovementTweak_properties_internal" item_name_2="c_character_MovementTweak_properties_internal" item_name_3="c_character_MovementTweak_properties_internal" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="movement tweak properties" item_name_1="c_character_MovementTweak_properties_internal" item_name_2="c_character_MovementTweak_properties_internal" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_14 v="Dive grenade chance" />
 		<_14 v="Brace grenade chance" />
 		<_14 v="Dive vehicle chance" />
@@ -778,19 +778,19 @@
 			<Flag v="infinite" />
 		</_B>
 		<_34 v="generated_pad113f" length="2" />
-		<_40 v="Full Body Animation Jump Preventers" item_name_1="AnimationException" item_name_2="AnimationException" item_name_3="AnimationException" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Full Body Animation Jump Preventers" item_name_1="AnimationException" item_name_2="AnimationException" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Animation exception name" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="throttle styles" item_name_1="c_character_throttle_style_properties_internal" item_name_2="c_character_throttle_style_properties_internal" item_name_3="c_character_throttle_style_properties_internal" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="throttle styles" item_name_1="c_character_throttle_style_properties_internal" item_name_2="c_character_throttle_style_properties_internal" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_2 v="style name" />
 		<_15 v="desired throttle" />
 		<_14 v="acceleration time" />
-		<_38 v="acceleration function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="acceleration function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -799,9 +799,9 @@
 			<_3B v="" />
 		</_38>
 		<_14 v="deceleration distance" />
-		<_38 v="deceleration function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="deceleration function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -812,9 +812,9 @@
 		<_2 v="stance" />
 		<_3B v="" />
 	</_40>
-	<_40 v="movement sets" item_name_1="character_movement_set" item_name_2="character_movement_set" item_name_3="character_movement_set" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="movement sets" item_name_1="character_movement_set" item_name_2="character_movement_set" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="name" />
-		<_40 v="variants" item_name_1="character_movement_mapping" item_name_2="character_movement_mapping" item_name_3="character_movement_mapping" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="variants" item_name_1="character_movement_mapping" item_name_2="character_movement_mapping" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_14 v="chance" />
 			<_36 v="MAPPING" />
 			<_2 v="idle" />
@@ -837,7 +837,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="flocking properties" item_name_1="c_character_flocking_properties_internal" item_name_2="c_character_flocking_properties_internal" item_name_3="c_character_flocking_properties_internal" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="flocking properties" item_name_1="c_character_flocking_properties_internal" item_name_2="c_character_flocking_properties_internal" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="Jaime, don't touch this" />
 		<_14 v="deceleration distance" />
 		<_14 v="normalized speed" />
@@ -846,7 +846,7 @@
 		<_14 v="deceleration stop time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="swarm properties" item_name_1="c_character_swarm_properties_internal" item_name_2="c_character_swarm_properties_internal" item_name_3="c_character_swarm_properties_internal" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="swarm properties" item_name_1="c_character_swarm_properties_internal" item_name_2="c_character_swarm_properties_internal" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_5 v="scatter killed count" />
 		<_34 v="generated_pad8e1a" length="2" />
 		<_14 v="scatter radius" />
@@ -861,11 +861,11 @@
 		<_14 v="stuck distance" />
 		<_3B v="" />
 	</_40>
-	<_40 v="ready properties" item_name_1="c_character_ready_properties_internal" item_name_2="c_character_ready_properties_internal" item_name_3="c_character_ready_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="ready properties" item_name_1="c_character_ready_properties_internal" item_name_2="c_character_ready_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_25 v="ready time bounds" />
 		<_3B v="" />
 	</_40>
-	<_40 v="engage properties" item_name_1="c_character_engage_properties_internal" item_name_2="c_character_engage_properties_internal" item_name_3="c_character_engage_properties_internal" db1="136" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2353">
+	<_40 v="engage properties" item_name_1="c_character_engage_properties_internal" item_name_2="c_character_engage_properties_internal" db1="136" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2353">
 		<_D v="flags">
 			<Flag v="defend threat axis " />
 			<Flag v="fight constant movement" />
@@ -902,7 +902,7 @@
 		<_14 v="TeamLead flocking distance" />
 		<_14 v="Enemy avoid distance" />
 		<_14 v="Scary enemy avoid distance" />
-		<_40 v="Full Body Animation Exceptions for Firing Reset" item_name_1="AnimationException" item_name_2="AnimationException" item_name_3="AnimationException" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Full Body Animation Exceptions for Firing Reset" item_name_1="AnimationException" item_name_2="AnimationException" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Animation exception name" />
 			<_3B v="" />
 		</_40>
@@ -910,7 +910,7 @@
 		<_8 v="Max angle from level" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Berserk Properties" item_name_1="c_character_Berserk_properties_internal" item_name_2="c_character_Berserk_properties_internal" item_name_3="c_character_Berserk_properties_internal" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="Berserk Properties" item_name_1="c_character_Berserk_properties_internal" item_name_2="c_character_Berserk_properties_internal" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_D v="Flags">
 			<Flag v="Don't use the berserk anim stance" />
 			<Flag v="Don't stow weapon" />
@@ -937,14 +937,14 @@
 		<_14 v="Proximity abort distance" />
 		<_15 v="Broken kamikaze chance" />
 		<_15 v="Surprise kamikaze chance" />
-		<_40 v="Kamikaze attachment Markers" item_name_1="KamikazeAttachmentMarkers" item_name_2="KamikazeAttachmentMarkers" item_name_3="KamikazeAttachmentMarkers" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Kamikaze attachment Markers" item_name_1="KamikazeAttachmentMarkers" item_name_2="KamikazeAttachmentMarkers" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Attachment Marker" />
 			<_3B v="" />
 		</_40>
 		<_14 v="Broken Kamikaze stuck delay" />
 		<_14 v="Max kamikaze time" />
 		<_14 v="Last man trigger distance" />
-		<_40 v="Difficulty limits" item_name_1="character_charge_difficulty_limits" item_name_2="character_charge_difficulty_limits" item_name_3="character_charge_difficulty_limits" db1="6" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Difficulty limits" item_name_1="character_charge_difficulty_limits" item_name_2="character_charge_difficulty_limits" db1="6" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="Difficulty Limits" />
 			<_5 v="max kamikaze count" />
 			<_5 v="max berserk count" />
@@ -953,7 +953,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Weapon Pickup Properties" item_name_1="c_character_WeaponPickup_properties_internal" item_name_2="c_character_WeaponPickup_properties_internal" item_name_3="c_character_WeaponPickup_properties_internal" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+	<_40 v="Weapon Pickup Properties" item_name_1="c_character_WeaponPickup_properties_internal" item_name_2="c_character_WeaponPickup_properties_internal" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 		<_14 v="Search range" />
 		<_14 v="Minimum target range" />
 		<_14 v="Range threshold" />
@@ -969,7 +969,7 @@
 		<_3B v="" />
 	</_40>
 	<_36 v="Danger Values" />
-	<_40 v="evasion properties" item_name_1="c_character_evasion_properties_internal" item_name_2="c_character_evasion_properties_internal" item_name_3="c_character_evasion_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+	<_40 v="evasion properties" item_name_1="c_character_evasion_properties_internal" item_name_2="c_character_evasion_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 		<_14 v="Evasion danger threshold" />
 		<_14 v="Evasion delay timer" />
 		<_14 v="Evasion chance" />
@@ -977,21 +977,21 @@
 		<_14 v="dive retreat chance" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Dodge properties" item_name_1="c_character_dodge_properties_internal" item_name_2="c_character_dodge_properties_internal" item_name_3="c_character_dodge_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Dodge properties" item_name_1="c_character_dodge_properties_internal" item_name_2="c_character_dodge_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Danger threshold" />
 		<_14 v="Cooldown" />
 		<_14 v="Chance" />
 		<_14 v="Stop proximity" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Run Away From Vehicle properties" item_name_1="CharacterRunAwayFromVehiclePropertiesInternal" item_name_2="CharacterRunAwayFromVehiclePropertiesInternal" item_name_3="CharacterRunAwayFromVehiclePropertiesInternal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Run Away From Vehicle properties" item_name_1="CharacterRunAwayFromVehiclePropertiesInternal" item_name_2="CharacterRunAwayFromVehiclePropertiesInternal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Chance" />
 		<_14 v="Minimum time to flee" />
 		<_14 v="Time to flee" />
 		<_14 v="Time to keep path" />
 		<_3B v="" />
 	</_40>
-	<_40 v="cover properties" item_name_1="c_character_cover_properties_internal" item_name_2="c_character_cover_properties_internal" item_name_3="c_character_cover_properties_internal" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="cover properties" item_name_1="c_character_cover_properties_internal" item_name_2="c_character_cover_properties_internal" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_D v="cover flags">
 			<Flag v="Dive To cover" />
 			<Flag v="Reject Visible Points" />
@@ -1020,7 +1020,7 @@
 		<_14 v="Minimum enemy distance" />
 		<_3B v="" />
 	</_40>
-	<_40 v="retreat properties" item_name_1="c_character_retreat_properties_internal" item_name_2="c_character_retreat_properties_internal" item_name_3="c_character_retreat_properties_internal" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="retreat properties" item_name_1="c_character_retreat_properties_internal" item_name_2="c_character_retreat_properties_internal" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_D v="Retreat flags">
 			<Flag v="Zig-zag when fleeing" />
 			<Flag v="Unused1" />
@@ -1042,7 +1042,7 @@
 		<_14 v="retreat grenade chance" />
 		<_3B v="" />
 	</_40>
-	<_40 v="search properties" item_name_1="c_character_search_properties_internal" item_name_2="c_character_search_properties_internal" item_name_3="c_character_search_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="search properties" item_name_1="c_character_search_properties_internal" item_name_2="c_character_search_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_D v="Search flags">
 			<Flag v="crouch on investigate" />
 			<Flag v="walk on pursuit" />
@@ -1059,7 +1059,7 @@
 		<_25 v="vocalization time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="pre-search properties" item_name_1="c_character_presearch_properties_internal" item_name_2="c_character_presearch_properties_internal" item_name_3="c_character_presearch_properties_internal" db1="88" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="pre-search properties" item_name_1="c_character_presearch_properties_internal" item_name_2="c_character_presearch_properties_internal" db1="88" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_D v="Pre-search flags">
 			<Flag v="Flag1" />
 		</_D>
@@ -1085,19 +1085,19 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Recognizing Properties" item_name_1="CharacterRecognizingPropertiesInternal" item_name_2="CharacterRecognizingPropertiesInternal" item_name_3="CharacterRecognizingPropertiesInternal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Recognizing Properties" item_name_1="CharacterRecognizingPropertiesInternal" item_name_2="CharacterRecognizingPropertiesInternal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_36 v="Recognizing" />
 		<_14 v="Recognize min time" />
 		<_14 v="Recognize max time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="idle properties" item_name_1="c_character_idle_properties_internal" item_name_2="c_character_idle_properties_internal" item_name_3="c_character_idle_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="idle properties" item_name_1="c_character_idle_properties_internal" item_name_2="c_character_idle_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_25 v="idle pose delay time" />
 		<_25 v="wander delay time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Precombat Properties" item_name_1="c_character_precombat_properties_internal" item_name_2="c_character_precombat_properties_internal" item_name_3="c_character_precombat_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-		<_40 v="Systematic Recreation Settings" item_name_1="SystematicRecreationSettings" item_name_2="SystematicRecreationSettings" item_name_3="SystematicRecreationSettings" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Precombat Properties" item_name_1="c_character_precombat_properties_internal" item_name_2="c_character_precombat_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Systematic Recreation Settings" item_name_1="SystematicRecreationSettings" item_name_2="SystematicRecreationSettings" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Required Weapon Class" />
 			<_25 v="Cooldown" />
 			<_25 v="Duration" />
@@ -1105,7 +1105,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="vocalization properties" item_name_1="c_character_vocalization_properties_internal" item_name_2="c_character_vocalization_properties_internal" item_name_3="c_character_vocalization_properties_internal" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="vocalization properties" item_name_1="c_character_vocalization_properties_internal" item_name_2="c_character_vocalization_properties_internal" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_36 v="Skip Fraction" />
 		<_14 v="character skip fraction" />
 		<_14 v="speaker weight bonus" />
@@ -1117,7 +1117,7 @@
 		<_14 v="look respond early out time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="boarding properties" item_name_1="c_character_boarding_properties_internal" item_name_2="c_character_boarding_properties_internal" item_name_3="c_character_boarding_properties_internal" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="boarding properties" item_name_1="c_character_boarding_properties_internal" item_name_2="c_character_boarding_properties_internal" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_2 v="rule name" />
 		<_D v="flags">
 			<Flag v="airborne boarding" />
@@ -1129,14 +1129,14 @@
 		<_14 v="max speed" />
 		<_14 v="board time" />
 		<_25 v="boarding timeout" />
-		<_40 v="vehicle specific properties" item_name_1="s_character_vehicle_boarding_properties" item_name_2="s_character_vehicle_boarding_properties" item_name_3="s_character_vehicle_boarding_properties" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="vehicle specific properties" item_name_1="s_character_vehicle_boarding_properties" item_name_2="s_character_vehicle_boarding_properties" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="vehicle" />
 			<_D v="flags">
 				<Flag v="boarding does not enter seat" />
 			</_D>
 			<_3B v="" />
 		</_40>
-		<_40 v="vehicle specific pull properties" item_name_1="CharacterVehicleBoardingPullProperties" item_name_2="CharacterVehicleBoardingPullProperties" item_name_3="CharacterVehicleBoardingPullProperties" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_40 v="vehicle specific pull properties" item_name_1="CharacterVehicleBoardingPullProperties" item_name_2="CharacterVehicleBoardingPullProperties" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_41 v="vehicle" />
 			<_14 v="max pull" />
 			<_14 v="min linear acceleration" />
@@ -1156,19 +1156,19 @@
 		<_25 v="melee cooldown" />
 		<_3B v="" />
 	</_40>
-	<_40 v="kungfu properties" item_name_1="c_character_kungfu_properties_internal" item_name_2="c_character_kungfu_properties_internal" item_name_3="c_character_kungfu_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="kungfu properties" item_name_1="c_character_kungfu_properties_internal" item_name_2="c_character_kungfu_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="kungfu override distance" />
 		<_14 v="kungfu cover danger threshold" />
 		<_14 v="Min Allowed Time" />
 		<_14 v="Min Disallowed Time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="bunker properties" item_name_1="c_character_bunker_properties_internal" item_name_2="c_character_bunker_properties_internal" item_name_3="c_character_bunker_properties_internal" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="bunker properties" item_name_1="c_character_bunker_properties_internal" item_name_2="c_character_bunker_properties_internal" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_D v="Flags">
 			<Flag v="No Bunker During Guard" />
 		</_D>
 		<_36 v="DEFAULT TIMINGS" />
-		<_38 v="default" item_name_3="s_bunker_timings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="default" item_name_1="s_bunker_timings" item_name_2="s_bunker_timings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_25 v="open time" />
 			<_14 v="closed min time" />
 			<_14 v="close danger level" />
@@ -1177,7 +1177,7 @@
 			<_3B v="" />
 		</_38>
 		<_36 v="FIGHT TIMINGS" />
-		<_38 v="fight" item_name_3="s_bunker_timings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="fight" item_name_1="s_bunker_timings" item_name_2="s_bunker_timings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_25 v="open time" />
 			<_14 v="closed min time" />
 			<_14 v="close danger level" />
@@ -1186,7 +1186,7 @@
 			<_3B v="" />
 		</_38>
 		<_36 v="COVER TIMINGS" />
-		<_38 v="cover" item_name_3="s_bunker_timings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="cover" item_name_1="s_bunker_timings" item_name_2="s_bunker_timings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_25 v="open time" />
 			<_14 v="closed min time" />
 			<_14 v="close danger level" />
@@ -1195,7 +1195,7 @@
 			<_3B v="" />
 		</_38>
 		<_36 v="GUARD TIMINGS" />
-		<_38 v="guard" item_name_3="s_bunker_timings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="guard" item_name_1="s_bunker_timings" item_name_2="s_bunker_timings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_25 v="open time" />
 			<_14 v="closed min time" />
 			<_14 v="close danger level" />
@@ -1205,12 +1205,12 @@
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="shield wall properties" item_name_1="c_character_shield_wall_properties_internal" item_name_2="c_character_shield_wall_properties_internal" item_name_3="c_character_shield_wall_properties_internal" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
+	<_40 v="shield wall properties" item_name_1="c_character_shield_wall_properties_internal" item_name_2="c_character_shield_wall_properties_internal" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
 		<_14 v="Raise Shield Delay" />
 		<_14 v="Relocate Delay" />
 		<_14 v="Max Leader Protect Distance" />
 		<_37 v="Formation" />
-		<_38 v="Formation Description" item_name_3="i343::AI::FormationDescription" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_38 v="Formation Description" item_name_1="i343::AI::FormationDescription" item_name_2="i343::AI::FormationDescription" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_36 v="Procedural" />
 			<_C v="Shape">
 				<Flag v="None" />
@@ -1232,7 +1232,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="firing wall properties" item_name_1="c_character_firing_wall_properties_internal" item_name_2="c_character_firing_wall_properties_internal" item_name_3="c_character_firing_wall_properties_internal" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2355">
+	<_40 v="firing wall properties" item_name_1="c_character_firing_wall_properties_internal" item_name_2="c_character_firing_wall_properties_internal" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2355">
 		<_37 v="Activation Chance" />
 		<_15 v="Activation Chance (easy)" />
 		<_15 v="Activation Chance (normal)" />
@@ -1252,7 +1252,7 @@
 		<_14 v="Max Departure Time Variation" />
 		<_8 v="Max Angle Between Formation and Target" />
 		<_37 v="Formation" />
-		<_38 v="Formation Description" item_name_3="i343::AI::FormationDescription" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_38 v="Formation Description" item_name_1="i343::AI::FormationDescription" item_name_2="i343::AI::FormationDescription" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_36 v="Procedural" />
 			<_C v="Shape">
 				<Flag v="None" />
@@ -1274,19 +1274,19 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Interpose Request Properties" item_name_1="CharacterInterposeRequestPropertiesInternal" item_name_2="CharacterInterposeRequestPropertiesInternal" item_name_3="CharacterInterposeRequestPropertiesInternal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Interpose Request Properties" item_name_1="CharacterInterposeRequestPropertiesInternal" item_name_2="CharacterInterposeRequestPropertiesInternal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Danger Level" />
 		<_25 v="Wait Time" />
 		<_14 v="Cooldown" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Interpose Properties" item_name_1="CharacterInterposePropertiesInternal" item_name_2="CharacterInterposePropertiesInternal" item_name_3="CharacterInterposePropertiesInternal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+	<_40 v="Interpose Properties" item_name_1="CharacterInterposePropertiesInternal" item_name_2="CharacterInterposePropertiesInternal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 		<_25 v="Protect Time" />
 		<_14 v="Distance from Protect" />
 		<_2 v="Firing Style" />
 		<_3B v="" />
 	</_40>
-	<_40 v="bounding properties" item_name_1="c_character_bounding_properties_internal" item_name_2="c_character_bounding_properties_internal" item_name_3="c_character_bounding_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="bounding properties" item_name_1="c_character_bounding_properties_internal" item_name_2="c_character_bounding_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Max Wait Time" />
 		<_14 v="Advance Time" />
 		<_14 v="Reposition Search Range" />
@@ -1295,9 +1295,9 @@
 		<_34 v="generated_pada6c0" length="3" />
 		<_3B v="" />
 	</_40>
-	<_40 v="projectile deflection properties" item_name_1="c_character_deflection_properties_internal" item_name_2="c_character_deflection_properties_internal" item_name_3="c_character_deflection_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="projectile deflection properties" item_name_1="c_character_deflection_properties_internal" item_name_2="c_character_deflection_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_36 v="Deflection areas" />
-		<_40 v="Target Areas" item_name_1="ProjectileDeflectionZone" item_name_2="ProjectileDeflectionZone" item_name_3="ProjectileDeflectionZone" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Target Areas" item_name_1="ProjectileDeflectionZone" item_name_2="ProjectileDeflectionZone" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_25 v="Time to Target Window" />
 			<_19 v="Target Offset" />
 			<_14 v="Target Radius" />
@@ -1307,7 +1307,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Bot Properties" item_name_1="c_character_bot_properties_internal" item_name_2="c_character_bot_properties_internal" item_name_3="c_character_bot_properties_internal" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Bot Properties" item_name_1="c_character_bot_properties_internal" item_name_2="c_character_bot_properties_internal" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_D v="movement flags">
 			<Flag v="crouch" />
 			<Flag v="jump" />
@@ -1327,7 +1327,7 @@
 		<_14 v="movement cooldown max" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Evasive Fight Properties" item_name_1="c_character_EvasiveFight_properties_internal" item_name_2="c_character_EvasiveFight_properties_internal" item_name_3="c_character_EvasiveFight_properties_internal" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Evasive Fight Properties" item_name_1="c_character_EvasiveFight_properties_internal" item_name_2="c_character_EvasiveFight_properties_internal" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="Engage Fraction" />
 		<_25 v="Stationary Time" />
 		<_14 v="Move Danger Threshold" />
@@ -1337,7 +1337,7 @@
 		<_14 v="Dive Danger Threshold" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Aggressive Fight Properties" item_name_1="c_character_AggressiveFight_properties_internal" item_name_2="c_character_AggressiveFight_properties_internal" item_name_3="c_character_AggressiveFight_properties_internal" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Aggressive Fight Properties" item_name_1="c_character_AggressiveFight_properties_internal" item_name_2="c_character_AggressiveFight_properties_internal" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_F v="Flags">
 			<Flag v="Ignore lower bound when target advancing" />
 			<Flag v="Face exactly" />
@@ -1349,30 +1349,30 @@
 		<_14 v="Max Speed Percent" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Linear Advance Fight Properties" item_name_1="c_character_LinearAdvanceFight_properties_internal" item_name_2="c_character_LinearAdvanceFight_properties_internal" item_name_3="c_character_LinearAdvanceFight_properties_internal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Linear Advance Fight Properties" item_name_1="c_character_LinearAdvanceFight_properties_internal" item_name_2="c_character_LinearAdvanceFight_properties_internal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_25 v="Stationary Time" />
 		<_14 v="Advance Distance" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Static Fight Properties" item_name_1="CharacterStaticFightPropertiesInternal" item_name_2="CharacterStaticFightPropertiesInternal" item_name_3="CharacterStaticFightPropertiesInternal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Static Fight Properties" item_name_1="CharacterStaticFightPropertiesInternal" item_name_2="CharacterStaticFightPropertiesInternal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_25 v="Stationary Time" />
 		<_14 v="Danger Move Threshold" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Stand Ground Properties" item_name_1="CharacterStandGroundPropertiesInternal" item_name_2="CharacterStandGroundPropertiesInternal" item_name_3="CharacterStandGroundPropertiesInternal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Stand Ground Properties" item_name_1="CharacterStandGroundPropertiesInternal" item_name_2="CharacterStandGroundPropertiesInternal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_25 v="Target Distance" />
 		<_14 v="Ally Distance" />
 		<_14 v="Ally Attacker Distance" />
 		<_14 v="Behavior Linger Time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Grenade Fight Properties" item_name_1="CharacterGrenadeFightPropertiesInternal" item_name_2="CharacterGrenadeFightPropertiesInternal" item_name_3="CharacterGrenadeFightPropertiesInternal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Grenade Fight Properties" item_name_1="CharacterGrenadeFightPropertiesInternal" item_name_2="CharacterGrenadeFightPropertiesInternal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_25 v="Stationary Time" />
 		<_14 v="Minimum Movement" />
 		<_15 v="Ideal Fraction" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Cover Sequence Properties" item_name_1="c_character_CoverSequence_properties_internal" item_name_2="c_character_CoverSequence_properties_internal" item_name_3="c_character_CoverSequence_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Cover Sequence Properties" item_name_1="c_character_CoverSequence_properties_internal" item_name_2="c_character_CoverSequence_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="Shield Start Threshold" />
 		<_14 v="Shield End Threshold" />
 		<_14 v="Danger Start Threshold" />
@@ -1380,18 +1380,18 @@
 		<_14 v="Minimum Hide Duration" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Cover Move Properties" item_name_1="c_character_CoverMove_properties_internal" item_name_2="c_character_CoverMove_properties_internal" item_name_3="c_character_CoverMove_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Cover Move Properties" item_name_1="c_character_CoverMove_properties_internal" item_name_2="c_character_CoverMove_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_D v="Flags">
 			<Flag v="Dive to Cover" />
 		</_D>
 		<_14 v="Cover Failed Duration" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Cover Hide Properties" item_name_1="c_character_CoverHide_properties_internal" item_name_2="c_character_CoverHide_properties_internal" item_name_3="c_character_CoverHide_properties_internal" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Cover Hide Properties" item_name_1="c_character_CoverHide_properties_internal" item_name_2="c_character_CoverHide_properties_internal" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="Minimum Hide Duration" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Long Range Attack Properties" item_name_1="c_character_LongRangeAttack_properties_internal" item_name_2="c_character_LongRangeAttack_properties_internal" item_name_3="c_character_LongRangeAttack_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Long Range Attack Properties" item_name_1="c_character_LongRangeAttack_properties_internal" item_name_2="c_character_LongRangeAttack_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_D v="Flags">
 			<Flag v="Take potshots while running" />
 			<Flag v="Do not take cover" />
@@ -1401,24 +1401,24 @@
 		<_14 v="Time between potshots" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Hoist Attack Properties" item_name_1="c_character_HoistAttack_properties_internal" item_name_2="c_character_HoistAttack_properties_internal" item_name_3="c_character_HoistAttack_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Hoist Attack Properties" item_name_1="c_character_HoistAttack_properties_internal" item_name_2="c_character_HoistAttack_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Max Danger Threshold" />
 		<_14 v="Hoist Attack Chance" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Hunker Down Properties" item_name_1="c_character_HunkerDown_properties_internal" item_name_2="c_character_HunkerDown_properties_internal" item_name_3="c_character_HunkerDown_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Hunker Down Properties" item_name_1="c_character_HunkerDown_properties_internal" item_name_2="c_character_HunkerDown_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Danger Start Threshold" />
 		<_14 v="Distance Abort Threshold" />
 		<_15 v="Shield Health Threshold" />
 		<_25 v="Hunker Time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Shield Raise Properties" item_name_1="c_character_ShieldRaise_properties_internal" item_name_2="c_character_ShieldRaise_properties_internal" item_name_3="c_character_ShieldRaise_properties_internal" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Shield Raise Properties" item_name_1="c_character_ShieldRaise_properties_internal" item_name_2="c_character_ShieldRaise_properties_internal" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Danger Threshold" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Vehicle Aggressive Fight Properties" item_name_1="c_character_VehicleAggressiveFight_properties_internal" item_name_2="c_character_VehicleAggressiveFight_properties_internal" item_name_3="c_character_VehicleAggressiveFight_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
-		<_38 v="Fight Properties" item_name_3="SharedVehicleFightProperties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Vehicle Aggressive Fight Properties" item_name_1="c_character_VehicleAggressiveFight_properties_internal" item_name_2="c_character_VehicleAggressiveFight_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="Fight Properties" item_name_1="SharedVehicleFightProperties" item_name_2="SharedVehicleFightProperties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_15 v="Engage Fraction" />
 			<_14 v="Max Speed Percent" />
 			<_3B v="" />
@@ -1429,15 +1429,15 @@
 		<_14 v="Max Danger to Boost" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Vehicle Defensive Fight Properties" item_name_1="c_character_VehicleDefensiveFight_properties_internal" item_name_2="c_character_VehicleDefensiveFight_properties_internal" item_name_3="c_character_VehicleDefensiveFight_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-		<_38 v="Fight Properties" item_name_3="SharedVehicleFightProperties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Vehicle Defensive Fight Properties" item_name_1="c_character_VehicleDefensiveFight_properties_internal" item_name_2="c_character_VehicleDefensiveFight_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_38 v="Fight Properties" item_name_1="SharedVehicleFightProperties" item_name_2="SharedVehicleFightProperties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_15 v="Engage Fraction" />
 			<_14 v="Max Speed Percent" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="engineer properties" item_name_1="c_character_engineer_properties_internal" item_name_2="c_character_engineer_properties_internal" item_name_3="c_character_engineer_properties_internal" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="engineer properties" item_name_1="c_character_engineer_properties_internal" item_name_2="c_character_engineer_properties_internal" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_14 v="death height" />
 		<_14 v="death rise time" />
 		<_14 v="death detonation time" />
@@ -1452,13 +1452,13 @@
 		<_41 v="proximity equipment" />
 		<_3B v="" />
 	</_40>
-	<_40 v="inspect properties" item_name_1="c_character_inspect_properties_internal" item_name_2="c_character_inspect_properties_internal" item_name_3="c_character_inspect_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="inspect properties" item_name_1="c_character_inspect_properties_internal" item_name_2="c_character_inspect_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="stop distance" />
 		<_25 v="inspect time" />
 		<_25 v="search range" />
 		<_3B v="" />
 	</_40>
-	<_40 v="vehicle entrance properties" item_name_1="c_character_VehicleEntranceExit_properties_internal" item_name_2="c_character_VehicleEntranceExit_properties_internal" item_name_3="c_character_VehicleEntranceExit_properties_internal" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="vehicle entrance properties" item_name_1="c_character_VehicleEntranceExit_properties_internal" item_name_2="c_character_VehicleEntranceExit_properties_internal" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Max Distance From Actor" />
 		<_14 v="Minimum Distance From Player" />
 		<_14 v="Minimum Distance From Vehicle" />
@@ -1473,7 +1473,7 @@
 		<_14 v="Vehicle Exit Impulse Timer" />
 		<_3B v="" />
 	</_40>
-	<_40 v="test-only weapons properties" item_name_1="CharacterPrototypeWeaponPropertiesInternal" item_name_2="CharacterPrototypeWeaponPropertiesInternal" item_name_3="CharacterPrototypeWeaponPropertiesInternal" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+	<_40 v="test-only weapons properties" item_name_1="CharacterPrototypeWeaponPropertiesInternal" item_name_2="CharacterPrototypeWeaponPropertiesInternal" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 		<_41 v="weapon" />
 		<_36 v="Weapon drop when killed" />
 		<_25 v="drop weapon loaded" />
@@ -1486,7 +1486,7 @@
 		<_14 v="heroic accuracy time" />
 		<_25 v="legendary accuracy bounds" />
 		<_14 v="legendary accuracy time" />
-		<_40 v="weapon preferences" item_name_1="CharacterWeaponPreferences" item_name_2="CharacterWeaponPreferences" item_name_3="CharacterWeaponPreferences" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="weapon preferences" item_name_1="CharacterWeaponPreferences" item_name_2="CharacterWeaponPreferences" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Tier Category">
 				<Flag v="Low" />
 				<Flag v="Medium" />
@@ -1497,7 +1497,7 @@
 			<_6 v="Multi-Tier Multiplier" />
 			<_3B v="" />
 		</_40>
-		<_40 v="weapon modes" item_name_1="CharacterWeaponMode" item_name_2="CharacterWeaponMode" item_name_3="CharacterWeaponMode" db1="248" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_40 v="weapon modes" item_name_1="CharacterWeaponMode" item_name_2="CharacterWeaponMode" db1="248" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_2 v="mode name" />
 			<_D v="weapons flags">
 				<Flag v="bursting inhibits movement" />
@@ -1558,7 +1558,7 @@
 			<_14 v="Max Pre-Fire Time (Normal)" />
 			<_14 v="Max Pre-Fire Time (Heroic)" />
 			<_14 v="Max Pre-Fire Time (Legendary)" />
-			<_40 v="selection properties" item_name_1="CharacterWeaponModeSelector" item_name_2="CharacterWeaponModeSelector" item_name_3="CharacterWeaponModeSelector" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="selection properties" item_name_1="CharacterWeaponModeSelector" item_name_2="CharacterWeaponModeSelector" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_D v="Initiators">
 					<Flag v="Target Biped" />
 					<Flag v="Target Vehicle" />
@@ -1601,7 +1601,7 @@
 			</_A>
 			<_34 v="generated_pad89d5" length="3" />
 			<_14 v="Effectiveness Token Close Player Distance" />
-			<_40 v="Firing Program" item_name_1="CharacterFiringProgram" item_name_2="CharacterFiringProgram" item_name_3="CharacterFiringProgram" db1="196" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Firing Program" item_name_1="CharacterFiringProgram" item_name_2="CharacterFiringProgram" db1="196" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_36 v="Precision" />
 				<_37 v="Target Position" />
 				<_26 v="Tracking" />
@@ -1647,7 +1647,7 @@
 				<_3B v="" />
 			</_40>
 			<_36 v="Unit Target Preference" />
-			<_40 v="Unit Target Preference" item_name_1="CharacterWeaponUnitTargeting" item_name_2="CharacterWeaponUnitTargeting" item_name_3="CharacterWeaponUnitTargeting" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_40 v="Unit Target Preference" item_name_1="CharacterWeaponUnitTargeting" item_name_2="CharacterWeaponUnitTargeting" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 				<_A v="Category">
 					<Flag v="Chassis" />
 					<Flag v="Traversal" />
@@ -1659,18 +1659,18 @@
 				<_34 v="generated_pad0052" length="3" />
 				<_14 v="Preference" />
 				<_36 v="Vehicle Velocity Targeting Prefernces" />
-				<_40 v="Vehicle Velocity Based Targeting" item_name_1="VehicleVelocityTargeting" item_name_2="VehicleVelocityTargeting" item_name_3="VehicleVelocityTargeting" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_40 v="Vehicle Velocity Based Targeting" item_name_1="VehicleVelocityTargeting" item_name_2="VehicleVelocityTargeting" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_14 v="Vehicle Velocity Override Preference" />
 					<_14 v="Velocity Threshold" />
 					<_3B v="" />
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="Prefire Beam" item_name_1="CharacterWeaponModePrefireBeam" item_name_2="CharacterWeaponModePrefireBeam" item_name_3="CharacterWeaponModePrefireBeam" db1="116" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_40 v="Prefire Beam" item_name_1="CharacterWeaponModePrefireBeam" item_name_2="CharacterWeaponModePrefireBeam" db1="116" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_8 v="initial error angle" />
 				<_36 v="Radius Decay" />
 				<_37 v="radius decay function" />
-				<_38 v="radius decay function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="radius decay function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -1678,7 +1678,7 @@
 				</_38>
 				<_36 v="Beam Spin" />
 				<_37 v="beam spin function" />
-				<_38 v="beam spin function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="beam spin function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -1695,7 +1695,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="firing styles" item_name_1="PrototypeCharacterStyle" item_name_2="PrototypeCharacterStyle" item_name_3="PrototypeCharacterStyle" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="firing styles" item_name_1="PrototypeCharacterStyle" item_name_2="PrototypeCharacterStyle" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="style name" />
 		<_14 v="precision" />
 		<_14 v="hostility" />
@@ -1703,7 +1703,7 @@
 		<_26 v="Hostility Range" />
 		<_3B v="" />
 	</_40>
-	<_40 v="grenades properties" item_name_1="c_character_grenade_properties_internal" item_name_2="c_character_grenade_properties_internal" item_name_3="c_character_grenade_properties_internal" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+	<_40 v="grenades properties" item_name_1="c_character_grenade_properties_internal" item_name_2="c_character_grenade_properties_internal" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 		<_D v="grenades flags">
 			<Flag v="do not throw while bunkering" />
 			<Flag v="allow while berserking" />
@@ -1753,7 +1753,7 @@
 		<_14 v="dont drop grenades chance" />
 		<_3B v="" />
 	</_40>
-	<_40 v="vehicle properties" item_name_1="c_character_vehicle_properties_internal" item_name_2="c_character_vehicle_properties_internal" item_name_3="c_character_vehicle_properties_internal" db1="552" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="vehicle properties" item_name_1="c_character_vehicle_properties_internal" item_name_2="c_character_vehicle_properties_internal" db1="552" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_41 v="unit" />
 		<_41 v="style" />
 		<_41 v="Behavior Tree" />
@@ -1852,26 +1852,26 @@
 		<_14 v="turtling recent damage threshold" />
 		<_14 v="turtling min time" />
 		<_14 v="turtling timeout" />
-		<_40 v="Vehicle Strafing Properties" item_name_1="VehicleStrafingProperties" item_name_2="VehicleStrafingProperties" item_name_3="VehicleStrafingProperties" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Vehicle Strafing Properties" item_name_1="VehicleStrafingProperties" item_name_2="VehicleStrafingProperties" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="strafe min distance" />
 			<_14 v="strafe abort distance" />
 			<_14 v="defensive strafe abort distance" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Vehicle Flying Holding Pattern Properties" item_name_1="VehicleFlyingHoldingPatternProperties" item_name_2="VehicleFlyingHoldingPatternProperties" item_name_3="VehicleFlyingHoldingPatternProperties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Vehicle Flying Holding Pattern Properties" item_name_1="VehicleFlyingHoldingPatternProperties" item_name_2="VehicleFlyingHoldingPatternProperties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="holding pattern elevation" />
 			<_15 v="holding pattern speed percentage" />
 			<_14 v="holding pattern radius" />
 			<_15 v="max turn angle percentage" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Vehicle Flying Preengage Properties" item_name_1="VehicleFlyingPreengageProperties" item_name_2="VehicleFlyingPreengageProperties" item_name_3="VehicleFlyingPreengageProperties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Vehicle Flying Preengage Properties" item_name_1="VehicleFlyingPreengageProperties" item_name_2="VehicleFlyingPreengageProperties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_25 v="pre engage time" />
 			<_14 v="pre engage elevation" />
 			<_14 v="pre engage radius" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Vehicle Flying Suppressed Properties" item_name_1="VehicleFlyingSuppressedProperties" item_name_2="VehicleFlyingSuppressedProperties" item_name_3="VehicleFlyingSuppressedProperties" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Vehicle Flying Suppressed Properties" item_name_1="VehicleFlyingSuppressedProperties" item_name_2="VehicleFlyingSuppressedProperties" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_25 v="suppressed time" />
 			<_14 v="suppressed damage threshold" />
 			<_14 v="suppressed retreat distance" />
@@ -1879,15 +1879,15 @@
 			<_14 v="suppressed radius" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Vehicle Flying Aggressive Engage Properties" item_name_1="VehicleFlyingAggressiveEngageProperties" item_name_2="VehicleFlyingAggressiveEngageProperties" item_name_3="VehicleFlyingAggressiveEngageProperties" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Vehicle Flying Aggressive Engage Properties" item_name_1="VehicleFlyingAggressiveEngageProperties" item_name_2="VehicleFlyingAggressiveEngageProperties" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_23 v="aggressive loops" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Vehicle Flying Defensive Engage Properties" item_name_1="VehicleFlyingDefensiveEngageProperties" item_name_2="VehicleFlyingDefensiveEngageProperties" item_name_3="VehicleFlyingDefensiveEngageProperties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Vehicle Flying Defensive Engage Properties" item_name_1="VehicleFlyingDefensiveEngageProperties" item_name_2="VehicleFlyingDefensiveEngageProperties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_25 v="defensive time" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Vehicle Flying Fallback Properties" item_name_1="VehicleFlyingFallbackProperties" item_name_2="VehicleFlyingFallbackProperties" item_name_3="VehicleFlyingFallbackProperties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Vehicle Flying Fallback Properties" item_name_1="VehicleFlyingFallbackProperties" item_name_2="VehicleFlyingFallbackProperties" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_25 v="combat elevation" />
 			<_14 v="fallback minimum distance" />
 			<_14 v="flyby distance" />
@@ -1904,7 +1904,7 @@
 		<_34 v="generated_pad354a" length="2" />
 		<_3B v="" />
 	</_40>
-	<_40 v="flying movement properties" item_name_1="c_character_flying_movement_properties_internal" item_name_2="c_character_flying_movement_properties_internal" item_name_3="c_character_flying_movement_properties_internal" db1="244" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_40 v="flying movement properties" item_name_1="c_character_flying_movement_properties_internal" item_name_2="c_character_flying_movement_properties_internal" db1="244" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_41 v="vehicle" />
 		<_37 v="Default Values" />
 		<_36 v="Vector Weights" />
@@ -1966,7 +1966,7 @@
 		<_25 v="Dodge Timeout" />
 		<_3B v="" />
 	</_40>
-	<_40 v="equipment definitions" item_name_1="character_equipment_definition" item_name_2="character_equipment_definition" item_name_3="character_equipment_definition" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="equipment definitions" item_name_1="character_equipment_definition" item_name_2="character_equipment_definition" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_36 v="Equipment" />
 		<_41 v="equipment" />
 		<_D v="flags">
@@ -1974,9 +1974,9 @@
 		</_D>
 		<_14 v="relative drop chance" />
 		<_2 v="Animation" />
-		<_40 v="equipment use" item_name_1="CharacterEquipmentUsage" item_name_2="CharacterEquipmentUsage" item_name_3="CharacterEquipmentUsage" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="equipment use" item_name_1="CharacterEquipmentUsage" item_name_2="CharacterEquipmentUsage" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_36 v="Equipment Use" />
-			<_40 v="Use Conditions" item_name_1="CharacterEquipmentUseConditions" item_name_2="CharacterEquipmentUseConditions" item_name_3="CharacterEquipmentUseConditions" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Use Conditions" item_name_1="CharacterEquipmentUseConditions" item_name_2="CharacterEquipmentUseConditions" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_36 v="Use Conditions" />
 				<_B v="use when">
 					<Flag v="combat" />
@@ -2014,14 +2014,14 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="stimuli responses" item_name_1="s_character_stimuli_response_definition" item_name_2="s_character_stimuli_response_definition" item_name_3="s_character_stimuli_response_definition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="305">
+	<_40 v="stimuli responses" item_name_1="s_character_stimuli_response_definition" item_name_2="s_character_stimuli_response_definition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="305">
 		<_36 v="Stimulus Response" />
 		<_2 v="stimulus name" />
 		<_41 v="override character" />
 		<_35 v="Resolved Stimulus" length="8" />
 		<_3B v="" />
 	</_40>
-	<_40 v="campaign metagame bucket" item_name_1="s_campaign_metagame_bucket" item_name_2="s_campaign_metagame_bucket" item_name_3="s_campaign_metagame_bucket" db1="6" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="campaign metagame bucket" item_name_1="s_campaign_metagame_bucket" item_name_2="s_campaign_metagame_bucket" db1="6" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_F v="flags">
 			<Flag v="only counts with riders" />
 		</_F>
@@ -2090,7 +2090,7 @@
 		<_5 v="point count" />
 		<_3B v="" />
 	</_40>
-	<_40 v="activity objects" item_name_1="character_activity_objects" item_name_2="character_activity_objects" item_name_3="character_activity_objects" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="activity objects" item_name_1="character_activity_objects" item_name_2="character_activity_objects" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="activity name" />
 		<_41 v="crate" />
 		<_37 v="" />
@@ -2099,7 +2099,7 @@
 		<_2 v="unit marker name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="pain screen properties" item_name_1="c_character_pain_screen_properties_internal" item_name_2="c_character_pain_screen_properties_internal" item_name_3="c_character_pain_screen_properties_internal" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+	<_40 v="pain screen properties" item_name_1="c_character_pain_screen_properties_internal" item_name_2="c_character_pain_screen_properties_internal" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 		<_36 v="Pain Reactions" />
 		<_14 v="pain screen duration" />
 		<_14 v="pain screen region fade out duration" />
@@ -2111,7 +2111,7 @@
 		<_15 v="defensive screen scrub fallback fraction" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Melee animation scaling properties" item_name_1="CharacterMeleeAnimationScalingPropertiesInternal" item_name_2="CharacterMeleeAnimationScalingPropertiesInternal" item_name_3="CharacterMeleeAnimationScalingPropertiesInternal" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Melee animation scaling properties" item_name_1="CharacterMeleeAnimationScalingPropertiesInternal" item_name_2="CharacterMeleeAnimationScalingPropertiesInternal" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_36 v="Easy Scaling" />
 		<_14 v="Easy Windup Scaling" />
 		<_14 v="Easy Recovery Scaling" />
@@ -2126,7 +2126,7 @@
 		<_14 v="Legendary Recovery Scaling" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Close Quarters Defense Blast" item_name_1="c_character_closeQuartersDefenseBlast_properties_internal" item_name_2="c_character_closeQuartersDefenseBlast_properties_internal" item_name_3="c_character_closeQuartersDefenseBlast_properties_internal" db1="88" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_40 v="Close Quarters Defense Blast" item_name_1="c_character_closeQuartersDefenseBlast_properties_internal" item_name_2="c_character_closeQuartersDefenseBlast_properties_internal" db1="88" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_37 v="Close Quarters Defense Blast Parameters" />
 		<_37 v="Activation Chance" />
 		<_15 v="Activation Chance (easy)" />
@@ -2142,7 +2142,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="bishop properties" item_name_1="c_character_bishop_properties_internal" item_name_2="c_character_bishop_properties_internal" item_name_3="c_character_bishop_properties_internal" db1="200" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="bishop properties" item_name_1="c_character_bishop_properties_internal" item_name_2="c_character_bishop_properties_internal" db1="200" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_36 v="Repair" />
 		<_41 v="repair beam effect" />
 		<_36 v="Protect Allies" />
@@ -2163,12 +2163,12 @@
 		<_14 v="Healing Time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Healing Properties" item_name_1="CharacterHealingPropertiesInternal" item_name_2="CharacterHealingPropertiesInternal" item_name_3="CharacterHealingPropertiesInternal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Healing Properties" item_name_1="CharacterHealingPropertiesInternal" item_name_2="CharacterHealingPropertiesInternal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="Healing delay time" />
 		<_14 v="Healing standby time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="packmaster properties" item_name_1="c_character_packmaster_properties_internal" item_name_2="c_character_packmaster_properties_internal" item_name_3="c_character_packmaster_properties_internal" db1="108" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="packmaster properties" item_name_1="c_character_packmaster_properties_internal" item_name_2="c_character_packmaster_properties_internal" db1="108" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Pack Character Ancestor " />
 		<_14 v="command radius" />
 		<_6 v="group fire min count" />
@@ -2194,7 +2194,7 @@
 		<_14 v="pack charge cooldown" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Dynamic Task" item_name_1="c_character_dynamic_task_properties_internal" item_name_2="c_character_dynamic_task_properties_internal" item_name_3="c_character_dynamic_task_properties_internal" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Dynamic Task" item_name_1="c_character_dynamic_task_properties_internal" item_name_2="c_character_dynamic_task_properties_internal" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_D v="Agent Filter Flags ">
 			<Flag v="Companion" />
 			<Flag v="Protector" />
@@ -2221,9 +2221,9 @@
 		<_14 v="Heal Request Body Level " />
 		<_3B v="" />
 	</_40>
-	<_40 v="Rush Attack" item_name_1="c_character_RushAttack_properties_internal" item_name_2="c_character_RushAttack_properties_internal" item_name_3="c_character_RushAttack_properties_internal" db1="164" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="Rush Attack" item_name_1="c_character_RushAttack_properties_internal" item_name_2="c_character_RushAttack_properties_internal" db1="164" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_36 v="Rush Attack" />
-		<_38 v="Generic Advance Attack" item_name_3="GenericAdvanceAttack" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="Generic Advance Attack" item_name_1="GenericAdvanceAttack" item_name_2="GenericAdvanceAttack" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_D v="Flags">
 				<Flag v="Berserk on activation" />
 				<Flag v="Don't always advance without ranged" />
@@ -2255,7 +2255,7 @@
 			<_15 v="Tell animation chance" />
 			<_14 v="Tell Animation Cooldown" />
 			<_2 v="Throttle style" />
-			<_38 v="Slow Advance" item_name_3="SlowAdvance" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="Slow Advance" item_name_1="SlowAdvance" item_name_2="SlowAdvance" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_36 v="Slow Advance" />
 				<_14 v="Slow range" />
 				<_2 v="Slow throttle style" />
@@ -2281,10 +2281,10 @@
 		<_14 v="Zig-zag period" />
 		<_8 v="Tackle angle" />
 		<_14 v="Tackle wait" />
-		<_40 v="Combo Definitions" item_name_1="MeleeComboDefinition" item_name_2="MeleeComboDefinition" item_name_3="MeleeComboDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Combo Definitions" item_name_1="MeleeComboDefinition" item_name_2="MeleeComboDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_D v="Combo Flags" />
 			<_14 v="Weight Modifier" />
-			<_40 v="Attacks" item_name_1="MeleeAttackDefinition" item_name_2="MeleeAttackDefinition" item_name_3="MeleeAttackDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="Attacks" item_name_1="MeleeAttackDefinition" item_name_2="MeleeAttackDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_D v="Direction Flags">
 					<Flag v="Front" />
 					<Flag v="Left" />
@@ -2300,9 +2300,9 @@
 		<_2 v="Taunt Animation Name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Leap Attack" item_name_1="c_character_LeapAttack_properties_internal" item_name_2="c_character_LeapAttack_properties_internal" item_name_3="c_character_LeapAttack_properties_internal" db1="132" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Leap Attack" item_name_1="c_character_LeapAttack_properties_internal" item_name_2="c_character_LeapAttack_properties_internal" db1="132" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_36 v="Leap Attack" />
-		<_38 v="Generic Advance Attack" item_name_3="GenericAdvanceAttack" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="Generic Advance Attack" item_name_1="GenericAdvanceAttack" item_name_2="GenericAdvanceAttack" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_D v="Flags">
 				<Flag v="Berserk on activation" />
 				<Flag v="Don't always advance without ranged" />
@@ -2334,7 +2334,7 @@
 			<_15 v="Tell animation chance" />
 			<_14 v="Tell Animation Cooldown" />
 			<_2 v="Throttle style" />
-			<_38 v="Slow Advance" item_name_3="SlowAdvance" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="Slow Advance" item_name_1="SlowAdvance" item_name_2="SlowAdvance" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_36 v="Slow Advance" />
 				<_14 v="Slow range" />
 				<_2 v="Slow throttle style" />
@@ -2362,9 +2362,9 @@
 		<_14 v="Swoop prediction" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Teleport Attack" item_name_1="c_character_TeleportAttack_properties_internal" item_name_2="c_character_TeleportAttack_properties_internal" item_name_3="c_character_TeleportAttack_properties_internal" db1="180" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
+	<_40 v="Teleport Attack" item_name_1="c_character_TeleportAttack_properties_internal" item_name_2="c_character_TeleportAttack_properties_internal" db1="180" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2323">
 		<_36 v="Teleport attack" />
-		<_38 v="Generic Advance Attack" item_name_3="GenericAdvanceAttack" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="Generic Advance Attack" item_name_1="GenericAdvanceAttack" item_name_2="GenericAdvanceAttack" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_D v="Flags">
 				<Flag v="Berserk on activation" />
 				<Flag v="Don't always advance without ranged" />
@@ -2396,7 +2396,7 @@
 			<_15 v="Tell animation chance" />
 			<_14 v="Tell Animation Cooldown" />
 			<_2 v="Throttle style" />
-			<_38 v="Slow Advance" item_name_3="SlowAdvance" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="Slow Advance" item_name_1="SlowAdvance" item_name_2="SlowAdvance" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_36 v="Slow Advance" />
 				<_14 v="Slow range" />
 				<_2 v="Slow throttle style" />
@@ -2418,7 +2418,7 @@
 		<_41 v="Land effect" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Jink and Shoot" item_name_1="CharacterJinkAndShootPropertiesInternal" item_name_2="CharacterJinkAndShootPropertiesInternal" item_name_3="CharacterJinkAndShootPropertiesInternal" db1="128" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Jink and Shoot" item_name_1="CharacterJinkAndShootPropertiesInternal" item_name_2="CharacterJinkAndShootPropertiesInternal" db1="128" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_36 v="Jink and Shoot" />
 		<_25 v="Start distance" />
 		<_14 v="Start max offset angle" />
@@ -2433,7 +2433,7 @@
 		<_41 v="Jink and Shoot Weapon" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Teleport and Tackle" item_name_1="CharacterTeleportAndTacklePropertiesInternal" item_name_2="CharacterTeleportAndTacklePropertiesInternal" item_name_3="CharacterTeleportAndTacklePropertiesInternal" db1="108" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Teleport and Tackle" item_name_1="CharacterTeleportAndTacklePropertiesInternal" item_name_2="CharacterTeleportAndTacklePropertiesInternal" db1="108" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_36 v="Teleport and Tackle" />
 		<_25 v="Destination distance" />
 		<_14 v="Max offset angle" />
@@ -2445,7 +2445,7 @@
 		<_41 v="Teleport and Tackle Weapon" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Teleport and Taunt Animation" item_name_1="CharacterTeleportAndTauntPropertiesInternal" item_name_2="CharacterTeleportAndTauntPropertiesInternal" item_name_3="CharacterTeleportAndTauntPropertiesInternal" db1="88" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Teleport and Taunt Animation" item_name_1="CharacterTeleportAndTauntPropertiesInternal" item_name_2="CharacterTeleportAndTauntPropertiesInternal" db1="88" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_36 v="Teleport and Taunt Behavior" />
 		<_2 v="Custom Animation Name" />
 		<_14 v="Taunt Frequency" />
@@ -2458,21 +2458,21 @@
 		<_2 v="Effect marker" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Desperation Rush" item_name_1="c_character_DesperationRush_properties_internal" item_name_2="c_character_DesperationRush_properties_internal" item_name_3="c_character_DesperationRush_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Desperation Rush" item_name_1="c_character_DesperationRush_properties_internal" item_name_2="c_character_DesperationRush_properties_internal" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_D v="Properties">
 			<Flag v="Ignore Cooldown" />
 		</_D>
 		<_14 v="Range" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Proximity Melee" item_name_1="CharacterProximityMeleePropertiesInternal" item_name_2="CharacterProximityMeleePropertiesInternal" item_name_3="CharacterProximityMeleePropertiesInternal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Proximity Melee" item_name_1="CharacterProximityMeleePropertiesInternal" item_name_2="CharacterProximityMeleePropertiesInternal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_36 v="Proximity Melee Impulse" />
 		<_14 v="Range" />
 		<_14 v="Cooldown" />
 		<_14 v="Outside area range" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Dive Bomb Kamikaze" item_name_1="CharacterDiveBombKamikazePropertiesInternal" item_name_2="CharacterDiveBombKamikazePropertiesInternal" item_name_3="CharacterDiveBombKamikazePropertiesInternal" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_40 v="Dive Bomb Kamikaze" item_name_1="CharacterDiveBombKamikazePropertiesInternal" item_name_2="CharacterDiveBombKamikazePropertiesInternal" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_15 v="Ally target chance" />
 		<_15 v="Enemy target chance" />
 		<_25 v="Travel distance" />
@@ -2490,19 +2490,19 @@
 		<_14 v="a Pause between Kamikaze anim and dive bomb action(default 2 seconds)" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Post Combat" item_name_1="CharacterPostCombatPropertiesInternal" item_name_2="CharacterPostCombatPropertiesInternal" item_name_3="CharacterPostCombatPropertiesInternal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Post Combat" item_name_1="CharacterPostCombatPropertiesInternal" item_name_2="CharacterPostCombatPropertiesInternal" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_15 v="Shoot Corpse Chance" />
 		<_25 v="Postcombat Phase 1 Time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Pack Stalk" item_name_1="c_character_pack_stalk_properties_internal" item_name_2="c_character_pack_stalk_properties_internal" item_name_3="c_character_pack_stalk_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Pack Stalk" item_name_1="c_character_pack_stalk_properties_internal" item_name_2="c_character_pack_stalk_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="Min Wander Distance " />
 		<_14 v="Outside Area Border " />
 		<_25 v="Position Update Delay " />
 		<_15 v="Throttle In Cover " />
 		<_3B v="" />
 	</_40>
-	<_40 v="Fight Circle" item_name_1="c_character_fight_circle_properties_internal" item_name_2="c_character_fight_circle_properties_internal" item_name_3="c_character_fight_circle_properties_internal" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+	<_40 v="Fight Circle" item_name_1="c_character_fight_circle_properties_internal" item_name_2="c_character_fight_circle_properties_internal" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 		<_25 v="Strafe Time " />
 		<_25 v="Extra Firing Time " />
 		<_14 v="Target Patience Time " />
@@ -2513,7 +2513,7 @@
 		<_2 v="move throttle style " />
 		<_3B v="" />
 	</_40>
-	<_40 v="Hamstring" item_name_1="c_character_hamstring_charge_properties_internal" item_name_2="c_character_hamstring_charge_properties_internal" item_name_3="c_character_hamstring_charge_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Hamstring" item_name_1="c_character_hamstring_charge_properties_internal" item_name_2="c_character_hamstring_charge_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_8 v="Flank Angle " />
 		<_14 v="Flank Distance " />
 		<_14 v="Outer Engage Distance " />
@@ -2525,7 +2525,7 @@
 		<_14 v="Max Charge Range" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Forerunner" item_name_1="c_character_forerunner_properties_internal" item_name_2="c_character_forerunner_properties_internal" item_name_3="c_character_forerunner_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Forerunner" item_name_1="c_character_forerunner_properties_internal" item_name_2="c_character_forerunner_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_D v="forerunner flags">
 			<Flag v="charge on command" />
 			<Flag v="Teleport to combat pos" />
@@ -2539,7 +2539,7 @@
 		<_25 v="Phase To Position Probability range " />
 		<_3B v="" />
 	</_40>
-	<_40 v="Gravity Jump" item_name_1="c_character_gravity_jump_properties_internal" item_name_2="c_character_gravity_jump_properties_internal" item_name_3="c_character_gravity_jump_properties_internal" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="Gravity Jump" item_name_1="c_character_gravity_jump_properties_internal" item_name_2="c_character_gravity_jump_properties_internal" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_37 v="Activation Chance" />
 		<_15 v="Activation Chance (easy)" />
 		<_15 v="Activation Chance (normal)" />
@@ -2549,7 +2549,7 @@
 		<_14 v="Float Time " />
 		<_14 v="Float Gravity Scale" />
 		<_37 v="Descent Gravity Scale Function" />
-		<_38 v="descendGravityScaleFunction" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="descendGravityScaleFunction" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -2561,14 +2561,14 @@
 		<_14 v="Trigger Distance " />
 		<_3B v="" />
 	</_40>
-	<_40 v="Co-op Modifiers" item_name_1="c_character_coop_modifier_properties_internal" item_name_2="c_character_coop_modifier_properties_internal" item_name_3="c_character_coop_modifier_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Co-op Modifiers" item_name_1="c_character_coop_modifier_properties_internal" item_name_2="c_character_coop_modifier_properties_internal" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Body Vitality Scale for 2-3 Players" />
 		<_14 v="Body Vitality Scale for 4 Players" />
 		<_14 v="Shield Vitality Scale for 2-3 Players" />
 		<_14 v="Shield Vitality Scale for 4 Players" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Multi Target Tracked Attack" item_name_1="CharacterMultiTargetTrackedAttackPropertiesInternal" item_name_2="CharacterMultiTargetTrackedAttackPropertiesInternal" item_name_3="CharacterMultiTargetTrackedAttackPropertiesInternal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="Multi Target Tracked Attack" item_name_1="CharacterMultiTargetTrackedAttackPropertiesInternal" item_name_2="CharacterMultiTargetTrackedAttackPropertiesInternal" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_37 v="activation chance" />
 		<_15 v="activation chance (easy)" />
 		<_15 v="activation chance (normal)" />
@@ -2587,12 +2587,12 @@
 		<_14 v="cooldown" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Drop Objects" item_name_1="c_character_drop_objects_properties_internal" item_name_2="c_character_drop_objects_properties_internal" item_name_3="c_character_drop_objects_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="Drop Objects" item_name_1="c_character_drop_objects_properties_internal" item_name_2="c_character_drop_objects_properties_internal" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_6 v="Number of Rolls" />
 		<_14 v="Min Item Launch Velocity" />
 		<_14 v="Max Item Launch Velocity" />
 		<_15 v="Max Trajectory Radius" />
-		<_40 v="Drop Objects" item_name_1="DropObject" item_name_2="DropObject" item_name_3="DropObject" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Drop Objects" item_name_1="DropObject" item_name_2="DropObject" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_15 v="Easy_Normal Drop Chance" />
 			<_15 v="Heroic Drop Chance" />
 			<_15 v="Legendary Drop Chance" />
@@ -2601,8 +2601,8 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Custom Scripting" item_name_1="c_character_CustomScript_properties_internal" item_name_2="c_character_CustomScript_properties_internal" item_name_3="c_character_CustomScript_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-		<_40 v="Scripted Threshold" item_name_1="ThresholdScript" item_name_2="ThresholdScript" item_name_3="ThresholdScript" db1="276" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Custom Scripting" item_name_1="c_character_CustomScript_properties_internal" item_name_2="c_character_CustomScript_properties_internal" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Scripted Threshold" item_name_1="ThresholdScript" item_name_2="ThresholdScript" db1="276" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="Scripted Thresholds" />
 			<_D v="Flags">
 				<Flag v="Called Only Once" />

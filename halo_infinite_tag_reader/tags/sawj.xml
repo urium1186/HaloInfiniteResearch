@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::SpartanAbilities::WallJumpDefinitionTag" item_name_2="i343::SpartanAbilities::WallJumpDefinitionTag" item_name_3="i343::SpartanAbilities::WallJumpDefinitionTag" db1="168" db2="0" db3="0" db4="0" db5="0" db6="0" db7="152" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::SpartanAbilities::WallJumpDefinitionTag" item_name_2="i343::SpartanAbilities::WallJumpDefinitionTag" db1="168" db2="0" db3="0" db4="0" db5="0" db6="0" db7="152" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="wallJump" item_name_3="i343::SpartanAbilities::WallJumpDefinition" db1="152" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="307">
-		<_38 v="common ability parameters" item_name_3="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
+	<_38 v="wallJump" item_name_1="i343::SpartanAbilities::WallJumpDefinition" item_name_2="i343::SpartanAbilities::WallJumpDefinition" db1="152" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="307">
+		<_38 v="common ability parameters" item_name_1="i343::SpartanAbilities::SpartanAbilityCommonParameters" item_name_2="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
 			<_37 v="common ability parameters" />
 			<_C v="input">
 				<Flag v="Default" />

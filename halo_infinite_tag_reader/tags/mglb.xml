@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::Melee::MeleeGlobalsDefinition" item_name_2="i343::Melee::MeleeGlobalsDefinition" item_name_3="i343::Melee::MeleeGlobalsDefinition" db1="136" db2="0" db3="4" db4="0" db5="1" db6="0" db7="120" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::Melee::MeleeGlobalsDefinition" item_name_2="i343::Melee::MeleeGlobalsDefinition" db1="136" db2="0" db3="4" db4="0" db5="1" db6="0" db7="120" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -23,7 +23,7 @@
 	<_36 v="Network sensitive fields" />
 	<_14 v="clang simultaneous death vitality threshold" />
 	<_37 v="" />
-	<_38 v="targeting" item_name_3="i343::Melee::TargetingDefinition" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+	<_38 v="targeting" item_name_1="i343::Melee::TargetingDefinition" item_name_2="i343::Melee::TargetingDefinition" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 		<_37 v="targeting" />
 		<_24 v="yaw angles" />
 		<_24 v="yaw angles lunging" />
@@ -39,7 +39,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_38>
-	<_38 v="physics" item_name_3="i343::Melee::PhysicsDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+	<_38 v="physics" item_name_1="i343::Melee::PhysicsDefinition" item_name_2="i343::Melee::PhysicsDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 		<_37 v="physics" />
 		<_14 v="lunge maximum speed" />
 		<_14 v="uber lunge maximum speed" />
@@ -49,7 +49,7 @@
 		<_3B v="" />
 	</_38>
 	<_37 v="default melee damage" />
-	<_40 v="default damage" item_name_1="s_melee_damage_parameters" item_name_2="s_melee_damage_parameters" item_name_3="s_melee_damage_parameters" db1="388" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="305">
+	<_40 v="default damage" item_name_1="s_melee_damage_parameters" item_name_2="s_melee_damage_parameters" db1="388" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="305">
 		<_36 v="melee damage parameters" />
 		<_1B v="damage pyramid angles" />
 		<_14 v="damage pyramid depth" />

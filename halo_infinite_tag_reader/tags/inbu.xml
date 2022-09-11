@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="InputBundle" item_name_2="InputBundle" item_name_3="InputBundle" db1="120" db2="0" db3="5" db4="0" db5="1" db6="0" db7="104" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="InputBundle" item_name_2="InputBundle" db1="120" db2="0" db3="5" db4="0" db5="1" db6="0" db7="104" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="axes" item_name_1="InputAxis" item_name_2="InputAxis" item_name_3="InputAxis" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="axes" item_name_1="InputAxis" item_name_2="InputAxis" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_14 v="default value" />
 		<_A v="behavior">
@@ -20,7 +20,7 @@
 		<_34 v="generated_pada3ff" length="3" />
 		<_3B v="" />
 	</_40>
-	<_40 v="bindings" item_name_1="InputDeviceBinding" item_name_2="InputDeviceBinding" item_name_3="InputDeviceBinding" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+	<_40 v="bindings" item_name_1="InputDeviceBinding" item_name_2="InputDeviceBinding" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 		<_B v="device">
 			<Flag v="Unassigned" />
 			<Flag v="Gamepad Left Stick Horizontal" />
@@ -241,8 +241,8 @@
 		<_34 v="generated_padc197" length="1" />
 		<_3B v="" />
 	</_40>
-	<_40 v="connections" item_name_1="InputAxisConnection" item_name_2="InputAxisConnection" item_name_3="InputAxisConnection" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="307">
-		<_38 v="external" item_name_3="InputAxisRef" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="305">
+	<_40 v="connections" item_name_1="InputAxisConnection" item_name_2="InputAxisConnection" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="307">
+		<_38 v="external" item_name_1="InputAxisRef" item_name_2="InputAxisRef" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="305">
 			<_41 v="bundle" />
 			<_2 v="axis" />
 			<_3C v="axisIndex" />
@@ -256,7 +256,7 @@
 		<_34 v="generated_pad3cef" length="2" />
 		<_3B v="" />
 	</_40>
-	<_40 v="maps" item_name_1="InputAxisMap" item_name_2="InputAxisMap" item_name_3="InputAxisMap" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_40 v="maps" item_name_1="InputAxisMap" item_name_2="InputAxisMap" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_2C v="input0" />
 		<_2C v="input1" />
 		<_2C v="output" />
@@ -298,7 +298,7 @@
 		<_14 v="maximum" />
 		<_3B v="" />
 	</_40>
-	<_40 v="constants" item_name_1="InputAxisIndex" item_name_2="InputAxisIndex" item_name_3="InputAxisIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="constants" item_name_1="InputAxisIndex" item_name_2="InputAxisIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_3C v="axisIndex" />
 		<_3B v="" />
 	</_40>

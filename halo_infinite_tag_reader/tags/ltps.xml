@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="Interface::Customization::UILightPresetsTag" item_name_2="Interface::Customization::UILightPresetsTag" item_name_3="Interface::Customization::UILightPresetsTag" db1="56" db2="0" db3="1" db4="0" db5="1" db6="0" db7="40" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="Interface::Customization::UILightPresetsTag" item_name_2="Interface::Customization::UILightPresetsTag" db1="56" db2="0" db3="1" db4="0" db5="1" db6="0" db7="40" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="Light Presets Settings" item_name_1="Interface::Customization::UILightPreset" item_name_2="Interface::Customization::UILightPreset" item_name_3="Interface::Customization::UILightPreset" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="Light Presets Settings" item_name_1="Interface::Customization::UILightPreset" item_name_2="Interface::Customization::UILightPreset" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_2 v="Preset Name" />
 		<_B v="Core Type">
 			<Flag v="Unknown" />
@@ -96,7 +96,7 @@
 			<Flag v="True" />
 		</_F>
 		<_34 v="generated_pad2b6e" length="3" />
-		<_40 v="Lights" item_name_1="Interface::Customization::UISceneLightSource" item_name_2="Interface::Customization::UISceneLightSource" item_name_3="Interface::Customization::UISceneLightSource" db1="124" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+		<_40 v="Lights" item_name_1="Interface::Customization::UISceneLightSource" item_name_2="Interface::Customization::UISceneLightSource" db1="124" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 			<_2 v="Light Name" />
 			<_19 v="Light Position Offset" />
 			<_1C v="Facing" />
@@ -125,14 +125,14 @@
 			<_14 v="Override Source Intensity Multiplier" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Cubemap Volume" item_name_1="Interface::Customization::UICubemapVolume" item_name_2="Interface::Customization::UICubemapVolume" item_name_3="Interface::Customization::UICubemapVolume" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+		<_40 v="Cubemap Volume" item_name_1="Interface::Customization::UICubemapVolume" item_name_2="Interface::Customization::UICubemapVolume" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 			<_2 v="Cubemap Name" />
 			<_19 v="Cubemap Position Offset" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Light Scene Presets Settings" item_name_1="Interface::Customization::UILightScenePreset" item_name_2="Interface::Customization::UILightScenePreset" item_name_3="Interface::Customization::UILightScenePreset" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Light Scene Presets Settings" item_name_1="Interface::Customization::UILightScenePreset" item_name_2="Interface::Customization::UILightScenePreset" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_B v="Scene type">
 			<Flag v="SpartanArmor" />
 			<Flag v="Weapons" />
@@ -145,7 +145,7 @@
 			<Flag v="PGCR" />
 		</_B>
 		<_34 v="generated_padf35d" length="2" />
-		<_40 v="Light Presets Settings" item_name_1="Interface::Customization::UILightPreset" item_name_2="Interface::Customization::UILightPreset" item_name_3="Interface::Customization::UILightPreset" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="Light Presets Settings" item_name_1="Interface::Customization::UILightPreset" item_name_2="Interface::Customization::UILightPreset" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 			<_2 v="Preset Name" />
 			<_B v="Core Type">
 				<Flag v="Unknown" />
@@ -232,7 +232,7 @@
 				<Flag v="True" />
 			</_F>
 			<_34 v="generated_pad2b6e" length="3" />
-			<_40 v="Lights" item_name_1="Interface::Customization::UISceneLightSource" item_name_2="Interface::Customization::UISceneLightSource" item_name_3="Interface::Customization::UISceneLightSource" db1="124" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="Lights" item_name_1="Interface::Customization::UISceneLightSource" item_name_2="Interface::Customization::UISceneLightSource" db1="124" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 				<_2 v="Light Name" />
 				<_19 v="Light Position Offset" />
 				<_1C v="Facing" />
@@ -261,7 +261,7 @@
 				<_14 v="Override Source Intensity Multiplier" />
 				<_3B v="" />
 			</_40>
-			<_40 v="Cubemap Volume" item_name_1="Interface::Customization::UICubemapVolume" item_name_2="Interface::Customization::UICubemapVolume" item_name_3="Interface::Customization::UICubemapVolume" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="Cubemap Volume" item_name_1="Interface::Customization::UICubemapVolume" item_name_2="Interface::Customization::UICubemapVolume" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 				<_2 v="Cubemap Name" />
 				<_19 v="Cubemap Position Offset" />
 				<_3B v="" />

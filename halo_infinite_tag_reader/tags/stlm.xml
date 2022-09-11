@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="StructureLightmap" item_name_2="StructureLightmap" item_name_3="StructureLightmap" db1="112" db2="0" db3="41" db4="0" db5="1" db6="0" db7="96" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="StructureLightmap" item_name_2="StructureLightmap" db1="112" db2="0" db3="41" db4="0" db5="1" db6="0" db7="96" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="Probe regions" item_name_1="IndirectLightProbeRegion" item_name_2="IndirectLightProbeRegion" item_name_3="IndirectLightProbeRegion" db1="92" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="Probe regions" item_name_1="IndirectLightProbeRegion" item_name_2="IndirectLightProbeRegion" db1="92" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_2 v="Name" />
 		<_17 v="position bounds 0" />
 		<_17 v="position bounds 1" />
@@ -28,7 +28,7 @@
 	</_40>
 	<_41 v="Probe bitmaps" />
 	<_6 v="Number of baked TOD states" />
-	<_40 v="runtime lights" item_name_1="StructureLightDefinition" item_name_2="StructureLightDefinition" item_name_3="StructureLightDefinition" db1="728" db2="0" db3="2" db4="0" db5="1" db6="2" db7="0" db8="2355">
+	<_40 v="runtime lights" item_name_1="StructureLightDefinition" item_name_2="StructureLightDefinition" db1="728" db2="0" db3="2" db4="0" db5="1" db6="2" db7="0" db8="2355">
 		<_6 v="guid" />
 		<_17 v="position" />
 		<_1C v="facing" />
@@ -38,7 +38,7 @@
 			<Flag v="On" />
 		</_A>
 		<_34 v="generated_pad2288" length="2" />
-		<_38 v="Midnight_Light_Parameters" item_name_3="LightDefinition" db1="612" db2="0" db3="12" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="Midnight_Light_Parameters" item_name_1="LightDefinition" item_name_2="LightDefinition" db1="612" db2="0" db3="12" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_36 v="Dynamic/Static Shared Light Parameters" />
 			<_2 v="haloLightNode" />
 			<_C v="Type">
@@ -63,7 +63,7 @@
 			</_A>
 			<_34 v="generated_pade39f" length="3" />
 			<_14 v="Override Source Intensity Multiplier" />
-			<_38 v="Intensity Function" item_name_3="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="Intensity Function" item_name_1="ScalarLightFunction" item_name_2="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_2 v="Input Variable" />
 				<_2 v="Range Variable" />
 				<_B v="Output Modifier">
@@ -74,7 +74,7 @@
 				<_34 v="generated_padc7e0" length="2" />
 				<_2 v="Output Modifier Input" />
 				<_37 v="Mapping" />
-				<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -83,7 +83,7 @@
 				<_3B v="" />
 			</_38>
 			<_41 v="Light Group" />
-			<_38 v="Dimmer Function" item_name_3="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="Dimmer Function" item_name_1="ScalarLightFunction" item_name_2="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_2 v="Input Variable" />
 				<_2 v="Range Variable" />
 				<_B v="Output Modifier">
@@ -94,7 +94,7 @@
 				<_34 v="generated_padc7e0" length="2" />
 				<_2 v="Output Modifier Input" />
 				<_37 v="Mapping" />
-				<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -103,7 +103,7 @@
 				<_3B v="" />
 			</_38>
 			<_14 v="Near Attenuation" />
-			<_38 v="Outer Attenuation Function" item_name_3="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="Outer Attenuation Function" item_name_1="ScalarLightFunction" item_name_2="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_2 v="Input Variable" />
 				<_2 v="Range Variable" />
 				<_B v="Output Modifier">
@@ -114,7 +114,7 @@
 				<_34 v="generated_padc7e0" length="2" />
 				<_2 v="Output Modifier Input" />
 				<_37 v="Mapping" />
-				<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -139,7 +139,7 @@
 			<_36 v="Shared Spot Parameters" />
 			<_14 v="Inner Cone Angle" />
 			<_14 v="Outer Cone Angle" />
-			<_38 v="Outer Cone Angle Function" item_name_3="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="Outer Cone Angle Function" item_name_1="ScalarLightFunction" item_name_2="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_2 v="Input Variable" />
 				<_2 v="Range Variable" />
 				<_B v="Output Modifier">
@@ -150,7 +150,7 @@
 				<_34 v="generated_padc7e0" length="2" />
 				<_2 v="Output Modifier Input" />
 				<_37 v="Mapping" />
-				<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -259,7 +259,7 @@
 			<_1F v="Target Color" />
 			<_14 v="destroy light after" />
 			<_36 v="Color Change" />
-			<_38 v="Interpolation Function" item_name_3="ColorLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="Interpolation Function" item_name_1="ColorLightFunction" item_name_2="ColorLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_2 v="Input Variable" />
 				<_2 v="Range Variable" />
 				<_B v="Output Modifier">
@@ -270,7 +270,7 @@
 				<_34 v="generated_pad8f6d" length="2" />
 				<_2 v="Output Modifier Input" />
 				<_37 v="Mapping" />
-				<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -306,7 +306,7 @@
 			<Flag v="On" />
 		</_A>
 		<_5 v="runtime index" />
-		<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_1 v="folder name" />
 			<_17 v="local space pivot point position" />
 			<_3B v="" />
@@ -327,8 +327,8 @@
 	</_40>
 	<_5 v="floating sun index" />
 	<_34 v="generated_pad9145" length="2" />
-	<_43 v="Baked DWS Irradiance Data" item_name_3="BakedDWSIrradianceResource" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-		<_40 v="Regions" item_name_1="DWSAirprobeRegion" item_name_2="DWSAirprobeRegion" item_name_3="DWSAirprobeRegion" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_43 v="Baked DWS Irradiance Data" item_name_1="BakedDWSIrradianceResource" item_name_2="BakedDWSIrradianceResource" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Regions" item_name_1="DWSAirprobeRegion" item_name_2="DWSAirprobeRegion" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_17 v="position bounds 0" />
 			<_17 v="position bounds 1" />
 			<_6 v="Probe count X" />
@@ -337,16 +337,16 @@
 			<_6 v="Priority" />
 			<_14 v="Blend radius XY" />
 			<_14 v="Blend radius Z" />
-			<_40 v="Sample data" item_name_1="DWSAirprobeSample" item_name_2="DWSAirprobeSample" item_name_3="DWSAirprobeSample" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-				<_40 v="Color" item_name_1="DWSAirprobeSampleIrradiance" item_name_2="DWSAirprobeSampleIrradiance" item_name_3="DWSAirprobeSampleIrradiance" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Sample data" item_name_1="DWSAirprobeSample" item_name_2="DWSAirprobeSample" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_40 v="Color" item_name_1="DWSAirprobeSampleIrradiance" item_name_2="DWSAirprobeSampleIrradiance" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="Color" />
 					<_3B v="" />
 				</_40>
-				<_40 v="Depth" item_name_1="DWSAirprobeSampleDepth" item_name_2="DWSAirprobeSampleDepth" item_name_3="DWSAirprobeSampleDepth" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="Depth" item_name_1="DWSAirprobeSampleDepth" item_name_2="DWSAirprobeSampleDepth" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="VSM Depth" />
 					<_3B v="" />
 				</_40>
-				<_40 v="Sky Visibility" item_name_1="DWSAirprobeSampleSkyVisibility" item_name_2="DWSAirprobeSampleSkyVisibility" item_name_3="DWSAirprobeSampleSkyVisibility" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="Sky Visibility" item_name_1="DWSAirprobeSampleSkyVisibility" item_name_2="DWSAirprobeSampleSkyVisibility" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3C v="Sky Visibility" />
 					<_3B v="" />
 				</_40>
@@ -354,7 +354,7 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="TOD states" item_name_1="BakedTODState" item_name_2="BakedTODState" item_name_3="BakedTODState" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="TOD states" item_name_1="BakedTODState" item_name_2="BakedTODState" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="State name" />
 			<_3B v="" />
 		</_40>

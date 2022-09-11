@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_user_interface_tag_globals" item_name_2="s_user_interface_tag_globals" item_name_3="s_user_interface_tag_globals" db1="464" db2="0" db3="3" db4="0" db5="1" db6="0" db7="448" db8="1299">
-	<_38 v="AnyTag" item_name_3="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="" />
-		<_38 v="" item_name_3="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="" />
-			<_34 v="" length="4" />
+<root item_name_1="s_user_interface_tag_globals" item_name_2="s_user_interface_tag_globals" db1="464" db2="0" db3="3" db4="0" db5="1" db6="0" db7="448" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
 	<_36 v="Screen Widgets" />
-	<_40 v="node graphs" item_name_1="NodeGraphReferenceBlockDefinition" item_name_2="NodeGraphReferenceBlockDefinition" item_name_3="NodeGraphReferenceBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="node graphs" item_name_1="NodeGraphReferenceBlockDefinition" item_name_2="NodeGraphReferenceBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="node graph tag" />
 		<_3B v="" />
 	</_40>
-	<_40 v="bitmap dictionaries" item_name_1="BitmapDictionaryReferenceBlockDefinition" item_name_2="BitmapDictionaryReferenceBlockDefinition" item_name_3="BitmapDictionaryReferenceBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="bitmap dictionaries" item_name_1="BitmapDictionaryReferenceBlockDefinition" item_name_2="BitmapDictionaryReferenceBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="bitmap dictionary" />
 		<_3B v="" />
 	</_40>
 	<_36 v="Lua User Libraries" />
-	<_40 v="lua user libraries" item_name_1="s_luaUserLibrary" item_name_2="s_luaUserLibrary" item_name_3="s_luaUserLibrary" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="lua user libraries" item_name_1="s_luaUserLibrary" item_name_2="s_luaUserLibrary" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="lua library" />
 		<_3B v="" />
 	</_40>
-	<_40 v="cui screen widgets" item_name_1="s_cui_component_screen_reference" item_name_2="s_cui_component_screen_reference" item_name_3="s_cui_component_screen_reference" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="cui screen widgets" item_name_1="s_cui_component_screen_reference" item_name_2="s_cui_component_screen_reference" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="name" />
 		<_41 v="cui screen tag" />
 		<_3B v="" />
 	</_40>
-	<_40 v="cui overlay cameras" item_name_1="s_cui_overlay_camera_definition" item_name_2="s_cui_overlay_camera_definition" item_name_3="s_cui_overlay_camera_definition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="cui overlay cameras" item_name_1="s_cui_overlay_camera_definition" item_name_2="s_cui_overlay_camera_definition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="resolution name" />
 		<_A v="pivot corner">
 			<Flag v="top left" />
@@ -44,7 +44,7 @@
 		<_3B v="" />
 	</_40>
 	<_14 v="spawn-timer countdown rate" />
-	<_40 v="game intro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="game intro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -68,7 +68,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="game round end sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="game round end sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -92,7 +92,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="game round end with killcam sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="game round end with killcam sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -116,7 +116,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="game next round sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="game next round sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -140,7 +140,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="game end sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="game end sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -164,7 +164,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="game end with killcam sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="game end with killcam sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -188,7 +188,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="in game sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="in game sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -212,7 +212,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="halftime sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="halftime sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -236,7 +236,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="overtime sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="overtime sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -260,7 +260,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="map intro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="map intro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -284,7 +284,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="player intro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="player intro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -308,7 +308,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="team intro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="team intro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -332,7 +332,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="team regroup sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="team regroup sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />
@@ -356,7 +356,7 @@
 		<_14 v="endTime" />
 		<_3B v="" />
 	</_40>
-	<_40 v="team outro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" item_name_3="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="team outro sequence" item_name_1="UserInterfaceGameScreenSequenceStep" item_name_2="UserInterfaceGameScreenSequenceStep" db1="120" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_F v="flags">
 			<Flag v="show loadout menu" />
 			<Flag v="loadout menu close ends sequence" />

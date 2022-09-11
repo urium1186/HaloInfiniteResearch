@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="ForgeEngine::ForgeKitDefinition" item_name_2="ForgeEngine::ForgeKitDefinition" item_name_3="ForgeEngine::ForgeKitDefinition" db1="96" db2="0" db3="2" db4="0" db5="1" db6="0" db7="80" db8="1395">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="ForgeEngine::ForgeKitDefinition" item_name_2="ForgeEngine::ForgeKitDefinition" db1="96" db2="0" db3="2" db4="0" db5="1" db6="0" db7="80" db8="1395">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,47 +10,47 @@
 		<_3B v="" />
 	</_38>
 	<_41 v="Original Kit" />
-	<_40 v="Kit Groups" item_name_1="ForgeEngine::ForgeKitGroup" item_name_2="ForgeEngine::ForgeKitGroup" item_name_3="ForgeEngine::ForgeKitGroup" db1="204" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="Kit Groups" item_name_1="ForgeEngine::ForgeKitGroup" item_name_2="ForgeEngine::ForgeKitGroup" db1="204" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_2 v="Name" />
 		<_2 v="Parent Name" />
 		<_6 v="Group Index" />
 		<_6 v="Parent Group Index" />
 		<_41 v="Script Tag" />
-		<_38 v="Scriptable Properties" item_name_3="s_property_collection" db1="120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="bool properties" item_name_1="s_bool_property" item_name_2="s_bool_property" item_name_3="s_bool_property" db1="257" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="Scriptable Properties" item_name_1="s_property_collection" item_name_2="s_property_collection" db1="120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="bool properties" item_name_1="s_bool_property" item_name_2="s_bool_property" db1="257" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="name" />
 				<_3C v="Value" />
 				<_3B v="" />
 			</_40>
-			<_40 v="numeric properties" item_name_1="s_numeric_property" item_name_2="s_numeric_property" item_name_3="s_numeric_property" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="numeric properties" item_name_1="s_numeric_property" item_name_2="s_numeric_property" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="name" />
 				<_14 v="Value" />
 				<_3B v="" />
 			</_40>
-			<_40 v="string properties" item_name_1="s_string_property" item_name_2="s_string_property" item_name_3="s_string_property" db1="512" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="string properties" item_name_1="s_string_property" item_name_2="s_string_property" db1="512" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="name" />
 				<_1 v="Value" />
 				<_3B v="" />
 			</_40>
-			<_40 v="tag properties" item_name_1="s_tag_property" item_name_2="s_tag_property" item_name_3="s_tag_property" db1="288" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="tag properties" item_name_1="s_tag_property" item_name_2="s_tag_property" db1="288" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_1 v="name" />
 				<_41 v="Value" />
 				<_2 v="load variant" />
 				<_3B v="" />
 			</_40>
-			<_40 v="color properties" item_name_1="s_color_property" item_name_2="s_color_property" item_name_3="s_color_property" db1="272" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="color properties" item_name_1="s_color_property" item_name_2="s_color_property" db1="272" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="name" />
 				<_20 v="Value" />
 				<_3B v="" />
 			</_40>
-			<_40 v="vector properties" item_name_1="s_vector_property" item_name_2="s_vector_property" item_name_3="s_vector_property" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="vector properties" item_name_1="s_vector_property" item_name_2="s_vector_property" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="name" />
 				<_19 v="Value" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_38>
-		<_40 v="Objects" item_name_1="ForgeEngine::ForgeKitObject" item_name_2="ForgeEngine::ForgeKitObject" item_name_3="ForgeEngine::ForgeKitObject" db1="176" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Objects" item_name_1="ForgeEngine::ForgeKitObject" item_name_2="ForgeEngine::ForgeKitObject" db1="176" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Name" />
 			<_41 v="Object" />
 			<_2 v="Asset Variant Name" />
@@ -60,7 +60,7 @@
 			<_17 v="Position" />
 			<_1C v="Rotation" />
 			<_19 v="Scale" />
-			<_40 v="Scenario Data" item_name_1="ForgeEngine::ForgeKitObjectScenarioData" item_name_2="ForgeEngine::ForgeKitObjectScenarioData" item_name_3="ForgeEngine::ForgeKitObjectScenarioData" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Scenario Data" item_name_1="ForgeEngine::ForgeKitObjectScenarioData" item_name_2="ForgeEngine::ForgeKitObjectScenarioData" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_A v="Object Type">
 					<Flag v="biped" />
 					<Flag v="vehicle" />
@@ -78,7 +78,7 @@
 					<Flag v="effect_scenery" />
 				</_A>
 				<_34 v="generated_pad6a37" length="3" />
-				<_40 v="Multiplayer Properties" item_name_1="s_scenario_multiplayer_object_properties" item_name_2="s_scenario_multiplayer_object_properties" item_name_3="s_scenario_multiplayer_object_properties" db1="236" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="2323">
+				<_40 v="Multiplayer Properties" item_name_1="s_scenario_multiplayer_object_properties" item_name_2="s_scenario_multiplayer_object_properties" db1="236" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="2323">
 					<_36 v="Multiplayer Data" />
 					<_2 v="megalo label" />
 					<_2 v="megalo label 2" />
@@ -207,20 +207,20 @@
 					<_5 v="abandonment time" />
 					<_34 v="generated_padbbfb" length="2" />
 					<_2 v="location name" />
-					<_40 v="spline" item_name_1="SplineNode" item_name_2="SplineNode" item_name_3="SplineNode" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="spline" item_name_1="SplineNode" item_name_2="SplineNode" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_17 v="position" />
 						<_1C v="rotation" />
 						<_14 v="scale" />
 						<_3B v="" />
 					</_40>
-					<_40 v="SpawnPointProperties" item_name_1="SpawnPointMultiplayerProperties" item_name_2="SpawnPointMultiplayerProperties" item_name_3="SpawnPointMultiplayerProperties" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="SpawnPointProperties" item_name_1="SpawnPointMultiplayerProperties" item_name_2="SpawnPointMultiplayerProperties" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_F v="Spawn Point Flags">
 							<Flag v="Never Spawn In Vehicle" />
 						</_F>
 						<_3B v="" />
 					</_40>
 					<_14 v="respawn weight" />
-					<_38 v="warzone objective definition membership" item_name_3="WarzoneObjectiveDefinitionMembership" db1="34" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="384">
+					<_38 v="warzone objective definition membership" item_name_1="WarzoneObjectiveDefinitionMembership" item_name_2="WarzoneObjectiveDefinitionMembership" db1="34" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="384">
 						<_2E v="warzone objective definition" />
 						<_0 v="warzone objective label" />
 						<_3B v="" />
@@ -236,7 +236,7 @@
 					<_41 v="WeaponPad object to spawn" />
 					<_41 v="WeaponPad object to spawn configuration" />
 					<_14 v="WeaponPad respawn time" />
-					<_40 v="terminal redeemable objects" item_name_1="TerminalRedeemableObjectDefinition" item_name_2="TerminalRedeemableObjectDefinition" item_name_3="TerminalRedeemableObjectDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+					<_40 v="terminal redeemable objects" item_name_1="TerminalRedeemableObjectDefinition" item_name_2="TerminalRedeemableObjectDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 						<_41 v="redeemable object" />
 						<_6 v="level requirement" />
 						<_3B v="" />
@@ -268,7 +268,7 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Sound Placements" item_name_1="SoundPlacement" item_name_2="SoundPlacement" item_name_3="SoundPlacement" db1="148" db2="0" db3="4" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_40 v="Sound Placements" item_name_1="SoundPlacement" item_name_2="SoundPlacement" db1="148" db2="0" db3="4" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="name" />
 			<_6 v="guid" />
 			<_19 v="position" />
@@ -285,15 +285,15 @@
 			<_34 v="generated_paddbf0" length="2" />
 			<_30 v="editor folder" />
 			<_41 v="looping sound" />
-			<_40 v="shape override" item_name_1="PlacementShapeOverride" item_name_2="PlacementShapeOverride" item_name_3="PlacementShapeOverride" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="shape override" item_name_1="PlacementShapeOverride" item_name_2="PlacementShapeOverride" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="radius" />
 				<_3B v="" />
 			</_40>
-			<_40 v="spline" item_name_1="SoundPlacementSplineControlPoint" item_name_2="SoundPlacementSplineControlPoint" item_name_3="SoundPlacementSplineControlPoint" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="spline" item_name_1="SoundPlacementSplineControlPoint" item_name_2="SoundPlacementSplineControlPoint" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_19 v="position" />
 				<_3B v="" />
 			</_40>
-			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="folder name" />
 				<_17 v="local space pivot point position" />
 				<_3B v="" />
@@ -302,7 +302,7 @@
 			<_2 v="Movement RTPC name" />
 			<_14 v="movement detection radius" />
 			<_14 v="Movement distance scaling factor" />
-			<_38 v="BspMapRuntimeRefCounter" item_name_3="BspMapRuntimeRefCounter" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="BspMapRuntimeRefCounter" item_name_1="BspMapRuntimeRefCounter" item_name_2="BspMapRuntimeRefCounter" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_5 v="Bsp Ref Count" />
 				<_5 v="Layer Ref Count" />
 				<_3B v="" />

@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="MusketeerTOEDefinition" item_name_2="MusketeerTOEDefinition" item_name_3="MusketeerTOEDefinition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="MusketeerTOEDefinition" item_name_2="MusketeerTOEDefinition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="Musketeer Teams" item_name_1="MusketeerTeamDefinition" item_name_2="MusketeerTeamDefinition" item_name_3="MusketeerTeamDefinition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
-		<_40 v="Musketeer" item_name_1="MusketeerDefinition" item_name_2="MusketeerDefinition" item_name_3="MusketeerDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Musketeer Teams" item_name_1="MusketeerTeamDefinition" item_name_2="MusketeerTeamDefinition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+		<_40 v="Musketeer" item_name_1="MusketeerDefinition" item_name_2="MusketeerDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="character" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Difficulty Tunings" item_name_1="i343::Musketeer::Difficulty::Tunings" item_name_2="i343::Musketeer::Difficulty::Tunings" item_name_3="i343::Musketeer::Difficulty::Tunings" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
-			<_40 v="Tuning Sets" item_name_1="i343::Musketeer::Difficulty::TuningSet" item_name_2="i343::Musketeer::Difficulty::TuningSet" item_name_3="i343::Musketeer::Difficulty::TuningSet" db1="396" db2="0" db3="4" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="Difficulty Tunings" item_name_1="i343::Musketeer::Difficulty::Tunings" item_name_2="i343::Musketeer::Difficulty::Tunings" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_40 v="Tuning Sets" item_name_1="i343::Musketeer::Difficulty::TuningSet" item_name_2="i343::Musketeer::Difficulty::TuningSet" db1="396" db2="0" db3="4" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_C v="Type">
 					<Flag v="Target visible to any player" />
 					<Flag v="Actor gunning for any player" />

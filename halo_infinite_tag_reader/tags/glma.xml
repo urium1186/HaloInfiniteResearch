@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::MaterialGlobals" item_name_2="i343::MaterialGlobals" item_name_3="i343::MaterialGlobals" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="56" db8="1395">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::MaterialGlobals" item_name_2="i343::MaterialGlobals" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="56" db8="1395">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -15,7 +15,7 @@
 	<_2 v="audio material switch group" />
 	<_5 v="global water material type" />
 	<_5 v="global air material type" />
-	<_40 v="runtime materials" item_name_1="RuntimeGlobalMaterialDefinitionBlock" item_name_2="RuntimeGlobalMaterialDefinitionBlock" item_name_3="s_global_material_definition" db1="668" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+	<_40 v="runtime materials" item_name_1="s_global_material_definition" item_name_2="s_global_material_definition" db1="668" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
 		<_2 v="name" />
 		<_2 v="parent name" />
 		<_2 v="audio material name" />
@@ -33,10 +33,10 @@
 		<_2 v="specific armor" />
 		<_5 v="runtime dry base material index" />
 		<_34 v="generated_pad230c" length="2" />
-		<_38 v="physics properties" item_name_3="s_material_physics_properties" db1="104" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_38 v="physics properties" item_name_1="s_material_physics_properties" item_name_2="s_material_physics_properties" db1="104" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
 			<_3E v="flags" />
 			<_36 v="Friction" />
-			<_38 v="inheritable friction" item_name_3="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="inheritable friction" item_name_1="InheritableFloat" item_name_2="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="value" />
 				<_A v="inherit">
 					<Flag v="disabled" />
@@ -46,7 +46,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="Restitution" />
-			<_38 v="inheritable restitution" item_name_3="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="inheritable restitution" item_name_1="InheritableFloat" item_name_2="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="value" />
 				<_A v="inherit">
 					<Flag v="disabled" />
@@ -56,7 +56,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="Density" />
-			<_38 v="inheritable density" item_name_3="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="inheritable density" item_name_1="InheritableFloat" item_name_2="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="value" />
 				<_A v="inherit">
 					<Flag v="disabled" />
@@ -67,7 +67,7 @@
 			</_38>
 			<_36 v="Drag" />
 			<_41 v="water physics drag properties" />
-			<_40 v="drag overrides" item_name_1="s_global_material_object_drag_properties" item_name_2="s_global_material_object_drag_properties" item_name_3="s_global_material_object_drag_properties" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="drag overrides" item_name_1="s_global_material_object_drag_properties" item_name_2="s_global_material_object_drag_properties" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="drag properties" />
 				<_3B v="" />
 			</_40>
@@ -81,7 +81,7 @@
 			<_34 v="none" length="4" />
 			<_3B v="" />
 		</_38>
-		<_38 v="sweeteners" item_name_3="s_global_material_sweeteners_definition" db1="480" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_38 v="sweeteners" item_name_1="s_global_material_sweeteners_definition" item_name_2="s_global_material_sweeteners_definition" db1="480" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="sound sweetener (small)" />
 			<_41 v="sound sweetener (medium)" />
 			<_41 v="sound sweetener (large)" />
@@ -122,7 +122,7 @@
 			<_3B v="" />
 		</_38>
 		<_41 v="material effects" />
-		<_40 v="underwater proxies" item_name_1="s_global_material_underwater_proxy" item_name_2="s_global_material_underwater_proxy" item_name_3="s_global_material_underwater_proxy" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="underwater proxies" item_name_1="s_global_material_underwater_proxy" item_name_2="s_global_material_underwater_proxy" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_36 v="when this material is encounted under a material of this type ..." />
 			<_2 v="underwater material" />
 			<_36 v="... we report it as this material" />
@@ -133,7 +133,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="materials" item_name_1="s_global_material_definition" item_name_2="s_global_material_definition" item_name_3="s_global_material_definition" db1="668" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+	<_40 v="materials" item_name_1="s_global_material_definition" item_name_2="s_global_material_definition" db1="668" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
 		<_2 v="name" />
 		<_2 v="parent name" />
 		<_2 v="audio material name" />
@@ -151,10 +151,10 @@
 		<_2 v="specific armor" />
 		<_5 v="runtime dry base material index" />
 		<_34 v="generated_pad230c" length="2" />
-		<_38 v="physics properties" item_name_3="s_material_physics_properties" db1="104" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_38 v="physics properties" item_name_1="s_material_physics_properties" item_name_2="s_material_physics_properties" db1="104" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
 			<_3E v="flags" />
 			<_36 v="Friction" />
-			<_38 v="inheritable friction" item_name_3="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="inheritable friction" item_name_1="InheritableFloat" item_name_2="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="value" />
 				<_A v="inherit">
 					<Flag v="disabled" />
@@ -164,7 +164,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="Restitution" />
-			<_38 v="inheritable restitution" item_name_3="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="inheritable restitution" item_name_1="InheritableFloat" item_name_2="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="value" />
 				<_A v="inherit">
 					<Flag v="disabled" />
@@ -174,7 +174,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="Density" />
-			<_38 v="inheritable density" item_name_3="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="inheritable density" item_name_1="InheritableFloat" item_name_2="InheritableFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="value" />
 				<_A v="inherit">
 					<Flag v="disabled" />
@@ -185,7 +185,7 @@
 			</_38>
 			<_36 v="Drag" />
 			<_41 v="water physics drag properties" />
-			<_40 v="drag overrides" item_name_1="s_global_material_object_drag_properties" item_name_2="s_global_material_object_drag_properties" item_name_3="s_global_material_object_drag_properties" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="drag overrides" item_name_1="s_global_material_object_drag_properties" item_name_2="s_global_material_object_drag_properties" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="drag properties" />
 				<_3B v="" />
 			</_40>
@@ -199,7 +199,7 @@
 			<_34 v="none" length="4" />
 			<_3B v="" />
 		</_38>
-		<_38 v="sweeteners" item_name_3="s_global_material_sweeteners_definition" db1="480" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_38 v="sweeteners" item_name_1="s_global_material_sweeteners_definition" item_name_2="s_global_material_sweeteners_definition" db1="480" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="sound sweetener (small)" />
 			<_41 v="sound sweetener (medium)" />
 			<_41 v="sound sweetener (large)" />
@@ -240,7 +240,7 @@
 			<_3B v="" />
 		</_38>
 		<_41 v="material effects" />
-		<_40 v="underwater proxies" item_name_1="s_global_material_underwater_proxy" item_name_2="s_global_material_underwater_proxy" item_name_3="s_global_material_underwater_proxy" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="underwater proxies" item_name_1="s_global_material_underwater_proxy" item_name_2="s_global_material_underwater_proxy" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_36 v="when this material is encounted under a material of this type ..." />
 			<_2 v="underwater material" />
 			<_36 v="... we report it as this material" />

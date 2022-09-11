@@ -23,7 +23,9 @@ import struct
 
 from typing.io import BinaryIO
 
-from halo_infinite_tag_reader.common_tag_types import readStringInPlace
+from halo_infinite_tag_reader.headers.tagreftable import TagDependency
+from halo_infinite_tag_reader.headers.tagstructtable import TagStruct
+from halo_infinite_tag_reader.tag_reader_utils import readStringInPlace
 
 
 class TagReferenceFixup:
@@ -33,6 +35,8 @@ class TagReferenceFixup:
         self.field_offset = -1
         self.name_offset = -1
         self.dependency_index = -1
+        self.tag_dependency: TagDependency = None
+        self.parent_struct: TagStruct = None
         self.str_path = ""
         pass
 
@@ -52,7 +56,6 @@ class TagReferenceFixupTable:
         self.strings = []
         pass
 
-
         """
         while True:
             char = f.read(1)
@@ -61,17 +64,30 @@ class TagReferenceFixupTable:
             string.append(char.decode("utf-8"))
         """
 
-
-    def readStrings(self,f:BinaryIO,header,verbose=False):
-        #f.readline()
+    def readStrings(self, f: BinaryIO, header, data_block_table, tag_struct_table, tag_dependency_table, verbose=False):
+        # f.readline()
         f.seek(header.tag_reference_offset)
         for x in range(header.tag_reference_count):
             self.entries.append(TagReferenceFixup())
             self.entries[x].readIn(f, header)
-
+            if self.entries[x].field_block >= len(data_block_table.entries):
+                debug = True
+                assert False
+            db = data_block_table.entries[self.entries[x].field_block]
+            for tag_i in tag_struct_table.entries:
+                if tag_i.field_data_block == db:
+                    self.entries[x].parent_struct = tag_i
+                    break
+            if self.entries[x].parent_struct is None:
+                debug =True
+            if self.entries[x].dependency_index != -1:
+                self.entries[x].tag_dependency = tag_dependency_table.entries[self.entries[x].dependency_index]
+                assert self.entries[x].name_offset == self.entries[x].tag_dependency.name_offset
+            else:
+                debug = True
+            self.entries[x].parent_struct.l_tag_ref.append(self.entries[x])
         offset_1 = f.tell()
         lastPos = offset_1 + header.string_table_size
-        while offset_1<lastPos:
+        while offset_1 < lastPos:
             self.strings.append(readStringInPlace(f, offset_1))
             offset_1 = f.tell()
-

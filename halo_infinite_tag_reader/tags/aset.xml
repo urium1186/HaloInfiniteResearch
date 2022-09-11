@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="AssetTag" item_name_2="AssetTag" item_name_3="AssetTag" db1="608" db2="0" db3="6" db4="0" db5="1" db6="0" db7="592" db8="3447">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="AssetTag" item_name_2="AssetTag" db1="608" db2="0" db3="6" db4="0" db5="1" db6="0" db7="592" db8="3447">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,11 +10,11 @@
 		<_3B v="" />
 	</_38>
 	<_37 v="Regions" />
-	<_40 v="Visual region names" item_name_1="VisualRegionNameBlock" item_name_2="VisualRegionNameBlock" item_name_3="VisualRegionNameBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Visual region names" item_name_1="VisualRegionNameBlock" item_name_2="VisualRegionNameBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Property regions" item_name_1="PropertyRegion" item_name_2="PropertyRegion" item_name_3="PropertyRegion" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2437">
+	<_40 v="Property regions" item_name_1="PropertyRegion" item_name_2="PropertyRegion" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2437">
 		<_2 v="Name" />
 		<_D v="Flags">
 			<Flag v="Casts shadow" />
@@ -74,15 +74,15 @@
 	</_40>
 	<_37 v="" />
 	<_37 v="Component Tags/Files" />
-	<_40 v="Geometry tags" item_name_1="ContentTagBlock" item_name_2="ContentTagBlock" item_name_3="ContentTagBlock" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="Geometry tags" item_name_1="ContentTagBlock" item_name_2="ContentTagBlock" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_2 v="Name" />
 		<_2 v="GroupName" />
 		<_41 v="Reference" />
-		<_40 v="Relative source paths" item_name_1="RelativeSourcePath" item_name_2="RelativeSourcePath" item_name_3="RelativeSourcePath" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Relative source paths" item_name_1="RelativeSourcePath" item_name_2="RelativeSourcePath" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_44 v="Path" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Damage States" item_name_1="DamageStateBlock" item_name_2="DamageStateBlock" item_name_3="DamageStateBlock" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Damage States" item_name_1="DamageStateBlock" item_name_2="DamageStateBlock" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_C v="State">
 				<Flag v="undamaged" />
 				<Flag v="minor" />
@@ -99,17 +99,17 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Skeleton" item_name_1="SkeletonBlock" item_name_2="SkeletonBlock" item_name_3="SkeletonBlock" db1="284" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Skeleton" item_name_1="SkeletonBlock" item_name_2="SkeletonBlock" db1="284" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Reference" />
 		<_44 v="Alembic source path" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Additional content paths" item_name_1="AdditionalContentPath" item_name_2="AdditionalContentPath" item_name_3="AdditionalContentPath" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Additional content paths" item_name_1="AdditionalContentPath" item_name_2="AdditionalContentPath" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Name" />
 		<_44 v="Path" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Marker tags" item_name_1="MarkerBlock" item_name_2="MarkerBlock" item_name_3="MarkerBlock" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Marker tags" item_name_1="MarkerBlock" item_name_2="MarkerBlock" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
 		<_2 v="GroupName" />
 		<_41 v="Reference" />
@@ -128,7 +128,7 @@
 	<_2 v="LOD settings name" />
 	<_14 v="LOD distance bias" />
 	<_37 v="" />
-	<_40 v="LOD transition distances" item_name_1="LODTransitionDistancesBlock" item_name_2="LODTransitionDistancesBlock" item_name_3="LODTransitionDistancesBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="LOD transition distances" item_name_1="LODTransitionDistancesBlock" item_name_2="LODTransitionDistancesBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="Transition distance" />
 		<_3B v="" />
 	</_40>
@@ -153,22 +153,22 @@
 	<_37 v="" />
 	<_37 v="Variants" />
 	<_2 v="Default variant name" />
-	<_40 v="Asset variants" item_name_1="AssetVariant" item_name_2="AssetVariant" item_name_3="AssetVariant" db1="228" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="277">
+	<_40 v="Asset variants" item_name_1="AssetVariant" item_name_2="AssetVariant" db1="228" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="277">
 		<_2 v="Name" />
 		<_2 v="Style" />
 		<_6 v="Damage Style Index" />
 		<_2 v="All visual region" />
-		<_40 v="Visual region overrides" item_name_1="VisualRegionOverrideEntry" item_name_2="VisualRegionOverrideEntry" item_name_3="VisualRegionOverrideEntry" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Visual region overrides" item_name_1="VisualRegionOverrideEntry" item_name_2="VisualRegionOverrideEntry" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Region name" />
 			<_2 v="Geometry name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Material overrides" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" item_name_3="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Material overrides" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Original material ref" />
 			<_41 v="Override material ref" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Child objects" item_name_1="AssetChildObject" item_name_2="AssetChildObject" item_name_3="AssetChildObject" db1="76" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Child objects" item_name_1="AssetChildObject" item_name_2="AssetChildObject" db1="76" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_2 v="Parent marker" />
 			<_2 v="Child marker" />
 			<_2 v="Child variant name" />
@@ -182,11 +182,11 @@
 			<_34 v="generated_padb3ad" length="3" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Muted joints" item_name_1="MutedJointEntry" item_name_2="MutedJointEntry" item_name_3="MutedJointEntry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Muted joints" item_name_1="MutedJointEntry" item_name_2="MutedJointEntry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Joint name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Object Node Graphs Overrides" item_name_1="i343::Objects::ObjectNodeGraphDefinition" item_name_2="i343::Objects::ObjectNodeGraphDefinition" item_name_3="i343::Objects::ObjectNodeGraphDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_40 v="Object Node Graphs Overrides" item_name_1="i343::Objects::ObjectNodeGraphDefinition" item_name_2="i343::Objects::ObjectNodeGraphDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_2 v="Name" />
 			<_41 v="Exported Node Graph" />
 			<_F v="Flags">
@@ -208,9 +208,9 @@
 		<_41 v="Reference round trip ABC tag from a runtimegeo" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Unique geometry" item_name_1="UniqueAssetGeometryVariant" item_name_2="UniqueAssetGeometryVariant" item_name_3="UniqueAssetGeometryVariant" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Unique geometry" item_name_1="UniqueAssetGeometryVariant" item_name_2="UniqueAssetGeometryVariant" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_3F v="UUID" />
-		<_40 v="Explicit visual region list" item_name_1="VisualRegionOverrideEntry" item_name_2="VisualRegionOverrideEntry" item_name_3="VisualRegionOverrideEntry" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Explicit visual region list" item_name_1="VisualRegionOverrideEntry" item_name_2="VisualRegionOverrideEntry" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Region name" />
 			<_2 v="Geometry name" />
 			<_3B v="" />
@@ -294,7 +294,7 @@
 	<_41 v="Impostor tag" />
 	<_37 v="" />
 	<_37 v="Validation" />
-	<_38 v="Validation" item_name_3="ContentValidationBlockData" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+	<_38 v="Validation" item_name_1="ContentValidationBlockData" item_name_2="ContentValidationBlockData" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 		<_36 v="Content validation tests" />
 		<_D v="Validation status">
 			<Flag v="Performance (performance will be effected)" />
@@ -302,7 +302,7 @@
 			<Flag v="Critical (will cause crashes or instability if processed)" />
 			<Flag v="Not Run (this test has not been run as of the last pass)" />
 		</_D>
-		<_40 v="Validation test batteries" item_name_1="ContentValidationGroup" item_name_2="ContentValidationGroup" item_name_3="ContentValidationGroup" db1="284" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="Validation test batteries" item_name_1="ContentValidationGroup" item_name_2="ContentValidationGroup" db1="284" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 			<_1 v="Group name" />
 			<_6 v="Group ID" />
 			<_D v="Validation status">
@@ -311,7 +311,7 @@
 				<Flag v="Critical (will cause crashes or instability if processed)" />
 				<Flag v="Not Run (this test has not been run as of the last pass)" />
 			</_D>
-			<_40 v="Validation Tests" item_name_1="Validation" item_name_2="Validation" item_name_3="Validation" db1="280" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Validation Tests" item_name_1="Validation" item_name_2="Validation" db1="280" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_1 v="Test name" />
 				<_D v="Test status">
 					<Flag v="Performance (performance will be effected)" />
@@ -319,7 +319,7 @@
 					<Flag v="Critical (will cause crashes or instability if processed)" />
 					<Flag v="Not Run (this test has not been run as of the last pass)" />
 				</_D>
-				<_40 v="Comments" item_name_1="ValidationComment" item_name_2="ValidationComment" item_name_3="ValidationComment" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="Comments" item_name_1="ValidationComment" item_name_2="ValidationComment" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_1 v="Comment" />
 					<_D v="Status">
 						<Flag v="Performance (performance will be effected)" />

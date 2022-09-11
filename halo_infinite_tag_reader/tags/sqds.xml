@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::AI::SquadConstruction::SquadSpecification" item_name_2="i343::AI::SquadConstruction::SquadSpecification" item_name_3="i343::AI::SquadConstruction::SquadSpecification" db1="80" db2="0" db3="2" db4="0" db5="1" db6="0" db7="64" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::AI::SquadConstruction::SquadSpecification" item_name_2="i343::AI::SquadConstruction::SquadSpecification" db1="80" db2="0" db3="2" db4="0" db5="1" db6="0" db7="64" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,10 +10,10 @@
 		<_3B v="" />
 	</_38>
 	<_2 v="Name" />
-	<_40 v="Actor List" item_name_1="ActorCellEntryBlock" item_name_2="ActorCellEntryBlock" item_name_3="i343::AI::SquadConstruction::ActorCellEntry" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="88" db8="1299">
-		<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+	<_40 v="Actor List" item_name_1="i343::AI::SquadConstruction::ActorCellEntry" item_name_2="i343::AI::SquadConstruction::ActorCellEntry" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="88" db8="1299">
+		<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 			<_7 v="vtable space" />
-			<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_6 v="global tag ID" />
 				<_34 v="local tag handle" length="4" />
 				<_3B v="" />
@@ -26,14 +26,14 @@
 		<_34 v="generated_padbb57" length="4" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Vehicle List" item_name_1="i343::AI::SquadConstruction::VehicleCellEntry" item_name_2="i343::AI::SquadConstruction::VehicleCellEntry" item_name_3="i343::AI::SquadConstruction::VehicleCellEntry" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Vehicle List" item_name_1="i343::AI::SquadConstruction::VehicleCellEntry" item_name_2="i343::AI::SquadConstruction::VehicleCellEntry" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_41 v="Vehicle Definition" />
 		<_41 v="Vehicle Configuration" />
-		<_40 v="Passenger List" item_name_1="PassengerCellEntryBlock" item_name_2="PassengerCellEntryBlock" item_name_3="i343::AI::SquadConstruction::PassengerCellEntry" db1="112" db2="0" db3="0" db4="0" db5="0" db6="0" db7="8" db8="1299">
-			<_38 v="ActorCellEntryTag" item_name_3="i343::AI::SquadConstruction::ActorCellEntry" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="88" db8="1299">
-				<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_40 v="Passenger List" item_name_1="i343::AI::SquadConstruction::PassengerCellEntry" item_name_2="i343::AI::SquadConstruction::PassengerCellEntry" db1="112" db2="0" db3="0" db4="0" db5="0" db6="0" db7="8" db8="1299">
+			<_38 v="ActorCellEntryTag" item_name_1="i343::AI::SquadConstruction::ActorCellEntry" item_name_2="i343::AI::SquadConstruction::ActorCellEntry" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="88" db8="1299">
+				<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 					<_7 v="vtable space" />
-					<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_6 v="global tag ID" />
 						<_34 v="local tag handle" length="4" />
 						<_3B v="" />
@@ -66,12 +66,12 @@
 		<_34 v="generated_pad35c6" length="3" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Squad Intensity List" item_name_1="i343::AI::SquadConstruction::SquadIntensityEntry" item_name_2="i343::AI::SquadConstruction::SquadIntensityEntry" item_name_3="i343::AI::SquadConstruction::SquadIntensityEntry" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Squad Intensity List" item_name_1="i343::AI::SquadConstruction::SquadIntensityEntry" item_name_2="i343::AI::SquadConstruction::SquadIntensityEntry" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
-		<_40 v="Actor List" item_name_1="ActorCellEntryBlock" item_name_2="ActorCellEntryBlock" item_name_3="i343::AI::SquadConstruction::ActorCellEntry" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="88" db8="1299">
-			<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_40 v="Actor List" item_name_1="i343::AI::SquadConstruction::ActorCellEntry" item_name_2="i343::AI::SquadConstruction::ActorCellEntry" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="88" db8="1299">
+			<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 				<_7 v="vtable space" />
-				<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_6 v="global tag ID" />
 					<_34 v="local tag handle" length="4" />
 					<_3B v="" />
@@ -84,14 +84,14 @@
 			<_34 v="generated_padbb57" length="4" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Vehicle List" item_name_1="i343::AI::SquadConstruction::VehicleCellEntry" item_name_2="i343::AI::SquadConstruction::VehicleCellEntry" item_name_3="i343::AI::SquadConstruction::VehicleCellEntry" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Vehicle List" item_name_1="i343::AI::SquadConstruction::VehicleCellEntry" item_name_2="i343::AI::SquadConstruction::VehicleCellEntry" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_41 v="Vehicle Definition" />
 			<_41 v="Vehicle Configuration" />
-			<_40 v="Passenger List" item_name_1="PassengerCellEntryBlock" item_name_2="PassengerCellEntryBlock" item_name_3="i343::AI::SquadConstruction::PassengerCellEntry" db1="112" db2="0" db3="0" db4="0" db5="0" db6="0" db7="8" db8="1299">
-				<_38 v="ActorCellEntryTag" item_name_3="i343::AI::SquadConstruction::ActorCellEntry" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="88" db8="1299">
-					<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+			<_40 v="Passenger List" item_name_1="i343::AI::SquadConstruction::PassengerCellEntry" item_name_2="i343::AI::SquadConstruction::PassengerCellEntry" db1="112" db2="0" db3="0" db4="0" db5="0" db6="0" db7="8" db8="1299">
+				<_38 v="ActorCellEntryTag" item_name_1="i343::AI::SquadConstruction::ActorCellEntry" item_name_2="i343::AI::SquadConstruction::ActorCellEntry" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="88" db8="1299">
+					<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 						<_7 v="vtable space" />
-						<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_6 v="global tag ID" />
 							<_34 v="local tag handle" length="4" />
 							<_3B v="" />

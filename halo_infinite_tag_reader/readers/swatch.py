@@ -1,4 +1,5 @@
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
+from halo_infinite_tag_reader.tag_instance import TagInstance
 from halo_infinite_tag_reader.tag_reader_utils import checkFileExistInUE5Project
 
 
@@ -38,13 +39,18 @@ class Swatch(BaseTemplate):
         super().toJson()
         root = self.tag_parse.rootTagInst.childs[0]
         color_variant = None
-        for color in root['color_variants'].childs:
+        json_color_variants = root['color_variants'].toJson()
+        color_v_index = -1
+        for i, color in enumerate(root['color_variants'].childs):
             if color['name'].value == self.default_color_variant:
                 color_variant = color
+                color_v_index = i
                 break
         if color_variant is None:
             color_variant = root['color_variants'].childs[0]
-
+            color_v_index = 0
+        self.json_base["default_color_variant_index"] = color_v_index
+        self.json_base["color_variants"] = json_color_variants['items']
         self.json_base["scratchRoughness"] = root['scratch_roughness'].value
         self.json_base["scratchBrightness"] = root['scratch_brightness'].value
         self.json_base["ior"] = root['ior'].value
@@ -70,4 +76,8 @@ class Swatch(BaseTemplate):
         checkFileExistInUE5Project(self.json_base["colorGradientMap"])
         #self.json_base["swatchId"] = root['key'].value
         #print("")
+
+    def onInstanceLoad(self, instance: TagInstance):
+        super(Swatch, self).onInstanceLoad(instance)
+
 

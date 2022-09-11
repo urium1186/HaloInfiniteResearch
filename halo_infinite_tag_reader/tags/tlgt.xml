@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="TransitionLogicGraphTag" item_name_2="TransitionLogicGraphTag" item_name_3="TransitionLogicGraphTag" db1="1216" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="3347">
-	<_38 v="XAnimNodeGraph" item_name_3="ExportedAnimNodeGraph" db1="1216" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1200" db8="3347">
-		<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="TransitionLogicGraphTag" item_name_2="TransitionLogicGraphTag" db1="1216" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="3347">
+	<_38 v="XAnimNodeGraph" item_name_1="ExportedAnimNodeGraph" item_name_2="ExportedAnimNodeGraph" db1="1216" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1200" db8="3347">
+		<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 			<_7 v="vtable space" />
-			<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_6 v="global tag ID" />
 				<_34 v="local tag handle" length="4" />
 				<_3B v="" />
@@ -11,38 +11,38 @@
 			<_3B v="" />
 		</_38>
 		<_41 v="Source Graph" />
-		<_40 v="Anim Node Subgraphs" item_name_1="SubgraphReferenceExportedAnimNodeGraph" item_name_2="SubgraphReferenceExportedAnimNodeGraph" item_name_3="SubgraphReferenceExportedAnimNodeGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Anim Node Subgraphs" item_name_1="SubgraphReferenceExportedAnimNodeGraph" item_name_2="SubgraphReferenceExportedAnimNodeGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Anim Subgraph" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Anim State Subgraphs" item_name_1="SubgraphReferenceAnimStateGraph" item_name_2="SubgraphReferenceAnimStateGraph" item_name_3="SubgraphReferenceAnimStateGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Anim State Subgraphs" item_name_1="SubgraphReferenceAnimStateGraph" item_name_2="SubgraphReferenceAnimStateGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="State Subgraph" />
 			<_3B v="" />
 		</_40>
-		<_38 v="Control Parameters Definitions" item_name_3="i343::Animation::LocalControlParametersDefinition" db1="100" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Int Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" item_name_3="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_38 v="Control Parameters Definitions" item_name_1="i343::Animation::LocalControlParametersDefinition" item_name_2="i343::Animation::LocalControlParametersDefinition" db1="100" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Int Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Name" />
 				<_3B v="" />
 			</_40>
-			<_40 v="Float Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" item_name_3="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Float Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Name" />
 				<_3B v="" />
 			</_40>
-			<_40 v="Vector Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" item_name_3="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Vector Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Name" />
 				<_3B v="" />
 			</_40>
-			<_40 v="Bool Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" item_name_3="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Bool Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Name" />
 				<_3B v="" />
 			</_40>
-			<_40 v="String Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" item_name_3="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="String Control Parameters" item_name_1="i343::Animation::ControlParameter" item_name_2="i343::Animation::ControlParameter" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Name" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_38>
-		<_40 v="Blackboard Entries" item_name_1="BlackboardEntryDescriptor" item_name_2="BlackboardEntryDescriptor" item_name_3="BlackboardEntryDescriptor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Blackboard Entries" item_name_1="BlackboardEntryDescriptor" item_name_2="BlackboardEntryDescriptor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_C v="Data Type">
 				<Flag v="Bool" />
 				<Flag v="Float" />
@@ -52,7 +52,7 @@
 			<_2 v="Blackboard Id" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Connections" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Connections" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_C v="Source Node Type">
 				<Flag v="Animation Token" />
 				<Flag v="Animation Extract" />
@@ -169,7 +169,7 @@
 			<_6 v="Destination Pin Index" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Animation Tokens" item_name_1="AnimationTokenNode" item_name_2="AnimationTokenNode" item_name_3="AnimationTokenNode" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+		<_40 v="Animation Tokens" item_name_1="AnimationTokenNode" item_name_2="AnimationTokenNode" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 			<_2 v="Animation Name" />
 			<_2 v="Group Name" />
 			<_C v="Mode">
@@ -189,13 +189,13 @@
 			<_34 v="generated_pad4403" length="2" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Animation Exists Nodes" item_name_1="AnimationExistsNode" item_name_2="AnimationExistsNode" item_name_3="AnimationExistsNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Animation Exists Nodes" item_name_1="AnimationExistsNode" item_name_2="AnimationExistsNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Anim Set Name" />
 			<_2 v="Animation Name" />
 			<_6 v="Variation Index" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Anim Set Exists Nodes" item_name_1="AnimSetExistsNode" item_name_2="AnimSetExistsNode" item_name_3="AnimSetExistsNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Anim Set Exists Nodes" item_name_1="AnimSetExistsNode" item_name_2="AnimSetExistsNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Anim Set Name" />
 			<_3B v="" />
 		</_40>
@@ -203,19 +203,19 @@
 		<_6 v="Overlay Node Count" />
 		<_6 v="Dummy Pose Node Count" />
 		<_6 v="Branch Node Count" />
-		<_40 v="Pose Nodes" item_name_1="PoseNode" item_name_2="PoseNode" item_name_3="PoseNode" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Pose Nodes" item_name_1="PoseNode" item_name_2="PoseNode" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Animation Name" />
 			<_6 v="Frame" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Selection Nodes" item_name_1="SelectionNode" item_name_2="SelectionNode" item_name_3="SelectionNode" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Selection Nodes" item_name_1="SelectionNode" item_name_2="SelectionNode" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_6 v="Default Selection" />
 			<_E v="Selection Node Flags">
 				<Flag v="Evaluate On Relevant" />
 			</_E>
 			<_34 v="generated_pad6efe" length="2" />
-			<_40 v="Pose Connections" item_name_1="SelectionNodePose" item_name_2="SelectionNodePose" item_name_3="SelectionNodePose" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
-				<_38 v="Pose Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_40 v="Pose Connections" item_name_1="SelectionNodePose" item_name_2="SelectionNodePose" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="Pose Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_C v="Source Node Type">
 						<Flag v="Animation Token" />
 						<Flag v="Animation Extract" />
@@ -336,8 +336,8 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Layer Nodes" item_name_1="LayerNode" item_name_2="LayerNode" item_name_3="LayerNode" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Layers" item_name_1="LayerNodeLayer" item_name_2="LayerNodeLayer" item_name_3="LayerNodeLayer" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_40 v="Layer Nodes" item_name_1="LayerNode" item_name_2="LayerNode" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Layers" item_name_1="LayerNodeLayer" item_name_2="LayerNodeLayer" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_6 v="Index" />
 				<_C v="Mode">
 					<Flag v="Ignored" />
@@ -345,7 +345,7 @@
 					<Flag v="Replacement" />
 				</_C>
 				<_14 v="Alpha" />
-				<_38 v="Pose Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Pose Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_C v="Source Node Type">
 						<Flag v="Animation Token" />
 						<Flag v="Animation Extract" />
@@ -462,7 +462,7 @@
 					<_6 v="Destination Pin Index" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Alpha Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Alpha Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_C v="Source Node Type">
 						<Flag v="Animation Token" />
 						<Flag v="Animation Extract" />
@@ -584,7 +584,7 @@
 				</_E>
 				<_34 v="generated_pad47a8" length="2" />
 				<_2 v="Correction Pose Bone" />
-				<_38 v="Replacement Anim Correction Pose Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Replacement Anim Correction Pose Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_C v="Source Node Type">
 						<Flag v="Animation Token" />
 						<Flag v="Animation Extract" />
@@ -705,7 +705,7 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Blend Space Nodes" item_name_1="BlendSpaceNode" item_name_2="BlendSpaceNode" item_name_3="BlendSpaceNode" db1="120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Blend Space Nodes" item_name_1="BlendSpaceNode" item_name_2="BlendSpaceNode" db1="120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_C v="Blend Type">
 				<Flag v="Blend1d" />
 				<Flag v="Blend2d" />
@@ -715,19 +715,19 @@
 			</_C>
 			<_41 v="Blend Graph" />
 			<_2 v="Anim Name" />
-			<_40 v="Auto Speed Tokens" item_name_1="AutoSpeedToken" item_name_2="AutoSpeedToken" item_name_3="AutoSpeedToken" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="275">
+			<_40 v="Auto Speed Tokens" item_name_1="AutoSpeedToken" item_name_2="AutoSpeedToken" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="275">
 				<_2 v="Animation Token" />
 				<_14 v="Weight" />
-				<_38 v="Subgraph Reference" item_name_3="SubgraphReferenceExportedAnimNodeGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+				<_38 v="Subgraph Reference" item_name_1="SubgraphReferenceExportedAnimNodeGraph" item_name_2="SubgraphReferenceExportedAnimNodeGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 					<_41 v="Anim Subgraph" />
 					<_3B v="" />
 				</_38>
 				<_3B v="" />
 			</_40>
-			<_40 v="Auto Turn Rate Tokens" item_name_1="AutoSpeedToken" item_name_2="AutoSpeedToken" item_name_3="AutoSpeedToken" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="275">
+			<_40 v="Auto Turn Rate Tokens" item_name_1="AutoSpeedToken" item_name_2="AutoSpeedToken" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="275">
 				<_2 v="Animation Token" />
 				<_14 v="Weight" />
-				<_38 v="Subgraph Reference" item_name_3="SubgraphReferenceExportedAnimNodeGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+				<_38 v="Subgraph Reference" item_name_1="SubgraphReferenceExportedAnimNodeGraph" item_name_2="SubgraphReferenceExportedAnimNodeGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 					<_41 v="Anim Subgraph" />
 					<_3B v="" />
 				</_38>
@@ -756,11 +756,11 @@
 			<_14 v="Input Smoothing Traversal Time" />
 			<_3B v="" />
 		</_40>
-		<_40 v="State Machine Nodes" item_name_1="StateMachineNode" item_name_2="StateMachineNode" item_name_3="StateMachineNode" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="State Machine Nodes" item_name_1="StateMachineNode" item_name_2="StateMachineNode" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Animation State Machine" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Control Parameters" item_name_1="ControlParameterNode" item_name_2="ControlParameterNode" item_name_3="ControlParameterNode" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Control Parameters" item_name_1="ControlParameterNode" item_name_2="ControlParameterNode" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Parameter Name" />
 			<_C v="Type">
 				<Flag v="Int" />
@@ -771,11 +771,11 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Sub Anim Graphs" item_name_1="SubAnimGraphNode" item_name_2="SubAnimGraphNode" item_name_3="SubAnimGraphNode" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Sub Anim Graphs" item_name_1="SubAnimGraphNode" item_name_2="SubAnimGraphNode" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Animation Graph" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Transition Data Nodes" item_name_1="TransitionDataNode" item_name_2="TransitionDataNode" item_name_3="TransitionDataNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Transition Data Nodes" item_name_1="TransitionDataNode" item_name_2="TransitionDataNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Data Type">
 				<Flag v="Source Pose" />
 				<Flag v="Destination Pose" />
@@ -785,11 +785,11 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Object Function Nodes" item_name_1="ObjectFunctionNode" item_name_2="ObjectFunctionNode" item_name_3="ObjectFunctionNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Object Function Nodes" item_name_1="ObjectFunctionNode" item_name_2="ObjectFunctionNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Function Name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Editable Number Nodes" item_name_1="EditableNumberNode" item_name_2="EditableNumberNode" item_name_3="EditableNumberNode" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Editable Number Nodes" item_name_1="EditableNumberNode" item_name_2="EditableNumberNode" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Property Name" />
 			<_C v="Data Type">
 				<Flag v="Float" />
@@ -805,7 +805,7 @@
 			<_19 v="Vector Value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Boolean Logic Nodes" item_name_1="BooleanLogicNode" item_name_2="BooleanLogicNode" item_name_3="BooleanLogicNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Boolean Logic Nodes" item_name_1="BooleanLogicNode" item_name_2="BooleanLogicNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Operation Type">
 				<Flag v="And" />
 				<Flag v="Or" />
@@ -818,7 +818,7 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="String Logic Nodes" item_name_1="StringLogicNode" item_name_2="StringLogicNode" item_name_3="StringLogicNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="String Logic Nodes" item_name_1="StringLogicNode" item_name_2="StringLogicNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Operation Type">
 				<Flag v="Equal" />
 				<Flag v="Not Equal" />
@@ -826,7 +826,7 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Float Logic Nodes" item_name_1="FloatLogicNode" item_name_2="FloatLogicNode" item_name_3="FloatLogicNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Float Logic Nodes" item_name_1="FloatLogicNode" item_name_2="FloatLogicNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Condition">
 				<Flag v="LessThan" />
 				<Flag v="LessThanOrEqual" />
@@ -837,7 +837,7 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Float Operator Nodes" item_name_1="FloatOperatorNode" item_name_2="FloatOperatorNode" item_name_3="FloatOperatorNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Float Operator Nodes" item_name_1="FloatOperatorNode" item_name_2="FloatOperatorNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Operation Type">
 				<Flag v="Modulo" />
 				<Flag v="Absolute" />
@@ -867,7 +867,7 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Int Logic Nodes" item_name_1="IntLogicNode" item_name_2="IntLogicNode" item_name_3="IntLogicNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Int Logic Nodes" item_name_1="IntLogicNode" item_name_2="IntLogicNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Condition">
 				<Flag v="LessThan" />
 				<Flag v="LessThanOrEqual" />
@@ -878,7 +878,7 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Int Operator Nodes" item_name_1="IntOperatorNode" item_name_2="IntOperatorNode" item_name_3="IntOperatorNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Int Operator Nodes" item_name_1="IntOperatorNode" item_name_2="IntOperatorNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Operation Type">
 				<Flag v="Addition" />
 				<Flag v="Subtraction" />
@@ -887,7 +887,7 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Trig Nodes" item_name_1="TrigNode" item_name_2="TrigNode" item_name_3="TrigNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Trig Nodes" item_name_1="TrigNode" item_name_2="TrigNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Operation Type">
 				<Flag v="AcosInDegrees" />
 				<Flag v="AcosInRadians" />
@@ -910,12 +910,12 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Blackboard Nodes" item_name_1="BlackboardNode" item_name_2="BlackboardNode" item_name_3="BlackboardNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="Blackboard Nodes" item_name_1="BlackboardNode" item_name_2="BlackboardNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 			<_C v="Operation Type">
 				<Flag v="Getter" />
 				<Flag v="Setter" />
 			</_C>
-			<_38 v="Blackboard Entry Descriptor" item_name_3="BlackboardEntryDescriptor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="Blackboard Entry Descriptor" item_name_1="BlackboardEntryDescriptor" item_name_2="BlackboardEntryDescriptor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_C v="Data Type">
 					<Flag v="Bool" />
 					<Flag v="Float" />
@@ -927,7 +927,7 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="ValueConversion Nodes" item_name_1="ValueConversionNode" item_name_2="ValueConversionNode" item_name_3="ValueConversionNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="ValueConversion Nodes" item_name_1="ValueConversionNode" item_name_2="ValueConversionNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Conversion Type">
 				<Flag v="Int to Bool" />
 				<Flag v="Int to Float" />
@@ -938,7 +938,7 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Interpolation Nodes" item_name_1="InterpolationNode" item_name_2="InterpolationNode" item_name_3="InterpolationNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Interpolation Nodes" item_name_1="InterpolationNode" item_name_2="InterpolationNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="interpolation Type">
 				<Flag v="Float Linear Acceleration" />
 				<Flag v="Float Constant Velocity" />
@@ -959,33 +959,33 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Constant Float Nodes" item_name_1="ConstantFloatNode" item_name_2="ConstantFloatNode" item_name_3="ConstantFloatNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Constant Float Nodes" item_name_1="ConstantFloatNode" item_name_2="ConstantFloatNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Constant Int Nodes" item_name_1="ConstantIntNode" item_name_2="ConstantIntNode" item_name_3="ConstantIntNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Constant Int Nodes" item_name_1="ConstantIntNode" item_name_2="ConstantIntNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Constant Int64 Nodes" item_name_1="ConstantInt64Node" item_name_2="ConstantInt64Node" item_name_3="ConstantInt64Node" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Constant Int64 Nodes" item_name_1="ConstantInt64Node" item_name_2="ConstantInt64Node" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Value" />
 			<_34 v="generated_pad8671" length="4" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Constant UInt64 Nodes" item_name_1="ConstantUInt64Node" item_name_2="ConstantUInt64Node" item_name_3="ConstantUInt64Node" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Constant UInt64 Nodes" item_name_1="ConstantUInt64Node" item_name_2="ConstantUInt64Node" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Value" />
 			<_34 v="generated_pad75b8" length="4" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Constant String Nodes" item_name_1="ConstantStringNode" item_name_2="ConstantStringNode" item_name_3="ConstantStringNode" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Constant String Nodes" item_name_1="ConstantStringNode" item_name_2="ConstantStringNode" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_1 v="Value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Constant Bool Nodes" item_name_1="ConstantBoolNode" item_name_2="ConstantBoolNode" item_name_3="ConstantBoolNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Constant Bool Nodes" item_name_1="ConstantBoolNode" item_name_2="ConstantBoolNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Unit Parameter Nodes" item_name_1="UnitParameterNode" item_name_2="UnitParameterNode" item_name_3="UnitParameterNode" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Unit Parameter Nodes" item_name_1="UnitParameterNode" item_name_2="UnitParameterNode" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Parameter Type">
 				<Flag v="Unit Velocity" />
 				<Flag v="Unit Movement Angle" />
@@ -993,7 +993,7 @@
 			<_14 v="Angle Lock Range" />
 			<_3B v="" />
 		</_40>
-		<_40 v="End of Animation Nodes" item_name_1="EndOfAnimationNode" item_name_2="EndOfAnimationNode" item_name_3="EndOfAnimationNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="End of Animation Nodes" item_name_1="EndOfAnimationNode" item_name_2="EndOfAnimationNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_A v="Node Type">
 				<Flag v="End Of Animation" />
 				<Flag v="End Of Loop" />
@@ -1003,7 +1003,7 @@
 			<_14 v="Offset Time" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Mask Nodes" item_name_1="MaskNode" item_name_2="MaskNode" item_name_3="MaskNode" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Mask Nodes" item_name_1="MaskNode" item_name_2="MaskNode" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Mask ID" />
 			<_A v="Mask Node Type">
 				<Flag v="Bone Mask" />
@@ -1012,7 +1012,7 @@
 			<_34 v="generated_pad238e" length="3" />
 			<_3B v="" />
 		</_40>
-		<_40 v="IK Nodes" item_name_1="IKNodeTag" item_name_2="IKNodeTag" item_name_3="IKNodeTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="IK Nodes" item_name_1="IKNodeTag" item_name_2="IKNodeTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_14 v="Weight" />
 			<_2 v="Source Marker Name" />
 			<_2 v="Target Marker Name" />
@@ -1038,7 +1038,7 @@
 			<_34 v="generated_pad1cf9" length="3" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Ground IK Nodes" item_name_1="GroundIKNodeTag" item_name_2="GroundIKNodeTag" item_name_3="GroundIKNodeTag" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Ground IK Nodes" item_name_1="GroundIKNodeTag" item_name_2="GroundIKNodeTag" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_14 v="Weight" />
 			<_2 v="Source Marker Name" />
 			<_2 v="Preferred IK Chain Name" />
@@ -1046,7 +1046,7 @@
 			<_14 v="Priority" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Look IK Nodes" item_name_1="LookIKNodeTag" item_name_2="LookIKNodeTag" item_name_3="LookIKNodeTag" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Look IK Nodes" item_name_1="LookIKNodeTag" item_name_2="LookIKNodeTag" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_14 v="Weight" />
 			<_14 v="Blend Rate" />
 			<_14 v="Priority" />
@@ -1066,15 +1066,15 @@
 			<_34 v="generated_pad9f7b" length="3" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Concatenate Nodes" item_name_1="ConcatenateNode" item_name_2="ConcatenateNode" item_name_3="ConcatenateNode" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Strings" item_name_1="ConcatenateString" item_name_2="ConcatenateString" item_name_3="ConcatenateString" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Concatenate Nodes" item_name_1="ConcatenateNode" item_name_2="ConcatenateNode" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Strings" item_name_1="ConcatenateString" item_name_2="ConcatenateString" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_6 v="Index" />
 				<_1 v="String" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Anim Set Push Nodes" item_name_1="AnimSetPushNode" item_name_2="AnimSetPushNode" item_name_3="AnimSetPushNode" db1="264" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Anim Set Push Nodes" item_name_1="AnimSetPushNode" item_name_2="AnimSetPushNode" db1="264" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_A v="Type">
 				<Flag v="Conditional" />
 				<Flag v="Constant" />
@@ -1084,20 +1084,20 @@
 			<_6 v="Push Order" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Switch Nodes" item_name_1="SwitchNode" item_name_2="SwitchNode" item_name_3="SwitchNode" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Int Input Values" item_name_1="SwitchIntInputValue" item_name_2="SwitchIntInputValue" item_name_3="SwitchIntInputValue" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Switch Nodes" item_name_1="SwitchNode" item_name_2="SwitchNode" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Int Input Values" item_name_1="SwitchIntInputValue" item_name_2="SwitchIntInputValue" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_6 v="Int Value" />
 				<_3B v="" />
 			</_40>
-			<_40 v="String Input Values" item_name_1="SwitchStringInputValue" item_name_2="SwitchStringInputValue" item_name_3="SwitchStringInputValue" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="String Input Values" item_name_1="SwitchStringInputValue" item_name_2="SwitchStringInputValue" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="String Value" />
 				<_3B v="" />
 			</_40>
 			<_6 v="Default Pin Index" />
 			<_3B v="" />
 		</_40>
-		<_40 v="SwitchOnAsset Nodes" item_name_1="SwitchOnAssetNode" item_name_2="SwitchOnAssetNode" item_name_3="SwitchOnAssetNode" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Inputs" item_name_1="SwitchOnAssetInputValue" item_name_2="SwitchOnAssetInputValue" item_name_3="SwitchOnAssetInputValue" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="SwitchOnAsset Nodes" item_name_1="SwitchOnAssetNode" item_name_2="SwitchOnAssetNode" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Inputs" item_name_1="SwitchOnAssetInputValue" item_name_2="SwitchOnAssetInputValue" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="Asset Reference" />
 				<_A v="Is Asset Category">
 					<Flag v="Asset" />
@@ -1108,10 +1108,10 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Aim Screen Nodes" item_name_1="AimScreenNode" item_name_2="AimScreenNode" item_name_3="AimScreenNode" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_40 v="Aim Screen Nodes" item_name_1="AimScreenNode" item_name_2="AimScreenNode" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_14 v="Yaw" />
 			<_14 v="Pitch" />
-			<_38 v="Yaw Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Yaw Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_C v="Source Node Type">
 					<Flag v="Animation Token" />
 					<Flag v="Animation Extract" />
@@ -1228,7 +1228,7 @@
 				<_6 v="Destination Pin Index" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Pitch Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Pitch Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_C v="Source Node Type">
 					<Flag v="Animation Token" />
 					<Flag v="Animation Extract" />
@@ -1354,12 +1354,12 @@
 			<_14 v="Input Smoothing Traversal Time" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Acc Space Nodes" item_name_1="AccSpaceNode" item_name_2="AccSpaceNode" item_name_3="AccSpaceNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Acc Space Nodes" item_name_1="AccSpaceNode" item_name_2="AccSpaceNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Acceleration Animation Name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Animation Extract Nodes" item_name_1="AnimationExtractNode" item_name_2="AnimationExtractNode" item_name_3="AnimationExtractNode" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
-			<_38 v="Pose Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Animation Extract Nodes" item_name_1="AnimationExtractNode" item_name_2="AnimationExtractNode" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Pose Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_C v="Source Node Type">
 					<Flag v="Animation Token" />
 					<Flag v="Animation Extract" />
@@ -1479,7 +1479,7 @@
 			<_2 v="Joint Name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Animation Get Local Offset Nodes" item_name_1="AnimationGetLocalOffsetNode" item_name_2="AnimationGetLocalOffsetNode" item_name_3="AnimationGetLocalOffsetNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Animation Get Local Offset Nodes" item_name_1="AnimationGetLocalOffsetNode" item_name_2="AnimationGetLocalOffsetNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Joint Name 1" />
 			<_2 v="Joint Name 2" />
 			<_E v="Animation Get Local Offset Flags">
@@ -1489,8 +1489,8 @@
 			<_34 v="generated_padb27a" length="2" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Animation Get Values Nodes" item_name_1="AnimationGetValuesNode" item_name_2="AnimationGetValuesNode" item_name_3="AnimationGetValuesNode" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
-			<_38 v="Pose Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Animation Get Values Nodes" item_name_1="AnimationGetValuesNode" item_name_2="AnimationGetValuesNode" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Pose Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_C v="Source Node Type">
 					<Flag v="Animation Token" />
 					<Flag v="Animation Extract" />
@@ -1614,8 +1614,8 @@
 			<_34 v="generated_pad70a2" length="2" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Animation FK Nodes" item_name_1="AnimationFKNode" item_name_2="AnimationFKNode" item_name_3="AnimationFKNode" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
-			<_38 v="Pose Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Animation FK Nodes" item_name_1="AnimationFKNode" item_name_2="AnimationFKNode" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
+			<_38 v="Pose Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_C v="Source Node Type">
 					<Flag v="Animation Token" />
 					<Flag v="Animation Extract" />
@@ -1732,11 +1732,11 @@
 				<_6 v="Destination Pin Index" />
 				<_3B v="" />
 			</_38>
-			<_40 v="Joint Names" item_name_1="AnimationFKJointNames" item_name_2="AnimationFKJointNames" item_name_3="AnimationFKJointNames" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Joint Names" item_name_1="AnimationFKJointNames" item_name_2="AnimationFKJointNames" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Joint Name" />
 				<_3B v="" />
 			</_40>
-			<_38 v="Translation" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Translation" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_C v="Source Node Type">
 					<Flag v="Animation Token" />
 					<Flag v="Animation Extract" />
@@ -1853,7 +1853,7 @@
 				<_6 v="Destination Pin Index" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Rotation" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Rotation" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_C v="Source Node Type">
 					<Flag v="Animation Token" />
 					<Flag v="Animation Extract" />
@@ -1970,7 +1970,7 @@
 				<_6 v="Destination Pin Index" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Scale" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Scale" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_C v="Source Node Type">
 					<Flag v="Animation Token" />
 					<Flag v="Animation Extract" />
@@ -2095,7 +2095,7 @@
 				<Flag v="Propagate" />
 			</_E>
 			<_34 v="generated_pad8b37" length="2" />
-			<_38 v="Pivot Pose Connection" item_name_3="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Pivot Pose Connection" item_name_1="AnimGraphConnection" item_name_2="AnimGraphConnection" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_C v="Source Node Type">
 					<Flag v="Animation Token" />
 					<Flag v="Animation Extract" />
@@ -2215,7 +2215,7 @@
 			<_2 v="Pivot Joint Name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Animation Constraint Nodes" item_name_1="AnimationConstraintNode" item_name_2="AnimationConstraintNode" item_name_3="AnimationConstraintNode" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Animation Constraint Nodes" item_name_1="AnimationConstraintNode" item_name_2="AnimationConstraintNode" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Joint Name" />
 			<_2 v="Target Joint Name" />
 			<_2 v="Offset Joint Name" />
@@ -2227,13 +2227,13 @@
 			<_34 v="generated_pade4e3" length="2" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Voiceover Animation Nodes" item_name_1="VoiceoverAnimationNode" item_name_2="VoiceoverAnimationNode" item_name_3="VoiceoverAnimationNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Voiceover Animation Nodes" item_name_1="VoiceoverAnimationNode" item_name_2="VoiceoverAnimationNode" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_C v="Voiceover Animation Data Types">
 				<Flag v="VoiceOverSoundData" />
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Native Expression Nodes" item_name_1="NativeExpressionNode" item_name_2="NativeExpressionNode" item_name_3="NativeExpressionNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Native Expression Nodes" item_name_1="NativeExpressionNode" item_name_2="NativeExpressionNode" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_C v="Type">
 				<Flag v="Int" />
 				<Flag v="Float" />

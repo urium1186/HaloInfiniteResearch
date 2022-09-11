@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="Interface::NavPoint::NavPointParametersTagDefinition" item_name_2="Interface::NavPoint::NavPointParametersTagDefinition" item_name_3="Interface::NavPoint::NavPointParametersTagDefinition" db1="440" db2="0" db3="4" db4="0" db5="0" db6="0" db7="424" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="Interface::NavPoint::NavPointParametersTagDefinition" item_name_2="Interface::NavPoint::NavPointParametersTagDefinition" db1="440" db2="0" db3="4" db4="0" db5="0" db6="0" db7="424" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -14,7 +14,7 @@
 		<Flag v="Draw clamped to gutter if offscreen" />
 	</_D>
 	<_36 v="center sprite bg" />
-	<_38 v="center sprite bg" item_name_3="Interface::NavPoint::SpriteParametersTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="center sprite bg" item_name_1="Interface::NavPoint::SpriteParametersTag" item_name_2="Interface::NavPoint::SpriteParametersTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="color" />
 		<_C v="sequence index">
 			<Flag v="TacticalObjective" />
@@ -127,7 +127,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="center sprite fg" />
-	<_38 v="center sprite fg" item_name_3="Interface::NavPoint::SpriteParametersTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="center sprite fg" item_name_1="Interface::NavPoint::SpriteParametersTag" item_name_2="Interface::NavPoint::SpriteParametersTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="color" />
 		<_C v="sequence index">
 			<Flag v="TacticalObjective" />
@@ -240,7 +240,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="center radial progress bar" />
-	<_38 v="center radial progress bar" item_name_3="Interface::NavPoint::RadialProgressBarParametersTag" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="center radial progress bar" item_name_1="Interface::NavPoint::RadialProgressBarParametersTag" item_name_2="Interface::NavPoint::RadialProgressBarParametersTag" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="left color" />
 		<_20 v="right color" />
 		<_C v="sequenceIndex">
@@ -322,7 +322,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="top sprite" />
-	<_38 v="top sprite" item_name_3="Interface::NavPoint::SpriteParametersTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="top sprite" item_name_1="Interface::NavPoint::SpriteParametersTag" item_name_2="Interface::NavPoint::SpriteParametersTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="color" />
 		<_C v="sequence index">
 			<Flag v="TacticalObjective" />
@@ -435,7 +435,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="top center sprite" />
-	<_38 v="top center sprite" item_name_3="Interface::NavPoint::SpriteParametersTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="top center sprite" item_name_1="Interface::NavPoint::SpriteParametersTag" item_name_2="Interface::NavPoint::SpriteParametersTag" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="color" />
 		<_C v="sequence index">
 			<Flag v="TacticalObjective" />
@@ -548,7 +548,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="top label" />
-	<_38 v="top label" item_name_3="Interface::NavPoint::LabelParametersTag" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_38 v="top label" item_name_1="Interface::NavPoint::LabelParametersTag" item_name_2="Interface::NavPoint::LabelParametersTag" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_20 v="color" />
 		<_2 v="label" />
 		<_D v="drawing flags">
@@ -561,7 +561,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="right progress bar" />
-	<_38 v="right progress bar" item_name_3="Interface::NavPoint::ProgressBarParametersTag" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="right progress bar" item_name_1="Interface::NavPoint::ProgressBarParametersTag" item_name_2="Interface::NavPoint::ProgressBarParametersTag" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="left color" />
 		<_20 v="right color" />
 		<_14 v="fraction" />
@@ -575,7 +575,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="right progress bar 2" />
-	<_38 v="right progress bar 2" item_name_3="Interface::NavPoint::ProgressBarParametersTag" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="right progress bar 2" item_name_1="Interface::NavPoint::ProgressBarParametersTag" item_name_2="Interface::NavPoint::ProgressBarParametersTag" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="left color" />
 		<_20 v="right color" />
 		<_14 v="fraction" />
@@ -589,7 +589,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="right label" />
-	<_38 v="right label" item_name_3="Interface::NavPoint::LabelParametersTag" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_38 v="right label" item_name_1="Interface::NavPoint::LabelParametersTag" item_name_2="Interface::NavPoint::LabelParametersTag" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_20 v="color" />
 		<_2 v="label" />
 		<_D v="drawing flags">
@@ -602,7 +602,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="right timer" />
-	<_38 v="right timer" item_name_3="Interface::NavPoint::NumericParametersTag" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="right timer" item_name_1="Interface::NavPoint::NumericParametersTag" item_name_2="Interface::NavPoint::NumericParametersTag" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="color" />
 		<_C v="number format">
 			<Flag v="Timer" />
@@ -620,7 +620,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="left timer" />
-	<_38 v="left timer" item_name_3="Interface::NavPoint::NumericParametersTag" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="left timer" item_name_1="Interface::NavPoint::NumericParametersTag" item_name_2="Interface::NavPoint::NumericParametersTag" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="color" />
 		<_C v="number format">
 			<Flag v="Timer" />
@@ -638,7 +638,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="yaw sprite" />
-	<_38 v="yaw sprite" item_name_3="Interface::NavPoint::RotatedSpriteParametersTag" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="yaw sprite" item_name_1="Interface::NavPoint::RotatedSpriteParametersTag" item_name_2="Interface::NavPoint::RotatedSpriteParametersTag" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_20 v="color" />
 		<_C v="sequence index">
 			<Flag v="TacticalObjective" />
@@ -718,7 +718,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="animation" />
-	<_38 v="animation" item_name_3="Interface::NavPoint::AnimationParametersTag" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="animation" item_name_1="Interface::NavPoint::AnimationParametersTag" item_name_2="Interface::NavPoint::AnimationParametersTag" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_C v="animation type">
 			<Flag v="PlayerFiring" />
 			<Flag v="PlayerDamaged" />

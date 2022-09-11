@@ -1,7 +1,8 @@
 import os
 
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
-from halo_infinite_tag_reader.common_tag_types import TagInstance, readStringInPlace
+from halo_infinite_tag_reader.tag_instance import TagInstance
+from halo_infinite_tag_reader.tag_reader_utils import readStringInPlace
 
 
 class MultilingualUnicodeStringList(BaseTemplate):
@@ -14,6 +15,7 @@ class MultilingualUnicodeStringList(BaseTemplate):
         super().load()
 
     def onInstanceLoad(self, instance: TagInstance):
+        super(MultilingualUnicodeStringList, self).onInstanceLoad(instance)
         variants = {}
         #byteLengthCount
         if instance.tagDef.N == 'string references':

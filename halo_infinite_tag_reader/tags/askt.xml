@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="animation_skeleton" item_name_2="animation_skeleton" item_name_3="animation_skeleton" db1="264" db2="0" db3="0" db4="0" db5="1" db6="0" db7="248" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="animation_skeleton" item_name_2="animation_skeleton" db1="264" db2="0" db3="0" db4="0" db5="1" db6="0" db7="248" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="skeleton" item_name_3="AnimationGraphSkeleton" db1="104" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_38 v="skeleton" item_name_1="AnimationGraphSkeleton" item_name_2="AnimationGraphSkeleton" db1="104" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_6 v="skeleton checksum" />
-		<_40 v="skeleton bones" item_name_1="s_animation_graph_node" item_name_2="s_animation_graph_node" item_name_3="s_animation_graph_node" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+		<_40 v="skeleton bones" item_name_1="s_animation_graph_node" item_name_2="s_animation_graph_node" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 			<_2 v="name" />
 			<_2E v="next sibling node index" />
 			<_2E v="first child node index" />
@@ -30,7 +30,7 @@
 			<_6 v="frame_ID2" />
 			<_3B v="" />
 		</_40>
-		<_40 v="bone usage" item_name_1="s_animation_node_usage_entry" item_name_2="s_animation_node_usage_entry" item_name_3="s_animation_node_usage_entry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+		<_40 v="bone usage" item_name_1="s_animation_node_usage_entry" item_name_2="s_animation_node_usage_entry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 			<_B v="usage">
 				<Flag v="physics control" />
 				<Flag v="camera control" />
@@ -71,23 +71,23 @@
 			<_2E v="node to use" />
 			<_3B v="" />
 		</_40>
-		<_40 v="bone masks" item_name_1="s_animation_node_mask" item_name_2="s_animation_node_mask" item_name_3="s_animation_node_mask" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_40 v="bone masks" item_name_1="s_animation_node_mask" item_name_2="s_animation_node_mask" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 			<_2 v="name" />
 			<_E v="flags">
 				<Flag v="invert" />
 			</_E>
 			<_2E v="chain start" />
-			<_40 v="chain ends" item_name_1="s_animation_node_mask_entry" item_name_2="s_animation_node_mask_entry" item_name_3="s_animation_node_mask_entry" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="chain ends" item_name_1="s_animation_node_mask_entry" item_name_2="s_animation_node_mask_entry" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="node" />
 				<_3B v="" />
 			</_40>
-			<_40 v="nodes" item_name_1="s_animation_node_mask_entry" item_name_2="s_animation_node_mask_entry" item_name_3="s_animation_node_mask_entry" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="nodes" item_name_1="s_animation_node_mask_entry" item_name_2="s_animation_node_mask_entry" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="node" />
 				<_3B v="" />
 			</_40>
 			<_2E v="add nodes" />
 			<_2E v="remove nodes" />
-			<_39 v="node flags" item_name_3="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_39 v="node flags" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_6 v="flag data" />
 				<_3B v="" />
 				<_6 v="flag data" />
@@ -155,24 +155,24 @@
 			</_39>
 			<_3B v="" />
 		</_40>
-		<_40 v="user parameters" item_name_1="AnimationGraphUserParameter" item_name_2="AnimationGraphUserParameter" item_name_3="AnimationGraphUserParameter" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="user parameters" item_name_1="AnimationGraphUserParameter" item_name_2="AnimationGraphUserParameter" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="name" />
 			<_14 v="default value" />
 			<_3B v="" />
 		</_40>
-		<_40 v="user parameter masks" item_name_1="s_animation_userparam_mask" item_name_2="s_animation_userparam_mask" item_name_3="s_animation_userparam_mask" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_40 v="user parameter masks" item_name_1="s_animation_userparam_mask" item_name_2="s_animation_userparam_mask" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 			<_2 v="name" />
 			<_E v="flags">
 				<Flag v="invert" />
 			</_E>
 			<_34 v="generated_pade566" length="2" />
-			<_40 v="userparams" item_name_1="s_animation_userparam_mask_entry" item_name_2="s_animation_userparam_mask_entry" item_name_3="s_animation_userparam_mask_entry" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="userparams" item_name_1="s_animation_userparam_mask_entry" item_name_2="s_animation_userparam_mask_entry" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="userparam index" />
 				<_3B v="" />
 			</_40>
 			<_2E v="add nodes" />
 			<_2E v="remove nodes" />
-			<_39 v="user parameter flags" item_name_3="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_39 v="user parameter flags" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_6 v="flag data" />
 				<_3B v="" />
 				<_6 v="flag data" />
@@ -210,9 +210,9 @@
 		</_40>
 		<_3B v="" />
 	</_38>
-	<_38 v="ik" item_name_3="AnimationGraphIK" db1="140" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_38 v="ik" item_name_1="AnimationGraphIK" item_name_2="AnimationGraphIK" db1="140" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_36 v="IK Junctions" />
-		<_40 v="ik junctions" item_name_1="AnimationIKJunction" item_name_2="AnimationIKJunction" item_name_3="AnimationIKJunction" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+		<_40 v="ik junctions" item_name_1="AnimationIKJunction" item_name_2="AnimationIKJunction" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 			<_2 v="name" />
 			<_2E v="pivot node" />
 			<_2E v="parent junction" />
@@ -222,7 +222,7 @@
 			<_3B v="" />
 		</_40>
 		<_36 v="IK Chains" />
-		<_40 v="ik chains" item_name_1="s_animation_ik_chain" item_name_2="s_animation_ik_chain" item_name_3="s_animation_ik_chain" db1="104" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="ik chains" item_name_1="s_animation_ik_chain" item_name_2="s_animation_ik_chain" db1="104" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="name" />
 			<_B v="type">
 				<Flag v="standard" />
@@ -234,7 +234,7 @@
 			<_2E v="parent junction" />
 			<_5 v="rank" />
 			<_5 v="antecedents" />
-			<_40 v="special joints" item_name_1="AnimationIKJoint" item_name_2="AnimationIKJoint" item_name_3="AnimationIKJoint" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="special joints" item_name_1="AnimationIKJoint" item_name_2="AnimationIKJoint" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="joint index" />
 				<_E v="flags">
 					<Flag v="static" />
@@ -252,7 +252,7 @@
 			<_24 v="pitch bounds" />
 			<_24 v="yaw bounds" />
 			<_25 v="offset bounds" />
-			<_40 v="full joint chain" item_name_1="AnimationIKJoint" item_name_2="AnimationIKJoint" item_name_3="AnimationIKJoint" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="full joint chain" item_name_1="AnimationIKJoint" item_name_2="AnimationIKJoint" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="joint index" />
 				<_E v="flags">
 					<Flag v="static" />
@@ -263,7 +263,7 @@
 			<_15 v="spline reversal strength" />
 			<_3B v="" />
 		</_40>
-		<_40 v="ik leg definitions" item_name_1="s_animation_ik_leg_definition" item_name_2="s_animation_ik_leg_definition" item_name_3="s_animation_ik_leg_definition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+		<_40 v="ik leg definitions" item_name_1="s_animation_ik_leg_definition" item_name_2="s_animation_ik_leg_definition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 			<_30 v="leg ik chain" />
 			<_25 v="standing compression limits" />
 			<_25 v="crouching compression limits" />
@@ -271,7 +271,7 @@
 			<_25 v="foot yaw limits" />
 			<_3B v="" />
 		</_40>
-		<_40 v="ik arm definitions" item_name_1="s_animation_ik_arm_definition" item_name_2="s_animation_ik_arm_definition" item_name_3="s_animation_ik_arm_definition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+		<_40 v="ik arm definitions" item_name_1="s_animation_ik_arm_definition" item_name_2="s_animation_ik_arm_definition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 			<_30 v="arm ik chain" />
 			<_14 v="wrist break threshold" />
 			<_2 v="fixup axis marker" />
@@ -279,7 +279,7 @@
 			<_3B v="" />
 		</_40>
 		<_36 v="Points and Sets" />
-		<_40 v="ik point" item_name_1="s_animation_ik_point" item_name_2="s_animation_ik_point" item_name_3="s_animation_ik_point" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+		<_40 v="ik point" item_name_1="s_animation_ik_point" item_name_2="s_animation_ik_point" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 			<_2 v="name" />
 			<_2 v="source marker" />
 			<_C v="attach to">
@@ -297,13 +297,13 @@
 			<_2 v="priority source object function" />
 			<_3B v="" />
 		</_40>
-		<_40 v="ik sets" item_name_1="s_animation_ik_set" item_name_2="s_animation_ik_set" item_name_3="s_animation_ik_set" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="ik sets" item_name_1="s_animation_ik_set" item_name_2="s_animation_ik_set" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="name" />
 			<_D v="flags">
 				<Flag v="Disable Quadruped Footlocking" />
 				<Flag v="Enable Biped Handlocking" />
 			</_D>
-			<_40 v="ik points" item_name_1="s_animation_ik_set_item" item_name_2="s_animation_ik_set_item" item_name_3="s_animation_ik_set_item" db1="4" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="ik points" item_name_1="s_animation_ik_set_item" item_name_2="s_animation_ik_set_item" db1="4" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="ik point" />
 				<_E v="flags">
 					<Flag v="disable" />
@@ -313,7 +313,7 @@
 			<_3B v="" />
 		</_40>
 		<_36 v="Ground-fit chains" />
-		<_40 v="groundfit ik chains" item_name_1="i343::Animation::IKGroundFittingChain" item_name_2="i343::Animation::IKGroundFittingChain" item_name_3="i343::Animation::IKGroundFittingChain" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="groundfit ik chains" item_name_1="i343::Animation::IKGroundFittingChain" item_name_2="i343::Animation::IKGroundFittingChain" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_36 v="Chain Drivers" />
 			<_30 v="start junction" />
 			<_30 v="end junction" />

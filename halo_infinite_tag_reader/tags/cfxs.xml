@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="c_camera_fx_settings" item_name_2="c_camera_fx_settings" item_name_3="c_camera_fx_settings" db1="1040" db2="0" db3="6" db4="0" db5="1" db6="0" db7="1024" db8="3383">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="c_camera_fx_settings" item_name_2="c_camera_fx_settings" db1="1040" db2="0" db3="6" db4="0" db5="1" db6="0" db7="1024" db8="3383">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,7 +10,7 @@
 		<_3B v="" />
 	</_38>
 	<_37 v="" />
-	<_38 v="exposure" item_name_3="camera_fx_settings::s_real_exposure_parameter" db1="40" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="exposure" item_name_1="camera_fx_settings::s_real_exposure_parameter" item_name_2="camera_fx_settings::s_real_exposure_parameter" db1="40" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_37 v="" />
 		<_36 v="EXPOSURE" />
 		<_E v="flags">
@@ -37,7 +37,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_38>
-	<_38 v="auto_exposure_sensitivity" item_name_3="camera_fx_settings::CameraFXExposureSensitivity" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="auto_exposure_sensitivity" item_name_1="camera_fx_settings::CameraFXExposureSensitivity" item_name_2="camera_fx_settings::CameraFXExposureSensitivity" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="AUTO EXPOSURE SENSITIVITY" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -52,7 +52,7 @@
 		<_14 v="sensitivity (0-1)" />
 		<_3B v="" />
 	</_38>
-	<_38 v="exposure pitch influence" item_name_3="camera_fx_settings::CameraFXExposurePitchInfluence" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="exposure pitch influence" item_name_1="camera_fx_settings::CameraFXExposurePitchInfluence" item_name_2="camera_fx_settings::CameraFXExposurePitchInfluence" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_36 v="EXPOSURE PITCH INFLUENCE" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -66,7 +66,7 @@
 		<_34 v="generated_pad3993" length="2" />
 		<_36 v="INFLUENCE FUNCTION (GROUND -&gt; HORIZON -&gt; SKY)" />
 		<_37 v="function" />
-		<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -74,7 +74,7 @@
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="exposure compensation" item_name_3="camera_fx_settings::CameraFXExposureCompensation" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="exposure compensation" item_name_1="camera_fx_settings::CameraFXExposureCompensation" item_name_2="camera_fx_settings::CameraFXExposureCompensation" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_36 v="EXPOSURE COMPENSATION" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -88,7 +88,7 @@
 		<_34 v="generated_pad19de" length="2" />
 		<_36 v="COMPENSATION FUNCTION (EXPOSURE MIN -&gt; EXPOSURE MAX)" />
 		<_37 v="function" />
-		<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -96,7 +96,7 @@
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="bloom_highlight" item_name_3="camera_fx_settings::CameraFXBloomHighlight" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="bloom_highlight" item_name_1="camera_fx_settings::CameraFXBloomHighlight" item_name_2="camera_fx_settings::CameraFXBloomHighlight" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="HIGHLIGHT BLOOM" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -113,7 +113,7 @@
 		<_14 v="blend speed (0-1)" />
 		<_3B v="" />
 	</_38>
-	<_38 v="bloom_highlight_threshold" item_name_3="camera_fx_settings::CameraFXBloomHighlightThreshold" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="bloom_highlight_threshold" item_name_1="camera_fx_settings::CameraFXBloomHighlightThreshold" item_name_2="camera_fx_settings::CameraFXBloomHighlightThreshold" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="HIGHLIGHT BLOOM THRESHOLD" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -130,7 +130,7 @@
 		<_14 v="blend speed (0-1)" />
 		<_3B v="" />
 	</_38>
-	<_38 v="bloom_inherent" item_name_3="camera_fx_settings::CameraFXBloomInherent" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="bloom_inherent" item_name_1="camera_fx_settings::CameraFXBloomInherent" item_name_2="camera_fx_settings::CameraFXBloomInherent" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="AMBIENT BLOOM" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -147,7 +147,7 @@
 		<_14 v="blend speed (0-1)" />
 		<_3B v="" />
 	</_38>
-	<_38 v="bloom_intensity" item_name_3="camera_fx_settings::CameraFXBloomIntensity" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="bloom_intensity" item_name_1="camera_fx_settings::CameraFXBloomIntensity" item_name_2="camera_fx_settings::CameraFXBloomIntensity" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="BLOOM INTENSITY" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -164,7 +164,7 @@
 		<_14 v="blend speed (0-1)" />
 		<_3B v="" />
 	</_38>
-	<_38 v="bloom_layer_intensity" item_name_3="camera_fx_settings::CameraFXBloomLayerIntensity" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="bloom_layer_intensity" item_name_1="camera_fx_settings::CameraFXBloomLayerIntensity" item_name_2="camera_fx_settings::CameraFXBloomLayerIntensity" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
 			<Flag v="maximum change is relative" />
@@ -182,7 +182,7 @@
 		<_14 v="blend speed (0-1)" />
 		<_3B v="" />
 	</_38>
-	<_38 v="bloom_tint_color" item_name_3="camera_fx_settings::CameraFXBloomTintColor" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="bloom_tint_color" item_name_1="camera_fx_settings::CameraFXBloomTintColor" item_name_2="camera_fx_settings::CameraFXBloomTintColor" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="BLOOM TINT COLOR" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -197,7 +197,7 @@
 		<_1F v="tint color" />
 		<_3B v="" />
 	</_38>
-	<_38 v="self_illum_exposure_settings" item_name_3="camera_fx_settings::CameraFXSelfIllumExposureSettings" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="self_illum_exposure_settings" item_name_1="camera_fx_settings::CameraFXSelfIllumExposureSettings" item_name_2="camera_fx_settings::CameraFXSelfIllumExposureSettings" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="SELF ILLUM EXPOSURE" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -214,7 +214,7 @@
 		<_14 v="blend speed (0-1)" />
 		<_3B v="" />
 	</_38>
-	<_38 v="self_illum_scale" item_name_3="camera_fx_settings::CameraFXSelfIllumScale" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="self_illum_scale" item_name_1="camera_fx_settings::CameraFXSelfIllumScale" item_name_2="camera_fx_settings::CameraFXSelfIllumScale" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="SELF ILLUM CHANGE" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -232,7 +232,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (UNSC)" />
-	<_38 v="self_illum_scale_unsc" item_name_3="camera_fx_settings::CameraFXSelfIllumScalePerRace" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="self_illum_scale_unsc" item_name_1="camera_fx_settings::CameraFXSelfIllumScalePerRace" item_name_2="camera_fx_settings::CameraFXSelfIllumScalePerRace" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
 			<Flag v="maximum change is relative" />
@@ -249,7 +249,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Covenant)" />
-	<_38 v="self_illum_scale_covenant" item_name_3="camera_fx_settings::CameraFXSelfIllumScalePerRace" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="self_illum_scale_covenant" item_name_1="camera_fx_settings::CameraFXSelfIllumScalePerRace" item_name_2="camera_fx_settings::CameraFXSelfIllumScalePerRace" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
 			<Flag v="maximum change is relative" />
@@ -266,7 +266,7 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Forerunner)" />
-	<_38 v="self_illum_scale_forerunner" item_name_3="camera_fx_settings::CameraFXSelfIllumScalePerRace" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="self_illum_scale_forerunner" item_name_1="camera_fx_settings::CameraFXSelfIllumScalePerRace" item_name_2="camera_fx_settings::CameraFXSelfIllumScalePerRace" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
 			<Flag v="maximum change is relative" />
@@ -284,7 +284,7 @@
 	</_38>
 	<_36 v="EFFECT EXPOSURE OVERRIDE" />
 	<_41 v="effect exposure override" />
-	<_38 v="color_grading" item_name_3="camera_fx_settings::s_color_grading_parameter" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_38 v="color_grading" item_name_1="camera_fx_settings::s_color_grading_parameter" item_name_2="camera_fx_settings::s_color_grading_parameter" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_36 v="Color Grading" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -301,7 +301,7 @@
 		<_14 v="blend time" />
 		<_3B v="" />
 	</_38>
-	<_38 v="ssao_settings" item_name_3="camera_fx_settings::s_ssao_parameter" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="ssao_settings" item_name_1="camera_fx_settings::s_ssao_parameter" item_name_2="camera_fx_settings::s_ssao_parameter" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="SSAO settings" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -332,7 +332,7 @@
 		<_14 v="Omni Light AO" />
 		<_3B v="" />
 	</_38>
-	<_38 v="deferred_reflections_settings" item_name_3="camera_fx_settings::DeferredReflectionsParameter" db1="168" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_38 v="deferred_reflections_settings" item_name_1="camera_fx_settings::DeferredReflectionsParameter" item_name_2="camera_fx_settings::DeferredReflectionsParameter" db1="168" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_36 v="Deferred Reflections settings" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -352,7 +352,7 @@
 		<_14 v="Intensity First Person" />
 		<_14 v="Fade to Cubemap" />
 		<_14 v="Border Fade Size" />
-		<_38 v="Ray Steps" item_name_3="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -408,7 +408,7 @@
 		<_14 v="SSR Roughness Threshold" />
 		<_14 v="SSR Tonemap Strength" />
 		<_14 v="SSR Tonemap Clamp" />
-		<_38 v="Resolution" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Resolution" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -457,7 +457,7 @@
 			<_14 v="4 Player Splitscreen" />
 			<_3B v="" />
 		</_38>
-		<_38 v="SSR Enabled" item_name_3="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="SSR Enabled" item_name_1="SpecControlNodeBoolExact" item_name_2="SpecControlNodeBoolExact" db1="17" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -485,7 +485,7 @@
 				<Flag v="Texture Quality" />
 				<Flag v="Decals" />
 			</_A>
-			<_38 v="Low" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Low" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_F v="Single Player">
 					<Flag v="True" />
 				</_F>
@@ -500,7 +500,7 @@
 				</_F>
 				<_3B v="" />
 			</_38>
-			<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_F v="Single Player">
 					<Flag v="True" />
 				</_F>
@@ -515,7 +515,7 @@
 				</_F>
 				<_3B v="" />
 			</_38>
-			<_38 v="High" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="High" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_F v="Single Player">
 					<Flag v="True" />
 				</_F>
@@ -530,7 +530,7 @@
 				</_F>
 				<_3B v="" />
 			</_38>
-			<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesBool" item_name_2="SpecControlSplitscreenValuesBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_F v="Single Player">
 					<Flag v="True" />
 				</_F>
@@ -550,7 +550,7 @@
 		<_34 v="generated_pad2316" length="3" />
 		<_3B v="" />
 	</_38>
-	<_38 v="camera lens dirt" item_name_3="camera_fx_settings::s_camera_lens_dirt_parameter" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_38 v="camera lens dirt" item_name_1="camera_fx_settings::s_camera_lens_dirt_parameter" item_name_2="camera_fx_settings::s_camera_lens_dirt_parameter" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_36 v="Camera Lens Dirt Settings" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -571,7 +571,7 @@
 		<_34 v="generated_pad409c" length="3" />
 		<_3B v="" />
 	</_38>
-	<_38 v="contact shadows" item_name_3="camera_fx_settings::ContactShadowsParameter" db1="372" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_38 v="contact shadows" item_name_1="camera_fx_settings::ContactShadowsParameter" item_name_2="camera_fx_settings::ContactShadowsParameter" db1="372" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_36 v="Sun Contact Shadow Settings" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -586,7 +586,7 @@
 		<_D v="Contact Shadow Flags">
 			<Flag v="Enabled" />
 		</_D>
-		<_38 v="Enabled" item_name_3="SpecControlNodeBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Enabled" item_name_1="SpecControlNodeBool" item_name_2="SpecControlNodeBool" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -624,7 +624,7 @@
 			</_E>
 			<_3B v="" />
 		</_38>
-		<_38 v="Ray Steps" item_name_3="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -674,7 +674,7 @@
 			<_3B v="" />
 		</_38>
 		<_14 v="Ray Steps First Person Scalar" />
-		<_38 v="Maximum Shadow Ray Length" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Maximum Shadow Ray Length" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -724,7 +724,7 @@
 			<_3B v="" />
 		</_38>
 		<_14 v="Maximum Shadow Ray Length First Person Scalar" />
-		<_38 v="Ray Pixel Stride" item_name_3="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Ray Pixel Stride" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -782,7 +782,7 @@
 		<_14 v="Shadow Fade End Distance" />
 		<_14 v="Global Opacity" />
 		<_14 v="Global Opacity First Person" />
-		<_38 v="Global Opacity Fade Multiplier" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="Global Opacity Fade Multiplier" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -811,28 +811,28 @@
 				<Flag v="Decals" />
 			</_A>
 			<_34 v="generated_pad4417" length="3" />
-			<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Single Player" />
 				<_14 v="2 Player Splitscreen" />
 				<_14 v="3 Player Splitscreen" />
 				<_14 v="4 Player Splitscreen" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Single Player" />
 				<_14 v="2 Player Splitscreen" />
 				<_14 v="3 Player Splitscreen" />
 				<_14 v="4 Player Splitscreen" />
 				<_3B v="" />
 			</_38>
-			<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Single Player" />
 				<_14 v="2 Player Splitscreen" />
 				<_14 v="3 Player Splitscreen" />
 				<_14 v="4 Player Splitscreen" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Single Player" />
 				<_14 v="2 Player Splitscreen" />
 				<_14 v="3 Player Splitscreen" />
@@ -850,7 +850,7 @@
 		<_14 v="Normal Bias Near" />
 		<_14 v="Normal Bias Far" />
 		<_14 v="FOV Slope Near Bias Scalar" />
-		<_38 v="Per-Spec Near Bias Scalar" item_name_3="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="Per-Spec Near Bias Scalar" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -879,28 +879,28 @@
 				<Flag v="Decals" />
 			</_A>
 			<_34 v="generated_pad4417" length="3" />
-			<_38 v="Low" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Low" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Single Player" />
 				<_14 v="2 Player Splitscreen" />
 				<_14 v="3 Player Splitscreen" />
 				<_14 v="4 Player Splitscreen" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Medium" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Medium" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Single Player" />
 				<_14 v="2 Player Splitscreen" />
 				<_14 v="3 Player Splitscreen" />
 				<_14 v="4 Player Splitscreen" />
 				<_3B v="" />
 			</_38>
-			<_38 v="High" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="High" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Single Player" />
 				<_14 v="2 Player Splitscreen" />
 				<_14 v="3 Player Splitscreen" />
 				<_14 v="4 Player Splitscreen" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Ultra" item_name_3="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="Ultra" item_name_1="SpecControlSplitscreenValuesFloat" item_name_2="SpecControlSplitscreenValuesFloat" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Single Player" />
 				<_14 v="2 Player Splitscreen" />
 				<_14 v="3 Player Splitscreen" />

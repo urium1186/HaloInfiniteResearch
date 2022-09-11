@@ -3,8 +3,64 @@ import pathlib
 import json
 import shutil
 import sys
+from collections import OrderedDict
 
 from configs.config import Config
+
+
+def getStringsByRef(fh, ref_id, ref_id_sub, ref_id_center, group):
+    index_ref_found = string_offset = -1
+    str_found = None
+    str_temp = ''
+    match = {}
+    for item in fh.tag_dependency_table.entries:
+        if item.tagGroupRev == group:
+            debug = True
+            if match.keys().__contains__(item):
+                match[item] += 1
+            else:
+                match[item] = 1
+            if item.global_id == ref_id and item.ref_id_sub == ref_id_sub and item.ref_id_center == ref_id_center:
+                str_found = item
+                assert item.tagGroupRev == group
+                break
+            else:
+                if item.global_id == ref_id:
+                    match[item] += 1
+                if item.ref_id_sub == ref_id_sub:
+                    match[item] += 1
+                if item.ref_id_center == ref_id_center:
+                    match[item] += 1
+
+    if not (str_found is None):
+        for str_item in fh.tag_reference_fixup_table.entries:
+            if str_item.name_offset == str_found.name_offset:
+                return str_item.str_path
+    if str_temp == '':
+        debug = True
+    return str_temp
+
+
+def readStringInPlace(f, start, inplace=False):
+    toBack = f.tell()
+    f.seek(start)
+    string = []
+    while True:
+        char = f.read(1)
+        if char == b'\x00':
+            if inplace:
+                f.seek(toBack)
+            return "".join(string)
+        try:
+            string.append(char.decode("utf-8"))
+        except:
+            try:
+                char += f.read(1)
+                string.append(char.decode("utf-8"))
+            except:
+                if inplace:
+                    f.seek(toBack)
+                return "".join(string)
 
 
 def createDirAltNameID(in_dir: str):
@@ -47,6 +103,7 @@ def getBinaryRepresentation(bytes):
     b = bin(int.from_bytes(a, byteorder=sys.byteorder))
     print(b)
     return b
+
 
 def access_4bits(data, num):
     # access 4 bits from num-th position in data

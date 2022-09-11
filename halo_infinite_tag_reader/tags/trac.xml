@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="TracerSystemDefinition" item_name_2="TracerSystemDefinition" item_name_3="TracerSystemDefinition" db1="48" db2="0" db3="1" db4="0" db5="1" db6="0" db7="32" db8="1395">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="TracerSystemDefinition" item_name_2="TracerSystemDefinition" db1="48" db2="0" db3="1" db4="0" db5="1" db6="0" db7="32" db8="1395">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -17,7 +17,7 @@
 		<Flag v="override lod camera distance range" />
 	</_D>
 	<_25 v="Camera Distance Range Override" />
-	<_40 v="tracers" item_name_1="TracerDefinition" item_name_2="TracerDefinition" item_name_3="TracerDefinition" db1="776" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="2419">
+	<_40 v="tracers" item_name_1="TracerDefinition" item_name_2="TracerDefinition" db1="776" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="2419">
 		<_37 v="" />
 		<_2 v="tracer name" />
 		<_F v="flags">
@@ -37,7 +37,7 @@
 		<_14 v="origin fade cutoff" />
 		<_14 v="edge fade range" />
 		<_14 v="edge fade cutoff" />
-		<_38 v="profile lifespan" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile lifespan" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -104,7 +104,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -115,7 +115,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile self acceleration" item_name_3="TracerPropertyRealVector3d" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile self acceleration" item_name_1="TracerPropertyRealVector3d" item_name_2="TracerPropertyRealVector3d" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -182,7 +182,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -195,7 +195,7 @@
 			<_19 v="Ending interpolant" />
 			<_3B v="" />
 		</_38>
-		<_38 v="length" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="length" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -262,7 +262,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -273,7 +273,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="offset" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="offset" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -340,7 +340,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -351,7 +351,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile size" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile size" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -418,7 +418,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -429,7 +429,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile density" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile density" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -496,7 +496,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -507,7 +507,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile offset" item_name_3="TracerPropertyRealPoint2d" db1="52" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile offset" item_name_1="TracerPropertyRealPoint2d" item_name_2="TracerPropertyRealPoint2d" db1="52" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -574,7 +574,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -587,7 +587,7 @@
 			<_18 v="Ending interpolant" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile rotation" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile rotation" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -654,7 +654,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -678,9 +678,9 @@
 		<_5 v="sort bias" />
 		<_37 v="material" />
 		<_37 v="" />
-		<_38 v="actual material?" item_name_3="Material" db1="100" db2="0" db3="33" db4="0" db5="1" db6="0" db7="0" db8="2417">
+		<_38 v="actual material?" item_name_1="Material" item_name_2="Material" db1="100" db2="0" db3="33" db4="0" db5="1" db6="0" db7="0" db8="2417">
 			<_41 v="material shader" />
-			<_40 v="material parameters" item_name_1="ShaderParameter" item_name_2="ShaderParameter" item_name_3="ShaderParameter" db1="156" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_40 v="material parameters" item_name_1="ShaderParameter" item_name_2="ShaderParameter" db1="156" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_2 v="parameter name" />
 				<_C v="parameter type">
 					<Flag v="bitmap" />
@@ -719,7 +719,7 @@
 				<_34 v="generated_pad0425" length="3" />
 				<_3E v="render phases used" />
 				<_3E v="shader types used" />
-				<_40 v="function parameters" item_name_1="MaterialShaderFunctionParameter" item_name_2="MaterialShaderFunctionParameter" item_name_3="MaterialShaderFunctionParameter" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="function parameters" item_name_1="MaterialShaderFunctionParameter" item_name_2="MaterialShaderFunctionParameter" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_C v="type">
 						<Flag v="value" />
 						<Flag v="color" />
@@ -743,7 +743,7 @@
 					<_14 v="time period" />
 					<_36 v="FUNCTION" />
 					<_37 v="function" />
-					<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -757,8 +757,8 @@
 				<_34 v="generated_pad50da" length="3" />
 				<_3B v="" />
 			</_40>
-			<_40 v="postprocess definition" item_name_1="MaterialPostprocessDefinition" item_name_2="MaterialPostprocessDefinition" item_name_3="MaterialPostprocessDefinition" db1="152" db2="0" db3="19" db4="0" db5="1" db6="2" db7="0" db8="2355">
-				<_40 v="textures" item_name_1="MaterialPostprocessTexture" item_name_2="MaterialPostprocessTexture" item_name_3="MaterialPostprocessTexture" db1="56" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="273">
+			<_40 v="postprocess definition" item_name_1="MaterialPostprocessDefinition" item_name_2="MaterialPostprocessDefinition" db1="152" db2="0" db3="19" db4="0" db5="1" db6="2" db7="0" db8="2355">
+				<_40 v="textures" item_name_1="MaterialPostprocessTexture" item_name_2="MaterialPostprocessTexture" db1="56" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="273">
 					<_41 v="bitmap reference" />
 					<_3E v="render phase mask" />
 					<_3E v="shader stage mask" />
@@ -773,7 +773,7 @@
 					<_3B v="" />
 				</_40>
 				<_6 v="textures to clear" />
-				<_40 v="functions" item_name_1="MaterialShaderFunctionParameter" item_name_2="MaterialShaderFunctionParameter" item_name_3="MaterialShaderFunctionParameter" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="functions" item_name_1="MaterialShaderFunctionParameter" item_name_2="MaterialShaderFunctionParameter" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_C v="type">
 						<Flag v="value" />
 						<Flag v="color" />
@@ -797,7 +797,7 @@
 					<_14 v="time period" />
 					<_36 v="FUNCTION" />
 					<_37 v="function" />
-					<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -805,7 +805,7 @@
 					</_38>
 					<_3B v="" />
 				</_40>
-				<_40 v="function parameters" item_name_1="MaterialFunctionParameter" item_name_2="MaterialFunctionParameter" item_name_3="MaterialFunctionParameter" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="function parameters" item_name_1="MaterialFunctionParameter" item_name_2="MaterialFunctionParameter" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3C v="function index" />
 					<_3C v="register offset" />
 					<_3C v="parameter group" />
@@ -813,7 +813,7 @@
 					<_3E v="render phase mask" />
 					<_3B v="" />
 				</_40>
-				<_40 v="extern parameters" item_name_1="MaterialExternParameter" item_name_2="MaterialExternParameter" item_name_3="MaterialExternParameter" db1="12" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="896">
+				<_40 v="extern parameters" item_name_1="MaterialExternParameter" item_name_2="MaterialExternParameter" db1="12" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="896">
 					<_3C v="extern index" />
 					<_3C v="extern offset" />
 					<_3C v="parameter group" />
@@ -911,18 +911,18 @@
 					<Flag v="enable_taa_mask" />
 					<Flag v="has damage map" />
 				</_E>
-				<_40 v="material constants" item_name_1="MaterialConstant" item_name_2="MaterialConstant" item_name_3="MaterialConstant" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="material constants" item_name_1="MaterialConstant" item_name_2="MaterialConstant" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_1A v="register" />
 					<_3B v="" />
 				</_40>
-				<_40 v="alternate constants" item_name_1="MaterialConstant" item_name_2="MaterialConstant" item_name_3="MaterialConstant" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="alternate constants" item_name_1="MaterialConstant" item_name_2="MaterialConstant" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_1A v="register" />
 					<_3B v="" />
 				</_40>
 				<_7 v="materialConstantBuffer" />
 				<_7 v="alternateConstantBuffer" />
 				<_3E v="material constant shader stage mask" />
-				<_39 v="runtime queryable properties table" item_name_3="MaterialPostprocessDefinition::RuntimeQueryableProperty" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_39 v="runtime queryable properties table" item_name_1="MaterialPostprocessDefinition::RuntimeQueryableProperty" item_name_2="MaterialPostprocessDefinition::RuntimeQueryableProperty" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_3C v="index" />
 					<_3B v="" />
 					<_3C v="index" />
@@ -1047,7 +1047,7 @@
 			<Flag v="DWS Sun Color" />
 		</_A>
 		<_34 v="generated_pada1b3" length="3" />
-		<_38 v="profile color" item_name_3="TracerPropertyColor" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile color" item_name_1="TracerPropertyColor" item_name_2="TracerPropertyColor" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -1114,7 +1114,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1125,7 +1125,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile alpha" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile alpha" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -1192,7 +1192,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1203,7 +1203,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile alpha2" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile alpha2" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -1270,7 +1270,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1281,7 +1281,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile black point" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile black point" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -1348,7 +1348,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1359,7 +1359,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile palette" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile palette" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -1426,7 +1426,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1437,7 +1437,7 @@
 			<_34 v="pad" length="2" />
 			<_3B v="" />
 		</_38>
-		<_38 v="profile intensity" item_name_3="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="profile intensity" item_name_1="TracerPropertyScalar" item_name_2="TracerPropertyScalar" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_A v="Input Variable">
 				<Flag v="profile age" />
 				<Flag v="profile position" />
@@ -1504,7 +1504,7 @@
 				<Flag v="invalid state --- please set again" />
 			</_A>
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -1520,9 +1520,9 @@
 		<_3E v="runtime m_constantPerProfileProperties" />
 		<_3E v="runtime m_usedStates" />
 		<_3E v="runtime m_maxProfileCount" />
-		<_38 v="runtime m_gpuData" item_name_3="GPUPropertyFunctionColor" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="runtime gpu_property_block" item_name_1="GPUPropertyParam" item_name_2="GPUPropertyParam" item_name_3="GPUPropertyParam" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="runtime gpu_property_sub_array" item_name_3="GPUPropertySubArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="runtime m_gpuData" item_name_1="GPUPropertyFunctionColor" item_name_2="GPUPropertyFunctionColor" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="runtime gpu_property_block" item_name_1="GPUPropertyParam" item_name_2="GPUPropertyParam" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="runtime gpu_property_sub_array" item_name_1="GPUPropertySubArray" item_name_2="GPUPropertySubArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_14 v="runtime gpu_property_real" />
 					<_3B v="" />
 					<_14 v="runtime gpu_property_real" />
@@ -1534,8 +1534,8 @@
 				</_39>
 				<_3B v="" />
 			</_40>
-			<_40 v="runtime gpu_functions_block" item_name_1="GPUFunctionParam" item_name_2="GPUFunctionParam" item_name_3="GPUFunctionParam" db1="64" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="runtime gpu_function_sub_array" item_name_3="GPUFunctionSubArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="runtime gpu_functions_block" item_name_1="GPUFunctionParam" item_name_2="GPUFunctionParam" db1="64" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="runtime gpu_function_sub_array" item_name_1="GPUFunctionSubArray" item_name_2="GPUFunctionSubArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_14 v="runtime gpu_function_real" />
 					<_3B v="" />
 					<_14 v="runtime gpu_function_real" />
@@ -1571,8 +1571,8 @@
 				</_39>
 				<_3B v="" />
 			</_40>
-			<_40 v="runtime gpu_colors_block" item_name_1="GPUColorParam" item_name_2="GPUColorParam" item_name_3="GPUColorParam" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="runtime gpu_color_sub_array" item_name_3="GPUColorSubArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="runtime gpu_colors_block" item_name_1="GPUColorParam" item_name_2="GPUColorParam" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="runtime gpu_color_sub_array" item_name_1="GPUColorSubArray" item_name_2="GPUColorSubArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_14 v="runtime gpu_color_real" />
 					<_3B v="" />
 					<_14 v="runtime gpu_color_real" />

@@ -10,6 +10,7 @@ class Config:
     MODEL_EXPORT_PATH = "J:\\Games\\Halo Infinite Stuf\\Extracted\\Converted\\RE_OtherGames\\HI\\models\\"
     INFOS_PATH = 'C:\\Users\\Jorge\\Downloads\\Mover\\infos\\'
     EXPORT_JSON = 'J:\\Games\\Halo Infinite Stuf\\Extracted\\HI\\json\\'
+    EXPORT_SHADERS = 'J:\\Games\\Halo Infinite Stuf\\Extracted\\shaderdis\\'
     SPARTAN_STYLE_PATH = "J:\\Games\\Halo Infinite Stuf\\Extracted\\UnPacked\\season2\\__chore\\gen__\\objects\\characters\\spartan_armor\\coatings\\"
     WEB_DOWNLOAD_DATA = "J:\\Games\\Halo Infinite Stuf\\Web-Json\\"
     UE5_PROJECT_IMPORTED_PC_PATH = "H:\\UE4\\Unreal_Projects\\HaloInfinities " \

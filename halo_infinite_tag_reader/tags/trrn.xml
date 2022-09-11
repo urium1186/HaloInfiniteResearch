@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::TerrainSystemTag" item_name_2="i343::TerrainSystemTag" item_name_3="i343::TerrainSystemTag" db1="712" db2="0" db3="0" db4="0" db5="1" db6="0" db7="696" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::TerrainSystemTag" item_name_2="i343::TerrainSystemTag" db1="712" db2="0" db3="0" db4="0" db5="1" db6="0" db7="696" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -15,12 +15,12 @@
 	<_14 v="terrain height" />
 	<_3E v="Tile X Count" />
 	<_3E v="Tile Y Count" />
-	<_40 v="Tiles" item_name_1="i343::TerrainTileReference" item_name_2="i343::TerrainTileReference" item_name_3="i343::TerrainTileReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Tiles" item_name_1="i343::TerrainTileReference" item_name_2="i343::TerrainTileReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Tile" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Shared Parameters" item_name_1="i343::Graphics::RenderGraph::ParameterDefinitionB" item_name_2="i343::Graphics::RenderGraph::ParameterDefinitionB" item_name_3="i343::Graphics::RenderGraph::ParameterDefinitionB" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-		<_38 v="Parameter" item_name_3="i343::Graphics::RenderGraph::ParameterDefinition" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Shared Parameters" item_name_1="i343::Graphics::RenderGraph::ParameterDefinitionB" item_name_2="i343::Graphics::RenderGraph::ParameterDefinitionB" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_38 v="Parameter" item_name_1="i343::Graphics::RenderGraph::ParameterDefinition" item_name_2="i343::Graphics::RenderGraph::ParameterDefinition" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Name" />
 			<_C v="Type">
 				<Flag v="None" />
@@ -56,7 +56,7 @@
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="Source Texture Settings" item_name_1="i343::TerrainTextureSettings" item_name_2="i343::TerrainTextureSettings" item_name_3="i343::TerrainTextureSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Source Texture Settings" item_name_1="i343::TerrainTextureSettings" item_name_2="i343::TerrainTextureSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Surface Id" />
 		<_3E v="Texel Density" />
 		<_D v="Flags">
@@ -65,7 +65,7 @@
 		</_D>
 		<_3B v="" />
 	</_40>
-	<_40 v="Intermediate Texture Settings" item_name_1="i343::TerrainTextureSettings" item_name_2="i343::TerrainTextureSettings" item_name_3="i343::TerrainTextureSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Intermediate Texture Settings" item_name_1="i343::TerrainTextureSettings" item_name_2="i343::TerrainTextureSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Surface Id" />
 		<_3E v="Texel Density" />
 		<_D v="Flags">
@@ -82,9 +82,9 @@
 	<_14 v="Macro Color Far Distance" />
 	<_14 v="Macro Color Near Opacity" />
 	<_14 v="Macro Color Far Opacity" />
-	<_38 v="Micro Height Vertex Density" item_name_3="s_splitscreen_spec_control_setting_float" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_38 v="Micro Height Vertex Density" item_name_1="s_splitscreen_spec_control_setting_float" item_name_2="s_splitscreen_spec_control_setting_float" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_37 v="Single Player" />
-		<_38 v="Single Player" item_name_3="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Player" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
@@ -94,7 +94,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen" item_name_3="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
@@ -104,7 +104,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen" item_name_3="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
@@ -114,7 +114,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen" item_name_3="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
@@ -125,9 +125,9 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_38>
-	<_38 v="Micro Height Radius" item_name_3="s_splitscreen_spec_control_setting_float" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_38 v="Micro Height Radius" item_name_1="s_splitscreen_spec_control_setting_float" item_name_2="s_splitscreen_spec_control_setting_float" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_37 v="Single Player" />
-		<_38 v="Single Player" item_name_3="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Single Player" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
@@ -137,7 +137,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen" item_name_3="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="2 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
@@ -147,7 +147,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen" item_name_3="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="3 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
@@ -157,7 +157,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen" item_name_3="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="4 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
@@ -168,7 +168,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_38>
-	<_38 v="Micro Height Mip Level" item_name_3="s_basic_spec_control_setting_int" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Micro Height Mip Level" item_name_1="s_basic_spec_control_setting_int" item_name_2="s_basic_spec_control_setting_int" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_6 v="Very Low" />
 		<_6 v="Low" />
 		<_6 v="Medium" />

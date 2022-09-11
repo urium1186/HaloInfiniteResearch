@@ -17,13 +17,18 @@ class TagStruct:
         self.type_id = -1
         self.type_id_tg: TagStructType = -1
         self.unknown_property_bool_0_1 = -1
-        self.target_index = -1
-        self.field_block = -1
+        #self.target_index = -1
+        self.field_data_block_index = -1
+        # self.field_block = -1
+        self.parent_field_data_block_index = -1
         self.field_offset = -1
-        self.data_reference: DataBlock = None
+        #self.data_reference: DataBlock = None
+        self.field_data_block: DataBlock = None
         self.data_parent: DataBlock = None
         self.parent: TagStruct = None
         self.childs: [TagStruct] = []
+        self.l_function = []
+        self.l_tag_ref = []
         self.parent_entry_index = -1
         self.entry_index = -1
         self.bin_datas = []
@@ -39,8 +44,8 @@ class TagStruct:
         self.type_id = struct.unpack('H', f.read(2))[0]
         self.type_id_tg = TagStructType(self.type_id)
         self.unknown_property_bool_0_1 = struct.unpack('H', f.read(2))[0]
-        self.target_index = struct.unpack('i', f.read(4))[0]
-        self.field_block = struct.unpack('i', f.read(4))[0]
+        self.field_data_block_index = struct.unpack('i', f.read(4))[0]
+        self.parent_field_data_block_index = struct.unpack('i', f.read(4))[0]
         self.field_offset = struct.unpack('i', f.read(4))[0]
         """
         if self.type_id_tg == TagStructType.NoDataStartBlock:
@@ -62,7 +67,7 @@ class TagStruct:
             info = {"property_addres": 0,
                     "n_childs": 1
                     }
-            if self.field_block != -1:
+            if self.parent_field_data_block_index != -1:
                 raise Exception("Root no debe pertenecer a otro campo")
         elif self.type_id == TagStructType.Tagblock:
             address = self.data_parent.offset_plus + self.field_offset
@@ -88,7 +93,7 @@ class TagStruct:
 
         elif self.type_id == TagStructType.NoDataStartBlock:
             address = self.data_parent.offset_plus + self.field_offset
-            if self.target_index != -1:
+            if self.field_data_block_index != -1:
                 raise Exception("NoDataStartBlock significa q no tiene informacion")
             f.seek(address)
             info = {"property_addres": address,
@@ -108,25 +113,25 @@ class TagStruct:
             if self.info["n_childs"] != 0:
                 raise Exception("Error de interpretacion de Datos, ya q son externos")
             if self.unknown_property_bool_0_1 != 0:
-                f.seek(self.data_reference.offset_plus)
-                blocks.append(f.read(self.data_reference.size))
+                f.seek(self.field_data_block.offset_plus)
+                blocks.append(f.read(self.field_data_block.size))
             f.seek(pos_on_init)
             return blocks
         else:
             if self.info["n_childs"] == 0:
-                if self.target_index != -1:
+                if self.field_data_block_index != -1:
                     raise Exception("Si no tiene hijos, el refernce deberia ser -1")
                 return blocks
             else:
-                count = divmod(self.data_reference.size, self.info["n_childs"])
+                count = divmod(self.field_data_block.size, self.info["n_childs"])
 
                 if count[1] != 0:
                     raise Exception(' Deberia ser 0 siempre el resto')
                 else:
-                    if self.data_reference.size == 0:
+                    if self.field_data_block.size == 0:
                         raise Exception(
                             ' Deberia ser moyor q 0, de lo contrario seria un bloke vacio, error division 0')
-                    f.seek(self.data_reference.offset_plus)
+                    f.seek(self.field_data_block.offset_plus)
                     sub_block_size = count[0]
                     for k in range(self.info["n_childs"]):
                         blocks.append(f.read(sub_block_size))
@@ -179,20 +184,20 @@ class TagStructTable:
         self.entries: [TagStruct] = []
         pass
 
-    def readTable(self, f, header, data_table):
+    def readTable(self, f, header, data_block_table):
         f.seek(header.tag_struct_offset)
         for x in range(header.tag_struct_count):
             # offset = header.content_table_offset + x * 0x20
             entry = TagStruct()
             entry.readIn(f, header)
 
-            if header.data_block_count > entry.target_index > -1:
-                entry.data_reference = data_table.entries[entry.target_index]
+            if header.data_block_count > entry.field_data_block_index > -1:
+                entry.field_data_block = data_block_table.entries[entry.field_data_block_index]
 
-            if header.data_block_count > entry.field_block > -1:
-                entry.data_parent = data_table.entries[entry.field_block]
+            if header.data_block_count > entry.parent_field_data_block_index > -1:
+                entry.data_parent = data_block_table.entries[entry.parent_field_data_block_index]
 
-                p_i = self.getContentEntryByRefIndex(entry.field_block)
+                p_i = self.getContentEntryByRefIndex(entry.parent_field_data_block_index)
                 if p_i is not None:
                     entry.parent_entry_index = p_i
                     entry.parent = self.entries[p_i]
@@ -208,7 +213,7 @@ class TagStructTable:
         count = 0
         entry_found = None
         for i, entry in enumerate(self.entries):
-            if entry.target_index == ref_index:
+            if entry.field_data_block_index == ref_index:
                 count = count + 1
                 entry_found = i
                 return entry_found

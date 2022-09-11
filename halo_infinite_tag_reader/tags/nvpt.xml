@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="Interface::NavPoint::NavPointPresentationTag" item_name_2="Interface::NavPoint::NavPointPresentationTag" item_name_3="Interface::NavPoint::NavPointPresentationTag" db1="208" db2="0" db3="0" db4="0" db5="1" db6="0" db7="192" db8="3347">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="Interface::NavPoint::NavPointPresentationTag" item_name_2="Interface::NavPoint::NavPointPresentationTag" db1="208" db2="0" db3="0" db4="0" db5="1" db6="0" db7="192" db8="3347">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -16,7 +16,7 @@
 	<_2 v="Show event name" />
 	<_2 v="Hide event name" />
 	<_14 v="Scale Far Override" />
-	<_40 v="Element Groups" item_name_1="Interface::NavPoint::ElementGroupTag" item_name_2="Interface::NavPoint::ElementGroupTag" item_name_3="Interface::NavPoint::ElementGroupTag" db1="168" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="Element Groups" item_name_1="Interface::NavPoint::ElementGroupTag" item_name_2="Interface::NavPoint::ElementGroupTag" db1="168" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_2 v="Group Name" />
 		<_2 v="Tint Color" />
 		<_14 v="Alpha" />
@@ -54,7 +54,7 @@
 			<Flag v=" " />
 		</_F>
 		<_34 v="generated_pad4787" length="3" />
-		<_40 v="Label Elements" item_name_1="Interface::NavPoint::LabelElementTag" item_name_2="Interface::NavPoint::LabelElementTag" item_name_3="Interface::NavPoint::LabelElementTag" db1="88" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+		<_40 v="Label Elements" item_name_1="Interface::NavPoint::LabelElementTag" item_name_2="Interface::NavPoint::LabelElementTag" db1="88" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 			<_2 v="Element Name" />
 			<_2 v="Draw Flags Name" />
 			<_D v="Draw Flags">
@@ -103,7 +103,7 @@
 			<_14 v="Tracking Horizontal" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Number Elements" item_name_1="Interface::NavPoint::NumberElementTag" item_name_2="Interface::NavPoint::NumberElementTag" item_name_3="Interface::NavPoint::NumberElementTag" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+		<_40 v="Number Elements" item_name_1="Interface::NavPoint::NumberElementTag" item_name_2="Interface::NavPoint::NumberElementTag" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 			<_2 v="Element Name" />
 			<_2 v="Draw Flags Name" />
 			<_D v="Draw Flags">
@@ -157,7 +157,7 @@
 			</_C>
 			<_3B v="" />
 		</_40>
-		<_40 v="Image Elements" item_name_1="Interface::NavPoint::ImageElementTag" item_name_2="Interface::NavPoint::ImageElementTag" item_name_3="Interface::NavPoint::ImageElementTag" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_40 v="Image Elements" item_name_1="Interface::NavPoint::ImageElementTag" item_name_2="Interface::NavPoint::ImageElementTag" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_2 v="Element Name" />
 			<_2 v="Draw Flags Name" />
 			<_D v="Draw Flags">
@@ -189,7 +189,7 @@
 			<_6 v="Frame Index" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Rotated Image Elements" item_name_1="Interface::NavPoint::RotatedImageElementTag" item_name_2="Interface::NavPoint::RotatedImageElementTag" item_name_3="Interface::NavPoint::RotatedImageElementTag" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_40 v="Rotated Image Elements" item_name_1="Interface::NavPoint::RotatedImageElementTag" item_name_2="Interface::NavPoint::RotatedImageElementTag" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_2 v="Element Name" />
 			<_2 v="Draw Flags Name" />
 			<_D v="Draw Flags">
@@ -223,7 +223,7 @@
 			<_2 v="Rotation Angle" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Gradient Meter Elements" item_name_1="Interface::NavPoint::MeterElementTag" item_name_2="Interface::NavPoint::MeterElementTag" item_name_3="Interface::NavPoint::MeterElementTag" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_40 v="Gradient Meter Elements" item_name_1="Interface::NavPoint::MeterElementTag" item_name_2="Interface::NavPoint::MeterElementTag" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_2 v="Element Name" />
 			<_2 v="Draw Flags Name" />
 			<_D v="Draw Flags">
@@ -257,7 +257,7 @@
 			<_2 v="Progress" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Radial Meter Elements" item_name_1="Interface::NavPoint::MeterElementTag" item_name_2="Interface::NavPoint::MeterElementTag" item_name_3="Interface::NavPoint::MeterElementTag" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_40 v="Radial Meter Elements" item_name_1="Interface::NavPoint::MeterElementTag" item_name_2="Interface::NavPoint::MeterElementTag" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_2 v="Element Name" />
 			<_2 v="Draw Flags Name" />
 			<_D v="Draw Flags">
@@ -293,15 +293,15 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="State Groups" item_name_1="Interface::NavPoint::VisualStateGroupTag" item_name_2="Interface::NavPoint::VisualStateGroupTag" item_name_3="Interface::NavPoint::VisualStateGroupTag" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="State Groups" item_name_1="Interface::NavPoint::VisualStateGroupTag" item_name_2="Interface::NavPoint::VisualStateGroupTag" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="Visual State Group Name" />
-		<_40 v="Visual States" item_name_1="Interface::NavPoint::VisualStateTag" item_name_2="Interface::NavPoint::VisualStateTag" item_name_3="Interface::NavPoint::VisualStateTag" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Visual States" item_name_1="Interface::NavPoint::VisualStateTag" item_name_2="Interface::NavPoint::VisualStateTag" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Name" />
-			<_40 v="Color Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Color Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="Timeline Name" />
 				<_41 v="Animation Group" />
 				<_2 v="Animation Name" />
-				<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="Track Name" />
 					<_2 v="Element or Group Name" />
 					<_2 v="Property Name" />
@@ -309,11 +309,11 @@
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="Float Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Float Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="Timeline Name" />
 				<_41 v="Animation Group" />
 				<_2 v="Animation Name" />
-				<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="Track Name" />
 					<_2 v="Element or Group Name" />
 					<_2 v="Property Name" />
@@ -321,11 +321,11 @@
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="Image Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Image Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="Timeline Name" />
 				<_41 v="Animation Group" />
 				<_2 v="Animation Name" />
-				<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="Track Name" />
 					<_2 v="Element or Group Name" />
 					<_2 v="Property Name" />
@@ -333,11 +333,11 @@
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="StringId Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="StringId Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="Timeline Name" />
 				<_41 v="Animation Group" />
 				<_2 v="Animation Name" />
-				<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="Track Name" />
 					<_2 v="Element or Group Name" />
 					<_2 v="Property Name" />
@@ -349,13 +349,13 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="External Events" item_name_1="Interface::NavPoint::VisualStateTag" item_name_2="Interface::NavPoint::VisualStateTag" item_name_3="Interface::NavPoint::VisualStateTag" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="External Events" item_name_1="Interface::NavPoint::VisualStateTag" item_name_2="Interface::NavPoint::VisualStateTag" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
-		<_40 v="Color Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Color Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Timeline Name" />
 			<_41 v="Animation Group" />
 			<_2 v="Animation Name" />
-			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Track Name" />
 				<_2 v="Element or Group Name" />
 				<_2 v="Property Name" />
@@ -363,11 +363,11 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Float Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Float Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Timeline Name" />
 			<_41 v="Animation Group" />
 			<_2 v="Animation Name" />
-			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Track Name" />
 				<_2 v="Element or Group Name" />
 				<_2 v="Property Name" />
@@ -375,11 +375,11 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Image Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Image Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Timeline Name" />
 			<_41 v="Animation Group" />
 			<_2 v="Animation Name" />
-			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Track Name" />
 				<_2 v="Element or Group Name" />
 				<_2 v="Property Name" />
@@ -387,11 +387,11 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="StringId Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="StringId Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Timeline Name" />
 			<_41 v="Animation Group" />
 			<_2 v="Animation Name" />
-			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Track Name" />
 				<_2 v="Element or Group Name" />
 				<_2 v="Property Name" />
@@ -401,13 +401,13 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Show and Hide Events" item_name_1="Interface::NavPoint::VisualStateTag" item_name_2="Interface::NavPoint::VisualStateTag" item_name_3="Interface::NavPoint::VisualStateTag" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Show and Hide Events" item_name_1="Interface::NavPoint::VisualStateTag" item_name_2="Interface::NavPoint::VisualStateTag" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
-		<_40 v="Color Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Color Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Timeline Name" />
 			<_41 v="Animation Group" />
 			<_2 v="Animation Name" />
-			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Track Name" />
 				<_2 v="Element or Group Name" />
 				<_2 v="Property Name" />
@@ -415,11 +415,11 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Float Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Float Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Timeline Name" />
 			<_41 v="Animation Group" />
 			<_2 v="Animation Name" />
-			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Track Name" />
 				<_2 v="Element or Group Name" />
 				<_2 v="Property Name" />
@@ -427,11 +427,11 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Image Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Image Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Timeline Name" />
 			<_41 v="Animation Group" />
 			<_2 v="Animation Name" />
-			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Track Name" />
 				<_2 v="Element or Group Name" />
 				<_2 v="Property Name" />
@@ -439,11 +439,11 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="StringId Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" item_name_3="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="StringId Animation Timelines" item_name_1="Interface::NavPoint::TimelineTag" item_name_2="Interface::NavPoint::TimelineTag" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Timeline Name" />
 			<_41 v="Animation Group" />
 			<_2 v="Animation Name" />
-			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" item_name_3="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Target Properties" item_name_1="Interface::NavPoint::TargetPropertyTag" item_name_2="Interface::NavPoint::TargetPropertyTag" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Track Name" />
 				<_2 v="Element or Group Name" />
 				<_2 v="Property Name" />
@@ -453,17 +453,17 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Sample data floats" item_name_1="Interface::NavPoint::SampleDataFloat" item_name_2="Interface::NavPoint::SampleDataFloat" item_name_3="Interface::NavPoint::SampleDataFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Sample data floats" item_name_1="Interface::NavPoint::SampleDataFloat" item_name_2="Interface::NavPoint::SampleDataFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Variable name" />
 		<_14 v="Value" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Sample data string ids" item_name_1="Interface::NavPoint::SampleDataStringId" item_name_2="Interface::NavPoint::SampleDataStringId" item_name_3="Interface::NavPoint::SampleDataStringId" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Sample data string ids" item_name_1="Interface::NavPoint::SampleDataStringId" item_name_2="Interface::NavPoint::SampleDataStringId" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Variable name" />
 		<_2 v="Value" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Sample data strings" item_name_1="Interface::NavPoint::SampleDataText" item_name_2="Interface::NavPoint::SampleDataText" item_name_3="Interface::NavPoint::SampleDataText" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Sample data strings" item_name_1="Interface::NavPoint::SampleDataText" item_name_2="Interface::NavPoint::SampleDataText" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Variable name" />
 		<_1 v="Value" />
 		<_3B v="" />

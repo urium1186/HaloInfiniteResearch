@@ -171,7 +171,7 @@ class TagLayouts:
                                              p_S=TagLayouts.run_parse.group_lengths_dict[xn.tag])
                 return TagLayouts.run_parse.group_lengths_dict[xn.tag]
             elif xn.tag == "_9":
-                pairs[offset] = TagLayouts.C("String", xn.attrib["v"],
+                pairs[offset] = TagLayouts.C("StringTag", xn.attrib["v"],
                                              p_S=TagLayouts.run_parse.group_lengths_dict[xn.tag])
                 return TagLayouts.run_parse.group_lengths_dict[xn.tag]
                 """
@@ -225,10 +225,12 @@ class TagLayouts:
                                              xn.attrib["v"] + " (unmapped type(" + xn.tag + "), may cause errors)")
                 return TagLayouts.run_parse.group_lengths_dict[xn.tag]
             elif xn.tag == "_12":
+                raise Exception("Revisar pq se dice q es un color")
                 pairs[offset] = TagLayouts.C("mmr3Hash", xn.attrib["v"],
                                              p_S=TagLayouts.run_parse.group_lengths_dict[xn.tag])
                 return TagLayouts.run_parse.group_lengths_dict[xn.tag]
             elif xn.tag == "_13":  # unmapped - This case isn't found in any tag file
+                raise Exception("unmapped - This case isn't found in any tag file")
                 pairs[offset] = TagLayouts.C("Comment",
                                              xn.attrib["v"] + " (unmapped type(" + xn.tag + "), may cause errors)")
                 return TagLayouts.run_parse.group_lengths_dict[xn.tag]
@@ -517,7 +519,7 @@ class TagLayouts:
                 pairs[offset] = TagLayouts.C("FUNCTION", xn.attrib["v"],
                                              p_S=TagLayouts.run_parse.group_lengths_dict[xn.tag])
                 return TagLayouts.run_parse.group_lengths_dict[xn.tag]
-            elif xn.tag == "_43":  # unmapped - This case isn't found in any tag file
+            elif xn.tag == "_43":  #
                 subthings = {}
                 current_offset2 = current_offset2_temp = 0
                 p_E = {}

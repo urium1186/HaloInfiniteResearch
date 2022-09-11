@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="LightConeDefinition" item_name_2="LightConeDefinition" item_name_3="LightConeDefinition" db1="136" db2="0" db3="2" db4="0" db5="1" db6="2" db7="120" db8="3447">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="LightConeDefinition" item_name_2="LightConeDefinition" db1="136" db2="0" db3="2" db4="0" db5="1" db6="2" db7="120" db8="3447">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -15,9 +15,9 @@
 	<_34 v="generated_pad258a" length="3" />
 	<_37 v="material" />
 	<_37 v="" />
-	<_38 v="actual material?" item_name_3="Material" db1="100" db2="0" db3="33" db4="0" db5="1" db6="0" db7="0" db8="2417">
+	<_38 v="actual material?" item_name_1="Material" item_name_2="Material" db1="100" db2="0" db3="33" db4="0" db5="1" db6="0" db7="0" db8="2417">
 		<_41 v="material shader" />
-		<_40 v="material parameters" item_name_1="ShaderParameter" item_name_2="ShaderParameter" item_name_3="ShaderParameter" db1="156" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_40 v="material parameters" item_name_1="ShaderParameter" item_name_2="ShaderParameter" db1="156" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_2 v="parameter name" />
 			<_C v="parameter type">
 				<Flag v="bitmap" />
@@ -56,7 +56,7 @@
 			<_34 v="generated_pad0425" length="3" />
 			<_3E v="render phases used" />
 			<_3E v="shader types used" />
-			<_40 v="function parameters" item_name_1="MaterialShaderFunctionParameter" item_name_2="MaterialShaderFunctionParameter" item_name_3="MaterialShaderFunctionParameter" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_40 v="function parameters" item_name_1="MaterialShaderFunctionParameter" item_name_2="MaterialShaderFunctionParameter" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_C v="type">
 					<Flag v="value" />
 					<Flag v="color" />
@@ -80,7 +80,7 @@
 				<_14 v="time period" />
 				<_36 v="FUNCTION" />
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -94,8 +94,8 @@
 			<_34 v="generated_pad50da" length="3" />
 			<_3B v="" />
 		</_40>
-		<_40 v="postprocess definition" item_name_1="MaterialPostprocessDefinition" item_name_2="MaterialPostprocessDefinition" item_name_3="MaterialPostprocessDefinition" db1="152" db2="0" db3="19" db4="0" db5="1" db6="2" db7="0" db8="2355">
-			<_40 v="textures" item_name_1="MaterialPostprocessTexture" item_name_2="MaterialPostprocessTexture" item_name_3="MaterialPostprocessTexture" db1="56" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="273">
+		<_40 v="postprocess definition" item_name_1="MaterialPostprocessDefinition" item_name_2="MaterialPostprocessDefinition" db1="152" db2="0" db3="19" db4="0" db5="1" db6="2" db7="0" db8="2355">
+			<_40 v="textures" item_name_1="MaterialPostprocessTexture" item_name_2="MaterialPostprocessTexture" db1="56" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="273">
 				<_41 v="bitmap reference" />
 				<_3E v="render phase mask" />
 				<_3E v="shader stage mask" />
@@ -110,7 +110,7 @@
 				<_3B v="" />
 			</_40>
 			<_6 v="textures to clear" />
-			<_40 v="functions" item_name_1="MaterialShaderFunctionParameter" item_name_2="MaterialShaderFunctionParameter" item_name_3="MaterialShaderFunctionParameter" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_40 v="functions" item_name_1="MaterialShaderFunctionParameter" item_name_2="MaterialShaderFunctionParameter" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_C v="type">
 					<Flag v="value" />
 					<Flag v="color" />
@@ -134,7 +134,7 @@
 				<_14 v="time period" />
 				<_36 v="FUNCTION" />
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -142,7 +142,7 @@
 				</_38>
 				<_3B v="" />
 			</_40>
-			<_40 v="function parameters" item_name_1="MaterialFunctionParameter" item_name_2="MaterialFunctionParameter" item_name_3="MaterialFunctionParameter" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="function parameters" item_name_1="MaterialFunctionParameter" item_name_2="MaterialFunctionParameter" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_3C v="function index" />
 				<_3C v="register offset" />
 				<_3C v="parameter group" />
@@ -150,7 +150,7 @@
 				<_3E v="render phase mask" />
 				<_3B v="" />
 			</_40>
-			<_40 v="extern parameters" item_name_1="MaterialExternParameter" item_name_2="MaterialExternParameter" item_name_3="MaterialExternParameter" db1="12" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="896">
+			<_40 v="extern parameters" item_name_1="MaterialExternParameter" item_name_2="MaterialExternParameter" db1="12" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="896">
 				<_3C v="extern index" />
 				<_3C v="extern offset" />
 				<_3C v="parameter group" />
@@ -248,18 +248,18 @@
 				<Flag v="enable_taa_mask" />
 				<Flag v="has damage map" />
 			</_E>
-			<_40 v="material constants" item_name_1="MaterialConstant" item_name_2="MaterialConstant" item_name_3="MaterialConstant" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="material constants" item_name_1="MaterialConstant" item_name_2="MaterialConstant" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1A v="register" />
 				<_3B v="" />
 			</_40>
-			<_40 v="alternate constants" item_name_1="MaterialConstant" item_name_2="MaterialConstant" item_name_3="MaterialConstant" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="alternate constants" item_name_1="MaterialConstant" item_name_2="MaterialConstant" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1A v="register" />
 				<_3B v="" />
 			</_40>
 			<_7 v="materialConstantBuffer" />
 			<_7 v="alternateConstantBuffer" />
 			<_3E v="material constant shader stage mask" />
-			<_39 v="runtime queryable properties table" item_name_3="MaterialPostprocessDefinition::RuntimeQueryableProperty" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_39 v="runtime queryable properties table" item_name_1="MaterialPostprocessDefinition::RuntimeQueryableProperty" item_name_2="MaterialPostprocessDefinition::RuntimeQueryableProperty" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_3C v="index" />
 				<_3B v="" />
 				<_3C v="index" />

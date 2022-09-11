@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="MusicControlDefinition" item_name_2="MusicControlDefinition" item_name_3="MusicControlDefinition" db1="104" db2="0" db3="2" db4="0" db5="1" db6="0" db7="88" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="MusicControlDefinition" item_name_2="MusicControlDefinition" db1="104" db2="0" db3="2" db4="0" db5="1" db6="0" db7="88" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -13,7 +13,7 @@
 		<Flag v="Only play when all local players are aligned" />
 		<Flag v="Don't restore priority on load" />
 	</_D>
-	<_40 v="Music action list" item_name_1="MusicActionBlockDefinition" item_name_2="MusicActionBlockDefinition" item_name_3="MusicActionBlockDefinition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="929">
+	<_40 v="Music action list" item_name_1="MusicActionBlockDefinition" item_name_2="MusicActionBlockDefinition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="929">
 		<_C v="Music action">
 			<Flag v="NoAction" />
 			<Flag v="StartEvent" />

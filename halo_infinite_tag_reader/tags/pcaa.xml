@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="PcaAnimationTag" item_name_2="PcaAnimationTag" item_name_3="PcaAnimationTag" db1="144" db2="0" db3="4" db4="0" db5="1" db6="0" db7="128" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="PcaAnimationTag" item_name_2="PcaAnimationTag" db1="144" db2="0" db3="4" db4="0" db5="1" db6="0" db7="128" db8="1299">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -20,11 +20,11 @@
 	<_6 v="PCA Animation Count" />
 	<_6 v="PCA Checksum" />
 	<_36 v="Imported Data" />
-	<_40 v="frame data" item_name_1="PCAImportedFrameDataElement" item_name_2="PCAImportedFrameDataElement" item_name_3="PCAImportedFrameDataElement" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="frame data" item_name_1="PCAImportedFrameDataElement" item_name_2="PCAImportedFrameDataElement" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_42 v="Coefficients" />
 		<_3B v="" />
 	</_40>
-	<_40 v="mesh data" item_name_1="PCAImportedMeshData" item_name_2="PCAImportedMeshData" item_name_3="PCAImportedMeshData" db1="120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="mesh data" item_name_1="PCAImportedMeshData" item_name_2="PCAImportedMeshData" db1="120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_6 v="render mesh index" />
 		<_6 v="vertices per shape" />
 		<_6 v="position buffer index" />
@@ -38,21 +38,21 @@
 		<_19 v="normal offset" />
 		<_14 v="stretch offset" />
 		<_36 v="Animations" />
-		<_40 v="animations" item_name_1="PCAImportedAnimationData" item_name_2="PCAImportedAnimationData" item_name_3="PCAImportedAnimationData" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="animations" item_name_1="PCAImportedAnimationData" item_name_2="PCAImportedAnimationData" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Name" />
 			<_6 v="Offset" />
 			<_6 v="Count" />
 			<_6 v="PCA Shape Offset" />
 			<_6 v="PCA coefficient Count" />
 			<_36 v="Resource Data" />
-			<_43 v="CoefficientResource" item_name_3="PCAImportedFrameData" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_43 v="CoefficientResource" item_name_1="PCAImportedFrameData" item_name_2="PCAImportedFrameData" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_42 v="Coefficients" />
 				<_3B v="" />
 			</_43>
 			<_3B v="" />
 		</_40>
 		<_36 v="Vertices" />
-		<_40 v="raw blendshape verts" item_name_1="RawBlendshapeVertex" item_name_2="RawBlendshapeVertex" item_name_3="RawBlendshapeVertex" db1="44" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="raw blendshape verts" item_name_1="RawBlendshapeVertex" item_name_2="RawBlendshapeVertex" db1="44" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_19 v="position" />
 			<_19 v="normal" />
 			<_20 v="tension and ambient occlusion" />
@@ -62,8 +62,8 @@
 		<_3B v="" />
 	</_40>
 	<_36 v="Resource Data" />
-	<_43 v="api resource" item_name_3="s_render_geometry_api_resource" db1="296" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-		<_40 v="pc vertex buffers" item_name_1="RasterizerVertexBuffer" item_name_2="RasterizerVertexBuffer" item_name_3="RasterizerVertexBuffer" db1="80" db2="0" db3="11" db4="0" db5="1" db6="0" db7="0" db8="275">
+	<_43 v="api resource" item_name_1="s_render_geometry_api_resource" item_name_2="s_render_geometry_api_resource" db1="296" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_40 v="pc vertex buffers" item_name_1="RasterizerVertexBuffer" item_name_2="RasterizerVertexBuffer" db1="80" db2="0" db3="11" db4="0" db5="1" db6="0" db7="0" db8="275">
 			<_C v="usage">
 				<Flag v="Position" />
 				<Flag v="UV0" />
@@ -113,7 +113,7 @@
 			<_34 v="generated_pad9e95" length="2" />
 			<_3E v="count" />
 			<_3E v="offset" />
-			<_38 v="d3dbuffer" item_name_3="D3DBufferData" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_38 v="d3dbuffer" item_name_1="D3DBufferData" item_name_2="D3DBufferData" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_3E v="byte width" />
 				<_3E v="bind flags" />
 				<_3E v="misc flags" />
@@ -127,14 +127,14 @@
 			<_7 v="m_resourceView" />
 			<_3B v="" />
 		</_40>
-		<_40 v="pc index buffers" item_name_1="RasterizerIndexBuffer" item_name_2="RasterizerIndexBuffer" item_name_3="RasterizerIndexBuffer" db1="72" db2="0" db3="8" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_40 v="pc index buffers" item_name_1="RasterizerIndexBuffer" item_name_2="RasterizerIndexBuffer" db1="72" db2="0" db3="8" db4="0" db5="1" db6="0" db7="0" db8="275">
 			<_3C v="declaration type" />
 			<_3C v="stride" />
 			<_3C v="ownsD3DResource" />
 			<_34 v="generated_pad8bf7" length="1" />
 			<_3E v="count" />
 			<_3E v="offset" />
-			<_38 v="d3dbuffer" item_name_3="D3DBufferData" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_38 v="d3dbuffer" item_name_1="D3DBufferData" item_name_2="D3DBufferData" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_3E v="byte width" />
 				<_3E v="bind flags" />
 				<_3E v="misc flags" />
@@ -148,24 +148,24 @@
 			<_7 v="m_resourceView" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Streaming Meshes" item_name_1="StreamingGeometryMesh" item_name_2="StreamingGeometryMesh" item_name_3="StreamingGeometryMesh" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="Streaming Meshes" item_name_1="StreamingGeometryMesh" item_name_2="StreamingGeometryMesh" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 			<_6 v="lod state cache slot" />
 			<_4 v="required lod" />
 			<_34 v="generated_pad413f" length="3" />
-			<_40 v="mesh lod chunks" item_name_1="StreamingChunkList" item_name_2="StreamingChunkList" item_name_3="StreamingChunkList" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="mesh lod chunks" item_name_1="StreamingChunkList" item_name_2="StreamingChunkList" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_42 v="chunks" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Streaming Chunks" item_name_1="StreamingGeometryChunk" item_name_2="StreamingGeometryChunk" item_name_3="StreamingGeometryChunk" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Streaming Chunks" item_name_1="StreamingGeometryChunk" item_name_2="StreamingGeometryChunk" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_3D v="buffer index" />
 			<_3D v="allocation priority" />
 			<_3E v="buffer start" />
 			<_3E v="buffer end" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Streaming Buffers" item_name_1="StreamingGeometryBuffer" item_name_2="StreamingGeometryBuffer" item_name_3="StreamingGeometryBuffer" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Streaming Buffers" item_name_1="StreamingGeometryBuffer" item_name_2="StreamingGeometryBuffer" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_3E v="buffer size" />
 			<_3E v="bind flags" />
 			<_42 v="Temp buffer for pipeline" />
@@ -174,7 +174,7 @@
 		<_34 v="generated_pad1319" length="4" />
 		<_7 v="m_sharedDXResources" />
 		<_7 v="m_sharedDXResourceRawView" />
-		<_39 v="m_sharedDXResourceTypedViews" item_name_3="IResourceViewPointer" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_39 v="m_sharedDXResourceTypedViews" item_name_1="IResourceViewPointer" item_name_2="IResourceViewPointer" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_7 v="IResourceView" />
 			<_3B v="" />
 			<_7 v="IResourceView" />

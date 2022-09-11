@@ -2,7 +2,7 @@ from enum import IntFlag
 
 from commons.common_utils import getGUID
 from commons.debug_utils import fillDebugDict, bitmap_id_usage
-from halo_infinite_tag_reader.common_tag_types import TagInstance
+from halo_infinite_tag_reader.tag_instance import TagInstance
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 import re
 
@@ -27,6 +27,7 @@ class Bitmap(BaseTemplate):
         return self.tag_parse.rootTagInst.childs[0]['UsageId'].value == '70370440'
 
     def onInstanceLoad(self, instance: TagInstance):
+        super(Bitmap, self).onInstanceLoad(instance)
         if not (instance.content_entry is None):
             hash_0 = getGUID(b'R\xab5#hBJ\xc2}\x8fr\x94#\x19m\xd3'.hex())
             hash_1 = getGUID(b'*\x80\xeb\x8akA\n\xf6\x9cp\x0c\x97MU6#'.hex())

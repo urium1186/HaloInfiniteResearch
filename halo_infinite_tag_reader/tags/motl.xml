@@ -1,36 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_multiplayer_object_type_list" item_name_2="s_multiplayer_object_type_list" item_name_3="s_multiplayer_object_type_list" db1="136" db2="0" db3="1" db4="0" db5="1" db6="0" db7="120" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="s_multiplayer_object_type_list" item_name_2="s_multiplayer_object_type_list" db1="136" db2="0" db3="1" db4="0" db5="1" db6="0" db7="120" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="object types" item_name_1="s_multiplayer_object_type" item_name_2="s_multiplayer_object_type" item_name_3="s_multiplayer_object_type" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="object types" item_name_1="s_multiplayer_object_type" item_name_2="s_multiplayer_object_type" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_36 v="WARNING" />
 		<_2 v="name" />
 		<_41 v="object" />
 		<_3B v="" />
 	</_40>
-	<_40 v="weapons" item_name_1="multiplayer_weapon_collection" item_name_2="multiplayer_weapon_collection" item_name_3="s_multiplayer_object_collection_entry" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
+	<_40 v="weapons" item_name_1="s_multiplayer_object_collection_entry" item_name_2="s_multiplayer_object_collection_entry" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
 		<_30 v="object type" />
 		<_14 v="random weight" />
 		<_3B v="" />
 	</_40>
-	<_40 v="vehicles" item_name_1="multiplayer_vehicle_collection" item_name_2="multiplayer_vehicle_collection" item_name_3="s_multiplayer_object_collection_entry" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
+	<_40 v="vehicles" item_name_1="s_multiplayer_object_collection_entry" item_name_2="s_multiplayer_object_collection_entry" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
 		<_30 v="object type" />
 		<_14 v="random weight" />
 		<_3B v="" />
 	</_40>
-	<_40 v="grenades" item_name_1="multiplayer_grenade_collection" item_name_2="multiplayer_grenade_collection" item_name_3="s_multiplayer_object_collection_entry" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
+	<_40 v="grenades" item_name_1="s_multiplayer_object_collection_entry" item_name_2="s_multiplayer_object_collection_entry" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
 		<_30 v="object type" />
 		<_14 v="random weight" />
 		<_3B v="" />
 	</_40>
-	<_40 v="equipment" item_name_1="multiplayer_equipment_collection" item_name_2="multiplayer_equipment_collection" item_name_3="s_multiplayer_object_collection_entry" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
+	<_40 v="equipment" item_name_1="s_multiplayer_object_collection_entry" item_name_2="s_multiplayer_object_collection_entry" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
 		<_30 v="object type" />
 		<_14 v="random weight" />
 		<_3B v="" />

@@ -5,10 +5,9 @@ from builtins import range
 from commons.enums_struct_def import TagStructType
 from halo_infinite_tag_reader.common_tag_types import *
 from halo_infinite_tag_reader.headers.tagbasereader import TagBaseReader
-from halo_infinite_tag_reader.headers.ver.tag import Tag
 from halo_infinite_tag_reader.tag_reader_utils import analizarCabecera
 from halo_infinite_tag_reader.tag_struct import TagStruct
-
+from halo_infinite_tag_reader.tag_instance import TagInstance
 from halo_infinite_tag_reader.taglayouts import TagLayouts
 
 
@@ -48,6 +47,16 @@ class TagParseControl:
         self.full_header = TagBaseReader()
         self.content_data_index = 0
         self.OnInstanceLoad = Event()
+        self.hasFunction = 0
+
+    def reset(self):
+        self.tag = None
+        self.f: BinaryIO = None
+        self.rootTagInst: TagInstance = None
+        self.full_header = TagBaseReader()
+        self.content_data_index = 0
+        self.OnInstanceLoad = Event()
+        self.hasFunction = 0
 
     def readFile(self):
         with open(self.filename, 'rb') as self.f:
@@ -57,11 +66,16 @@ class TagParseControl:
                 self.tagLayout = TagLayouts.Tags(self.tagLayoutTemplate)
             root_tag = TagLayouts.C('TagStructBlock', 'Root', self.tagLayout, p_P={"g": "true"})
             self.rootTagInst = TagInstance(tag=root_tag, addressStart=self.full_header.tag_struct_table.entries
-            [0].data_reference.offset_plus, offset=0)
+            [0].field_data_block.offset_plus, offset=0)
             self.rootTagInst.content_entry = self.full_header.tag_struct_table.entries[0]
             self.readTagsAndCreateInstances(self.rootTagInst)
             self.f.close()
             # print("debug")
+        if self.hasFunction==0:
+            assert self.full_header.file_header.data_reference_count == 0
+        else:
+            assert self.hasFunction <= self.full_header.file_header.data_reference_count
+            assert self.hasFunction == self.full_header.file_header.data_reference_count
 
     def hasTagBlock(self, tagDefinitions) -> bool:
         for entry in tagDefinitions:
@@ -69,7 +83,7 @@ class TagParseControl:
                 return True
         return False
 
-    def readTagDefinition(self, parent, parcial_address=0, f=None, ref_it = {'i':0}):
+    def readTagDefinition(self, parent, parcial_address=0, f=None, ref_it = {'i':0,'f':0, 'r': 0}):
         tagInstanceTemp = {}
         tagBlocks = []
         tagDefinitions = parent.tagDef.B
@@ -86,8 +100,26 @@ class TagParseControl:
                 debug = 0
             tagInstanceTemp[key] = tagInstanceFactoryCreate(tag=tagDefinitions[entry], addressStart=parcial_address,
                                                             offset=entry)
+
+            tagInstanceTemp[key].parent = parent
             tagInstanceTemp[key].readIn(f, self.full_header)
-            if tagDefinitions[entry].T == "TagStructData":
+            if tagDefinitions[entry].T == 'FUNCTION':
+                tagInstanceTemp[key].data_reference = parent.content_entry.l_function[ref_it['f']]
+                if tagInstanceTemp[key].data_reference.unknown_property !=0:
+                    debug = 0
+
+                assert self.full_header.file_header.data_reference_count != 0
+                assert len(parent.content_entry.l_function[ref_it['f']].bin_data) == tagInstanceTemp[key].byteLengthCount
+
+                self.hasFunction += 1
+                ref_it['f'] += 1
+                self.OnInstanceLoad(tagInstanceTemp[key])
+            elif tagDefinitions[entry].T == 'TagRef':
+                tagInstanceTemp[key].tag_ref = parent.content_entry.l_tag_ref[ref_it['r']]
+                tagInstanceTemp[key].loadPath()
+                ref_it['r'] += 1
+                self.OnInstanceLoad(tagInstanceTemp[key])
+            elif tagDefinitions[entry].T == "TagStructData":
                 if tagInstanceTemp[key].__class__ == TagStructData:
                     tagInstanceTemp[key].__class__ = TagStructData
                     if len(parent.content_entry.childs)>ref_it['i']:
@@ -98,11 +130,14 @@ class TagParseControl:
                         if parent.content_entry.childs[ref_it['i']].type_id_tg == TagStructType.NoDataStartBlock:
                             tagBlocks.append(tagInstanceTemp[key])
                             ref_it['i'] += 1
+                        else:
+                            self.OnInstanceLoad(tagInstanceTemp[key])
+                    """
                     if False and tagInstanceTemp[key].generateEntry:
                         #tagInstanceTemp[key].childrenCount = 1
                         tagBlocks.append(tagInstanceTemp[key])
                         ref_it['i'] += 1
-
+                    """
             elif tagDefinitions[entry].T == "Tagblock":
                 tagBlocks.append(tagInstanceTemp[key])
                 ref_it['i']+=1
@@ -132,16 +167,19 @@ class TagParseControl:
             name_1 = instance_parent.content_entry.field_name
             bool_some = instance_parent.content_entry.unknown_property_bool_0_1
             debug= True
-        if instance_parent.content_entry.data_reference is None:
+        if instance_parent.content_entry.field_data_block is None:
             #print("Error")
             self.OnInstanceLoad(instance_parent)
             return
-        if instance_parent.content_entry.data_reference.unknown_property != 0:
+        if instance_parent.content_entry.field_data_block.unknown_property != 0:
             debug = True
 
         n_items = -1
         read_result = {"parent": {}, "child_array": []}
-        ref_count={'i':0}
+        ref_count={'i':0,
+                   'f':0,
+                   'r':0,
+                   }
         for data in instance_parent.content_entry.bin_datas:
             bin_stream = io.BytesIO(data)
             read_result = self.readTagDefinition(instance_parent, f=bin_stream, ref_it= ref_count)
@@ -149,6 +187,9 @@ class TagParseControl:
             tagBlocks = tagBlocks + read_result['child_array']
             n_items = read_result['child_array'].__len__()
             #print("debug")
+
+        assert ref_count['f'] == instance_parent.content_entry.l_function.__len__(), f'{self.filename}'
+        assert ref_count['r'] == instance_parent.content_entry.l_tag_ref.__len__(), f'{self.filename}'
 
         if instance_parent.content_entry.type_id == TagStructType.ResourceHandle and read_result['parent'] == {}:
             self.OnInstanceLoad(instance_parent)
