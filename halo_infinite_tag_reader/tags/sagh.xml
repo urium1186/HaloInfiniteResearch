@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::SpartanAbilities::GrappleHookDefinitionTag" item_name_2="i343::SpartanAbilities::GrappleHookDefinitionTag" item_name_3="i343::SpartanAbilities::GrappleHookDefinitionTag" db1="1240" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1224" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::SpartanAbilities::GrappleHookDefinitionTag" item_name_2="i343::SpartanAbilities::GrappleHookDefinitionTag" db1="1240" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1224" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="data" item_name_3="i343::SpartanAbilities::GrappleHookDefinition" db1="1220" db2="0" db3="17" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="common ability parameters" item_name_3="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
+	<_38 v="data" item_name_1="i343::SpartanAbilities::GrappleHookDefinition" item_name_2="i343::SpartanAbilities::GrappleHookDefinition" db1="1220" db2="0" db3="17" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="common ability parameters" item_name_1="i343::SpartanAbilities::SpartanAbilityCommonParameters" item_name_2="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
 			<_37 v="common ability parameters" />
 			<_C v="input">
 				<Flag v="Default" />
@@ -130,7 +130,7 @@
 		<_14 v="pull exit max velocity" />
 		<_36 v="base pull acceleration function" />
 		<_37 v="base pull acceleration function" />
-		<_38 v="base pull acceleration function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="base pull acceleration function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -138,7 +138,7 @@
 		</_38>
 		<_36 v="launch impulse decay function" />
 		<_37 v="launch impulse decay function" />
-		<_38 v="launch impulse decay function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="launch impulse decay function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -158,7 +158,7 @@
 		<_14 v="pull aim vector influence accumulation starting scalar" />
 		<_36 v="pull aim vector influence falloff function" />
 		<_37 v="pull aim vector influence falloff function" />
-		<_38 v="pull aim vector influence falloff function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="pull aim vector influence falloff function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -166,7 +166,7 @@
 		</_38>
 		<_36 v="pull aim vector influence scale function" />
 		<_37 v="pull aim vector influence falloff function" />
-		<_38 v="pull aim vector influence scale function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="pull aim vector influence scale function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -207,7 +207,7 @@
 		<_14 v="pull aftermath velocity (peak)" />
 		<_36 v="pull aftermath velocity scale function" />
 		<_37 v="pull aftermath velocity scale function" />
-		<_38 v="pull aftermath velocity scale function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="pull aftermath velocity scale function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -238,7 +238,7 @@
 		<_2 v="reel in animation" />
 		<_36 v="reel in acceleration function" />
 		<_37 v="reel in acceleration function" />
-		<_38 v="reel in acceleration function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="reel in acceleration function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -246,7 +246,7 @@
 		</_38>
 		<_36 v="reel in tangential velocity damping function" />
 		<_37 v="reel in tangential velocity damping function" />
-		<_38 v="reel in tangential velocity damping function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="reel in tangential velocity damping function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -262,7 +262,7 @@
 		<_14 v="bash charge up duration" />
 		<_36 v="bash charge up velocity scale function" />
 		<_37 v="bash charge up velocity scale function" />
-		<_38 v="bash charge up velocity scale function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="bash charge up velocity scale function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -271,7 +271,7 @@
 		<_14 v="bash acceleration duration" />
 		<_36 v="bash acceleration velocity scale function" />
 		<_37 v="bash acceleration velocity scale function" />
-		<_38 v="bash acceleration velocity scale function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="bash acceleration velocity scale function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -282,7 +282,7 @@
 		<_14 v="bash aftermath recoil peak velocity" />
 		<_36 v="bash recoil velocity scale function" />
 		<_37 v="bash recoil velocity scale function" />
-		<_38 v="bash recoil velocity scale function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="bash recoil velocity scale function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />

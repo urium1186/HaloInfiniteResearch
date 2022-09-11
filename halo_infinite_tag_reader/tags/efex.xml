@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="EffectExposureDefinition" item_name_2="EffectExposureDefinition" item_name_3="EffectExposureDefinition" db1="128" db2="0" db3="2" db4="0" db5="0" db6="0" db7="112" db8="3459">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="EffectExposureDefinition" item_name_2="EffectExposureDefinition" db1="128" db2="0" db3="2" db4="0" db5="0" db6="0" db7="112" db8="3459">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,7 +10,7 @@
 		<_3B v="" />
 	</_38>
 	<_37 v="Alpha-blend Override" />
-	<_38 v="Alpha-blend Override" item_name_3="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Alpha-blend Override" item_name_1="EffectExposureOverride" item_name_2="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="min exposure" />
 		<_14 v="max exposure" />
 		<_14 v="underexposed slope" />
@@ -19,7 +19,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Additive Override" />
-	<_38 v="Additive Override" item_name_3="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Additive Override" item_name_1="EffectExposureOverride" item_name_2="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="min exposure" />
 		<_14 v="max exposure" />
 		<_14 v="underexposed slope" />
@@ -28,7 +28,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Lit Alpha-blend Override" />
-	<_38 v="Lit Alpha-blend Override" item_name_3="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Lit Alpha-blend Override" item_name_1="EffectExposureOverride" item_name_2="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="min exposure" />
 		<_14 v="max exposure" />
 		<_14 v="underexposed slope" />
@@ -37,7 +37,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Lit Additive Override" />
-	<_38 v="Lit Additive Override" item_name_3="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Lit Additive Override" item_name_1="EffectExposureOverride" item_name_2="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="min exposure" />
 		<_14 v="max exposure" />
 		<_14 v="underexposed slope" />
@@ -46,7 +46,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Surface Alpha-blend Override" />
-	<_38 v="Surface Alpha-blend Override" item_name_3="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Surface Alpha-blend Override" item_name_1="EffectExposureOverride" item_name_2="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="min exposure" />
 		<_14 v="max exposure" />
 		<_14 v="underexposed slope" />
@@ -55,7 +55,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Surface Additive Override" />
-	<_38 v="Surface Additive Override" item_name_3="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Surface Additive Override" item_name_1="EffectExposureOverride" item_name_2="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="min exposure" />
 		<_14 v="max exposure" />
 		<_14 v="underexposed slope" />
@@ -64,7 +64,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Cheap Light Override" />
-	<_38 v="Cheap Light Override" item_name_3="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Cheap Light Override" item_name_1="EffectExposureOverride" item_name_2="EffectExposureOverride" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="min exposure" />
 		<_14 v="max exposure" />
 		<_14 v="underexposed slope" />

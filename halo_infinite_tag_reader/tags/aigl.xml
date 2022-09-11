@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_ai_globals_definition" item_name_2="s_ai_globals_definition" item_name_3="s_ai_globals_definition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="s_ai_globals_definition" item_name_2="s_ai_globals_definition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="data" item_name_1="s_ai_globals_data" item_name_2="s_ai_globals_data" item_name_3="s_ai_globals_data" db1="784" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="data" item_name_1="s_ai_globals_data" item_name_2="s_ai_globals_data" db1="784" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_14 v="AI infantry-on-AI weapon damage scale" />
 		<_14 v="AI vehicle-on-AI weapon damage scale" />
 		<_14 v="AI player vehicle-on-AI weapon damage scale" />
@@ -20,7 +20,7 @@
 		<_14 v="Medium Perception Distance Fraction" />
 		<_14 v="Shout Perception Distance Fraction" />
 		<_36 v="AI Suicide Damage Source" />
-		<_38 v="aiSuicideDamageSource" item_name_3="i343::Damage::DamageSourceDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_38 v="aiSuicideDamageSource" item_name_1="i343::Damage::DamageSourceDefinition" item_name_2="i343::Damage::DamageSourceDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Damage Source Name" />
 			<_3B v="" />
 		</_38>
@@ -61,7 +61,7 @@
 		<_14 v="AI seat cooldown" />
 		<_14 v="alert stagger delay max" />
 		<_14 v="Berserk animation suppress radius" />
-		<_40 v="gravemind properties" item_name_1="s_ai_globals_gravemind_definition" item_name_2="s_ai_globals_gravemind_definition" item_name_3="s_ai_globals_gravemind_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="gravemind properties" item_name_1="s_ai_globals_gravemind_definition" item_name_2="s_ai_globals_gravemind_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="min retreat time" />
 			<_14 v="ideal retreat time" />
 			<_14 v="max retreat time" />
@@ -88,27 +88,27 @@
 		<_14 v="Time isolated before can attempt kill" />
 		<_14 v="Time unseen before kill allowed" />
 		<_14 v="Time isolated before force killed" />
-		<_40 v="spawn formations" item_name_1="s_ai_globals_formation_definition" item_name_2="s_ai_globals_formation_definition" item_name_3="s_ai_globals_formation_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="spawn formations" item_name_1="s_ai_globals_formation_definition" item_name_2="s_ai_globals_formation_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="formation" />
 			<_3B v="" />
 		</_40>
-		<_40 v="squad template folders" item_name_1="s_ai_globals_squad_template_folder_definition" item_name_2="s_ai_globals_squad_template_folder_definition" item_name_3="s_ai_globals_squad_template_folder_definition" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="squad template folders" item_name_1="s_ai_globals_squad_template_folder_definition" item_name_2="s_ai_globals_squad_template_folder_definition" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="folder name" />
-			<_40 v="sub folders" item_name_1="s_ai_globals_squad_template_sub_folder_definition" item_name_2="s_ai_globals_squad_template_sub_folder_definition" item_name_3="s_ai_globals_squad_template_sub_folder_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="sub folders" item_name_1="s_ai_globals_squad_template_sub_folder_definition" item_name_2="s_ai_globals_squad_template_sub_folder_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="sub folder name" />
-				<_40 v="templates" item_name_1="s_ai_globals_squad_template_definition" item_name_2="s_ai_globals_squad_template_definition" item_name_3="s_ai_globals_squad_template_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+				<_40 v="templates" item_name_1="s_ai_globals_squad_template_definition" item_name_2="s_ai_globals_squad_template_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 					<_41 v="squad_template" />
 					<_3B v="" />
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="templates" item_name_1="s_ai_globals_squad_template_definition" item_name_2="s_ai_globals_squad_template_definition" item_name_3="s_ai_globals_squad_template_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="templates" item_name_1="s_ai_globals_squad_template_definition" item_name_2="s_ai_globals_squad_template_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="squad_template" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="custom stimuli" item_name_1="s_ai_globals_custom_stimulus_definition" item_name_2="s_ai_globals_custom_stimulus_definition" item_name_3="s_ai_globals_custom_stimulus_definition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="custom stimuli" item_name_1="s_ai_globals_custom_stimulus_definition" item_name_2="s_ai_globals_custom_stimulus_definition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="name" />
 			<_3B v="" />
 		</_40>
@@ -138,18 +138,18 @@
 		<_5 v="search by fire count" />
 		<_34 v="search padding" length="2" />
 		<_37 v="" />
-		<_40 v="vision traits" item_name_1="s_ai_globals_trait_vision_definition" item_name_2="s_ai_globals_trait_vision_definition" item_name_3="s_ai_globals_trait_vision_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="vision traits" item_name_1="s_ai_globals_trait_vision_definition" item_name_2="s_ai_globals_trait_vision_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="Vision Traits" />
 			<_14 v="vision distance scale" />
 			<_14 v="vision angle scale" />
 			<_3B v="" />
 		</_40>
-		<_40 v="sound traits" item_name_1="s_ai_globals_trait_sound_definition" item_name_2="s_ai_globals_trait_sound_definition" item_name_3="s_ai_globals_trait_sound_definition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="sound traits" item_name_1="s_ai_globals_trait_sound_definition" item_name_2="s_ai_globals_trait_sound_definition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="Sound Traits" />
 			<_14 v="hearing distance scale" />
 			<_3B v="" />
 		</_40>
-		<_40 v="luck traits" item_name_1="s_ai_globals_trait_luck_definition" item_name_2="s_ai_globals_trait_luck_definition" item_name_3="s_ai_globals_trait_luck_definition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="luck traits" item_name_1="s_ai_globals_trait_luck_definition" item_name_2="s_ai_globals_trait_luck_definition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="Luck Traits" />
 			<_14 v="evasion chance scale" />
 			<_14 v="grenade dive chance scale" />
@@ -164,7 +164,7 @@
 			<_14 v="throw grenade delay scale" />
 			<_3B v="" />
 		</_40>
-		<_40 v="grenade traits" item_name_1="s_ai_globals_trait_grenade_definition" item_name_2="s_ai_globals_trait_grenade_definition" item_name_3="s_ai_globals_trait_grenade_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="grenade traits" item_name_1="s_ai_globals_trait_grenade_definition" item_name_2="s_ai_globals_trait_grenade_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="Grenade Traits" />
 			<_14 v="velocity scale" />
 			<_14 v="throw grenade delay scale" />
@@ -193,9 +193,9 @@
 		<_37 v="Procedural Playfighting" />
 		<_36 v="" />
 		<_25 v="Playfight Distance Thresholds" />
-		<_38 v="Distance Function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="Distance Function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -226,7 +226,7 @@
 		<_41 v="Slip Space Spawning Effect" />
 		<_37 v="" />
 		<_37 v="Weapon Interactive Object Properties" />
-		<_40 v="Ambient Info" item_name_1="AmbientActionInfo" item_name_2="AmbientActionInfo" item_name_3="AmbientActionInfo" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Ambient Info" item_name_1="AmbientActionInfo" item_name_2="AmbientActionInfo" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_A v="desire type">
 				<Flag v="Scripted" />
 				<Flag v="Health" />
@@ -317,11 +317,11 @@
 			<_2 v="composition name" />
 			<_41 v="composition definition" />
 			<_14 v="Max distance agents will consider this opp from" />
-			<_40 v="Ambient meta labels" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" item_name_3="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Ambient meta labels" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="meta label" />
 				<_3B v="" />
 			</_40>
-			<_40 v="Exclusion meta labels" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" item_name_3="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Exclusion meta labels" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="meta label" />
 				<_3B v="" />
 			</_40>
@@ -335,8 +335,8 @@
 			<_3B v="" />
 		</_40>
 		<_37 v="" />
-		<_40 v="Friendly Squad Properties" item_name_1="FriendlySquadProperties" item_name_2="FriendlySquadProperties" item_name_3="FriendlySquadProperties" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
-			<_40 v="Follow Actor Types" item_name_1="i343::AI::AIMarkupFilter" item_name_2="i343::AI::AIMarkupFilter" item_name_3="i343::AI::AIMarkupFilter" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Friendly Squad Properties" item_name_1="FriendlySquadProperties" item_name_2="FriendlySquadProperties" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_40 v="Follow Actor Types" item_name_1="i343::AI::AIMarkupFilter" item_name_2="i343::AI::AIMarkupFilter" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_B v="Actor Type">
 					<Flag v="none" />
 					<Flag v="player" />
@@ -392,7 +392,7 @@
 			<_14 v="Arrival Dialogue Event Min Travel Distance" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Pathing Cost Modifiers" item_name_1="PathingCostModifiers" item_name_2="PathingCostModifiers" item_name_3="PathingCostModifiers" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Pathing Cost Modifiers" item_name_1="PathingCostModifiers" item_name_2="PathingCostModifiers" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_36 v="Pathing cost modifiers" />
 			<_14 v="Damage area" />
 			<_14 v="No Drive zone" />

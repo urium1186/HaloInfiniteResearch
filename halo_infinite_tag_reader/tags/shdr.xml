@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="ShaderTag" item_name_2="ShaderTag" item_name_3="ShaderTag" db1="280" db2="0" db3="100" db4="0" db5="0" db6="0" db7="264" db8="1923">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="ShaderTag" item_name_2="ShaderTag" db1="280" db2="0" db3="100" db4="0" db5="0" db6="0" db7="264" db8="1923">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -42,7 +42,7 @@
 		<Flag v="uses_terrain_sampling" />
 		<Flag v="decal_use_uav_normal" />
 	</_D>
-	<_38 v="maya shader" item_name_3="ShaderDataPathParam" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="maya shader" item_name_1="ShaderDataPathParam" item_name_2="ShaderDataPathParam" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_44 v="Path" />
 		<_3B v="" />
 	</_38>

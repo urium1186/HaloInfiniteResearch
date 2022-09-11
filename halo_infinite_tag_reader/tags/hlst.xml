@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="HlodSettings" item_name_2="HlodSettings" item_name_3="HlodSettings" db1="336" db2="0" db3="1" db4="0" db5="1" db6="0" db7="320" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="HlodSettings" item_name_2="HlodSettings" db1="336" db2="0" db3="1" db4="0" db5="1" db6="0" db7="320" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -23,8 +23,8 @@
 	<_3E v="BakingTextureDilation" />
 	<_14 v="Minimum bounding sphere radius to include in hlod" />
 	<_37 v="Reduction Settings" />
-	<_38 v="Reduction" item_name_3="HlodSimplygonReductionSettings" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
-		<_38 v="RepairSettings" item_name_3="HlodSimplygonRepairSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Reduction" item_name_1="HlodSimplygonReductionSettings" item_name_2="HlodSimplygonReductionSettings" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
+		<_38 v="RepairSettings" item_name_1="HlodSimplygonRepairSettings" item_name_2="HlodSimplygonRepairSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="TjuncDist" />
 			<_14 v="WeldDist" />
 			<_3E v="ProgressivePasses" />
@@ -34,14 +34,14 @@
 			<Flag v="UseWelding" />
 			<Flag v="UseTJunctionRemover" />
 		</_D>
-		<_38 v="NormalSettings" item_name_3="HlodSimplygonNormalSettings" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="NormalSettings" item_name_1="HlodSimplygonNormalSettings" item_name_2="HlodSimplygonNormalSettings" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="HardEdgeAngleInRadians" />
 			<_3B v="" />
 		</_38>
 		<_D v="NormalStates">
 			<Flag v="ReplaceNormals" />
 		</_D>
-		<_38 v="MappingImageSettings" item_name_3="HlodSimplygonMappingImageSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+		<_38 v="MappingImageSettings" item_name_1="HlodSimplygonMappingImageSettings" item_name_2="HlodSimplygonMappingImageSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 			<_14 v="ParameterizerMaxStretch" />
 			<_14 v="ParameterizerLargeChartsImportance" />
 			<_3E v="GutterSpace" />
@@ -96,7 +96,7 @@
 		<_D v="WeldingSettingsSource">
 			<Flag v="UseRepairWeldingSettings" />
 		</_D>
-		<_38 v="WeldingSettings" item_name_3="HlodSimplygonWeldingSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="WeldingSettings" item_name_1="HlodSimplygonWeldingSettings" item_name_2="HlodSimplygonWeldingSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_D v="UseWelding">
 				<Flag v="UseWelding" />
 			</_D>
@@ -107,7 +107,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Remeshing Settings" />
-	<_38 v="Remeshing" item_name_3="HlodSimplygonRemeshingSettings" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
+	<_38 v="Remeshing" item_name_1="HlodSimplygonRemeshingSettings" item_name_2="HlodSimplygonRemeshingSettings" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
 		<_6 v="RemeshingOnScreenSize" />
 		<_14 v="Derive From Distance Scale" />
 		<_3E v="MaxTriangleSize" />
@@ -120,7 +120,7 @@
 			<Flag v="UseTerrainCulling" />
 		</_F>
 		<_34 v="generated_pad1da2" length="3" />
-		<_38 v="MappingImageSettings" item_name_3="HlodSimplygonMappingImageSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+		<_38 v="MappingImageSettings" item_name_1="HlodSimplygonMappingImageSettings" item_name_2="HlodSimplygonMappingImageSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 			<_14 v="ParameterizerMaxStretch" />
 			<_14 v="ParameterizerLargeChartsImportance" />
 			<_3E v="GutterSpace" />
@@ -162,8 +162,8 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Aggregation Settings" />
-	<_38 v="Aggregation" item_name_3="HlodSimplygonAggregationSettings" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
-		<_38 v="MappingImageSettings" item_name_3="HlodSimplygonMappingImageSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+	<_38 v="Aggregation" item_name_1="HlodSimplygonAggregationSettings" item_name_2="HlodSimplygonAggregationSettings" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
+		<_38 v="MappingImageSettings" item_name_1="HlodSimplygonMappingImageSettings" item_name_2="HlodSimplygonMappingImageSettings" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 			<_14 v="ParameterizerMaxStretch" />
 			<_14 v="ParameterizerLargeChartsImportance" />
 			<_3E v="GutterSpace" />
@@ -206,7 +206,7 @@
 			<Flag v="MergeGeometries" />
 		</_F>
 		<_34 v="generated_pad1668" length="3" />
-		<_38 v="WeldingSettings" item_name_3="HlodSimplygonWeldingSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="WeldingSettings" item_name_1="HlodSimplygonWeldingSettings" item_name_2="HlodSimplygonWeldingSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_D v="UseWelding">
 				<Flag v="UseWelding" />
 			</_D>
@@ -217,14 +217,14 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Shadow Settings" />
-	<_38 v="Shadow" item_name_3="HlodShadowSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Shadow" item_name_1="HlodShadowSettings" item_name_2="HlodShadowSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_6 v="Assumed shadow map resolution" />
 		<_14 v="Assumed shadow cascade transition distance" />
 		<_3B v="" />
 	</_38>
 	<_37 v="" />
 	<_37 v="Visibility Settings" />
-	<_38 v="Visibility" item_name_3="HlodVisibilitySettings" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Visibility" item_name_1="HlodVisibilitySettings" item_name_2="HlodVisibilitySettings" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_B v="ComputeVisibilityMode">
 			<Flag v="DirectX" />
 			<Flag v="Software" />
@@ -243,7 +243,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Global Settings" />
-	<_38 v="SimplygonGlobalSettings" item_name_3="HlodSimplygonGlobalSettings" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="SimplygonGlobalSettings" item_name_1="HlodSimplygonGlobalSettings" item_name_2="HlodSimplygonGlobalSettings" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_F v="States">
 			<Flag v="ValidateProcessing" />
 			<Flag v="ValidateProcessingAssertOnError" />
@@ -259,11 +259,11 @@
 		<_3B v="" />
 	</_38>
 	<_37 v="" />
-	<_40 v="HLOD Materials to cut off mesh parts" item_name_1="HlodMaterialCutOffMeshParts" item_name_2="HlodMaterialCutOffMeshParts" item_name_3="HlodMaterialCutOffMeshParts" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="HLOD Materials to cut off mesh parts" item_name_1="HlodMaterialCutOffMeshParts" item_name_2="HlodMaterialCutOffMeshParts" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Cut off mesh parts by this material" />
 		<_3B v="" />
 	</_40>
-	<_40 v="HLOD Materials to put the geo directly into the HLOD, bypassing simplygon" item_name_1="HlodMaterialCutOffMeshParts" item_name_2="HlodMaterialCutOffMeshParts" item_name_3="HlodMaterialCutOffMeshParts" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="HLOD Materials to put the geo directly into the HLOD, bypassing simplygon" item_name_1="HlodMaterialCutOffMeshParts" item_name_2="HlodMaterialCutOffMeshParts" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Cut off mesh parts by this material" />
 		<_3B v="" />
 	</_40>

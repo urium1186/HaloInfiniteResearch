@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="render_model_definition" item_name_2="render_model_definition" item_name_3="render_model_definition" db1="632" db2="0" db3="25" db4="0" db5="1" db6="2" db7="616" db8="3443">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="render_model_definition" item_name_2="render_model_definition" db1="632" db2="0" db3="25" db4="0" db5="1" db6="2" db7="616" db8="3443">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -35,9 +35,9 @@
 	<_37 v="" />
 	<_6 v="runtime import info checksum" />
 	<_37 v="" />
-	<_40 v="regions" item_name_1="region" item_name_2="render_model_region" item_name_3="region" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="regions" item_name_1="region" item_name_2="render_model_region" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="name" />
-		<_40 v="permutations" item_name_1="permutation" item_name_2="render_model_permutation" item_name_3="permutation" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="permutations" item_name_1="permutation" item_name_2="render_model_permutation" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="name" />
 			<_5 v="mesh index" />
 			<_3D v="mesh count" />
@@ -47,7 +47,7 @@
 		<_3B v="" />
 	</_40>
 	<_6 v="node list checksum" />
-	<_40 v="nodes" item_name_1="node" item_name_2="render_model_node" item_name_3="node" db1="124" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="385">
+	<_40 v="nodes" item_name_1="node" item_name_2="render_model_node" db1="124" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="385">
 		<_2 v="name" />
 		<_2E v="parent node" />
 		<_2E v="first child node" />
@@ -89,7 +89,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Bone Settings" item_name_1="Bone Physics" item_name_2="i343::Model::BonePhysicsDefinition" item_name_3="Bone Physics" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+	<_40 v="Bone Settings" item_name_1="Bone Physics" item_name_2="i343::Model::BonePhysicsDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 		<_2E v="Node" />
 		<_34 v="generated_pad07da" length="2" />
 		<_14 v="Spring Coefficient" />
@@ -97,9 +97,9 @@
 		<_8 v="Max Angle" />
 		<_3B v="" />
 	</_40>
-	<_40 v="marker groups" item_name_1="marker group" item_name_2="render_model_marker_group" item_name_3="marker group" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+	<_40 v="marker groups" item_name_1="marker group" item_name_2="render_model_marker_group" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 		<_2 v="name" />
-		<_40 v="markers" item_name_1="marker" item_name_2="render_model_marker" item_name_3="marker" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="markers" item_name_1="marker" item_name_2="render_model_marker" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_4 v="region index" />
 			<_34 v="generated_padb0cb" length="3" />
 			<_3E v="permutation index" />
@@ -116,11 +116,11 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="materials" item_name_1="geometry_material" item_name_2="geometry_material" item_name_3="geometry_material" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="materials" item_name_1="geometry_material" item_name_2="geometry_material" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="material" />
 		<_3B v="" />
 	</_40>
-	<_40 v="errors" item_name_1="error_report_category" item_name_2="error_report_category" item_name_3="error_report_category" db1="288" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+	<_40 v="errors" item_name_1="error_report_category" item_name_2="error_report_category" db1="288" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
 		<_1 v="name" />
 		<_A v="report type">
 			<Flag v="silent" />
@@ -139,7 +139,7 @@
 		<_3D v="runtime generation flags" />
 		<_34 v="generated_pad3f2b" length="2" />
 		<_6 v="runtime something" />
-		<_40 v="reports" item_name_1="error_report" item_name_2="error_report" item_name_3="error_report" db1="236" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="reports" item_name_1="error_report" item_name_2="error_report" db1="236" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_A v="type">
 				<Flag v="silent" />
 				<Flag v="comment" />
@@ -164,10 +164,10 @@
 			<_6 v="source identifier" />
 			<_0 v="source filename" />
 			<_6 v="source line number" />
-			<_40 v="vertices" item_name_1="error_report_vertex" item_name_2="error_report_vertex" item_name_3="error_report_vertex" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_40 v="vertices" item_name_1="error_report_vertex" item_name_2="error_report_vertex" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 					<_17 v="position" />
-					<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3C v="node index" />
 						<_3B v="" />
 						<_3C v="node index" />
@@ -177,7 +177,7 @@
 						<_3C v="node index" />
 						<_3B v="" />
 					</_39>
-					<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="node weight" />
 						<_3B v="" />
 						<_14 v="node weight" />
@@ -193,10 +193,10 @@
 				<_14 v="screen size" />
 				<_3B v="" />
 			</_40>
-			<_40 v="vectors" item_name_1="error_report_vector" item_name_2="error_report_vector" item_name_3="error_report_vector" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_40 v="vectors" item_name_1="error_report_vector" item_name_2="error_report_vector" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 					<_17 v="position" />
-					<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3C v="node index" />
 						<_3B v="" />
 						<_3C v="node index" />
@@ -206,7 +206,7 @@
 						<_3C v="node index" />
 						<_3B v="" />
 					</_39>
-					<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="node weight" />
 						<_3B v="" />
 						<_14 v="node weight" />
@@ -223,11 +223,11 @@
 				<_14 v="screen length" />
 				<_3B v="" />
 			</_40>
-			<_40 v="lines" item_name_1="error_report_line" item_name_2="error_report_line" item_name_3="error_report_line" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="points" item_name_3="ErrorReportLinePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_40 v="lines" item_name_1="error_report_line" item_name_2="error_report_line" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="points" item_name_1="ErrorReportLinePoint" item_name_2="ErrorReportLinePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -237,7 +237,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -250,9 +250,9 @@
 						<_3B v="" />
 					</_38>
 					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -262,88 +262,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-						</_39>
-						<_3B v="" />
-					</_38>
-					<_3B v="" />
-				</_39>
-				<_20 v="color" />
-				<_3B v="" />
-			</_40>
-			<_40 v="triangles" item_name_1="error_report_triangle" item_name_2="error_report_triangle" item_name_3="error_report_triangle" db1="112" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="points" item_name_3="ErrorReportTrianglePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-						</_39>
-						<_3B v="" />
-					</_38>
-					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-						</_39>
-						<_3B v="" />
-					</_38>
-					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -360,11 +279,11 @@
 				<_20 v="color" />
 				<_3B v="" />
 			</_40>
-			<_40 v="quads" item_name_1="error_report_quad" item_name_2="error_report_quad" item_name_3="error_report_quad" db1="144" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="points" item_name_3="ErrorReportQuadPoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_40 v="triangles" item_name_1="error_report_triangle" item_name_2="error_report_triangle" db1="112" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="points" item_name_1="ErrorReportTrianglePoint" item_name_2="ErrorReportTrianglePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -374,7 +293,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -387,9 +306,9 @@
 						<_3B v="" />
 					</_38>
 					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -399,7 +318,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -412,9 +331,9 @@
 						<_3B v="" />
 					</_38>
 					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -424,32 +343,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-						</_39>
-						<_3B v="" />
-					</_38>
-					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -466,11 +360,117 @@
 				<_20 v="color" />
 				<_3B v="" />
 			</_40>
-			<_40 v="comments" item_name_1="error_report_comment" item_name_2="error_report_comment" item_name_3="error_report_comment" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_40 v="quads" item_name_1="error_report_quad" item_name_2="error_report_quad" db1="144" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="points" item_name_1="ErrorReportQuadPoint" item_name_2="ErrorReportQuadPoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+				</_39>
+				<_20 v="color" />
+				<_3B v="" />
+			</_40>
+			<_40 v="comments" item_name_1="error_report_comment" item_name_2="error_report_comment" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 				<_42 v="text" />
-				<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 					<_17 v="position" />
-					<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3C v="node index" />
 						<_3B v="" />
 						<_3C v="node index" />
@@ -480,7 +480,7 @@
 						<_3C v="node index" />
 						<_3B v="" />
 					</_39>
-					<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="node weight" />
 						<_3B v="" />
 						<_14 v="node weight" />
@@ -506,7 +506,7 @@
 		<_3B v="" />
 	</_40>
 	<_14 v="don't draw over camera cosine angle" />
-	<_38 v="render geometry" g="true" item_name_3="s_render_geometry" db1="304" db2="0" db3="17" db4="0" db5="1" db6="2" db7="0" db8="307">
+	<_38 v="render geometry" item_name_1="s_render_geometry" item_name_2="s_render_geometry" db1="304" db2="0" db3="17" db4="0" db5="1" db6="2" db7="0" db8="307">
 		<_D v="runtime flags">
 			<Flag v="processed" />
 			<Flag v="available" />
@@ -518,7 +518,7 @@
 			<Flag v="has dual quat" />
 			<Flag v="mesh streaming" />
 		</_D>
-		<_40 v="meshes import info" item_name_1="MeshImportInfo" item_name_2="MeshImportInfo" item_name_3="MeshImportInfo" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="meshes import info" item_name_1="MeshImportInfo" item_name_2="MeshImportInfo" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_3E v="CRC" />
 			<_17 v="position bounds 0" />
 			<_17 v="position bounds 1" />
@@ -526,17 +526,17 @@
 			<_16 v="texcoord bounds 1" />
 			<_3B v="" />
 		</_40>
-		<_40 v="meshes" item_name_1="s_mesh" item_name_2="s_mesh" item_name_3="s_mesh" db1="60" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2321">
-			<_40 v="LOD render data" item_name_1="LODRenderData" item_name_2="LODRenderData" item_name_3="LODRenderData" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-				<_40 v="per mesh temporary" item_name_1="s_per_mesh_raw_data" item_name_2="s_per_mesh_raw_data" item_name_3="s_per_mesh_raw_data" db1="204" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-					<_40 v="raw vertices" item_name_1="RawVertex" item_name_2="RawVertex" item_name_3="RawVertex" db1="164" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="meshes" item_name_1="s_mesh" item_name_2="s_mesh" db1="60" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_40 v="LOD render data" item_name_1="LODRenderData" item_name_2="LODRenderData" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+				<_40 v="per mesh temporary" item_name_1="s_per_mesh_raw_data" item_name_2="s_per_mesh_raw_data" db1="204" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="raw vertices" item_name_1="RawVertex" item_name_2="RawVertex" db1="164" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
 						<_16 v="texcoord" />
 						<_17 v="normal" />
 						<_17 v="binormal" />
 						<_17 v="tangent" />
 						<_16 v="lightmap texcoord" />
-						<_39 v="node indices" item_name_3="GeometryNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="GeometryNodeIndex" item_name_2="GeometryNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -554,7 +554,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="GeometryNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="GeometryNodeWeight" item_name_2="GeometryNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -581,47 +581,47 @@
 						<_17 v="tangent UV3" />
 						<_3B v="" />
 					</_40>
-					<_40 v="raw indices" item_name_1="WordIndex" item_name_2="WordIndex" item_name_3="WordIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="raw indices" item_name_1="WordIndex" item_name_2="WordIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3D v="word" />
 						<_3B v="" />
 					</_40>
-					<_40 v="raw indices32" item_name_1="DwordIndex" item_name_2="DwordIndex" item_name_3="DwordIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="raw indices32" item_name_1="DwordIndex" item_name_2="DwordIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3E v="dword" />
 						<_3B v="" />
 					</_40>
-					<_40 v="raw water data" item_name_1="s_raw_water_data" item_name_2="s_raw_water_data" item_name_3="s_raw_water_data" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-						<_40 v="raw water indices" item_name_1="WordIndex" item_name_2="WordIndex" item_name_3="WordIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="raw water data" item_name_1="s_raw_water_data" item_name_2="s_raw_water_data" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+						<_40 v="raw water indices" item_name_1="WordIndex" item_name_2="WordIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3D v="word" />
 							<_3B v="" />
 						</_40>
-						<_40 v="raw water vertices" item_name_1="s_raw_water_append" item_name_2="s_raw_water_append" item_name_3="s_raw_water_append" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_40 v="raw water vertices" item_name_1="s_raw_water_append" item_name_2="s_raw_water_append" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_16 v="base texcoord" />
 							<_3B v="" />
 						</_40>
 						<_3B v="" />
 					</_40>
-					<_40 v="raw blendshapes" item_name_1="RawBlendshapeVertex" item_name_2="RawBlendshapeVertex" item_name_3="RawBlendshapeVertex" db1="44" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="raw blendshapes" item_name_1="RawBlendshapeVertex" item_name_2="RawBlendshapeVertex" db1="44" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_19 v="position" />
 						<_19 v="normal" />
 						<_20 v="tension and ambient occlusion" />
 						<_3E v="target Id" />
 						<_3B v="" />
 					</_40>
-					<_40 v="raw blendshapes indices" item_name_1="DwordIndex" item_name_2="DwordIndex" item_name_3="DwordIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="raw blendshapes indices" item_name_1="DwordIndex" item_name_2="DwordIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3E v="dword" />
 						<_3B v="" />
 					</_40>
-					<_40 v="raw tension edges" item_name_1="RawTensionEdge" item_name_2="RawTensionEdge" item_name_3="RawTensionEdge" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="raw tension edges" item_name_1="RawTensionEdge" item_name_2="RawTensionEdge" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3E v="start vertex index" />
 						<_3E v="end vertex index" />
 						<_14 v="edge rest length" />
 						<_3B v="" />
 					</_40>
-					<_40 v="raw blendshapes triangle and edge Indices" item_name_1="DwordIndex" item_name_2="DwordIndex" item_name_3="DwordIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="raw blendshapes triangle and edge Indices" item_name_1="DwordIndex" item_name_2="DwordIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3E v="dword" />
 						<_3B v="" />
 					</_40>
-					<_40 v="raw blendshapes triangle and edge index info" item_name_1="RawTriangleEdgeIndexInfo" item_name_2="RawTriangleEdgeIndexInfo" item_name_3="RawTriangleEdgeIndexInfo" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="raw blendshapes triangle and edge index info" item_name_1="RawTriangleEdgeIndexInfo" item_name_2="RawTriangleEdgeIndexInfo" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3E v="triangle and edge index pos" />
 						<_3E v="encoded triangle and edge size" />
 						<_3B v="" />
@@ -631,13 +631,13 @@
 						<Flag v="indices are triangle lists" />
 						<Flag v="indices are quad lists" />
 					</_D>
-					<_40 v="level breakdown data" item_name_1="i343::LevelBreakdown::RuntimeGeoLevelBreakdownData" item_name_2="i343::LevelBreakdown::RuntimeGeoLevelBreakdownData" item_name_3="i343::LevelBreakdown::RuntimeGeoLevelBreakdownData" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="level breakdown data" item_name_1="i343::LevelBreakdown::RuntimeGeoLevelBreakdownData" item_name_2="i343::LevelBreakdown::RuntimeGeoLevelBreakdownData" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 						<_41 v="Asset tag" />
 						<_2 v="Default variant name" />
 						<_41 v="LOD settings tag" />
 						<_2 v="LOD settings name" />
 						<_6 v="Convert Collision to Shadow Geometry" />
-						<_40 v="Asset variants" item_name_1="i343::LevelBreakdown::AssetVariantLevelBreakdownData" item_name_2="i343::LevelBreakdown::AssetVariantLevelBreakdownData" item_name_3="i343::LevelBreakdown::AssetVariantLevelBreakdownData" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+						<_40 v="Asset variants" item_name_1="i343::LevelBreakdown::AssetVariantLevelBreakdownData" item_name_2="i343::LevelBreakdown::AssetVariantLevelBreakdownData" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 							<_2 v="Variant name" />
 							<_41 v="Runtime Geo" />
 							<_41 v="Static Collision Geo" />
@@ -647,11 +647,11 @@
 					</_40>
 					<_3B v="" />
 				</_40>
-				<_40 v="part sorting position" item_name_1="s_positioning" item_name_2="s_positioning" item_name_3="s_positioning" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_40 v="part sorting position" item_name_1="s_positioning" item_name_2="s_positioning" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 					<_1E v="plane" />
 					<_17 v="position" />
 					<_14 v="radius" />
-					<_39 v="node indices" item_name_3="GeometryNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node indices" item_name_1="GeometryNodeIndex" item_name_2="GeometryNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3C v="node index" />
 						<_3B v="" />
 						<_3C v="node index" />
@@ -669,7 +669,7 @@
 						<_3C v="node index" />
 						<_3B v="" />
 					</_39>
-					<_39 v="node weights" item_name_3="PositioningNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node weights" item_name_1="PositioningNodeWeight" item_name_2="PositioningNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="node weight" />
 						<_3B v="" />
 						<_14 v="node weight" />
@@ -687,7 +687,7 @@
 					</_39>
 					<_3B v="" />
 				</_40>
-				<_40 v="parts" item_name_1="s_part" item_name_2="s_part" item_name_3="s_part" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_40 v="parts" item_name_1="s_part" item_name_2="s_part" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 					<_2E v="material index" />
 					<_2E v="transparent sorting index" />
 					<_6 v="index start" />
@@ -707,19 +707,19 @@
 					<_34 v="generated_pad0f9e" length="2" />
 					<_3B v="" />
 				</_40>
-				<_40 v="subparts" item_name_1="s_subpart" item_name_2="s_subpart" item_name_3="s_subpart" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_40 v="subparts" item_name_1="s_subpart" item_name_2="s_subpart" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 					<_6 v="index start" />
 					<_6 v="index count" />
 					<_2E v="part index" />
 					<_3D v="budget vertex count" />
 					<_3B v="" />
 				</_40>
-				<_40 v="material streaming scale" item_name_1="MaterialStreamingScale" item_name_2="MaterialStreamingScale" item_name_3="MaterialStreamingScale" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="material streaming scale" item_name_1="MaterialStreamingScale" item_name_2="MaterialStreamingScale" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_6 v="material index" />
 					<_14 v="material scale" />
 					<_3B v="" />
 				</_40>
-				<_39 v="vertex buffer indices" item_name_3="LODRenderDataVertexBufferIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_39 v="vertex buffer indices" item_name_1="LODRenderDataVertexBufferIndex" item_name_2="LODRenderDataVertexBufferIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3D v="vertex buffer index" />
 					<_3B v="" />
 					<_3D v="vertex buffer index" />
@@ -841,7 +841,7 @@
 				<Flag v="quad list" />
 			</_A>
 			<_5 v="pca mesh index" />
-			<_40 v="vertex keys" item_name_1="MeshVertexKey" item_name_2="MeshVertexKey" item_name_3="MeshVertexKey" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="vertex keys" item_name_1="MeshVertexKey" item_name_2="MeshVertexKey" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_6 v="key1" />
 				<_6 v="key2" />
 				<_3B v="" />
@@ -853,11 +853,11 @@
 			<_6 v="lod state cache slot" />
 			<_3B v="" />
 		</_40>
-		<_40 v="PCA Mesh Indices" item_name_1="PCAMeshIndex" item_name_2="PCAMeshIndex" item_name_3="PCAMeshIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+		<_40 v="PCA Mesh Indices" item_name_1="PCAMeshIndex" item_name_2="PCAMeshIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 			<_30 v="mesh index" />
 			<_3B v="" />
 		</_40>
-		<_40 v="compression info" item_name_1="s_compression_info" item_name_2="s_compression_info" item_name_3="s_compression_info" db1="84" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="compression info" item_name_1="s_compression_info" item_name_2="s_compression_info" db1="84" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_E v="compression flags">
 				<Flag v="compressed position" />
 				<Flag v="compressed texcoord" />
@@ -877,26 +877,26 @@
 			<_14 v="unused1" />
 			<_3B v="" />
 		</_40>
-		<_40 v="per mesh node map" item_name_1="s_per_mesh_node_map" item_name_2="s_per_mesh_node_map" item_name_3="s_per_mesh_node_map" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="node map" item_name_1="NodeIndexStruct" item_name_2="NodeIndexStruct" item_name_3="NodeIndexStruct" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="per mesh node map" item_name_1="s_per_mesh_node_map" item_name_2="s_per_mesh_node_map" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="node map" item_name_1="NodeIndexStruct" item_name_2="NodeIndexStruct" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_3D v="node index" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Optional animated mesh tag references" item_name_1="RenderGeometryAnimatedMeshRef" item_name_2="RenderGeometryAnimatedMeshRef" item_name_3="RenderGeometryAnimatedMeshRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Optional animated mesh tag references" item_name_1="RenderGeometryAnimatedMeshRef" item_name_2="RenderGeometryAnimatedMeshRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Animated mesh tag reference" />
 			<_2 v="Name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Optional LOD volumes data" item_name_1="s_render_geometry_lod_volume" item_name_2="s_render_geometry_lod_volume" item_name_3="s_render_geometry_lod_volume" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Optional LOD volumes data" item_name_1="s_render_geometry_lod_volume" item_name_2="s_render_geometry_lod_volume" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_17 v="position bounds 0" />
 			<_17 v="position bounds 1" />
-			<_40 v="position data" item_name_1="s_positioning" item_name_2="s_positioning" item_name_3="s_positioning" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_40 v="position data" item_name_1="s_positioning" item_name_2="s_positioning" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_1E v="plane" />
 				<_17 v="position" />
 				<_14 v="radius" />
-				<_39 v="node indices" item_name_3="GeometryNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_39 v="node indices" item_name_1="GeometryNodeIndex" item_name_2="GeometryNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3C v="node index" />
 					<_3B v="" />
 					<_3C v="node index" />
@@ -914,7 +914,7 @@
 					<_3C v="node index" />
 					<_3B v="" />
 				</_39>
-				<_39 v="node weights" item_name_3="PositioningNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_39 v="node weights" item_name_1="PositioningNodeWeight" item_name_2="PositioningNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_14 v="node weight" />
 					<_3B v="" />
 					<_14 v="node weight" />
@@ -934,7 +934,7 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_38 v="mesh package" item_name_3="RenderGeometryMeshPackage" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_38 v="mesh package" item_name_1="RenderGeometryMeshPackage" item_name_2="RenderGeometryMeshPackage" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_3D v="flags" />
 			<_B v="mesh resource packing policy">
 				<Flag v="Single Resource" />
@@ -942,9 +942,9 @@
 			</_B>
 			<_3D v="total index buffer count" />
 			<_3D v="total vertex buffer count" />
-			<_40 v="mesh resource groups" item_name_1="RenderGeometryMeshPackageResourceGroup" item_name_2="RenderGeometryMeshPackageResourceGroup" item_name_3="RenderGeometryMeshPackageResourceGroup" db1="16" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-				<_43 v="mesh resource" item_name_3="s_render_geometry_api_resource" db1="296" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-					<_40 v="pc vertex buffers" item_name_1="RasterizerVertexBuffer" item_name_2="RasterizerVertexBuffer" item_name_3="RasterizerVertexBuffer" db1="80" db2="0" db3="11" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_40 v="mesh resource groups" item_name_1="RenderGeometryMeshPackageResourceGroup" item_name_2="RenderGeometryMeshPackageResourceGroup" db1="16" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_43 v="mesh resource" item_name_1="s_render_geometry_api_resource" item_name_2="s_render_geometry_api_resource" db1="296" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+					<_40 v="pc vertex buffers" item_name_1="RasterizerVertexBuffer" item_name_2="RasterizerVertexBuffer" db1="80" db2="0" db3="11" db4="0" db5="1" db6="0" db7="0" db8="275">
 						<_C v="usage">
 							<Flag v="Position" />
 							<Flag v="UV0" />
@@ -994,7 +994,7 @@
 						<_34 v="generated_pad9e95" length="2" />
 						<_3E v="count" />
 						<_3E v="offset" />
-						<_38 v="d3dbuffer" item_name_3="D3DBufferData" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+						<_38 v="d3dbuffer" item_name_1="D3DBufferData" item_name_2="D3DBufferData" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 							<_3E v="byte width" />
 							<_3E v="bind flags" />
 							<_3E v="misc flags" />
@@ -1008,14 +1008,14 @@
 						<_7 v="m_resourceView" />
 						<_3B v="" />
 					</_40>
-					<_40 v="pc index buffers" item_name_1="RasterizerIndexBuffer" item_name_2="RasterizerIndexBuffer" item_name_3="RasterizerIndexBuffer" db1="72" db2="0" db3="8" db4="0" db5="1" db6="0" db7="0" db8="275">
+					<_40 v="pc index buffers" item_name_1="RasterizerIndexBuffer" item_name_2="RasterizerIndexBuffer" db1="72" db2="0" db3="8" db4="0" db5="1" db6="0" db7="0" db8="275">
 						<_3C v="declaration type" />
 						<_3C v="stride" />
 						<_3C v="ownsD3DResource" />
 						<_34 v="generated_pad8bf7" length="1" />
 						<_3E v="count" />
 						<_3E v="offset" />
-						<_38 v="d3dbuffer" item_name_3="D3DBufferData" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+						<_38 v="d3dbuffer" item_name_1="D3DBufferData" item_name_2="D3DBufferData" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 							<_3E v="byte width" />
 							<_3E v="bind flags" />
 							<_3E v="misc flags" />
@@ -1029,24 +1029,24 @@
 						<_7 v="m_resourceView" />
 						<_3B v="" />
 					</_40>
-					<_40 v="Streaming Meshes" item_name_1="StreamingGeometryMesh" item_name_2="StreamingGeometryMesh" item_name_3="StreamingGeometryMesh" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+					<_40 v="Streaming Meshes" item_name_1="StreamingGeometryMesh" item_name_2="StreamingGeometryMesh" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 						<_6 v="lod state cache slot" />
 						<_4 v="required lod" />
 						<_34 v="generated_pad413f" length="3" />
-						<_40 v="mesh lod chunks" item_name_1="StreamingChunkList" item_name_2="StreamingChunkList" item_name_3="StreamingChunkList" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+						<_40 v="mesh lod chunks" item_name_1="StreamingChunkList" item_name_2="StreamingChunkList" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 							<_42 v="chunks" />
 							<_3B v="" />
 						</_40>
 						<_3B v="" />
 					</_40>
-					<_40 v="Streaming Chunks" item_name_1="StreamingGeometryChunk" item_name_2="StreamingGeometryChunk" item_name_3="StreamingGeometryChunk" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="Streaming Chunks" item_name_1="StreamingGeometryChunk" item_name_2="StreamingGeometryChunk" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3D v="buffer index" />
 						<_3D v="allocation priority" />
 						<_3E v="buffer start" />
 						<_3E v="buffer end" />
 						<_3B v="" />
 					</_40>
-					<_40 v="Streaming Buffers" item_name_1="StreamingGeometryBuffer" item_name_2="StreamingGeometryBuffer" item_name_3="StreamingGeometryBuffer" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="Streaming Buffers" item_name_1="StreamingGeometryBuffer" item_name_2="StreamingGeometryBuffer" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 						<_3E v="buffer size" />
 						<_3E v="bind flags" />
 						<_42 v="Temp buffer for pipeline" />
@@ -1055,7 +1055,7 @@
 					<_34 v="generated_pad1319" length="4" />
 					<_7 v="m_sharedDXResources" />
 					<_7 v="m_sharedDXResourceRawView" />
-					<_39 v="m_sharedDXResourceTypedViews" item_name_3="IResourceViewPointer" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="m_sharedDXResourceTypedViews" item_name_1="IResourceViewPointer" item_name_2="IResourceViewPointer" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_7 v="IResourceView" />
 						<_3B v="" />
 						<_7 v="IResourceView" />
@@ -1104,31 +1104,31 @@
 				</_43>
 				<_3B v="" />
 			</_40>
-			<_40 v="index resource look up" item_name_1="RenderGeometryMeshPackage::ResourceLookup" item_name_2="RenderGeometryMeshPackage::ResourceLookup" item_name_3="RenderGeometryMeshPackage::ResourceLookup" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="index resource look up" item_name_1="RenderGeometryMeshPackage::ResourceLookup" item_name_2="RenderGeometryMeshPackage::ResourceLookup" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_5 v="resource group index" />
 				<_5 v="group item index" />
 				<_3B v="" />
 			</_40>
-			<_40 v="vertex resource look up" item_name_1="RenderGeometryMeshPackage::ResourceLookup" item_name_2="RenderGeometryMeshPackage::ResourceLookup" item_name_3="RenderGeometryMeshPackage::ResourceLookup" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="vertex resource look up" item_name_1="RenderGeometryMeshPackage::ResourceLookup" item_name_2="RenderGeometryMeshPackage::ResourceLookup" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_5 v="resource group index" />
 				<_5 v="group item index" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_38>
-		<_40 v="blendshape compression info" item_name_1="s_blendshape_compression_info" item_name_2="s_blendshape_compression_info" item_name_3="s_blendshape_compression_info" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="blendshape compression info" item_name_1="s_blendshape_compression_info" item_name_2="s_blendshape_compression_info" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_17 v="position scale" />
 			<_17 v="position offset" />
 			<_17 v="normal scale" />
 			<_17 v="normal offset" />
-			<_40 v="raw target hash name" item_name_1="DwordIndex" item_name_2="DwordIndex" item_name_3="DwordIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="raw target hash name" item_name_1="DwordIndex" item_name_2="DwordIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_3E v="dword" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="blendshape Procedural Deformation function list" item_name_1="RenderGeometryProceduralDeformation" item_name_2="RenderGeometryProceduralDeformation" item_name_3="RenderGeometryProceduralDeformation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="parameter list" item_name_1="RenderGeometryDeformationParameter" item_name_2="RenderGeometryDeformationParameter" item_name_3="RenderGeometryDeformationParameter" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="blendshape Procedural Deformation function list" item_name_1="RenderGeometryProceduralDeformation" item_name_2="RenderGeometryProceduralDeformation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="parameter list" item_name_1="RenderGeometryDeformationParameter" item_name_2="RenderGeometryDeformationParameter" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="parameter name" />
 				<_3C v="parameter mode" />
 				<_34 v="generated_pad8065" length="3" />
@@ -1138,14 +1138,14 @@
 			<_2 v="Procedural deformation function name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Procedural Deformation function Remap Table List" item_name_1="RenderGeometryProceduralRemapTable" item_name_2="RenderGeometryProceduralRemapTable" item_name_3="RenderGeometryProceduralRemapTable" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Procedural Remap Table" item_name_1="WordIndex" item_name_2="WordIndex" item_name_3="WordIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Procedural Deformation function Remap Table List" item_name_1="RenderGeometryProceduralRemapTable" item_name_2="RenderGeometryProceduralRemapTable" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Procedural Remap Table" item_name_1="WordIndex" item_name_2="WordIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_3D v="word" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Deformation parameter default value table from skeleton" item_name_1="DeformationParameterDefaultValue" item_name_2="DeformationParameterDefaultValue" item_name_3="DeformationParameterDefaultValue" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Deformation parameter default value table from skeleton" item_name_1="DeformationParameterDefaultValue" item_name_2="DeformationParameterDefaultValue" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="parameter name" />
 			<_14 v="parameter default value" />
 			<_3B v="" />
@@ -1154,27 +1154,27 @@
 		<_7 v="perMeshPartConstantBuffer" />
 		<_3B v="" />
 	</_38>
-	<_40 v="node map mapping" item_name_1="InstanceNodeMapping" item_name_2="InstanceNodeMapping" item_name_3="InstanceNodeMapping" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="node map mapping" item_name_1="InstanceNodeMapping" item_name_2="InstanceNodeMapping" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_5 v="instance_node map region node index" />
 		<_3B v="" />
 	</_40>
-	<_40 v="runtime node orientations" item_name_1="DefaultNodeOrientations" item_name_2="DefaultNodeOrientations" item_name_3="DefaultNodeOrientations" db1="32" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="runtime node orientations" item_name_1="DefaultNodeOrientations" item_name_2="DefaultNodeOrientations" db1="32" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_1A v="rotation" />
 		<_17 v="translation" />
 		<_14 v="scale" />
 		<_3B v="" />
 	</_40>
-	<_40 v="bone groups" item_name_1="bone_group" item_name_2="RenderModelBoneGroup" item_name_3="bone_group" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="bone groups" item_name_1="bone_group" item_name_2="RenderModelBoneGroup" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="name" />
-		<_40 v="bones" item_name_1="node_index" item_name_2="RenderModelNodeIndex" item_name_3="node_index" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+		<_40 v="bones" item_name_1="node_index" item_name_2="RenderModelNodeIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 			<_2E v="node index" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="cloth meshes" item_name_1="RenderModelClothMesh" item_name_2="RenderModelClothMesh" item_name_3="RenderModelClothMesh" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="cloth meshes" item_name_1="RenderModelClothMesh" item_name_2="RenderModelClothMesh" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_3E v="nameHash" />
-		<_40 v="meshIndex" item_name_1="ClothMeshIndex" item_name_2="ClothMeshIndex" item_name_3="ClothMeshIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="meshIndex" item_name_1="ClothMeshIndex" item_name_2="ClothMeshIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="index" />
 			<_3B v="" />
 		</_40>
@@ -1188,9 +1188,9 @@
 		<_42 v="geometry" />
 		<_3B v="" />
 	</_40>
-	<_40 v="cloth datas" item_name_1="RenderModelClothData" item_name_2="RenderModelClothData" item_name_3="RenderModelClothData" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="cloth datas" item_name_1="RenderModelClothData" item_name_2="RenderModelClothData" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_6 v="regionIndex" />
-		<_40 v="meshIndex" item_name_1="ClothMeshIndex" item_name_2="ClothMeshIndex" item_name_3="ClothMeshIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="meshIndex" item_name_1="ClothMeshIndex" item_name_2="ClothMeshIndex" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="index" />
 			<_3B v="" />
 		</_40>
@@ -1198,7 +1198,7 @@
 		<_3B v="" />
 	</_40>
 	<_41 v="parent model" />
-	<_40 v="MaterialPipelineStateInfos" item_name_1="MaterialPipelineStateInfo" item_name_2="MaterialPipelineStateInfo" item_name_3="MaterialPipelineStateInfo" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="MaterialPipelineStateInfos" item_name_1="MaterialPipelineStateInfo" item_name_2="MaterialPipelineStateInfo" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="shader" />
 		<_A v="alpha blend mode">
 			<Flag v="opaque" />

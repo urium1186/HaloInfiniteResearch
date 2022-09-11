@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="collision_model_definition" item_name_2="collision_model_definition" item_name_3="collision_model_definition" db1="288" db2="0" db3="3" db4="0" db5="1" db6="0" db7="272" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="collision_model_definition" item_name_2="collision_model_definition" db1="288" db2="0" db3="3" db4="0" db5="1" db6="0" db7="272" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,7 +10,7 @@
 		<_3B v="" />
 	</_38>
 	<_6 v="import_info_checksum" />
-	<_40 v="errors" item_name_1="error_report_category" item_name_2="error_report_category" item_name_3="error_report_category" db1="288" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+	<_40 v="errors" item_name_1="error_report_category" item_name_2="error_report_category" db1="288" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
 		<_1 v="name" />
 		<_A v="report type">
 			<Flag v="silent" />
@@ -29,7 +29,7 @@
 		<_3D v="runtime generation flags" />
 		<_34 v="generated_pad3f2b" length="2" />
 		<_6 v="runtime something" />
-		<_40 v="reports" item_name_1="error_report" item_name_2="error_report" item_name_3="error_report" db1="236" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="reports" item_name_1="error_report" item_name_2="error_report" db1="236" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_A v="type">
 				<Flag v="silent" />
 				<Flag v="comment" />
@@ -54,10 +54,10 @@
 			<_6 v="source identifier" />
 			<_0 v="source filename" />
 			<_6 v="source line number" />
-			<_40 v="vertices" item_name_1="error_report_vertex" item_name_2="error_report_vertex" item_name_3="error_report_vertex" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_40 v="vertices" item_name_1="error_report_vertex" item_name_2="error_report_vertex" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 					<_17 v="position" />
-					<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3C v="node index" />
 						<_3B v="" />
 						<_3C v="node index" />
@@ -67,7 +67,7 @@
 						<_3C v="node index" />
 						<_3B v="" />
 					</_39>
-					<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="node weight" />
 						<_3B v="" />
 						<_14 v="node weight" />
@@ -83,10 +83,10 @@
 				<_14 v="screen size" />
 				<_3B v="" />
 			</_40>
-			<_40 v="vectors" item_name_1="error_report_vector" item_name_2="error_report_vector" item_name_3="error_report_vector" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_40 v="vectors" item_name_1="error_report_vector" item_name_2="error_report_vector" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 					<_17 v="position" />
-					<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3C v="node index" />
 						<_3B v="" />
 						<_3C v="node index" />
@@ -96,7 +96,7 @@
 						<_3C v="node index" />
 						<_3B v="" />
 					</_39>
-					<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="node weight" />
 						<_3B v="" />
 						<_14 v="node weight" />
@@ -113,11 +113,11 @@
 				<_14 v="screen length" />
 				<_3B v="" />
 			</_40>
-			<_40 v="lines" item_name_1="error_report_line" item_name_2="error_report_line" item_name_3="error_report_line" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="points" item_name_3="ErrorReportLinePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_40 v="lines" item_name_1="error_report_line" item_name_2="error_report_line" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="points" item_name_1="ErrorReportLinePoint" item_name_2="ErrorReportLinePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -127,7 +127,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -140,9 +140,9 @@
 						<_3B v="" />
 					</_38>
 					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -152,88 +152,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-						</_39>
-						<_3B v="" />
-					</_38>
-					<_3B v="" />
-				</_39>
-				<_20 v="color" />
-				<_3B v="" />
-			</_40>
-			<_40 v="triangles" item_name_1="error_report_triangle" item_name_2="error_report_triangle" item_name_3="error_report_triangle" db1="112" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="points" item_name_3="ErrorReportTrianglePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-						</_39>
-						<_3B v="" />
-					</_38>
-					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-						</_39>
-						<_3B v="" />
-					</_38>
-					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -250,11 +169,11 @@
 				<_20 v="color" />
 				<_3B v="" />
 			</_40>
-			<_40 v="quads" item_name_1="error_report_quad" item_name_2="error_report_quad" item_name_3="error_report_quad" db1="144" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="points" item_name_3="ErrorReportQuadPoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_40 v="triangles" item_name_1="error_report_triangle" item_name_2="error_report_triangle" db1="112" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="points" item_name_1="ErrorReportTrianglePoint" item_name_2="ErrorReportTrianglePoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -264,7 +183,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -277,9 +196,9 @@
 						<_3B v="" />
 					</_38>
 					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -289,7 +208,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -302,9 +221,9 @@
 						<_3B v="" />
 					</_38>
 					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_3C v="node index" />
 							<_3B v="" />
 							<_3C v="node index" />
@@ -314,32 +233,7 @@
 							<_3C v="node index" />
 							<_3B v="" />
 						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-							<_14 v="node weight" />
-							<_3B v="" />
-						</_39>
-						<_3B v="" />
-					</_38>
-					<_3B v="" />
-					<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-						<_17 v="position" />
-						<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-							<_3C v="node index" />
-							<_3B v="" />
-						</_39>
-						<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_14 v="node weight" />
 							<_3B v="" />
 							<_14 v="node weight" />
@@ -356,11 +250,117 @@
 				<_20 v="color" />
 				<_3B v="" />
 			</_40>
-			<_40 v="comments" item_name_1="error_report_comment" item_name_2="error_report_comment" item_name_3="error_report_comment" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_40 v="quads" item_name_1="error_report_quad" item_name_2="error_report_quad" db1="144" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="points" item_name_1="ErrorReportQuadPoint" item_name_2="ErrorReportQuadPoint" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+					<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_17 v="position" />
+						<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+							<_3C v="node index" />
+							<_3B v="" />
+						</_39>
+						<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+							<_14 v="node weight" />
+							<_3B v="" />
+						</_39>
+						<_3B v="" />
+					</_38>
+					<_3B v="" />
+				</_39>
+				<_20 v="color" />
+				<_3B v="" />
+			</_40>
+			<_40 v="comments" item_name_1="error_report_comment" item_name_2="error_report_comment" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 				<_42 v="text" />
-				<_38 v="point" item_name_3="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="point" item_name_1="error_report_point" item_name_2="error_report_point" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 					<_17 v="position" />
-					<_39 v="node indices" item_name_3="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node indices" item_name_1="ErrorReportNodeIndex" item_name_2="ErrorReportNodeIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3C v="node index" />
 						<_3B v="" />
 						<_3C v="node index" />
@@ -370,7 +370,7 @@
 						<_3C v="node index" />
 						<_3B v="" />
 					</_39>
-					<_39 v="node weights" item_name_3="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_39 v="node weights" item_name_1="ErrorReportNodeWeight" item_name_2="ErrorReportNodeWeight" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="node weight" />
 						<_3B v="" />
 						<_14 v="node weight" />
@@ -402,25 +402,25 @@
 		<Flag v="processed" />
 		<Flag v="has two sided surfaces" />
 	</_D>
-	<_40 v="materials" item_name_1="material" item_name_2="collision_model_material" item_name_3="material" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="materials" item_name_1="material" item_name_2="collision_model_material" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="regions" item_name_1="region" item_name_2="collision_model_region" item_name_3="region" db1="24" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="regions" item_name_1="region" item_name_2="collision_model_region" db1="24" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="name" />
-		<_40 v="permutations" item_name_1="collision_model_permutation" item_name_2="collision_model_permutation" item_name_3="collision_model_permutation" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="permutations" item_name_1="collision_model_permutation" item_name_2="collision_model_permutation" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="name" />
 			<_5 v="resourceBspOffset" />
 			<_5 v="resourceBspCount" />
-			<_40 v="bsps" item_name_1="bsp" item_name_2="CollisionModelBSPBlock" item_name_3="collision_model_bsp" db1="184" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_40 v="bsps" item_name_1="collision_model_bsp" item_name_2="collision_model_bsp" db1="184" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 				<_5 v="node index" />
 				<_34 v="generated_pad8a4c" length="2" />
-				<_38 v="bsp" item_name_3="collision_bsp" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-					<_40 v="bsp3d nodes" item_name_1="bsp3d_node" item_name_2="bsp3d_node" item_name_3="bsp3d_node" db1="8" db2="3" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="bsp" item_name_1="collision_bsp" item_name_2="collision_bsp" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="bsp3d nodes" item_name_1="bsp3d_node" item_name_2="bsp3d_node" db1="8" db2="3" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_7 v="node data designator" />
 						<_3B v="" />
 					</_40>
-					<_40 v="bsp3d supernodes" item_name_1="s_bsp3d_kd_super_node" item_name_2="s_bsp3d_kd_super_node" item_name_3="s_bsp3d_kd_super_node" db1="128" db2="7" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="bsp3d supernodes" item_name_1="s_bsp3d_kd_super_node" item_name_2="s_bsp3d_kd_super_node" db1="128" db2="7" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="plane 0" />
 						<_14 v="plane 1" />
 						<_14 v="plane 2" />
@@ -455,11 +455,11 @@
 						<_6 v="child index15" />
 						<_3B v="" />
 					</_40>
-					<_40 v="planes" item_name_1="PlanesParams" item_name_2="PlanesParams" item_name_3="PlanesParams" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="planes" item_name_1="PlanesParams" item_name_2="PlanesParams" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_1E v="plane" />
 						<_3B v="" />
 					</_40>
-					<_40 v="leaves" item_name_1="LeavesBlock" item_name_2="LeavesBlock" item_name_3="collision_leaf" db1="8" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="leaves" item_name_1="collision_leaf" item_name_2="collision_leaf" db1="8" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_F v="flags">
 							<Flag v="contains double-sided surfaces" />
 						</_F>
@@ -468,18 +468,18 @@
 						<_3E v="first bsp2d reference" />
 						<_3B v="" />
 					</_40>
-					<_40 v="bsp2d references" item_name_1="bsp2d_reference" item_name_2="bsp2d_reference" item_name_3="bsp2d_reference" db1="4" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="bsp2d references" item_name_1="bsp2d_reference" item_name_2="bsp2d_reference" db1="4" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_5 v="plane" />
 						<_5 v="bsp2d node" />
 						<_3B v="" />
 					</_40>
-					<_40 v="bsp2d nodes" item_name_1="bsp2d_node" item_name_2="bsp2d_node" item_name_3="bsp2d_node" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="bsp2d nodes" item_name_1="bsp2d_node" item_name_2="bsp2d_node" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_1D v="plane" />
 						<_5 v="left child" />
 						<_5 v="right child" />
 						<_3B v="" />
 					</_40>
-					<_40 v="surfaces" item_name_1="collision_surface" item_name_2="collision_surface" item_name_3="collision_surface" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="surfaces" item_name_1="collision_surface" item_name_2="collision_surface" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3D v="plane index" />
 						<_3D v="first edge" />
 						<_5 v="material" />
@@ -495,7 +495,7 @@
 						<_3C v="best plane calculation vertex index " />
 						<_3B v="" />
 					</_40>
-					<_40 v="edges" item_name_1="collision_edge" item_name_2="collision_edge" item_name_3="collision_edge" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="edges" item_name_1="collision_edge" item_name_2="collision_edge" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3D v="start vertex" />
 						<_3D v="end vertex" />
 						<_3D v="forward edge" />
@@ -504,7 +504,7 @@
 						<_3D v="right surface" />
 						<_3B v="" />
 					</_40>
-					<_40 v="vertices" item_name_1="collision_vertex" item_name_2="collision_vertex" item_name_3="collision_vertex" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="vertices" item_name_1="collision_vertex" item_name_2="collision_vertex" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_17 v="point" />
 						<_3D v="first edge" />
 						<_5 v="sink" />
@@ -514,7 +514,7 @@
 				</_38>
 				<_3B v="" />
 			</_40>
-			<_40 v="mopp_codes" item_name_1="s_havok_mopp_code_definition" item_name_2="s_havok_mopp_code_definition" item_name_3="s_havok_mopp_code_definition" db1="112" db2="4" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+			<_40 v="mopp_codes" item_name_1="s_havok_mopp_code_definition" item_name_2="s_havok_mopp_code_definition" db1="112" db2="4" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
 				<_7 v="field pointer skip" />
 				<_7 v="property bag skip" />
 				<_5 v="size" />
@@ -534,7 +534,7 @@
 				<_34 v="pad1_2" length="4" />
 				<_34 v="pad64_1" length="4" />
 				<_37 v="" />
-				<_40 v="mopp data block " item_name_1="MoppCodeDataDefinitionParams" item_name_2="MoppCodeDataDefinitionParams" item_name_3="MoppCodeDataDefinitionParams" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="mopp data block " item_name_1="MoppCodeDataDefinitionParams" item_name_2="MoppCodeDataDefinitionParams" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3C v="mopp data" />
 					<_3B v="" />
 				</_40>
@@ -549,21 +549,21 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="cookie cutters" item_name_1="region" item_name_2="collision_model_region" item_name_3="region" db1="24" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="cookie cutters" item_name_1="region" item_name_2="collision_model_region" db1="24" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="name" />
-		<_40 v="permutations" item_name_1="collision_model_permutation" item_name_2="collision_model_permutation" item_name_3="collision_model_permutation" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="permutations" item_name_1="collision_model_permutation" item_name_2="collision_model_permutation" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="name" />
 			<_5 v="resourceBspOffset" />
 			<_5 v="resourceBspCount" />
-			<_40 v="bsps" item_name_1="bsp" item_name_2="CollisionModelBSPBlock" item_name_3="collision_model_bsp" db1="184" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_40 v="bsps" item_name_1="collision_model_bsp" item_name_2="collision_model_bsp" db1="184" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 				<_5 v="node index" />
 				<_34 v="generated_pad8a4c" length="2" />
-				<_38 v="bsp" item_name_3="collision_bsp" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-					<_40 v="bsp3d nodes" item_name_1="bsp3d_node" item_name_2="bsp3d_node" item_name_3="bsp3d_node" db1="8" db2="3" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="bsp" item_name_1="collision_bsp" item_name_2="collision_bsp" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="bsp3d nodes" item_name_1="bsp3d_node" item_name_2="bsp3d_node" db1="8" db2="3" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_7 v="node data designator" />
 						<_3B v="" />
 					</_40>
-					<_40 v="bsp3d supernodes" item_name_1="s_bsp3d_kd_super_node" item_name_2="s_bsp3d_kd_super_node" item_name_3="s_bsp3d_kd_super_node" db1="128" db2="7" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="bsp3d supernodes" item_name_1="s_bsp3d_kd_super_node" item_name_2="s_bsp3d_kd_super_node" db1="128" db2="7" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_14 v="plane 0" />
 						<_14 v="plane 1" />
 						<_14 v="plane 2" />
@@ -598,11 +598,11 @@
 						<_6 v="child index15" />
 						<_3B v="" />
 					</_40>
-					<_40 v="planes" item_name_1="PlanesParams" item_name_2="PlanesParams" item_name_3="PlanesParams" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="planes" item_name_1="PlanesParams" item_name_2="PlanesParams" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_1E v="plane" />
 						<_3B v="" />
 					</_40>
-					<_40 v="leaves" item_name_1="LeavesBlock" item_name_2="LeavesBlock" item_name_3="collision_leaf" db1="8" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="leaves" item_name_1="collision_leaf" item_name_2="collision_leaf" db1="8" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_F v="flags">
 							<Flag v="contains double-sided surfaces" />
 						</_F>
@@ -611,18 +611,18 @@
 						<_3E v="first bsp2d reference" />
 						<_3B v="" />
 					</_40>
-					<_40 v="bsp2d references" item_name_1="bsp2d_reference" item_name_2="bsp2d_reference" item_name_3="bsp2d_reference" db1="4" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="bsp2d references" item_name_1="bsp2d_reference" item_name_2="bsp2d_reference" db1="4" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_5 v="plane" />
 						<_5 v="bsp2d node" />
 						<_3B v="" />
 					</_40>
-					<_40 v="bsp2d nodes" item_name_1="bsp2d_node" item_name_2="bsp2d_node" item_name_3="bsp2d_node" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="bsp2d nodes" item_name_1="bsp2d_node" item_name_2="bsp2d_node" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_1D v="plane" />
 						<_5 v="left child" />
 						<_5 v="right child" />
 						<_3B v="" />
 					</_40>
-					<_40 v="surfaces" item_name_1="collision_surface" item_name_2="collision_surface" item_name_3="collision_surface" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="surfaces" item_name_1="collision_surface" item_name_2="collision_surface" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3D v="plane index" />
 						<_3D v="first edge" />
 						<_5 v="material" />
@@ -638,7 +638,7 @@
 						<_3C v="best plane calculation vertex index " />
 						<_3B v="" />
 					</_40>
-					<_40 v="edges" item_name_1="collision_edge" item_name_2="collision_edge" item_name_3="collision_edge" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="edges" item_name_1="collision_edge" item_name_2="collision_edge" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_3D v="start vertex" />
 						<_3D v="end vertex" />
 						<_3D v="forward edge" />
@@ -647,7 +647,7 @@
 						<_3D v="right surface" />
 						<_3B v="" />
 					</_40>
-					<_40 v="vertices" item_name_1="collision_vertex" item_name_2="collision_vertex" item_name_3="collision_vertex" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="vertices" item_name_1="collision_vertex" item_name_2="collision_vertex" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_17 v="point" />
 						<_3D v="first edge" />
 						<_5 v="sink" />
@@ -657,7 +657,7 @@
 				</_38>
 				<_3B v="" />
 			</_40>
-			<_40 v="mopp_codes" item_name_1="s_havok_mopp_code_definition" item_name_2="s_havok_mopp_code_definition" item_name_3="s_havok_mopp_code_definition" db1="112" db2="4" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+			<_40 v="mopp_codes" item_name_1="s_havok_mopp_code_definition" item_name_2="s_havok_mopp_code_definition" db1="112" db2="4" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
 				<_7 v="field pointer skip" />
 				<_7 v="property bag skip" />
 				<_5 v="size" />
@@ -677,7 +677,7 @@
 				<_34 v="pad1_2" length="4" />
 				<_34 v="pad64_1" length="4" />
 				<_37 v="" />
-				<_40 v="mopp data block " item_name_1="MoppCodeDataDefinitionParams" item_name_2="MoppCodeDataDefinitionParams" item_name_3="MoppCodeDataDefinitionParams" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="mopp data block " item_name_1="MoppCodeDataDefinitionParams" item_name_2="MoppCodeDataDefinitionParams" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3C v="mopp data" />
 					<_3B v="" />
 				</_40>
@@ -692,7 +692,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="pathfinding spheres" item_name_1="sphere" item_name_2="collision_model_pathfinding_sphere" item_name_3="sphere" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+	<_40 v="pathfinding spheres" item_name_1="sphere" item_name_2="collision_model_pathfinding_sphere" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 		<_2E v="node" />
 		<_E v="flags">
 			<Flag v="remains when open" />
@@ -703,7 +703,7 @@
 		<_14 v="radius" />
 		<_3B v="" />
 	</_40>
-	<_40 v="nodes" item_name_1="collision_model_node" item_name_2="collision_model_node" item_name_3="collision_model_node" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+	<_40 v="nodes" item_name_1="collision_model_node" item_name_2="collision_model_node" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 		<_2 v="name" />
 		<_E v="flags">
 			<Flag v="Generate Nav Mesh" />
@@ -713,16 +713,16 @@
 		<_2E v="first child node" />
 		<_3B v="" />
 	</_40>
-	<_43 v="regions resource" item_name_3="CollisionModelResource" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-		<_40 v="bsps" item_name_1="CollisionModelResourceBspBlock" item_name_2="CollisionModelResourceBspBlock" item_name_3="collision_model_bsp" db1="184" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+	<_43 v="regions resource" item_name_1="CollisionModelResource" item_name_2="CollisionModelResource" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="bsps" item_name_1="collision_model_bsp" item_name_2="collision_model_bsp" db1="184" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 			<_5 v="node index" />
 			<_34 v="generated_pad8a4c" length="2" />
-			<_38 v="bsp" item_name_3="collision_bsp" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-				<_40 v="bsp3d nodes" item_name_1="bsp3d_node" item_name_2="bsp3d_node" item_name_3="bsp3d_node" db1="8" db2="3" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="bsp" item_name_1="collision_bsp" item_name_2="collision_bsp" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_40 v="bsp3d nodes" item_name_1="bsp3d_node" item_name_2="bsp3d_node" db1="8" db2="3" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_7 v="node data designator" />
 					<_3B v="" />
 				</_40>
-				<_40 v="bsp3d supernodes" item_name_1="s_bsp3d_kd_super_node" item_name_2="s_bsp3d_kd_super_node" item_name_3="s_bsp3d_kd_super_node" db1="128" db2="7" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="bsp3d supernodes" item_name_1="s_bsp3d_kd_super_node" item_name_2="s_bsp3d_kd_super_node" db1="128" db2="7" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_14 v="plane 0" />
 					<_14 v="plane 1" />
 					<_14 v="plane 2" />
@@ -757,11 +757,11 @@
 					<_6 v="child index15" />
 					<_3B v="" />
 				</_40>
-				<_40 v="planes" item_name_1="PlanesParams" item_name_2="PlanesParams" item_name_3="PlanesParams" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="planes" item_name_1="PlanesParams" item_name_2="PlanesParams" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_1E v="plane" />
 					<_3B v="" />
 				</_40>
-				<_40 v="leaves" item_name_1="LeavesBlock" item_name_2="LeavesBlock" item_name_3="collision_leaf" db1="8" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="leaves" item_name_1="collision_leaf" item_name_2="collision_leaf" db1="8" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_F v="flags">
 						<Flag v="contains double-sided surfaces" />
 					</_F>
@@ -770,18 +770,18 @@
 					<_3E v="first bsp2d reference" />
 					<_3B v="" />
 				</_40>
-				<_40 v="bsp2d references" item_name_1="bsp2d_reference" item_name_2="bsp2d_reference" item_name_3="bsp2d_reference" db1="4" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="bsp2d references" item_name_1="bsp2d_reference" item_name_2="bsp2d_reference" db1="4" db2="2" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_5 v="plane" />
 					<_5 v="bsp2d node" />
 					<_3B v="" />
 				</_40>
-				<_40 v="bsp2d nodes" item_name_1="bsp2d_node" item_name_2="bsp2d_node" item_name_3="bsp2d_node" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="bsp2d nodes" item_name_1="bsp2d_node" item_name_2="bsp2d_node" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_1D v="plane" />
 					<_5 v="left child" />
 					<_5 v="right child" />
 					<_3B v="" />
 				</_40>
-				<_40 v="surfaces" item_name_1="collision_surface" item_name_2="collision_surface" item_name_3="collision_surface" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="surfaces" item_name_1="collision_surface" item_name_2="collision_surface" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3D v="plane index" />
 					<_3D v="first edge" />
 					<_5 v="material" />
@@ -797,7 +797,7 @@
 					<_3C v="best plane calculation vertex index " />
 					<_3B v="" />
 				</_40>
-				<_40 v="edges" item_name_1="collision_edge" item_name_2="collision_edge" item_name_3="collision_edge" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="edges" item_name_1="collision_edge" item_name_2="collision_edge" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3D v="start vertex" />
 					<_3D v="end vertex" />
 					<_3D v="forward edge" />
@@ -806,7 +806,7 @@
 					<_3D v="right surface" />
 					<_3B v="" />
 				</_40>
-				<_40 v="vertices" item_name_1="collision_vertex" item_name_2="collision_vertex" item_name_3="collision_vertex" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="vertices" item_name_1="collision_vertex" item_name_2="collision_vertex" db1="16" db2="4" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_17 v="point" />
 					<_3D v="first edge" />
 					<_5 v="sink" />
@@ -818,7 +818,7 @@
 		</_40>
 		<_3B v="" />
 	</_43>
-	<_39 v="flags for nodes driving collision geo" item_name_3="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_39 v="flags for nodes driving collision geo" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_6 v="flag data" />
 		<_3B v="" />
 		<_6 v="flag data" />

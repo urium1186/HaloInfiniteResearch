@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="InGameMapSettingsTag" item_name_2="InGameMapSettingsTag" item_name_3="InGameMapSettingsTag" db1="1360" db2="0" db3="2" db4="0" db5="1" db6="0" db7="1344" db8="3443">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="InGameMapSettingsTag" item_name_2="InGameMapSettingsTag" db1="1360" db2="0" db3="2" db4="0" db5="1" db6="0" db7="1344" db8="3443">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="Map lights" item_name_1="InGameMapLightReference" item_name_2="InGameMapLightReference" item_name_3="InGameMapLightReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Map lights" item_name_1="InGameMapLightReference" item_name_2="InGameMapLightReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Reference" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Map light placements" item_name_1="InGameMapLightPlacement" item_name_2="InGameMapLightPlacement" item_name_3="InGameMapLightPlacement" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Map light placements" item_name_1="InGameMapLightPlacement" item_name_2="InGameMapLightPlacement" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_17 v="position" />
 		<_17 v="direction" />
 		<_17 v="up" />
@@ -69,7 +69,7 @@
 	<_14 v="topVerticalLinePOIModelOffset" />
 	<_1C v="topVerticalLinePOIModelOrientation" />
 	<_14 v="topVerticalLinePOIModelScale" />
-	<_38 v="POI Animation" item_name_3="InGameMapAnimationSettings" db1="108" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="POI Animation" item_name_1="InGameMapAnimationSettings" item_name_2="InGameMapAnimationSettings" db1="108" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_B v="verticalTranslationMode">
 			<Flag v="Loop" />
 			<Flag v="Mirror" />
@@ -78,9 +78,9 @@
 		<_34 v="generated_pad6126" length="2" />
 		<_14 v="verticalTranslationDuration" />
 		<_14 v="verticalTranslationCooldownDuration" />
-		<_38 v="verticalTranslationFunction" item_name_3="InGameMapFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="verticalTranslationFunction" item_name_1="InGameMapFunction" item_name_2="InGameMapFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -96,9 +96,9 @@
 		<_34 v="generated_padaddb" length="2" />
 		<_14 v="zRotationDuration" />
 		<_14 v="zRotationCooldownDuration" />
-		<_38 v="zRotationFunction" item_name_3="InGameMapFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="zRotationFunction" item_name_1="InGameMapFunction" item_name_2="InGameMapFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -114,9 +114,9 @@
 		<_34 v="generated_padfa90" length="2" />
 		<_14 v="scaleDuration" />
 		<_14 v="scaleCooldownDuration" />
-		<_38 v="scaleFunction" item_name_3="InGameMapFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="scaleFunction" item_name_1="InGameMapFunction" item_name_2="InGameMapFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -126,13 +126,13 @@
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="LOD Settings" item_name_3="i343::InGameMaps::LODSettings" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
+	<_38 v="LOD Settings" item_name_1="i343::InGameMaps::LODSettings" item_name_2="i343::InGameMaps::LODSettings" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
 		<_B v="lodMode">
 			<Flag v="Object Distance to Camera" />
 			<Flag v="Camera Height" />
 		</_B>
 		<_34 v="generated_pad4e7d" length="2" />
-		<_38 v="lodCollisionResolution" item_name_3="i343::InGameMaps::LODCollisionResolution" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="lodCollisionResolution" item_name_1="i343::InGameMaps::LODCollisionResolution" item_name_2="i343::InGameMaps::LODCollisionResolution" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_B v="resolutionMode">
 				<Flag v="Hide Lower Tier" />
 				<Flag v="No Collision Resolution" />
@@ -142,7 +142,7 @@
 			<_3B v="" />
 		</_38>
 		<_14 v="spotlightRadiusScale" />
-		<_40 v="Per-tier settings for POIs" item_name_1="i343::InGameMaps::LODTier" item_name_2="i343::InGameMaps::LODTier" item_name_3="i343::InGameMaps::LODTier" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="Per-tier settings for POIs" item_name_1="i343::InGameMaps::LODTier" item_name_2="i343::InGameMaps::LODTier" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="fullIconAndLabelWithModelFadeStart" />
 			<_36 v="3D Model Fading" />
 			<_14 v="fullIconAndLabelFadeStart" />
@@ -150,14 +150,14 @@
 		</_40>
 		<_3B v="" />
 	</_38>
-	<_38 v="Icon Settings" item_name_3="i343::InGameMaps::IconSettings" db1="208" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_38 v="Icon Settings" item_name_1="i343::InGameMaps::IconSettings" item_name_2="i343::InGameMaps::IconSettings" db1="208" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_41 v="fullIcons" />
 		<_41 v="smallIcons" />
 		<_41 v="detailIcons" />
 		<_41 v="highlightedOverlayIcons" />
 		<_41 v="outerMissionListIcons" />
 		<_41 v="innerMissionListIcons" />
-		<_40 v="markerColors" item_name_1="i343::InGameMaps::MarkerColor" item_name_2="i343::InGameMaps::MarkerColor" item_name_3="i343::InGameMaps::MarkerColor" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="markerColors" item_name_1="i343::InGameMaps::MarkerColor" item_name_2="i343::InGameMaps::MarkerColor" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_B v="markerType">
 				<Flag v="Invalid" />
 				<Flag v="Critical Path" />
@@ -205,7 +205,7 @@
 			<_1F v="color" />
 			<_3B v="" />
 		</_40>
-		<_40 v="markerVisibilitySettings" item_name_1="i343::InGameMaps::MarkerVisibilitySettings" item_name_2="i343::InGameMaps::MarkerVisibilitySettings" item_name_3="i343::InGameMaps::MarkerVisibilitySettings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_40 v="markerVisibilitySettings" item_name_1="i343::InGameMaps::MarkerVisibilitySettings" item_name_2="i343::InGameMaps::MarkerVisibilitySettings" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_B v="missionType">
 				<Flag v="Invalid" />
 				<Flag v="Spire" />
@@ -253,7 +253,7 @@
 		</_40>
 		<_3B v="" />
 	</_38>
-	<_38 v="Camera Settings" item_name_3="i343::InGameMaps::CameraSettings" db1="224" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Camera Settings" item_name_1="i343::InGameMaps::CameraSettings" item_name_2="i343::InGameMaps::CameraSettings" db1="224" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_F v="Flags">
 			<Flag v="DOF Enabled" />
 		</_F>
@@ -315,7 +315,7 @@
 		<_14 v="Back Menu Tab Bar Height" />
 		<_3B v="" />
 	</_38>
-	<_40 v="Area of Interest Settings" item_name_1="i343::InGameMaps::MarkerSettings" item_name_2="i343::InGameMaps::MarkerSettings" item_name_3="i343::InGameMaps::MarkerSettings" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_40 v="Area of Interest Settings" item_name_1="i343::InGameMaps::MarkerSettings" item_name_2="i343::InGameMaps::MarkerSettings" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_B v="markerType">
 			<Flag v="Invalid" />
 			<Flag v="Critical Path" />
@@ -329,7 +329,7 @@
 		<_14 v="bitmapCorrectiveScale" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Async Loaded Display Assets" item_name_1="InGameMapDisplayAssetDefinition" item_name_2="InGameMapDisplayAssetDefinition" item_name_3="InGameMapDisplayAssetDefinition" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_40 v="Async Loaded Display Assets" item_name_1="InGameMapDisplayAssetDefinition" item_name_2="InGameMapDisplayAssetDefinition" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_2 v="Name" />
 		<_41 v="Model" />
 		<_17 v="Rotation" />
@@ -343,7 +343,7 @@
 		<_3B v="" />
 	</_40>
 	<_41 v="Async Loaded Asset List" />
-	<_40 v="Collectible Settings" item_name_1="i343::InGameMaps::CollectibleSettings" item_name_2="i343::InGameMaps::CollectibleSettings" item_name_3="i343::InGameMaps::CollectibleSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+	<_40 v="Collectible Settings" item_name_1="i343::InGameMaps::CollectibleSettings" item_name_2="i343::InGameMaps::CollectibleSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 		<_2 v="name" />
 		<_A v="type">
 			<Flag v="None" />
@@ -398,10 +398,10 @@
 		<_6 v="spriteIndex" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Regions" item_name_1="i343::InGameMaps::RegionSettings" item_name_2="i343::InGameMaps::RegionSettings" item_name_3="i343::InGameMaps::RegionSettings" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Regions" item_name_1="i343::InGameMaps::RegionSettings" item_name_2="i343::InGameMaps::RegionSettings" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="name" />
-		<_40 v="Region Polygons" item_name_1="i343::InGameMaps::RegionPolygon" item_name_2="i343::InGameMaps::RegionPolygon" item_name_3="i343::InGameMaps::RegionPolygon" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Region Polygon" item_name_1="i343::InGameMaps::RegionPoint" item_name_2="i343::InGameMaps::RegionPoint" item_name_3="i343::InGameMaps::RegionPoint" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Region Polygons" item_name_1="i343::InGameMaps::RegionPolygon" item_name_2="i343::InGameMaps::RegionPolygon" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Region Polygon" item_name_1="i343::InGameMaps::RegionPoint" item_name_2="i343::InGameMaps::RegionPoint" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_17 v="Region Point" />
 				<_3B v="" />
 			</_40>
@@ -409,7 +409,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_38 v="Vignette Settings" item_name_3="i343::InGameMaps::VignetteSettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Vignette Settings" item_name_1="i343::InGameMaps::VignetteSettings" item_name_2="i343::InGameMaps::VignetteSettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_1F v="color" />
 		<_14 v="opacity" />
 		<_14 v="innerRadius" />
@@ -417,12 +417,12 @@
 		<_14 v="darkenRatio" />
 		<_3B v="" />
 	</_38>
-	<_40 v="Model Dictionary" item_name_1="InGameMapModelLookup" item_name_2="InGameMapModelLookup" item_name_3="InGameMapModelLookup" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Model Dictionary" item_name_1="InGameMapModelLookup" item_name_2="InGameMapModelLookup" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
 		<_41 v="Model" />
 		<_3B v="" />
 	</_40>
-	<_38 v="Transition Settings" item_name_3="InGameMapTransitionSettings" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Transition Settings" item_name_1="InGameMapTransitionSettings" item_name_2="InGameMapTransitionSettings" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="IntroMinLoadTime" />
 		<_14 v="IntroTotalTransitionTime" />
 		<_14 v="OuttroMapTransitionTime" />
@@ -430,7 +430,7 @@
 		<_14 v="OuttroGameplayTransitionTime" />
 		<_3B v="" />
 	</_38>
-	<_38 v="POI Visual Settings" item_name_3="InGameMapPOIVisualSettings" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="POI Visual Settings" item_name_1="InGameMapPOIVisualSettings" item_name_2="InGameMapPOIVisualSettings" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Captured Collectible Opacity" />
 		<_14 v="Default Collectible Opacity" />
 		<_1F v="Text Tint Color" />
@@ -442,7 +442,7 @@
 		<_14 v="Safe Region Bounds" />
 		<_3B v="" />
 	</_38>
-	<_38 v="Gak Settings" item_name_3="InGameMapGakSettings" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_38 v="Gak Settings" item_name_1="InGameMapGakSettings" item_name_2="InGameMapGakSettings" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_14 v="Gak POI Spawn Frequency" />
 		<_14 v="Gak POI Spawn Chance" />
 		<_6 v="Gak Max POI Count" />
@@ -457,15 +457,15 @@
 		<_6 v="Gak Tile Count X" />
 		<_6 v="Gak Tile Count Y" />
 		<_14 v="Gak Tile Margin" />
-		<_40 v="Gak Invalid Tiles" item_name_1="GakTileIndex" item_name_2="GakTileIndex" item_name_3="GakTileIndex" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Gak Invalid Tiles" item_name_1="GakTileIndex" item_name_2="GakTileIndex" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="X" />
 			<_6 v="Y" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_38>
-	<_38 v="Player Position Override Settings" item_name_3="i343::InGameMaps::PlayerPositionOverrideSettings" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-		<_40 v="Zone Set Settings" item_name_1="i343::InGameMaps::ZoneSetSettings" item_name_2="i343::InGameMaps::ZoneSetSettings" item_name_3="i343::InGameMaps::ZoneSetSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_38 v="Player Position Override Settings" item_name_1="i343::InGameMaps::PlayerPositionOverrideSettings" item_name_2="i343::InGameMaps::PlayerPositionOverrideSettings" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Zone Set Settings" item_name_1="i343::InGameMaps::ZoneSetSettings" item_name_2="i343::InGameMaps::ZoneSetSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Zoneset Name" />
 			<_2 v="Point of Interest Name" />
 			<_3B v="" />

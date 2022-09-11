@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="CustomObjectLightingTag" item_name_2="CustomObjectLightingTag" item_name_3="CustomObjectLightingTag" db1="72" db2="0" db3="1" db4="0" db5="1" db6="0" db7="56" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="CustomObjectLightingTag" item_name_2="CustomObjectLightingTag" db1="72" db2="0" db3="1" db4="0" db5="1" db6="0" db7="56" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="Probe" item_name_3="CustomObjectLighting" db1="52" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2353">
+	<_38 v="Probe" item_name_1="CustomObjectLighting" item_name_2="CustomObjectLighting" db1="52" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2353">
 		<_36 v="Character Lighting" />
-		<_40 v="Authored Light Probes" item_name_1="AuthoredLightProbe" item_name_2="AuthoredLightProbe" item_name_3="AuthoredLightProbe" db1="268" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="275">
-			<_40 v="Lights" item_name_1="AuthoredLightProbeLights" item_name_2="AuthoredLightProbeLights" item_name_3="AuthoredLightProbeLights" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Authored Light Probes" item_name_1="AuthoredLightProbe" item_name_2="AuthoredLightProbe" db1="268" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="275">
+			<_40 v="Lights" item_name_1="AuthoredLightProbeLights" item_name_2="AuthoredLightProbeLights" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_37 v="Authored Light Probe" />
 				<_37 v="Direction 1" />
 				<_14 v="Direction 1" />
@@ -45,7 +45,7 @@
 			</_40>
 			<_37 v="Generated Air Probe Intensity Scale" />
 			<_14 v="Generated Air Probe Intensity Scale" />
-			<_39 v="raw sh data" item_name_3="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_39 v="raw sh data" item_name_1="RGBLightprobe" item_name_2="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="sh data" />
 				<_3B v="" />
 				<_14 v="sh data" />
@@ -101,7 +101,7 @@
 				<_14 v="sh data" />
 				<_3B v="" />
 			</_39>
-			<_39 v="per frame sh data" item_name_3="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_39 v="per frame sh data" item_name_1="RGBLightprobe" item_name_2="RGBLightprobe" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="sh data" />
 				<_3B v="" />
 				<_14 v="sh data" />

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="Interface::Customization::UIObjectCustomizationDataTag" item_name_2="Interface::Customization::UIObjectCustomizationDataTag" item_name_3="Interface::Customization::UIObjectCustomizationDataTag" db1="40" db2="0" db3="1" db4="0" db5="1" db6="0" db7="24" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="Interface::Customization::UIObjectCustomizationDataTag" item_name_2="Interface::Customization::UIObjectCustomizationDataTag" db1="40" db2="0" db3="1" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="Customization Data" item_name_1="Interface::Customization::UIObjectCustomizationData" item_name_2="Interface::Customization::UIObjectCustomizationData" item_name_3="Interface::Customization::UIObjectCustomizationData" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+	<_40 v="Customization Data" item_name_1="Interface::Customization::UIObjectCustomizationData" item_name_2="Interface::Customization::UIObjectCustomizationData" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 		<_0 v="Camera Point" />
 		<_2 v="Default Idle Animation" />
 		<_2 v="Idle Animation" />
@@ -22,7 +22,7 @@
 		<_2 v="Spartan Platform Glow Effect" />
 		<_1C v="Rotation Angle Limitation" />
 		<_1C v="Default Weapon Orientation" />
-		<_40 v="Camera Settings Data" item_name_1="Interface::Customization::UICameraSettings" item_name_2="Interface::Customization::UICameraSettings" item_name_3="Interface::Customization::UICameraSettings" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="Camera Settings Data" item_name_1="Interface::Customization::UICameraSettings" item_name_2="Interface::Customization::UICameraSettings" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 			<_B v="Core Focus Mode">
 				<Flag v="Default" />
 				<Flag v="CoreFocused" />
@@ -53,7 +53,7 @@
 				<Flag v="EaseInSinCustom" />
 				<Flag v="EaseOutSinCustom" />
 			</_B>
-			<_40 v="Camera Positions" item_name_1="Interface::Customization::UICameraPositionOffset" item_name_2="Interface::Customization::UICameraPositionOffset" item_name_3="Interface::Customization::UICameraPositionOffset" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="Camera Positions" item_name_1="Interface::Customization::UICameraPositionOffset" item_name_2="Interface::Customization::UICameraPositionOffset" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 				<_B v="Camera Position Type">
 					<Flag v="Default" />
 					<Flag v="Custom" />
@@ -79,7 +79,7 @@
 			<_1C v="Orientation" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Region Data" item_name_1="Interface::Customization::UIRegionData" item_name_2="Interface::Customization::UIRegionData" item_name_3="Interface::Customization::UIRegionData" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="Region Data" item_name_1="Interface::Customization::UIRegionData" item_name_2="Interface::Customization::UIRegionData" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 			<_2 v="UI Display String" />
 			<_2 v="UI Description�String" />
 			<_6 v="CMS Customization Item Type" />
@@ -134,7 +134,7 @@
 				<Flag v="EaseOutSinCustom" />
 			</_B>
 			<_34 v="generated_padfe05" length="2" />
-			<_40 v="Camera Positions" item_name_1="Interface::Customization::UICameraPositionOffset" item_name_2="Interface::Customization::UICameraPositionOffset" item_name_3="Interface::Customization::UICameraPositionOffset" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="Camera Positions" item_name_1="Interface::Customization::UICameraPositionOffset" item_name_2="Interface::Customization::UICameraPositionOffset" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 				<_B v="Camera Position Type">
 					<Flag v="Default" />
 					<Flag v="Custom" />
@@ -164,7 +164,7 @@
 			<_2 v="From Idle Animation" />
 			<_3B v="" />
 		</_40>
-		<_40 v="RTT Region Data" item_name_1="Interface::Customization::UIRTTRegionData" item_name_2="Interface::Customization::UIRTTRegionData" item_name_3="Interface::Customization::UIRTTRegionData" db1="116" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="RTT Region Data" item_name_1="Interface::Customization::UIRTTRegionData" item_name_2="Interface::Customization::UIRTTRegionData" db1="116" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 			<_2 v="UI Display String" />
 			<_2 v="UI Description�String" />
 			<_6 v="CMS Customization Item Type" />
@@ -220,7 +220,7 @@
 				<Flag v="EaseOutSinCustom" />
 			</_B>
 			<_34 v="generated_pad4425" length="2" />
-			<_40 v="Camera Positions" item_name_1="Interface::Customization::UICameraPositionOffset" item_name_2="Interface::Customization::UICameraPositionOffset" item_name_3="Interface::Customization::UICameraPositionOffset" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="Camera Positions" item_name_1="Interface::Customization::UICameraPositionOffset" item_name_2="Interface::Customization::UICameraPositionOffset" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 				<_B v="Camera Position Type">
 					<Flag v="Default" />
 					<Flag v="Custom" />
@@ -262,7 +262,7 @@
 		<_2 v="AI Spartan Marker" />
 		<_14 v="AI Spartan Marker Scale" />
 		<_36 v="Complex Rotation Settings" />
-		<_40 v="Orientation Limits" item_name_1="Interface::Customization::UICustomizationOrientationLimits" item_name_2="Interface::Customization::UICustomizationOrientationLimits" item_name_3="Interface::Customization::UICustomizationOrientationLimits" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Orientation Limits" item_name_1="Interface::Customization::UICustomizationOrientationLimits" item_name_2="Interface::Customization::UICustomizationOrientationLimits" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Name" />
 			<_14 v="Minimum Yaw" />
 			<_14 v="Maximum Yaw" />

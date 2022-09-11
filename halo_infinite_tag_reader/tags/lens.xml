@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_lens_flare_definition" item_name_2="s_lens_flare_definition" item_name_3="s_lens_flare_definition" db1="280" db2="0" db3="1" db4="0" db5="1" db6="0" db7="264" db8="3383">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="s_lens_flare_definition" item_name_2="s_lens_flare_definition" db1="280" db2="0" db3="1" db4="0" db5="1" db6="0" db7="264" db8="3383">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -68,7 +68,7 @@
 		<Flag v="one" />
 	</_B>
 	<_34 v="generated_padb87b" length="2" />
-	<_40 v="reflections" item_name_1="LensFlareReflection" item_name_2="LensFlareReflection" item_name_3="LensFlareReflection" db1="280" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="reflections" item_name_1="LensFlareReflection" item_name_2="LensFlareReflection" db1="280" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_37 v="" />
 		<_2 v="name" />
 		<_D v="flags">
@@ -90,9 +90,9 @@
 			<Flag v="do not render" />
 		</_D>
 		<_41 v="bitmap override" />
-		<_38 v="bitmap frame index" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="bitmap frame index" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -100,9 +100,9 @@
 			</_38>
 			<_3B v="" />
 		</_38>
-		<_38 v="bitmap animation rate" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="bitmap animation rate" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -125,9 +125,9 @@
 		<_14 v="x offset" />
 		<_14 v="y offset" />
 		<_25 v="offset bounds" />
-		<_38 v="radius curve" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="radius curve" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -135,9 +135,9 @@
 			</_38>
 			<_3B v="" />
 		</_38>
-		<_38 v="scale curve X" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="scale curve X" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -145,9 +145,9 @@
 			</_38>
 			<_3B v="" />
 		</_38>
-		<_38 v="scale curve Y" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="scale curve Y" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -155,9 +155,9 @@
 			</_38>
 			<_3B v="" />
 		</_38>
-		<_38 v="brightness curve" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="brightness curve" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -174,9 +174,9 @@
 			<Flag v="DWS Sun Color" />
 		</_A>
 		<_34 v="generated_padebc7" length="3" />
-		<_38 v="color curve" item_name_3="ColorFunctionNamed" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="color curve" item_name_1="ColorFunctionNamed" item_name_2="ColorFunctionNamed" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -194,10 +194,10 @@
 		<Flag v="unsynchronized time" />
 	</_E>
 	<_34 v="generated_pad38f2" length="2" />
-	<_40 v="time brightness" item_name_1="LensFlareScalarAnimation" item_name_2="LensFlareScalarAnimation" item_name_3="LensFlareScalarAnimation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="time brightness" item_name_1="LensFlareScalarAnimation" item_name_2="LensFlareScalarAnimation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -207,10 +207,10 @@
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="age brightness" item_name_1="LensFlareScalarAnimation" item_name_2="LensFlareScalarAnimation" item_name_3="LensFlareScalarAnimation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="age brightness" item_name_1="LensFlareScalarAnimation" item_name_2="LensFlareScalarAnimation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -228,8 +228,8 @@
 		<Flag v="DWS Sun Color" />
 	</_A>
 	<_34 v="generated_padec3d" length="3" />
-	<_40 v="time color" item_name_1="LensFlareColorAnimation" item_name_2="LensFlareColorAnimation" item_name_3="LensFlareColorAnimation" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="color animation" item_name_3="s_editing_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="time color" item_name_1="LensFlareColorAnimation" item_name_2="LensFlareColorAnimation" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="color animation" item_name_1="s_editing_function" item_name_2="s_editing_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="Input Variable" />
 			<_2 v="Range Variable" />
 			<_B v="Output Modifier">
@@ -240,7 +240,7 @@
 			<_34 v="generated_padcaf7" length="2" />
 			<_2 v="Output Modifier Input" />
 			<_37 v="Lens flare color editor" />
-			<_38 v="lens flare color mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="lens flare color mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -258,8 +258,8 @@
 		<Flag v="DWS Sun Color" />
 	</_A>
 	<_34 v="generated_padd25c" length="3" />
-	<_40 v="age color" item_name_1="LensFlareColorAnimation" item_name_2="LensFlareColorAnimation" item_name_3="LensFlareColorAnimation" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="color animation" item_name_3="s_editing_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="age color" item_name_1="LensFlareColorAnimation" item_name_2="LensFlareColorAnimation" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="color animation" item_name_1="s_editing_function" item_name_2="s_editing_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="Input Variable" />
 			<_2 v="Range Variable" />
 			<_B v="Output Modifier">
@@ -270,7 +270,7 @@
 			<_34 v="generated_padcaf7" length="2" />
 			<_2 v="Output Modifier Input" />
 			<_37 v="Lens flare color editor" />
-			<_38 v="lens flare color mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="lens flare color mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -280,10 +280,10 @@
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="time rotation" item_name_1="LensFlareScalarAnimation" item_name_2="LensFlareScalarAnimation" item_name_3="LensFlareScalarAnimation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="time rotation" item_name_1="LensFlareScalarAnimation" item_name_2="LensFlareScalarAnimation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -293,10 +293,10 @@
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="age rotation" item_name_1="LensFlareScalarAnimation" item_name_2="LensFlareScalarAnimation" item_name_3="LensFlareScalarAnimation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="age rotation" item_name_1="LensFlareScalarAnimation" item_name_2="LensFlareScalarAnimation" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />

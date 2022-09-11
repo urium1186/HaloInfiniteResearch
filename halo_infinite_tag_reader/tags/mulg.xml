@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_multiplayer_globals_definition" item_name_2="s_multiplayer_globals_definition" item_name_3="s_multiplayer_globals_definition" db1="56" db2="0" db3="1" db4="0" db5="1" db6="0" db7="40" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="s_multiplayer_globals_definition" item_name_2="s_multiplayer_globals_definition" db1="56" db2="0" db3="1" db4="0" db5="1" db6="0" db7="40" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="universal" item_name_1="s_multiplayer_universal_globals_definition" item_name_2="s_multiplayer_universal_globals_definition" item_name_3="s_multiplayer_universal_globals_definition" db1="156" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2321">
-		<_40 v="teams" item_name_1="TeamDefinition" item_name_2="TeamDefinition" item_name_3="TeamDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="universal" item_name_1="s_multiplayer_universal_globals_definition" item_name_2="s_multiplayer_universal_globals_definition" db1="156" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="teams" item_name_1="TeamDefinition" item_name_2="TeamDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="name" />
 			<_1F v="primary color" />
 			<_1F v="secondary color" />
@@ -22,7 +22,7 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_40>
-		<_40 v="player starting profile" item_name_1="scenario_starting_profile" item_name_2="scenario_starting_profile" item_name_3="scenario_starting_profile" db1="236" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="player starting profile" item_name_1="scenario_starting_profile" item_name_2="scenario_starting_profile" db1="236" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_0 v="name" />
 			<_15 v="starting health damage" />
 			<_15 v="starting shield damage" />
@@ -49,7 +49,7 @@
 			<_2 v="starting support upgrade" />
 			<_2E v="editor folder" />
 			<_34 v="generated_padc11b" length="2" />
-			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="folder name" />
 				<_17 v="local space pivot point position" />
 				<_3B v="" />
@@ -67,17 +67,17 @@
 		<_34 v="generated_pad1ab1" length="3" />
 		<_3B v="" />
 	</_40>
-	<_40 v="runtime" item_name_1="s_multiplayer_runtime_globals_definition" item_name_2="s_multiplayer_runtime_globals_definition" item_name_3="s_multiplayer_runtime_globals_definition" db1="440" db2="0" db3="2" db4="0" db5="1" db6="2" db7="0" db8="273">
+	<_40 v="runtime" item_name_1="s_multiplayer_runtime_globals_definition" item_name_2="s_multiplayer_runtime_globals_definition" db1="440" db2="0" db3="2" db4="0" db5="1" db6="2" db7="0" db8="273">
 		<_41 v="editor helper" />
-		<_40 v="sounds" item_name_1="SoundBlock" item_name_2="SoundBlock" item_name_3="SoundBlock" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="sounds" item_name_1="SoundBlock" item_name_2="SoundBlock" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="sound" />
 			<_3B v="" />
 		</_40>
-		<_40 v="looping sounds" item_name_1="LoopingSoundBlock" item_name_2="LoopingSoundBlock" item_name_3="LoopingSoundBlock" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="looping sounds" item_name_1="LoopingSoundBlock" item_name_2="LoopingSoundBlock" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="looping sound" />
 			<_3B v="" />
 		</_40>
-		<_40 v="multiplayer constants" item_name_1="s_multiplayer_constants" item_name_2="s_multiplayer_constants" item_name_3="s_multiplayer_constants" db1="128" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="multiplayer constants" item_name_1="s_multiplayer_constants" item_name_2="s_multiplayer_constants" db1="128" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_36 v="PLAYER SPAWN INFLUENCERS" />
 			<_41 v="Default Spawn Settings" />
 			<_36 v="MORE MP CONSTANTS" />

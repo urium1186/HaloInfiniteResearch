@@ -1,8 +1,7 @@
 import json
 
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
-from halo_infinite_tag_reader.common_tag_types import TagInstance
-from configs.config import Config
+from halo_infinite_tag_reader.tag_instance import TagInstance
 from halo_infinite_tag_reader.readers.render_model import RenderModel
 
 
@@ -31,8 +30,9 @@ class Model(BaseTemplate):
         self.render_model.load()
 
     def onInstanceLoad(self, instance: TagInstance):
-        if not (instance.content_entry is None) and not (instance.content_entry.data_reference is None):
-            if instance.content_entry.data_reference.unknown_property != 0:
+        super(Model, self).onInstanceLoad(instance)
+        if not (instance.content_entry is None) and not (instance.content_entry.field_data_block is None):
+            if instance.content_entry.field_data_block.unknown_property != 0:
                 p_name = instance.tagDef.N
                 debug = True
         variants = {}

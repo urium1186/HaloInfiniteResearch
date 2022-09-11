@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="DialogueSystemDataTag" item_name_2="DialogueSystemDataTag" item_name_3="DialogueSystemDataTag" db1="120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="104" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="DialogueSystemDataTag" item_name_2="DialogueSystemDataTag" db1="120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="104" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="vocalizations" item_name_1="Vocalization" item_name_2="Vocalization" item_name_3="Vocalization" db1="108" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="vocalizations" item_name_1="Vocalization" item_name_2="Vocalization" db1="108" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="vocalization" />
 		<_5 v="offset from parent" />
 		<_B v="priority">
@@ -137,7 +137,7 @@
 		<_5 v="mission min value" />
 		<_5 v="mission max value" />
 		<_2 v="Sample line" />
-		<_40 v="reponses" item_name_1="Response" item_name_2="Response" item_name_3="Response" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="reponses" item_name_1="Response" item_name_2="Response" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="vocalization name" />
 			<_5 v="vocalization index" />
 			<_A v="response type">
@@ -485,7 +485,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="patterns" item_name_1="VocalizationPattern" item_name_2="VocalizationPattern" item_name_3="VocalizationPattern" db1="136" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+	<_40 v="patterns" item_name_1="VocalizationPattern" item_name_2="VocalizationPattern" db1="136" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 		<_B v="dialogue type">
 			<Flag v="NONE" />
 			<Flag v="death" />
@@ -1299,7 +1299,7 @@
 		<_34 v="generated_pad82d5" length="2" />
 		<_37 v="damage type" />
 		<_36 v="Explanation" />
-		<_38 v="damage type" item_name_3="i343::Damage::DamageTypeReference" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_38 v="damage type" item_name_1="i343::Damage::DamageTypeReference" item_name_2="i343::Damage::DamageTypeReference" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_36 v="NOTE" />
 			<_2 v="Damage Type Name" />
 			<_3B v="" />
@@ -1307,7 +1307,7 @@
 		<_37 v="" />
 		<_37 v="damage source name" />
 		<_36 v="Explanation" />
-		<_38 v="damage source name" item_name_3="i343::Damage::DamageSourceReference" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_38 v="damage source name" item_name_1="i343::Damage::DamageSourceReference" item_name_2="i343::Damage::DamageSourceReference" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_36 v="NOTE" />
 			<_2 v="Damage Source Name" />
 			<_3B v="" />
@@ -1315,23 +1315,23 @@
 		<_37 v="" />
 		<_2 v="vocalization triggered" />
 		<_2 v="dst expression" />
-		<_40 v="dst expression tokens" item_name_1="DialogueStateTableExpressionToken" item_name_2="DialogueStateTableExpressionToken" item_name_3="DialogueStateTableExpressionToken" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="dst expression tokens" item_name_1="DialogueStateTableExpressionToken" item_name_2="DialogueStateTableExpressionToken" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="an expression token" />
 			<_6 v="numeric constant, if applicable" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="pattern type look up data" item_name_1="PatternTypeLookUpData" item_name_2="PatternTypeLookUpData" item_name_3="PatternTypeLookUpData" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="pattern type look up data" item_name_1="PatternTypeLookUpData" item_name_2="PatternTypeLookUpData" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_5 v="start index (postprocess)" />
 		<_5 v="length (postprocess)" />
 		<_3B v="" />
 	</_40>
-	<_40 v="involuntary data" item_name_1="InvoluntaryData" item_name_2="InvoluntaryData" item_name_3="InvoluntaryData" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="involuntary data" item_name_1="InvoluntaryData" item_name_2="InvoluntaryData" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_6 v="involuntary vocalization index" />
 		<_3B v="" />
 	</_40>
-	<_40 v="content defined events" item_name_1="CustomEventDefinition" item_name_2="CustomEventDefinition" item_name_3="CustomEventDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="content defined events" item_name_1="CustomEventDefinition" item_name_2="CustomEventDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="event name" />
 		<_3B v="" />
 	</_40>

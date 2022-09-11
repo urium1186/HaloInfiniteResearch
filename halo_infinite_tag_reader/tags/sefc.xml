@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_area_screen_effect_definition" item_name_2="s_area_screen_effect_definition" item_name_3="s_area_screen_effect_definition" db1="40" db2="0" db3="2" db4="0" db5="1" db6="0" db7="24" db8="1335">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="s_area_screen_effect_definition" item_name_2="s_area_screen_effect_definition" db1="40" db2="0" db3="2" db4="0" db5="1" db6="0" db7="24" db8="1335">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -21,7 +21,7 @@
 		<Flag v="update thread" />
 		<Flag v="render thread" />
 	</_E>
-	<_40 v="screen effects" item_name_1="s_single_screen_effect_definition" item_name_2="s_single_screen_effect_definition" item_name_3="s_single_screen_effect_definition" db1="360" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="2359">
+	<_40 v="screen effects" item_name_1="s_single_screen_effect_definition" item_name_2="s_single_screen_effect_definition" db1="360" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="2359">
 		<_2 v="name" />
 		<_E v="flags">
 			<Flag v="debug disable" />
@@ -41,9 +41,9 @@
 		</_E>
 		<_36 v="DISTANCE FALLOFF" />
 		<_14 v="maximum distance" />
-		<_38 v="distance falloff" item_name_3="AreaScreenEffectScalarFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="distance falloff" item_name_1="AreaScreenEffectScalarFunction" item_name_2="AreaScreenEffectScalarFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -54,9 +54,9 @@
 		<_36 v="TIME EVOLUTION" />
 		<_14 v="delay" />
 		<_14 v="lifetime" />
-		<_38 v="time falloff" item_name_3="AreaScreenEffectScalarFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="time falloff" item_name_1="AreaScreenEffectScalarFunction" item_name_2="AreaScreenEffectScalarFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -65,9 +65,9 @@
 			<_3B v="" />
 		</_38>
 		<_36 v="ANGLE FALLOFF" />
-		<_38 v="angle falloff" item_name_3="AreaScreenEffectScalarFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="angle falloff" item_name_1="AreaScreenEffectScalarFunction" item_name_2="AreaScreenEffectScalarFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -76,11 +76,11 @@
 			<_3B v="" />
 		</_38>
 		<_36 v="OBJECT FALLOFF" />
-		<_38 v="object falloff" item_name_3="ScreenEffectFunctionDefinitionWithInputs" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="object falloff" item_name_1="ScreenEffectFunctionDefinitionWithInputs" item_name_2="ScreenEffectFunctionDefinitionWithInputs" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="Input Variable" />
 			<_2 v="Range Variable" />
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::InterfaceGlobals" item_name_2="i343::InterfaceGlobals" item_name_3="i343::InterfaceGlobals" db1="40" db2="0" db3="2" db4="0" db5="1" db6="0" db7="24" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::InterfaceGlobals" item_name_2="i343::InterfaceGlobals" db1="40" db2="0" db3="2" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="interface tags" item_name_1="s_game_globals_interface_tag_references" item_name_2="s_game_globals_interface_tag_references" item_name_3="s_game_globals_interface_tag_references" db1="772" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="interface tags" item_name_1="s_game_globals_interface_tag_references" item_name_2="s_game_globals_interface_tag_references" db1="772" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_36 v="Mode-Specific Tags" />
 		<_41 v="shared globals" />
 		<_41 v="mainmenu ui globals" />
@@ -36,7 +36,7 @@
 		<_41 v="Inspect Player Customization" />
 		<_41 v="PGCR" />
 		<_41 v="RTT Forward Fast Lighting Presets" />
-		<_40 v="RTT Camera Scenes" item_name_1="Interface::Customization::UIRTTRegionData" item_name_2="Interface::Customization::UIRTTRegionData" item_name_3="Interface::Customization::UIRTTRegionData" db1="116" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="RTT Camera Scenes" item_name_1="Interface::Customization::UIRTTRegionData" item_name_2="Interface::Customization::UIRTTRegionData" db1="116" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 			<_2 v="UI Display String" />
 			<_2 v="UI Description�String" />
 			<_6 v="CMS Customization Item Type" />
@@ -92,7 +92,7 @@
 				<Flag v="EaseOutSinCustom" />
 			</_B>
 			<_34 v="generated_pad4425" length="2" />
-			<_40 v="Camera Positions" item_name_1="Interface::Customization::UICameraPositionOffset" item_name_2="Interface::Customization::UICameraPositionOffset" item_name_3="Interface::Customization::UICameraPositionOffset" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="Camera Positions" item_name_1="Interface::Customization::UICameraPositionOffset" item_name_2="Interface::Customization::UICameraPositionOffset" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 				<_B v="Camera Position Type">
 					<Flag v="Default" />
 					<Flag v="Custom" />
@@ -131,13 +131,13 @@
 			<_2 v="From Idle Animation" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Composer Scenes" item_name_1="Interface::Customization::UIComposerCustomizationData" item_name_2="Interface::Customization::UIComposerCustomizationData" item_name_3="Interface::Customization::UIComposerCustomizationData" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Composer Scenes" item_name_1="Interface::Customization::UIComposerCustomizationData" item_name_2="Interface::Customization::UIComposerCustomizationData" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Composer Scene Name" />
-			<_40 v="Camera Points" item_name_1="Interface::Customization::CameraPointName" item_name_2="Interface::Customization::CameraPointName" item_name_3="Interface::Customization::CameraPointName" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Camera Points" item_name_1="Interface::Customization::CameraPointName" item_name_2="Interface::Customization::CameraPointName" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_0 v="CameraPoint" />
 				<_3B v="" />
 			</_40>
-			<_40 v="Camera Point Layout Block" item_name_1="Interface::Customization::CameraPointLayoutBlock" item_name_2="Interface::Customization::CameraPointLayoutBlock" item_name_3="Interface::Customization::CameraPointLayoutBlock" db1="320" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Camera Point Layout Block" item_name_1="Interface::Customization::CameraPointLayoutBlock" item_name_2="Interface::Customization::CameraPointLayoutBlock" db1="320" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_37 v="Single camera point properties" />
 				<_0 v="Layout one first postion" />
 				<_37 v="" />
@@ -162,11 +162,11 @@
 			<_41 v="Composer Definition" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Landing Scene Data" item_name_1="Interface::Customization::LandingSceneData" item_name_2="Interface::Customization::LandingSceneData" item_name_3="Interface::Customization::LandingSceneData" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="Landing Scene Data" item_name_1="Interface::Customization::LandingSceneData" item_name_2="Interface::Customization::LandingSceneData" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 			<_6 v="Composer Scene Time" />
 			<_6 v="Fodeout Star Time" />
 			<_6 v="Fodeout End Time" />
-			<_40 v="Composer Scenes" item_name_1="Interface::Customization::LandingSceneCompositionData" item_name_2="Interface::Customization::LandingSceneCompositionData" item_name_3="Interface::Customization::LandingSceneCompositionData" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Composer Scenes" item_name_1="Interface::Customization::LandingSceneCompositionData" item_name_2="Interface::Customization::LandingSceneCompositionData" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Composer Scene Name" />
 				<_B v="Core Type">
 					<Flag v="Unknown" />
@@ -193,7 +193,7 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="CoreType order" item_name_1="Interface::Customization::CoreTypeItem" item_name_2="Interface::Customization::CoreTypeItem" item_name_3="Interface::Customization::CoreTypeItem" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="CoreType order" item_name_1="Interface::Customization::CoreTypeItem" item_name_2="Interface::Customization::CoreTypeItem" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_B v="Core Type">
 				<Flag v="Unknown" />
 				<Flag v="Armor" />
@@ -216,11 +216,11 @@
 			</_B>
 			<_3B v="" />
 		</_40>
-		<_40 v="MythicFx Composer Names" item_name_1="Interface::Customization::ComposerSceneNames" item_name_2="Interface::Customization::ComposerSceneNames" item_name_3="Interface::Customization::ComposerSceneNames" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="MythicFx Composer Names" item_name_1="Interface::Customization::ComposerSceneNames" item_name_2="Interface::Customization::ComposerSceneNames" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Composer Scene Name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Weapon Death Composer Names" item_name_1="Interface::Customization::ComposerSceneNames" item_name_2="Interface::Customization::ComposerSceneNames" item_name_3="Interface::Customization::ComposerSceneNames" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Weapon Death Composer Names" item_name_1="Interface::Customization::ComposerSceneNames" item_name_2="Interface::Customization::ComposerSceneNames" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Composer Scene Name" />
 			<_3B v="" />
 		</_40>

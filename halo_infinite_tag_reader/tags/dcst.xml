@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="DecoratorSettingsTag" item_name_2="DecoratorSettingsTag" item_name_3="DecoratorSettingsTag" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="48" db8="3347">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="DecoratorSettingsTag" item_name_2="DecoratorSettingsTag" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="48" db8="3347">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="LOD Settings" item_name_3="LODParameters" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
-		<_40 v="LOD Transitions" item_name_1="LODTransition" item_name_2="LODTransition" item_name_3="LODTransition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="LOD Settings" item_name_1="LODParameters" item_name_2="LODParameters" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_40 v="LOD Transitions" item_name_1="LODTransition" item_name_2="LODTransition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Transition start" />
 			<_14 v="Transition end" />
 			<_3B v="" />
@@ -18,9 +18,9 @@
 		<_14 v="Max Shadow Distance" />
 		<_3B v="" />
 	</_38>
-	<_40 v="Presets" item_name_1="DecoratorPreset" item_name_2="DecoratorPreset" item_name_3="DecoratorPreset" db1="84" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_40 v="Presets" item_name_1="DecoratorPreset" item_name_2="DecoratorPreset" db1="84" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_2 v="Name" />
-		<_38 v="Parameters" item_name_3="DecoratorContentParameters" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Parameters" item_name_1="DecoratorContentParameters" item_name_2="DecoratorContentParameters" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_C v="Alignment">
 				<Flag v="default" />
 				<Flag v="normal" />

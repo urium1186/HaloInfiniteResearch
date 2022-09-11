@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="BehaviorTreeDefinition" item_name_2="BehaviorTreeDefinition" item_name_3="BehaviorTreeDefinition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="BehaviorTreeDefinition" item_name_2="BehaviorTreeDefinition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="Nodes" item_name_1="BehaviorNodeDefinition" item_name_2="BehaviorNodeDefinition" item_name_3="BehaviorNodeDefinition" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
+	<_40 v="Nodes" item_name_1="BehaviorNodeDefinition" item_name_2="BehaviorNodeDefinition" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
 		<_41 v="Sub Tree" />
 		<_37 v="Settings" />
-		<_38 v="Settings" item_name_3="BehaviorNodeSettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Settings" item_name_1="BehaviorNodeSettings" item_name_2="BehaviorNodeSettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_B v="Behavior">
 				<Flag v="" />
 				<Flag v="root" />
@@ -501,7 +501,7 @@
 			<_3B v="" />
 		</_38>
 		<_37 v="" />
-		<_40 v="Children" item_name_1="BehaviorNodeChildIndex" item_name_2="BehaviorNodeChildIndex" item_name_3="BehaviorNodeChildIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+		<_40 v="Children" item_name_1="BehaviorNodeChildIndex" item_name_2="BehaviorNodeChildIndex" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 			<_2E v="Child" />
 			<_3B v="" />
 		</_40>

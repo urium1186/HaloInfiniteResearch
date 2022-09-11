@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::Graphics::RenderGraph::GraphDefinition" item_name_2="i343::Graphics::RenderGraph::GraphDefinition" item_name_3="i343::Graphics::RenderGraph::GraphDefinition" db1="136" db2="0" db3="0" db4="0" db5="1" db6="0" db7="120" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::Graphics::RenderGraph::GraphDefinition" item_name_2="i343::Graphics::RenderGraph::GraphDefinition" db1="136" db2="0" db3="0" db4="0" db5="1" db6="0" db7="120" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -13,7 +13,7 @@
 	<_D v="Flags">
 		<Flag v="Allow as sub graph" />
 	</_D>
-	<_40 v="Nodes" item_name_1="i343::Graphics::RenderGraph::NodeDefinition" item_name_2="i343::Graphics::RenderGraph::NodeDefinition" item_name_3="i343::Graphics::RenderGraph::NodeDefinition" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Nodes" item_name_1="i343::Graphics::RenderGraph::NodeDefinition" item_name_2="i343::Graphics::RenderGraph::NodeDefinition" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
 		<_C v="Type">
 			<Flag v="ExecuteGraph" />
@@ -41,8 +41,8 @@
 			<Flag v="Sequence" />
 			<Flag v="EntryPoint" />
 		</_C>
-		<_40 v="Parameters" item_name_1="i343::Graphics::RenderGraph::ParameterDefinitionB" item_name_2="i343::Graphics::RenderGraph::ParameterDefinitionB" item_name_3="i343::Graphics::RenderGraph::ParameterDefinitionB" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-			<_38 v="Parameter" item_name_3="i343::Graphics::RenderGraph::ParameterDefinition" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Parameters" item_name_1="i343::Graphics::RenderGraph::ParameterDefinitionB" item_name_2="i343::Graphics::RenderGraph::ParameterDefinitionB" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_38 v="Parameter" item_name_1="i343::Graphics::RenderGraph::ParameterDefinition" item_name_2="i343::Graphics::RenderGraph::ParameterDefinition" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="Name" />
 				<_C v="Type">
 					<Flag v="None" />
@@ -78,13 +78,13 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="EditorMetadata" item_name_1="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_2="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_3="i343::Graphics::RenderGraph::EditorMetadataDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="EditorMetadata" item_name_1="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_2="i343::Graphics::RenderGraph::EditorMetadataDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_18 v="UI Position" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Connections" item_name_1="i343::Graphics::RenderGraph::ConnectionDefinition" item_name_2="i343::Graphics::RenderGraph::ConnectionDefinition" item_name_3="i343::Graphics::RenderGraph::ConnectionDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+	<_40 v="Connections" item_name_1="i343::Graphics::RenderGraph::ConnectionDefinition" item_name_2="i343::Graphics::RenderGraph::ConnectionDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 		<_37 v="From..." />
 		<_36 v="Connection From Port" />
 		<_37 v="From Graph Input" />
@@ -114,7 +114,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Inputs" item_name_1="i343::Graphics::RenderGraph::InputDefinition" item_name_2="i343::Graphics::RenderGraph::InputDefinition" item_name_3="i343::Graphics::RenderGraph::InputDefinition" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Inputs" item_name_1="i343::Graphics::RenderGraph::InputDefinition" item_name_2="i343::Graphics::RenderGraph::InputDefinition" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
 		<_C v="Type">
 			<Flag v="None" />
@@ -140,7 +140,7 @@
 			<Flag v="DrawableList" />
 			<Flag v="TextureDataPath" />
 		</_C>
-		<_40 v="UI Property" item_name_1="i343::Graphics::RenderGraph::UIPropertyDefinitionBlock" item_name_2="i343::Graphics::RenderGraph::UIPropertyDefinitionBlock" item_name_3="i343::Graphics::RenderGraph::UIPropertyDefinition" db1="424" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="UI Property" item_name_1="i343::Graphics::RenderGraph::UIPropertyDefinition" item_name_2="i343::Graphics::RenderGraph::UIPropertyDefinition" db1="424" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_D v="Flags">
 				<Flag v="Hide from UI" />
 			</_D>
@@ -184,20 +184,20 @@
 				<Flag v="Absolute" />
 				<Flag v="Flexible" />
 			</_C>
-			<_40 v="Enum Values" item_name_1="i343::Graphics::RenderGraph::UIEnumValueDefinition" item_name_2="i343::Graphics::RenderGraph::UIEnumValueDefinition" item_name_3="i343::Graphics::RenderGraph::UIEnumValueDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Enum Values" item_name_1="i343::Graphics::RenderGraph::UIEnumValueDefinition" item_name_2="i343::Graphics::RenderGraph::UIEnumValueDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_0 v="Display Name" />
 				<_6 v="Value" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="EditorMetadata" item_name_1="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_2="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_3="i343::Graphics::RenderGraph::EditorMetadataDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="EditorMetadata" item_name_1="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_2="i343::Graphics::RenderGraph::EditorMetadataDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_18 v="UI Position" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Outputs" item_name_1="i343::Graphics::RenderGraph::OutputDefinition" item_name_2="i343::Graphics::RenderGraph::OutputDefinition" item_name_3="i343::Graphics::RenderGraph::OutputDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Outputs" item_name_1="i343::Graphics::RenderGraph::OutputDefinition" item_name_2="i343::Graphics::RenderGraph::OutputDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
 		<_C v="Type">
 			<Flag v="None" />
@@ -223,14 +223,14 @@
 			<Flag v="DrawableList" />
 			<Flag v="TextureDataPath" />
 		</_C>
-		<_40 v="EditorMetadata" item_name_1="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_2="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_3="i343::Graphics::RenderGraph::EditorMetadataDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="EditorMetadata" item_name_1="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_2="i343::Graphics::RenderGraph::EditorMetadataDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_18 v="UI Position" />
 			<_3B v="" />
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Constants" item_name_1="i343::Graphics::RenderGraph::ConstantDefinition" item_name_2="i343::Graphics::RenderGraph::ConstantDefinition" item_name_3="i343::Graphics::RenderGraph::ConstantDefinition" db1="104" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
-		<_38 v="Parameter" item_name_3="i343::Graphics::RenderGraph::ParameterDefinition" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Constants" item_name_1="i343::Graphics::RenderGraph::ConstantDefinition" item_name_2="i343::Graphics::RenderGraph::ConstantDefinition" db1="104" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_38 v="Parameter" item_name_1="i343::Graphics::RenderGraph::ParameterDefinition" item_name_2="i343::Graphics::RenderGraph::ParameterDefinition" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="Name" />
 			<_C v="Type">
 				<Flag v="None" />
@@ -264,7 +264,7 @@
 			<_2 v="String" />
 			<_3B v="" />
 		</_38>
-		<_40 v="EditorMetadata" item_name_1="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_2="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_3="i343::Graphics::RenderGraph::EditorMetadataDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="EditorMetadata" item_name_1="i343::Graphics::RenderGraph::EditorMetadataDefinition" item_name_2="i343::Graphics::RenderGraph::EditorMetadataDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_18 v="UI Position" />
 			<_3B v="" />
 		</_40>

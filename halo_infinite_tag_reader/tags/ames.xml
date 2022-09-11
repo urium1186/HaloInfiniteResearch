@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="AnimatedMesh" item_name_2="AnimatedMesh" item_name_3="AnimatedMesh" db1="40" db2="0" db3="18" db4="0" db5="1" db6="0" db7="24" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="AnimatedMesh" item_name_2="AnimatedMesh" db1="40" db2="0" db3="18" db4="0" db5="1" db6="0" db7="24" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -13,10 +13,10 @@
 	<_3C v="Version" />
 	<_3C v="Authored FPS" />
 	<_3D v="Resource frame count" />
-	<_43 v="Perframe rigid body resources" item_name_3="AnimatedMeshRigidBodyResouce" db1="152" db2="0" db3="4" db4="0" db5="1" db6="2" db7="0" db8="273">
+	<_43 v="Perframe rigid body resources" item_name_1="AnimatedMeshRigidBodyResouce" item_name_2="AnimatedMeshRigidBodyResouce" db1="152" db2="0" db3="4" db4="0" db5="1" db6="2" db7="0" db8="273">
 		<_7 v="Runtime" />
-		<_40 v="Render stats per frame" item_name_1="AnimatedMeshRigidBodyFrameStats" item_name_2="AnimatedMeshRigidBodyFrameStats" item_name_3="AnimatedMeshRigidBodyFrameStats" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Render stats per frame per material" item_name_1="AnimatedMeshRigidBodyRenderStats" item_name_2="AnimatedMeshRigidBodyRenderStats" item_name_3="AnimatedMeshRigidBodyRenderStats" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Render stats per frame" item_name_1="AnimatedMeshRigidBodyFrameStats" item_name_2="AnimatedMeshRigidBodyFrameStats" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Render stats per frame per material" item_name_1="AnimatedMeshRigidBodyRenderStats" item_name_2="AnimatedMeshRigidBodyRenderStats" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_3E v="Index buffer start index" />
 				<_3E v="Index buffer indices count" />
 				<_3E v="Vertex buffer start index" />
@@ -25,21 +25,21 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Bounds per frame" item_name_1="AnimatedMeshRigidBodyFrameBounds" item_name_2="AnimatedMeshRigidBodyFrameBounds" item_name_3="AnimatedMeshRigidBodyFrameBounds" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Bounds per frame" item_name_1="AnimatedMeshRigidBodyFrameBounds" item_name_2="AnimatedMeshRigidBodyFrameBounds" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_17 v="Position AABB min" />
 			<_17 v="Position AABB extents" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Referenced parts per material" item_name_1="AnimatedMeshRigidBodyMaterialStats" item_name_2="AnimatedMeshRigidBodyMaterialStats" item_name_3="AnimatedMeshRigidBodyMaterialStats" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Referenced part indices" item_name_1="ReferencedPartPerMaterial" item_name_2="ReferencedPartPerMaterial" item_name_3="ReferencedPartPerMaterial" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Referenced parts per material" item_name_1="AnimatedMeshRigidBodyMaterialStats" item_name_2="AnimatedMeshRigidBodyMaterialStats" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Referenced part indices" item_name_1="ReferencedPartPerMaterial" item_name_2="ReferencedPartPerMaterial" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_3D v="word" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Part transforms per frame" item_name_1="AnimatedMeshRigidBodyFrameTransforms" item_name_2="AnimatedMeshRigidBodyFrameTransforms" item_name_3="AnimatedMeshRigidBodyFrameTransforms" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Part transform" item_name_1="AnimatedMeshQuantizedRigidTransform" item_name_2="AnimatedMeshQuantizedRigidTransform" item_name_3="AnimatedMeshQuantizedRigidTransform" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-				<_39 v="Compressed quantized rigid transform" item_name_3="CompressedQuantizedRigidTransform" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Part transforms per frame" item_name_1="AnimatedMeshRigidBodyFrameTransforms" item_name_2="AnimatedMeshRigidBodyFrameTransforms" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Part transform" item_name_1="AnimatedMeshQuantizedRigidTransform" item_name_2="AnimatedMeshQuantizedRigidTransform" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_39 v="Compressed quantized rigid transform" item_name_1="CompressedQuantizedRigidTransform" item_name_2="CompressedQuantizedRigidTransform" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_3E v="Compressed quantized rigid transform channel" />
 					<_3B v="" />
 					<_3E v="Compressed quantized rigid transform channel" />
@@ -51,11 +51,11 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="Compound index buffer" item_name_1="DwordIndexBuffer" item_name_2="DwordIndexBuffer" item_name_3="DwordIndexBuffer" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Compound index buffer" item_name_1="DwordIndexBuffer" item_name_2="DwordIndexBuffer" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_3E v="dword" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Compound vertex buffer" item_name_1="AnimatedMeshRigidBodyCSVertex" item_name_2="AnimatedMeshRigidBodyCSVertex" item_name_3="AnimatedMeshRigidBodyCSVertex" db1="28" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Compound vertex buffer" item_name_1="AnimatedMeshRigidBodyCSVertex" item_name_2="AnimatedMeshRigidBodyCSVertex" db1="28" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_17 v="position" />
 			<_14 v="texcoord" />
 			<_3E v="normal" />
@@ -63,7 +63,7 @@
 			<_3E v="part index" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Transform vertex buffer" item_name_1="RasterizerVertexWorld" item_name_2="RasterizerVertexWorld" item_name_3="RasterizerVertexWorld" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Transform vertex buffer" item_name_1="RasterizerVertexWorld" item_name_2="RasterizerVertexWorld" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_17 v="position" />
 			<_3E v="half texcoord" />
 			<_3E v="compressed normal" />

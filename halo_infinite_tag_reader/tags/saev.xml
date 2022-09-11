@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::SpartanAbilities::EvadeDefinitionTag" item_name_2="i343::SpartanAbilities::EvadeDefinitionTag" item_name_3="i343::SpartanAbilities::EvadeDefinitionTag" db1="400" db2="0" db3="0" db4="0" db5="1" db6="0" db7="384" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::SpartanAbilities::EvadeDefinitionTag" item_name_2="i343::SpartanAbilities::EvadeDefinitionTag" db1="400" db2="0" db3="0" db4="0" db5="1" db6="0" db7="384" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="data" item_name_3="i343::SpartanAbilities::EvadeDefinition" db1="384" db2="0" db3="17" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="common ability parameters" item_name_3="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
+	<_38 v="data" item_name_1="i343::SpartanAbilities::EvadeDefinition" item_name_2="i343::SpartanAbilities::EvadeDefinition" db1="384" db2="0" db3="17" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="common ability parameters" item_name_1="i343::SpartanAbilities::SpartanAbilityCommonParameters" item_name_2="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
 			<_37 v="common ability parameters" />
 			<_C v="input">
 				<Flag v="Default" />
@@ -72,7 +72,7 @@
 		<_15 v="evade grenade interrupt fraction" />
 		<_36 v="speed function" />
 		<_37 v="speed function" />
-		<_38 v="speed function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="speed function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -80,7 +80,7 @@
 		</_38>
 		<_36 v="speed function scalar" />
 		<_37 v="speed function scalar" />
-		<_38 v="speed function scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="speed function scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
@@ -89,7 +89,7 @@
 		<_25 v="speed modifier values" />
 		<_36 v="ground speed modifier function" />
 		<_37 v="ground speed modifier function" />
-		<_38 v="ground speed modifier function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="ground speed modifier function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -97,7 +97,7 @@
 		</_38>
 		<_36 v="air speed modifier function" />
 		<_37 v="air speed modifier function" />
-		<_38 v="air speed modifier function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="air speed modifier function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -105,7 +105,7 @@
 		</_38>
 		<_36 v="horizontal camera offset function" />
 		<_37 v="horizontal camera offset function" />
-		<_38 v="horizontal camera offset function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="horizontal camera offset function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -113,7 +113,7 @@
 		</_38>
 		<_36 v="camera tilt ROLL function" />
 		<_37 v="camera tilt ROLL function" />
-		<_38 v="camera tilt ROLL function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="camera tilt ROLL function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -121,7 +121,7 @@
 		</_38>
 		<_36 v="camera tilt PITCH function" />
 		<_37 v="camera tilt PITCH function" />
-		<_38 v="camera tilt PITCH function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="camera tilt PITCH function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -129,7 +129,7 @@
 		</_38>
 		<_36 v="FOV delta function" />
 		<_37 v="FOV delta function" />
-		<_38 v="FOV delta function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="FOV delta function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -137,7 +137,7 @@
 		</_38>
 		<_36 v="overlay animation function" />
 		<_37 v="overlay animation function" />
-		<_38 v="overlay animation function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="overlay animation function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />

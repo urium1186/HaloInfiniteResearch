@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_camera_shake_definition" item_name_2="s_camera_shake_definition" item_name_3="s_camera_shake_definition" db1="152" db2="0" db3="0" db4="0" db5="1" db6="0" db7="136" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="s_camera_shake_definition" item_name_2="s_camera_shake_definition" db1="152" db2="0" db3="0" db4="0" db5="1" db6="0" db7="136" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,10 +10,10 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="camera impulse" />
-	<_38 v="camera impulse" item_name_3="s_camera_impulse" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="camera impulse" item_name_1="s_camera_impulse" item_name_2="s_camera_impulse" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_14 v="impulse duration" />
 		<_37 v="Mapping function" />
-		<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />
@@ -25,11 +25,11 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="camera shake" />
-	<_38 v="camera shake" item_name_3="s_camera_shake" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="camera shake" item_name_1="s_camera_shake" item_name_2="s_camera_shake" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_14 v="shake duration" />
 		<_36 v="procedural camera shake" />
 		<_37 v="Mapping function" />
-		<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+		<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 			<_37 v="" />
 			<_42 v="data" />
 			<_37 v="" />

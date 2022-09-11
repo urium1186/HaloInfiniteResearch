@@ -1,17 +1,16 @@
 import codecs
 import io
 import json
+import os.path
 import pathlib
 from collections import OrderedDict
 
-from commons.common_utils import resolvePathFile, map_CUID
+from commons.common_utils import resolvePathFile
 from commons.debug_utils import *
 from configs.config import Config
-from halo_infinite_tag_reader.common_tag_types import readStringInPlace
+
 from halo_infinite_tag_reader.headers.ver.tag import Tag
-from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from halo_infinite_tag_reader.readers.bitmap import Bitmap
-from halo_infinite_tag_reader.readers.generic import Generic
 from halo_infinite_tag_reader.readers.material import Material
 from halo_infinite_tag_reader.readers.materialpalette import MaterialPalette
 from halo_infinite_tag_reader.readers.materialstyles import MaterialStyles
@@ -20,62 +19,10 @@ from halo_infinite_tag_reader.readers.reader_factory import ReaderFactory
 from halo_infinite_tag_reader.readers.render_model import RenderModel
 from halo_infinite_tag_reader.readers.stringlist import StringList
 from halo_infinite_tag_reader.readers.swatch import Swatch
+from halo_infinite_tag_reader.tag_reader_utils import readStringInPlace
 from halo_infinite_tag_reader.varnames import map_alt_name_id
 
-test_path = [
-    '__chore\\pc__\\materials\\generic\\base\\human\\fabric\\oriental_pattern_01\\hum_base_fabric_oriental_pattern_01_normal{pc}.bitmap',
-    '__chore\\pc__\\materials\\generic\\base\\human\\fabric\\oriental_pattern_04\\hum_base_fabric_oriental_pattern_04_normal{pc}.bitmap',
-    '__chore\\pc__\\materials\\generic\\base\\human\\fabric\\oriental_pattern_09\\hum_base_fabric_oriental_pattern_09_normal{pc}.bitmap',
-    '__chore\\pc__\\materials\\generic\\base\\human\\leather\\leather_bomber\\hum_base_leather_bomber_gradientmask{pc}.bitmap',
-    '__chore\\pc__\\materials\\generic\\base\\banished\\grime\\oil_caked_a\\ban_base_grime_oil_caked_a_normal{pc}.bitmap',
-    '__chore\\pc__\\materials\\generic\\base\\banished\\grime\\oil_caked_a\\ban_base_grime_oil_caked_a_rohg{pc}.bitmap',
-    '__chore\\pc__\\materials\\generic\\base\\banished\\grime\\oil_caked_a\\ban_base_grime_oil_caked_a_gradientmask{pc}.bitmap',
-    'materials\\generic\\base\\___blank\\___blank___.materialswatch',
-    'objects\\characters\\spartan_armor\\coatings\\olympus\\oly_mil_stone_green.materialpalette',
-    '__chore\\gen__\\objects\\characters\\spartan_armor\\coatings\\olympus\\olympus_spartan_style{ct}.materialstyles',
-    'objects\\characters\\spartan_armor\\materials\\olympus\\armfor\\armfor_001\\olympus_spartan_l_armfor_001_s001.material',
-    'objects\\characters\\spartans\\spartans.render_model',
-    'objects\\characters\\storm_fp\\storm_fp.render_model',
-    'objects\\weapons\\pistol\\magnum\\magnum.render_model',
-    'objects\\characters\\spartan_armor\\spartan_armor.render_model',
-    '__chore\\gen__\\objects\\characters\\spartan_armor\\coatings\\olympus\\olympus_spartan_style{ct}.materialstyles',
-    '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.model',
-    '__chore\\gen__\\objects\\characters\\spartan_eklund\\cf5c5fd3383d7f8c{g}.model',
-    '__chore\\gen__\\objects\\characters\\marine\\9b04ff325d614e30{g}.model',
-    'objects\\characters\\spartans\\spartans.model',
-    'objects\\characters\\spartans\\spartans.render_model',
-    'objects\\characters\\spartan_armor\\spartan_armor.model',
-    'objects\\characters\\spartan_armor\\spartan_armor.render_model',
-    'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist',
-]
 
-test_path_r = [
-    'objects\\characters\\spartan_armor\\spartan_armor.model',
-    #'__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.model',
-    #'__chore\\gen__\\objects\\characters\\spartan_eklund\\cf5c5fd3383d7f8c{g}.model',
-    'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'
-             ]
-tag_zone_list = {}
-
-filename = 'objects\\characters\\spartans\\spartans.render_model'
-render_model_0 = RenderModel(filename)
-#render_model_0.load()
-
-filename = 'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'
-
-parse_string_list = StringList(filename)
-#parse_string_list.load()
-
-
-filename = '__chore\\gen__\\compositions\\mainmenu_customization\\camera{g}.camera_animation_graph'
-filename = '__chore\\gen__\\compositions\\mainmenu_customization\\mainmenu_customization{trim}.composition'
-filename = 'objects\\characters\\spartan_armor\\spartan_armor.model_animation_graph'
-filename = 'objects\\characters\\storm_masterchief\\damage_effects\\wraith_board_melee.effect'
-#filename = 'objects\\vehicles\\forerunner\\forerunner_vtol\\fx\\boarding\parts\\boarding_bits.particle'
-filename = '__chore\\pc__\\shaders\\default_bitmaps\\arrays\white{pc}.bitmap'
-filename = 'objects\\characters\\spartan_armor\\materials\\olympus\\armfor\\armfor_001\\olympus_spartan_l_armfor_001_s001.material'
-parse = ReaderFactory.create_reader(filename)
-parse.load()
 
 
 def evaluateTag(p_tag):
@@ -164,31 +111,152 @@ def recursiveTags(p_tag: Tag, p_filename: str, p_tag_zone_list, recursive_list: 
         f"{p_tag.ZoneSetInfoHeader.ZoneSetListOffset == p_tag.header.TagReferenceCount == p_tag.header.DependencyCount == 0}"
         , p_tag)
 
+
+
+def run_recursive_in_paths():
+    global p, filename, tag, f, parse_g
+    for p in test_path_r:
+        filename = Config.BASE_UNPACKED_PATH + p
+        tag = None
+        if os.path.exists(filename):
+            with open(filename, 'rb') as f:
+                tag = Tag(f)
+                f.close()
+            parse_g = ReaderFactory.create_reader(filename.replace(Config.BASE_UNPACKED_PATH, ''))
+            parse_g.load()
+            recursiveTags(tag, filename, tag_zone_list, r_path_list, count)
+        else:
+            print(f'no existe {filename}')
+
+
+
+""""""
+
+
+def run_in_paths():
+    global p, filename, tag, f, parse_g
+    for p in test_path:
+        filename = Config.BASE_UNPACKED_PATH + p
+        tag = None
+        if os.path.exists(filename):
+            with open(filename, 'rb') as f:
+                tag = Tag(f)
+                f.close()
+            parse_g = ReaderFactory.create_reader(filename.replace(Config.BASE_UNPACKED_PATH, ''))
+            parse_g.load()
+            key = filename.split('\\')[-1]
+            # int_hash = getMmr3HashIntFrom(key)
+            if not r_path_list.__contains__(key):
+                r_path_list.append(key)
+            if evaluateTag(tag):
+                continue
+        else:
+            print(f'no existe {filename}')
+
+
+
+filename = '__chore\\gen__\\compositions\\mainmenu_customization\\camera{g}.camera_animation_graph'
+filename = '__chore\\gen__\\compositions\\mainmenu_customization\\mainmenu_customization{trim}.composition'
+filename = 'objects\\characters\\spartan_armor\\spartan_armor.model_animation_graph'
+filename = 'objects\\characters\\storm_masterchief\\damage_effects\\wraith_board_melee.effect'
+#filename = 'objects\\vehicles\\forerunner\\forerunner_vtol\\fx\\boarding\parts\\boarding_bits.particle'
+filename = '__chore\\pc__\\shaders\\default_bitmaps\\arrays\white{pc}.bitmap'
+
+filename = 'objects\\characters\\spartan_armor\\spartan_armor.model_animation_graph'
+filename = 'objects\\coatings\\materials\\cvw_7_layered.material'
+
+#
+filename = '__chore\\gen__\\objects\\characters\\spartan_armor\\coatings\\olympus\\olympus_spartan_style{ct}.materialstyles'
+filename = '__chore\\gen__\\shaders\\bytecode\\3a4\\f04d0c92e2c0fb434bcbbadaa51bc.shader_root_signature'
+filename = '__chore\\gen__\\shaders\\bytecode\\ffe\\9549cd680282f0b704a503b96b920_pc.shader_bytecode'
+filename = 'objects\\weapons\\pistol\\magnum\\magnum.render_model'
+filename = '__chore\\gen__\\pc__\\shaders\\surfaces\\cvw\\matsys\\cvw_matsys_l7{10}_448{pc}.shadervariant'
+
+filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.render_model'
+filename = '__chore\\gen__\\objects\\characters\\spartan_eklund\\cf5c5fd3383d7f8c{g}.render_model'
+filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
+filename = 'objects\\characters\\spartan_armor\\materials\\olympus\\armfor\\armfor_001\\olympus_spartan_l_armfor_001_s001.material'
+parse = ReaderFactory.create_reader(filename)
+parse.load_recursive = True
+parse.load()
+print(filename)
+exit()
+test_path = [
+    '__chore\\gen__\\compositions\\mainmenu_customization\\camera{g}.camera_animation_graph',
+    '__chore\\gen__\\compositions\\mainmenu_customization\\mainmenu_customization{trim}.composition',
+    'objects\\characters\\spartan_armor\\spartan_armor.model_animation_graph',
+    'objects\\characters\\storm_masterchief\\damage_effects\\wraith_board_melee.effect',
+    'objects\\vehicles\\forerunner\\forerunner_vtol\\fx\\boarding\parts\\boarding_bits.particle',
+    '__chore\\pc__\\shaders\\default_bitmaps\\arrays\white{pc}.bitmap',
+    'objects\\characters\\spartan_armor\\materials\\olympus\\armfor\\armfor_001\\olympus_spartan_l_armfor_001_s001.material',
+    'objects\\characters\\spartan_armor\\spartan_armor.model_animation_graph',
+    'objects\\coatings\\materials\\cvw_7_layered.material',
+
+    '__chore\\gen__\\pc__\\shaders\\surfaces\\cvw\\matsys\\cvw_matsys_l7{10}_448{pc}.shadervariant',
+    '__chore\\gen__\\objects\\characters\\spartan_armor\\coatings\\olympus\\olympus_spartan_style{ct}.materialstyles',
+    '__chore\\gen__\\shaders\\bytecode\\3a4\\f04d0c92e2c0fb434bcbbadaa51bc.shader_root_signature',
+    '__chore\\gen__\\shaders\\bytecode\\ffe\\9549cd680282f0b704a503b96b920_pc.shader_bytecode',
+    'objects\\weapons\\pistol\\magnum\\magnum.render_model',
+
+    '__chore\\gen__\\shaders\\bytecode\\ffe\\9549cd680282f0b704a503b96b920_pc.shader_bytecode',
+    '__chore\\pc__\\materials\\generic\\base\\human\\fabric\\oriental_pattern_01\\hum_base_fabric_oriental_pattern_01_normal{pc}.bitmap',
+    '__chore\\pc__\\materials\\generic\\base\\human\\fabric\\oriental_pattern_04\\hum_base_fabric_oriental_pattern_04_normal{pc}.bitmap',
+    '__chore\\pc__\\materials\\generic\\base\\human\\fabric\\oriental_pattern_09\\hum_base_fabric_oriental_pattern_09_normal{pc}.bitmap',
+    '__chore\\pc__\\materials\\generic\\base\\human\\leather\\leather_bomber\\hum_base_leather_bomber_gradientmask{pc}.bitmap',
+    '__chore\\pc__\\materials\\generic\\base\\banished\\grime\\oil_caked_a\\ban_base_grime_oil_caked_a_normal{pc}.bitmap',
+    '__chore\\pc__\\materials\\generic\\base\\banished\\grime\\oil_caked_a\\ban_base_grime_oil_caked_a_rohg{pc}.bitmap',
+    '__chore\\pc__\\materials\\generic\\base\\banished\\grime\\oil_caked_a\\ban_base_grime_oil_caked_a_gradientmask{pc}.bitmap',
+    'materials\\generic\\base\\___blank\\___blank___.materialswatch',
+    'objects\\characters\\spartan_armor\\coatings\\olympus\\oly_mil_stone_green.materialpalette',
+    '__chore\\gen__\\objects\\characters\\spartan_armor\\coatings\\olympus\\olympus_spartan_style{ct}.materialstyles',
+    'objects\\characters\\spartan_armor\\materials\\olympus\\armfor\\armfor_001\\olympus_spartan_l_armfor_001_s001.material',
+    'objects\\characters\\spartans\\spartans.render_model',
+    'objects\\characters\\storm_fp\\storm_fp.render_model',
+    'objects\\weapons\\pistol\\magnum\\magnum.render_model',
+    'objects\\characters\\spartan_armor\\spartan_armor.render_model',
+    '__chore\\gen__\\objects\\characters\\spartan_armor\\coatings\\olympus\\olympus_spartan_style{ct}.materialstyles',
+    '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.model',
+    '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.render_model',
+    '__chore\\gen__\\objects\\characters\\spartan_eklund\\cf5c5fd3383d7f8c{g}.model',
+    '__chore\\gen__\\objects\\characters\\marine\\9b04ff325d614e30{g}.model',
+    'objects\\characters\\spartans\\spartans.model',
+    'objects\\characters\\spartans\\spartans.render_model',
+    'objects\\characters\\spartan_armor\\spartan_armor.model',
+    'objects\\characters\\spartan_armor\\spartan_armor.render_model',
+    'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist',
+]
+
+test_path_r = [
+    'objects\\characters\\spartan_armor\\spartan_armor.model',
+    #'objects\\characters\\spartans\\spartans.model',
+    #'objects\\characters\\storm_fp\\storm_fp.model',
+    'objects\\weapons\\pistol\\magnum\\magnum.render_model',
+    '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.model',
+    #'__chore\\gen__\\objects\\characters\\spartan_eklund\\cf5c5fd3383d7f8c{g}.model',
+    'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'
+             ]
+tag_zone_list = {}
+
+filename = 'objects\\characters\\spartans\\spartans.render_model'
+render_model_0 = RenderModel(filename)
+#render_model_0.load()
+
+filename = 'ui\\strings\\_olympus\\menus\\inspect_player_armor.stringlist'
+
+parse_string_list = StringList(filename)
+#parse_string_list.load()
+
+
+
+
+
 r_path_list = []
 count = []
 
 
-for p in test_path_r:
-    filename = Config.BASE_UNPACKED_PATH + p
-    tag = None
-    with open(filename, 'rb') as f:
-        tag = Tag(f)
-        f.close()
-    recursiveTags(tag, filename, tag_zone_list, r_path_list,count)
-""""""
-for p in test_path:
-    filename = Config.BASE_UNPACKED_PATH + p
-    tag = None
-    with open(filename, 'rb') as f:
-        tag = Tag(f)
-        f.close()
-    key = filename.split('\\')[-1]
-    # int_hash = getMmr3HashIntFrom(key)
-    if not r_path_list.__contains__(key):
-        r_path_list.append(key)
-    if evaluateTag(tag):
-        continue
 
+run_in_paths()
+run_recursive_in_paths()
 # search_regions_names()
 """
 #print(' Scale data Block : ' + getGUID('ACFD51FE7847FF625430C3A86CA923A0'))
@@ -378,7 +446,7 @@ for path in pathlib.Path(Config.SPARTAN_STYLE_PATH).rglob('*spartan_style{ct}.ma
     with open(path, 'rb') as f:
         filename = str(path).replace(Config.BASE_UNPACKED_PATH, '')
 
-        parse_mwsy = MaterialStyles(filename)
+        parse_mwsy = ReaderFactory.create_reader(filename)
         parse_mwsy.load()
         ##print("------------------------" + dict_core[path.stem] + "------------------------")
 

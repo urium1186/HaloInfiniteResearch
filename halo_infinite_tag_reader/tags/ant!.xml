@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="antenna_definition" item_name_2="antenna_definition" item_name_3="antenna_definition" db1="128" db2="0" db3="0" db4="0" db5="1" db6="0" db7="112" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="antenna_definition" item_name_2="antenna_definition" db1="128" db2="0" db3="0" db4="0" db5="1" db6="0" db7="112" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -20,7 +20,7 @@
 	<_14 v="starting bend" />
 	<_14 v="ending bend" />
 	<_14 v="runtime total length" />
-	<_40 v="vertices" item_name_1="antenna_vertex" item_name_2="antenna_vertex" item_name_3="antenna_vertex" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+	<_40 v="vertices" item_name_1="antenna_vertex" item_name_2="antenna_vertex" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 		<_1B v="angles" />
 		<_14 v="length" />
 		<_5 v="sequence index" />

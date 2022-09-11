@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_simulation_interpolation_definition" item_name_2="s_simulation_interpolation_definition" item_name_3="s_simulation_interpolation_definition" db1="304" db2="0" db3="0" db4="0" db5="0" db6="0" db7="288" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="s_simulation_interpolation_definition" item_name_2="s_simulation_interpolation_definition" db1="304" db2="0" db3="0" db4="0" db5="0" db6="0" db7="288" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -21,13 +21,13 @@
 	<_37 v="" />
 	<_37 v="" />
 	<_37 v="Position while controlled" />
-	<_38 v="position_while_controlled" item_name_3="s_simulation_single_domain_interpolation_configuration" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_38 v="position_while_controlled" item_name_1="s_simulation_single_domain_interpolation_configuration" item_name_2="s_simulation_single_domain_interpolation_configuration" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_36 v="SINGLE DOMAIN INTERPOLATION" />
 		<_14 v="discrepancy_threshold_above_which_we_use_blending" />
 		<_14 v="coming_to_rest_speed" />
 		<_14 v="coming_to_rest_maximum_ignorable_error" />
 		<_37 v="Velocity bumps" />
-		<_38 v="velocity bumps" item_name_3="s_simulation_single_domain_velocity_bumps_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="velocity bumps" item_name_1="s_simulation_single_domain_velocity_bumps_configuration" item_name_2="s_simulation_single_domain_velocity_bumps_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="SINGLE DOMAIN VELOCITY BUMPS" />
 			<_F v="flags">
 				<Flag v="manual" />
@@ -43,7 +43,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="Blending" />
-		<_38 v="blending" item_name_3="s_simulation_single_domain_blending_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="blending" item_name_1="s_simulation_single_domain_blending_configuration" item_name_2="s_simulation_single_domain_blending_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="SINGLE DOMAIN BLENDING CONFIGURATION" />
 			<_14 v="min_object_speed" />
 			<_14 v="max_object_speed" />
@@ -58,13 +58,13 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Rotation while controlled" />
-	<_38 v="rotation_while_controlled" item_name_3="s_simulation_single_domain_interpolation_configuration" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_38 v="rotation_while_controlled" item_name_1="s_simulation_single_domain_interpolation_configuration" item_name_2="s_simulation_single_domain_interpolation_configuration" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_36 v="SINGLE DOMAIN INTERPOLATION" />
 		<_14 v="discrepancy_threshold_above_which_we_use_blending" />
 		<_14 v="coming_to_rest_speed" />
 		<_14 v="coming_to_rest_maximum_ignorable_error" />
 		<_37 v="Velocity bumps" />
-		<_38 v="velocity bumps" item_name_3="s_simulation_single_domain_velocity_bumps_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="velocity bumps" item_name_1="s_simulation_single_domain_velocity_bumps_configuration" item_name_2="s_simulation_single_domain_velocity_bumps_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="SINGLE DOMAIN VELOCITY BUMPS" />
 			<_F v="flags">
 				<Flag v="manual" />
@@ -80,7 +80,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="Blending" />
-		<_38 v="blending" item_name_3="s_simulation_single_domain_blending_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="blending" item_name_1="s_simulation_single_domain_blending_configuration" item_name_2="s_simulation_single_domain_blending_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="SINGLE DOMAIN BLENDING CONFIGURATION" />
 			<_14 v="min_object_speed" />
 			<_14 v="max_object_speed" />
@@ -95,13 +95,13 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Position while not controlled" />
-	<_38 v="position_while_uncontrolled" item_name_3="s_simulation_single_domain_interpolation_configuration" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_38 v="position_while_uncontrolled" item_name_1="s_simulation_single_domain_interpolation_configuration" item_name_2="s_simulation_single_domain_interpolation_configuration" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_36 v="SINGLE DOMAIN INTERPOLATION" />
 		<_14 v="discrepancy_threshold_above_which_we_use_blending" />
 		<_14 v="coming_to_rest_speed" />
 		<_14 v="coming_to_rest_maximum_ignorable_error" />
 		<_37 v="Velocity bumps" />
-		<_38 v="velocity bumps" item_name_3="s_simulation_single_domain_velocity_bumps_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="velocity bumps" item_name_1="s_simulation_single_domain_velocity_bumps_configuration" item_name_2="s_simulation_single_domain_velocity_bumps_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="SINGLE DOMAIN VELOCITY BUMPS" />
 			<_F v="flags">
 				<Flag v="manual" />
@@ -117,7 +117,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="Blending" />
-		<_38 v="blending" item_name_3="s_simulation_single_domain_blending_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="blending" item_name_1="s_simulation_single_domain_blending_configuration" item_name_2="s_simulation_single_domain_blending_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="SINGLE DOMAIN BLENDING CONFIGURATION" />
 			<_14 v="min_object_speed" />
 			<_14 v="max_object_speed" />
@@ -132,13 +132,13 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Rotation while not controlled" />
-	<_38 v="rotation_while_uncontrolled" item_name_3="s_simulation_single_domain_interpolation_configuration" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_38 v="rotation_while_uncontrolled" item_name_1="s_simulation_single_domain_interpolation_configuration" item_name_2="s_simulation_single_domain_interpolation_configuration" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_36 v="SINGLE DOMAIN INTERPOLATION" />
 		<_14 v="discrepancy_threshold_above_which_we_use_blending" />
 		<_14 v="coming_to_rest_speed" />
 		<_14 v="coming_to_rest_maximum_ignorable_error" />
 		<_37 v="Velocity bumps" />
-		<_38 v="velocity bumps" item_name_3="s_simulation_single_domain_velocity_bumps_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="velocity bumps" item_name_1="s_simulation_single_domain_velocity_bumps_configuration" item_name_2="s_simulation_single_domain_velocity_bumps_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="SINGLE DOMAIN VELOCITY BUMPS" />
 			<_F v="flags">
 				<Flag v="manual" />
@@ -154,7 +154,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="Blending" />
-		<_38 v="blending" item_name_3="s_simulation_single_domain_blending_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="blending" item_name_1="s_simulation_single_domain_blending_configuration" item_name_2="s_simulation_single_domain_blending_configuration" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_36 v="SINGLE DOMAIN BLENDING CONFIGURATION" />
 			<_14 v="min_object_speed" />
 			<_14 v="max_object_speed" />

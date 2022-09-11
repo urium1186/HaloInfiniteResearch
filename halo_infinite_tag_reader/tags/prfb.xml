@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="structure_prefab" item_name_2="structure_prefab" item_name_3="structure_prefab" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="48" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="structure_prefab" item_name_2="structure_prefab" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="48" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,9 +10,9 @@
 		<_3B v="" />
 	</_38>
 	<_41 v="bsp reference" />
-	<_40 v="material overrides" item_name_1="PrefabMaterialOverrideVariant" item_name_2="PrefabMaterialOverrideVariant" item_name_3="PrefabMaterialOverrideVariant" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="material overrides" item_name_1="PrefabMaterialOverrideVariant" item_name_2="PrefabMaterialOverrideVariant" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="material override variant name" />
-		<_40 v="material override entries" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" item_name_3="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="material override entries" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Original material ref" />
 			<_41 v="Override material ref" />
 			<_3B v="" />

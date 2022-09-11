@@ -17,6 +17,8 @@ class Generic(BaseTemplate):
 
         if tag_group != '':
             super().__init__(filename, tag_group)
+        else:
+            raise Exception('No tag group')
 
 
     def load(self):

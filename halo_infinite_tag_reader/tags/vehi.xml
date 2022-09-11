@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="VehicleDefinition" item_name_2="VehicleDefinition" item_name_3="VehicleDefinition" db1="4336" db2="0" db3="0" db4="0" db5="1" db6="0" db7="880" db8="3379">
-	<_38 v="unit" item_name_3="UnitDefinition" db1="3456" db2="0" db3="18" db4="0" db5="1" db6="0" db7="1736" db8="3379">
-		<_38 v="object" item_name_3="ObjectDefinition" db1="1720" db2="0" db3="36" db4="0" db5="1" db6="0" db7="1704" db8="3379">
-			<_38 v="AnyTag" item_name_3="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-				<_7 v="" />
-				<_38 v="" item_name_3="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-					<_6 v="" />
-					<_34 v="" length="4" />
+<root item_name_1="VehicleDefinition" item_name_2="VehicleDefinition" db1="4336" db2="0" db3="0" db4="0" db5="1" db6="0" db7="880" db8="3379">
+	<_38 v="unit" item_name_1="UnitDefinition" item_name_2="UnitDefinition" db1="3456" db2="0" db3="18" db4="0" db5="1" db6="0" db7="1736" db8="3379">
+		<_38 v="object" item_name_1="ObjectDefinition" item_name_2="ObjectDefinition" db1="1720" db2="0" db3="36" db4="0" db5="1" db6="0" db7="1704" db8="3379">
+			<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+				<_7 v="vtable space" />
+				<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_6 v="global tag ID" />
+					<_34 v="local tag handle" length="4" />
 					<_3B v="" />
 				</_38>
 				<_3B v="" />
@@ -100,7 +100,7 @@
 				<Flag v="Ignore overlapping active objects for collision" />
 			</_F>
 			<_37 v="" />
-			<_38 v="impact audio" item_name_3="ImpactAudioDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="impact audio" item_name_1="ImpactAudioDefinition" item_name_2="ImpactAudioDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_37 v="IMPACT AUDIO" />
 				<_14 v="small impact minimum speed" />
 				<_14 v="medium impact minimum speed" />
@@ -110,7 +110,7 @@
 				<_3B v="" />
 			</_38>
 			<_3E v="runtime flags" />
-			<_40 v="source sidecar" item_name_1="SidecarPathDefinition" item_name_2="SidecarPathDefinition" item_name_3="SidecarPathDefinition" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="source sidecar" item_name_1="SidecarPathDefinition" item_name_2="SidecarPathDefinition" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="sidecar path" />
 				<_3B v="" />
 			</_40>
@@ -121,14 +121,14 @@
 			<_41 v="frame" />
 			<_41 v="crate object" />
 			<_36 v="Damage Source" />
-			<_38 v="damageSource" item_name_3="i343::Damage::DamageSourceDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="damageSource" item_name_1="i343::Damage::DamageSourceDefinition" item_name_2="i343::Damage::DamageSourceDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="Damage Source Name" />
 				<_3B v="" />
 			</_38>
 			<_14 v="navpoint vertical offset" />
 			<_36 v="only set this tag if you want to override the default collision damage values in globals.globals" />
 			<_41 v="collision damage" />
-			<_40 v="early mover OBB" item_name_1="s_object_early_mover_obb_definition" item_name_2="s_object_early_mover_obb_definition" item_name_3="s_object_early_mover_obb_definition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="929">
+			<_40 v="early mover OBB" item_name_1="s_object_early_mover_obb_definition" item_name_2="s_object_early_mover_obb_definition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="929">
 				<_2 v="node name" />
 				<_6 v="runtime node index" />
 				<_14 v="x0" />
@@ -153,7 +153,7 @@
 			<_14 v="kill on first contact or damage after time" />
 			<_14 v="self-destruct time" />
 			<_14 v="self-destruct time max" />
-			<_40 v="ai properties" item_name_1="object_ai_properties" item_name_2="object_ai_properties" item_name_3="object_ai_properties" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_40 v="ai properties" item_name_1="object_ai_properties" item_name_2="object_ai_properties" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
 				<_D v="ai flags">
 					<Flag v="detroyable cover" />
 					<Flag v="pathfinding ignore when dead" />
@@ -195,7 +195,7 @@
 				</_F>
 				<_34 v="generated_pad9518" length="3" />
 				<_36 v="Heat Override" />
-				<_40 v="override heat generated per round" item_name_1="i343::Weapon::AIHeatGeneratedPerRoundOverrideParam" item_name_2="i343::Weapon::AIHeatGeneratedPerRoundOverrideParam" item_name_3="i343::Weapon::AIHeatGeneratedPerRoundOverrideParam" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="override heat generated per round" item_name_1="i343::Weapon::AIHeatGeneratedPerRoundOverrideParam" item_name_2="i343::Weapon::AIHeatGeneratedPerRoundOverrideParam" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_14 v="heat generated per round override (easy)" />
 					<_14 v="heat generated per round override (normal)" />
 					<_14 v="heat generated per round override (heroic)" />
@@ -205,7 +205,7 @@
 				<_14 v="Actor LOD cost" />
 				<_3B v="" />
 			</_40>
-			<_40 v="functions" item_name_1="s_object_function_definition" item_name_2="s_object_function_definition" item_name_3="s_object_function_definition" db1="88" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2359">
+			<_40 v="functions" item_name_1="s_object_function_definition" item_name_2="s_object_function_definition" db1="88" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2359">
 				<_D v="flags">
 					<Flag v="invert" />
 					<Flag v="mapping does not controls active" />
@@ -223,7 +223,7 @@
 				<_14 v="min value" />
 				<_14 v="max value" />
 				<_37 v="default function" />
-				<_38 v="default function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="default function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -236,7 +236,7 @@
 					<Flag v="third person" />
 				</_A>
 				<_34 v="generated_pad73a4" length="3" />
-				<_40 v="interpolation" item_name_1="s_object_function_interpolation_definition" item_name_2="s_object_function_interpolation_definition" item_name_3="s_object_function_interpolation_definition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="interpolation" item_name_1="s_object_function_interpolation_definition" item_name_2="s_object_function_interpolation_definition" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_C v="interpolation mode">
 						<Flag v="constant velocity" />
 						<Flag v="linear acceleration" />
@@ -255,21 +255,21 @@
 				<_3B v="" />
 			</_40>
 			<_6 v="num predicted runtime interpolator functions" />
-			<_40 v="runtime interpolator functions" item_name_1="ObjectRuntimeInterpolatorFunctionsBlock" item_name_2="ObjectRuntimeInterpolatorFunctionsBlock" item_name_3="ObjectRuntimeInterpolatorFunctionsBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="runtime interpolator functions" item_name_1="ObjectRuntimeInterpolatorFunctionsBlock" item_name_2="ObjectRuntimeInterpolatorFunctionsBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_6 v="runtime interpolator to object function mapping" />
 				<_3B v="" />
 			</_40>
-			<_40 v="function switches" item_name_1="ObjectFunctionSwitchDefinition" item_name_2="ObjectFunctionSwitchDefinition" item_name_3="ObjectFunctionSwitchDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="function switches" item_name_1="ObjectFunctionSwitchDefinition" item_name_2="ObjectFunctionSwitchDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="switch function name" />
 				<_2 v="export name" />
-				<_40 v="switched functions" item_name_1="ObjectFunctionSwitchDefinition::Function" item_name_2="ObjectFunctionSwitchDefinition::Function" item_name_3="ObjectFunctionSwitchDefinition::Function" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="switched functions" item_name_1="ObjectFunctionSwitchDefinition::Function" item_name_2="ObjectFunctionSwitchDefinition::Function" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_25 v="selection bounds" />
 					<_2 v="function name" />
 					<_3B v="" />
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="functions forwarded to parent" item_name_1="i343::Objects::ObjectFunctionForwarding" item_name_2="i343::Objects::ObjectFunctionForwarding" item_name_3="i343::Objects::ObjectFunctionForwarding" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="functions forwarded to parent" item_name_1="i343::Objects::ObjectFunctionForwarding" item_name_2="i343::Objects::ObjectFunctionForwarding" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_36 v="Object Function Forwarding" />
 				<_2 v="function to forward" />
 				<_3B v="" />
@@ -286,7 +286,7 @@
 				<Flag v="No automatic refill" />
 			</_F>
 			<_34 v="generated_pad33a9" length="1" />
-			<_40 v="Ammo Refill Variant Flags" item_name_1="i343::Objects::AmmoRefillVariant" item_name_2="i343::Objects::AmmoRefillVariant" item_name_3="i343::Objects::AmmoRefillVariant" db1="8" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Ammo Refill Variant Flags" item_name_1="i343::Objects::AmmoRefillVariant" item_name_2="i343::Objects::AmmoRefillVariant" db1="8" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="variant name" />
 				<_E v="Ammo Refill Flags">
 					<Flag v="None" />
@@ -333,19 +333,19 @@
 			<_37 v="Customization" />
 			<_2 v="customization set" />
 			<_37 v="" />
-			<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" item_name_3="object_attachment_definition" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="name" />
 				<_41 v="type" />
 				<_41 v="tag graph output" />
 				<_2 v="output node name" />
-				<_40 v="tag graph float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" item_name_3="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="tag graph float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="name" />
 					<_14 v="value" />
 					<_3B v="" />
 				</_40>
 				<_41 v="override type" />
 				<_36 v="variant names" />
-				<_40 v="variant names" item_name_1="i343::Objects::AttachmentVariantName" item_name_2="i343::Objects::AttachmentVariantName" item_name_3="i343::Objects::AttachmentVariantName" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="variant names" item_name_1="i343::Objects::AttachmentVariantName" item_name_2="i343::Objects::AttachmentVariantName" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="variant name" />
 					<_3B v="" />
 				</_40>
@@ -369,14 +369,14 @@
 				<_2 v="secondary scale" />
 				<_3B v="" />
 			</_40>
-			<_40 v="indirect lighting data" item_name_1="object_indirect_lighting_settings_definition" item_name_2="object_indirect_lighting_settings_definition" item_name_3="object_indirect_lighting_settings_definition" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_40 v="indirect lighting data" item_name_1="object_indirect_lighting_settings_definition" item_name_2="object_indirect_lighting_settings_definition" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 				<_2 v="Name" />
-				<_40 v="Variant names" item_name_1="i343::Objects::AttachmentVariantName" item_name_2="i343::Objects::AttachmentVariantName" item_name_3="i343::Objects::AttachmentVariantName" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="Variant names" item_name_1="i343::Objects::AttachmentVariantName" item_name_2="i343::Objects::AttachmentVariantName" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="variant name" />
 					<_3B v="" />
 				</_40>
 				<_41 v="Object Lightmap" />
-				<_40 v="Object Cubemap set" item_name_1="CubemapVolume" item_name_2="CubemapVolume" item_name_3="CubemapVolume" db1="284" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="2355">
+				<_40 v="Object Cubemap set" item_name_1="CubemapVolume" item_name_2="CubemapVolume" db1="284" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="2355">
 					<_2 v="Name" />
 					<_D v="Flags">
 						<Flag v="Enable Intensity Correction" />
@@ -384,12 +384,12 @@
 						<Flag v="Affects Adjacent Bsps" />
 						<Flag v="Capture Dynamic Objects" />
 					</_D>
-					<_38 v="Dumpling" item_name_3="s_scenario_dumpling" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
-						<_40 v="inner points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" item_name_3="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_38 v="Dumpling" item_name_1="s_scenario_dumpling" item_name_2="s_scenario_dumpling" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+						<_40 v="inner points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_17 v="position" />
 							<_3B v="" />
 						</_40>
-						<_40 v="outer points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" item_name_3="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_40 v="outer points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 							<_17 v="position" />
 							<_3B v="" />
 						</_40>
@@ -422,7 +422,7 @@
 					</_B>
 					<_17 v="Intensity" />
 					<_14 v="Self-illum Scale Down" />
-					<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 						<_1 v="folder name" />
 						<_17 v="local space pivot point position" />
 						<_3B v="" />
@@ -450,7 +450,7 @@
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="hull surfaces" item_name_1="s_water_physics_hull_surface_definition" item_name_2="s_water_physics_hull_surface_definition" item_name_3="s_water_physics_hull_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_40 v="hull surfaces" item_name_1="s_water_physics_hull_surface_definition" item_name_2="s_water_physics_hull_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 				<_E v="flags">
 					<Flag v="works on land" />
 					<Flag v="effects only" />
@@ -459,13 +459,13 @@
 				<_37 v="" />
 				<_2 v="marker name" />
 				<_14 v="radius" />
-				<_40 v="drag" item_name_1="s_water_physics_drag_override" item_name_2="s_water_physics_drag_override" item_name_3="s_water_physics_drag_override" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="drag" item_name_1="s_water_physics_drag_override" item_name_2="s_water_physics_drag_override" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_2 v="material" />
-					<_38 v="drag" item_name_3="s_water_physics_drag_properties" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="drag" item_name_1="s_water_physics_drag_properties" item_name_2="s_water_physics_drag_properties" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_37 v="Pressure" />
-						<_38 v="pressure" item_name_3="s_physics_force_function" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="pressure" item_name_1="s_physics_force_function" item_name_2="s_physics_force_function" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 							<_37 v="velocity to force" />
-							<_38 v="velocity to pressure" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+							<_38 v="velocity to pressure" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 								<_37 v="" />
 								<_42 v="data" />
 								<_37 v="" />
@@ -476,9 +476,9 @@
 						</_38>
 						<_37 v="" />
 						<_37 v="Suction" />
-						<_38 v="suction" item_name_3="s_physics_force_function" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="suction" item_name_1="s_physics_force_function" item_name_2="s_physics_force_function" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 							<_37 v="velocity to force" />
-							<_38 v="velocity to pressure" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+							<_38 v="velocity to pressure" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 								<_37 v="" />
 								<_42 v="data" />
 								<_37 v="" />
@@ -496,7 +496,7 @@
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="jetwash" item_name_1="s_jetwash_definition" item_name_2="s_jetwash_definition" item_name_3="s_jetwash_definition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="jetwash" item_name_1="s_jetwash_definition" item_name_2="s_jetwash_definition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_37 v="" />
 				<_2 v="marker name" />
 				<_14 v="radius" />
@@ -507,19 +507,19 @@
 				<_14 v="particle offset" />
 				<_3B v="" />
 			</_40>
-			<_40 v="widgets" item_name_1="object_definition_widget" item_name_2="object_definition_widget" item_name_3="object_definition_widget" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="widgets" item_name_1="object_definition_widget" item_name_2="object_definition_widget" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="type" />
 				<_3B v="" />
 			</_40>
-			<_40 v="change colors" item_name_1="object_change_color_definition" item_name_2="object_change_color_definition" item_name_3="object_change_color_definition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-				<_40 v="initial permutations" item_name_1="object_change_color_initial_permutation" item_name_2="object_change_color_initial_permutation" item_name_3="object_change_color_initial_permutation" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="change colors" item_name_1="object_change_color_definition" item_name_2="object_change_color_definition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_40 v="initial permutations" item_name_1="object_change_color_initial_permutation" item_name_2="object_change_color_initial_permutation" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_14 v="weight" />
 					<_1F v="color lower bound" />
 					<_1F v="color upper bound" />
 					<_2 v="variant name" />
 					<_3B v="" />
 				</_40>
-				<_40 v="functions" item_name_1="object_change_color_function" item_name_2="object_change_color_function" item_name_3="object_change_color_function" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="functions" item_name_1="object_change_color_function" item_name_2="object_change_color_function" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_D v="scale flags">
 						<Flag v="blend in hsv" />
 						<Flag v="...more colors" />
@@ -532,7 +532,7 @@
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="multiplayer object" item_name_1="s_multiplayer_object_properties_definition" item_name_2="s_multiplayer_object_properties_definition" item_name_3="s_multiplayer_object_properties_definition" db1="288" db2="0" db3="3" db4="0" db5="1" db6="2" db7="0" db8="2353">
+			<_40 v="multiplayer object" item_name_1="s_multiplayer_object_properties_definition" item_name_2="s_multiplayer_object_properties_definition" db1="288" db2="0" db3="3" db4="0" db5="1" db6="2" db7="0" db8="2353">
 				<_36 v="TYPE AND FLAGS" />
 				<_A v="type">
 					<Flag v="ordinary" />
@@ -621,10 +621,10 @@
 				</_D>
 				<_36 v="RESPAWN ZONE DATA" />
 				<_14 v="normal weight" />
-				<_40 v="falloff function" item_name_1="SpawnInfluenceWeightFalloffFunctionBlock" item_name_2="SpawnInfluenceWeightFalloffFunctionBlock" item_name_3="SpawnInfluenceWeightFalloffFunctionBlock" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-					<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="falloff function" item_name_1="SpawnInfluenceWeightFalloffFunctionBlock" item_name_2="SpawnInfluenceWeightFalloffFunctionBlock" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_37 v="function" />
-						<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+						<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 							<_37 v="" />
 							<_42 v="data" />
 							<_37 v="" />
@@ -697,7 +697,7 @@
 				<_34 v="generated_pad048e" length="3" />
 				<_3B v="" />
 			</_40>
-			<_40 v="Forge data" item_name_1="i343::Objects::ForgeObjectEntryDefinition" item_name_2="i343::Objects::ForgeObjectEntryDefinition" item_name_3="i343::Objects::ForgeObjectEntryDefinition" db1="84" db2="0" db3="4" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="Forge data" item_name_1="i343::Objects::ForgeObjectEntryDefinition" item_name_2="i343::Objects::ForgeObjectEntryDefinition" db1="84" db2="0" db3="4" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="Palette" />
 				<_2 v="Name" />
 				<_2 v="Description" />
@@ -709,24 +709,24 @@
 			</_40>
 			<_41 v="simulation_interpolation" />
 			<_41 v="authority trust settings" />
-			<_40 v="spawn effects" item_name_1="s_object_spawn_effects" item_name_2="s_object_spawn_effects" item_name_3="s_object_spawn_effects" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="spawn effects" item_name_1="s_object_spawn_effects" item_name_2="s_object_spawn_effects" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_36 v="Spawn Effects" />
 				<_41 v="multiplayer spawn effect" />
 				<_41 v="campaign spawn effect" />
 				<_3B v="" />
 			</_40>
-			<_40 v="model dissolve data" item_name_1="ModelDissolveDataBlock" item_name_2="ModelDissolveDataBlock" item_name_3="ModelDissolveDataBlock" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="model dissolve data" item_name_1="ModelDissolveDataBlock" item_name_2="ModelDissolveDataBlock" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="model dissolve data" />
 				<_3B v="" />
 			</_40>
 			<_1 v="class name" />
-			<_40 v="script tagalongs" item_name_1="HsReferencesBlock" item_name_2="HsReferencesBlock" item_name_3="HsReferencesBlock" db1="28" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="script tagalongs" item_name_1="HsReferencesBlock" item_name_2="HsReferencesBlock" db1="28" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="reference" />
 				<_3B v="" />
 			</_40>
 			<_41 v="prototype script" />
 			<_36 v="Object Abandoment" />
-			<_38 v="object abandonment" item_name_3="ObjectAbandonmentDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="object abandonment" item_name_1="ObjectAbandonmentDefinition" item_name_2="ObjectAbandonmentDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Vitality Limit To Start Countdown" />
 				<_14 v="Countdown Time In Seconds" />
 				<_F v="flags">
@@ -736,19 +736,19 @@
 				<_34 v="generated_pade8bf" length="3" />
 				<_3B v="" />
 			</_38>
-			<_40 v="Designer Metadata" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" item_name_3="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Designer Metadata" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="meta label" />
 				<_3B v="" />
 			</_40>
 			<_36 v="Object Function Smoothing" />
-			<_40 v="Object Sound RTPCs" item_name_1="SoundRTPCBlockDefinition" item_name_2="SoundRTPCBlockDefinition" item_name_3="SoundRTPCBlockDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="417">
+			<_40 v="Object Sound RTPCs" item_name_1="SoundRTPCBlockDefinition" item_name_2="SoundRTPCBlockDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="417">
 				<_30 v="Attachment Index" />
 				<_2 v="Function" />
 				<_2 v="RTPC Name" />
 				<_6 v="RTPC name hash value" />
 				<_3B v="" />
 			</_40>
-			<_40 v="Object Sound Sweeteners" item_name_1="SoundSweetenerBlockDefinition" item_name_2="SoundSweetenerBlockDefinition" item_name_3="SoundSweetenerBlockDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="Object Sound Sweeteners" item_name_1="SoundSweetenerBlockDefinition" item_name_2="SoundSweetenerBlockDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_2 v="Function" />
 				<_41 v="sound" />
 				<_14 v="Switch point" />
@@ -757,7 +757,7 @@
 			</_40>
 			<_2 v="Audio acoustics root marker override" />
 			<_14 v="Audio Acoustics Transparency" />
-			<_40 v="Object function smoothing" item_name_1="i343::Objects::ComputeFunctionSmoothingBlockDefinition" item_name_2="i343::Objects::ComputeFunctionSmoothingBlockDefinition" item_name_3="i343::Objects::ComputeFunctionSmoothingBlockDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="Object function smoothing" item_name_1="i343::Objects::ComputeFunctionSmoothingBlockDefinition" item_name_2="i343::Objects::ComputeFunctionSmoothingBlockDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="id" />
 				<_2 v="alias of" />
 				<_15 v="smoothing factor" />
@@ -771,7 +771,7 @@
 			<_34 v="generated_pad805e" length="3" />
 			<_14 v="Placement cost multiplier" />
 			<_41 v="Trigger volume component info" />
-			<_40 v="Tracking Info" item_name_1="i343::SpartanTracking::ObjectDefinition" item_name_2="i343::SpartanTracking::ObjectDefinition" item_name_3="i343::SpartanTracking::ObjectDefinition" db1="108" db2="0" db3="10" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="Tracking Info" item_name_1="i343::SpartanTracking::ObjectDefinition" item_name_2="i343::SpartanTracking::ObjectDefinition" db1="108" db2="0" db3="10" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_36 v="Map these settings to a ping type" />
 				<_F v="flags">
 					<Flag v="trackable" />
@@ -817,9 +817,9 @@
 				<_3B v="" />
 			</_40>
 			<_41 v="Property Based Effects" />
-			<_40 v="Interactions" item_name_1="InteractionOpportunityDefinition" item_name_2="InteractionOpportunityDefinition" item_name_3="InteractionOpportunityDefinition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Interactions" item_name_1="InteractionOpportunityDefinition" item_name_2="InteractionOpportunityDefinition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="Marker" />
-				<_40 v="Ambient Info" item_name_1="AmbientActionInfo" item_name_2="AmbientActionInfo" item_name_3="AmbientActionInfo" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_40 v="Ambient Info" item_name_1="AmbientActionInfo" item_name_2="AmbientActionInfo" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 					<_A v="desire type">
 						<Flag v="Scripted" />
 						<Flag v="Health" />
@@ -910,11 +910,11 @@
 					<_2 v="composition name" />
 					<_41 v="composition definition" />
 					<_14 v="Max distance agents will consider this opp from" />
-					<_40 v="Ambient meta labels" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" item_name_3="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_40 v="Ambient meta labels" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 						<_2 v="meta label" />
 						<_3B v="" />
 					</_40>
-					<_40 v="Exclusion meta labels" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" item_name_3="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_40 v="Exclusion meta labels" item_name_1="s_object_meta_label" item_name_2="s_object_meta_label" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 						<_2 v="meta label" />
 						<_3B v="" />
 					</_40>
@@ -966,9 +966,9 @@
 			</_A>
 			<_34 v="generated_pad9a3f" length="3" />
 			<_37 v="" />
-			<_40 v="data driven scripted sequence actions definitions." item_name_1="ScriptedSequenceActionDefinition" item_name_2="ScriptedSequenceActionDefinition" item_name_3="ScriptedSequenceActionDefinition" db1="52" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="data driven scripted sequence actions definitions." item_name_1="ScriptedSequenceActionDefinition" item_name_2="ScriptedSequenceActionDefinition" db1="52" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_0 v="Prototype trigger lua function name" />
-				<_40 v="Component Actions" item_name_1="ScriptedSequenceComponentAction" item_name_2="ScriptedSequenceComponentAction" item_name_3="ScriptedSequenceComponentAction" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="Component Actions" item_name_1="ScriptedSequenceComponentAction" item_name_2="ScriptedSequenceComponentAction" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_0 v="Request action lua function name" />
 					<_0 v="Go to next action condition lua function name" />
 					<_3B v="" />
@@ -976,12 +976,12 @@
 				<_3B v="" />
 			</_40>
 			<_41 v="Animation Node Graph" />
-			<_38 v="Anim Set Table" item_name_3="AnimSetTableDefinition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
-				<_40 v="channels" item_name_1="AnimChannelEntry" item_name_2="AnimChannelEntry" item_name_3="AnimChannelEntry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="Anim Set Table" item_name_1="AnimSetTableDefinition" item_name_2="AnimSetTableDefinition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+				<_40 v="channels" item_name_1="AnimChannelEntry" item_name_2="AnimChannelEntry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="channel" />
 					<_3B v="" />
 				</_40>
-				<_40 v="table entries" item_name_1="AnimSetTableEntry" item_name_2="AnimSetTableEntry" item_name_3="AnimSetTableEntry" db1="84" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
+				<_40 v="table entries" item_name_1="AnimSetTableEntry" item_name_2="AnimSetTableEntry" db1="84" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
 					<_2 v="token" />
 					<_41 v="animset" />
 					<_41 v="Runtime animset (used by code only)" />
@@ -990,7 +990,7 @@
 					<_E v="flags">
 						<Flag v="is default" />
 					</_E>
-					<_40 v="Variants" item_name_1="AnimSetTableEntryVariantID" item_name_2="AnimSetTableEntryVariantID" item_name_3="AnimSetTableEntryVariantID" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_40 v="Variants" item_name_1="AnimSetTableEntryVariantID" item_name_2="AnimSetTableEntryVariantID" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 						<_2 v="Variant" />
 						<_3B v="" />
 					</_40>
@@ -1007,7 +1007,7 @@
 			<_14 v="Ground Probe Additional Height Distance" />
 			<_42 v="Anim Set Nodegraph Metadata" />
 			<_37 v="Root Bone Correction Settings" />
-			<_38 v="RootBoneCorrectionSettings" item_name_3="RootBoneCorrectionSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_38 v="RootBoneCorrectionSettings" item_name_1="RootBoneCorrectionSettings" item_name_2="RootBoneCorrectionSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_F v="flags">
 					<Flag v="AnimEventFunctionOverrideCorrectionType" />
 				</_F>
@@ -1026,7 +1026,7 @@
 				<_3B v="" />
 			</_38>
 			<_37 v="" />
-			<_40 v="Leg Grounding Settings" item_name_1="LegGroundingSettings" item_name_2="LegGroundingSettings" item_name_3="LegGroundingSettings" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="Leg Grounding Settings" item_name_1="LegGroundingSettings" item_name_2="LegGroundingSettings" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 				<_2 v="Marker" />
 				<_14 v="Planted Threshold" />
 				<_14 v="Lifted Threshold" />
@@ -1100,7 +1100,7 @@
 			</_F>
 			<_34 v="generated_pad6f99" length="3" />
 			<_37 v="Object Node Graph" />
-			<_40 v="Object Node Graphs" item_name_1="i343::Objects::ObjectNodeGraphDefinition" item_name_2="i343::Objects::ObjectNodeGraphDefinition" item_name_3="i343::Objects::ObjectNodeGraphDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+			<_40 v="Object Node Graphs" item_name_1="i343::Objects::ObjectNodeGraphDefinition" item_name_2="i343::Objects::ObjectNodeGraphDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 				<_2 v="Name" />
 				<_41 v="Exported Node Graph" />
 				<_F v="Flags">
@@ -1117,7 +1117,7 @@
 				<_3B v="" />
 			</_40>
 			<_37 v="" />
-			<_40 v="parent animation matching" item_name_1="i343::Objects::AnimationMatchingTableEntry" item_name_2="i343::Objects::AnimationMatchingTableEntry" item_name_3="i343::Objects::AnimationMatchingTableEntry" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="parent animation matching" item_name_1="i343::Objects::AnimationMatchingTableEntry" item_name_2="i343::Objects::AnimationMatchingTableEntry" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_36 v="ANIMATION REMAPPING" />
 				<_2 v="animation on parent" />
 				<_2 v="animation to play on object" />
@@ -1127,7 +1127,7 @@
 			<_37 v="model variant switching" />
 			<_36 v="MODEL VARIANT SWITCHING" />
 			<_2 v="model variant switching function" />
-			<_40 v="model variant switching table" item_name_1="i343::Objects::ModelVariantSwappingTableEntry" item_name_2="i343::Objects::ModelVariantSwappingTableEntry" item_name_3="i343::Objects::ModelVariantSwappingTableEntry" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="model variant switching table" item_name_1="i343::Objects::ModelVariantSwappingTableEntry" item_name_2="i343::Objects::ModelVariantSwappingTableEntry" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_25 v="function result range" />
 				<_2 v="model variant name" />
 				<_3B v="" />
@@ -1137,7 +1137,7 @@
 			<_14 v="knockback impulse scalar" />
 			<_37 v="" />
 			<_37 v="Ability Components" />
-			<_40 v="location sensor" item_name_1="i343::Items::LocationSensorDefinition" item_name_2="i343::Items::LocationSensorDefinition" item_name_3="i343::Items::LocationSensorDefinition" db1="164" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="location sensor" item_name_1="i343::Items::LocationSensorDefinition" item_name_2="i343::Items::LocationSensorDefinition" db1="164" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_37 v="Sensor Parameters" />
 				<_D v="sensor flags">
 					<Flag v="use proximity activation" />
@@ -1172,7 +1172,7 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_40>
-			<_40 v="shroud generator" item_name_1="i343::Items::ShroudGeneratorDefinition" item_name_2="i343::Items::ShroudGeneratorDefinition" item_name_3="i343::Items::ShroudGeneratorDefinition" db1="152" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="shroud generator" item_name_1="i343::Items::ShroudGeneratorDefinition" item_name_2="i343::Items::ShroudGeneratorDefinition" db1="152" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_14 v="radius" />
 				<_2 v="active object function name" />
 				<_41 v="shroud created effect" />
@@ -1184,18 +1184,18 @@
 				<_3B v="" />
 			</_40>
 			<_37 v="" />
-			<_40 v="Power Component" item_name_1="i343::Objects::PowerComponentDefinition" item_name_2="i343::Objects::PowerComponentDefinition" item_name_3="i343::Objects::PowerComponentDefinition" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+			<_40 v="Power Component" item_name_1="i343::Objects::PowerComponentDefinition" item_name_2="i343::Objects::PowerComponentDefinition" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
 				<_36 v="Power Component System" />
-				<_40 v="power source configurations" item_name_1="i343::Objects::PowerSourceConfiguration" item_name_2="i343::Objects::PowerSourceConfiguration" item_name_3="i343::Objects::PowerSourceConfiguration" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="power source configurations" item_name_1="i343::Objects::PowerSourceConfiguration" item_name_2="i343::Objects::PowerSourceConfiguration" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="name" />
 					<_15 v="capacity" />
 					<_3B v="" />
 				</_40>
-				<_40 v="power sources" item_name_1="i343::Objects::PowerSourceDefinition" item_name_2="i343::Objects::PowerSourceDefinition" item_name_3="i343::Objects::PowerSourceDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+				<_40 v="power sources" item_name_1="i343::Objects::PowerSourceDefinition" item_name_2="i343::Objects::PowerSourceDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 					<_2 v="region name" />
 					<_6 v="runtime region index" />
 					<_36 v="Model Region Damage State Configurations" />
-					<_40 v="state configurations" item_name_1="i343::Objects::PowerSourceStateConfiguration" item_name_2="i343::Objects::PowerSourceStateConfiguration" item_name_3="i343::Objects::PowerSourceStateConfiguration" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+					<_40 v="state configurations" item_name_1="i343::Objects::PowerSourceStateConfiguration" item_name_2="i343::Objects::PowerSourceStateConfiguration" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 						<_B v="region state">
 							<Flag v="default" />
 							<Flag v="minor damage" />
@@ -1209,27 +1209,27 @@
 					<_3B v="" />
 				</_40>
 				<_37 v="communication node capacity" />
-				<_40 v="communication node power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" item_name_3="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_40 v="communication node power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 					<_2E v="component" />
 					<_3B v="" />
 				</_40>
 				<_2 v="communication node power modifier id" />
 				<_37 v="" />
 				<_37 v="locomotion capacity" />
-				<_40 v="locomotion power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" item_name_3="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_40 v="locomotion power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 					<_2E v="component" />
 					<_3B v="" />
 				</_40>
 				<_2 v="locomotion power modifier id" />
 				<_37 v="locomotion power modifier" />
-				<_38 v="locomotion power modifier" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+				<_38 v="locomotion power modifier" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 					<_14 v="Base Value" />
 					<_25 v="Value Bounds" />
 					<_3B v="" />
 				</_38>
 				<_37 v="" />
 				<_37 v="weapon capacity" />
-				<_40 v="weapon power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" item_name_3="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_40 v="weapon power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 					<_2E v="component" />
 					<_3B v="" />
 				</_40>
@@ -1237,8 +1237,8 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_40>
-			<_40 v="self destruct handler" item_name_1="i343::Objects::SelfDestructHandlerDefinition" item_name_2="i343::Objects::SelfDestructHandlerDefinition" item_name_3="i343::Objects::SelfDestructHandlerDefinition" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-				<_40 v="Self destruct sounds" item_name_1="i343::Objects::SelfDestructSoundBlock" item_name_2="i343::Objects::SelfDestructSoundBlock" item_name_3="i343::Objects::SelfDestructSoundBlock" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="self destruct handler" item_name_1="i343::Objects::SelfDestructHandlerDefinition" item_name_2="i343::Objects::SelfDestructHandlerDefinition" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_40 v="Self destruct sounds" item_name_1="i343::Objects::SelfDestructSoundBlock" item_name_2="i343::Objects::SelfDestructSoundBlock" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 					<_36 v="SELF DESTRUCTION SOUNDS" />
 					<_6 v="active damage section count" />
 					<_41 v="sound to play" />
@@ -1246,7 +1246,7 @@
 				</_40>
 				<_3B v="" />
 			</_40>
-			<_40 v="Indirect Lighting Component" item_name_1="i343::Objects::IndirectLightingComponentDefinition" item_name_2="i343::Objects::IndirectLightingComponentDefinition" item_name_3="i343::Objects::IndirectLightingComponentDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="Indirect Lighting Component" item_name_1="i343::Objects::IndirectLightingComponentDefinition" item_name_2="i343::Objects::IndirectLightingComponentDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
 				<_2 v="Lightmap attachment bone" />
 				<_3B v="" />
 			</_40>
@@ -1340,7 +1340,7 @@
 			<Flag v="loud" />
 		</_B>
 		<_41 v="hologram unit reference" />
-		<_40 v="campaign metagame bucket" item_name_1="s_campaign_metagame_bucket" item_name_2="s_campaign_metagame_bucket" item_name_3="s_campaign_metagame_bucket" db1="6" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="campaign metagame bucket" item_name_1="s_campaign_metagame_bucket" item_name_2="s_campaign_metagame_bucket" db1="6" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="flags">
 				<Flag v="only counts with riders" />
 			</_F>
@@ -1409,12 +1409,12 @@
 			<_5 v="point count" />
 			<_3B v="" />
 		</_40>
-		<_40 v="screen effects" item_name_1="s_unit_screen_effect_definition" item_name_2="s_unit_screen_effect_definition" item_name_3="s_unit_screen_effect_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="screen effects" item_name_1="s_unit_screen_effect_definition" item_name_2="s_unit_screen_effect_definition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="screen effect" />
 			<_3B v="" />
 		</_40>
 		<_14 v="camera stiffness" />
-		<_38 v="unit camera" item_name_3="s_unit_camera" db1="112" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_38 v="unit camera" item_name_1="s_unit_camera" item_name_2="s_unit_camera" db1="112" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
 			<_37 v="Unit Camera" />
 			<_E v="flags">
 				<Flag v="pitch bounds absolute space" />
@@ -1427,7 +1427,7 @@
 			<_2 v="camera marker name" />
 			<_8 v="pitch auto-level" />
 			<_24 v="pitch range" />
-			<_40 v="camera tracks" item_name_1="s_unit_camera_track" item_name_2="s_unit_camera_track" item_name_3="s_unit_camera_track" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="camera tracks" item_name_1="s_unit_camera_track" item_name_2="s_unit_camera_track" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="track" />
 				<_41 v="screen effect" />
 				<_14 v="transition time in" />
@@ -1441,7 +1441,7 @@
 			<_8 v="look deceleration" />
 			<_15 v="look acc smoothing fraction" />
 			<_8 v="field of view bias" />
-			<_38 v="camera obstruction" item_name_3="s_camera_obstruction_parameters" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="camera obstruction" item_name_1="s_camera_obstruction_parameters" item_name_2="s_camera_obstruction_parameters" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_15 v="cylinder fraction" />
 				<_8 v="obstruction test angle" />
 				<_14 v="obstruction max inward accel" />
@@ -1450,10 +1450,10 @@
 				<_14 v="obstruction return delay" />
 				<_3B v="" />
 			</_38>
-			<_40 v="camera acceleration" item_name_1="s_unit_camera_acceleration" item_name_2="s_unit_camera_acceleration" item_name_3="s_unit_camera_acceleration" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_40 v="camera acceleration" item_name_1="s_unit_camera_acceleration" item_name_2="s_unit_camera_acceleration" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_14 v="maximum camera velocity" />
 				<_36 v="" />
-				<_38 v="forward/back" item_name_3="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_38 v="forward/back" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
@@ -1463,7 +1463,7 @@
 					</_A>
 					<_34 v="generated_padd066" length="3" />
 					<_37 v="mapping" />
-					<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -1474,7 +1474,7 @@
 					<_14 v="camera scale (perpendicular)" />
 					<_3B v="" />
 				</_38>
-				<_38 v="left/right" item_name_3="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_38 v="left/right" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
@@ -1484,7 +1484,7 @@
 					</_A>
 					<_34 v="generated_padd066" length="3" />
 					<_37 v="mapping" />
-					<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -1495,7 +1495,7 @@
 					<_14 v="camera scale (perpendicular)" />
 					<_3B v="" />
 				</_38>
-				<_38 v="up/down" item_name_3="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_38 v="up/down" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
@@ -1505,7 +1505,7 @@
 					</_A>
 					<_34 v="generated_padd066" length="3" />
 					<_37 v="mapping" />
-					<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -1522,7 +1522,7 @@
 			<_3B v="" />
 		</_38>
 		<_36 v="sync action camera fields" />
-		<_38 v="sync action camera" item_name_3="s_unit_camera" db1="112" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_38 v="sync action camera" item_name_1="s_unit_camera" item_name_2="s_unit_camera" db1="112" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
 			<_37 v="Unit Camera" />
 			<_E v="flags">
 				<Flag v="pitch bounds absolute space" />
@@ -1535,7 +1535,7 @@
 			<_2 v="camera marker name" />
 			<_8 v="pitch auto-level" />
 			<_24 v="pitch range" />
-			<_40 v="camera tracks" item_name_1="s_unit_camera_track" item_name_2="s_unit_camera_track" item_name_3="s_unit_camera_track" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="camera tracks" item_name_1="s_unit_camera_track" item_name_2="s_unit_camera_track" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="track" />
 				<_41 v="screen effect" />
 				<_14 v="transition time in" />
@@ -1549,7 +1549,7 @@
 			<_8 v="look deceleration" />
 			<_15 v="look acc smoothing fraction" />
 			<_8 v="field of view bias" />
-			<_38 v="camera obstruction" item_name_3="s_camera_obstruction_parameters" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="camera obstruction" item_name_1="s_camera_obstruction_parameters" item_name_2="s_camera_obstruction_parameters" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_15 v="cylinder fraction" />
 				<_8 v="obstruction test angle" />
 				<_14 v="obstruction max inward accel" />
@@ -1558,10 +1558,10 @@
 				<_14 v="obstruction return delay" />
 				<_3B v="" />
 			</_38>
-			<_40 v="camera acceleration" item_name_1="s_unit_camera_acceleration" item_name_2="s_unit_camera_acceleration" item_name_3="s_unit_camera_acceleration" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_40 v="camera acceleration" item_name_1="s_unit_camera_acceleration" item_name_2="s_unit_camera_acceleration" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_14 v="maximum camera velocity" />
 				<_36 v="" />
-				<_38 v="forward/back" item_name_3="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_38 v="forward/back" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
@@ -1571,7 +1571,7 @@
 					</_A>
 					<_34 v="generated_padd066" length="3" />
 					<_37 v="mapping" />
-					<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -1582,7 +1582,7 @@
 					<_14 v="camera scale (perpendicular)" />
 					<_3B v="" />
 				</_38>
-				<_38 v="left/right" item_name_3="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_38 v="left/right" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
@@ -1592,7 +1592,7 @@
 					</_A>
 					<_34 v="generated_padd066" length="3" />
 					<_37 v="mapping" />
-					<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -1603,7 +1603,7 @@
 					<_14 v="camera scale (perpendicular)" />
 					<_3B v="" />
 				</_38>
-				<_38 v="up/down" item_name_3="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_38 v="up/down" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
@@ -1613,7 +1613,7 @@
 					</_A>
 					<_34 v="generated_padd066" length="3" />
 					<_37 v="mapping" />
-					<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -1673,12 +1673,12 @@
 		<_14 v="object velocity maximum" />
 		<_2 v="right_hand_node" />
 		<_2 v="left_hand_node" />
-		<_38 v="more damn nodes" item_name_3="s_unit_additional_node_names" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_38 v="more damn nodes" item_name_1="s_unit_additional_node_names" item_name_2="s_unit_additional_node_names" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="preferred_gun_node" />
 			<_37 v="" />
 			<_2 v="preferred_grenade_marker" />
 			<_36 v="Weapon Specific Markers" />
-			<_40 v="weapon specific markers" item_name_1="WeaponSpecificMarkers" item_name_2="WeaponSpecificMarkers" item_name_3="WeaponSpecificMarkers" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="weapon specific markers" item_name_1="WeaponSpecificMarkers" item_name_2="WeaponSpecificMarkers" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="complete weapon name" />
 				<_2 v="weapon class" />
 				<_2 v="weapon name" />
@@ -1693,7 +1693,7 @@
 		<_37 v="melee damage" />
 		<_41 v="melee damage" />
 		<_41 v="native melee override" />
-		<_38 v="your momma" item_name_3="UnitBoardingMeleeDefinition" db1="196" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_38 v="your momma" item_name_1="UnitBoardingMeleeDefinition" item_name_2="UnitBoardingMeleeDefinition" db1="196" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="boarding melee damage" />
 			<_41 v="boarding melee response" />
 			<_41 v="eviction melee damage" />
@@ -1722,8 +1722,8 @@
 		<_14 v="motion tracker range modifier" />
 		<_2 v="equipment variant name" />
 		<_2 v="grounded equipment variant name" />
-		<_40 v="Hud audio cues" item_name_1="HudUnitSoundDefinitions" item_name_2="HudUnitSoundDefinitions" item_name_3="HudUnitSoundDefinitions" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_40 v="Hud audio cues" item_name_1="HudUnitSoundCueDefinition" item_name_2="HudUnitSoundCueDefinition" item_name_3="HudUnitSoundCueDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Hud audio cues" item_name_1="HudUnitSoundDefinitions" item_name_2="HudUnitSoundDefinitions" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Hud audio cues" item_name_1="HudUnitSoundCueDefinition" item_name_2="HudUnitSoundCueDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="sound" />
 				<_D v="latched to">
 					<Flag v="health recharging" />
@@ -1761,7 +1761,7 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_40>
-		<_40 v="dialogue variants" item_name_1="dialogue_variant_definition" item_name_2="dialogue_variant_definition" item_name_3="dialogue_variant_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="dialogue variants" item_name_1="dialogue_variant_definition" item_name_2="dialogue_variant_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_5 v="variant number" />
 			<_34 v="generated_padef78" length="2" />
 			<_41 v="dialogue" />
@@ -1775,7 +1775,7 @@
 		<_1C v="grenade rotational velocity min" />
 		<_1C v="greande rotational velocity max" />
 		<_37 v="grenade throw speed scalar" />
-		<_38 v="grenade throw speed scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="grenade throw speed scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
@@ -1789,12 +1789,12 @@
 		<_1C v="weapon rotational velocity min" />
 		<_1C v="weapon rotational velocity max" />
 		<_37 v="" />
-		<_40 v="powered seats" item_name_1="powered_seat_definition" item_name_2="powered_seat_definition" item_name_3="powered_seat_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="powered seats" item_name_1="powered_seat_definition" item_name_2="powered_seat_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="driver powerup time" />
 			<_14 v="driver powerdown time" />
 			<_3B v="" />
 		</_40>
-		<_40 v="weapons" item_name_1="unit_initial_weapon" item_name_2="unit_initial_weapon" item_name_3="unit_initial_weapon" db1="212" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="305">
+		<_40 v="weapons" item_name_1="unit_initial_weapon" item_name_2="unit_initial_weapon" db1="212" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="305">
 			<_41 v="weapon" />
 			<_2 v="weapon name" />
 			<_2 v="variant name" />
@@ -1836,7 +1836,7 @@
 			<_2 v="alert mode effect marker" />
 			<_2 v="alert mode effect primary scale" />
 			<_2 v="alert mode effect secondary scale" />
-			<_40 v="sentry properties" item_name_1="SentryProperties" item_name_2="SentryProperties" item_name_3="SentryProperties" db1="140" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="sentry properties" item_name_1="SentryProperties" item_name_2="SentryProperties" db1="140" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_F v="behavior">
 					<Flag v="performs yaw scanning" />
 					<Flag v="secondary barrel starts enabled" />
@@ -1863,7 +1863,7 @@
 				<_41 v="player exited alert range sound" />
 				<_37 v="Node graph events" />
 				<_36 v="Events to fire on state transitions" />
-				<_40 v="Transition Events" item_name_1="SentryTurretStateTransitionEvent" item_name_2="SentryTurretStateTransitionEvent" item_name_3="SentryTurretStateTransitionEvent" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="Transition Events" item_name_1="SentryTurretStateTransitionEvent" item_name_2="SentryTurretStateTransitionEvent" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_C v="From state">
 						<Flag v="Startup" />
 						<Flag v="Idle" />
@@ -1889,14 +1889,14 @@
 			<_14 v="target camouflage threshold" />
 			<_3B v="" />
 		</_40>
-		<_40 v="target tracking" item_name_1="s_target_tracking_parameters" item_name_2="s_target_tracking_parameters" item_name_3="s_target_tracking_parameters" db1="96" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="305">
+		<_40 v="target tracking" item_name_1="s_target_tracking_parameters" item_name_2="s_target_tracking_parameters" db1="96" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="305">
 			<_F v="target tracking flags">
 				<Flag v="only enable when aimed down sight" />
 				<Flag v="never lose target lock" />
 				<Flag v="only enable when in alt fire" />
 			</_F>
 			<_34 v="generated_pada390" length="3" />
-			<_40 v="tracking types" item_name_1="TrackingTypeBlock" item_name_2="TrackingTypeBlock" item_name_3="TrackingTypeBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="tracking types" item_name_1="TrackingTypeBlock" item_name_2="TrackingTypeBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="tracking type" />
 				<_3B v="" />
 			</_40>
@@ -1909,7 +1909,7 @@
 			<_41 v="locked sound" />
 			<_3B v="" />
 		</_40>
-		<_40 v="seats" item_name_1="unit_seat" item_name_2="unit_seat" item_name_3="unit_seat" db1="632" db2="0" db3="8" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_40 v="seats" item_name_1="unit_seat" item_name_2="unit_seat" db1="632" db2="0" db3="8" db4="0" db5="1" db6="0" db7="0" db8="307">
 			<_D v="flags">
 				<Flag v="invisible" />
 				<Flag v="locked" />
@@ -2016,7 +2016,7 @@
 			<_2 v="boarding grenade string" />
 			<_2 v="boarding melee string" />
 			<_2 v="in-seat string" />
-			<_40 v="ai model targets" item_name_1="SeatModelTarget" item_name_2="SeatModelTarget" item_name_3="SeatModelTarget" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="ai model targets" item_name_1="SeatModelTarget" item_name_2="SeatModelTarget" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="model target name" />
 				<_3B v="" />
 			</_40>
@@ -2034,15 +2034,15 @@
 				<Flag v="driver" />
 			</_B>
 			<_2E v="boarding seat" />
-			<_40 v="additional boarding seats" item_name_1="s_boarding_seat" item_name_2="s_boarding_seat" item_name_3="s_boarding_seat" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="additional boarding seats" item_name_1="s_boarding_seat" item_name_2="s_boarding_seat" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="seat" />
 				<_3B v="" />
 			</_40>
 			<_37 v="seat switching" />
 			<_36 v="explanation" />
-			<_38 v="seat switching" item_name_3="SeatSwitchingDefinition" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="seat switching" item_name_1="SeatSwitchingDefinition" item_name_2="SeatSwitchingDefinition" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_37 v="up" />
-				<_38 v="up" item_name_3="SeatSwitchingEntryDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_38 v="up" item_name_1="SeatSwitchingEntryDefinition" item_name_2="SeatSwitchingEntryDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="destinationSeat" />
 					<_2 v="animation" />
 					<_14 v="seat switch cooldown time" />
@@ -2050,7 +2050,7 @@
 				</_38>
 				<_37 v="" />
 				<_37 v="down" />
-				<_38 v="down" item_name_3="SeatSwitchingEntryDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_38 v="down" item_name_1="SeatSwitchingEntryDefinition" item_name_2="SeatSwitchingEntryDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="destinationSeat" />
 					<_2 v="animation" />
 					<_14 v="seat switch cooldown time" />
@@ -2058,7 +2058,7 @@
 				</_38>
 				<_37 v="" />
 				<_37 v="left" />
-				<_38 v="left" item_name_3="SeatSwitchingEntryDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_38 v="left" item_name_1="SeatSwitchingEntryDefinition" item_name_2="SeatSwitchingEntryDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="destinationSeat" />
 					<_2 v="animation" />
 					<_14 v="seat switch cooldown time" />
@@ -2066,7 +2066,7 @@
 				</_38>
 				<_37 v="" />
 				<_37 v="right" />
-				<_38 v="right" item_name_3="SeatSwitchingEntryDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_38 v="right" item_name_1="SeatSwitchingEntryDefinition" item_name_2="SeatSwitchingEntryDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="destinationSeat" />
 					<_2 v="animation" />
 					<_14 v="seat switch cooldown time" />
@@ -2087,7 +2087,7 @@
 			<_14 v="max speed reference" />
 			<_14 v="speed exponent" />
 			<_36 v="camera fields" />
-			<_38 v="unit camera" item_name_3="s_unit_camera" db1="112" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+			<_38 v="unit camera" item_name_1="s_unit_camera" item_name_2="s_unit_camera" db1="112" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
 				<_37 v="Unit Camera" />
 				<_E v="flags">
 					<Flag v="pitch bounds absolute space" />
@@ -2100,7 +2100,7 @@
 				<_2 v="camera marker name" />
 				<_8 v="pitch auto-level" />
 				<_24 v="pitch range" />
-				<_40 v="camera tracks" item_name_1="s_unit_camera_track" item_name_2="s_unit_camera_track" item_name_3="s_unit_camera_track" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+				<_40 v="camera tracks" item_name_1="s_unit_camera_track" item_name_2="s_unit_camera_track" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 					<_41 v="track" />
 					<_41 v="screen effect" />
 					<_14 v="transition time in" />
@@ -2114,7 +2114,7 @@
 				<_8 v="look deceleration" />
 				<_15 v="look acc smoothing fraction" />
 				<_8 v="field of view bias" />
-				<_38 v="camera obstruction" item_name_3="s_camera_obstruction_parameters" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_38 v="camera obstruction" item_name_1="s_camera_obstruction_parameters" item_name_2="s_camera_obstruction_parameters" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_15 v="cylinder fraction" />
 					<_8 v="obstruction test angle" />
 					<_14 v="obstruction max inward accel" />
@@ -2123,10 +2123,10 @@
 					<_14 v="obstruction return delay" />
 					<_3B v="" />
 				</_38>
-				<_40 v="camera acceleration" item_name_1="s_unit_camera_acceleration" item_name_2="s_unit_camera_acceleration" item_name_3="s_unit_camera_acceleration" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="camera acceleration" item_name_1="s_unit_camera_acceleration" item_name_2="s_unit_camera_acceleration" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_14 v="maximum camera velocity" />
 					<_36 v="" />
-					<_38 v="forward/back" item_name_3="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="forward/back" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_A v="Input Variable">
 							<Flag v="linear velocity" />
 							<Flag v="linear acceleration" />
@@ -2136,7 +2136,7 @@
 						</_A>
 						<_34 v="generated_padd066" length="3" />
 						<_37 v="mapping" />
-						<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+						<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 							<_37 v="" />
 							<_42 v="data" />
 							<_37 v="" />
@@ -2147,7 +2147,7 @@
 						<_14 v="camera scale (perpendicular)" />
 						<_3B v="" />
 					</_38>
-					<_38 v="left/right" item_name_3="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="left/right" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_A v="Input Variable">
 							<Flag v="linear velocity" />
 							<Flag v="linear acceleration" />
@@ -2157,7 +2157,7 @@
 						</_A>
 						<_34 v="generated_padd066" length="3" />
 						<_37 v="mapping" />
-						<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+						<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 							<_37 v="" />
 							<_42 v="data" />
 							<_37 v="" />
@@ -2168,7 +2168,7 @@
 						<_14 v="camera scale (perpendicular)" />
 						<_3B v="" />
 					</_38>
-					<_38 v="up/down" item_name_3="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="up/down" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_A v="Input Variable">
 							<Flag v="linear velocity" />
 							<Flag v="linear acceleration" />
@@ -2178,7 +2178,7 @@
 						</_A>
 						<_34 v="generated_padd066" length="3" />
 						<_37 v="mapping" />
-						<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+						<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 							<_37 v="" />
 							<_42 v="data" />
 							<_37 v="" />
@@ -2197,7 +2197,7 @@
 			<_41 v="hud screen reference" />
 			<_41 v="alt hud screen reference" />
 			<_2 v="enter seat string" />
-			<_40 v="button callouts" item_name_1="SeatButtonCallout" item_name_2="SeatButtonCallout" item_name_3="SeatButtonCallout" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="button callouts" item_name_1="SeatButtonCallout" item_name_2="SeatButtonCallout" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="text" />
 				<_3B v="" />
 			</_40>
@@ -2245,18 +2245,18 @@
 		<_37 v="" />
 		<_41 v="docking site" />
 		<_36 v="Deprecated Unit Power Component settings.  Please use the new settings in the OBJECT section above." />
-		<_40 v="power component" item_name_1="i343::Objects::PowerComponentDefinition" item_name_2="i343::Objects::PowerComponentDefinition" item_name_3="i343::Objects::PowerComponentDefinition" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_40 v="power component" item_name_1="i343::Objects::PowerComponentDefinition" item_name_2="i343::Objects::PowerComponentDefinition" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
 			<_36 v="Power Component System" />
-			<_40 v="power source configurations" item_name_1="i343::Objects::PowerSourceConfiguration" item_name_2="i343::Objects::PowerSourceConfiguration" item_name_3="i343::Objects::PowerSourceConfiguration" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="power source configurations" item_name_1="i343::Objects::PowerSourceConfiguration" item_name_2="i343::Objects::PowerSourceConfiguration" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_15 v="capacity" />
 				<_3B v="" />
 			</_40>
-			<_40 v="power sources" item_name_1="i343::Objects::PowerSourceDefinition" item_name_2="i343::Objects::PowerSourceDefinition" item_name_3="i343::Objects::PowerSourceDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_40 v="power sources" item_name_1="i343::Objects::PowerSourceDefinition" item_name_2="i343::Objects::PowerSourceDefinition" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
 				<_2 v="region name" />
 				<_6 v="runtime region index" />
 				<_36 v="Model Region Damage State Configurations" />
-				<_40 v="state configurations" item_name_1="i343::Objects::PowerSourceStateConfiguration" item_name_2="i343::Objects::PowerSourceStateConfiguration" item_name_3="i343::Objects::PowerSourceStateConfiguration" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_40 v="state configurations" item_name_1="i343::Objects::PowerSourceStateConfiguration" item_name_2="i343::Objects::PowerSourceStateConfiguration" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 					<_B v="region state">
 						<Flag v="default" />
 						<Flag v="minor damage" />
@@ -2270,27 +2270,27 @@
 				<_3B v="" />
 			</_40>
 			<_37 v="communication node capacity" />
-			<_40 v="communication node power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" item_name_3="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="communication node power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="component" />
 				<_3B v="" />
 			</_40>
 			<_2 v="communication node power modifier id" />
 			<_37 v="" />
 			<_37 v="locomotion capacity" />
-			<_40 v="locomotion power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" item_name_3="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="locomotion power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="component" />
 				<_3B v="" />
 			</_40>
 			<_2 v="locomotion power modifier id" />
 			<_37 v="locomotion power modifier" />
-			<_38 v="locomotion power modifier" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="locomotion power modifier" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="" />
 			<_37 v="weapon capacity" />
-			<_40 v="weapon power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" item_name_3="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="weapon power sources" item_name_1="i343::Objects::PowerSourceDefinitionReference" item_name_2="i343::Objects::PowerSourceDefinitionReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_2E v="component" />
 				<_3B v="" />
 			</_40>
@@ -2301,7 +2301,7 @@
 		<_37 v="Boost" />
 		<_41 v="boost definition" />
 		<_36 v="Deprecated Boost Fields.  Please use the Boost Definition field above." />
-		<_38 v="boost" item_name_3="Boost" db1="92" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="boost" item_name_1="Boost" item_name_2="Boost" db1="92" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_41 v="boost collision damage" />
 			<_D v="flags">
 				<Flag v="pegs throttle" />
@@ -2315,7 +2315,7 @@
 			<_14 v="recharge delay" />
 			<_14 v="post boost weapon delay" />
 			<_37 v="trigger to boost" />
-			<_38 v="trigger to boost" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="trigger to boost" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -2403,7 +2403,7 @@
 			<Flag v="OrdersWeapon" />
 		</_C>
 		<_36 v="Lipsync" />
-		<_38 v="lipsync" item_name_3="s_unit_lipsync_scales" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="lipsync" item_name_1="s_unit_lipsync_scales" item_name_2="s_unit_lipsync_scales" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_15 v="attack weight" />
 			<_15 v="decay weight" />
 			<_3B v="" />
@@ -2411,7 +2411,7 @@
 		<_36 v="Exit and Detach" />
 		<_41 v="exit and detach damage" />
 		<_41 v="exit and detach weapon" />
-		<_40 v="exit and detach variants" item_name_1="ExitAndDetachVariant" item_name_2="ExitAndDetachVariant" item_name_3="ExitAndDetachVariant" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="exit and detach variants" item_name_1="ExitAndDetachVariant" item_name_2="ExitAndDetachVariant" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_2 v="variant name" />
 			<_41 v="exit and detach weapon" />
 			<_41 v="exit and detach damage" />
@@ -2431,7 +2431,7 @@
 		<_14 v="bailout threshold" />
 		<_15 v="iron sight weapon dampening" />
 		<_37 v="Birthing" />
-		<_38 v="birth" item_name_3="UnitBirthingProperties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+		<_38 v="birth" item_name_1="UnitBirthingProperties" item_name_2="UnitBirthingProperties" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 			<_2E v="seat" />
 			<_34 v="generated_pada2d2" length="2" />
 			<_2 v="birthing region" />
@@ -2441,7 +2441,7 @@
 		<_15 v="procedural recoil scaler" />
 		<_41 v="flinch system" />
 		<_36 v="Active Camouflage Malleable Properties" />
-		<_38 v="active camouflage properties" item_name_3="i343::ActiveCamouflage::MalleablePropertiesDefinition" db1="64" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="931">
+		<_38 v="active camouflage properties" item_name_1="i343::ActiveCamouflage::MalleablePropertiesDefinition" item_name_2="i343::ActiveCamouflage::MalleablePropertiesDefinition" db1="64" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="931">
 			<_A v="camo level">
 				<Flag v="poor" />
 				<Flag v="good" />
@@ -2454,31 +2454,31 @@
 			</_F>
 			<_34 v="generated_pad06e4" length="2" />
 			<_37 v="grenade throw penalty" />
-			<_38 v="grenade throw penalty" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="grenade throw penalty" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="interpolation time" />
-			<_38 v="interpolation time" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="interpolation time" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="melee penalty" />
-			<_38 v="melee penalty" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="melee penalty" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="minimum dinged amount" />
-			<_38 v="minimum dinged amount" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="minimum dinged amount" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="maximum duration" />
-			<_38 v="maximum duration" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="maximum duration" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
@@ -2486,114 +2486,114 @@
 			<_3B v="" />
 		</_38>
 		<_41 v="active camouflage energy gain effect" />
-		<_38 v="damage properties" item_name_3="i343::Damage::DamageMalleablePropertiesDefinition" db1="108" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="931">
+		<_38 v="damage properties" item_name_1="i343::Damage::DamageMalleablePropertiesDefinition" item_name_2="i343::Damage::DamageMalleablePropertiesDefinition" db1="108" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="931">
 			<_36 v="Damage scaling malleable properties" />
 			<_37 v="Weapon damage scalar" />
-			<_38 v="Weapon damage scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="Weapon damage scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="Melee damage scalar" />
-			<_38 v="Melee damage scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="Melee damage scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="Melee knockback scalar" />
-			<_38 v="Melee knockback scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="Melee knockback scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="Melee recovery speed scalar" />
-			<_38 v="Melee recovery speed scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="Melee recovery speed scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="Grenade damage scalar" />
-			<_38 v="Grenade damage scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="Grenade damage scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="Grenade knockback scalar" />
-			<_38 v="Grenade knockback scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="Grenade knockback scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="Body vampirism scalar" />
-			<_38 v="Body vampirism scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="Body vampirism scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="Shield vampirism scalar" />
-			<_38 v="Shield vampirism scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="Shield vampirism scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="Area of effect radius scalar" />
-			<_38 v="Area of effect radius scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="Area of effect radius scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_38>
-		<_38 v="weapon properties" item_name_3="i343::Units::UnitWeaponPropertiesDefinition" db1="72" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="931">
+		<_38 v="weapon properties" item_name_1="i343::Units::UnitWeaponPropertiesDefinition" item_name_2="i343::Units::UnitWeaponPropertiesDefinition" db1="72" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="931">
 			<_36 v="Weapon trait malleable properties" />
 			<_37 v="weapon switch speed scalar" />
-			<_38 v="weapon switch speed scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="weapon switch speed scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="weapon empty reload speed scalar" />
-			<_38 v="weapon empty reload speed scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="weapon empty reload speed scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="weapon overheat loss scalar" />
-			<_38 v="weapon overheat loss scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="weapon overheat loss scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="weapon tactical reload speed scalar" />
-			<_38 v="weapon tactical reload speed scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="weapon tactical reload speed scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="weapon tactical cooling scalar" />
-			<_38 v="weapon tactical cooling scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="weapon tactical cooling scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="movement speed (with turret) scalar" />
-			<_38 v="movement speed (with turret) scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="movement speed (with turret) scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
 		</_38>
-		<_38 v="emp properties" item_name_3="i343::Units::EMPPropertiesDefinition" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="307">
+		<_38 v="emp properties" item_name_1="i343::Units::EMPPropertiesDefinition" item_name_2="i343::Units::EMPPropertiesDefinition" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="307">
 			<_36 v="EMP malleable properties" />
 			<_37 v="EMP disable duration scalar " />
-			<_38 v="EMP disable duration scalar " item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="EMP disable duration scalar " item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="EMP disable duration MP scalar " />
-			<_38 v="EMP disable duration MP scalar " item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="EMP disable duration MP scalar " item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
@@ -2639,9 +2639,9 @@
 		<Flag v="Override the player's nav point while they are in this vehicle" />
 	</_D>
 	<_36 v="physics type" />
-	<_38 v="physics types" item_name_3="s_vehicle_physics_types" db1="240" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
+	<_38 v="physics types" item_name_1="s_vehicle_physics_types" item_name_2="s_vehicle_physics_types" db1="240" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
 		<_37 v="" />
-		<_40 v="type-human_tank" item_name_1="s_vehicle_human_tank_definition" item_name_2="s_vehicle_human_tank_definition" item_name_3="s_vehicle_human_tank_definition" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_40 v="type-human_tank" item_name_1="s_vehicle_human_tank_definition" item_name_2="s_vehicle_human_tank_definition" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
 			<_8 v="forward arc" />
 			<_8 v="perpendicular forward arc" />
 			<_14 v="flip window" />
@@ -2658,17 +2658,17 @@
 			<_14 v="maximum right reverse differential" />
 			<_14 v="differential reverse acceleration" />
 			<_14 v="differential reverse deceleration" />
-			<_38 v="engine" item_name_3="s_vehicle_engine_definition" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_38 v="engine" item_name_1="s_vehicle_engine_definition" item_name_2="s_vehicle_engine_definition" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
 				<_36 v="engine" />
 				<_14 v="engine moment" />
 				<_14 v="engine min angular velocity" />
 				<_14 v="engine max angular velocity" />
-				<_40 v="gears" item_name_1="s_vehicle_gear_definition" item_name_2="s_vehicle_gear_definition" item_name_3="s_vehicle_gear_definition" db1="140" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="gears" item_name_1="s_vehicle_gear_definition" item_name_2="s_vehicle_gear_definition" db1="140" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_36 v="loaded torque" />
-					<_38 v="loaded torque curve" item_name_3="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-						<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="loaded torque curve" item_name_1="s_toruqe_curve_definition" item_name_2="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 							<_37 v="function" />
-							<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+							<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 								<_37 v="" />
 								<_42 v="data" />
 								<_37 v="" />
@@ -2679,10 +2679,10 @@
 						<_3B v="" />
 					</_38>
 					<_36 v="cruising torque" />
-					<_38 v="cruising torque curve" item_name_3="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-						<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="cruising torque curve" item_name_1="s_toruqe_curve_definition" item_name_2="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 							<_37 v="function" />
-							<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+							<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 								<_37 v="" />
 								<_42 v="data" />
 								<_37 v="" />
@@ -2707,7 +2707,7 @@
 					<_3B v="" />
 				</_40>
 				<_41 v="gear shift sound" />
-				<_40 v="load and cruise sound" item_name_1="s_vehicle_load_and_cruise_definition" item_name_2="s_vehicle_load_and_cruise_definition" item_name_3="s_vehicle_load_and_cruise_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+				<_40 v="load and cruise sound" item_name_1="s_vehicle_load_and_cruise_definition" item_name_2="s_vehicle_load_and_cruise_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 					<_2 v="load cruise function" />
 					<_30 v="attachment index" />
 					<_3B v="" />
@@ -2734,8 +2734,8 @@
 			<_14 v="in motion speed" />
 			<_3B v="" />
 		</_40>
-		<_40 v="type-human_jeep" item_name_1="s_vehicle_human_jeep_definition" item_name_2="s_vehicle_human_jeep_definition" item_name_3="s_vehicle_human_jeep_definition" db1="164" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2355">
-			<_38 v="steering control" item_name_3="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="type-human_jeep" item_name_1="s_vehicle_human_jeep_definition" item_name_2="s_vehicle_human_jeep_definition" db1="164" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="steering control" item_name_1="s_vehicle_steering_control_definition" item_name_2="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="steering overdampening" />
 				<_8 v="overdampen cusp angle" />
 				<_14 v="overdampen exponent" />
@@ -2747,24 +2747,24 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_38>
-			<_38 v="turning control" item_name_3="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="turning control" item_name_1="s_vehicle_turning_control_definition" item_name_2="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="turning" />
 				<_14 v="maximum left turn" />
 				<_14 v="maximum right turn (negative)" />
 				<_14 v="turn rate" />
 				<_3B v="" />
 			</_38>
-			<_38 v="engine" item_name_3="s_vehicle_engine_definition" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_38 v="engine" item_name_1="s_vehicle_engine_definition" item_name_2="s_vehicle_engine_definition" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
 				<_36 v="engine" />
 				<_14 v="engine moment" />
 				<_14 v="engine min angular velocity" />
 				<_14 v="engine max angular velocity" />
-				<_40 v="gears" item_name_1="s_vehicle_gear_definition" item_name_2="s_vehicle_gear_definition" item_name_3="s_vehicle_gear_definition" db1="140" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="gears" item_name_1="s_vehicle_gear_definition" item_name_2="s_vehicle_gear_definition" db1="140" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_36 v="loaded torque" />
-					<_38 v="loaded torque curve" item_name_3="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-						<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="loaded torque curve" item_name_1="s_toruqe_curve_definition" item_name_2="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 							<_37 v="function" />
-							<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+							<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 								<_37 v="" />
 								<_42 v="data" />
 								<_37 v="" />
@@ -2775,10 +2775,10 @@
 						<_3B v="" />
 					</_38>
 					<_36 v="cruising torque" />
-					<_38 v="cruising torque curve" item_name_3="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-						<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="cruising torque curve" item_name_1="s_toruqe_curve_definition" item_name_2="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 							<_37 v="function" />
-							<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+							<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 								<_37 v="" />
 								<_42 v="data" />
 								<_37 v="" />
@@ -2803,7 +2803,7 @@
 					<_3B v="" />
 				</_40>
 				<_41 v="gear shift sound" />
-				<_40 v="load and cruise sound" item_name_1="s_vehicle_load_and_cruise_definition" item_name_2="s_vehicle_load_and_cruise_definition" item_name_3="s_vehicle_load_and_cruise_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+				<_40 v="load and cruise sound" item_name_1="s_vehicle_load_and_cruise_definition" item_name_2="s_vehicle_load_and_cruise_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 					<_2 v="load cruise function" />
 					<_30 v="attachment index" />
 					<_3B v="" />
@@ -2814,9 +2814,9 @@
 			<_14 v="wheel circumferance" />
 			<_14 v="gravity adjust" />
 			<_14 v="antiroll torque factor" />
-			<_38 v="air control torque function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="air control torque function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -2833,7 +2833,7 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_40>
-		<_40 v="type-human_plane" item_name_1="s_vehicle_human_plane_definition" item_name_2="s_vehicle_human_plane_definition" item_name_3="s_vehicle_human_plane_definition" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="931">
+		<_40 v="type-human_plane" item_name_1="s_vehicle_human_plane_definition" item_name_2="s_vehicle_human_plane_definition" db1="100" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="931">
 			<_36 v="velocity control variables" />
 			<_14 v="maximum forward speed" />
 			<_14 v="maximum reverse speed" />
@@ -2859,7 +2859,7 @@
 			<_14 v="thrust scale" />
 			<_14 v="turn rate scale when boosting" />
 			<_14 v="maximum roll" />
-			<_38 v="steering animation" item_name_3="s_vehicle_steering_animation_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="steering animation" item_name_1="s_vehicle_steering_animation_definition" item_name_2="s_vehicle_steering_animation_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_36 v="steering animation and interpolation&#xA;" />
 				<_14 v="interpolation scale" />
 				<_8 v="max angle" />
@@ -2867,8 +2867,8 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="type-alien_scout" item_name_1="s_vehicle_alien_scout_definition" item_name_2="s_vehicle_alien_scout_definition" item_name_3="s_vehicle_alien_scout_definition" db1="184" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="931">
-			<_38 v="steering control" item_name_3="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="type-alien_scout" item_name_1="s_vehicle_alien_scout_definition" item_name_2="s_vehicle_alien_scout_definition" db1="184" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="931">
+			<_38 v="steering control" item_name_1="s_vehicle_steering_control_definition" item_name_2="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="steering overdampening" />
 				<_8 v="overdampen cusp angle" />
 				<_14 v="overdampen exponent" />
@@ -2900,7 +2900,7 @@
 			<_14 v="constant deceleration" />
 			<_14 v="torque scale" />
 			<_36 v="engine object function" />
-			<_38 v="engine gravity function" item_name_3="s_engine_function_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="engine gravity function" item_name_1="s_engine_function_definition" item_name_2="s_engine_function_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="object function damage region" />
 				<_14 v="min anti gravity engine speed" />
 				<_14 v="max anti gravity engine speed" />
@@ -2909,7 +2909,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="contrail object function" />
-			<_38 v="contrail gravity function" item_name_3="s_engine_function_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="contrail gravity function" item_name_1="s_engine_function_definition" item_name_2="s_engine_function_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="object function damage region" />
 				<_14 v="min anti gravity engine speed" />
 				<_14 v="max anti gravity engine speed" />
@@ -2919,13 +2919,13 @@
 			</_38>
 			<_36 v="engine rotation function" />
 			<_25 v="gear rotation speed" />
-			<_38 v="steering animation" item_name_3="s_vehicle_steering_animation_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="steering animation" item_name_1="s_vehicle_steering_animation_definition" item_name_2="s_vehicle_steering_animation_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_36 v="steering animation and interpolation&#xA;" />
 				<_14 v="interpolation scale" />
 				<_8 v="max angle" />
 				<_3B v="" />
 			</_38>
-			<_38 v="scout physics" item_name_3="ScoutPhysicsDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="scout physics" item_name_1="ScoutPhysicsDefinition" item_name_2="ScoutPhysicsDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_F v="flags">
 					<Flag v="hovercraft" />
 					<Flag v="slope scales speed" />
@@ -2947,8 +2947,8 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="type-alien_fighter" item_name_1="s_vehicle_alien_fighter_definition" item_name_2="s_vehicle_alien_fighter_definition" item_name_3="s_vehicle_alien_fighter_definition" db1="144" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2467">
-			<_38 v="steering control" item_name_3="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="type-alien_fighter" item_name_1="s_vehicle_alien_fighter_definition" item_name_2="s_vehicle_alien_fighter_definition" db1="144" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2467">
+			<_38 v="steering control" item_name_1="s_vehicle_steering_control_definition" item_name_2="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="steering overdampening" />
 				<_8 v="overdampen cusp angle" />
 				<_14 v="overdampen exponent" />
@@ -2960,7 +2960,7 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_38>
-			<_38 v="turning control" item_name_3="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="turning control" item_name_1="s_vehicle_turning_control_definition" item_name_2="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="turning" />
 				<_14 v="maximum left turn" />
 				<_14 v="maximum right turn (negative)" />
@@ -3001,7 +3001,7 @@
 			<_14 v="dive speed scale" />
 			<_3B v="" />
 		</_40>
-		<_40 v="type-turret" item_name_1="s_vehicle_turret_definition" item_name_2="s_vehicle_turret_definition" item_name_3="s_vehicle_turret_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="929">
+		<_40 v="type-turret" item_name_1="s_vehicle_turret_definition" item_name_2="s_vehicle_turret_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="929">
 			<_E v="flags">
 				<Flag v="powered by parent" />
 				<Flag v="idles in default position" />
@@ -3017,8 +3017,8 @@
 			<_8 v="operating elevation angle" />
 			<_3B v="" />
 		</_40>
-		<_40 v="type-vtol" item_name_1="s_vehicle_vtol_definition" item_name_2="s_vehicle_vtol_definition" item_name_3="s_vehicle_vtol_definition" db1="356" db2="0" db3="4" db4="0" db5="1" db6="0" db7="0" db8="2355">
-			<_38 v="turning control" item_name_3="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="type-vtol" item_name_1="s_vehicle_vtol_definition" item_name_2="s_vehicle_vtol_definition" db1="356" db2="0" db3="4" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="turning control" item_name_1="s_vehicle_turning_control_definition" item_name_2="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="turning" />
 				<_14 v="maximum left turn" />
 				<_14 v="maximum right turn (negative)" />
@@ -3031,9 +3031,9 @@
 			<_2 v="right lift marker" />
 			<_37 v="" />
 			<_2 v="thrust marker" />
-			<_38 v="trigger to throttle" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="trigger to throttle" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -3041,10 +3041,10 @@
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_38 v="descent to boost" item_name_3="s_vtol_descent_function" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-				<_38 v="descent to boost" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="descent to boost" item_name_1="s_vtol_descent_function" item_name_2="s_vtol_descent_function" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_38 v="descent to boost" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_37 v="function" />
-					<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
 						<_42 v="data" />
 						<_37 v="" />
@@ -3068,9 +3068,9 @@
 			<_36 v="interpolation parameters" />
 			<_14 v="interpolation speed domain" />
 			<_36 v="function explanation" />
-			<_38 v="SPEED_TROTTLE_CEILING()" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="SPEED_TROTTLE_CEILING()" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -3078,9 +3078,9 @@
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_38 v="INTERPOLATION_ACC()" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="INTERPOLATION_ACC()" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -3088,9 +3088,9 @@
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_38 v="A_B_INTERPOLATION() interpolation mapping" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="A_B_INTERPOLATION() interpolation mapping" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -3098,7 +3098,7 @@
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_40 v="speed interpolated parameters" item_name_1="s_vehicle_vtol_interpolated_parameters" item_name_2="s_vehicle_vtol_interpolated_parameters" item_name_3="s_vehicle_vtol_interpolated_parameters" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="speed interpolated parameters" item_name_1="s_vehicle_vtol_interpolated_parameters" item_name_2="s_vehicle_vtol_interpolated_parameters" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_14 v="rotor damping" />
 				<_14 v="maximum left acceleration" />
 				<_14 v="maximum forward acceleration" />
@@ -3128,9 +3128,9 @@
 			</_E>
 			<_34 v="generated_padac32" length="2" />
 			<_36 v="dodge boost" />
-			<_38 v="dodge boost force application" item_name_3="ScalarFunctionNameDefaultOne" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="dodge boost force application" item_name_1="ScalarFunctionNameDefaultOne" item_name_2="ScalarFunctionNameDefaultOne" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinitionDefaultOne" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinitionDefaultOne" item_name_2="FunctionDefinitionDefaultOne" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -3138,9 +3138,9 @@
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_38 v="dodge boost velocity" item_name_3="ScalarFunctionNameDefaultOne" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="dodge boost velocity" item_name_1="ScalarFunctionNameDefaultOne" item_name_2="ScalarFunctionNameDefaultOne" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinitionDefaultOne" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinitionDefaultOne" item_name_2="FunctionDefinitionDefaultOne" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -3153,7 +3153,7 @@
 			<_14 v="dodge boost recharge duration" />
 			<_41 v="dodge boost damage response" />
 			<_36 v="steering overdampening" />
-			<_38 v="steering control" item_name_3="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="steering control" item_name_1="s_vehicle_steering_control_definition" item_name_2="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="steering overdampening" />
 				<_8 v="overdampen cusp angle" />
 				<_14 v="overdampen exponent" />
@@ -3167,8 +3167,8 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="type-chopper" item_name_1="s_vehicle_chopper_definition" item_name_2="s_vehicle_chopper_definition" item_name_3="s_vehicle_chopper_definition" db1="176" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
-			<_38 v="steering control" item_name_3="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="type-chopper" item_name_1="s_vehicle_chopper_definition" item_name_2="s_vehicle_chopper_definition" db1="176" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
+			<_38 v="steering control" item_name_1="s_vehicle_steering_control_definition" item_name_2="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="steering overdampening" />
 				<_8 v="overdampen cusp angle" />
 				<_14 v="overdampen exponent" />
@@ -3180,24 +3180,24 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_38>
-			<_38 v="turning control" item_name_3="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="turning control" item_name_1="s_vehicle_turning_control_definition" item_name_2="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="turning" />
 				<_14 v="maximum left turn" />
 				<_14 v="maximum right turn (negative)" />
 				<_14 v="turn rate" />
 				<_3B v="" />
 			</_38>
-			<_38 v="engine" item_name_3="s_vehicle_engine_definition" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_38 v="engine" item_name_1="s_vehicle_engine_definition" item_name_2="s_vehicle_engine_definition" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
 				<_36 v="engine" />
 				<_14 v="engine moment" />
 				<_14 v="engine min angular velocity" />
 				<_14 v="engine max angular velocity" />
-				<_40 v="gears" item_name_1="s_vehicle_gear_definition" item_name_2="s_vehicle_gear_definition" item_name_3="s_vehicle_gear_definition" db1="140" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="gears" item_name_1="s_vehicle_gear_definition" item_name_2="s_vehicle_gear_definition" db1="140" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_36 v="loaded torque" />
-					<_38 v="loaded torque curve" item_name_3="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-						<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="loaded torque curve" item_name_1="s_toruqe_curve_definition" item_name_2="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 							<_37 v="function" />
-							<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+							<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 								<_37 v="" />
 								<_42 v="data" />
 								<_37 v="" />
@@ -3208,10 +3208,10 @@
 						<_3B v="" />
 					</_38>
 					<_36 v="cruising torque" />
-					<_38 v="cruising torque curve" item_name_3="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-						<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_38 v="cruising torque curve" item_name_1="s_toruqe_curve_definition" item_name_2="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 							<_37 v="function" />
-							<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+							<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 								<_37 v="" />
 								<_42 v="data" />
 								<_37 v="" />
@@ -3236,7 +3236,7 @@
 					<_3B v="" />
 				</_40>
 				<_41 v="gear shift sound" />
-				<_40 v="load and cruise sound" item_name_1="s_vehicle_load_and_cruise_definition" item_name_2="s_vehicle_load_and_cruise_definition" item_name_3="s_vehicle_load_and_cruise_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+				<_40 v="load and cruise sound" item_name_1="s_vehicle_load_and_cruise_definition" item_name_2="s_vehicle_load_and_cruise_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 					<_2 v="load cruise function" />
 					<_30 v="attachment index" />
 					<_3B v="" />
@@ -3259,8 +3259,8 @@
 			<_14 v="gyroscopic damping" />
 			<_3B v="" />
 		</_40>
-		<_40 v="type-guardian" item_name_1="s_vehicle_guardian_definition" item_name_2="s_vehicle_guardian_definition" item_name_3="s_vehicle_guardian_definition" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="931">
-			<_38 v="steering control" item_name_3="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="type-guardian" item_name_1="s_vehicle_guardian_definition" item_name_2="s_vehicle_guardian_definition" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="931">
+			<_38 v="steering control" item_name_1="s_vehicle_steering_control_definition" item_name_2="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="steering overdampening" />
 				<_8 v="overdampen cusp angle" />
 				<_14 v="overdampen exponent" />
@@ -3284,8 +3284,8 @@
 			<_14 v="anti-gravity force z-offset" />
 			<_3B v="" />
 		</_40>
-		<_40 v="type-jackal-glider" item_name_1="s_vehicle_jackal_glider_definition" item_name_2="s_vehicle_jackal_glider_definition" item_name_3="s_vehicle_jackal_glider_definition" db1="384" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="931">
-			<_38 v="steering control" item_name_3="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="type-jackal-glider" item_name_1="s_vehicle_jackal_glider_definition" item_name_2="s_vehicle_jackal_glider_definition" db1="384" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="931">
+			<_38 v="steering control" item_name_1="s_vehicle_steering_control_definition" item_name_2="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="steering overdampening" />
 				<_8 v="overdampen cusp angle" />
 				<_14 v="overdampen exponent" />
@@ -3308,7 +3308,7 @@
 			<_14 v="slide deceleration" />
 			<_14 v="torque scale" />
 			<_36 v="engine object function" />
-			<_38 v="engine object function" item_name_3="s_engine_function_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="engine object function" item_name_1="s_engine_function_definition" item_name_2="s_engine_function_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="object function damage region" />
 				<_14 v="min anti gravity engine speed" />
 				<_14 v="max anti gravity engine speed" />
@@ -3317,7 +3317,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="contrail object function" />
-			<_38 v="contrail object function" item_name_3="s_engine_function_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="contrail object function" item_name_1="s_engine_function_definition" item_name_2="s_engine_function_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="object function damage region" />
 				<_14 v="min anti gravity engine speed" />
 				<_14 v="max anti gravity engine speed" />
@@ -3325,7 +3325,7 @@
 				<_14 v="maximum vehicle speed" />
 				<_3B v="" />
 			</_38>
-			<_38 v="steering animation" item_name_3="s_vehicle_steering_animation_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="steering animation" item_name_1="s_vehicle_steering_animation_definition" item_name_2="s_vehicle_steering_animation_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_36 v="steering animation and interpolation&#xA;" />
 				<_14 v="interpolation scale" />
 				<_8 v="max angle" />
@@ -3345,7 +3345,7 @@
 			<_14 v="aileron to angular acceleartion scale" />
 			<_8 v="aileron yaw tilt angle" />
 			<_36 v="wing" />
-			<_38 v="wing surface" item_name_3="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="wing surface" item_name_1="s_flight_surface_definition" item_name_2="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_A v="offset axis">
 					<Flag v="foward" />
 					<Flag v="left" />
@@ -3377,7 +3377,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="ailerons" />
-			<_38 v="aileron surface" item_name_3="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="aileron surface" item_name_1="s_flight_surface_definition" item_name_2="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_A v="offset axis">
 					<Flag v="foward" />
 					<Flag v="left" />
@@ -3409,7 +3409,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="elevator" />
-			<_38 v="elevator surface" item_name_3="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="elevator surface" item_name_1="s_flight_surface_definition" item_name_2="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_A v="offset axis">
 					<Flag v="foward" />
 					<Flag v="left" />
@@ -3441,7 +3441,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="tail" />
-			<_38 v="tail surface" item_name_3="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="tail surface" item_name_1="s_flight_surface_definition" item_name_2="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_A v="offset axis">
 					<Flag v="foward" />
 					<Flag v="left" />
@@ -3473,7 +3473,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="rudder" />
-			<_38 v="rudder surface" item_name_3="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="rudder surface" item_name_1="s_flight_surface_definition" item_name_2="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_A v="offset axis">
 					<Flag v="foward" />
 					<Flag v="left" />
@@ -3505,7 +3505,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="taxi" />
-			<_38 v="taxi surface" item_name_3="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="taxi surface" item_name_1="s_flight_surface_definition" item_name_2="s_flight_surface_definition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_A v="offset axis">
 					<Flag v="foward" />
 					<Flag v="left" />
@@ -3537,7 +3537,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="ground drag" />
-			<_38 v="ground drag struct" item_name_3="s_vehicle_jackal_glider_drag_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="ground drag struct" item_name_1="s_vehicle_jackal_glider_drag_definition" item_name_2="s_vehicle_jackal_glider_drag_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_36 v="drag" />
 				<_14 v="q" />
 				<_14 v="k" />
@@ -3545,7 +3545,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="air drag" />
-			<_38 v="air drag struct" item_name_3="s_vehicle_jackal_glider_drag_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="air drag struct" item_name_1="s_vehicle_jackal_glider_drag_definition" item_name_2="s_vehicle_jackal_glider_drag_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_36 v="drag" />
 				<_14 v="q" />
 				<_14 v="k" />
@@ -3553,7 +3553,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="takeoff drag" />
-			<_38 v="takeoff drag struct" item_name_3="s_vehicle_jackal_glider_drag_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="takeoff drag struct" item_name_1="s_vehicle_jackal_glider_drag_definition" item_name_2="s_vehicle_jackal_glider_drag_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_36 v="drag" />
 				<_14 v="q" />
 				<_14 v="k" />
@@ -3562,8 +3562,8 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="type-space-fighter" item_name_1="s_vehicle_space_fighter_definition" item_name_2="s_vehicle_space_fighter_definition" item_name_3="s_vehicle_space_fighter_definition" db1="292" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-			<_38 v="steering control" item_name_3="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_40 v="type-space-fighter" item_name_1="s_vehicle_space_fighter_definition" item_name_2="s_vehicle_space_fighter_definition" db1="292" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="steering control" item_name_1="s_vehicle_steering_control_definition" item_name_2="s_vehicle_steering_control_definition" db1="24" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="steering overdampening" />
 				<_8 v="overdampen cusp angle" />
 				<_14 v="overdampen exponent" />
@@ -3575,7 +3575,7 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_38>
-			<_38 v="turning control" item_name_3="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="turning control" item_name_1="s_vehicle_turning_control_definition" item_name_2="s_vehicle_turning_control_definition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_36 v="turning" />
 				<_14 v="maximum left turn" />
 				<_14 v="maximum right turn (negative)" />
@@ -3643,9 +3643,9 @@
 				<Flag v="turn back to tangent" />
 			</_D>
 			<_14 v="turn back latched period" />
-			<_38 v="turn back distance to turn rate" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="turn back distance to turn rate" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -3671,8 +3671,8 @@
 			<_14 v="dangerous trajectory prediction time" />
 			<_3B v="" />
 		</_40>
-		<_40 v="type-revenant" item_name_1="s_vehicle_revenant_definition" item_name_2="s_vehicle_revenant_definition" item_name_3="s_vehicle_revenant_definition" db1="268" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
-			<_38 v="tank block" item_name_3="s_vehicle_human_tank_definition" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_40 v="type-revenant" item_name_1="s_vehicle_revenant_definition" item_name_2="s_vehicle_revenant_definition" db1="268" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
+			<_38 v="tank block" item_name_1="s_vehicle_human_tank_definition" item_name_2="s_vehicle_human_tank_definition" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
 				<_8 v="forward arc" />
 				<_8 v="perpendicular forward arc" />
 				<_14 v="flip window" />
@@ -3689,17 +3689,17 @@
 				<_14 v="maximum right reverse differential" />
 				<_14 v="differential reverse acceleration" />
 				<_14 v="differential reverse deceleration" />
-				<_38 v="engine" item_name_3="s_vehicle_engine_definition" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
+				<_38 v="engine" item_name_1="s_vehicle_engine_definition" item_name_2="s_vehicle_engine_definition" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
 					<_36 v="engine" />
 					<_14 v="engine moment" />
 					<_14 v="engine min angular velocity" />
 					<_14 v="engine max angular velocity" />
-					<_40 v="gears" item_name_1="s_vehicle_gear_definition" item_name_2="s_vehicle_gear_definition" item_name_3="s_vehicle_gear_definition" db1="140" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_40 v="gears" item_name_1="s_vehicle_gear_definition" item_name_2="s_vehicle_gear_definition" db1="140" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_36 v="loaded torque" />
-						<_38 v="loaded torque curve" item_name_3="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-							<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="loaded torque curve" item_name_1="s_toruqe_curve_definition" item_name_2="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+							<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 								<_37 v="function" />
-								<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+								<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 									<_37 v="" />
 									<_42 v="data" />
 									<_37 v="" />
@@ -3710,10 +3710,10 @@
 							<_3B v="" />
 						</_38>
 						<_36 v="cruising torque" />
-						<_38 v="cruising torque curve" item_name_3="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-							<_38 v="function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_38 v="cruising torque curve" item_name_1="s_toruqe_curve_definition" item_name_2="s_toruqe_curve_definition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+							<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 								<_37 v="function" />
-								<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+								<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 									<_37 v="" />
 									<_42 v="data" />
 									<_37 v="" />
@@ -3738,7 +3738,7 @@
 						<_3B v="" />
 					</_40>
 					<_41 v="gear shift sound" />
-					<_40 v="load and cruise sound" item_name_1="s_vehicle_load_and_cruise_definition" item_name_2="s_vehicle_load_and_cruise_definition" item_name_3="s_vehicle_load_and_cruise_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+					<_40 v="load and cruise sound" item_name_1="s_vehicle_load_and_cruise_definition" item_name_2="s_vehicle_load_and_cruise_definition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 						<_2 v="load cruise function" />
 						<_30 v="attachment index" />
 						<_3B v="" />
@@ -3774,7 +3774,7 @@
 			<_14 v="maximum right slide" />
 			<_14 v="slide acceleration" />
 			<_14 v="slide deceleration" />
-			<_38 v="scout physics" item_name_3="ScoutPhysicsDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="scout physics" item_name_1="ScoutPhysicsDefinition" item_name_2="ScoutPhysicsDefinition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_F v="flags">
 					<Flag v="hovercraft" />
 					<Flag v="slope scales speed" />
@@ -3803,10 +3803,10 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="General Vehicle Physics" />
-	<_38 v="havok vehicle physics" item_name_3="i343::Vehicles::VehiclePhysicsDefinition" db1="156" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="havok vehicle physics" item_name_1="i343::Vehicles::VehiclePhysicsDefinition" item_name_2="i343::Vehicles::VehiclePhysicsDefinition" db1="156" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_14 v="gravity scale" />
 		<_6 v="iteration count" />
-		<_40 v="anti gravity point configurations" item_name_1="i343::Vehicles::AntiGravityPointConfiguration" item_name_2="i343::Vehicles::AntiGravityPointConfiguration" item_name_3="i343::Vehicles::AntiGravityPointConfiguration" db1="128" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="anti gravity point configurations" item_name_1="i343::Vehicles::AntiGravityPointConfiguration" item_name_2="i343::Vehicles::AntiGravityPointConfiguration" db1="128" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_2 v="name" />
 			<_36 v="Operational Range- Height" />
 			<_14 v="inner distance" />
@@ -3831,14 +3831,14 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_40>
-		<_40 v="anti gravity points" item_name_1="i343::Vehicles::AntiGravityPointDefinition" item_name_2="i343::Vehicles::AntiGravityPointDefinition" item_name_3="i343::Vehicles::AntiGravityPointDefinition" db1="36" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="anti gravity points" item_name_1="i343::Vehicles::AntiGravityPointDefinition" item_name_2="i343::Vehicles::AntiGravityPointDefinition" db1="36" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_37 v="" />
 			<_2 v="marker name" />
 			<_2 v="region name" />
 			<_6 v="runtime region index" />
 			<_37 v="" />
 			<_2 v="looping sound marker" />
-			<_40 v="state configurations" item_name_1="i343::Vehicles::AntiGravityPointStateConfiguration" item_name_2="i343::Vehicles::AntiGravityPointStateConfiguration" item_name_3="i343::Vehicles::AntiGravityPointStateConfiguration" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="state configurations" item_name_1="i343::Vehicles::AntiGravityPointStateConfiguration" item_name_2="i343::Vehicles::AntiGravityPointStateConfiguration" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_B v="region state">
 					<Flag v="default" />
 					<Flag v="minor damage" />
@@ -3851,7 +3851,7 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="friction point configurations" item_name_1="i343::Vehicles::FrictionPointConfiguration" item_name_2="i343::Vehicles::FrictionPointConfiguration" item_name_3="i343::Vehicles::FrictionPointConfiguration" db1="208" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_40 v="friction point configurations" item_name_1="i343::Vehicles::FrictionPointConfiguration" item_name_2="i343::Vehicles::FrictionPointConfiguration" db1="208" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="name" />
 			<_14 v="radius" />
 			<_36 v="Normal Force Simulation" />
@@ -3874,9 +3874,9 @@
 			<_8 v="local space slope to stop all traction" />
 			<_8 v="local space slope to stop hit checks" />
 			<_36 v="Grounded Vehicle Stabilizing Torque" />
-			<_38 v="grounded speed to down torque function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="grounded speed to down torque function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -3884,9 +3884,9 @@
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_38 v="nearly grounded speed to down torque function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_38 v="nearly grounded speed to down torque function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_37 v="function" />
-				<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -3904,7 +3904,7 @@
 			</_D>
 			<_3B v="" />
 		</_40>
-		<_40 v="friction points" item_name_1="i343::Vehicles::FrictionPointDefinition" item_name_2="i343::Vehicles::FrictionPointDefinition" item_name_3="i343::Vehicles::FrictionPointDefinition" db1="56" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="friction points" item_name_1="i343::Vehicles::FrictionPointDefinition" item_name_2="i343::Vehicles::FrictionPointDefinition" db1="56" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_37 v="" />
 			<_2 v="marker name" />
 			<_2 v="region name" />
@@ -3919,7 +3919,7 @@
 			<_2 v="looping sound marker" />
 			<_2 v="grinding object function" />
 			<_2 v="rolling object function" />
-			<_40 v="state configurations" item_name_1="i343::Vehicles::FrictionPointStateConfiguration" item_name_2="i343::Vehicles::FrictionPointStateConfiguration" item_name_3="i343::Vehicles::FrictionPointStateConfiguration" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+			<_40 v="state configurations" item_name_1="i343::Vehicles::FrictionPointStateConfiguration" item_name_2="i343::Vehicles::FrictionPointStateConfiguration" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 				<_B v="region state">
 					<Flag v="default" />
 					<Flag v="minor damage" />
@@ -3935,9 +3935,9 @@
 		<_36 v="Grounded Vehicle Stabilizing Downforce" />
 		<_14 v="maximum speed for downForce" />
 		<_8 v="angle to exclude downforce" />
-		<_38 v="grounded speed to COM downforce function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="grounded speed to COM downforce function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -3945,9 +3945,9 @@
 			</_38>
 			<_3B v="" />
 		</_38>
-		<_38 v="nearly grounded speed to COM downforce function" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="nearly grounded speed to COM downforce function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -3959,7 +3959,7 @@
 		<_19 v="airborne angular stabilization coefficients" />
 		<_3B v="" />
 	</_38>
-	<_40 v="tricks" item_name_1="s_unit_trick_definition" item_name_2="s_unit_trick_definition" item_name_3="s_unit_trick_definition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="tricks" item_name_1="s_unit_trick_definition" item_name_2="s_unit_trick_definition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="animation name" />
 		<_A v="activation type">
 			<Flag v="trick button + left" />
@@ -4073,14 +4073,14 @@
 	<_14 v="fake audio speed - speed decrease amount" />
 	<_14 v="fake audio speed - non-boost limit" />
 	<_14 v="fake audio speed - max speed scale" />
-	<_40 v="Sound RTPCs" item_name_1="SoundRTPCBlockDefinition" item_name_2="SoundRTPCBlockDefinition" item_name_3="SoundRTPCBlockDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="417">
+	<_40 v="Sound RTPCs" item_name_1="SoundRTPCBlockDefinition" item_name_2="SoundRTPCBlockDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="417">
 		<_30 v="Attachment Index" />
 		<_2 v="Function" />
 		<_2 v="RTPC Name" />
 		<_6 v="RTPC name hash value" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Sound Sweeteners" item_name_1="SoundSweetenerBlockDefinition" item_name_2="SoundSweetenerBlockDefinition" item_name_3="SoundSweetenerBlockDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Sound Sweeteners" item_name_1="SoundSweetenerBlockDefinition" item_name_2="SoundSweetenerBlockDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="Function" />
 		<_41 v="sound" />
 		<_14 v="Switch point" />
@@ -4091,7 +4091,7 @@
 	<_41 v="driver boost damage effect or response" />
 	<_41 v="rider boost damage effect or response" />
 	<_2 v="vehicle name" />
-	<_40 v="AI cruise control" item_name_1="s_vehicleAiCruiseControl" item_name_2="s_vehicleAiCruiseControl" item_name_3="s_vehicleAiCruiseControl" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="AI cruise control" item_name_1="s_vehicleAiCruiseControl" item_name_2="s_vehicleAiCruiseControl" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="ai speed control" />
 		<_14 v="Proportional" />
 		<_14 v="Integral" />
@@ -4099,7 +4099,7 @@
 		<_14 v="Slow down rate" />
 		<_3B v="" />
 	</_40>
-	<_40 v="UI display info" item_name_1="Interface::UIItemInfo" item_name_2="Interface::UIItemInfo" item_name_3="Interface::UIItemInfo" db1="116" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="UI display info" item_name_1="Interface::UIItemInfo" item_name_2="Interface::UIItemInfo" db1="116" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="name" />
 		<_2 v="alt name " />
 		<_2 v="description" />

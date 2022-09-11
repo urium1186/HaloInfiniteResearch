@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::ColorGlobals" item_name_2="i343::ColorGlobals" item_name_3="i343::ColorGlobals" db1="104" db2="0" db3="1" db4="0" db5="1" db6="0" db7="88" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::ColorGlobals" item_name_2="i343::ColorGlobals" db1="104" db2="0" db3="1" db4="0" db5="1" db6="0" db7="88" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="profile colors" item_name_1="multiplayer_color" item_name_2="multiplayer_color" item_name_3="multiplayer_color" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="profile colors" item_name_1="multiplayer_color" item_name_2="multiplayer_color" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_1F v="color" />
 		<_3B v="" />
 	</_40>
-	<_40 v="emblem colors" item_name_1="i343::EmblemHarmonyGroup" item_name_2="i343::EmblemHarmonyGroup" item_name_3="i343::EmblemHarmonyGroup" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="emblem colors" item_name_1="i343::EmblemHarmonyGroup" item_name_2="i343::EmblemHarmonyGroup" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="harmony group name" />
-		<_40 v="harmonies" item_name_1="i343::EmblemHarmony" item_name_2="i343::EmblemHarmony" item_name_3="i343::EmblemHarmony" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="harmonies" item_name_1="i343::EmblemHarmony" item_name_2="i343::EmblemHarmony" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="harmony name" />
 			<_1F v="primary color" />
 			<_1F v="secondary color" />
@@ -24,13 +24,13 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="visor colors" item_name_1="s_multiplayer_visor_color" item_name_2="s_multiplayer_visor_color" item_name_3="s_multiplayer_visor_color" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="visor colors" item_name_1="s_multiplayer_visor_color" item_name_2="s_multiplayer_visor_color" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_1F v="tertiary color" />
 		<_1F v="quaternary color" />
 		<_3B v="" />
 	</_40>
-	<_38 v="elite specular color" item_name_3="s_elite_specular_color" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="elite specular color" item_name_1="s_elite_specular_color" item_name_2="s_elite_specular_color" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_1F v="tertiary color" />
 		<_1F v="quaternary color" />
 		<_3B v="" />

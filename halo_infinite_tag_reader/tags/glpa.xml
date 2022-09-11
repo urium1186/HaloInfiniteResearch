@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::PlayerGlobals" item_name_2="i343::PlayerGlobals" item_name_3="i343::PlayerGlobals" db1="216" db2="0" db3="5" db4="0" db5="1" db6="0" db7="200" db8="1395">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="i343::PlayerGlobals" item_name_2="i343::PlayerGlobals" db1="216" db2="0" db3="5" db4="0" db5="1" db6="0" db7="200" db8="1395">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -12,7 +12,7 @@
 	<_2 v="Default representation" />
 	<_37 v="Player Representations" />
 	<_36 v="Notes" />
-	<_40 v="@player representations" item_name_1="i343::Player::Representation" item_name_2="i343::Player::Representation" item_name_3="i343::Player::Representation" db1="556" db2="0" db3="9" db4="0" db5="1" db6="0" db7="0" db8="369">
+	<_40 v="@player representations" item_name_1="i343::Player::Representation" item_name_2="i343::Player::Representation" db1="556" db2="0" db3="9" db4="0" db5="1" db6="0" db7="0" db8="369">
 		<_2 v="name" />
 		<_2 v="first person interface name" />
 		<_2 v="customization set" />
@@ -24,7 +24,7 @@
 		<_34 v="generated_pad3e61" length="3" />
 		<_41 v="third person unit" />
 		<_2 v="third person variant" />
-		<_40 v="additional third person variants" item_name_1="i343::Player::Variant" item_name_2="i343::Player::Variant" item_name_3="i343::Player::Variant" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="additional third person variants" item_name_1="i343::Player::Variant" item_name_2="i343::Player::Variant" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="Variant" />
 			<_3B v="" />
 		</_40>
@@ -36,7 +36,7 @@
 		<_41 v="generatedFirstPersonHandsModel" />
 		<_2 v="first person hands variant" />
 		<_2 v="first person body variant" />
-		<_40 v="hidden fpBody regions" item_name_1="i343::Player::FirstPersonHiddenBodyRegion" item_name_2="i343::Player::FirstPersonHiddenBodyRegion" item_name_3="i343::Player::FirstPersonHiddenBodyRegion" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="hidden fpBody regions" item_name_1="i343::Player::FirstPersonHiddenBodyRegion" item_name_2="i343::Player::FirstPersonHiddenBodyRegion" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="hidden region" />
 			<_F v="flags">
 				<Flag v="visible in ICS" />
@@ -59,7 +59,7 @@
 		<_3B v="" />
 	</_40>
 	<_37 v="" />
-	<_40 v="@player information" item_name_1="s_game_globals_player_information" item_name_2="s_game_globals_player_information" item_name_3="s_game_globals_player_information" db1="116" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="@player information" item_name_1="s_game_globals_player_information" item_name_2="s_game_globals_player_information" db1="116" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_2 v="name" />
 		<_14 v="walking speed" />
 		<_14 v="run forward" />
@@ -76,9 +76,9 @@
 		<_14 v="downed acceleration" />
 		<_14 v="airborne acceleration" />
 		<_17 v="grenade origin" />
-		<_38 v="grenade aiming" item_name_3="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="grenade aiming" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -92,7 +92,7 @@
 		<_14 v="tracking detection locking decay time" />
 		<_3B v="" />
 	</_40>
-	<_40 v="@player camera" item_name_1="i343::Player::CameraGlobals" item_name_2="i343::Player::CameraGlobals" item_name_3="i343::Player::CameraGlobals" db1="80" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2467">
+	<_40 v="@player camera" item_name_1="i343::Player::CameraGlobals" item_name_2="i343::Player::CameraGlobals" db1="80" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="2467">
 		<_36 v="Default camera values" />
 		<_14 v="look velocity base (pitch)" />
 		<_14 v="look velocity step (pitch)" />
@@ -100,7 +100,7 @@
 		<_14 v="look velocity step (yaw)" />
 		<_14 v="mouse input velocity scale" />
 		<_36 v="Flying camera pitch values" />
-		<_39 v="flying camera pitch values" item_name_3="i343::Player::FlyingLookSensitivityArrayDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_39 v="flying camera pitch values" item_name_1="i343::Player::FlyingLookSensitivityArrayDefinition" item_name_2="i343::Player::FlyingLookSensitivityArrayDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Angular velocity" />
 			<_3B v="" />
 			<_14 v="Angular velocity" />
@@ -111,7 +111,7 @@
 			<_3B v="" />
 		</_39>
 		<_36 v="Flying camera yaw values" />
-		<_39 v="flying camera yaw values" item_name_3="i343::Player::FlyingLookSensitivityArrayDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_39 v="flying camera yaw values" item_name_1="i343::Player::FlyingLookSensitivityArrayDefinition" item_name_2="i343::Player::FlyingLookSensitivityArrayDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Angular velocity" />
 			<_3B v="" />
 			<_14 v="Angular velocity" />
@@ -122,7 +122,7 @@
 			<_3B v="" />
 		</_39>
 		<_36 v="Flying camera speed values" />
-		<_39 v="flying camera speed values" item_name_3="i343::Player::FlyingSpeedArrayDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_39 v="flying camera speed values" item_name_1="i343::Player::FlyingSpeedArrayDefinition" item_name_2="i343::Player::FlyingSpeedArrayDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Speed" />
 			<_3B v="" />
 			<_14 v="Speed" />
@@ -133,7 +133,7 @@
 			<_3B v="" />
 		</_39>
 		<_36 v="Flying camera thrust values" />
-		<_39 v="flying camera thrust values" item_name_3="i343::Player::FlyingThrustArrayDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_39 v="flying camera thrust values" item_name_1="i343::Player::FlyingThrustArrayDefinition" item_name_2="i343::Player::FlyingThrustArrayDefinition" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Thrust" />
 			<_3B v="" />
 			<_14 v="Thrust" />
@@ -143,12 +143,12 @@
 		</_39>
 		<_3B v="" />
 	</_40>
-	<_40 v="@first person weapon" item_name_1="i343::FirstPersonWeapon::Globals" item_name_2="i343::FirstPersonWeapon::Globals" item_name_3="i343::FirstPersonWeapon::Globals" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="@first person weapon" item_name_1="i343::FirstPersonWeapon::Globals" item_name_2="i343::FirstPersonWeapon::Globals" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_36 v="Body Render Max FOV" />
 		<_14 v="body render max fov" />
 		<_3B v="" />
 	</_40>
-	<_40 v="@predictable collisions" item_name_1="i343::Biped::PredictableCollisionGlobals" item_name_2="i343::Biped::PredictableCollisionGlobals" item_name_3="i343::Biped::PredictableCollisionGlobals" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
+	<_40 v="@predictable collisions" item_name_1="i343::Biped::PredictableCollisionGlobals" item_name_2="i343::Biped::PredictableCollisionGlobals" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 		<_36 v="Predictable Collision" />
 		<_D v="flags">
 			<Flag v="enable" />
@@ -162,50 +162,50 @@
 		<_14 v="linear correction velocity max" />
 		<_3B v="" />
 	</_40>
-	<_38 v="participant malleable properties" item_name_3="i343::Participant::MalleablePropertiesDefinition" db1="72" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="931">
+	<_38 v="participant malleable properties" item_name_1="i343::Participant::MalleablePropertiesDefinition" item_name_2="i343::Participant::MalleablePropertiesDefinition" db1="72" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="931">
 		<_37 v="motion tracker normal range" />
-		<_38 v="motion tracker normal range" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="motion tracker normal range" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
 		</_38>
 		<_37 v="motion tracker extended range" />
-		<_38 v="motion tracker extended range" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="motion tracker extended range" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
 		</_38>
 		<_37 v="motion tracker vehicle range" />
-		<_38 v="motion tracker vehicle range" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="motion tracker vehicle range" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
 		</_38>
 		<_37 v="motion tracker threshold speed (friendly)" />
-		<_38 v="motion tracker threshold speed (friendly)" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="motion tracker threshold speed (friendly)" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
 		</_38>
 		<_37 v="motion tracker threshold speed (enemy)" />
-		<_38 v="motion tracker threshold speed (enemy)" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="motion tracker threshold speed (enemy)" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
 		</_38>
 		<_37 v="motion tracker visibility scalar" />
-		<_38 v="motion tracker visibility scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+		<_38 v="motion tracker visibility scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 			<_14 v="Base Value" />
 			<_25 v="Value Bounds" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="inventory limits" item_name_3="i343::Player::InventoryLimits" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+	<_38 v="inventory limits" item_name_1="i343::Player::InventoryLimits" item_name_2="i343::Player::InventoryLimits" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 		<_3C v="maximum allowed weapons per player" />
 		<_3B v="" />
 	</_38>
-	<_38 v="interaction priorities" item_name_3="i343::Player::InteractionPriorities" db1="18" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+	<_38 v="interaction priorities" item_name_1="i343::Player::InteractionPriorities" item_name_2="i343::Player::InteractionPriorities" db1="18" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
 		<_36 v="Interaction Priorities" />
 		<_3C v="None" />
 		<_3C v="WeaponPickUpDisabled" />

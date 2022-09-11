@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_model_definition" item_name_2="s_model_definition" item_name_3="s_model_definition" db1="1064" db2="0" db3="14" db4="0" db5="1" db6="0" db7="1048" db8="3443">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="s_model_definition" item_name_2="s_model_definition" db1="1064" db2="0" db3="14" db4="0" db5="1" db6="0" db7="1048" db8="3443">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -29,7 +29,7 @@
 	<_2 v="asset category name" />
 	<_6 v="asset category index" />
 	<_36 v="level of detail" />
-	<_40 v="lod levels" item_name_1="LODTransitionDistanceBlock" item_name_2="LODTransitionDistanceBlock" item_name_3="LODTransitionDistanceBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="lod levels" item_name_1="LODTransitionDistanceBlock" item_name_2="LODTransitionDistanceBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="lodTransitionDistance" />
 		<_3B v="" />
 	</_40>
@@ -48,7 +48,7 @@
 	<_14 v="medium priority distance" />
 	<_14 v="low priority distance" />
 	<_6 v="lod index override for damage draw" />
-	<_40 v="variants" item_name_1="variant" item_name_2="s_model_variant" item_name_3="variant" db1="392" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="variants" item_name_1="variant" item_name_2="s_model_variant" db1="392" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_2 v="name" />
 		<_2 v="style" />
 		<_6 v="Damage Style Index" />
@@ -61,7 +61,7 @@
 			<Flag v="Disable" />
 			<Flag v="Enable" />
 		</_B>
-		<_39 v="runtime variant region indices" item_name_3="RuntimeRegionIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_39 v="runtime variant region indices" item_name_1="RuntimeRegionIndex" item_name_2="RuntimeRegionIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_4 v="runtime region index" />
 			<_3B v="" />
 			<_4 v="runtime region index" />
@@ -128,12 +128,12 @@
 			<_3B v="" />
 		</_39>
 		<_34 v="generated_pad364f" length="2" />
-		<_40 v="regions" item_name_1="region" item_name_2="s_model_variant_region" item_name_3="region" db1="32" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="regions" item_name_1="region" item_name_2="s_model_variant_region" db1="32" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="region name" />
 			<_4 v="runtime region index" />
 			<_3C v="runtime flags" />
 			<_2E v="parent variant" />
-			<_40 v="permutations" item_name_1="permutation" item_name_2="s_model_variant_permutation" item_name_3="permutation" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_40 v="permutations" item_name_1="permutation" item_name_2="s_model_variant_permutation" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 				<_2 v="permutation name" />
 				<_3E v="runtime permutation index" />
 				<_F v="flags">
@@ -141,7 +141,7 @@
 				</_F>
 				<_34 v="generated_padd60a" length="3" />
 				<_14 v="probability" />
-				<_40 v="states" item_name_1="s_model_variant_state" item_name_2="s_model_variant_state" item_name_3="s_model_variant_state" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="states" item_name_1="s_model_variant_state" item_name_2="s_model_variant_state" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="permutation name" />
 					<_4 v="runtime permutation index" />
 					<_F v="property flags">
@@ -160,7 +160,7 @@
 					<_15 v="initial probability" />
 					<_3B v="" />
 				</_40>
-				<_39 v="runtime state permutation indices" item_name_3="ModelStatePermutationIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_39 v="runtime state permutation indices" item_name_1="ModelStatePermutationIndex" item_name_2="ModelStatePermutationIndex" db1="1" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_4 v="runtime permutation index" />
 					<_3B v="" />
 					<_4 v="runtime permutation index" />
@@ -192,7 +192,7 @@
 			<_34 v="generated_pade9d0" length="2" />
 			<_3B v="" />
 		</_40>
-		<_40 v="objects" item_name_1="object" item_name_2="i343::Model::ModelVariantObject" item_name_3="object" db1="72" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="objects" item_name_1="object" item_name_2="i343::Model::ModelVariantObject" db1="72" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_37 v="" />
 			<_2 v="parent marker" />
 			<_37 v="" />
@@ -209,7 +209,7 @@
 			<_3B v="" />
 		</_40>
 		<_37 v="Object Node Graph Overrides" />
-		<_40 v="Object Node Graphs" item_name_1="i343::Objects::ObjectNodeGraphDefinition" item_name_2="i343::Objects::ObjectNodeGraphDefinition" item_name_3="i343::Objects::ObjectNodeGraphDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+		<_40 v="Object Node Graphs" item_name_1="i343::Objects::ObjectNodeGraphDefinition" item_name_2="i343::Objects::ObjectNodeGraphDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 			<_2 v="Name" />
 			<_41 v="Exported Node Graph" />
 			<_F v="Flags">
@@ -226,11 +226,11 @@
 			<_3B v="" />
 		</_40>
 		<_37 v="" />
-		<_40 v="muted nodes" item_name_1="muted node" item_name_2="ModelVariantMutedNodeBlock" item_name_3="muted node" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="muted nodes" item_name_1="muted node" item_name_2="ModelVariantMutedNodeBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="node name" />
 			<_3B v="" />
 		</_40>
-		<_39 v="muted flag" item_name_3="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_39 v="muted flag" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="flag data" />
 			<_3B v="" />
 			<_6 v="flag data" />
@@ -300,7 +300,7 @@
 		<_41 v="lighting volumes" />
 		<_41 v="scenario lighting volumes" />
 		<_41 v="Object Lightmap" />
-		<_40 v="Object Cubemap set" item_name_1="CubemapVolume" item_name_2="CubemapVolume" item_name_3="CubemapVolume" db1="284" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="2355">
+		<_40 v="Object Cubemap set" item_name_1="CubemapVolume" item_name_2="CubemapVolume" db1="284" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="2355">
 			<_2 v="Name" />
 			<_D v="Flags">
 				<Flag v="Enable Intensity Correction" />
@@ -308,12 +308,12 @@
 				<Flag v="Affects Adjacent Bsps" />
 				<Flag v="Capture Dynamic Objects" />
 			</_D>
-			<_38 v="Dumpling" item_name_3="s_scenario_dumpling" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
-				<_40 v="inner points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" item_name_3="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="Dumpling" item_name_1="s_scenario_dumpling" item_name_2="s_scenario_dumpling" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_40 v="inner points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_17 v="position" />
 					<_3B v="" />
 				</_40>
-				<_40 v="outer points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" item_name_3="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_40 v="outer points" item_name_1="s_dumpling_sector_point" item_name_2="s_dumpling_sector_point" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 					<_17 v="position" />
 					<_3B v="" />
 				</_40>
@@ -346,7 +346,7 @@
 			</_B>
 			<_17 v="Intensity" />
 			<_14 v="Self-illum Scale Down" />
-			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="folder name" />
 				<_17 v="local space pivot point position" />
 				<_3B v="" />
@@ -374,11 +374,11 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="region sort" item_name_1="RegionNameBlock" item_name_2="RegionNameBlock" item_name_3="RegionNameBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="region sort" item_name_1="RegionNameBlock" item_name_2="RegionNameBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="model materials" item_name_1="material" item_name_2="s_model_material" item_name_3="material" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+	<_40 v="model materials" item_name_1="material" item_name_2="s_model_material" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 		<_2 v="material name" />
 		<_2E v="damage section" />
 		<_5 v="runtime collision material index" />
@@ -389,7 +389,7 @@
 		<_34 v="generated_pad40f0" length="2" />
 		<_3B v="" />
 	</_40>
-	<_40 v="new damage info" item_name_1="s_model_damage_info" item_name_2="s_model_damage_info" item_name_3="s_model_damage_info" db1="244" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+	<_40 v="new damage info" item_name_1="s_model_damage_info" item_name_2="s_model_damage_info" db1="244" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
 		<_D v="flags">
 			<Flag v="takes shield damage for children" />
 			<Flag v="takes body damage for children" />
@@ -413,7 +413,7 @@
 		<_2F v="indirect damage section" />
 		<_34 v="generated_pad0d7e" length="2" />
 		<_36 v="body" />
-		<_38 v="body" item_name_3="DamageBodyParameters" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="body" item_name_1="DamageBodyParameters" item_name_2="DamageBodyParameters" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="maximum vitality" />
 			<_14 v="minimum stun damage" />
 			<_14 v="stun time" />
@@ -422,7 +422,7 @@
 			<_3B v="" />
 		</_38>
 		<_36 v="shield" />
-		<_38 v="shield" item_name_3="DamageShieldParameters" db1="116" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_38 v="shield" item_name_1="DamageShieldParameters" item_name_2="DamageShieldParameters" db1="116" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_14 v="maximum shield vitality" />
 			<_2 v="global shield material name" />
 			<_14 v="minimum stun damage" />
@@ -436,7 +436,7 @@
 			<_41 v="shield recharging effect" />
 			<_3B v="" />
 		</_38>
-		<_40 v="damage sections" item_name_1="s_model_damage_section" item_name_2="s_model_damage_section" item_name_3="s_model_damage_section" db1="52" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="damage sections" item_name_1="s_model_damage_section" item_name_2="s_model_damage_section" db1="52" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="name" />
 			<_36 v="damage section flags" />
 			<_D v="flags">
@@ -454,7 +454,7 @@
 				<Flag v="allow damage response overflow" />
 			</_D>
 			<_15 v="vitality percentage" />
-			<_40 v="instant responses" item_name_1="s_instantaneous_damage_response" item_name_2="s_instantaneous_damage_response" item_name_3="s_instantaneous_damage_response" db1="200" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="275">
+			<_40 v="instant responses" item_name_1="s_instantaneous_damage_response" item_name_2="s_instantaneous_damage_response" db1="200" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="275">
 				<_B v="response type">
 					<Flag v="receives all damage" />
 					<Flag v="receives area effect damage" />
@@ -518,7 +518,7 @@
 				<_14 v="body damage threshold" />
 				<_41 v="transition effect (generic)" />
 				<_41 v="transition effect (specific)" />
-				<_38 v="damage effect" item_name_3="InstantaneousResponseDamageEffect" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+				<_38 v="damage effect" item_name_1="InstantaneousResponseDamageEffect" item_name_2="InstantaneousResponseDamageEffect" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 					<_41 v="transition damage effect" />
 					<_3B v="" />
 				</_38>
@@ -548,7 +548,7 @@
 				<_34 v="generated_pad870e" length="2" />
 				<_2 v="custom response label" />
 				<_2 v="effect marker name" />
-				<_38 v="damage effect marker" item_name_3="InstantaneousResponseDamageEffectMarker" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_38 v="damage effect marker" item_name_1="InstantaneousResponseDamageEffectMarker" item_name_2="InstantaneousResponseDamageEffectMarker" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="damage effect marker name" />
 					<_3B v="" />
 				</_38>
@@ -575,7 +575,7 @@
 			<_34 v="generated_padab79" length="2" />
 			<_3B v="" />
 		</_40>
-		<_40 v="nodes" item_name_1="s_damage_node" item_name_2="s_damage_node" item_name_3="s_damage_node" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="nodes" item_name_1="s_damage_node" item_name_2="s_damage_node" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_5 v="runtime damage part" />
 			<_3B v="" />
 		</_40>
@@ -584,13 +584,13 @@
 		<_14 v="runtime shield recharge velocity" />
 		<_14 v="runtime overcharge velocity" />
 		<_14 v="runtime health recharge velocity" />
-		<_40 v="damage seats" item_name_1="s_damage_seat_info" item_name_2="s_damage_seat_info" item_name_3="s_damage_seat_info" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="damage seats" item_name_1="s_damage_seat_info" item_name_2="s_damage_seat_info" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="seat label" />
 			<_15 v="direct damage scale" />
 			<_14 v="damage transfer fall-off radius" />
 			<_14 v="maximum transfer damage scale" />
 			<_14 v="minimum transfer damage scale" />
-			<_40 v="region-specific-damage" item_name_1="s_damage_seat_region_setting" item_name_2="s_damage_seat_region_setting" item_name_3="s_damage_seat_region_setting" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="region-specific-damage" item_name_1="s_damage_seat_region_setting" item_name_2="s_damage_seat_region_setting" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_36 v="region-state-specific-damage" />
 				<_2 v="damage region name" />
 				<_5 v="runtime damage region index" />
@@ -608,7 +608,7 @@
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="damage constraints" item_name_1="s_damage_constraint_info" item_name_2="s_damage_constraint_info" item_name_3="s_damage_constraint_info" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="damage constraints" item_name_1="s_damage_constraint_info" item_name_2="s_damage_constraint_info" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="physics model constraint name" />
 			<_2 v="damage constraint name" />
 			<_2 v="damage constraint group name" />
@@ -619,7 +619,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_38 v="damage info"  g="true" item_name_3="s_new_model_damage_info" db1="192" db2="0" db3="10" db4="0" db5="1" db6="0" db7="0" db8="371">
+	<_38 v="damage info" item_name_1="s_new_model_damage_info" item_name_2="s_new_model_damage_info" db1="192" db2="0" db3="10" db4="0" db5="1" db6="0" db7="0" db8="371">
 		<_36 v="Damage Info" />
 		<_D v="flags">
 			<Flag v="takes damage for children" />
@@ -633,7 +633,7 @@
 		<_2E v="indirect damage section" />
 		<_2E v="shielded state damage section" />
 		<_41 v="restoration effect" />
-		<_40 v="damage sections" item_name_1="s_new_model_damage_section" item_name_2="s_new_model_damage_section" item_name_3="s_new_model_damage_section" db1="304" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="371">
+		<_40 v="damage sections" item_name_1="s_new_model_damage_section" item_name_2="s_new_model_damage_section" db1="304" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="371">
 			<_2 v="name" />
 			<_A v="damage part">
 				<Flag v="gut" />
@@ -680,7 +680,7 @@
 			<_15 v="vitality percentage" />
 			<_37 v="" />
 			<_37 v="maximum vitality percentage" />
-			<_38 v="maximum vitality percentage" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="maximum vitality percentage" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
@@ -691,7 +691,7 @@
 			<_14 v="stun time" />
 			<_37 v="" />
 			<_37 v="stun duration" />
-			<_38 v="stun duration" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="stun duration" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
@@ -700,14 +700,14 @@
 			<_36 v="recharge" />
 			<_14 v="recharge time" />
 			<_37 v="recharge speed base scalar" />
-			<_38 v="recharge speed base scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="recharge speed base scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
-			<_40 v="recharge speed curve" item_name_1="s_damage_section_recharge_speed_multiplier_curve" item_name_2="s_damage_section_recharge_speed_multiplier_curve" item_name_3="s_damage_section_recharge_speed_multiplier_curve" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
+			<_40 v="recharge speed curve" item_name_1="s_damage_section_recharge_speed_multiplier_curve" item_name_2="s_damage_section_recharge_speed_multiplier_curve" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
 				<_37 v="Mapping" />
-				<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 					<_37 v="" />
 					<_42 v="data" />
 					<_37 v="" />
@@ -715,7 +715,7 @@
 				</_38>
 				<_3B v="" />
 			</_40>
-			<_40 v="recharge fractions" item_name_1="DamageSectionSegmentedRechargeFractionBlock" item_name_2="DamageSectionSegmentedRechargeFractionBlock" item_name_3="DamageSectionSegmentedRechargeFractionBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="recharge fractions" item_name_1="DamageSectionSegmentedRechargeFractionBlock" item_name_2="DamageSectionSegmentedRechargeFractionBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_15 v="vitality percentage" />
 				<_3B v="" />
 			</_40>
@@ -734,7 +734,7 @@
 			<_36 v="resurrection" />
 			<_2 v="resurrection restored region name" />
 			<_14 v="anti spam timer duration" />
-			<_40 v="instant responses" item_name_1="s_new_instantaneous_damage_response" item_name_2="s_new_instantaneous_damage_response" item_name_3="s_new_instantaneous_damage_response" db1="440" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="339">
+			<_40 v="instant responses" item_name_1="s_new_instantaneous_damage_response" item_name_2="s_new_instantaneous_damage_response" db1="440" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="339">
 				<_D v="flags">
 					<Flag v="kills object" />
 					<Flag v="inhibits melee attack" />
@@ -774,11 +774,11 @@
 					<Flag v="generate script event" />
 				</_D>
 				<_2 v="label" />
-				<_40 v="included variants" item_name_1="VariantSpecificationBlock" item_name_2="VariantSpecificationBlock" item_name_3="VariantSpecificationBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="included variants" item_name_1="VariantSpecificationBlock" item_name_2="VariantSpecificationBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="name" />
 					<_3B v="" />
 				</_40>
-				<_40 v="excluded variants" item_name_1="VariantSpecificationBlock" item_name_2="VariantSpecificationBlock" item_name_3="VariantSpecificationBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="excluded variants" item_name_1="VariantSpecificationBlock" item_name_2="VariantSpecificationBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="name" />
 					<_3B v="" />
 				</_40>
@@ -789,11 +789,11 @@
 				<_2 v="generic effect marker" />
 				<_41 v="transition effect (specific)" />
 				<_2 v="specific effect marker" />
-				<_38 v="damage effect" item_name_3="InstantaneousResponseDamageEffect" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+				<_38 v="damage effect" item_name_1="InstantaneousResponseDamageEffect" item_name_2="InstantaneousResponseDamageEffect" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 					<_41 v="transition damage effect" />
 					<_3B v="" />
 				</_38>
-				<_38 v="damage effect marker" item_name_3="InstantaneousResponseDamageEffectMarker" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_38 v="damage effect marker" item_name_1="InstantaneousResponseDamageEffectMarker" item_name_2="InstantaneousResponseDamageEffectMarker" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="damage effect marker name" />
 					<_3B v="" />
 				</_38>
@@ -808,7 +808,7 @@
 				<_41 v="fallback effect" />
 				<_2 v="fallback effect marker" />
 				<_37 v="" />
-				<_40 v="region_transitions" item_name_1="s_region_transition" item_name_2="s_region_transition" item_name_3="s_region_transition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="region_transitions" item_name_1="s_region_transition" item_name_2="s_region_transition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="region" />
 					<_B v="new state">
 						<Flag v="default" />
@@ -820,7 +820,7 @@
 					<_5 v="runtime region index" />
 					<_3B v="" />
 				</_40>
-				<_40 v="response damage transfers" item_name_1="s_damage_transfer" item_name_2="s_damage_transfer" item_name_3="s_damage_transfer" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+				<_40 v="response damage transfers" item_name_1="s_damage_transfer" item_name_2="s_damage_transfer" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 					<_D v="flags">
 						<Flag v="transfer damage to damage section" />
 						<Flag v="transfer damage to parent" />
@@ -857,7 +857,7 @@
 				<_14 v="response delay" />
 				<_41 v="delay effect" />
 				<_2 v="delay effect marker name" />
-				<_40 v="seat eject" item_name_1="SeatEjectionBlock" item_name_2="SeatEjectionBlock" item_name_3="SeatEjectionBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_40 v="seat eject" item_name_1="SeatEjectionBlock" item_name_2="SeatEjectionBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="seat label" />
 					<_3B v="" />
 				</_40>
@@ -880,7 +880,7 @@
 				</_C>
 				<_3B v="" />
 			</_40>
-			<_40 v="section damage transfers" item_name_1="s_damage_transfer" item_name_2="s_damage_transfer" item_name_3="s_damage_transfer" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+			<_40 v="section damage transfers" item_name_1="s_damage_transfer" item_name_2="s_damage_transfer" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 				<_D v="flags">
 					<Flag v="transfer damage to damage section" />
 					<Flag v="transfer damage to parent" />
@@ -907,7 +907,7 @@
 				<_2 v="seat label" />
 				<_3B v="" />
 			</_40>
-			<_40 v="rendering" item_name_1="s_damage_section_rendering_parameters" item_name_2="s_damage_section_rendering_parameters" item_name_3="s_damage_section_rendering_parameters" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_40 v="rendering" item_name_1="s_damage_section_rendering_parameters" item_name_2="s_damage_section_rendering_parameters" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_41 v="3rd person impact parameters (Generator)" />
 				<_41 v="1st person impact parameters (Generator)" />
 				<_3B v="" />
@@ -918,7 +918,7 @@
 			<_5 v="runtime global shield material type" />
 			<_3B v="" />
 		</_40>
-		<_40 v="damage constraints" item_name_1="s_damage_constraint_info" item_name_2="s_damage_constraint_info" item_name_3="s_damage_constraint_info" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="damage constraints" item_name_1="s_damage_constraint_info" item_name_2="s_damage_constraint_info" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="physics model constraint name" />
 			<_2 v="damage constraint name" />
 			<_2 v="damage constraint group name" />
@@ -927,40 +927,40 @@
 			<_5 v="runtime constraint index" />
 			<_3B v="" />
 		</_40>
-		<_40 v="nodes" item_name_1="s_damage_node" item_name_2="s_damage_node" item_name_3="s_damage_node" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="nodes" item_name_1="s_damage_node" item_name_2="s_damage_node" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_5 v="runtime damage part" />
 			<_3B v="" />
 		</_40>
 		<_5 v="runtime indirect material type" />
 		<_34 v="generated_pad9f05" length="2" />
 		<_36 v="Malleable Properties" />
-		<_38 v="properties" item_name_3="i343::Damage::DamageableComponentPropertiesDefinition" db1="88" db2="0" db3="8" db4="0" db5="0" db6="0" db7="0" db8="307">
+		<_38 v="properties" item_name_1="i343::Damage::DamageableComponentPropertiesDefinition" item_name_2="i343::Damage::DamageableComponentPropertiesDefinition" db1="88" db2="0" db3="8" db4="0" db5="0" db6="0" db7="0" db8="307">
 			<_37 v="max overshield scalar" />
-			<_38 v="max overshield scalar" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="max overshield scalar" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_14 v="body vitality" />
 			<_37 v="direct damage resistance" />
-			<_38 v="direct damage resistance" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="direct damage resistance" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="grenade damage resistance" />
-			<_38 v="grenade damage resistance" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="grenade damage resistance" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
 			<_37 v="aoe damage resistance" />
-			<_38 v="aoe damage resistance" item_name_3="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
+			<_38 v="aoe damage resistance" item_name_1="i343::MalleableProperty::BaseFloatStructDefinition" item_name_2="i343::MalleableProperty::BaseFloatStructDefinition" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="928">
 				<_14 v="Base Value" />
 				<_25 v="Value Bounds" />
 				<_3B v="" />
 			</_38>
-			<_38 v="overshield information" item_name_3="i343::Damage::OvershieldInformation" db1="36" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_38 v="overshield information" item_name_1="i343::Damage::OvershieldInformation" item_name_2="i343::Damage::OvershieldInformation" db1="36" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
 				<_37 v="Overshield" />
 				<_14 v="decay rate " />
 				<_14 v="stun time scalar [0, n] " />
@@ -972,7 +972,7 @@
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="targets old" item_name_1="i343::Model::ModelTarget" item_name_2="i343::Model::ModelTarget" item_name_3="i343::Model::ModelTarget" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+	<_40 v="targets old" item_name_1="i343::Model::ModelTarget" item_name_2="i343::Model::ModelTarget" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
 		<_F v="flags">
 			<Flag v="aoe top level" />
 			<Flag v="aoe test obstruction" />
@@ -1003,7 +1003,7 @@
 		<_15 v="aim assist magnetism scale" />
 		<_15 v="ai selection priority scale" />
 		<_14 v="aoe exclusion radius" />
-		<_38 v="lock-on data" item_name_3="i343::Model::ModelTargetLockOnData" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_38 v="lock-on data" item_name_1="i343::Model::ModelTargetLockOnData" item_name_2="i343::Model::ModelTargetLockOnData" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_36 v="lock-on fields" />
 			<_14 v="lock on distance" />
 			<_2 v="tracking type" />
@@ -1011,7 +1011,7 @@
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="model targets" item_name_1="i343::Model::ModelTarget" item_name_2="i343::Model::ModelTarget" item_name_3="i343::Model::ModelTarget" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+	<_40 v="model targets" item_name_1="i343::Model::ModelTarget" item_name_2="i343::Model::ModelTarget" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
 		<_F v="flags">
 			<Flag v="aoe top level" />
 			<Flag v="aoe test obstruction" />
@@ -1042,7 +1042,7 @@
 		<_15 v="aim assist magnetism scale" />
 		<_15 v="ai selection priority scale" />
 		<_14 v="aoe exclusion radius" />
-		<_38 v="lock-on data" item_name_3="i343::Model::ModelTargetLockOnData" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_38 v="lock-on data" item_name_1="i343::Model::ModelTargetLockOnData" item_name_2="i343::Model::ModelTargetLockOnData" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_36 v="lock-on fields" />
 			<_14 v="lock on distance" />
 			<_2 v="tracking type" />
@@ -1050,12 +1050,12 @@
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="runtime regions" item_name_1="s_model_region" item_name_2="s_model_region" item_name_3="s_model_region" db1="28" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="runtime regions" item_name_1="s_model_region" item_name_2="s_model_region" db1="28" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="name" />
 		<_4 v="collision region index" />
 		<_4 v="physics region index" />
 		<_34 v="generated_pad1fd6" length="2" />
-		<_40 v="permutations" item_name_1="s_model_permutation" item_name_2="s_model_permutation" item_name_3="s_model_permutation" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="permutations" item_name_1="s_model_permutation" item_name_2="s_model_permutation" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="name" />
 			<_F v="flags">
 				<Flag v="cannot be chosen randomly" />
@@ -1067,7 +1067,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="runtime nodes" item_name_1="s_model_node" item_name_2="s_model_node" item_name_3="s_model_node" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+	<_40 v="runtime nodes" item_name_1="s_model_node" item_name_2="s_model_node" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 		<_2 v="name" />
 		<_2E v="parent node" />
 		<_2E v="first child node" />
@@ -1083,7 +1083,7 @@
 		<_3B v="" />
 	</_40>
 	<_6 v="runtime node list checksum" />
-	<_40 v="prepopulated runtime nodes" item_name_1="s_model_node" item_name_2="s_model_node" item_name_3="s_model_node" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+	<_40 v="prepopulated runtime nodes" item_name_1="s_model_node" item_name_2="s_model_node" db1="92" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 		<_2 v="name" />
 		<_2E v="parent node" />
 		<_2E v="first child node" />
@@ -1099,7 +1099,7 @@
 		<_3B v="" />
 	</_40>
 	<_36 v="more stuff" />
-	<_40 v="variant overrides" item_name_1="ModelVariantOverrideDef" item_name_2="ModelVariantOverrideDef" item_name_3="ModelVariantOverrideDef" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="variant overrides" item_name_1="ModelVariantOverrideDef" item_name_2="ModelVariantOverrideDef" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="base variant" />
 		<_2 v="override a" />
 		<_2 v="override b" />
@@ -1108,15 +1108,15 @@
 	</_40>
 	<_41 v="default dialogue" />
 	<_41 v="default dialogue female" />
-	<_40 v="teammate chatter dialogue male" item_name_1="TeammateChatterDialogueBlockDefinition" item_name_2="TeammateChatterDialogueBlockDefinition" item_name_3="TeammateChatterDialogueBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="teammate chatter dialogue male" item_name_1="TeammateChatterDialogueBlockDefinition" item_name_2="TeammateChatterDialogueBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="teammate chatter dialogue" />
 		<_3B v="" />
 	</_40>
-	<_40 v="teammate chatter dialogue female" item_name_1="TeammateChatterDialogueBlockDefinition" item_name_2="TeammateChatterDialogueBlockDefinition" item_name_3="TeammateChatterDialogueBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="teammate chatter dialogue female" item_name_1="TeammateChatterDialogueBlockDefinition" item_name_2="TeammateChatterDialogueBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="teammate chatter dialogue" />
 		<_3B v="" />
 	</_40>
-	<_40 v="special dialogues" item_name_1="SpecialDialogueBlockDefinition" item_name_2="SpecialDialogueBlockDefinition" item_name_3="SpecialDialogueBlockDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="special dialogues" item_name_1="SpecialDialogueBlockDefinition" item_name_2="SpecialDialogueBlockDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="identifier" />
 		<_41 v="special dialogue" />
 		<_3B v="" />
@@ -1141,7 +1141,7 @@
 		<Flag v="Do not validate skeleton" />
 	</_D>
 	<_6 v="runtime flags" />
-	<_39 v="render-only node flags" item_name_3="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_39 v="render-only node flags" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_6 v="flag data" />
 		<_3B v="" />
 		<_6 v="flag data" />
@@ -1207,7 +1207,7 @@
 		<_6 v="flag data" />
 		<_3B v="" />
 	</_39>
-	<_39 v="render-only section flags" item_name_3="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_39 v="render-only section flags" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_6 v="flag data" />
 		<_3B v="" />
 		<_6 v="flag data" />

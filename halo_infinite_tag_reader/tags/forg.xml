@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="ForgeGlobalsDefinition" item_name_2="ForgeGlobalsDefinition" item_name_3="ForgeGlobalsDefinition" db1="1272" db2="0" db3="18" db4="0" db5="1" db6="2" db7="1256" db8="3379">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="ForgeGlobalsDefinition" item_name_2="ForgeGlobalsDefinition" db1="1272" db2="0" db3="18" db4="0" db5="1" db6="2" db7="1256" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="forge colors" item_name_1="s_named_rgb_color" item_name_2="s_named_rgb_color" item_name_3="s_named_rgb_color" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="forge colors" item_name_1="s_named_rgb_color" item_name_2="s_named_rgb_color" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_1F v="color" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Forge Colors Lighting" item_name_1="s_named_rgb_color" item_name_2="s_named_rgb_color" item_name_3="s_named_rgb_color" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Forge Colors Lighting" item_name_1="s_named_rgb_color" item_name_2="s_named_rgb_color" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_1F v="color" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Forge Color References" item_name_1="ForgeColorReference" item_name_2="ForgeColorReference" item_name_3="ForgeColorReference" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+	<_40 v="Forge Color References" item_name_1="ForgeColorReference" item_name_2="ForgeColorReference" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
 		<_2C v="Default Value" />
 		<_34 v="generated_pad6d1d" length="3" />
 		<_2 v="name" />
@@ -48,7 +48,7 @@
 	<_14 v="grab-cam inward spring constant" />
 	<_14 v="grab-cam outward spring constant" />
 	<_14 v="camera-object distance threshold" />
-	<_40 v="monitor speed multipliers" item_name_1="ForgeEngine::MonitorMoveSpeed" item_name_2="ForgeEngine::MonitorMoveSpeed" item_name_3="ForgeEngine::MonitorMoveSpeed" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="monitor speed multipliers" item_name_1="ForgeEngine::MonitorMoveSpeed" item_name_2="ForgeEngine::MonitorMoveSpeed" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_14 v="translation speed" />
 		<_14 v="rotation speed" />
@@ -59,12 +59,12 @@
 	<_14 v="monitor boost translation speed" />
 	<_14 v="monitor boost rotation speed" />
 	<_14 v="monitor boost scale speed" />
-	<_40 v="jumbotron UI element" item_name_1="JumbotronDefinition" item_name_2="JumbotronDefinition" item_name_3="JumbotronDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="jumbotron UI element" item_name_1="JumbotronDefinition" item_name_2="JumbotronDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="jumbotron UI element" />
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_38 v="Forge DWS Constants" item_name_3="ForgeDwsConstants" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Forge DWS Constants" item_name_1="ForgeDwsConstants" item_name_2="ForgeDwsConstants" db1="104" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Min Sun Intensity" />
 		<_14 v="Max Sun Intensity" />
 		<_14 v="Min Static Tint Intensity" />
@@ -93,13 +93,13 @@
 		<_14 v="Max Volumetric Fog Density" />
 		<_3B v="" />
 	</_38>
-	<_40 v="forge gobo definitions" item_name_1="ForgeGoboDefinition" item_name_2="ForgeGoboDefinition" item_name_3="ForgeGoboDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="forge gobo definitions" item_name_1="ForgeGoboDefinition" item_name_2="ForgeGoboDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="gobo setting" />
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="forge light intensity function definitions" item_name_1="ForgeLightIntensityFunctionDefinition" item_name_2="ForgeLightIntensityFunctionDefinition" item_name_3="ForgeLightIntensityFunctionDefinition" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
-		<_38 v="Intensity Function" item_name_3="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="forge light intensity function definitions" item_name_1="ForgeLightIntensityFunctionDefinition" item_name_2="ForgeLightIntensityFunctionDefinition" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="Intensity Function" item_name_1="ScalarLightFunction" item_name_2="ScalarLightFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_2 v="Input Variable" />
 			<_2 v="Range Variable" />
 			<_B v="Output Modifier">
@@ -110,7 +110,7 @@
 			<_34 v="generated_padc7e0" length="2" />
 			<_2 v="Output Modifier Input" />
 			<_37 v="Mapping" />
-			<_38 v="Mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -121,47 +121,47 @@
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="forge area screen effect definitions" item_name_1="ForgeAreaScreenEffectDefinition" item_name_2="ForgeAreaScreenEffectDefinition" item_name_3="ForgeAreaScreenEffectDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="forge area screen effect definitions" item_name_1="ForgeAreaScreenEffectDefinition" item_name_2="ForgeAreaScreenEffectDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="area screen effect" />
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="forge weather effect definitions" item_name_1="ForgeWeatherEffectDefinition" item_name_2="ForgeWeatherEffectDefinition" item_name_3="ForgeWeatherEffectDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="forge weather effect definitions" item_name_1="ForgeWeatherEffectDefinition" item_name_2="ForgeWeatherEffectDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Weather Effect" />
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="forge patchy fog bitmaps" item_name_1="ForgeBitmapDefinition" item_name_2="ForgeBitmapDefinition" item_name_3="ForgeBitmapDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="forge patchy fog bitmaps" item_name_1="ForgeBitmapDefinition" item_name_2="ForgeBitmapDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="bitmap" />
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="forge cloud bitmaps" item_name_1="ForgeBitmapDefinition" item_name_2="ForgeBitmapDefinition" item_name_3="ForgeBitmapDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="forge cloud bitmaps" item_name_1="ForgeBitmapDefinition" item_name_2="ForgeBitmapDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="bitmap" />
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="forge lens flares" item_name_1="ForgeLensFlareDefinition" item_name_2="ForgeLensFlareDefinition" item_name_3="ForgeLensFlareDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="forge lens flares" item_name_1="ForgeLensFlareDefinition" item_name_2="ForgeLensFlareDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="lens flare" />
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="forge light cones" item_name_1="ForgeLightConeDefinition" item_name_2="ForgeLightConeDefinition" item_name_3="ForgeLightConeDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="forge light cones" item_name_1="ForgeLightConeDefinition" item_name_2="ForgeLightConeDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="light cone" />
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="scale snap values" item_name_1="ScaleSnapDefinition" item_name_2="ScaleSnapDefinition" item_name_3="ScaleSnapDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="scale snap values" item_name_1="ScaleSnapDefinition" item_name_2="ScaleSnapDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_14 v="scale snap amount (relative to default size)" />
 		<_3B v="" />
 	</_40>
-	<_40 v="rotation snap values" item_name_1="RotationSnapDefinition" item_name_2="RotationSnapDefinition" item_name_3="RotationSnapDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="rotation snap values" item_name_1="RotationSnapDefinition" item_name_2="RotationSnapDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_14 v="rotation snap amount (degrees)" />
 		<_3B v="" />
 	</_40>
-	<_40 v="translation snap values" item_name_1="TranslationSnapDefinition" item_name_2="TranslationSnapDefinition" item_name_3="TranslationSnapDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="translation snap values" item_name_1="TranslationSnapDefinition" item_name_2="TranslationSnapDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_14 v="translation snap amount (world units)" />
 		<_3B v="" />
@@ -170,7 +170,7 @@
 	<_41 v="rotation handle shader" />
 	<_41 v="path preview shader" />
 	<_41 v="ai navmesh shader" />
-	<_40 v="global label values" item_name_1="ForgeLabelDefinition" item_name_2="ForgeLabelDefinition" item_name_3="ForgeLabelDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="global label values" item_name_1="ForgeLabelDefinition" item_name_2="ForgeLabelDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_2 v="label display name" />
 		<_2 v="label display description" />
@@ -189,22 +189,22 @@
 		<_34 v="generated_pad20ec" length="2" />
 		<_3B v="" />
 	</_40>
-	<_40 v="outline type definitions" item_name_1="ForgeOutlineDefinition" item_name_2="ForgeOutlineDefinition" item_name_3="ForgeOutlineDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="outline type definitions" item_name_1="ForgeOutlineDefinition" item_name_2="ForgeOutlineDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="outline type" />
 		<_3B v="" />
 	</_40>
 	<_2 v="Forge Intro Composition Name" />
-	<_40 v="Forge Intro Compositions" item_name_1="CompositionDefinitionReference" item_name_2="CompositionDefinitionReference" item_name_3="CompositionDefinitionReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Forge Intro Compositions" item_name_1="CompositionDefinitionReference" item_name_2="CompositionDefinitionReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="Composition Reference" />
 		<_3B v="" />
 	</_40>
 	<_41 v="Forge Outro Composition Template" />
 	<_41 v="Forge Static View Composition Template" />
-	<_40 v="Game Type Cinematic Names" item_name_1="GameTypeCinematicName" item_name_2="GameTypeCinematicName" item_name_3="GameTypeCinematicName" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Game Type Cinematic Names" item_name_1="GameTypeCinematicName" item_name_2="GameTypeCinematicName" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Cinematic Player Animations" item_name_1="TeamInfoToCinematicAnimation" item_name_2="TeamInfoToCinematicAnimation" item_name_3="TeamInfoToCinematicAnimation" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Cinematic Player Animations" item_name_1="TeamInfoToCinematicAnimation" item_name_2="TeamInfoToCinematicAnimation" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_3C v="Player Index In Team" />
 		<_A v="Team Size">
 			<Flag v="FourPlayerTeamSize" />
@@ -225,7 +225,7 @@
 		<_3B v="" />
 	</_40>
 	<_41 v="Default Boundary Shader" />
-	<_40 v="styleShaders" item_name_1="MaterialStyleShader" item_name_2="MaterialStyleShader" item_name_3="MaterialStyleShader" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="styleShaders" item_name_1="MaterialStyleShader" item_name_2="MaterialStyleShader" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="name" />
 		<_41 v="palette" />
 		<_41 v="coatingMaterialSet" />
@@ -239,32 +239,32 @@
 	<_7 v="m_aiPathPipelineState" />
 	<_41 v="Forge Object Manifest" />
 	<_41 v="Forge Named Tag Lists" />
-	<_40 v="Forge NodeGraph Schema" item_name_1="ForgeNodeGraphSchemaDefinition" item_name_2="ForgeNodeGraphSchemaDefinition" item_name_3="ForgeNodeGraphSchemaDefinition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Forge NodeGraph Schema" item_name_1="ForgeNodeGraphSchemaDefinition" item_name_2="ForgeNodeGraphSchemaDefinition" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_42 v="graphSchema" />
 		<_3B v="" />
 	</_40>
 	<_41 v="Forge Script Brain Tag Reference" />
 	<_41 v="Forge Bot Navigation Marker Tag Reference" />
 	<_41 v="Forge Sound Tag Reference" />
-	<_38 v="Forge Ambient Sounds" item_name_3="ForgeAmbientSounds" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_38 v="Forge Ambient Sounds" item_name_1="ForgeAmbientSounds" item_name_2="ForgeAmbientSounds" db1="84" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_37 v="Forge Ambient Sounds" />
-		<_40 v="Base Air Sounds" item_name_1="LoopingSoundDefinition_BlockSize32" item_name_2="LoopingSoundDefinition_BlockSize32" item_name_3="LoopingSoundDefinition_BlockSize32" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Base Air Sounds" item_name_1="LoopingSoundDefinition_BlockSize32" item_name_2="LoopingSoundDefinition_BlockSize32" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Looping Sound Reference" />
 			<_2 v="name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Base Air Sweetener Sounds" item_name_1="LoopingSoundDefinition_BlockSize32" item_name_2="LoopingSoundDefinition_BlockSize32" item_name_3="LoopingSoundDefinition_BlockSize32" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Base Air Sweetener Sounds" item_name_1="LoopingSoundDefinition_BlockSize32" item_name_2="LoopingSoundDefinition_BlockSize32" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Looping Sound Reference" />
 			<_2 v="name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Reverb Environments" item_name_1="ReverbDefinition" item_name_2="ReverbDefinition" item_name_3="ReverbDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_40 v="Reverb Environments" item_name_1="ReverbDefinition" item_name_2="ReverbDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Reverb Environment Reference" />
 			<_2 v="name" />
 			<_3B v="" />
 		</_40>
 		<_2 v="mix state group" />
-		<_40 v="Mix States" item_name_1="MixStateDefinition" item_name_2="MixStateDefinition" item_name_3="MixStateDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Mix States" item_name_1="MixStateDefinition" item_name_2="MixStateDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="mix state value" />
 			<_2 v="name" />
 			<_3B v="" />

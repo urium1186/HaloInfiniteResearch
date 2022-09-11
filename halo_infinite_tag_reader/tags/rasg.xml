@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="RasterizerGlobalsTag" item_name_2="RasterizerGlobalsTag" item_name_3="RasterizerGlobalsTag" db1="440" db2="0" db3="10" db4="0" db5="1" db6="2" db7="424" db8="1363">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="RasterizerGlobalsTag" item_name_2="RasterizerGlobalsTag" db1="440" db2="0" db3="10" db4="0" db5="1" db6="2" db7="424" db8="1363">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,13 +10,13 @@
 		<_3B v="" />
 	</_38>
 	<_36 v="default bitmaps" />
-	<_40 v="default bitmaps" item_name_1="GlobalBitmaps" item_name_2="GlobalBitmaps" item_name_3="GlobalBitmaps" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="default bitmaps" item_name_1="GlobalBitmaps" item_name_2="GlobalBitmaps" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="default bitmaps" />
 		<_3B v="" />
 	</_40>
 	<_41 v="explicit shader table" />
 	<_36 v="global materials" />
-	<_40 v="global materials" item_name_1="i343::Graphics::GlobalMaterial" item_name_2="i343::Graphics::GlobalMaterial" item_name_3="i343::Graphics::GlobalMaterial" db1="48" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="273">
+	<_40 v="global materials" item_name_1="i343::Graphics::GlobalMaterial" item_name_2="i343::Graphics::GlobalMaterial" db1="48" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="273">
 		<_2 v="name" />
 		<_41 v="material" />
 		<_34 v="countPSOs" length="4" />
@@ -27,7 +27,7 @@
 	<_41 v="default performance throttles" />
 	<_41 v="default scenario render data" />
 	<_41 v="Cheap Particle Type Library" />
-	<_40 v="Display output transformations" item_name_1="i343::Graphics::DisplayOutputTransform" item_name_2="i343::Graphics::DisplayOutputTransform" item_name_3="i343::Graphics::DisplayOutputTransform" db1="116" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+	<_40 v="Display output transformations" item_name_1="i343::Graphics::DisplayOutputTransform" item_name_2="i343::Graphics::DisplayOutputTransform" db1="116" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
 		<_2 v="Display Output Preset Name" />
 		<_41 v="Reference Rendering Transform" />
 		<_41 v="HDR to LDR LUT" />
@@ -53,7 +53,7 @@
 	<_41 v="Subsurface Scatter Profile tag" />
 	<_41 v="Empty Swatch Tag" />
 	<_41 v="Hair Profile tag" />
-	<_40 v="psoFeatureTags" item_name_1="i343::Graphics::PipelineStateDictionaryReference" item_name_2="i343::Graphics::PipelineStateDictionaryReference" item_name_3="i343::Graphics::PipelineStateDictionaryReference" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="psoFeatureTags" item_name_1="i343::Graphics::PipelineStateDictionaryReference" item_name_2="i343::Graphics::PipelineStateDictionaryReference" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="psoDictionaryReference" />
 		<_A v="contentBucket">
 			<Flag v="Main Menu" />

@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="ai_pathfinding" item_name_2="ai_pathfinding" item_name_3="ai_pathfinding" db1="96" db2="0" db3="6" db4="0" db5="1" db6="2" db7="80" db8="1331">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="ai_pathfinding" item_name_2="ai_pathfinding" db1="96" db2="0" db3="6" db4="0" db5="1" db6="2" db7="80" db8="1331">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="navMeshes" item_name_1="NavMeshData" item_name_2="NavMeshData" item_name_3="NavMeshData" db1="24" db2="0" db3="2" db4="0" db5="1" db6="2" db7="0" db8="273">
-		<_43 v="resource data" item_name_3="NavMeshResource" db1="164" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+	<_40 v="navMeshes" item_name_1="NavMeshData" item_name_2="NavMeshData" db1="24" db2="0" db3="2" db4="0" db5="1" db6="2" db7="0" db8="273">
+		<_43 v="resource data" item_name_1="NavMeshResource" item_name_2="NavMeshResource" db1="164" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
 			<_42 v="navGraphData" />
 			<_42 v="navMediatorData" />
 			<_42 v="navTraversalData" />
 			<_42 v="navFPTreeData" />
 			<_42 v="navMeshStreamingData" />
 			<_42 v="navGraphStreamingData" />
-			<_40 v="firingPointAABBList" item_name_1="FiringPointAABB" item_name_2="FiringPointAABB" item_name_3="FiringPointAABB" db1="64" db2="4" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+			<_40 v="firingPointAABBList" item_name_1="FiringPointAABB" item_name_2="FiringPointAABB" db1="64" db2="4" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
 				<_19 v="m_min" />
 				<_14 v="havok w m_min" />
 				<_19 v="m_max" />
 				<_14 v="havok w m_max" />
-				<_40 v="firingPoints" item_name_1="s_firing_position_definition" item_name_2="s_firing_position_definition" item_name_3="s_firing_position_definition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="2432">
+				<_40 v="firingPoints" item_name_1="s_firing_position_definition" item_name_2="s_firing_position_definition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="2432">
 					<_17 v="position" />
 					<_6 v="navMeshUIDOffaceref" />
 					<_6 v="packedKeyOffaceref" />
@@ -62,20 +62,20 @@
 		<_6 v="structure checksum" />
 		<_3B v="" />
 	</_40>
-	<_40 v="mobileNavMeshes" item_name_1="MobileNavMeshData" item_name_2="MobileNavMeshData" item_name_3="MobileNavMeshData" db1="36" db2="0" db3="3" db4="0" db5="1" db6="2" db7="0" db8="2323">
-		<_43 v="resource data" item_name_3="NavMeshResource" db1="164" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+	<_40 v="mobileNavMeshes" item_name_1="MobileNavMeshData" item_name_2="MobileNavMeshData" db1="36" db2="0" db3="3" db4="0" db5="1" db6="2" db7="0" db8="2323">
+		<_43 v="resource data" item_name_1="NavMeshResource" item_name_2="NavMeshResource" db1="164" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
 			<_42 v="navGraphData" />
 			<_42 v="navMediatorData" />
 			<_42 v="navTraversalData" />
 			<_42 v="navFPTreeData" />
 			<_42 v="navMeshStreamingData" />
 			<_42 v="navGraphStreamingData" />
-			<_40 v="firingPointAABBList" item_name_1="FiringPointAABB" item_name_2="FiringPointAABB" item_name_3="FiringPointAABB" db1="64" db2="4" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+			<_40 v="firingPointAABBList" item_name_1="FiringPointAABB" item_name_2="FiringPointAABB" db1="64" db2="4" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
 				<_19 v="m_min" />
 				<_14 v="havok w m_min" />
 				<_19 v="m_max" />
 				<_14 v="havok w m_max" />
-				<_40 v="firingPoints" item_name_1="s_firing_position_definition" item_name_2="s_firing_position_definition" item_name_3="s_firing_position_definition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="2432">
+				<_40 v="firingPoints" item_name_1="s_firing_position_definition" item_name_2="s_firing_position_definition" db1="44" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="2432">
 					<_17 v="position" />
 					<_6 v="navMeshUIDOffaceref" />
 					<_6 v="packedKeyOffaceref" />
@@ -112,7 +112,7 @@
 		</_43>
 		<_5 v="major version" />
 		<_5 v="minor version" />
-		<_38 v="object id" item_name_3="c_object_identifier" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="object id" item_name_1="c_object_identifier" item_name_2="c_object_identifier" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_6 v="unique id" />
 			<_5 v="origin bsp index" />
 			<_A v="type">
@@ -148,15 +148,15 @@
 		<_34 v="generated_pad5c22" length="3" />
 		<_3B v="" />
 	</_40>
-	<_40 v="navVolumes" item_name_1="NavVolumeData" item_name_2="NavVolumeData" item_name_3="NavVolumeData" db1="48" db2="0" db3="2" db4="0" db5="1" db6="2" db7="0" db8="273">
+	<_40 v="navVolumes" item_name_1="NavVolumeData" item_name_2="NavVolumeData" db1="48" db2="0" db3="2" db4="0" db5="1" db6="2" db7="0" db8="273">
 		<_6 v="navMeshAreaIndex" />
 		<_19 v="navMeshAreaPosition" />
 		<_14 v="navMeshAreaHeight" />
 		<_14 v="navMeshAreaSink" />
 		<_5 v="major version" />
 		<_5 v="minor version" />
-		<_40 v="buckets" item_name_1="NavVolumeBucket" item_name_2="NavVolumeBucket" item_name_3="NavVolumeBucket" db1="20" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_43 v="resource data" item_name_3="NavVolumeResource" db1="24" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+		<_40 v="buckets" item_name_1="NavVolumeBucket" item_name_2="NavVolumeBucket" db1="20" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_43 v="resource data" item_name_1="NavVolumeResource" item_name_2="NavVolumeResource" db1="24" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
 				<_42 v="navMediatorData" />
 				<_3B v="" />
 			</_43>
@@ -166,8 +166,8 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="hints" item_name_1="user_hint_data" item_name_2="user_hint_data" item_name_3="user_hint_data" db1="60" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
-		<_40 v="nav links" item_name_1="user_hint_jump" item_name_2="user_hint_jump" item_name_3="user_hint_jump" db1="96" db2="0" db3="10" db4="0" db5="1" db6="0" db7="0" db8="275">
+	<_40 v="hints" item_name_1="user_hint_data" item_name_2="user_hint_data" db1="60" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="305">
+		<_40 v="nav links" item_name_1="user_hint_jump" item_name_2="user_hint_jump" db1="96" db2="0" db3="10" db4="0" db5="1" db6="0" db7="0" db8="275">
 			<_B v="link type">
 				<Flag v="jump link" />
 				<Flag v="force walk link" />
@@ -199,7 +199,7 @@
 				<Flag v="bots can't use if slowed" />
 			</_E>
 			<_34 v="generated_pad04d0" length="2" />
-			<_38 v="geometry" item_name_3="user_hint_parallelogram" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_38 v="geometry" item_name_1="user_hint_parallelogram" item_name_2="user_hint_parallelogram" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_17 v="Point 0" />
 				<_17 v="Point 1" />
 				<_17 v="Point 2" />
@@ -213,22 +213,22 @@
 				<_34 v="generated_pad733f" length="2" />
 				<_3B v="" />
 			</_38>
-			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="folder name" />
 				<_17 v="local space pivot point position" />
 				<_3B v="" />
 			</_40>
 			<_3B v="" />
 		</_40>
-		<_40 v="cookie cutters" item_name_1="s_cookie_cutter" item_name_2="s_cookie_cutter" item_name_3="s_cookie_cutter" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
-			<_40 v="points" item_name_1="AIHintSectorPoint" item_name_2="AIHintSectorPoint" item_name_3="AIHintSectorPoint" db1="20" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="2464">
+		<_40 v="cookie cutters" item_name_1="s_cookie_cutter" item_name_2="s_cookie_cutter" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_40 v="points" item_name_1="AIHintSectorPoint" item_name_2="AIHintSectorPoint" db1="20" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="2464">
 				<_17 v="point" />
 				<_6 v="_navMeshUIDOffaceref" />
 				<_6 v="_packedKeyOffaceref" />
 				<_3B v="" />
 			</_40>
-			<_40 v="pointsObjectIds" item_name_1="s_cookie_cutter::ObjectIdentifier" item_name_2="s_cookie_cutter::ObjectIdentifier" item_name_3="s_cookie_cutter::ObjectIdentifier" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
-				<_38 v="object ID" item_name_3="c_object_identifier" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_40 v="pointsObjectIds" item_name_1="s_cookie_cutter::ObjectIdentifier" item_name_2="s_cookie_cutter::ObjectIdentifier" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="object ID" item_name_1="c_object_identifier" item_name_2="c_object_identifier" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_6 v="unique id" />
 					<_5 v="origin bsp index" />
 					<_A v="type">
@@ -268,7 +268,7 @@
 				<Flag v="preserve" />
 			</_B>
 			<_5 v="pad" />
-			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="folder name" />
 				<_17 v="local space pivot point position" />
 				<_3B v="" />
@@ -277,8 +277,8 @@
 			<_34 v="generated_pad8e8a" length="3" />
 			<_3B v="" />
 		</_40>
-		<_40 v="navmesh areas" item_name_1="NavMeshArea" item_name_2="NavMeshArea" item_name_3="NavMeshArea" db1="56" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="2353">
-			<_40 v="points" item_name_1="AIHintSectorPoint" item_name_2="AIHintSectorPoint" item_name_3="AIHintSectorPoint" db1="20" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="2464">
+		<_40 v="navmesh areas" item_name_1="NavMeshArea" item_name_2="NavMeshArea" db1="56" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="2353">
+			<_40 v="points" item_name_1="AIHintSectorPoint" item_name_2="AIHintSectorPoint" db1="20" db2="0" db3="0" db4="0" db5="0" db6="2" db7="0" db8="2464">
 				<_17 v="point" />
 				<_6 v="_navMeshUIDOffaceref" />
 				<_6 v="_packedKeyOffaceref" />
@@ -305,7 +305,7 @@
 			</_C>
 			<_3C v="isValid" />
 			<_34 v="generated_pad7d37" length="3" />
-			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" item_name_3="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 				<_1 v="folder name" />
 				<_17 v="local space pivot point position" />
 				<_3B v="" />

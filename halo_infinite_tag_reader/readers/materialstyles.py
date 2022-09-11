@@ -2,6 +2,7 @@
 from halo_infinite_tag_reader.readers.base_template import BaseTemplate
 from configs.config import Config
 from halo_infinite_tag_reader.readers.materialpalette import MaterialPalette
+from halo_infinite_tag_reader.readers.reader_factory import ReaderFactory
 from halo_infinite_tag_reader.varnames import Mmr3Hash_str, getStrInMmr3Hash
 
 
@@ -31,7 +32,7 @@ class MaterialStyles(BaseTemplate):
         self.json_base["emissiveAmount"] = style_select['emissive_amount'].value
         self.json_base["grimeAmount"] = style_select['grime_amount'].value
         self.json_base["scratchAmount"] = style_select['scratch_amount'].value
-        parse_mwpl = MaterialPalette(style_select['palette'].path+".materialpalette") # Config.BASE_UNPACKED_PATH +
+        parse_mwpl = ReaderFactory.create_reader(style_select['palette'].path+".materialpalette") # Config.BASE_UNPACKED_PATH +
         parse_mwpl.load()
         parse_mwpl.toJson()
         self.json_base["swatches"] = parse_mwpl.json_base['swatches']
@@ -44,8 +45,10 @@ class MaterialStyles(BaseTemplate):
                 lay_d['swatch'] = lay['name'].value
                 lay_d['ignoreTexelDensity'] = bool(lay['Ignore_Texel_Density_Scalar'].selected_index)
                 lay_d['normalBlend'] = bool(lay['Normal_Blend'].selected_index)
+                """
                 if lay_d['swatch'] == "00000000":
                     lay_d['swatch'] = ""
+                """
                 layers.append(lay_d)
             material = root['coatingMaterialSets'].childs[entry['Coating Material Set'].value]['coatingMaterialSet'].path
             material = material.split('\\')[-1]
@@ -58,4 +61,7 @@ class MaterialStyles(BaseTemplate):
 
         self.json_base["regionLayers"] = regionLayers
         #print(root)
+
+    def onInstanceLoad(self, instance):
+        super(MaterialStyles, self).onInstanceLoad(instance)
 

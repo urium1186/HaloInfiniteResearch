@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="s_atmosphere_definition" item_name_2="s_atmosphere_definition" item_name_3="s_atmosphere_definition" db1="552" db2="0" db3="3" db4="0" db5="1" db6="0" db7="536" db8="3383">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="s_atmosphere_definition" item_name_2="s_atmosphere_definition" db1="552" db2="0" db3="3" db4="0" db5="1" db6="0" db7="536" db8="3383">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -15,7 +15,7 @@
 	<_14 v="distance bias" />
 	<_37 v="" />
 	<_37 v="Depth Sky Fog" />
-	<_38 v="sky fog" item_name_3="s_solo_fog_parameters" db1="56" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="305">
+	<_38 v="sky fog" item_name_1="s_solo_fog_parameters" item_name_2="s_solo_fog_parameters" db1="56" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="305">
 		<_D v="flags">
 			<Flag v="Enabled" />
 			<Flag v="Camera-relative" />
@@ -26,9 +26,9 @@
 		<_14 v="fog falloff end" />
 		<_1F v="fog color" />
 		<_14 v="fog color intensity" />
-		<_40 v="Function" item_name_1="s_soloFogFunction" item_name_2="s_soloFogFunction" item_name_3="s_soloFogFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_40 v="Function" item_name_1="s_soloFogFunction" item_name_2="s_soloFogFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="fog function" />
-			<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -40,7 +40,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Depth Ground Fog" />
-	<_38 v="ground fog" item_name_3="s_solo_fog_parameters" db1="56" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="305">
+	<_38 v="ground fog" item_name_1="s_solo_fog_parameters" item_name_2="s_solo_fog_parameters" db1="56" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="305">
 		<_D v="flags">
 			<Flag v="Enabled" />
 			<Flag v="Camera-relative" />
@@ -51,9 +51,9 @@
 		<_14 v="fog falloff end" />
 		<_1F v="fog color" />
 		<_14 v="fog color intensity" />
-		<_40 v="Function" item_name_1="s_soloFogFunction" item_name_2="s_soloFogFunction" item_name_3="s_soloFogFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_40 v="Function" item_name_1="s_soloFogFunction" item_name_2="s_soloFogFunction" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="fog function" />
-			<_38 v="mapping" item_name_3="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -65,7 +65,7 @@
 	</_38>
 	<_37 v="" />
 	<_37 v="Depth Ceiling Fog" />
-	<_38 v="ceiling fog" item_name_3="s_ceiling_fog_parameters" db1="36" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_38 v="ceiling fog" item_name_1="s_ceiling_fog_parameters" item_name_2="s_ceiling_fog_parameters" db1="36" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_D v="flags">
 			<Flag v="Enabled" />
 		</_D>
@@ -80,7 +80,7 @@
 	<_37 v="" />
 	<_37 v="" />
 	<_37 v="Fog Light" />
-	<_38 v="fog light" item_name_3="s_fog_light_parameters" db1="44" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="fog light" item_name_1="s_fog_light_parameters" item_name_2="s_fog_light_parameters" db1="44" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_D v="flags">
 			<Flag v="Enabled" />
 			<Flag v="Use sun direction for fog light" />
@@ -97,7 +97,7 @@
 	</_38>
 	<_37 v="" />
 	<_36 v="@@@ CAUTION @@@" />
-	<_38 v="fog globals" item_name_3="VolumeTextureFogGlobals" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="fog globals" item_name_1="VolumeTextureFogGlobals" item_name_2="VolumeTextureFogGlobals" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_36 v="Volume Texture Fog Non-blending Parameters" />
 		<_41 v="Fog Bitmap" />
 		<_14 v="Texture repeat rate" />
@@ -114,9 +114,9 @@
 			<Flag v="Disable Texture Rotation" />
 		</_F>
 		<_34 v="generated_pad2c77" length="2" />
-		<_38 v="wind strength across distance" item_name_3="ScalarFunctionNameDefaultOne" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_38 v="wind strength across distance" item_name_1="ScalarFunctionNameDefaultOne" item_name_2="ScalarFunctionNameDefaultOne" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 			<_37 v="function" />
-			<_38 v="function" item_name_3="FunctionDefinitionDefaultOne" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_38 v="function" item_name_1="FunctionDefinitionDefaultOne" item_name_2="FunctionDefinitionDefaultOne" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 				<_37 v="" />
 				<_42 v="data" />
 				<_37 v="" />
@@ -177,7 +177,7 @@
 	<_14 v="VolFog Fade Range" />
 	<_37 v="" />
 	<_37 v="Crepuscular Rays" />
-	<_38 v="crepuscular ray" item_name_3="CrepuscularRayParams" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="crepuscular ray" item_name_1="CrepuscularRayParams" item_name_2="CrepuscularRayParams" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_D v="flags">
 			<Flag v="Enabled" />
 			<Flag v="Use sun direction for crepuscular rays" />

@@ -27,6 +27,10 @@ class DataBlock:
             debug = True
 
         main_key = self.unknown_property
+        if self.unknown_property !=0:
+            debug = True
+            header.data_reference_count
+
 
         name_key = f.name.split('\\')[-1]
         fillDebugDict(main_key, name_key, debug_DataBlock)

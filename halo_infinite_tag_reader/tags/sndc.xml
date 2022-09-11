@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="SoundCategoryTag" item_name_2="SoundCategoryTag" item_name_3="SoundCategoryTag" db1="128" db2="0" db3="8" db4="0" db5="0" db6="0" db7="112" db8="3347">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="SoundCategoryTag" item_name_2="SoundCategoryTag" db1="128" db2="0" db3="8" db4="0" db5="0" db6="0" db7="112" db8="3347">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -29,7 +29,7 @@
 		<Flag v="Disable Virtual Positioning" />
 	</_D>
 	<_14 v="Don't Play Time (seconds)" />
-	<_38 v="Audio Impulse Timer Settings" item_name_3="ImpulseTimerParams" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Audio Impulse Timer Settings" item_name_1="ImpulseTimerParams" item_name_2="ImpulseTimerParams" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_F v="Impulse Timer Flags">
 			<Flag v="Enable Impulse Timer" />
 		</_F>
@@ -43,7 +43,7 @@
 	<_14 v="Sound Transmissivity" />
 	<_14 v="ObstructionOcclusionBias" />
 	<_14 v="ObstructionOcclusionScaling" />
-	<_38 v="Focus Settings" item_name_3="FocusTagStruct" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Focus Settings" item_name_1="FocusTagStruct" item_name_2="FocusTagStruct" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Focus Inner Radius" />
 		<_14 v="Focus Outer Radius" />
 		<_14 v="Focus Inner Cone Angle" />
@@ -51,7 +51,7 @@
 		<_14 v="Focus Elevation Scale" />
 		<_3B v="" />
 	</_38>
-	<_38 v="Cluster Settings" item_name_3="ClusterSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+	<_38 v="Cluster Settings" item_name_1="ClusterSettings" item_name_2="ClusterSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Cluster Distance" />
 		<_14 v="Cluster Smoothing Speed" />
 		<_14 v="Cluster Timeout" />

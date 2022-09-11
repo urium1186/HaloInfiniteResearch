@@ -5,6 +5,7 @@ class TagDependency:
 
     def __init__(self):
         self.tagGroup = ""
+        self.tagGroupRev = ""
         self.name_offset = -1
         self.ref_id_sub = None  # AssetID l = 8
         self.ref_id_center = None
@@ -32,6 +33,8 @@ class TagDependencyTable:
             #offset = header.tagref_table_offset + x * 24
             entry = TagDependency()
             entry.tagGroup = struct.unpack('4s', f.read(4))[0]
+            if entry.tagGroup != b'\xff\xff\xff\xff':
+                entry.tagGroupRev = entry.tagGroup[::-1].decode("utf-8")
             entry.name_offset = struct.unpack('i', f.read(4))[0]#int.from_bytes(buffer, 'little')
             entry.ref_id_sub = f.read(4).hex().upper()
             entry.ref_id_center = f.read(4).hex().upper()

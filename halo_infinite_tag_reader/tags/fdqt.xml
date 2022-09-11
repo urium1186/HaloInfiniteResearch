@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="FixedDepthQuadTree" item_name_2="FixedDepthQuadTree" item_name_3="FixedDepthQuadTree" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="48" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="FixedDepthQuadTree" item_name_2="FixedDepthQuadTree" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="48" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -10,7 +10,7 @@
 		<_3B v="" />
 	</_38>
 	<_6 v="Max Depth" />
-	<_40 v="Node List" item_name_1="FixedDepthQuadTreeNode" item_name_2="FixedDepthQuadTreeNode" item_name_3="FixedDepthQuadTreeNode" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Node List" item_name_1="FixedDepthQuadTreeNode" item_name_2="FixedDepthQuadTreeNode" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_14 v="x0" />
 		<_14 v="x1" />
 		<_14 v="y0" />
@@ -19,8 +19,8 @@
 		<_14 v="z1" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Geo" item_name_1="FixedDepthQuadTreeGeo" item_name_2="FixedDepthQuadTreeGeo" item_name_3="FixedDepthQuadTreeGeo" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
-		<_40 v="Raw Vertices" item_name_1="FixedDepthQuadTreeTri" item_name_2="FixedDepthQuadTreeTri" item_name_3="FixedDepthQuadTreeTri" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+	<_40 v="Geo" item_name_1="FixedDepthQuadTreeGeo" item_name_2="FixedDepthQuadTreeGeo" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Raw Vertices" item_name_1="FixedDepthQuadTreeTri" item_name_2="FixedDepthQuadTreeTri" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_17 v="v0" />
 			<_17 v="v1" />
 			<_17 v="v2" />

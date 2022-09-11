@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="AssetPhysicsTag" item_name_2="AssetPhysicsTag" item_name_3="AssetPhysicsTag" db1="176" db2="0" db3="0" db4="0" db5="1" db6="0" db7="160" db8="1299">
-	<_38 v="AnyTag" item_name_3="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+<root item_name_1="AssetPhysicsTag" item_name_2="AssetPhysicsTag" db1="176" db2="0" db3="0" db4="0" db5="1" db6="0" db7="160" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_3="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="global tag ID" />
 			<_34 v="local tag handle" length="4" />
 			<_3B v="" />
@@ -18,7 +18,7 @@
 	<_14 v="Mass override" />
 	<_14 v="Mass scale override" />
 	<_14 v="Collision look ahead distance" />
-	<_40 v="Materials" item_name_1="i343::AssetPhysics::PhysicsMaterial" item_name_2="i343::AssetPhysics::PhysicsMaterial" item_name_3="i343::AssetPhysics::PhysicsMaterial" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Materials" item_name_1="i343::AssetPhysics::PhysicsMaterial" item_name_2="i343::AssetPhysics::PhysicsMaterial" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Property region" />
 		<_F v="Flags">
 			<Flag v="Suppresses effects" />
@@ -31,7 +31,7 @@
 		<_3B v="" />
 	</_40>
 	<_37 v="Shapes" />
-	<_40 v="Shapes" item_name_1="i343::AssetPhysics::PhysicsShape" item_name_2="i343::AssetPhysics::PhysicsShape" item_name_3="i343::AssetPhysics::PhysicsShape" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Shapes" item_name_1="i343::AssetPhysics::PhysicsShape" item_name_2="i343::AssetPhysics::PhysicsShape" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
 		<_A v="Compound shape policy">
 			<Flag v="Disabled" />
@@ -55,7 +55,7 @@
 		</_A>
 		<_34 v="generated_pad3f25" length="2" />
 		<_14 v="Bounding sphere pad" />
-		<_40 v="Havok data" item_name_1="i343::AssetPhysics::HavokData" item_name_2="i343::AssetPhysics::HavokData" item_name_3="i343::AssetPhysics::HavokData" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Havok data" item_name_1="i343::AssetPhysics::HavokData" item_name_2="i343::AssetPhysics::HavokData" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_F v="Flags">
 				<Flag v="Infinite intertia tensor" />
 				<Flag v="Explicit mass" />
@@ -100,13 +100,13 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Self-collision pairs" item_name_1="i343::AssetPhysics::SelfCollisionPair" item_name_2="i343::AssetPhysics::SelfCollisionPair" item_name_3="i343::AssetPhysics::SelfCollisionPair" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+	<_40 v="Self-collision pairs" item_name_1="i343::AssetPhysics::SelfCollisionPair" item_name_2="i343::AssetPhysics::SelfCollisionPair" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
 		<_2E v="First shape setting" />
 		<_2E v="Second shape setting" />
 		<_3B v="" />
 	</_40>
 	<_37 v="" />
-	<_40 v="Phantom types" item_name_1="i343::AssetPhysics::PhantomType" item_name_2="i343::AssetPhysics::PhantomType" item_name_3="i343::AssetPhysics::PhantomType" db1="172" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Phantom types" item_name_1="i343::AssetPhysics::PhantomType" item_name_2="i343::AssetPhysics::PhantomType" db1="172" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
 		<_37 v="Flags" />
 		<_D v="Flags">
@@ -195,7 +195,7 @@
 		<_3B v="" />
 	</_40>
 	<_37 v="Constraints and Motors" />
-	<_40 v="Constraints" item_name_1="i343::AssetPhysics::ConstraintSettings" item_name_2="i343::AssetPhysics::ConstraintSettings" item_name_3="i343::AssetPhysics::ConstraintSettings" db1="132" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+	<_40 v="Constraints" item_name_1="i343::AssetPhysics::ConstraintSettings" item_name_2="i343::AssetPhysics::ConstraintSettings" db1="132" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_2 v="Name" />
 		<_A v="Type">
 			<Flag v="Hinge" />
@@ -213,7 +213,7 @@
 		</_F>
 		<_34 v="generated_padd2a4" length="2" />
 		<_14 v="Friction" />
-		<_40 v="Ragdoll settings" item_name_1="i343::AssetPhysics::RagdollConstraintSettings" item_name_2="i343::AssetPhysics::RagdollConstraintSettings" item_name_3="i343::AssetPhysics::RagdollConstraintSettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Ragdoll settings" item_name_1="i343::AssetPhysics::RagdollConstraintSettings" item_name_2="i343::AssetPhysics::RagdollConstraintSettings" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Minimum twist" />
 			<_14 v="Maximum twist" />
 			<_14 v="Minimum cone" />
@@ -223,9 +223,9 @@
 			<_14 v="Maximum friction torque" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Ragdoll motors" item_name_1="i343::AssetPhysics::RagdollMotors" item_name_2="i343::AssetPhysics::RagdollMotors" item_name_3="i343::AssetPhysics::RagdollMotors" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_40 v="Ragdoll motors" item_name_1="i343::AssetPhysics::RagdollMotors" item_name_2="i343::AssetPhysics::RagdollMotors" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 			<_36 v="Twist" />
-			<_38 v="Twist motor" item_name_3="i343::AssetPhysics::Motor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="Twist motor" item_name_1="i343::AssetPhysics::Motor" item_name_2="i343::AssetPhysics::Motor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_A v="Motor type">
 					<Flag v="None" />
 					<Flag v="Damped spring" />
@@ -236,7 +236,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="Cone" />
-			<_38 v="Cone motor" item_name_3="i343::AssetPhysics::Motor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="Cone motor" item_name_1="i343::AssetPhysics::Motor" item_name_2="i343::AssetPhysics::Motor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_A v="Motor type">
 					<Flag v="None" />
 					<Flag v="Damped spring" />
@@ -247,7 +247,7 @@
 				<_3B v="" />
 			</_38>
 			<_36 v="Plane" />
-			<_38 v="Plane motor" item_name_3="i343::AssetPhysics::Motor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_38 v="Plane motor" item_name_1="i343::AssetPhysics::Motor" item_name_2="i343::AssetPhysics::Motor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_A v="Motor type">
 					<Flag v="None" />
 					<Flag v="Damped spring" />
@@ -259,14 +259,14 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="Limited hinge settings" item_name_1="i343::AssetPhysics::LimitedHingeConstraintSettings" item_name_2="i343::AssetPhysics::LimitedHingeConstraintSettings" item_name_3="i343::AssetPhysics::LimitedHingeConstraintSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Limited hinge settings" item_name_1="i343::AssetPhysics::LimitedHingeConstraintSettings" item_name_2="i343::AssetPhysics::LimitedHingeConstraintSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Limit friction" />
 			<_14 v="Limit minimum angle" />
 			<_14 v="Limit maximum angle" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Limited hinge motors" item_name_1="i343::AssetPhysics::LimitedHingeMotor" item_name_2="i343::AssetPhysics::LimitedHingeMotor" item_name_3="i343::AssetPhysics::LimitedHingeMotor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
-			<_38 v="Motor" item_name_3="i343::AssetPhysics::Motor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_40 v="Limited hinge motors" item_name_1="i343::AssetPhysics::LimitedHingeMotor" item_name_2="i343::AssetPhysics::LimitedHingeMotor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="Motor" item_name_1="i343::AssetPhysics::Motor" item_name_2="i343::AssetPhysics::Motor" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_A v="Motor type">
 					<Flag v="None" />
 					<Flag v="Damped spring" />
@@ -278,11 +278,11 @@
 			</_38>
 			<_3B v="" />
 		</_40>
-		<_40 v="Stiff spring settings" item_name_1="i343::AssetPhysics::StiffSpringConstraintSettings" item_name_2="i343::AssetPhysics::StiffSpringConstraintSettings" item_name_3="i343::AssetPhysics::StiffSpringConstraintSettings" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Stiff spring settings" item_name_1="i343::AssetPhysics::StiffSpringConstraintSettings" item_name_2="i343::AssetPhysics::StiffSpringConstraintSettings" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Spring length" />
 			<_3B v="" />
 		</_40>
-		<_40 v="Prismatic settings" item_name_1="i343::AssetPhysics::PrismaticConstraintSettings" item_name_2="i343::AssetPhysics::PrismaticConstraintSettings" item_name_3="i343::AssetPhysics::PrismaticConstraintSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_40 v="Prismatic settings" item_name_1="i343::AssetPhysics::PrismaticConstraintSettings" item_name_2="i343::AssetPhysics::PrismaticConstraintSettings" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_14 v="Minimum limit" />
 			<_14 v="Maximum limit" />
 			<_14 v="Maximum friction force" />
@@ -290,7 +290,7 @@
 		</_40>
 		<_3B v="" />
 	</_40>
-	<_40 v="Damped spring motors" item_name_1="i343::AssetPhysics::DampedSpringMotor" item_name_2="i343::AssetPhysics::DampedSpringMotor" item_name_3="i343::AssetPhysics::DampedSpringMotor" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Damped spring motors" item_name_1="i343::AssetPhysics::DampedSpringMotor" item_name_2="i343::AssetPhysics::DampedSpringMotor" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Name" />
 		<_14 v="Maximum force" />
 		<_14 v="Minimum force" />
@@ -299,7 +299,7 @@
 		<_14 v="Initial position" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Position motors" item_name_1="i343::AssetPhysics::PositionMotor" item_name_2="i343::AssetPhysics::PositionMotor" item_name_3="i343::AssetPhysics::PositionMotor" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="Position motors" item_name_1="i343::AssetPhysics::PositionMotor" item_name_2="i343::AssetPhysics::PositionMotor" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="Name" />
 		<_14 v="Maximum force" />
 		<_14 v="Minimum force" />

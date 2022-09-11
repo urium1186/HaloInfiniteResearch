@@ -12,7 +12,7 @@ class StringListResource(BaseTemplate):
         super().load()
 
     def onInstanceLoad(self, instance: TagInstance):
-
+        super(StringListResource, self).onInstanceLoad(instance)
         if instance.tagDef.N == "array_0":
            debug=1
            init_adress = instance.content_entry.data_reference.offset_plus + instance.content_entry.data_reference.size
