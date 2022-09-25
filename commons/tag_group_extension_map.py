@@ -295,6 +295,8 @@ map_ext = {
     'psod': 'psodictionary'
 }
 
+map_ext_not = {}
+
 ma_guid_ext = {
     '868d0d7f83b900c5': 'effect',
     '4213e75fd9689b14': 'lens_flare',

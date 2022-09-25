@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="ObjectiveBehaviorTreeNodeGraph" item_name_2="ObjectiveBehaviorTreeNodeGraph" db1="208" db2="0" db3="0" db4="0" db5="1" db6="0" db7="192" db8="1299">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_41 v="Source Graph" />
+	<_40 v="Nodes" item_name_1="BehaviorTreeNode" item_name_2="BehaviorTreeNode" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Node Type" />
+		<_6 v="Node ID" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Node Connections" item_name_1="BehaviorTreeNodeConnection" item_name_2="BehaviorTreeNodeConnection" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_6 v="Parent Node ID" />
+		<_6 v="Child Node ID" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Node Parameter Connections" item_name_1="BehaviorTreeNodeParameterConnection" item_name_2="BehaviorTreeNodeParameterConnection" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_6 v="Owning Node ID" />
+		<_2 v="Parameter Identifier" />
+		<_A v="Parameter Type">
+			<Flag v="Bool" />
+			<Flag v="Integer" />
+			<Flag v="Float" />
+			<Flag v="String" />
+			<Flag v="Squad Type" />
+			<Flag v="Combat Status" />
+			<Flag v="Area Reference" />
+			<Flag v="Squad Reference" />
+			<Flag v="Location Reference" />
+			<Flag v="Object Reference" />
+		</_A>
+		<_34 v="generated_pad818f" length="3" />
+		<_6 v="Parameter Index" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Bool Parameters" item_name_1="BehaviorTreeNodeParameterBool" item_name_2="BehaviorTreeNodeParameterBool" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Blackboard Identifier" />
+		<_4 v="Parameter Value" />
+		<_34 v="generated_pad1bf7" length="3" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Int Parameters" item_name_1="BehaviorTreeNodeParameterInt" item_name_2="BehaviorTreeNodeParameterInt" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Blackboard Identifier" />
+		<_6 v="Parameter Value" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Float Parameters" item_name_1="BehaviorTreeNodeParameterFloat" item_name_2="BehaviorTreeNodeParameterFloat" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Blackboard Identifier" />
+		<_14 v="Parameter Value" />
+		<_3B v="" />
+	</_40>
+	<_40 v="String Parameters" item_name_1="BehaviorTreeNodeParameterStringId" item_name_2="BehaviorTreeNodeParameterStringId" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Blackboard Identifier" />
+		<_2 v="Parameter Value" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Asset Parameters" item_name_1="BehaviorTreeNodeParameterRuntimeRef" item_name_2="BehaviorTreeNodeParameterRuntimeRef" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Blackboard Identifier" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pada36f" length="4" />
+	<_3B v="" />
+</root>

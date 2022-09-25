@@ -6,7 +6,7 @@ from exporters.to.image.dds_utilts.bitmap_2_dds import BitmapToDds, MipmapIndexE
 from exporters.to.image.export_to_img_nconvert import ExportImgNConvertImpl
 from exporters.to.image.export_to_img_pillow import ExportImgPillowImpl
 from exporters.to.image.export_to_img_wand import ExportImgWandImpl
-from halo_infinite_tag_reader.readers.bitmap import Bitmap
+from tag_reader.readers.bitmap import Bitmap
 
 
 class BitmapExporter(BaseExporter):

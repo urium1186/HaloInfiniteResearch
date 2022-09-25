@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="AnimationFrameEventList" item_name_2="AnimationFrameEventList" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Animations" item_name_1="AnimFrameEvents" item_name_2="AnimFrameEvents" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="Name" />
+		<_6 v="Guid" />
+		<_40 v="Frame events" item_name_1="AnimFrameEvent" item_name_2="AnimFrameEvent" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_5 v="Frame" />
+			<_34 v="generated_pad8ebc" length="2" />
+			<_2 v="Anim event type" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Functions" item_name_1="AnimFunction" item_name_2="AnimFunction" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
+			<_2 v="Function name" />
+			<_2 v="Comment" />
+			<_38 v="Function curve" item_name_1="i343::Curve::AnimatedCurve1d" item_name_2="i343::Curve::AnimatedCurve1d" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
+				<_2 v="Name" />
+				<_F v="Flags">
+					<Flag v="Enabled" />
+					<Flag v="Visible" />
+				</_F>
+				<_34 v="generated_pad94fd" length="3" />
+				<_38 v="Value Curve" item_name_1="i343::Curve::Curve1dDefinition" item_name_2="i343::Curve::Curve1dDefinition" db1="20" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="control points" item_name_1="i343::Curve::Curve1dControlPoint" item_name_2="i343::Curve::Curve1dControlPoint" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_14 v="value" />
+						<_14 v="tangent in" />
+						<_14 v="tangent out" />
+						<_14 v="curviness" />
+						<_A v="segment type">
+							<Flag v="Spline" />
+							<Flag v="Linear" />
+							<Flag v="Stepped" />
+							<Flag v="SteppedNext" />
+						</_A>
+						<_A v="tangent mode">
+							<Flag v="AutoStraight" />
+							<Flag v="UserStraight" />
+							<Flag v="UserBroken" />
+						</_A>
+						<_34 v="generated_pad7103" length="2" />
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_38>
+				<_40 v="AnimatedCurveMetadata" item_name_1="i343::Curve::AnimatedCurveMetadata" item_name_2="i343::Curve::AnimatedCurveMetadata" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_14 v="time" />
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_padfeff" length="4" />
+	<_3B v="" />
+</root>

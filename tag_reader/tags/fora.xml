@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="ForgeActionSoundsDefinition" item_name_2="ForgeActionSoundsDefinition" db1="968" db2="0" db3="1" db4="0" db5="0" db6="0" db7="952" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_37 v="$$$ General $$$" />
+	<_41 v="Undo Sound" />
+	<_41 v="Redo Sound" />
+	<_41 v="Monitor Speed Change Sound" />
+	<_41 v="Error Sound" />
+	<_41 v="Menu Opened Sound" />
+	<_41 v="Menu Closed Sound" />
+	<_37 v="" />
+	<_37 v="$$$ Objects $$$" />
+	<_41 v="Object Select Sound" />
+	<_41 v="Object Deselect Sound" />
+	<_41 v="Object Snap Sound" />
+	<_41 v="Object Place Sound" />
+	<_41 v="Object Place Error Sound" />
+	<_41 v="Object Duplicate Sound" />
+	<_41 v="Object Delete Sound" />
+	<_41 v="Object Lock Focus Sound" />
+	<_41 v="Object Hide Sound" />
+	<_41 v="Object Show Sound" />
+	<_41 v="Object Lock Sound" />
+	<_41 v="Object Unlock Sound" />
+	<_41 v="Object Group Sound" />
+	<_41 v="Object Ungroup Sound" />
+	<_41 v="Object Rotate Sound" />
+	<_41 v="Object Scale Sound" />
+	<_41 v="Save Prefab Sound" />
+	<_37 v="" />
+	<_37 v="$$$ Nodegraph $$$" />
+	<_41 v="Nodegraph Enter Editor Sound" />
+	<_41 v="Nodegraph Exit Editor Sound" />
+	<_41 v="Nodegraph Place Node Sound" />
+	<_41 v="Nodegraph Select Node Sound" />
+	<_41 v="Nodegraph Deselect Node Sound" />
+	<_41 v="Nodegraph Connect Nodes Sound" />
+	<_41 v="Nodegraph Disconnect Node Sound" />
+	<_41 v="Nodegraph Delete Node Sound" />
+	<_41 v="Nodegraph Duplicate Node Sound" />
+	<_37 v="" />
+	<_37 v="$$$ Script Validation $$$" />
+	<_41 v="Script Validation Success Sound" />
+	<_41 v="Script Validation Error Sound" />
+	<_37 v="" />
+	<_3B v="" />
+</root>

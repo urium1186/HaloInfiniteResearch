@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="s_game_medal_globals" item_name_2="s_game_medal_globals" db1="96" db2="0" db3="2" db4="0" db5="1" db6="0" db7="80" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="difficulty definitions" item_name_1="GameMedalDifficultyDefinition" item_name_2="GameMedalDifficultyDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="name" />
+		<_2 v="description" />
+		<_5 v="sprite index" />
+		<_34 v="generated_pad3403" length="2" />
+		<_3B v="" />
+	</_40>
+	<_40 v="type definitions" item_name_1="GameMedalTypeDefinition" item_name_2="GameMedalTypeDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="name" />
+		<_2 v="description" />
+		<_6 v="sprite index" />
+		<_3B v="" />
+	</_40>
+	<_40 v="medals" item_name_1="s_game_medal_definition" item_name_2="s_game_medal_definition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="name" />
+		<_2 v="description" />
+		<_5 v="sprite index" />
+		<_3C v="sorting weight" />
+		<_3C v="difficulty index" />
+		<_3C v="type index" />
+		<_34 v="generated_pad7cd0" length="3" />
+		<_6 v="personal score" />
+		<_3B v="" />
+	</_40>
+	<_40 v="personal score event definitions" item_name_1="PersonalScoreEventDefinition" item_name_2="PersonalScoreEventDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="name" />
+		<_2 v="description" />
+		<_6 v="default score value" />
+		<_3C v="weight" />
+		<_A v="event type">
+			<Flag v="general" />
+			<Flag v="mode" />
+		</_A>
+		<_F v="suppress event spam">
+			<Flag v="enabled" />
+		</_F>
+		<_34 v="generated_pad6307" length="1" />
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

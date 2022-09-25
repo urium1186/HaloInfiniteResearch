@@ -1,0 +1,1869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="c_model_animation_graph" item_name_2="c_model_animation_graph" db1="1160" db2="0" db3="32" db4="0" db5="1" db6="0" db7="1144" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="content" item_name_1="AnimationGraphContents" item_name_2="AnimationGraphContents" db1="764" db2="0" db3="5" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_37 v="Links and Settings" />
+		<_38 v="links" item_name_1="AnimationGraphExternalReferences" item_name_2="AnimationGraphExternalReferences" db1="136" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_37 v="Links" />
+			<_36 v="inheritance" />
+			<_38 v="inheritance" item_name_1="AnimationGraphInheritanceSettings" item_name_2="AnimationGraphInheritanceSettings" db1="20" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_40 v="inherited graph" item_name_1="AnimationGraphParentData" item_name_2="AnimationGraphParentData" db1="104" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+					<_41 v="parent graph" />
+					<_D v="inheritance_flags">
+						<Flag v="inherit root trans scale only" />
+						<Flag v="inherit for use on player" />
+					</_D>
+					<_40 v="node map" item_name_1="InheritedAnimationNodeMap" item_name_2="InheritedAnimationNodeMap" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_5 v="local node" />
+						<_3B v="" />
+					</_40>
+					<_40 v="node map flags" item_name_1="InheritedAnimationNodeMapFlag" item_name_2="InheritedAnimationNodeMapFlag" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_3E v="local node flags" />
+						<_3B v="" />
+					</_40>
+					<_14 v="uniform translation scale" />
+					<_6 v="alias index" />
+					<_6 v="base index" />
+					<_40 v="temp anim list" item_name_1="InheritedAnimationData" item_name_2="InheritedAnimationData" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+						<_2 v="name" />
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_38>
+			<_36 v="events" />
+			<_38 v="events" item_name_1="AnimationGraphEventReferences" item_name_2="AnimationGraphEventReferences" db1="88" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_41 v="events file" />
+				<_40 v="sound references" item_name_1="SoundEventReferenceSet" item_name_2="SoundEventReferenceSet" db1="24" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_2 v="name" />
+					<_40 v="sounds" item_name_1="SoundEventReference" item_name_2="SoundEventReference" db1="96" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="273">
+						<_41 v="sound" />
+						<_E v="flags">
+							<Flag v="allow on player" />
+							<Flag v="left arm only" />
+							<Flag v="right arm only" />
+							<Flag v="first-person only" />
+							<Flag v="third-person only" />
+							<Flag v="forward only" />
+							<Flag v="reverse only" />
+							<Flag v="fp no aged weapons" />
+						</_E>
+						<_34 v="generated_padeb82" length="2" />
+						<_41 v="model" />
+						<_2 v="model variant" />
+						<_41 v="weapon" />
+						<_2 v="weapon variant" />
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_40>
+				<_40 v="dialogue references" item_name_1="AnimationGraphDialogueReference" item_name_2="AnimationGraphDialogueReference" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_2 v="vocalization name" />
+					<_A v="play restriction">
+						<Flag v="Unrestricted" />
+						<Flag v="Only With Shield" />
+						<Flag v="Only With Shield Empty" />
+					</_A>
+					<_34 v="generated_padf213" length="3" />
+					<_3B v="" />
+				</_40>
+				<_40 v="effect references" item_name_1="EffectEventReferenceSet" item_name_2="EffectEventReferenceSet" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_2 v="name" />
+					<_40 v="effects" item_name_1="EffectEventReference" item_name_2="EffectEventReference" db1="96" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+						<_41 v="effect" />
+						<_E v="flags">
+							<Flag v="allow on player" />
+							<Flag v="left arm only" />
+							<Flag v="right arm only" />
+							<Flag v="first-person only" />
+							<Flag v="third-person only" />
+							<Flag v="forward only" />
+							<Flag v="reverse only" />
+							<Flag v="fp no aged weapons" />
+						</_E>
+						<_34 v="generated_pad9456" length="2" />
+						<_41 v="model" />
+						<_2 v="model variant" />
+						<_41 v="weapon" />
+						<_2 v="weapon variant" />
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_38>
+			<_36 v="pca animation" />
+			<_38 v="pca" item_name_1="AnimationGraphPCAReference" item_name_2="AnimationGraphPCAReference" db1="28" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+				<_41 v="pca animation" />
+				<_3B v="" />
+			</_38>
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_38 v="settings" item_name_1="AnimationGraphSettings" item_name_2="AnimationGraphSettings" db1="8" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_37 v="Settings" />
+			<_E v="graph flags">
+				<Flag v="use dual mixing boards" />
+			</_E>
+			<_E v="private flags">
+				<Flag v="prepared for cache" />
+				<Flag v="imported with codec compressors" />
+				<Flag v="written to cache" />
+				<Flag v="animation data reordered" />
+				<Flag v="ready for use" />
+				<Flag v="possesses default ik chains for a biped" />
+				<Flag v="built flat inheritance list" />
+				<Flag v="Updated bone count to use shorts" />
+				<Flag v="model animation graph was built by a chore" />
+				<Flag v="has any transition animations" />
+			</_E>
+			<_36 v="Compression" />
+			<_B v="force compression setting">
+				<Flag v="none" />
+				<Flag v="medium compression" />
+				<Flag v="rough compression" />
+				<Flag v="light compression" />
+				<Flag v="uncompressed" />
+				<Flag v="ACL auto" />
+				<Flag v="old codec" />
+				<Flag v="reach medium compression" />
+				<Flag v="reach rough compression" />
+			</_B>
+			<_5 v="animation codec pack" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="Skeleton and IK" />
+		<_36 v="Warning" />
+		<_37 v="local data" />
+		<_41 v="skeleton link" />
+		<_38 v="skeleton" item_name_1="AnimationGraphSkeleton" item_name_2="AnimationGraphSkeleton" db1="104" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_6 v="skeleton checksum" />
+			<_40 v="skeleton bones" item_name_1="s_animation_graph_node" item_name_2="s_animation_graph_node" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+				<_2 v="name" />
+				<_2E v="next sibling node index" />
+				<_2E v="first child node index" />
+				<_2E v="parent node index" />
+				<_E v="model flags">
+					<Flag v="primary model" />
+					<Flag v="secondary model" />
+					<Flag v="local root" />
+					<Flag v="left hand" />
+					<Flag v="right hand" />
+					<Flag v="left arm member" />
+					<Flag v="detail joint" />
+				</_E>
+				<_14 v="z_pos" />
+				<_6 v="frame_ID1" />
+				<_6 v="frame_ID2" />
+				<_3B v="" />
+			</_40>
+			<_40 v="bone usage" item_name_1="s_animation_node_usage_entry" item_name_2="s_animation_node_usage_entry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_B v="usage">
+					<Flag v="physics control" />
+					<Flag v="camera control" />
+					<Flag v="origin marker" />
+					<Flag v="left clavicle" />
+					<Flag v="left upperarm" />
+					<Flag v="pose blend pitch" />
+					<Flag v="pose blend yaw" />
+					<Flag v="pedestal" />
+					<Flag v="pelvis" />
+					<Flag v="left foot" />
+					<Flag v="right foot" />
+					<Flag v="damage root gut" />
+					<Flag v="damage root chest" />
+					<Flag v="damage root head" />
+					<Flag v="damage root left shoulder" />
+					<Flag v="damage root left arm" />
+					<Flag v="damage root left leg" />
+					<Flag v="damage root left foot" />
+					<Flag v="damage root right shoulder" />
+					<Flag v="damage root right arm" />
+					<Flag v="damage root right leg" />
+					<Flag v="damage root right foot" />
+					<Flag v="left hand" />
+					<Flag v="right hand" />
+					<Flag v="weapon ik" />
+					<Flag v="head" />
+					<Flag v="helmet" />
+					<Flag v="right clavicle" />
+					<Flag v="left forearm" />
+					<Flag v="right forearm" />
+					<Flag v="left front foot" />
+					<Flag v="right front foot" />
+					<Flag v="left eye" />
+					<Flag v="right eye" />
+					<Flag v="overlay object space parent" />
+				</_B>
+				<_2E v="node to use" />
+				<_3B v="" />
+			</_40>
+			<_40 v="bone masks" item_name_1="s_animation_node_mask" item_name_2="s_animation_node_mask" db1="180" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+				<_2 v="name" />
+				<_E v="flags">
+					<Flag v="invert" />
+				</_E>
+				<_2E v="chain start" />
+				<_40 v="chain ends" item_name_1="s_animation_node_mask_entry" item_name_2="s_animation_node_mask_entry" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+					<_2E v="node" />
+					<_3B v="" />
+				</_40>
+				<_40 v="nodes" item_name_1="s_animation_node_mask_entry" item_name_2="s_animation_node_mask_entry" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+					<_2E v="node" />
+					<_3B v="" />
+				</_40>
+				<_2E v="add nodes" />
+				<_2E v="remove nodes" />
+				<_39 v="node flags" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+				</_39>
+				<_3B v="" />
+			</_40>
+			<_40 v="user parameters" item_name_1="AnimationGraphUserParameter" item_name_2="AnimationGraphUserParameter" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="name" />
+				<_14 v="default value" />
+				<_3B v="" />
+			</_40>
+			<_40 v="user parameter masks" item_name_1="s_animation_userparam_mask" item_name_2="s_animation_userparam_mask" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+				<_2 v="name" />
+				<_E v="flags">
+					<Flag v="invert" />
+				</_E>
+				<_34 v="generated_pade566" length="2" />
+				<_40 v="userparams" item_name_1="s_animation_userparam_mask_entry" item_name_2="s_animation_userparam_mask_entry" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+					<_2E v="userparam index" />
+					<_3B v="" />
+				</_40>
+				<_2E v="add nodes" />
+				<_2E v="remove nodes" />
+				<_39 v="user parameter flags" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+					<_6 v="flag data" />
+					<_3B v="" />
+				</_39>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_38 v="ik" item_name_1="AnimationGraphIK" item_name_2="AnimationGraphIK" db1="140" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_36 v="IK Junctions" />
+			<_40 v="ik junctions" item_name_1="AnimationIKJunction" item_name_2="AnimationIKJunction" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+				<_2 v="name" />
+				<_2E v="pivot node" />
+				<_2E v="parent junction" />
+				<_5 v="supporting chain" />
+				<_2E v="supporting node" />
+				<_15 v="pull passthrough" />
+				<_3B v="" />
+			</_40>
+			<_36 v="IK Chains" />
+			<_40 v="ik chains" item_name_1="s_animation_ik_chain" item_name_2="s_animation_ik_chain" db1="104" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_2 v="name" />
+				<_B v="type">
+					<Flag v="standard" />
+					<Flag v="spine" />
+					<Flag v="spline driven spine" />
+				</_B>
+				<_2E v="start node" />
+				<_2E v="effector node" />
+				<_2E v="parent junction" />
+				<_5 v="rank" />
+				<_5 v="antecedents" />
+				<_40 v="special joints" item_name_1="AnimationIKJoint" item_name_2="AnimationIKJoint" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+					<_2E v="joint index" />
+					<_E v="flags">
+						<Flag v="static" />
+						<Flag v="hinge" />
+					</_E>
+					<_3B v="" />
+				</_40>
+				<_36 v="Pull settings" />
+				<_15 v="native pull strength" />
+				<_15 v="native push strength" />
+				<_15 v="over extent pull strength" />
+				<_15 v="under extent push strength" />
+				<_36 v="Effector Cone Limits" />
+				<_15 v="effector cone limit power" />
+				<_24 v="pitch bounds" />
+				<_24 v="yaw bounds" />
+				<_25 v="offset bounds" />
+				<_40 v="full joint chain" item_name_1="AnimationIKJoint" item_name_2="AnimationIKJoint" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+					<_2E v="joint index" />
+					<_E v="flags">
+						<Flag v="static" />
+						<Flag v="hinge" />
+					</_E>
+					<_3B v="" />
+				</_40>
+				<_15 v="spline reversal strength" />
+				<_3B v="" />
+			</_40>
+			<_40 v="ik leg definitions" item_name_1="s_animation_ik_leg_definition" item_name_2="s_animation_ik_leg_definition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_30 v="leg ik chain" />
+				<_25 v="standing compression limits" />
+				<_25 v="crouching compression limits" />
+				<_25 v="foot pitch limits" />
+				<_25 v="foot yaw limits" />
+				<_3B v="" />
+			</_40>
+			<_40 v="ik arm definitions" item_name_1="s_animation_ik_arm_definition" item_name_2="s_animation_ik_arm_definition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+				<_30 v="arm ik chain" />
+				<_14 v="wrist break threshold" />
+				<_2 v="fixup axis marker" />
+				<_14 v="ik wrist break acceptable min angle" />
+				<_3B v="" />
+			</_40>
+			<_36 v="Points and Sets" />
+			<_40 v="ik point" item_name_1="s_animation_ik_point" item_name_2="s_animation_ik_point" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+				<_2 v="name" />
+				<_2 v="source marker" />
+				<_C v="attach to">
+					<Flag v="parent" />
+					<Flag v="NYI any child" />
+					<Flag v="primary weapon" />
+					<Flag v="secondary weapon" />
+				</_C>
+				<_2 v="destination marker" />
+				<_17 v="pole marker" />
+				<_30 v="chain to use" />
+				<_37 v="" />
+				<_2 v="weight source object function" />
+				<_37 v="" />
+				<_2 v="priority source object function" />
+				<_3B v="" />
+			</_40>
+			<_40 v="ik sets" item_name_1="s_animation_ik_set" item_name_2="s_animation_ik_set" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_2 v="name" />
+				<_D v="flags">
+					<Flag v="Disable Quadruped Footlocking" />
+					<Flag v="Enable Biped Handlocking" />
+				</_D>
+				<_40 v="ik points" item_name_1="s_animation_ik_set_item" item_name_2="s_animation_ik_set_item" db1="4" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="384">
+					<_2E v="ik point" />
+					<_E v="flags">
+						<Flag v="disable" />
+					</_E>
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_40>
+			<_36 v="Ground-fit chains" />
+			<_40 v="groundfit ik chains" item_name_1="i343::Animation::IKGroundFittingChain" item_name_2="i343::Animation::IKGroundFittingChain" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_36 v="Chain Drivers" />
+				<_30 v="start junction" />
+				<_30 v="end junction" />
+				<_14 v="probe distance" />
+				<_14 v="angle threshold" />
+				<_14 v="maximum rate" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="" />
+		<_37 v="Animation Pool" />
+		<_40 v="animations" item_name_1="c_model_animation" item_name_2="c_model_animation" db1="120" db2="0" db3="4" db4="0" db5="1" db6="0" db7="0" db8="275">
+			<_2 v="name" />
+			<_37 v="Play on player" />
+			<_5 v="frame count" />
+			<_3D v="node count" />
+			<_A v="animation type">
+				<Flag v="none" />
+				<Flag v="base" />
+				<Flag v="overlay" />
+				<Flag v="replacement" />
+			</_A>
+			<_A v="frame info type">
+				<Flag v="none" />
+				<Flag v="dx,dy" />
+				<Flag v="dx,dy,dyaw" />
+				<Flag v="dx,dy,dz,dyaw" />
+				<Flag v="dx,dy,dz,dangle-axis" />
+				<Flag v="x,y,z - absolute" />
+				<Flag v="auto" />
+			</_A>
+			<_A v="desired frame info type">
+				<Flag v="none" />
+				<Flag v="dx,dy" />
+				<Flag v="dx,dy,dyaw" />
+				<Flag v="dx,dy,dz,dyaw" />
+				<Flag v="dx,dy,dz,dangle-axis" />
+				<Flag v="x,y,z - absolute" />
+				<Flag v="auto" />
+			</_A>
+			<_A v="desired compression">
+				<Flag v="best score" />
+				<Flag v="best compression" />
+				<Flag v="light compression" />
+				<Flag v="best accuracy" />
+				<Flag v="ACL auto" />
+				<Flag v="old codec" />
+				<Flag v="reach medium compression" />
+				<Flag v="reach rough compression" />
+			</_A>
+			<_A v="current compression">
+				<Flag v="best score" />
+				<Flag v="best compression" />
+				<Flag v="light compression" />
+				<Flag v="best accuracy" />
+				<Flag v="ACL auto" />
+				<Flag v="old codec" />
+				<Flag v="reach medium compression" />
+				<Flag v="reach rough compression" />
+			</_A>
+			<_34 v="generated_padafd6" length="1" />
+			<_2E v="parent animation" />
+			<_2E v="next animation" />
+			<_2E v="composite" />
+			<_14 v="weight" />
+			<_5 v="loop frame index" />
+			<_E v="user flags">
+				<Flag v="disable interpolation in" />
+				<Flag v="disable interpolation out" />
+				<Flag v="disable mode ik" />
+				<Flag v="disable weapon ik" />
+				<Flag v="disable weapon aim/1st person" />
+				<Flag v="disable look screen" />
+				<Flag v="force weapon ik on" />
+				<Flag v="enable replacement interpolation" />
+				<Flag v="enable blend-in on replacement anims" />
+				<Flag v="use custom blend-in time" />
+				<Flag v="disable ik sets" />
+				<Flag v="disable ik chains" />
+				<Flag v="translate and scale root only" />
+				<Flag v="enable blend-out on replacement anims" />
+				<Flag v="use custom replacement blend-out time" />
+				<Flag v="override player input" />
+			</_E>
+			<_30 v="replacement interpolator" />
+			<_14 v="override blend in time" />
+			<_2 v="replacement blend in weight function" />
+			<_14 v="override blend out time" />
+			<_2 v="replacement blend out weight function" />
+			<_2 v="pca group name" />
+			<_40 v="first person overlay channel slider weight function map" item_name_1="i343::Animation::FirstPersonOverlayChannelSliderWeightFunctionMap" item_name_2="i343::Animation::FirstPersonOverlayChannelSliderWeightFunctionMap" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_36 v="FIRST PERSON OVERLAY CHANNEL WEIGHT SCALING" />
+				<_2 v="overlay animation name" />
+				<_37 v="" />
+				<_2 v="channel weight scale source" />
+				<_3B v="" />
+			</_40>
+			<_E v="internal flags">
+				<Flag v="&lt;unused0&gt;" />
+				<Flag v="&lt;unused1&gt;" />
+				<Flag v="&lt;unused2&gt;" />
+				<Flag v="&lt;unused3&gt;" />
+				<Flag v="&lt;unused4&gt;" />
+				<Flag v="&lt;unused5&gt;" />
+				<Flag v="compression disabled" />
+				<Flag v="&lt;unused6&gt;" />
+				<Flag v="valid production checksum" />
+				<Flag v="override force compression" />
+				<Flag v="contains pca data" />
+				<Flag v="authored at 60Hz" />
+				<Flag v="contains bamf function" />
+				<Flag v="whole frame playback" />
+				<Flag v="pose blend overlay" />
+			</_E>
+			<_3D v="compressor_version" />
+			<_19 v="heading" />
+			<_14 v="heading angle" />
+			<_14 v="average translation magnitude" />
+			<_14 v="average pivot yaw" />
+			<_14 v="original object space yaw" />
+			<_14 v="maxElevationOffset" />
+			<_6 v="uid" />
+			<_3E v="node list checksum" />
+			<_38 v="resource index" item_name_1="AnimationResourceIndex" item_name_2="AnimationResourceIndex" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_2E v="resource group" />
+				<_5 v="resource member index" />
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_40>
+		<_38 v="pca data" item_name_1="AnimationGraphPCAData" item_name_2="AnimationGraphPCAData" db1="28" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_36 v="PCA Groups" />
+			<_40 v="PCA Groups" item_name_1="PCAGroupSettings" item_name_2="PCAGroupSettings" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+				<_2 v="Group Name" />
+				<_6 v="Desired Mesh Count" />
+				<_36 v="PCA Component Importance" />
+				<_19 v="Position Importance Scale" />
+				<_18 v="Normal Importance Scale" />
+				<_18 v="Tension Importance Scale" />
+				<_3B v="" />
+			</_40>
+			<_6 v="PCA Animation Count" />
+			<_6 v="PCA Checksum" />
+			<_3B v="" />
+		</_38>
+		<_40 v="composites" item_name_1="CompositeTag" item_name_2="CompositeTag" db1="92" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_2 v="name" />
+			<_40 v="axes" item_name_1="CompositeAxis" item_name_2="CompositeAxis" db1="68" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="305">
+				<_2 v="name" />
+				<_2 v="animation source" />
+				<_37 v="" />
+				<_2 v="input function" />
+				<_25 v="animation bounds" />
+				<_25 v="input bounds" />
+				<_25 v="clamp bounds" />
+				<_14 v="blend limit" />
+				<_40 v="dead zones" item_name_1="CompositeDeadZone" item_name_2="CompositeDeadZone" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+					<_25 v="bounds" />
+					<_14 v="rate" />
+					<_14 v="center" />
+					<_14 v="radius" />
+					<_14 v="amount" />
+					<_14 v="delay" />
+					<_3B v="" />
+				</_40>
+				<_3C v="divisions" />
+				<_3C v="priority" />
+				<_3C v="update" />
+				<_3C v="functionIndex" />
+				<_D v="flags">
+					<Flag v="wrapped" />
+					<Flag v="clamped" />
+				</_D>
+				<_3B v="" />
+			</_40>
+			<_40 v="anims" item_name_1="CompositeEntry" item_name_2="CompositeEntry" db1="32" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_2 v="source" />
+				<_40 v="values" item_name_1="CompositeEntryValue" item_name_2="CompositeEntryValue" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_14 v="value" />
+					<_3B v="" />
+				</_40>
+				<_6 v="overridden" />
+				<_5 v="animIndex" />
+				<_3C v="slideAxis" />
+				<_34 v="generated_padd329" length="1" />
+				<_3B v="" />
+			</_40>
+			<_40 v="sets" item_name_1="CompositePhaseSet" item_name_2="CompositePhaseSet" db1="160" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_2 v="name" />
+				<_2 v="timing source" />
+				<_40 v="sync points" item_name_1="SyncKey" item_name_2="SyncKey" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_B v="key">
+						<Flag v="none" />
+						<Flag v="primary_keyframe" />
+						<Flag v="secondary_keyframe" />
+						<Flag v="tertiary_keyframe" />
+						<Flag v="left_foot" />
+						<Flag v="right_foot" />
+						<Flag v="allow_interruption" />
+						<Flag v="do_not_allow_interruption" />
+						<Flag v="both_feet_shuffle" />
+						<Flag v="body_impact" />
+						<Flag v="left_foot_lock" />
+						<Flag v="left_foot_unlock" />
+						<Flag v="right_foot_lock" />
+						<Flag v="right_foot_unlock" />
+						<Flag v="blend_range_marker" />
+						<Flag v="stride_expansion" />
+						<Flag v="stride_contraction" />
+						<Flag v="ragdoll_keyframe" />
+						<Flag v="drop_weapon_keyframe" />
+						<Flag v="match_a" />
+						<Flag v="match_b" />
+						<Flag v="match_c" />
+						<Flag v="match_d" />
+						<Flag v="jetpack_closed" />
+						<Flag v="jetpack_open" />
+						<Flag v="sound_event" />
+						<Flag v="effect_event" />
+						<Flag v="left_hand" />
+						<Flag v="right_hand" />
+						<Flag v="grenade" />
+						<Flag v="melee" />
+						<Flag v="interact_device" />
+						<Flag v="shield_raise" />
+						<Flag v="activate_equipment" />
+						<Flag v="aoe_attack" />
+						<Flag v="equipment" />
+						<Flag v="jink_fire" />
+						<Flag v="align_to_target" />
+						<Flag v="block_exiting" />
+						<Flag v="set_interruptable" />
+						<Flag v="disable_shooting" />
+						<Flag v="re_enable_shooting" />
+						<Flag v="skip_crouch_transition" />
+						<Flag v="start_bamf" />
+						<Flag v="end_bamf" />
+						<Flag v="hide" />
+						<Flag v="frame_attachment_objects_show" />
+						<Flag v="frame_attachment_objects_hide" />
+						<Flag v="creature_physics_mode_change" />
+						<Flag v="melee_range" />
+						<Flag v="frame_attachment_switch_to_secondary_parent_marker" />
+						<Flag v="frame_attachment_switch_to_default_parent_marker" />
+						<Flag v="allow_sprint_interrupt" />
+					</_B>
+					<_3B v="" />
+				</_40>
+				<_42 v="sync frames" />
+				<_42 v="facets" />
+				<_42 v="neighbors" />
+				<_42 v="containment" />
+				<_42 v="example grid" />
+				<_25 v="normalized bounds" />
+				<_3C v="offset" />
+				<_34 v="generated_pad597a" length="1" />
+				<_5 v="timingAnimIndex" />
+				<_3B v="" />
+			</_40>
+			<_40 v="strings" item_name_1="AnimationOrDefaultStringIDBlockType" item_name_2="AnimationOrDefaultStringIDBlockType" db1="4" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="name" />
+				<_3B v="" />
+			</_40>
+			<_2 v="timing source" />
+			<_5 v="timingAnimIndex" />
+			<_5 v="medianThrottleMag" />
+			<_3B v="" />
+		</_40>
+		<_40 v="action tokens" item_name_1="AnimationTokenEntry" item_name_2="AnimationTokenEntry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="name" />
+			<_3B v="" />
+		</_40>
+		<_40 v="overlay tokens" item_name_1="OverlayTokenEntry" item_name_2="OverlayTokenEntry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="name" />
+			<_3B v="" />
+		</_40>
+		<_40 v="poseBlend tokens" item_name_1="PoseBlendTokenEntry" item_name_2="PoseBlendTokenEntry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="name" />
+			<_3B v="" />
+		</_40>
+		<_37 v="" />
+		<_37 v="Blending and Overlays" />
+		<_40 v="functions" item_name_1="s_animation_function" item_name_2="s_animation_function" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_2 v="name" />
+			<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_37 v="function" />
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_37 v="" />
+					<_42 v="data" />
+					<_37 v="" />
+					<_3B v="" />
+				</_38>
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_40>
+		<_40 v="blend screens" item_name_1="AnimationBlendScreenDefinition" item_name_2="AnimationBlendScreenDefinition" db1="52" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="387">
+			<_2 v="name" />
+			<_D v="flags">
+				<Flag v="active only when weapon down" />
+				<Flag v="attempt piece-wise blending" />
+				<Flag v="allow parent adjustment" />
+				<Flag v="active only when weapon precise" />
+				<Flag v="generates IK Offsets" />
+			</_D>
+			<_14 v="weight" />
+			<_15 v="interpolation rate" />
+			<_B v="yaw source">
+				<Flag v="none" />
+				<Flag v="object function" />
+				<Flag v="horizontal test" />
+				<Flag v="vertical test" />
+				<Flag v="aim yaw" />
+				<Flag v="aim pitch" />
+				<Flag v="look yaw" />
+				<Flag v="look pitch" />
+				<Flag v="object yaw" />
+				<Flag v="object pitch" />
+				<Flag v="acceleration yaw" />
+				<Flag v="acceleration pitch" />
+				<Flag v="steering" />
+				<Flag v="velocity yaw" />
+				<Flag v="velocity pitch" />
+				<Flag v="damage gut yaw" />
+				<Flag v="damage gut pitch" />
+				<Flag v="damage chest yaw" />
+				<Flag v="damage chest pitch" />
+				<Flag v="damage head yaw" />
+				<Flag v="damage head pitch" />
+				<Flag v="damage left shoulder yaw" />
+				<Flag v="damage left shoulder pitch" />
+				<Flag v="damage left arm yaw" />
+				<Flag v="damage left arm pitch" />
+				<Flag v="damage left leg yaw" />
+				<Flag v="damage left leg pitch" />
+				<Flag v="damage left foot yaw" />
+				<Flag v="damage left foot pitch" />
+				<Flag v="damage right shoulder yaw" />
+				<Flag v="damage right shoulder pitch" />
+				<Flag v="damage right arm yaw" />
+				<Flag v="damage right arm pitch" />
+				<Flag v="damage right leg yaw" />
+				<Flag v="damage right leg pitch" />
+				<Flag v="damage right foot yaw" />
+				<Flag v="damage right foot pitch" />
+				<Flag v="defense yaw" />
+				<Flag v="defense pitch" />
+				<Flag v="first person pitch" />
+				<Flag v="first person turn" />
+				<Flag v="throttle side" />
+				<Flag v="throttle_forward" />
+				<Flag v="fp_look_offset_yaw" />
+				<Flag v="fp_look_offset_pitch" />
+				<Flag v="fp_look_accel_yaw" />
+				<Flag v="fp_look_accel_pitch" />
+				<Flag v="fp_grapple_target_yaw" />
+				<Flag v="fp_grapple_target_pitch" />
+			</_B>
+			<_B v="pitch source">
+				<Flag v="none" />
+				<Flag v="object function" />
+				<Flag v="horizontal test" />
+				<Flag v="vertical test" />
+				<Flag v="aim yaw" />
+				<Flag v="aim pitch" />
+				<Flag v="look yaw" />
+				<Flag v="look pitch" />
+				<Flag v="object yaw" />
+				<Flag v="object pitch" />
+				<Flag v="acceleration yaw" />
+				<Flag v="acceleration pitch" />
+				<Flag v="steering" />
+				<Flag v="velocity yaw" />
+				<Flag v="velocity pitch" />
+				<Flag v="damage gut yaw" />
+				<Flag v="damage gut pitch" />
+				<Flag v="damage chest yaw" />
+				<Flag v="damage chest pitch" />
+				<Flag v="damage head yaw" />
+				<Flag v="damage head pitch" />
+				<Flag v="damage left shoulder yaw" />
+				<Flag v="damage left shoulder pitch" />
+				<Flag v="damage left arm yaw" />
+				<Flag v="damage left arm pitch" />
+				<Flag v="damage left leg yaw" />
+				<Flag v="damage left leg pitch" />
+				<Flag v="damage left foot yaw" />
+				<Flag v="damage left foot pitch" />
+				<Flag v="damage right shoulder yaw" />
+				<Flag v="damage right shoulder pitch" />
+				<Flag v="damage right arm yaw" />
+				<Flag v="damage right arm pitch" />
+				<Flag v="damage right leg yaw" />
+				<Flag v="damage right leg pitch" />
+				<Flag v="damage right foot yaw" />
+				<Flag v="damage right foot pitch" />
+				<Flag v="defense yaw" />
+				<Flag v="defense pitch" />
+				<Flag v="first person pitch" />
+				<Flag v="first person turn" />
+				<Flag v="throttle side" />
+				<Flag v="throttle_forward" />
+				<Flag v="fp_look_offset_yaw" />
+				<Flag v="fp_look_offset_pitch" />
+				<Flag v="fp_look_accel_yaw" />
+				<Flag v="fp_look_accel_pitch" />
+				<Flag v="fp_grapple_target_yaw" />
+				<Flag v="fp_grapple_target_pitch" />
+			</_B>
+			<_37 v="" />
+			<_2 v="yaw source object function" />
+			<_37 v="" />
+			<_2 v="pitch source object function" />
+			<_B v="weight source">
+				<Flag v="none" />
+				<Flag v="object function" />
+				<Flag v="acceleration magnitude" />
+				<Flag v="velocity magnitude" />
+				<Flag v="state function a" />
+				<Flag v="state function b" />
+				<Flag v="state function c" />
+				<Flag v="state function d" />
+				<Flag v="damage chest(damage focus chest)" />
+				<Flag v="damage gut(damage focus gut)" />
+				<Flag v="damage head(damage focus head)" />
+				<Flag v="damage left shoulder(damage focus left shoulder)" />
+				<Flag v="damage left arm(damage focus left arm)" />
+				<Flag v="damage left leg(damage focus left leg)" />
+				<Flag v="damage left foot(damage focus left foot)" />
+				<Flag v="damage right shoulder(damage focus right shoulder)" />
+				<Flag v="damage right arm(damage focus right arm)" />
+				<Flag v="damage right leg(damage focus right leg)" />
+				<Flag v="damage right foot(damage focus right foot)" />
+				<Flag v="defense" />
+			</_B>
+			<_B v="secondary weight source">
+				<Flag v="none" />
+				<Flag v="object function" />
+				<Flag v="acceleration magnitude" />
+				<Flag v="velocity magnitude" />
+				<Flag v="state function a" />
+				<Flag v="state function b" />
+				<Flag v="state function c" />
+				<Flag v="state function d" />
+				<Flag v="damage chest(damage focus chest)" />
+				<Flag v="damage gut(damage focus gut)" />
+				<Flag v="damage head(damage focus head)" />
+				<Flag v="damage left shoulder(damage focus left shoulder)" />
+				<Flag v="damage left arm(damage focus left arm)" />
+				<Flag v="damage left leg(damage focus left leg)" />
+				<Flag v="damage left foot(damage focus left foot)" />
+				<Flag v="damage right shoulder(damage focus right shoulder)" />
+				<Flag v="damage right arm(damage focus right arm)" />
+				<Flag v="damage right leg(damage focus right leg)" />
+				<Flag v="damage right foot(damage focus right foot)" />
+				<Flag v="defense" />
+			</_B>
+			<_37 v="" />
+			<_2 v="weight source object function" />
+			<_37 v="" />
+			<_2 v="secondary weight object function" />
+			<_2E v="weight function" />
+			<_38 v="animation" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_2E v="parent graph" />
+				<_2F v="animation" />
+				<_3B v="" />
+			</_38>
+			<_34 v="generated_pade4f6" length="2" />
+			<_30 v="animation token" />
+			<_3B v="" />
+		</_40>
+		<_40 v="function overlays" item_name_1="s_new_animation_function_overlay" item_name_2="s_new_animation_function_overlay" db1="44" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="387">
+			<_2 v="name" />
+			<_D v="flags">
+				<Flag v="strict looping" />
+				<Flag v="hold last frame" />
+			</_D>
+			<_37 v="" />
+			<_2 v="frame ratio object function" />
+			<_37 v="" />
+			<_2 v="playback speed object function" />
+			<_37 v="" />
+			<_2 v="blend weight object function" />
+			<_37 v="" />
+			<_2 v="unlock function" />
+			<_25 v="unlock range" />
+			<_38 v="animation" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_2E v="parent graph" />
+				<_2F v="animation" />
+				<_3B v="" />
+			</_38>
+			<_30 v="animation token" />
+			<_5 v="start LOD taper" />
+			<_5 v="end LOD taper" />
+			<_3B v="" />
+		</_40>
+		<_40 v="overlay groups" item_name_1="s_overlay_group" item_name_2="s_overlay_group" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_2 v="name" />
+			<_40 v="blend screens" item_name_1="s_blend_screen_item" item_name_2="s_blend_screen_item" db1="6" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_2E v="blend screen" />
+				<_E v="flags">
+					<Flag v="disable" />
+				</_E>
+				<_2E v="node mask" />
+				<_3B v="" />
+			</_40>
+			<_40 v="function overlays" item_name_1="s_function_overlay_item" item_name_2="s_function_overlay_item" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_2E v="function overlay" />
+				<_E v="flags">
+					<Flag v="disable" />
+				</_E>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_40>
+		<_37 v="" />
+		<_37 v="Interpolators" />
+		<_40 v="interpolators" item_name_1="AnimationInterpolator" item_name_2="AnimationInterpolator" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_2 v="name" />
+			<_30 v="bone mask" />
+			<_38 v="function" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_37 v="function" />
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_37 v="" />
+					<_42 v="data" />
+					<_37 v="" />
+					<_3B v="" />
+				</_38>
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_40>
+		<_40 v="interpolation sets" item_name_1="AnimationInterpolationSet" item_name_2="AnimationInterpolationSet" db1="52" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_2 v="name" />
+			<_14 v="seconds" />
+			<_40 v="interpolators" item_name_1="AnimationInterpolationEntry" item_name_2="AnimationInterpolationEntry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_30 v="interpolator" />
+				<_3B v="" />
+			</_40>
+			<_38 v="default curve" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_37 v="function" />
+				<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+					<_37 v="" />
+					<_42 v="data" />
+					<_37 v="" />
+					<_3B v="" />
+				</_38>
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_40>
+		<_37 v="" />
+		<_37 v="Animation Lookup Tables" />
+		<_40 v="model animation variants" item_name_1="s_model_animation_variant" item_name_2="s_model_animation_variant" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_2 v="variant name" />
+			<_40 v="mode or stance aliases" item_name_1="s_mode_or_stance_alias" item_name_2="s_mode_or_stance_alias" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="mode or stance" />
+				<_2 v="alias" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_40>
+		<_40 v="object function variants" item_name_1="s_function_driven_variant" item_name_2="s_function_driven_variant" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_37 v="" />
+			<_2 v="function name" />
+			<_40 v="mode or stance aliases" item_name_1="s_mode_or_stance_alias" item_name_2="s_mode_or_stance_alias" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="mode or stance" />
+				<_2 v="alias" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_40>
+		<_40 v="modes" item_name_1="c_animation_mode" item_name_2="c_animation_mode" db1="52" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_2 v="label" />
+			<_2E v="overlay group" />
+			<_2E v="ik set" />
+			<_D v="flags">
+				<Flag v="this is a stance" />
+			</_D>
+			<_40 v="weapon class" item_name_1="c_weapon_class" item_name_2="c_weapon_class" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_2 v="label" />
+				<_2E v="overlay group" />
+				<_2E v="ik set" />
+				<_40 v="weapon type" item_name_1="c_weapon_type" item_name_2="c_weapon_type" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_2 v="label" />
+					<_2E v="overlay group" />
+					<_2E v="ik set" />
+					<_40 v="sets" item_name_1="c_animation_set" item_name_2="c_animation_set" db1="108" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+						<_2 v="label" />
+						<_2E v="overlay group" />
+						<_2E v="ik set" />
+						<_40 v="actions" item_name_1="s_animation_entry" item_name_2="s_animation_entry" db1="12" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="387">
+							<_2 v="label" />
+							<_2E v="overlay group" />
+							<_2E v="ik set" />
+							<_38 v="animation" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+								<_2E v="parent graph" />
+								<_2F v="animation" />
+								<_3B v="" />
+							</_38>
+							<_3B v="" />
+						</_40>
+						<_40 v="overlay animations" item_name_1="s_animation_entry" item_name_2="s_animation_entry" db1="12" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="387">
+							<_2 v="label" />
+							<_2E v="overlay group" />
+							<_2E v="ik set" />
+							<_38 v="animation" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+								<_2E v="parent graph" />
+								<_2F v="animation" />
+								<_3B v="" />
+							</_38>
+							<_3B v="" />
+						</_40>
+						<_40 v="death and damage" item_name_1="s_animation_damage_actions" item_name_2="s_animation_damage_actions" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+							<_2 v="label" />
+							<_40 v="directions" item_name_1="s_animation_damage_direction" item_name_2="s_animation_damage_direction" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+								<_40 v="regions" item_name_1="DamageRegionParam" item_name_2="DamageRegionParam" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+									<_38 v="animation" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+										<_2E v="parent graph" />
+										<_2F v="animation" />
+										<_3B v="" />
+									</_38>
+									<_3B v="" />
+								</_40>
+								<_3B v="" />
+							</_40>
+							<_3B v="" />
+						</_40>
+						<_40 v="transitions" item_name_1="s_animation_transition_source" item_name_2="s_animation_transition_source" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+							<_2 v="state name" />
+							<_40 v="destinations" item_name_1="s_animation_transition_destination" item_name_2="s_animation_transition_destination" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+								<_2 v="mode name" />
+								<_2 v="state name" />
+								<_38 v="transition settings" item_name_1="AnimationTransitionSettings" item_name_2="AnimationTransitionSettings" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+									<_30 v="transition lerp" />
+									<_38 v="transition anim" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+										<_2E v="parent graph" />
+										<_2F v="animation" />
+										<_3B v="" />
+									</_38>
+									<_37 v="" />
+									<_2 v="anim timing function" />
+									<_30 v="anim lerp in" />
+									<_30 v="anim lerp out" />
+									<_3B v="" />
+								</_38>
+								<_3B v="" />
+							</_40>
+							<_3B v="" />
+						</_40>
+						<_40 v="velocity boundaries" item_name_1="s_animation_velocity_boundaries" item_name_2="s_animation_velocity_boundaries" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+							<_39 v="velocity boundary entries" item_name_1="AnimationVelocityBoundary" item_name_2="AnimationVelocityBoundary" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+								<_14 v="values" />
+								<_3B v="" />
+								<_14 v="values" />
+								<_3B v="" />
+								<_14 v="values" />
+								<_3B v="" />
+								<_14 v="values" />
+								<_3B v="" />
+								<_14 v="values" />
+								<_3B v="" />
+								<_14 v="values" />
+								<_3B v="" />
+								<_14 v="values" />
+								<_3B v="" />
+								<_14 v="values" />
+								<_3B v="" />
+							</_39>
+							<_3B v="" />
+						</_40>
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_40>
+				<_40 v="weapon ik" item_name_1="s_animation_ik_point_v1" item_name_2="s_animation_ik_point_v1" db1="16" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_37 v="" />
+					<_2 v="marker" />
+					<_37 v="" />
+					<_2 v="attach to marker" />
+					<_37 v="" />
+					<_2 v="weight source object function" />
+					<_37 v="" />
+					<_2 v="priority source object function" />
+					<_3B v="" />
+				</_40>
+				<_40 v="ranged actions" item_name_1="s_animation_ranged_action" item_name_2="s_animation_ranged_action" db1="52" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_2 v="label" />
+					<_40 v="animations" item_name_1="s_ranged_animation_entry" item_name_2="s_ranged_animation_entry" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+						<_2E v="overlay group" />
+						<_2E v="ik set" />
+						<_38 v="animation" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+							<_2E v="parent graph" />
+							<_2F v="animation" />
+							<_3B v="" />
+						</_38>
+						<_14 v="animation parameter" />
+						<_14 v="animation parameter b" />
+						<_3B v="" />
+					</_40>
+					<_40 v="triangulation data" item_name_1="s_triangulation_tag_struct" item_name_2="s_triangulation_tag_struct" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+						<_40 v="points" item_name_1="TriangulationPoint" item_name_2="TriangulationPoint" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_18 v="point" />
+							<_3B v="" />
+						</_40>
+						<_40 v="triangles" item_name_1="s_blend_screen_delaunay_triangle" item_name_2="s_blend_screen_delaunay_triangle" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_3C v="vertex1" />
+							<_3C v="vertex2" />
+							<_3C v="vertex3" />
+							<_3C v="link12" />
+							<_3C v="link23" />
+							<_3C v="link31" />
+							<_34 v="padding" length="2" />
+							<_3B v="" />
+						</_40>
+						<_3B v="" />
+					</_40>
+					<_B v="horizontal source">
+						<Flag v="none" />
+						<Flag v="offset x" />
+						<Flag v="offset y" />
+						<Flag v="offset z" />
+						<Flag v="offset horizontal" />
+						<Flag v="negative offset x" />
+						<Flag v="negative offset y" />
+					</_B>
+					<_B v="vertical source">
+						<Flag v="none" />
+						<Flag v="offset x" />
+						<Flag v="offset y" />
+						<Flag v="offset z" />
+						<Flag v="offset horizontal" />
+						<Flag v="negative offset x" />
+						<Flag v="negative offset y" />
+					</_B>
+					<_B v="start key">
+						<Flag v="none" />
+						<Flag v="primary_keyframe" />
+						<Flag v="secondary_keyframe" />
+						<Flag v="tertiary_keyframe" />
+						<Flag v="left_foot" />
+						<Flag v="right_foot" />
+						<Flag v="allow_interruption" />
+						<Flag v="do_not_allow_interruption" />
+						<Flag v="both_feet_shuffle" />
+						<Flag v="body_impact" />
+						<Flag v="left_foot_lock" />
+						<Flag v="left_foot_unlock" />
+						<Flag v="right_foot_lock" />
+						<Flag v="right_foot_unlock" />
+						<Flag v="blend_range_marker" />
+						<Flag v="stride_expansion" />
+						<Flag v="stride_contraction" />
+						<Flag v="ragdoll_keyframe" />
+						<Flag v="drop_weapon_keyframe" />
+						<Flag v="match_a" />
+						<Flag v="match_b" />
+						<Flag v="match_c" />
+						<Flag v="match_d" />
+						<Flag v="jetpack_closed" />
+						<Flag v="jetpack_open" />
+						<Flag v="sound_event" />
+						<Flag v="effect_event" />
+						<Flag v="left_hand" />
+						<Flag v="right_hand" />
+						<Flag v="grenade" />
+						<Flag v="melee" />
+						<Flag v="interact_device" />
+						<Flag v="shield_raise" />
+						<Flag v="activate_equipment" />
+						<Flag v="aoe_attack" />
+						<Flag v="equipment" />
+						<Flag v="jink_fire" />
+						<Flag v="align_to_target" />
+						<Flag v="block_exiting" />
+						<Flag v="set_interruptable" />
+						<Flag v="disable_shooting" />
+						<Flag v="re_enable_shooting" />
+						<Flag v="skip_crouch_transition" />
+						<Flag v="start_bamf" />
+						<Flag v="end_bamf" />
+						<Flag v="hide" />
+						<Flag v="frame_attachment_objects_show" />
+						<Flag v="frame_attachment_objects_hide" />
+						<Flag v="creature_physics_mode_change" />
+						<Flag v="melee_range" />
+						<Flag v="frame_attachment_switch_to_secondary_parent_marker" />
+						<Flag v="frame_attachment_switch_to_default_parent_marker" />
+						<Flag v="allow_sprint_interrupt" />
+					</_B>
+					<_B v="end key">
+						<Flag v="none" />
+						<Flag v="primary_keyframe" />
+						<Flag v="secondary_keyframe" />
+						<Flag v="tertiary_keyframe" />
+						<Flag v="left_foot" />
+						<Flag v="right_foot" />
+						<Flag v="allow_interruption" />
+						<Flag v="do_not_allow_interruption" />
+						<Flag v="both_feet_shuffle" />
+						<Flag v="body_impact" />
+						<Flag v="left_foot_lock" />
+						<Flag v="left_foot_unlock" />
+						<Flag v="right_foot_lock" />
+						<Flag v="right_foot_unlock" />
+						<Flag v="blend_range_marker" />
+						<Flag v="stride_expansion" />
+						<Flag v="stride_contraction" />
+						<Flag v="ragdoll_keyframe" />
+						<Flag v="drop_weapon_keyframe" />
+						<Flag v="match_a" />
+						<Flag v="match_b" />
+						<Flag v="match_c" />
+						<Flag v="match_d" />
+						<Flag v="jetpack_closed" />
+						<Flag v="jetpack_open" />
+						<Flag v="sound_event" />
+						<Flag v="effect_event" />
+						<Flag v="left_hand" />
+						<Flag v="right_hand" />
+						<Flag v="grenade" />
+						<Flag v="melee" />
+						<Flag v="interact_device" />
+						<Flag v="shield_raise" />
+						<Flag v="activate_equipment" />
+						<Flag v="aoe_attack" />
+						<Flag v="equipment" />
+						<Flag v="jink_fire" />
+						<Flag v="align_to_target" />
+						<Flag v="block_exiting" />
+						<Flag v="set_interruptable" />
+						<Flag v="disable_shooting" />
+						<Flag v="re_enable_shooting" />
+						<Flag v="skip_crouch_transition" />
+						<Flag v="start_bamf" />
+						<Flag v="end_bamf" />
+						<Flag v="hide" />
+						<Flag v="frame_attachment_objects_show" />
+						<Flag v="frame_attachment_objects_hide" />
+						<Flag v="creature_physics_mode_change" />
+						<Flag v="melee_range" />
+						<Flag v="frame_attachment_switch_to_secondary_parent_marker" />
+						<Flag v="frame_attachment_switch_to_default_parent_marker" />
+						<Flag v="allow_sprint_interrupt" />
+					</_B>
+					<_3B v="" />
+				</_40>
+				<_40 v="sync actions groups" item_name_1="s_animation_sync_action_group" item_name_2="s_animation_sync_action_group" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_2 v="name" />
+					<_40 v="sync actions" item_name_1="s_animation_sync_action" item_name_2="s_animation_sync_action" db1="48" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+						<_2 v="name" />
+						<_C v="sync action type">
+							<Flag v="default" />
+							<Flag v="destroy defenses" />
+						</_C>
+						<_40 v="same type participants" item_name_1="s_animation_sync_action_same_type_participant" item_name_2="s_animation_sync_action_same_type_participant" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+							<_D v="flags">
+								<Flag v="Initiator" />
+								<Flag v="Critical Participant" />
+								<Flag v="Disabled" />
+								<Flag v="Airborne" />
+								<Flag v="Partner" />
+							</_D>
+							<_38 v="animation" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+								<_2E v="parent graph" />
+								<_2F v="animation" />
+								<_3B v="" />
+							</_38>
+							<_17 v="start offset" />
+							<_19 v="start facing" />
+							<_17 v="end offset" />
+							<_14 v="time_until_hurt" />
+							<_17 v="apex offset" />
+							<_3B v="" />
+						</_40>
+						<_40 v="other participants" item_name_1="s_animation_sync_action_other_type_participant" item_name_2="s_animation_sync_action_other_type_participant" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+							<_D v="flags">
+								<Flag v="Supports any type" />
+								<Flag v="Disabled" />
+							</_D>
+							<_41 v="object type" />
+							<_3B v="" />
+						</_40>
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_40>
+			<_40 v="mode ik" item_name_1="s_animation_ik_point_v1" item_name_2="s_animation_ik_point_v1" db1="16" db2="0" db3="2" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_37 v="" />
+				<_2 v="marker" />
+				<_37 v="" />
+				<_2 v="attach to marker" />
+				<_37 v="" />
+				<_2 v="weight source object function" />
+				<_37 v="" />
+				<_2 v="priority source object function" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_40>
+		<_37 v="" />
+		<_37 v="Special Case Animations" />
+		<_40 v="vehicle suspension" item_name_1="c_vehicle_suspension" item_name_2="c_vehicle_suspension" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+			<_2 v="label" />
+			<_38 v="animation" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_2E v="parent graph" />
+				<_2F v="animation" />
+				<_3B v="" />
+			</_38>
+			<_2 v="function name" />
+			<_37 v="" />
+			<_2 v="marker name" />
+			<_37 v="" />
+			<_2 v="contact marker name" />
+			<_14 v="mass point offset" />
+			<_14 v="full extension ground_depth" />
+			<_14 v="full compression ground_depth" />
+			<_36 v="Destroyed Suspension" />
+			<_2 v="region name" />
+			<_14 v="destroyed mass point offset" />
+			<_14 v="destroyed full extension ground_depth" />
+			<_14 v="destroyed full compression ground_depth" />
+			<_3B v="" />
+		</_40>
+		<_40 v="constant overlays" item_name_1="s_function_overlay" item_name_2="s_function_overlay" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+			<_2 v="label" />
+			<_38 v="animation" item_name_1="c_animation_id" item_name_2="c_animation_id" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+				<_2E v="parent graph" />
+				<_2F v="animation" />
+				<_3B v="" />
+			</_38>
+			<_B v="function controls">
+				<Flag v="frame" />
+				<Flag v="scale" />
+			</_B>
+			<_34 v="generated_padb2fd" length="2" />
+			<_2 v="function" />
+			<_3B v="" />
+		</_40>
+		<_37 v="" />
+		<_3B v="" />
+	</_38>
+	<_37 v="Runtime Data" />
+	<_38 v="run time data" item_name_1="s_model_animation_runtime_data" item_name_2="s_model_animation_runtime_data" db1="276" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_40 v="weapon list" item_name_1="s_weapon_class_listing" item_name_2="s_weapon_class_listing" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="weapon name" />
+			<_2 v="weapon class" />
+			<_3B v="" />
+		</_40>
+		<_39 v="left arm bit vector" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+		</_39>
+		<_39 v="right arm bit vector" item_name_1="NodeFlagStorageArray" item_name_2="NodeFlagStorageArray" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+			<_6 v="flag data" />
+			<_3B v="" />
+		</_39>
+		<_3B v="" />
+	</_38>
+	<_40 v="additional node data" item_name_1="s_additional_node_data" item_name_2="s_additional_node_data" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="node name" />
+		<_1A v="default rotation" />
+		<_17 v="default translation" />
+		<_14 v="default scale" />
+		<_17 v="min bounds" />
+		<_17 v="max bounds" />
+		<_3B v="" />
+	</_40>
+	<_40 v="tag resource groups" item_name_1="c_model_animation_tag_refrence_counted_resource" item_name_2="c_model_animation_tag_refrence_counted_resource" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+		<_6 v="reference_count" />
+		<_43 v="tag_resource" item_name_1="c_model_animation_tag_animation_group_resource" item_name_2="c_model_animation_tag_animation_group_resource" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_40 v="group_members" item_name_1="c_model_animation_tag_resource_member" item_name_2="c_model_animation_tag_resource_member" db1="396" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+				<_2 v="name" />
+				<_3E v="animation_checksum" />
+				<_5 v="frame count" />
+				<_3D v="node count" />
+				<_A v="movement_data_type">
+					<Flag v="none" />
+					<Flag v="dx,dy" />
+					<Flag v="dx,dy,dyaw" />
+					<Flag v="dx,dy,dz,dyaw" />
+					<Flag v="dx,dy,dz,dangle-axis" />
+					<Flag v="x,y,z - absolute" />
+					<Flag v="auto" />
+				</_A>
+				<_34 v="generated_pad63bf" length="3" />
+				<_38 v="data blocks" item_name_1="AnimationEventBlocks" item_name_2="AnimationEventBlocks" db1="280" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+					<_36 v="a" />
+					<_40 v="frame events" item_name_1="s_frame_event" item_name_2="s_frame_event" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_B v="type">
+							<Flag v="none" />
+							<Flag v="primary_keyframe" />
+							<Flag v="secondary_keyframe" />
+							<Flag v="tertiary_keyframe" />
+							<Flag v="left_foot" />
+							<Flag v="right_foot" />
+							<Flag v="allow_interruption" />
+							<Flag v="do_not_allow_interruption" />
+							<Flag v="both_feet_shuffle" />
+							<Flag v="body_impact" />
+							<Flag v="left_foot_lock" />
+							<Flag v="left_foot_unlock" />
+							<Flag v="right_foot_lock" />
+							<Flag v="right_foot_unlock" />
+							<Flag v="blend_range_marker" />
+							<Flag v="stride_expansion" />
+							<Flag v="stride_contraction" />
+							<Flag v="ragdoll_keyframe" />
+							<Flag v="drop_weapon_keyframe" />
+							<Flag v="match_a" />
+							<Flag v="match_b" />
+							<Flag v="match_c" />
+							<Flag v="match_d" />
+							<Flag v="jetpack_closed" />
+							<Flag v="jetpack_open" />
+							<Flag v="sound_event" />
+							<Flag v="effect_event" />
+							<Flag v="left_hand" />
+							<Flag v="right_hand" />
+							<Flag v="grenade" />
+							<Flag v="melee" />
+							<Flag v="interact_device" />
+							<Flag v="shield_raise" />
+							<Flag v="activate_equipment" />
+							<Flag v="aoe_attack" />
+							<Flag v="equipment" />
+							<Flag v="jink_fire" />
+							<Flag v="align_to_target" />
+							<Flag v="block_exiting" />
+							<Flag v="set_interruptable" />
+							<Flag v="disable_shooting" />
+							<Flag v="re_enable_shooting" />
+							<Flag v="skip_crouch_transition" />
+							<Flag v="start_bamf" />
+							<Flag v="end_bamf" />
+							<Flag v="hide" />
+							<Flag v="frame_attachment_objects_show" />
+							<Flag v="frame_attachment_objects_hide" />
+							<Flag v="creature_physics_mode_change" />
+							<Flag v="melee_range" />
+							<Flag v="frame_attachment_switch_to_secondary_parent_marker" />
+							<Flag v="frame_attachment_switch_to_default_parent_marker" />
+							<Flag v="allow_sprint_interrupt" />
+						</_B>
+						<_5 v="frame" />
+						<_3B v="" />
+					</_40>
+					<_40 v="sound events" item_name_1="s_sound_event" item_name_2="s_sound_event" db1="8" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="385">
+						<_2E v="sound" />
+						<_5 v="frame" />
+						<_37 v="" />
+						<_2 v="marker name" />
+						<_3B v="" />
+					</_40>
+					<_40 v="effect events" item_name_1="s_effect_event" item_name_2="s_effect_event" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
+						<_2E v="effect" />
+						<_5 v="frame" />
+						<_37 v="" />
+						<_2 v="marker name" />
+						<_3B v="" />
+					</_40>
+					<_40 v="dialogue events" item_name_1="s_dialogue_event" item_name_2="s_dialogue_event" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+						<_2E v="dialogue event" />
+						<_5 v="frame" />
+						<_3B v="" />
+					</_40>
+					<_36 v="b" />
+					<_40 v="object-space parent nodes" item_name_1="s_object_space_node_data" item_name_2="s_object_space_node_data" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="387">
+						<_2E v="node index" />
+						<_E v="flags">
+							<Flag v="rotation" />
+							<Flag v="translation" />
+							<Flag v="scale" />
+							<Flag v="motion root" />
+						</_E>
+						<_38 v="parent orientation" item_name_1="c_quantized_orientation" item_name_2="c_quantized_orientation" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_5 v="rotation x" />
+							<_5 v="rotation y" />
+							<_5 v="rotation z" />
+							<_5 v="rotation w" />
+							<_17 v="default translation" />
+							<_14 v="default scale" />
+							<_3B v="" />
+						</_38>
+						<_3B v="" />
+					</_40>
+					<_40 v="object space offset nodes" item_name_1="s_object_space_offset_node_reference" item_name_2="s_object_space_offset_node_reference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+						<_2E v="object space offset node" />
+						<_3B v="" />
+					</_40>
+					<_40 v="forward-invert kinetic anchor nodes" item_name_1="s_fik_anchor_node_reference" item_name_2="s_fik_anchor_node_reference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+						<_2E v="anchor node" />
+						<_3B v="" />
+					</_40>
+					<_40 v="ik chain events" item_name_1="s_animation_ik_chain_event" item_name_2="s_animation_ik_chain_event" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+						<_36 v="REFERENCE IK CHAIN INFO" />
+						<_2 v="chain name" />
+						<_B v="chain type">
+							<Flag v="standard" />
+							<Flag v="spine" />
+							<Flag v="spline driven spine" />
+						</_B>
+						<_2E v="chain start node" />
+						<_2E v="chain effector node" />
+						<_36 v="IMPORTED IK CHAIN INFO" />
+						<_B v="chain usage">
+							<Flag v="none" />
+							<Flag v="world" />
+							<Flag v="self" />
+							<Flag v="parent" />
+							<Flag v="primary weapon" />
+							<Flag v="secondary weapon" />
+							<Flag v="assassination" />
+						</_B>
+						<_2 v="proxy marker" />
+						<_6 v="proxy id" />
+						<_A v="event type">
+							<Flag v="active" />
+							<Flag v="passive" />
+						</_A>
+						<_3C v="effector transform data index" />
+						<_3C v="effector weight data index" />
+						<_3C v="pole point data index" />
+						<_36 v="POST PROCESS IK CHAIN INFO" />
+						<_3C v="chain index" />
+						<_34 v="generated_pad365a" length="3" />
+						<_3B v="" />
+					</_40>
+					<_40 v="ik chain proxies" item_name_1="s_animation_ik_chain_proxy" item_name_2="s_animation_ik_chain_proxy" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+						<_6 v="id" />
+						<_37 v="" />
+						<_2 v="target marker" />
+						<_3C v="proxy transform data index" />
+						<_34 v="generated_pade6ae" length="3" />
+						<_3B v="" />
+					</_40>
+					<_40 v="facial wrinkle events" item_name_1="s_animation_wrinkle_event" item_name_2="s_animation_wrinkle_event" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+						<_36 v="REFERENCE FACIAL WRINKLE EVENT INFO" />
+						<_2 v="wrinkle name" />
+						<_14 v="default value" />
+						<_36 v="IMPORTED FACIAL WRINKLE INFO" />
+						<_5 v="start frame" />
+						<_5 v="frame count" />
+						<_A v="region">
+							<Flag v="Upper Brow" />
+							<Flag v="Center Brow" />
+							<Flag v="Left Squint" />
+							<Flag v="Right Squint" />
+							<Flag v="Left Smile" />
+							<Flag v="Right Smile" />
+							<Flag v="Left Sneer" />
+							<Flag v="Right Sneer" />
+						</_A>
+						<_34 v="generated_padfa84" length="1" />
+						<_36 v="POST PROCESS WRINKLE EVENT INFO" />
+						<_5 v="wrinkle data index" />
+						<_3B v="" />
+					</_40>
+					<_40 v="extended data events" item_name_1="s_animation_extended_event" item_name_2="s_animation_extended_event" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+						<_36 v="IMPORTED EXTENDED DATA EVENT INFO" />
+						<_2 v="name" />
+						<_5 v="start frame" />
+						<_5 v="frame count" />
+						<_14 v="default value" />
+						<_5 v="data index" />
+						<_34 v="generated_pad91d3" length="2" />
+						<_3B v="" />
+					</_40>
+					<_40 v="animation object functions" item_name_1="s_animation_object_function" item_name_2="s_animation_object_function" db1="36" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+						<_2 v="real_name" />
+						<_C v="name">
+							<Flag v="animation_object_function_a" />
+							<Flag v="animation_object_function_b" />
+							<Flag v="animation_object_function_c" />
+							<Flag v="animation_object_function_d" />
+						</_C>
+						<_5 v="start frame" />
+						<_5 v="frame count" />
+						<_38 v="function curve" item_name_1="ScalarFunctionName" item_name_2="ScalarFunctionName" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+							<_37 v="function" />
+							<_38 v="function" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+								<_37 v="" />
+								<_42 v="data" />
+								<_37 v="" />
+								<_3B v="" />
+							</_38>
+							<_3B v="" />
+						</_38>
+						<_3B v="" />
+					</_40>
+					<_40 v="key orientations" item_name_1="AnimationKeyJointOrientations" item_name_2="AnimationKeyJointOrientations" db1="96" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_37 v="world anchor" />
+						<_38 v="world anchor" item_name_1="RealOrientationTagStruct" item_name_2="RealOrientationTagStruct" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_1A v="rotation" />
+							<_17 v="translation" />
+							<_14 v="scale" />
+							<_3B v="" />
+						</_38>
+						<_37 v="" />
+						<_37 v="pedestal start" />
+						<_38 v="pedestal start" item_name_1="RealOrientationTagStruct" item_name_2="RealOrientationTagStruct" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_1A v="rotation" />
+							<_17 v="translation" />
+							<_14 v="scale" />
+							<_3B v="" />
+						</_38>
+						<_37 v="" />
+						<_37 v="pedestal end" />
+						<_38 v="pedestal end" item_name_1="RealOrientationTagStruct" item_name_2="RealOrientationTagStruct" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_1A v="rotation" />
+							<_17 v="translation" />
+							<_14 v="scale" />
+							<_3B v="" />
+						</_38>
+						<_37 v="" />
+						<_3B v="" />
+					</_40>
+					<_40 v="reference orientations" item_name_1="ReferenceData" item_name_2="ReferenceData" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+						<_38 v="reference orientation" item_name_1="RealOrientationTagStruct" item_name_2="RealOrientationTagStruct" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+							<_1A v="rotation" />
+							<_17 v="translation" />
+							<_14 v="scale" />
+							<_3B v="" />
+						</_38>
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_38>
+				<_38 v="data sizes" item_name_1="c_animation_data_sizes" item_name_2="c_animation_data_sizes" db1="76" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_36 v="Bad Names Warning" />
+					<_6 v="static_node_flags" />
+					<_6 v="animated_node_flags" />
+					<_6 v="movement_data" />
+					<_6 v="pill_offset_data" />
+					<_6 v="default_data" />
+					<_6 v="uncompressed_data" />
+					<_6 v="compressed_data" />
+					<_6 v="blend_screen_data" />
+					<_6 v="object_space_offset_data" />
+					<_6 v="ik_chain_event_data" />
+					<_6 v="ik_chain_control_data" />
+					<_6 v="ik_chain_proxy_data" />
+					<_6 v="ik_chain_pole_vector_data" />
+					<_6 v="uncompressed_object_space_data" />
+					<_6 v="fik_anchor_data" />
+					<_6 v="uncompressed_object_space_node_flags" />
+					<_6 v="compressed_event_curve" />
+					<_6 v="compressed_static_pose" />
+					<_6 v="user_parameter" />
+					<_3B v="" />
+				</_38>
+				<_42 v="animation_data" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_43>
+		<_3B v="" />
+	</_40>
+	<_38 v="codec data" item_name_1="s_animation_codec_data" item_name_2="s_animation_codec_data" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_36 v="CODEC-SPECIFIC DATA" />
+		<_38 v="shared_static_codec" item_name_1="s_shared_static_data_codec_graph_data" item_name_2="s_shared_static_data_codec_graph_data" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_36 v="Shared Static Codec" />
+			<_40 v="rotations" item_name_1="c_quantized_quaternion_8byte_revised" item_name_2="c_quantized_quaternion_8byte_revised" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_5 v="i" />
+				<_5 v="j" />
+				<_5 v="k" />
+				<_5 v="w" />
+				<_3B v="" />
+			</_40>
+			<_40 v="translations" item_name_1="SharedStaticDataCodecTranslation" item_name_2="SharedStaticDataCodecTranslation" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_14 v="x" />
+				<_14 v="y" />
+				<_14 v="z" />
+				<_3B v="" />
+			</_40>
+			<_40 v="scale" item_name_1="SharedStaticDataCodecScale" item_name_2="SharedStaticDataCodecScale" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_14 v="scale" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_34 v="generated_pad6f43" length="4" />
+	<_3B v="" />
+</root>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="AudioGameGlobalSettingsTag" item_name_2="AudioGameGlobalSettingsTag" db1="1064" db2="0" db3="16" db4="0" db5="1" db6="0" db7="1048" db8="3347">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_2 v="Live theater scrub begin event" />
+	<_2 v="Live theater scrub end event" />
+	<_2 v="Forge mode event" />
+	<_41 v="Init sound bank" />
+	<_40 v="Global sound banks" item_name_1="SoundBankRefBlockDefinition" item_name_2="SoundBankRefBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Sound bank" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Extra sound banks" item_name_1="SoundBankRefBlockDefinition" item_name_2="SoundBankRefBlockDefinition" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Sound bank" />
+		<_3B v="" />
+	</_40>
+	<_14 v="Radio For Voice Radius" />
+	<_40 v="Vehicle Surface Sound Info" item_name_1="i343::Sound::VehicleSurfaceSoundData" item_name_2="i343::Sound::VehicleSurfaceSoundData" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="RTPC name" />
+		<_14 v="Sweetener threshold" />
+		<_3B v="" />
+	</_40>
+	<_41 v="Forge sound events" />
+	<_14 v="Acoustic Zone transition speed" />
+	<_41 v="Root sound category reference" />
+	<_14 v="Camera to biped listener position blend" />
+	<_14 v="Camera to biped listener orientation blend" />
+	<_14 v="Listener to locked z axis orientation blend" />
+	<_14 v="Milliseconds between focus RTPC update" />
+	<_37 v="Quality Presets" />
+	<_38 v="Quality Presets" item_name_1="AudioQualityPresetsTagStruct" item_name_2="AudioQualityPresetsTagStruct" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_37 v="XBoxOne" />
+		<_38 v="XBoxOne" item_name_1="AudioQualityPresetTagStruct" item_name_2="AudioQualityPresetTagStruct" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_37 v="Acoustics" />
+			<_38 v="Acoustics" item_name_1="AudioGameAcousticsQualityPresetTagStruct" item_name_2="AudioGameAcousticsQualityPresetTagStruct" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_F v="Audio Flags">
+					<Flag v="Acoustics Disable Voxel Pathfinding" />
+					<Flag v="Acoustics Disable Dynamic Object Obstruction" />
+					<Flag v="Acoustics Disable Portal Raycasting" />
+					<Flag v="Acoustics Enable Flood Fill Diagonals" />
+					<Flag v="Acoustics Enable Flood Fill Sorted Frontier" />
+					<Flag v="Acoustics Disable Dynamic Objects For Line-of-sight Raycasts" />
+				</_F>
+				<_34 v="generated_pad5f57" length="3" />
+				<_6 v="Acoustics Flood Fill Num String Pull Iterations" />
+				<_14 v="Acoustics Flood Fill Num String Pull Iteration scale" />
+				<_6 v="Acoustics Num Parallel Source Updates" />
+				<_14 v="Acoustics LOD Distance Multiplier" />
+				<_6 v="Max Listener Count To Enable Voxel Obstruction" />
+				<_3B v="" />
+			</_38>
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="Scarlett" />
+		<_38 v="Scarlett" item_name_1="AudioQualityPresetTagStruct" item_name_2="AudioQualityPresetTagStruct" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_37 v="Acoustics" />
+			<_38 v="Acoustics" item_name_1="AudioGameAcousticsQualityPresetTagStruct" item_name_2="AudioGameAcousticsQualityPresetTagStruct" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_F v="Audio Flags">
+					<Flag v="Acoustics Disable Voxel Pathfinding" />
+					<Flag v="Acoustics Disable Dynamic Object Obstruction" />
+					<Flag v="Acoustics Disable Portal Raycasting" />
+					<Flag v="Acoustics Enable Flood Fill Diagonals" />
+					<Flag v="Acoustics Enable Flood Fill Sorted Frontier" />
+					<Flag v="Acoustics Disable Dynamic Objects For Line-of-sight Raycasts" />
+				</_F>
+				<_34 v="generated_pad5f57" length="3" />
+				<_6 v="Acoustics Flood Fill Num String Pull Iterations" />
+				<_14 v="Acoustics Flood Fill Num String Pull Iteration scale" />
+				<_6 v="Acoustics Num Parallel Source Updates" />
+				<_14 v="Acoustics LOD Distance Multiplier" />
+				<_6 v="Max Listener Count To Enable Voxel Obstruction" />
+				<_3B v="" />
+			</_38>
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="PC" />
+		<_38 v="PC" item_name_1="AudioQualityPresetTagStruct" item_name_2="AudioQualityPresetTagStruct" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_37 v="Acoustics" />
+			<_38 v="Acoustics" item_name_1="AudioGameAcousticsQualityPresetTagStruct" item_name_2="AudioGameAcousticsQualityPresetTagStruct" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_F v="Audio Flags">
+					<Flag v="Acoustics Disable Voxel Pathfinding" />
+					<Flag v="Acoustics Disable Dynamic Object Obstruction" />
+					<Flag v="Acoustics Disable Portal Raycasting" />
+					<Flag v="Acoustics Enable Flood Fill Diagonals" />
+					<Flag v="Acoustics Enable Flood Fill Sorted Frontier" />
+					<Flag v="Acoustics Disable Dynamic Objects For Line-of-sight Raycasts" />
+				</_F>
+				<_34 v="generated_pad5f57" length="3" />
+				<_6 v="Acoustics Flood Fill Num String Pull Iterations" />
+				<_14 v="Acoustics Flood Fill Num String Pull Iteration scale" />
+				<_6 v="Acoustics Num Parallel Source Updates" />
+				<_14 v="Acoustics LOD Distance Multiplier" />
+				<_6 v="Max Listener Count To Enable Voxel Obstruction" />
+				<_3B v="" />
+			</_38>
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_37 v="Wwise Bus/Device Names" />
+	<_1 v="System device" />
+	<_1 v="Spatial device" />
+	<_1 v="Spatial bus" />
+	<_37 v="" />
+	<_40 v="Gameplay state transition events" item_name_1="Audio::Game::GameplayStateTransitionEvents" item_name_2="Audio::Game::GameplayStateTransitionEvents" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="EventId" />
+		<_3B v="" />
+	</_40>
+	<_14 v="Pause delay time (seconds)" />
+	<_34 v="generated_pad0634" length="4" />
+	<_3B v="" />
+</root>

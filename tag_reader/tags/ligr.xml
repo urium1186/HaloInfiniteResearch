@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="LightGroupTag" item_name_2="LightGroupTag" db1="328" db2="0" db3="0" db4="0" db5="0" db6="0" db7="312" db8="3459">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_36 v="Fadeoff distance multiplier" />
+	<_38 v="fadeoff_distance_multiplier" item_name_1="s_throttle_spec_control_setting_float" item_name_2="s_throttle_spec_control_setting_float" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_25 v="Very Low" />
+		<_25 v="Low" />
+		<_25 v="Medium" />
+		<_25 v="High" />
+		<_25 v="Ultra" />
+		<_14 v="2 Player Splitscreen" />
+		<_14 v="3 Player Splitscreen" />
+		<_14 v="4 Player Splitscreen" />
+		<_3B v="" />
+	</_38>
+	<_36 v="Near Fadeoff distance multiplier" />
+	<_38 v="near_fadeoff_distance_multiplier" item_name_1="s_throttle_spec_control_setting_float" item_name_2="s_throttle_spec_control_setting_float" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_25 v="Very Low" />
+		<_25 v="Low" />
+		<_25 v="Medium" />
+		<_25 v="High" />
+		<_25 v="Ultra" />
+		<_14 v="2 Player Splitscreen" />
+		<_14 v="3 Player Splitscreen" />
+		<_14 v="4 Player Splitscreen" />
+		<_3B v="" />
+	</_38>
+	<_36 v="Static Object Shadow Fade" />
+	<_38 v="static_object_shadow_fade" item_name_1="s_throttle_spec_control_setting_float" item_name_2="s_throttle_spec_control_setting_float" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_25 v="Very Low" />
+		<_25 v="Low" />
+		<_25 v="Medium" />
+		<_25 v="High" />
+		<_25 v="Ultra" />
+		<_14 v="2 Player Splitscreen" />
+		<_14 v="3 Player Splitscreen" />
+		<_14 v="4 Player Splitscreen" />
+		<_3B v="" />
+	</_38>
+	<_36 v="Dynamic Object Shadow Fade" />
+	<_38 v="dynamic_object_shadow_fade" item_name_1="s_throttle_spec_control_setting_float" item_name_2="s_throttle_spec_control_setting_float" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_25 v="Very Low" />
+		<_25 v="Low" />
+		<_25 v="Medium" />
+		<_25 v="High" />
+		<_25 v="Ultra" />
+		<_14 v="2 Player Splitscreen" />
+		<_14 v="3 Player Splitscreen" />
+		<_14 v="4 Player Splitscreen" />
+		<_3B v="" />
+	</_38>
+	<_36 v="Cast Shadows" />
+	<_38 v="cast_shadows" item_name_1="s_basic_spec_control_setting_bool" item_name_2="s_basic_spec_control_setting_bool" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_E v="Flags">
+			<Flag v="very low" />
+			<Flag v="low" />
+			<Flag v="medium" />
+			<Flag v="high" />
+			<Flag v="ultra" />
+		</_E>
+		<_3B v="" />
+	</_38>
+	<_36 v="Dynamic Object Shadow Casting" />
+	<_38 v="dynamic_object_shadow_casting" item_name_1="s_basic_spec_control_setting_bool" item_name_2="s_basic_spec_control_setting_bool" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_E v="Flags">
+			<Flag v="very low" />
+			<Flag v="low" />
+			<Flag v="medium" />
+			<Flag v="high" />
+			<Flag v="ultra" />
+		</_E>
+		<_3B v="" />
+	</_38>
+	<_36 v="Static Shadow Resolution Multiplier" />
+	<_38 v="static_shadow_resolution_multiplier" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_14 v="Very Low" />
+		<_14 v="Low" />
+		<_14 v="Medium" />
+		<_14 v="High" />
+		<_14 v="Ultra" />
+		<_14 v="2 Player Splitscreen" />
+		<_14 v="3 Player Splitscreen" />
+		<_14 v="4 Player Splitscreen" />
+		<_3B v="" />
+	</_38>
+	<_36 v="Dynamic Shadow Resolution Multiplier" />
+	<_38 v="dynamic_shadow_resolution_multiplier" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_14 v="Very Low" />
+		<_14 v="Low" />
+		<_14 v="Medium" />
+		<_14 v="High" />
+		<_14 v="Ultra" />
+		<_14 v="2 Player Splitscreen" />
+		<_14 v="3 Player Splitscreen" />
+		<_14 v="4 Player Splitscreen" />
+		<_3B v="" />
+	</_38>
+	<_36 v="Shadow Filter Width Multiplier" />
+	<_38 v="shadow_filter_width_multiplier" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_14 v="Very Low" />
+		<_14 v="Low" />
+		<_14 v="Medium" />
+		<_14 v="High" />
+		<_14 v="Ultra" />
+		<_14 v="2 Player Splitscreen" />
+		<_14 v="3 Player Splitscreen" />
+		<_14 v="4 Player Splitscreen" />
+		<_3B v="" />
+	</_38>
+	<_34 v="generated_pad133b" length="4" />
+	<_3B v="" />
+</root>

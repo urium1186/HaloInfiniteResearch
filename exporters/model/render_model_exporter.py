@@ -1,5 +1,6 @@
 import binascii
 import io
+import json
 import os
 import struct
 
@@ -14,7 +15,7 @@ from configs.config import Config
 from exporters.base_exporter import BaseExporter
 from exporters.domain.domain_types import *
 from exporters.to.fbx.export_to_fbx import FbxModel
-from halo_infinite_tag_reader.readers.render_model import RenderModel
+from tag_reader.readers.render_model import RenderModel
 
 
 class ExportBy(IntFlag):
@@ -520,7 +521,135 @@ class RenderModelExporter(BaseExporter):
             result[region['name'].value] = result_per
         return result
 
-    def getMeshListByVariant(self, variant) -> []:
+    # J:\Games\Halo Infinite Stuf\Web-Json\seasson 2\info_007-000-emile-a239-ki-0903655e.json
+    def overridesRegions(self, regions, to_override):
+        for to_override_region in to_override:
+            for i, region in enumerate(regions):
+                if to_override_region['RegionId'] == region['RegionId']:
+                    regions[i] = to_override_region
+                    break
+
+    def getMeshListByJson(self, data) -> []:
+        array_info = data['CoreRegionData']['BaseRegionData']
+        self.overridesRegions(array_info,data['CoreRegionData']['BodyTypeSmallOverrides'])
+        self.overridesRegions(array_info,data['CoreRegionData']['BodyTypeLargeOverrides'])
+        self.overridesRegions(array_info,data['CoreRegionData']['BodyTypeLargeOverrides'])
+
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticLeftArmOverrides']['Full'])
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticLeftArmOverrides']['Half'])
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticLeftArmOverrides']['Extremity'])
+
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticRightArmOverrides']['Full'])
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticRightArmOverrides']['Half'])
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticRightArmOverrides']['Extremity'])
+
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticLeftLegOverrides']['Full'])
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticLeftLegOverrides']['Half'])
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticLeftLegOverrides']['Extremity'])
+
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticRightLegOverrides']['Full'])
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticRightLegOverrides']['Half'])
+        self.overridesRegions(array_info,data['CoreRegionData']['ProstheticRightLegOverrides']['Extremity'])
+
+        if not self.render_model.is_loaded():
+            self.render_model.load()
+        if self.render_model_inst is None:
+            self.render_model_inst = self.render_model.tag_parse.rootTagInst.childs[0]
+        mesh_resource = \
+            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource'].childs[0]
+        self.createScaleInfo()
+        temp_mesh_s = self.render_model_inst['meshes'].childs
+        temp_mesh_r = self.render_model_inst['regions'].childs
+        self.initChunksData()
+
+        if self._chunk_data is None:
+            return []
+        mesh_list = []
+        for region in array_info:
+            region_id = region['RegionId']['m_identifier']
+            permutation_id = region['PermutationId']['m_identifier']
+            style_id_override = region['StyleIdOverride']['m_identifier']
+            if region_id == -1:
+                continue
+            region_to_export = None
+            permutation_to_export = None
+            for render_model_region in temp_mesh_r:
+                if render_model_region['name'].int_value == region_id:
+                    region_to_export = render_model_region
+                    for permutation in render_model_region['permutations'].childs:
+                        if permutation['name'].int_value == permutation_id:
+                            permutation_to_export = permutation
+                            break
+                    break
+            if permutation_to_export is None:
+                continue
+            region_name = region_to_export['name'].str_value
+            permu_name = permutation_to_export['name'].str_value
+            per_mesh_index_1 = permutation_to_export['mesh index'].value
+            if per_mesh_index_1 == -1:
+                continue
+            temp_name = '-1'
+
+            m_count = permutation['mesh count'].value
+            mesh_in_permutation = temp_mesh_s[per_mesh_index_1:per_mesh_index_1 + m_count]
+            for m_index, mesh in enumerate(mesh_in_permutation):
+                #mesh = temp_mesh_s[m_index]
+
+                t_m = self.processMeshInst(mesh, mesh_resource)
+
+                material_path = t_m.LOD_render_data[0].parts[0].material_path
+
+                mesh_name = f'{region_name}_{permu_name}_mesh_{m_index}_'
+
+                if len(material_path.split('\\')) >= 1:
+                    mesh_name += material_path.split('\\')[-1]
+
+
+                """    
+                if temp_name == mesh_name:
+                    continue
+                """
+                if mesh_name.__contains__('hip_gear'):
+                    debug = True
+
+                if mesh_name == '':
+                    mesh_name = "unknown mesh"
+
+                temp_name = mesh_name
+                temp_mesh = mesh
+
+                t_m.name = mesh_name
+                t_m.name = utils.getNamePart(t_m)
+                """
+                if t_m.name.__contains__(
+                        'hair') \
+                        or t_m.name.__contains__('beard')\
+                        or t_m.name.__contains__('lashes'):
+
+                    # False and olympus_spartan_l_armup_001_s001_2_lod_0
+                    continue
+                """
+                print(mesh_name)
+                mesh_list.append(t_m)
+                if m_count != 1:
+                    debug = True
+                    continue
+                    sub_mesh = divmod(m_count, 2)
+                    #assert sub_mesh[1] == 0, m_count
+                    if m_count > 1:
+                        if m_index ==1:
+                            break
+                    else:
+                        if m_index ==1:
+                            break
+
+        return mesh_list
+
+
+
+
+
+    def getMeshListByVariant(self, variant, model_runtime_regions) -> []:
         if not self.render_model.is_loaded():
             self.render_model.load()
         if self.render_model_inst is None:
@@ -536,60 +665,87 @@ class RenderModelExporter(BaseExporter):
             return []
         mesh_list = []
         regions = variant['regions'].childs
-        for region in regions:
+        runtime_v_r_indices = variant['runtime variant region indices'].childs
+        for r_r_index in runtime_v_r_indices:
+            if r_r_index.value ==-1:
+                continue
+
+            model_runtime_region = model_runtime_regions[r_r_index.value]
+            region = regions[r_r_index.value]
             region_name = region['region name']
-            temp_mesh_r_i = None
-            for rn in temp_mesh_r:
-                if rn['name'].value == region_name.value:
-                    temp_mesh_r_i = rn['permutations'].childs
-                    break
+
+            rn = temp_mesh_r[region['runtime region index'].value]
+            temp_mesh_r_i = rn['permutations'].childs
+            assert rn['name'].value == region_name.value
+            assert len(region['permutations'].childs) == 1
             for per in region['permutations'].childs:
 
                 per_mesh_index = per['runtime permutation index'].value
-                if temp_mesh_s is None:
-                    continue
-                else:
-                    if temp_mesh_r_i is None:
+
+                if per_mesh_index != -1 and not (temp_mesh_r_i is None):
+                    permutation = temp_mesh_r_i[per_mesh_index]
+                    assert per['permutation name'].value == permutation['name'].value
+                    per_mesh_index_1 = permutation['mesh index'].value
+                    if per_mesh_index_1 == -1:
                         continue
-                    if per_mesh_index != -1 and not (temp_mesh_r_i is None):
-                        permutation = temp_mesh_r_i[per_mesh_index]
-                        per_mesh_index_1 = permutation['mesh index'].value
-                        if per_mesh_index_1 == -1:
+                    temp_name = '-1'
+
+                    m_count = permutation['mesh count'].value
+                    mesh_in_permutation = temp_mesh_s[per_mesh_index_1:per_mesh_index_1+m_count]
+                    #for m_index in range(per_mesh_index_1,
+                    #                     per_mesh_index_1 + m_count):
+                    for m_index, mesh in enumerate(mesh_in_permutation):
+                        #mesh = temp_mesh_s[m_index]
+
+                        t_m = self.processMeshInst(mesh, mesh_resource)
+
+                        material_path = t_m.LOD_render_data[0].parts[0].material_path
+
+                        mesh_name = permutation['name'].str_value+'_'+region_name.str_value+f'_mesh_{m_index}_'
+
+                        if len(material_path.split('\\')) >= 1:
+                            mesh_name += material_path.split('\\')[-1]
+
+
+                        """    
+                        if temp_name == mesh_name:
                             continue
-                        temp_name = '-1'
-                        for m_index in range(per_mesh_index_1,
-                                             per_mesh_index_1 + permutation['mesh count'].value):
-                            mesh = temp_mesh_s[m_index]
+                        """
+                        if mesh_name.__contains__('hip_gear'):
+                            debug = True
 
-                            t_m = self.processMeshInst(mesh, mesh_resource)
+                        if mesh_name == '':
+                            mesh_name = "unknown mesh"
 
-                            material_path = t_m.LOD_render_data[0].parts[0].material_path
-                            mesh_name = ''
-                            if len(material_path.split('\\')) >= 1:
-                                mesh_name += material_path.split('\\')[-1]
-                            if temp_name == mesh_name:
-                                continue
+                        temp_name = mesh_name
+                        temp_mesh = mesh
 
-                            if mesh_name == '':
-                                mesh_name = "unknown mesh"
+                        t_m.name = mesh_name
+                        t_m.name = utils.getNamePart(t_m)
+                        """
+                        if t_m.name.__contains__(
+                                'hair') \
+                                or t_m.name.__contains__('beard')\
+                                or t_m.name.__contains__('lashes'):
 
-                            temp_name = mesh_name
-
-                            t_m.name = mesh_name
-                            t_m.name = utils.getNamePart(t_m)
-                            """
-                            if t_m.name.__contains__(
-                                    'hair') \
-                                    or t_m.name.__contains__('beard')\
-                                    or t_m.name.__contains__('lashes'):
-
-                                # False and olympus_spartan_l_armup_001_s001_2_lod_0
-                                continue
-                            """
-                            print(mesh_name)
-                            mesh_list.append(t_m)
-                    else:
-                        continue
+                            # False and olympus_spartan_l_armup_001_s001_2_lod_0
+                            continue
+                        """
+                        print(mesh_name)
+                        mesh_list.append(t_m)
+                        if m_count != 1:
+                            debug = True
+                            continue
+                            sub_mesh = divmod(m_count, 2)
+                            #assert sub_mesh[1] == 0, m_count
+                            if m_count > 1:
+                                if m_index ==1:
+                                    break
+                            else:
+                                if m_index ==1:
+                                    break
+                else:
+                    continue
         return mesh_list
 
     def analyzeMeshResource(self):

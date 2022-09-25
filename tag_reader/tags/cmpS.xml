@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="ComposerSpawningPattern" item_name_2="ComposerSpawningPattern" db1="136" db2="0" db3="1" db4="0" db5="0" db6="0" db7="120" db8="1923">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_37 v="Two Player Game, Player Two" />
+	<_38 v="2P, P2" item_name_1="ComposerSpawningPatternElement" item_name_2="ComposerSpawningPatternElement" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_17 v="Offset" />
+		<_1B v="Offset Facing" />
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_37 v="Three Player Game, Player Two" />
+	<_38 v="3P, P2" item_name_1="ComposerSpawningPatternElement" item_name_2="ComposerSpawningPatternElement" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_17 v="Offset" />
+		<_1B v="Offset Facing" />
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_37 v="Three Player Game, Player Three" />
+	<_38 v="3P, P3" item_name_1="ComposerSpawningPatternElement" item_name_2="ComposerSpawningPatternElement" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_17 v="Offset" />
+		<_1B v="Offset Facing" />
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_37 v="Four Player Game, Player Two" />
+	<_38 v="4P, P2" item_name_1="ComposerSpawningPatternElement" item_name_2="ComposerSpawningPatternElement" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_17 v="Offset" />
+		<_1B v="Offset Facing" />
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_37 v="Four Player Game, Player Three" />
+	<_38 v="4P, P3" item_name_1="ComposerSpawningPatternElement" item_name_2="ComposerSpawningPatternElement" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_17 v="Offset" />
+		<_1B v="Offset Facing" />
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_37 v="Four Player Game, Player Four" />
+	<_38 v="4P, P4" item_name_1="ComposerSpawningPatternElement" item_name_2="ComposerSpawningPatternElement" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_17 v="Offset" />
+		<_1B v="Offset Facing" />
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_3B v="" />
+</root>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::ObjectCustomization::Globals" item_name_2="i343::ObjectCustomization::Globals" db1="416" db2="0" db3="0" db4="0" db5="1" db6="0" db7="400" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_37 v="Armor properties" />
+	<_40 v="Themes" item_name_1="i343::ObjectCustomization::Theme" item_name_2="i343::ObjectCustomization::Theme" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="Asset Name" />
+		<_41 v="Model" />
+		<_41 v="Object Reference" />
+		<_40 v="Theme Configurations" item_name_1="i343::ObjectCustomization::ThemeConfigs" item_name_2="i343::ObjectCustomization::ThemeConfigs" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_2 v="Theme Name" />
+			<_2 v="Theme Variant Name" />
+			<_41 v="Theme Configs" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Shared Armor Emblems" item_name_1="i343::ObjectCustomization::EmblemConfiguration" item_name_2="i343::ObjectCustomization::EmblemConfiguration" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Theme Ids" item_name_1="Interface::EmblemElementName" item_name_2="Interface::EmblemElementName" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="id" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Markers" item_name_1="i343::ObjectCustomization::EmblemMarker" item_name_2="i343::ObjectCustomization::EmblemMarker" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Marker" />
+			<_3B v="" />
+		</_40>
+		<_40 v="BigEmblems" item_name_1="i343::ObjectCustomization::BigEmblemConfiguration" item_name_2="i343::ObjectCustomization::BigEmblemConfiguration" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Theme Id" />
+			<_2 v="Marker" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Effect Overrides" item_name_1="i343::ObjectCustomization::ConfigurationThemeEffectOverride" item_name_2="i343::ObjectCustomization::ConfigurationThemeEffectOverride" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Effect Override Definition" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Object Attachments" item_name_1="i343::ObjectCustomization::ObjectAttachmentCustomization" item_name_2="i343::ObjectCustomization::ObjectAttachmentCustomization" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Attachments" />
+		<_3B v="" />
+	</_40>
+	<_37 v="" />
+	<_37 v="Weapon properties" />
+	<_40 v="Weapon Themes" item_name_1="i343::ObjectCustomization::WeaponTheme" item_name_2="i343::ObjectCustomization::WeaponTheme" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="Asset Name" />
+		<_41 v="Model" />
+		<_41 v="Object Reference" />
+		<_40 v="Theme Configurations" item_name_1="i343::ObjectCustomization::WeaponThemeConfigs" item_name_2="i343::ObjectCustomization::WeaponThemeConfigs" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_2 v="Theme Name" />
+			<_2 v="Theme Variant Name" />
+			<_41 v="Object Configuration" />
+			<_41 v="Theme Configs" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Shared Weapon Emblems" item_name_1="i343::ObjectCustomization::EmblemConfiguration" item_name_2="i343::ObjectCustomization::EmblemConfiguration" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Theme Ids" item_name_1="Interface::EmblemElementName" item_name_2="Interface::EmblemElementName" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="id" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Markers" item_name_1="i343::ObjectCustomization::EmblemMarker" item_name_2="i343::ObjectCustomization::EmblemMarker" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Marker" />
+			<_3B v="" />
+		</_40>
+		<_40 v="BigEmblems" item_name_1="i343::ObjectCustomization::BigEmblemConfiguration" item_name_2="i343::ObjectCustomization::BigEmblemConfiguration" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Theme Id" />
+			<_2 v="Marker" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Player kill effects" item_name_1="i343::ObjectCustomization::PlayerKillEffect" item_name_2="i343::ObjectCustomization::PlayerKillEffect" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Weapon definition" />
+		<_41 v="Player kill effects" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Shared Weapon Charms" item_name_1="i343::ObjectCustomization::Charm" item_name_2="i343::ObjectCustomization::Charm" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Charm" />
+		<_3B v="" />
+	</_40>
+	<_37 v="" />
+	<_37 v="Vehicle properties" />
+	<_40 v="Vehicle Themes" item_name_1="i343::ObjectCustomization::VehicleTheme" item_name_2="i343::ObjectCustomization::VehicleTheme" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="Asset Name" />
+		<_41 v="Model" />
+		<_41 v="Object Reference" />
+		<_40 v="Theme Configurations" item_name_1="i343::ObjectCustomization::VehicleThemeConfigs" item_name_2="i343::ObjectCustomization::VehicleThemeConfigs" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_2 v="Theme Name" />
+			<_2 v="Theme Variant Name" />
+			<_41 v="Object Configuration" />
+			<_41 v="Theme Configs" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Shared Vehicle Emblems" item_name_1="i343::ObjectCustomization::EmblemConfiguration" item_name_2="i343::ObjectCustomization::EmblemConfiguration" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Theme Ids" item_name_1="Interface::EmblemElementName" item_name_2="Interface::EmblemElementName" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="id" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Markers" item_name_1="i343::ObjectCustomization::EmblemMarker" item_name_2="i343::ObjectCustomization::EmblemMarker" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Marker" />
+			<_3B v="" />
+		</_40>
+		<_40 v="BigEmblems" item_name_1="i343::ObjectCustomization::BigEmblemConfiguration" item_name_2="i343::ObjectCustomization::BigEmblemConfiguration" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Theme Id" />
+			<_2 v="Marker" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Shared Vehicle Charms" item_name_1="i343::ObjectCustomization::Charm" item_name_2="i343::ObjectCustomization::Charm" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Charm" />
+		<_3B v="" />
+	</_40>
+	<_37 v="" />
+	<_37 v="Spartan properties" />
+	<_40 v="Stances" item_name_1="i343::ObjectCustomization::StanceAndPoseAnimations" item_name_2="i343::ObjectCustomization::StanceAndPoseAnimations" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Animation" />
+		<_41 v="Weapon Reference" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Action poses" item_name_1="i343::ObjectCustomization::StanceAndPoseAnimations" item_name_2="i343::ObjectCustomization::StanceAndPoseAnimations" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Animation" />
+		<_41 v="Weapon Reference" />
+		<_3B v="" />
+	</_40>
+	<_37 v="" />
+	<_37 v="Ai properties" />
+	<_41 v="Ai Object Reference" />
+	<_41 v="Ai Device Reference" />
+	<_37 v="" />
+	<_37 v="Other properties" />
+	<_40 v="XpBoosts" item_name_1="i343::ObjectCustomization::ConsumableObjects" item_name_2="i343::ObjectCustomization::ConsumableObjects" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Object Reference" />
+		<_3B v="" />
+	</_40>
+	<_40 v="XpGrants" item_name_1="i343::ObjectCustomization::ConsumableObjects" item_name_2="i343::ObjectCustomization::ConsumableObjects" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Object Reference" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Rerolls" item_name_1="i343::ObjectCustomization::ConsumableObjects" item_name_2="i343::ObjectCustomization::ConsumableObjects" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Object Reference" />
+		<_3B v="" />
+	</_40>
+	<_40 v="VirtualCurrency" item_name_1="i343::ObjectCustomization::ConsumableObjects" item_name_2="i343::ObjectCustomization::ConsumableObjects" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Object Reference" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pad3f21" length="4" />
+	<_3B v="" />
+</root>

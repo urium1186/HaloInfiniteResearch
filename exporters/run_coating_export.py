@@ -4,8 +4,8 @@ import pathlib
 
 from configs.config import Config
 
-from halo_infinite_tag_reader.readers.reader_factory import ReaderFactory
-from halo_infinite_tag_reader.varnames import map_alt_name_id
+from tag_reader.readers.reader_factory import ReaderFactory
+from tag_reader.var_names import map_alt_name_id
 
 if __name__ == "__main__":
     print('comienzo')

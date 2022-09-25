@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="c_animation_frame_event_list_anim" item_name_2="c_animation_frame_event_list_anim" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="frame event containers" item_name_1="AnimFrameEventContainer" item_name_2="AnimFrameEventContainer" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="animation name" />
+		<_40 v="anim events" item_name_1="AnimFrameEventDescriptor" item_name_2="AnimFrameEventDescriptor" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="linked frame event id" />
+			<_5 v="frame offset" />
+			<_34 v="generated_pad359b" length="2" />
+			<_2 v="marker name" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pad33c2" length="4" />
+	<_3B v="" />
+</root>

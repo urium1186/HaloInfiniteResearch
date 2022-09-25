@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::Flinch::FlinchSystemDefinition" item_name_2="i343::Flinch::FlinchSystemDefinition" db1="128" db2="0" db3="0" db4="0" db5="1" db6="0" db7="112" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_38 v="flinch system" item_name_1="i343::Flinch::FlinchSystemInternalDefinition" item_name_2="i343::Flinch::FlinchSystemInternalDefinition" db1="112" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_37 v="Gun Flinch" />
+		<_38 v="gun flinch" item_name_1="i343::Flinch::FlinchSystemSettings" item_name_2="i343::Flinch::FlinchSystemSettings" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_24 v="yaw bounds" />
+			<_24 v="pitch bounds" />
+			<_40 v="recoil" item_name_1="i343::Flinch::FlinchRecoilBlock" item_name_2="i343::Flinch::FlinchRecoilBlock" db1="8" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="recoil return" item_name_1="i343::ProceduralMotion::RecoilAngularDefinition" item_name_2="i343::ProceduralMotion::RecoilAngularDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_8 v="deceleration away from center" />
+					<_8 v="acceleration to center" />
+					<_3B v="" />
+				</_38>
+				<_3B v="" />
+			</_40>
+			<_40 v="spring damper" item_name_1="i343::Flinch::FlinchSpringDamperBlock" item_name_2="i343::Flinch::FlinchSpringDamperBlock" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="931">
+				<_38 v="spring damper" item_name_1="i343::ProceduralMotion::SpringDamperAngularDefinition" item_name_2="i343::ProceduralMotion::SpringDamperAngularDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+					<_14 v="spring constant" />
+					<_14 v="damping ratio" />
+					<_14 v="runtime damping constant" />
+					<_3B v="" />
+				</_38>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="View Flinch" />
+		<_38 v="view flinch" item_name_1="i343::Flinch::FlinchSystemSettings" item_name_2="i343::Flinch::FlinchSystemSettings" db1="56" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+			<_24 v="yaw bounds" />
+			<_24 v="pitch bounds" />
+			<_40 v="recoil" item_name_1="i343::Flinch::FlinchRecoilBlock" item_name_2="i343::Flinch::FlinchRecoilBlock" db1="8" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="899">
+				<_38 v="recoil return" item_name_1="i343::ProceduralMotion::RecoilAngularDefinition" item_name_2="i343::ProceduralMotion::RecoilAngularDefinition" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_8 v="deceleration away from center" />
+					<_8 v="acceleration to center" />
+					<_3B v="" />
+				</_38>
+				<_3B v="" />
+			</_40>
+			<_40 v="spring damper" item_name_1="i343::Flinch::FlinchSpringDamperBlock" item_name_2="i343::Flinch::FlinchSpringDamperBlock" db1="12" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="931">
+				<_38 v="spring damper" item_name_1="i343::ProceduralMotion::SpringDamperAngularDefinition" item_name_2="i343::ProceduralMotion::SpringDamperAngularDefinition" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="928">
+					<_14 v="spring constant" />
+					<_14 v="damping ratio" />
+					<_14 v="runtime damping constant" />
+					<_3B v="" />
+				</_38>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_3B v="" />
+	</_38>
+	<_3B v="" />
+</root>

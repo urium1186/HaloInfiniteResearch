@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="AnimClipTag" item_name_2="AnimClipTag" db1="192" db2="0" db3="0" db4="0" db5="1" db6="0" db7="176" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_6 v="frameCount" />
+	<_14 v="fps" />
+	<_40 v="joints" item_name_1="AnimJoint" item_name_2="AnimJoint" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="name" />
+		<_40 v="perFrameTranslations" item_name_1="AnimTranslation" item_name_2="AnimTranslation" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_17 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="perFrameRotations" item_name_1="AnimRotation" item_name_2="AnimRotation" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_1A v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="perFrameScales" item_name_1="AnimFloat" item_name_2="AnimFloat" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_30 v="processingPerFrameTranslationCount" />
+		<_30 v="processingPerFrameRotationCount" />
+		<_30 v="processingPerFrameScaleCount" />
+		<_3B v="" />
+	</_40>
+	<_40 v="userParameters" item_name_1="AnimUserParameter" item_name_2="AnimUserParameter" db1="28" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="name" />
+		<_40 v="perFrameValues" item_name_1="AnimFloat" item_name_2="AnimFloat" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_30 v="processingPerFrameValueCount" />
+		<_3B v="" />
+	</_40>
+	<_41 v="asset" />
+	<_40 v="IKEvents" item_name_1="AnimIKEvent" item_name_2="AnimIKEvent" db1="108" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="targetMarkerName" />
+		<_2 v="chainName" />
+		<_A v="usageType">
+			<Flag v="None" />
+			<Flag v="World" />
+			<Flag v="Self" />
+			<Flag v="Parent" />
+			<Flag v="PrimaryWeapon" />
+			<Flag v="SecondaryWeapon" />
+			<Flag v="Assassination" />
+		</_A>
+		<_34 v="generated_pade6b5" length="3" />
+		<_40 v="perFrameEffect" item_name_1="AnimFloat" item_name_2="AnimFloat" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="targetMarkerTranslations" item_name_1="AnimTranslation" item_name_2="AnimTranslation" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_17 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="targetMarkerRotations" item_name_1="AnimRotation" item_name_2="AnimRotation" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_1A v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="targetMarkerScales" item_name_1="AnimFloat" item_name_2="AnimFloat" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_30 v="processingPerFrameEffectCount" />
+		<_30 v="processingPerFrameTranslationCount" />
+		<_30 v="processingPerFrameRotationCount" />
+		<_30 v="processingPerFrameScaleCount" />
+		<_3B v="" />
+	</_40>
+	<_40 v="objectSpaceOffsetJoint" item_name_1="AnimJointReference" item_name_2="AnimJointReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+		<_2E v="jointReferenceIndex" />
+		<_3B v="" />
+	</_40>
+	<_40 v="replacementCorrectionJoint" item_name_1="AnimJointReference" item_name_2="AnimJointReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+		<_2E v="jointReferenceIndex" />
+		<_3B v="" />
+	</_40>
+	<_40 v="FIKAnchorJoint" item_name_1="AnimJointReference" item_name_2="AnimJointReference" db1="2" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="384">
+		<_2E v="jointReferenceIndex" />
+		<_3B v="" />
+	</_40>
+	<_40 v="cameras" item_name_1="AnimCamera" item_name_2="AnimCamera" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_2 v="name" />
+		<_40 v="perFrameTranslations" item_name_1="AnimTranslation" item_name_2="AnimTranslation" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_17 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="perFrameRotations" item_name_1="AnimRotation" item_name_2="AnimRotation" db1="24" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_1A v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="perFrameFocalLengths" item_name_1="AnimFloat" item_name_2="AnimFloat" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="perFrameFocusDistances" item_name_1="AnimFloat" item_name_2="AnimFloat" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="perFrameFStops" item_name_1="AnimFloat" item_name_2="AnimFloat" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="beginFrame" />
+			<_6 v="endFrame" />
+			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_30 v="processingPerFrameTranslationCount" />
+		<_30 v="processingPerFrameRotationCount" />
+		<_30 v="processingPerFrameFocalLengthCount" />
+		<_30 v="processingPerFrameFocusDistanceCount" />
+		<_30 v="processingPerFrameFStopCount" />
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>
