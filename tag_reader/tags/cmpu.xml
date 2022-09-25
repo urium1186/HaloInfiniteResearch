@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::EquipmentUpgrade::CampaignUpgrades" item_name_2="i343::EquipmentUpgrade::CampaignUpgrades" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="64" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Equipment Paths" item_name_1="i343::EquipmentUpgrade::Path" item_name_2="i343::EquipmentUpgrade::Path" db1="164" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2323">
+		<_2 v="Path name" />
+		<_B v="Path Upgrade Type">
+			<Flag v="Invalid" />
+			<Flag v="Grapple" />
+			<Flag v="Shield" />
+			<Flag v="Sensor" />
+			<Flag v="Wall" />
+			<Flag v="Evade" />
+		</_B>
+		<_34 v="generated_pad72a0" length="2" />
+		<_2 v="Path description" />
+		<_2 v="Persistence key levels" />
+		<_2 v="Persistence key read levels" />
+		<_2 v="Persistence key discovered" />
+		<_F v="Unlocked by default">
+			<Flag v="enabled" />
+		</_F>
+		<_34 v="generated_pad8c81" length="3" />
+		<_37 v="UI Info" />
+		<_38 v="UIInfo" item_name_1="Interface::UIItemInfo" item_name_2="Interface::UIItemInfo" db1="116" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_2 v="name" />
+			<_2 v="alt name " />
+			<_2 v="description" />
+			<_2 v="help text" />
+			<_2 v="icon string id" />
+			<_41 v="sprite" />
+			<_6 v="sprite index" />
+			<_41 v="alt sprite" />
+			<_6 v="alt sprite index" />
+			<_6 v="damage sprite index" />
+			<_41 v="ui vehicle screen reference" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_40 v="Nodes" item_name_1="i343::EquipmentUpgrade::Node" item_name_2="i343::EquipmentUpgrade::Node" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Node name" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Equipment Points" item_name_1="i343::EquipmentUpgrade::Points" item_name_2="i343::EquipmentUpgrade::Points" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Persistence Key" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Shield Upgrades" item_name_1="i343::EquipmentUpgrade::ShieldUpgrade" item_name_2="i343::EquipmentUpgrade::ShieldUpgrade" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Persistence Key" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pad9564" length="4" />
+	<_3B v="" />
+</root>

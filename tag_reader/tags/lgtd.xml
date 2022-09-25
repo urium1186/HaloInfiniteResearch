@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="s_loadout_globals_tag_definition" item_name_2="s_loadout_globals_tag_definition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="default custom loadouts" item_name_1="s_static_loadout_tag_definition" item_name_2="s_static_loadout_tag_definition" db1="24" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="929">
+		<_2 v="loadout name" />
+		<_2 v="initial primary weapon" />
+		<_2 v="initial primary weapon variant name" />
+		<_2 v="initial secondary weapon" />
+		<_2 v="initial secondary weapon variant name" />
+		<_2 v="initial equipment" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pad2bd8" length="4" />
+	<_3B v="" />
+</root>

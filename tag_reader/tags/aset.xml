@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="AssetTag" item_name_2="AssetTag" db1="608" db2="0" db3="6" db4="0" db5="1" db6="0" db7="592" db8="3447">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_37 v="Regions" />
+	<_40 v="Visual region names" item_name_1="VisualRegionNameBlock" item_name_2="VisualRegionNameBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Name" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Property regions" item_name_1="PropertyRegion" item_name_2="PropertyRegion" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2437">
+		<_2 v="Name" />
+		<_D v="Flags">
+			<Flag v="Casts shadow" />
+			<Flag v="Blocks AOE" />
+			<Flag v="Use uncompressed vertex format" />
+			<Flag v="Don't use virtual texturing" />
+			<Flag v="Virtual texturing UV shell skirt" />
+		</_D>
+		<_C v="Static geometry merge mode">
+			<Flag v="Merge on visual regions" />
+			<Flag v="Split on visual regions" />
+			<Flag v="Split on visual regions, and re-center pivots" />
+		</_C>
+		<_C v="Number of sides">
+			<Flag v="single-sided" />
+			<Flag v="double-sided" />
+			<Flag v="double-sided (keep normals)" />
+			<Flag v="double-sided (mirror normals)" />
+		</_C>
+		<_A v="Lightmapping policy">
+			<Flag v="automatic" />
+			<Flag v="per-pixel" />
+			<Flag v="per-vertex" />
+			<Flag v="single-probe" />
+			<Flag v="exclude" />
+			<Flag v="per-pixel ao" />
+			<Flag v="per-vertex ao" />
+			<Flag v="probe grid" />
+		</_A>
+		<_34 v="generated_pad5489" length="3" />
+		<_19 v="Probe-grid capture offset" />
+		<_2 v="Physics material name" />
+		<_2 v="Damage section" />
+		<_37 v="Blendshapes" />
+		<_C v="Tension backing data">
+			<Flag v="Don't Generate backing data" />
+			<Flag v="Generate backing data for the first LODs" />
+			<Flag v="Generate backing data for the first 2 LODs" />
+			<Flag v="Generate backing data for the first 3 LODs" />
+			<Flag v="Generate backing data for the first 4 LODs" />
+			<Flag v="Generate backing data for the first 5 LODs" />
+			<Flag v="Generate backing data for the first 6 LODs" />
+			<Flag v="Generate backing data for the first 7 LODs" />
+			<Flag v="Generate backing data for the first 8 LODs" />
+			<Flag v="Generate backing data for all LODs" />
+		</_C>
+		<_14 v="Prune threshold" />
+		<_C v="Recomputed Normal Blend Mode">
+			<Flag v="Whole mesh" />
+			<Flag v="Vertex color mask" />
+		</_C>
+		<_37 v="" />
+		<_37 v="Emblem Data" />
+		<_6 v="Emblem Layer Depth" />
+		<_37 v="" />
+		<_3B v="" />
+	</_40>
+	<_37 v="" />
+	<_37 v="Component Tags/Files" />
+	<_40 v="Geometry tags" item_name_1="ContentTagBlock" item_name_2="ContentTagBlock" db1="76" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_2 v="Name" />
+		<_2 v="GroupName" />
+		<_41 v="Reference" />
+		<_40 v="Relative source paths" item_name_1="RelativeSourcePath" item_name_2="RelativeSourcePath" db1="256" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_44 v="Path" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Damage States" item_name_1="DamageStateBlock" item_name_2="DamageStateBlock" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_C v="State">
+				<Flag v="undamaged" />
+				<Flag v="minor" />
+				<Flag v="medium" />
+				<Flag v="major" />
+				<Flag v="destroyed" />
+			</_C>
+			<_C v="Blur">
+				<Flag v="None" />
+				<Flag v="Blurred" />
+			</_C>
+			<_2 v="Geometry name" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="Skeleton" item_name_1="SkeletonBlock" item_name_2="SkeletonBlock" db1="284" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Reference" />
+		<_44 v="Alembic source path" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Additional content paths" item_name_1="AdditionalContentPath" item_name_2="AdditionalContentPath" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Name" />
+		<_44 v="Path" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Marker tags" item_name_1="MarkerBlock" item_name_2="MarkerBlock" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Name" />
+		<_2 v="GroupName" />
+		<_41 v="Reference" />
+		<_3B v="" />
+	</_40>
+	<_41 v="Asset physics tag" />
+	<_41 v="Damage tag" />
+	<_41 v="Legacy animset tag" />
+	<_41 v="Asset sound tag" />
+	<_41 v="Asset dialogue tag" />
+	<_37 v="" />
+	<_2 v="Asset category" />
+	<_37 v="LODs" />
+	<_37 v="Automatically Generated LOD Settings" />
+	<_41 v="LOD settings tag" />
+	<_2 v="LOD settings name" />
+	<_14 v="LOD distance bias" />
+	<_37 v="" />
+	<_40 v="LOD transition distances" item_name_1="LODTransitionDistancesBlock" item_name_2="LODTransitionDistancesBlock" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_14 v="Transition distance" />
+		<_3B v="" />
+	</_40>
+	<_14 v="LOD fade out after distance" />
+	<_A v="HLOD policy">
+		<Flag v="include in HLODs normally, exclude from level distant geo" />
+		<Flag v="switch with HLODs but do not include geo in HLOD, exclude from level distant geo" />
+		<Flag v="exclude from HLODs, include in level distant geo normally" />
+		<Flag v="exclude from HLODs, force include in level distant geo always" />
+	</_A>
+	<_34 v="generated_padebca" length="3" />
+	<_37 v="Streaming Settings" />
+	<_6 v="Number of LODS to make required" />
+	<_A v="Default Load Variant Policy">
+		<Flag v="All Variants" />
+		<Flag v="First Variant" />
+		<Flag v="No Variant" />
+	</_A>
+	<_34 v="generated_pad387f" length="3" />
+	<_37 v="" />
+	<_6 v="LOD index override for damage draw" />
+	<_37 v="" />
+	<_37 v="Variants" />
+	<_2 v="Default variant name" />
+	<_40 v="Asset variants" item_name_1="AssetVariant" item_name_2="AssetVariant" db1="228" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="277">
+		<_2 v="Name" />
+		<_2 v="Style" />
+		<_6 v="Damage Style Index" />
+		<_2 v="All visual region" />
+		<_40 v="Visual region overrides" item_name_1="VisualRegionOverrideEntry" item_name_2="VisualRegionOverrideEntry" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Region name" />
+			<_2 v="Geometry name" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Material overrides" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_41 v="Original material ref" />
+			<_41 v="Override material ref" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Child objects" item_name_1="AssetChildObject" item_name_2="AssetChildObject" db1="76" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_2 v="Parent marker" />
+			<_2 v="Child marker" />
+			<_2 v="Child variant name" />
+			<_41 v="Child object" />
+			<_41 v="Child configuration" />
+			<_2 v="Damage section" />
+			<_F v="Flags">
+				<Flag v="enable physics" />
+				<Flag v="share bones with parent" />
+			</_F>
+			<_34 v="generated_padb3ad" length="3" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Muted joints" item_name_1="MutedJointEntry" item_name_2="MutedJointEntry" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Joint name" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Object Node Graphs Overrides" item_name_1="i343::Objects::ObjectNodeGraphDefinition" item_name_2="i343::Objects::ObjectNodeGraphDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2321">
+			<_2 v="Name" />
+			<_41 v="Exported Node Graph" />
+			<_F v="Flags">
+				<Flag v="Runs on Server" />
+				<Flag v="Runs on Client" />
+				<Flag v="Start updating on the first frame" />
+			</_F>
+			<_A v="Enable Node Graph">
+				<Flag v="Default" />
+				<Flag v="Yes" />
+				<Flag v="No" />
+			</_A>
+			<_34 v="generated_pad8671" length="2" />
+			<_3B v="" />
+		</_40>
+		<_41 v="Reference to material palette tag" />
+		<_41 v="Reference to generated vector art" />
+		<_41 v="Reference round trip ABC tag from a render model" />
+		<_41 v="Reference round trip ABC tag from a runtimegeo" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Unique geometry" item_name_1="UniqueAssetGeometryVariant" item_name_2="UniqueAssetGeometryVariant" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_3F v="UUID" />
+		<_40 v="Explicit visual region list" item_name_1="VisualRegionOverrideEntry" item_name_2="VisualRegionOverrideEntry" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="Region name" />
+			<_2 v="Geometry name" />
+			<_3B v="" />
+		</_40>
+		<_41 v="Reference to generated prefab" />
+		<_41 v="Reference to raw triangle data" />
+		<_41 v="Reference to generated static collision geometry" />
+		<_41 v="Reference to generated lightweight fixed-depth quadtree" />
+		<_34 v="generated_pada40c" length="4" />
+		<_3B v="" />
+	</_40>
+	<_37 v="" />
+	<_37 v="Static Collision Generation Settings" />
+	<_A v="Static collision build policy">
+		<Flag v="Auto" />
+		<Flag v="Maximum precision" />
+	</_A>
+	<_A v="Static collision decals policy">
+		<Flag v="Allow decals" />
+		<Flag v="Do not allow decals" />
+	</_A>
+	<_34 v="generated_pad8534" length="2" />
+	<_37 v="" />
+	<_37 v="Static Render Generation Settings" />
+	<_C v="Convert Collision to Shadow Geometry">
+		<Flag v="auto" />
+		<Flag v="enabled" />
+		<Flag v="disabled" />
+	</_C>
+	<_E v="Converted Bullet Collision LOD flags">
+		<Flag v="LOD 0" />
+		<Flag v="LOD 1" />
+		<Flag v="LOD 2" />
+		<Flag v="LOD 3" />
+		<Flag v="LOD 4" />
+		<Flag v="LOD 5" />
+		<Flag v="LOD 6" />
+		<Flag v="LOD 7" />
+		<Flag v="LOD 8" />
+		<Flag v="LOD 9" />
+		<Flag v="LOD 10" />
+		<Flag v="LOD 11" />
+		<Flag v="LOD 12" />
+		<Flag v="LOD 13" />
+		<Flag v="LOD 14" />
+		<Flag v="LOD 15" />
+	</_E>
+	<_E v="Converted Play Collision LOD flags">
+		<Flag v="LOD 0" />
+		<Flag v="LOD 1" />
+		<Flag v="LOD 2" />
+		<Flag v="LOD 3" />
+		<Flag v="LOD 4" />
+		<Flag v="LOD 5" />
+		<Flag v="LOD 6" />
+		<Flag v="LOD 7" />
+		<Flag v="LOD 8" />
+		<Flag v="LOD 9" />
+		<Flag v="LOD 10" />
+		<Flag v="LOD 11" />
+		<Flag v="LOD 12" />
+		<Flag v="LOD 13" />
+		<Flag v="LOD 14" />
+		<Flag v="LOD 15" />
+	</_E>
+	<_37 v="" />
+	<_37 v="Model Generation Settings" />
+	<_C v="Generate Customization Damage Variant">
+		<Flag v="auto" />
+		<Flag v="enabled" />
+		<Flag v="disabled" />
+	</_C>
+	<_37 v="" />
+	<_37 v="Generated Tags" />
+	<_41 v="Model tag" />
+	<_41 v="Render model tag" />
+	<_41 v="Physics model tag" />
+	<_41 v="Collision model tag" />
+	<_41 v="Legacy model animation graph tag" />
+	<_37 v="Impostor" />
+	<_41 v="Impostor tag" />
+	<_37 v="" />
+	<_37 v="Validation" />
+	<_38 v="Validation" item_name_1="ContentValidationBlockData" item_name_2="ContentValidationBlockData" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="305">
+		<_36 v="Content validation tests" />
+		<_D v="Validation status">
+			<Flag v="Performance (performance will be effected)" />
+			<Flag v="Functionality (functionality will be impaired)" />
+			<Flag v="Critical (will cause crashes or instability if processed)" />
+			<Flag v="Not Run (this test has not been run as of the last pass)" />
+		</_D>
+		<_40 v="Validation test batteries" item_name_1="ContentValidationGroup" item_name_2="ContentValidationGroup" db1="284" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+			<_1 v="Group name" />
+			<_6 v="Group ID" />
+			<_D v="Validation status">
+				<Flag v="Performance (performance will be effected)" />
+				<Flag v="Functionality (functionality will be impaired)" />
+				<Flag v="Critical (will cause crashes or instability if processed)" />
+				<Flag v="Not Run (this test has not been run as of the last pass)" />
+			</_D>
+			<_40 v="Validation Tests" item_name_1="Validation" item_name_2="Validation" db1="280" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_1 v="Test name" />
+				<_D v="Test status">
+					<Flag v="Performance (performance will be effected)" />
+					<Flag v="Functionality (functionality will be impaired)" />
+					<Flag v="Critical (will cause crashes or instability if processed)" />
+					<Flag v="Not Run (this test has not been run as of the last pass)" />
+				</_D>
+				<_40 v="Comments" item_name_1="ValidationComment" item_name_2="ValidationComment" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_1 v="Comment" />
+					<_D v="Status">
+						<Flag v="Performance (performance will be effected)" />
+						<Flag v="Functionality (functionality will be impaired)" />
+						<Flag v="Critical (will cause crashes or instability if processed)" />
+						<Flag v="Not Run (this test has not been run as of the last pass)" />
+					</_D>
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_3B v="" />
+</root>

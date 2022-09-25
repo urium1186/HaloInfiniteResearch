@@ -5,7 +5,7 @@ from pathlib import Path
 from configs.config import Config
 from exporters.base_exporter import BaseExporter
 from exporters.model.disassemble_byte_code import handleShader
-from halo_infinite_tag_reader.readers.shader_bytecode import ShaderBytecode
+from tag_reader.readers.shader_bytecode import ShaderBytecode
 tmp_file = Config.ROOT_DIR + "\\tmp\\shadertmp"
 fxc_binary = "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\fxc.exe"
 dxil_spirv = Config.ROOT_DIR + "\\blender_hi\\libs\\dxil-spirv.exe"

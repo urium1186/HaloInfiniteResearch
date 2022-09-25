@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::TerrainInputsTag" item_name_2="i343::TerrainInputsTag" db1="80" db2="0" db3="1" db4="0" db5="1" db6="0" db7="64" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="placement" item_name_1="i343::TerrainPlacement" item_name_2="i343::TerrainPlacement" db1="164" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="2355">
+		<_38 v="Terrain Definition" item_name_1="i343::TerrainDefinition" item_name_2="i343::TerrainDefinition" db1="116" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_41 v="terrain system" />
+			<_38 v="Volume" item_name_1="GenericVolume" item_name_2="GenericVolume" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_40 v="Points" item_name_1="s_real_sector_point_generic_volume" item_name_2="s_real_sector_point_generic_volume" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_17 v="position" />
+					<_3B v="" />
+				</_40>
+				<_14 v="height" />
+				<_14 v="sink" />
+				<_17 v="center point" />
+				<_14 v="trivial cull radius squared" />
+				<_17 v="aabbCenter" />
+				<_17 v="aabbExtents" />
+				<_40 v="nativePoints2D" item_name_1="GenericVolumeNativePoint2D" item_name_2="GenericVolumeNativePoint2D" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_16 v="point" />
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_38>
+		<_41 v="runtime terrain" />
+		<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="folder name" />
+			<_17 v="local space pivot point position" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_40 v="splines" item_name_1="i343::Curve::SplinePlacement" item_name_2="i343::Curve::SplinePlacement" db1="68" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="275">
+		<_2 v="name" />
+		<_38 v="curve" item_name_1="i343::Curve::Curve3dDefinition" item_name_2="i343::Curve::Curve3dDefinition" db1="20" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="control points" item_name_1="i343::Curve::Curve3dControlPoint" item_name_2="i343::Curve::Curve3dControlPoint" db1="68" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2321">
+				<_19 v="value" />
+				<_19 v="tangent in" />
+				<_19 v="tangent out" />
+				<_14 v="curviness" />
+				<_A v="segment type x">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="segment type y">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="segment type z">
+					<Flag v="Spline" />
+					<Flag v="Linear" />
+					<Flag v="Stepped" />
+					<Flag v="SteppedNext" />
+				</_A>
+				<_A v="tangent mode x">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_A v="tangent mode y">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_A v="tangent mode z">
+					<Flag v="AutoStraight" />
+					<Flag v="UserStraight" />
+					<Flag v="UserBroken" />
+				</_A>
+				<_34 v="generated_pad30cd" length="2" />
+				<_40 v="pointMetadata" item_name_1="i343::Curve::CurveControlPointMetadata" item_name_2="i343::Curve::CurveControlPointMetadata" db1="60" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+					<_40 v="spline road metadata" item_name_1="i343::Curve::RoadCurveControlPointMetadata" item_name_2="i343::Curve::RoadCurveControlPointMetadata" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_14 v="width" />
+						<_14 v="opacity" />
+						<_14 v="falloffLeft" />
+						<_14 v="falloffRight" />
+						<_14 v="bank" />
+						<_3B v="" />
+					</_40>
+					<_40 v="road decal metadata" item_name_1="i343::Curve::RoadDecalControlPointMetadata" item_name_2="i343::Curve::RoadDecalControlPointMetadata" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+						<_40 v="Road Decal Textures" item_name_1="i343::Curve::RoadDecalBitmapReference" item_name_2="i343::Curve::RoadDecalBitmapReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+							<_41 v="Reference" />
+							<_3B v="" />
+						</_40>
+						<_18 v="Road Decal Scale" />
+						<_18 v="Road Decal Offset" />
+						<_14 v="Road Decal Tile Repeat Count" />
+						<_14 v="Road Decal Height Strength" />
+						<_14 v="Road Decal Mask Strength" />
+						<_14 v="Road Decal Height Contrast" />
+						<_14 v="Road Decal Mask Contrast" />
+						<_14 v="Road Decal Edge Fade" />
+						<_6 v="Road Decal Random Seed" />
+						<_3B v="" />
+					</_40>
+					<_40 v="animated spline metadata" item_name_1="i343::Curve::AnimatedSplineControlPointMetadata" item_name_2="i343::Curve::AnimatedSplineControlPointMetadata" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+						<_14 v="Time" />
+						<_3B v="" />
+					</_40>
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_38>
+		<_40 v="SplineMetadata" item_name_1="i343::Curve::SplinePlacementMetadata" item_name_2="i343::Curve::SplinePlacementMetadata" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="spline road metadata" item_name_1="i343::Curve::SplineRoadMetadata" item_name_2="i343::Curve::SplineRoadMetadata" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+				<_14 v="width" />
+				<_14 v="opacity" />
+				<_14 v="falloffLeft" />
+				<_14 v="falloffRight" />
+				<_14 v="bank" />
+				<_5 v="subdivision count" />
+				<_34 v="generated_pad6df6" length="2" />
+				<_40 v="Road Decal Metadata" item_name_1="i343::Curve::RoadDecalMetadata" item_name_2="i343::Curve::RoadDecalMetadata" db1="64" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+					<_40 v="Road Decal Textures" item_name_1="i343::Curve::RoadDecalBitmapReference" item_name_2="i343::Curve::RoadDecalBitmapReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+						<_41 v="Reference" />
+						<_3B v="" />
+					</_40>
+					<_18 v="Road Decal Scale" />
+					<_18 v="Road Decal Offset" />
+					<_14 v="Road Decal Tile Repeat Count" />
+					<_14 v="Road Decal Height Strength" />
+					<_14 v="Road Decal Mask Strength" />
+					<_14 v="Road Decal Height Contrast" />
+					<_14 v="Road Decal Mask Contrast" />
+					<_14 v="Road Decal Edge Fade" />
+					<_6 v="Road Decal Random Seed" />
+					<_3B v="" />
+				</_40>
+				<_41 v="terrain system" />
+				<_3B v="" />
+			</_40>
+			<_40 v="spline flight path metadata" item_name_1="i343::Curve::SplineFlightPathMetadata" item_name_2="i343::Curve::SplineFlightPathMetadata" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_15 v="Preference" />
+				<_3C v="Lines per spline segment" />
+				<_34 v="generated_padfb3b" length="3" />
+				<_3B v="" />
+			</_40>
+			<_3B v="" />
+		</_40>
+		<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="folder name" />
+			<_17 v="local space pivot point position" />
+			<_3B v="" />
+		</_40>
+		<_6 v="Guid" />
+		<_3B v="" />
+	</_40>
+	<_40 v="terrain volumes" item_name_1="i343::TerrainVolume" item_name_2="i343::TerrainVolume" db1="144" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_2 v="Name" />
+		<_38 v="Terrain Definition" item_name_1="i343::TerrainDefinition" item_name_2="i343::TerrainDefinition" db1="116" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_41 v="terrain system" />
+			<_38 v="Volume" item_name_1="GenericVolume" item_name_2="GenericVolume" db1="88" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2353">
+				<_40 v="Points" item_name_1="s_real_sector_point_generic_volume" item_name_2="s_real_sector_point_generic_volume" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_17 v="position" />
+					<_3B v="" />
+				</_40>
+				<_14 v="height" />
+				<_14 v="sink" />
+				<_17 v="center point" />
+				<_14 v="trivial cull radius squared" />
+				<_17 v="aabbCenter" />
+				<_17 v="aabbExtents" />
+				<_40 v="nativePoints2D" item_name_1="GenericVolumeNativePoint2D" item_name_2="GenericVolumeNativePoint2D" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_16 v="point" />
+					<_3B v="" />
+				</_40>
+				<_3B v="" />
+			</_38>
+			<_3B v="" />
+		</_38>
+		<_6 v="Volume Composition Order" />
+		<_40 v="EditorMetadata" item_name_1="EditorMetadata" item_name_2="EditorMetadata" db1="268" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_1 v="folder name" />
+			<_17 v="local space pivot point position" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pad0b59" length="4" />
+	<_3B v="" />
+</root>

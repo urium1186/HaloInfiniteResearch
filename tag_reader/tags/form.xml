@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="s_formation_definition" item_name_2="s_formation_definition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_2 v="name" />
+	<_40 v="primitives" item_name_1="s_formation_primitive" item_name_2="s_formation_primitive" db1="44" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_36 v="" />
+		<_E v="flags">
+			<Flag v="radial" />
+			<Flag v="leader" />
+		</_E>
+		<_5 v="priority" />
+		<_5 v="capacity" />
+		<_34 v="generated_pad9ea5" length="2" />
+		<_14 v="dist forwards" />
+		<_14 v="dist backwards" />
+		<_14 v="rank spacing" />
+		<_14 v="file spacing" />
+		<_40 v="points" item_name_1="s_formation_point" item_name_2="s_formation_point" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_36 v="" />
+			<_8 v="angle" />
+			<_14 v="offset" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

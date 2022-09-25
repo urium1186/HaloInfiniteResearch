@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="ForgeEngine::ForgeObjectScriptPropertyMenuItemDefinitionCollection" item_name_2="ForgeEngine::ForgeObjectScriptPropertyMenuItemDefinitionCollection" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Menu Item Definitions" item_name_1="ForgeEngine::ForgeObjectScriptPropertyMenuItemDefinition" item_name_2="ForgeEngine::ForgeObjectScriptPropertyMenuItemDefinition" db1="324" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2321">
+		<_2 v="Property" />
+		<_2 v="Title" />
+		<_2 v="Description" />
+		<_1 v="Property Name Literal" />
+		<_B v="Value Type">
+			<Flag v="None" />
+			<Flag v="Bool" />
+			<Flag v="Float" />
+			<Flag v="Vector" />
+			<Flag v="Color" />
+			<Flag v="String" />
+			<Flag v="Tag" />
+		</_B>
+		<_34 v="generated_pad36ce" length="2" />
+		<_14 v="Float Min" />
+		<_14 v="Float Max" />
+		<_14 v="Float Step" />
+		<_2 v="String List" />
+		<_40 v="Strings" item_name_1="ForgeEngine::ForgeObjectScriptPropertyMenuItemString" item_name_2="ForgeEngine::ForgeObjectScriptPropertyMenuItemString" db1="260" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="String" />
+			<_1 v="String Literal" />
+			<_3B v="" />
+		</_40>
+		<_2 v="Callback Name" />
+		<_2 v="Submenu Id" />
+		<_2 v="Submenu Description" />
+		<_F v="Forge Boolean Flags">
+			<Flag v="IsHidden" />
+		</_F>
+		<_34 v="generated_pad8383" length="3" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_pad82b6" length="4" />
+	<_3B v="" />
+</root>

@@ -16,9 +16,9 @@ from exporters.model.render_model_exporter import RenderModelExporter
 from exporters.to.fbx.import_from_fbx import FbxModelImporter
 from exporters.to.image.export_to_img_pillow import ExportImgPillowImpl
 
-from halo_infinite_tag_reader.readers.bitmap import Bitmap
-from halo_infinite_tag_reader.readers.model import Model
-from halo_infinite_tag_reader.readers.render_model import RenderModel
+from tag_reader.readers.bitmap import Bitmap
+from tag_reader.readers.model import Model
+from tag_reader.readers.render_model import RenderModel
 
 print(time.time())
 now = datetime.now()

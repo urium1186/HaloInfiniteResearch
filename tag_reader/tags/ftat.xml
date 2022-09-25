@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="ForgeEngine::TelescopingAssetTag" item_name_2="ForgeEngine::TelescopingAssetTag" db1="168" db2="0" db3="4" db4="0" db5="1" db6="0" db7="152" db8="3411">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_A v="TelescopingSolutionType">
+		<Flag v="AlgebraicWithMarkup" />
+		<Flag v="Interpolation" />
+	</_A>
+	<_34 v="generated_pad4682" length="3" />
+	<_40 v="Corners" item_name_1="ForgeEngine::TelescopingCorner" item_name_2="ForgeEngine::TelescopingCorner" db1="188" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_41 v="Object" />
+		<_19 v="Position" />
+		<_2 v="variant" />
+		<_19 v="Tip" />
+		<_40 v="Magnets" item_name_1="ForgeEngine::TelescopingPoint" item_name_2="ForgeEngine::TelescopingPoint" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_19 v="point" />
+			<_3B v="" />
+		</_40>
+		<_19 v="PositionAtMinScale" />
+		<_19 v="PositionAtMaxScale" />
+		<_41 v="Runtime Underlying Geo (Static IO)" />
+		<_41 v="Runtime Underlying Collision Geo (Static IO)" />
+		<_41 v="Runtime Underlying Material Palette (Static IO)" />
+		<_2 v="Style" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Edges" item_name_1="ForgeEngine::TelescopingEdge" item_name_2="ForgeEngine::TelescopingEdge" db1="248" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_41 v="Object" />
+		<_19 v="Position" />
+		<_2 v="variant" />
+		<_19 v="CreaseTip1" />
+		<_19 v="CreaseTip2" />
+		<_40 v="endPoints" item_name_1="ForgeEngine::TelescopingPoint" item_name_2="ForgeEngine::TelescopingPoint" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_19 v="point" />
+			<_3B v="" />
+		</_40>
+		<_1A v="rotation" />
+		<_A v="ObjectSpaceEdgeAlignment">
+			<Flag v="NoRotate" />
+			<Flag v="X" />
+			<Flag v="Y" />
+			<Flag v="Z" />
+		</_A>
+		<_34 v="generated_padf5c1" length="3" />
+		<_40 v="Magnets" item_name_1="ForgeEngine::TelescopingPoint" item_name_2="ForgeEngine::TelescopingPoint" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_19 v="point" />
+			<_3B v="" />
+		</_40>
+		<_19 v="PositionAtMinScale" />
+		<_19 v="PositionAtMaxScale" />
+		<_14 v="ScaleAtMinScale" />
+		<_14 v="ScaleAtMaxScale" />
+		<_41 v="Runtime Underlying Geo (Static IO)" />
+		<_41 v="Runtime Underlying Collision Geo (Static IO)" />
+		<_41 v="Runtime Underlying Material Palette (Static IO)" />
+		<_2 v="Style" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Faces" item_name_1="ForgeEngine::TelescopingFace" item_name_2="ForgeEngine::TelescopingFace" db1="288" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_41 v="Object" />
+		<_19 v="Position" />
+		<_1A v="Rotation" />
+		<_2 v="variant" />
+		<_40 v="FaceEndPoints" item_name_1="ForgeEngine::TelescopingPoint" item_name_2="ForgeEngine::TelescopingPoint" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_19 v="point" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Magnets" item_name_1="ForgeEngine::TelescopingPoint" item_name_2="ForgeEngine::TelescopingPoint" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_19 v="point" />
+			<_3B v="" />
+		</_40>
+		<_41 v="Runtime Underlying Geo (Static IO)" />
+		<_41 v="Runtime Underlying Collision Geo (Static IO)" />
+		<_41 v="Runtime Underlying Material Palette (Static IO)" />
+		<_2 v="Style" />
+		<_19 v="endPointsBoundsMax" />
+		<_19 v="endPointsBoundsMin" />
+		<_19 v="geoBoundsMin" />
+		<_19 v="geoBoundsMax" />
+		<_A v="faceWidthToMaintain">
+			<Flag v="None" />
+			<Flag v="X" />
+			<Flag v="Y" />
+			<Flag v="Z" />
+		</_A>
+		<_34 v="generated_padac75" length="3" />
+		<_19 v="PositionAtMinScale" />
+		<_19 v="PositionAtMaxScale" />
+		<_19 v="ScaleAtMinScale" />
+		<_19 v="ScaleAtMaxScale" />
+		<_3B v="" />
+	</_40>
+	<_A v="ScaleConstraint">
+		<Flag v="None" />
+		<Flag v="XY" />
+		<Flag v="XZ" />
+		<Flag v="YZ" />
+		<Flag v="XYZ" />
+		<Flag v="Unscalable" />
+	</_A>
+	<_34 v="generated_pad9337" length="3" />
+	<_19 v="Minimum Scale" />
+	<_19 v="Maximum Scale" />
+	<_41 v="Runtime Underlying Collision Geo (Static IO)" />
+	<_41 v="Runtime Underlying Material Palette (Static IO)" />
+	<_34 v="generated_paddfec" length="4" />
+	<_3B v="" />
+</root>

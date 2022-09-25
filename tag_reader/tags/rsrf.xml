@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::SurfacingRuntimeTag" item_name_2="i343::SurfacingRuntimeTag" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="80" db8="1363">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="Inputs" item_name_1="i343::SurfacingInput" item_name_2="i343::SurfacingInput" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_A v="Type">
+			<Flag v="Mask" />
+			<Flag v="Bitmap" />
+		</_A>
+		<_34 v="generated_pad6a41" length="3" />
+		<_2 v="Id" />
+		<_14 v="Default Value" />
+		<_41 v="Bitmap Reference" />
+		<_18 v="UV Scale" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Material Layers" item_name_1="i343::SurfacingMaterialLayer" item_name_2="i343::SurfacingMaterialLayer" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Id" />
+		<_6 v="Index" />
+		<_6 v="GPU Interpreter Instructions" />
+		<_41 v="Material Preset" />
+		<_6 v="PhysicsMaterialId" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Placement Layers" item_name_1="i343::SurfacingPlacementLayer" item_name_2="i343::SurfacingPlacementLayer" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="337">
+		<_40 v="Placement Descriptions" item_name_1="i343::SurfacingPlacementDescription" item_name_2="i343::SurfacingPlacementDescription" db1="220" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2387">
+			<_2 v="Id" />
+			<_6 v="GPU Interpreter Density Instructions" />
+			<_6 v="GPU Interpreter Scale Instructions" />
+			<_41 v="Runtime Tag Reference" />
+			<_41 v="Content Tag Reference" />
+			<_18 v="Position.z Offset Range" />
+			<_18 v="Scale Range" />
+			<_18 v="Rotation Range" />
+			<_A v="Orientation Alignment">
+				<Flag v="AlwaysUp" />
+				<Flag v="AlignToSlope" />
+				<Flag v="Random" />
+			</_A>
+			<_34 v="generated_pada2d4" length="3" />
+			<_38 v="Cull Distance Scale" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_14 v="Very Low" />
+				<_14 v="Low" />
+				<_14 v="Medium" />
+				<_14 v="High" />
+				<_14 v="Ultra" />
+				<_14 v="2 Player Splitscreen" />
+				<_14 v="3 Player Splitscreen" />
+				<_14 v="4 Player Splitscreen" />
+				<_3B v="" />
+			</_38>
+			<_38 v="Density Multiplier" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_14 v="Very Low" />
+				<_14 v="Low" />
+				<_14 v="Medium" />
+				<_14 v="High" />
+				<_14 v="Ultra" />
+				<_14 v="2 Player Splitscreen" />
+				<_14 v="3 Player Splitscreen" />
+				<_14 v="4 Player Splitscreen" />
+				<_3B v="" />
+			</_38>
+			<_2 v="Variant Name" />
+			<_20 v="Debug Color" />
+			<_6 v="Precompiled Technique Index" />
+			<_38 v="Distance Dither Start" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_14 v="Very Low" />
+				<_14 v="Low" />
+				<_14 v="Medium" />
+				<_14 v="High" />
+				<_14 v="Ultra" />
+				<_14 v="2 Player Splitscreen" />
+				<_14 v="3 Player Splitscreen" />
+				<_14 v="4 Player Splitscreen" />
+				<_3B v="" />
+			</_38>
+			<_14 v="Distance Dither Transition Width" />
+			<_3B v="" />
+		</_40>
+		<_14 v="Footprint Radius" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Layers Bytecode" item_name_1="i343::LayerGpuInterpreterBytecode" item_name_2="i343::LayerGpuInterpreterBytecode" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_3F v="Hash" />
+		<_40 v="GPU Interpreter Instructions" item_name_1="i343::GpuInterpreterInstruction" item_name_2="i343::GpuInterpreterInstruction" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="Data" />
+			<_3B v="" />
+		</_40>
+		<_34 v="generated_pad5fcf" length="4" />
+		<_3B v="" />
+	</_40>
+	<_3B v="" />
+</root>

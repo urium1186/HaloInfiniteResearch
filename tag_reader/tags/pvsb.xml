@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::ScenarioZoneSetBakedPVS::BakedPVSTag" item_name_2="i343::ScenarioZoneSetBakedPVS::BakedPVSTag" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="56" db8="1331">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_40 v="BSP index map" item_name_1="i343::ScenarioZoneSetBakedPVS::SubregionLongParam" item_name_2="i343::ScenarioZoneSetBakedPVS::SubregionLongParam" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_6 v="Value" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Per BSP data" item_name_1="i343::ScenarioZoneSetBakedPVS::PerBSPData" item_name_2="i343::ScenarioZoneSetBakedPVS::PerBSPData" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Subregion array" item_name_1="i343::ScenarioZoneSetBakedPVS::Subregion" item_name_2="i343::ScenarioZoneSetBakedPVS::Subregion" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Visibility array" item_name_1="i343::ScenarioZoneSetBakedPVS::SubregionDwordParam" item_name_2="i343::ScenarioZoneSetBakedPVS::SubregionDwordParam" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_3E v="Value" />
+				<_3B v="" />
+			</_40>
+			<_3D v="sx" />
+			<_3D v="sy" />
+			<_14 v="z min" />
+			<_14 v="z max" />
+			<_3B v="" />
+		</_40>
+		<_17 v="AABB min" />
+		<_17 v="AABB max" />
+		<_19 v="Block Size" />
+		<_6 v="Instance count" />
+		<_6 v="Block count X" />
+		<_6 v="Block count Y" />
+		<_6 v="BSP index" />
+		<_7 v="Instance Postprocess Checksum" />
+		<_3B v="" />
+	</_40>
+	<_43 v="resource data" item_name_1="i343::ScenarioZoneSetBakedPVS::Resource" item_name_2="i343::ScenarioZoneSetBakedPVS::Resource" db1="40" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="BSP index map" item_name_1="i343::ScenarioZoneSetBakedPVS::SubregionLongParam" item_name_2="i343::ScenarioZoneSetBakedPVS::SubregionLongParam" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="Value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="Per BSP data" item_name_1="i343::ScenarioZoneSetBakedPVS::PerBSPData" item_name_2="i343::ScenarioZoneSetBakedPVS::PerBSPData" db1="80" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="Subregion array" item_name_1="i343::ScenarioZoneSetBakedPVS::Subregion" item_name_2="i343::ScenarioZoneSetBakedPVS::Subregion" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+				<_40 v="Visibility array" item_name_1="i343::ScenarioZoneSetBakedPVS::SubregionDwordParam" item_name_2="i343::ScenarioZoneSetBakedPVS::SubregionDwordParam" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_3E v="Value" />
+					<_3B v="" />
+				</_40>
+				<_3D v="sx" />
+				<_3D v="sy" />
+				<_14 v="z min" />
+				<_14 v="z max" />
+				<_3B v="" />
+			</_40>
+			<_17 v="AABB min" />
+			<_17 v="AABB max" />
+			<_19 v="Block Size" />
+			<_6 v="Instance count" />
+			<_6 v="Block count X" />
+			<_6 v="Block count Y" />
+			<_6 v="BSP index" />
+			<_7 v="Instance Postprocess Checksum" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_43>
+	<_3B v="" />
+</root>

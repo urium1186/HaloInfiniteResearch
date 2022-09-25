@@ -5,8 +5,8 @@ from exporters.to.image.dds_utilts.dds import DDS_HEADER_FLAGS_LINEARSIZE, DDS_F
     DDS_HEADER_FLAGS_MIPMAP, DDS_SURFACE_FLAGS_MIPMAP
 from exporters.to.image.dds_utilts.dds_file import DdsFile
 from exporters.to.image.dds_utilts.dxgiformat import DXGI_FORMAT
-from halo_infinite_tag_reader.common_tag_types import TagInstance
-from halo_infinite_tag_reader.readers.bitmap import Bitmap
+from tag_reader.common_tag_types import TagInstance
+from tag_reader.readers.bitmap import Bitmap
 
 map_select_format = {
     "a8_unorm (000A)": DXGI_FORMAT.DXGI_FORMAT_A8_UNORM,

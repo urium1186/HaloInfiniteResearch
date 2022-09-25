@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="AnimStateGraph" item_name_2="AnimStateGraph" db1="176" db2="0" db3="0" db4="0" db5="1" db6="0" db7="160" db8="1299">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_41 v="Source Graph" />
+	<_40 v="Anim Node Subgraphs" item_name_1="SubgraphReferenceExportedAnimNodeGraph" item_name_2="SubgraphReferenceExportedAnimNodeGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Anim Subgraph" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Transition Logic Subgraphs" item_name_1="SubgraphReferenceTransitionLogicGraph" item_name_2="SubgraphReferenceTransitionLogicGraph" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="Transition Logic Subgraph" />
+		<_3B v="" />
+	</_40>
+	<_40 v="States" item_name_1="AnimStateNode" item_name_2="AnimStateNode" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="Name" />
+		<_41 v="Animation Sub-Graph" />
+		<_E v="State Flags">
+			<Flag v="Is Default Fallback State" />
+			<Flag v="Opt Out Of Procedural Footsteps" />
+		</_E>
+		<_34 v="generated_padde0e" length="2" />
+		<_3B v="" />
+	</_40>
+	<_40 v="Connections" item_name_1="AnimStateConnection" item_name_2="AnimStateConnection" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2E v="Start State" />
+		<_2E v="End State" />
+		<_41 v="Condition Graph" />
+		<_41 v="Transition Blend" />
+		<_6 v="Priority" />
+		<_14 v="Duration" />
+		<_E v="Inertialize">
+			<Flag v="Inertialize" />
+			<Flag v="Disable Inertialization Velocity" />
+		</_E>
+		<_E v="Process Events From Both States">
+			<Flag v="Apply All Events" />
+		</_E>
+		<_3B v="" />
+	</_40>
+	<_40 v="Start Transitions" item_name_1="AnimDefaultStateConnection" item_name_2="AnimDefaultStateConnection" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2E v="State" />
+		<_34 v="generated_paddb5f" length="2" />
+		<_41 v="Condition Graph" />
+		<_3B v="" />
+	</_40>
+	<_41 v="Transition Blend" />
+	<_34 v="generated_pad2a58" length="4" />
+	<_3B v="" />
+</root>

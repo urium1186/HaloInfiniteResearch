@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="i343::Physics::PhysicsGlobalsDefinition" item_name_2="i343::Physics::PhysicsGlobalsDefinition" db1="48" db2="0" db3="1" db4="0" db5="0" db6="0" db7="32" db8="1923">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_37 v="Shape density configuration" />
+	<_36 v="Shape density configuration" />
+	<_36 v="Play collision density thresholds for assets" />
+	<_38 v="Play collision thresholds for assets" item_name_1="i343::Physics::ShapeDensityThresholds" item_name_2="i343::Physics::ShapeDensityThresholds" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_14 v="Shape density error threshold" />
+		<_14 v="Shape density warning threshold" />
+		<_3B v="" />
+	</_38>
+	<_36 v="Bullet collision density thresholds for assets" />
+	<_38 v="Bullet collision thresholds for assets" item_name_1="i343::Physics::ShapeDensityThresholds" item_name_2="i343::Physics::ShapeDensityThresholds" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_14 v="Shape density error threshold" />
+		<_14 v="Shape density warning threshold" />
+		<_3B v="" />
+	</_38>
+	<_36 v="Play collision density thresholds for levels" />
+	<_38 v="Play collision thresholds for levels" item_name_1="i343::Physics::ShapeDensityThresholds" item_name_2="i343::Physics::ShapeDensityThresholds" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_14 v="Shape density error threshold" />
+		<_14 v="Shape density warning threshold" />
+		<_3B v="" />
+	</_38>
+	<_36 v="Bullet collision density thresholds for levels" />
+	<_38 v="Bullet collision thresholds for levels" item_name_1="i343::Physics::ShapeDensityThresholds" item_name_2="i343::Physics::ShapeDensityThresholds" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+		<_14 v="Shape density error threshold" />
+		<_14 v="Shape density warning threshold" />
+		<_3B v="" />
+	</_38>
+	<_37 v="" />
+	<_3B v="" />
+</root>

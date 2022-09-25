@@ -5,7 +5,7 @@ from pathlib import Path
 from configs.config import Config
 from exporters.base_exporter import BaseExporter
 from exporters.model.disassemble_byte_code import handleShader
-from halo_infinite_tag_reader.readers.shader_bytecode import ShaderBytecode
+from tag_reader.readers.shader_bytecode import ShaderBytecode
 
 
 

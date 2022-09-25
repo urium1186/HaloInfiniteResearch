@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root item_name_1="CheapParticleEmitter" item_name_2="CheapParticleEmitter" db1="328" db2="0" db3="1" db4="0" db5="1" db6="0" db7="312" db8="3379">
+	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="vtable space" />
+		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="global tag ID" />
+			<_34 v="local tag handle" length="4" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_E v="flags">
+		<Flag v="correlate position and velocity" />
+		<Flag v="position texture in local space" />
+		<Flag v="velocity texture in local space" />
+		<Flag v="normalize velocity before scaling" />
+		<Flag v="randomly rotate emitter about up vector" />
+	</_E>
+	<_3D v="version" />
+	<_14 v="spawn rate" />
+	<_36 v="SPAWN RATE" />
+	<_38 v="spawnrate" item_name_1="CheapParticleScalarFunction" item_name_2="CheapParticleScalarFunction" db1="32" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+		<_2 v="Input Variable" />
+		<_2 v="Range Variable" />
+		<_37 v="Mapping" />
+		<_38 v="Mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
+			<_37 v="" />
+			<_42 v="data" />
+			<_37 v="" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_38>
+	<_36 v="LOD" />
+	<_14 v="distance fade start" />
+	<_14 v="distance fade end" />
+	<_36 v="TYPES" />
+	<_37 v="types" />
+	<_2 v="type 0" />
+	<_14 v="weight 0" />
+	<_2 v="type 1" />
+	<_14 v="weight 1" />
+	<_2 v="type 2" />
+	<_14 v="weight 2" />
+	<_2 v="type 3" />
+	<_14 v="weight 3" />
+	<_37 v="" />
+	<_36 v="LIFETIME" />
+	<_25 v="lifetime" />
+	<_36 v="EMITTER PARAMETERS" />
+	<_41 v="position texture" />
+	<_14 v="position scale" />
+	<_14 v="position flatten" />
+	<_41 v="velocity texture" />
+	<_25 v="directionality" />
+	<_25 v="speed scale" />
+	<_25 v="subframe offset" />
+	<_36 v="PARTICLE PARAMETERS" />
+	<_14 v="rotation randomness" />
+	<_14 v="particle scale modifier" />
+	<_36 v="LIGHTING PARAMETERS" />
+	<_14 v="lighting contrast" />
+	<_14 v="lighting offset" />
+	<_14 v="lighting min" />
+	<_14 v="lighting max" />
+	<_1A v="spawn_params0" />
+	<_1A v="spawn_params1" />
+	<_1A v="spawn_params2" />
+	<_1A v="spawn_params3" />
+	<_1A v="spawn_params4" />
+	<_41 v="global type library" />
+	<_34 v="generated_pad1e19" length="4" />
+	<_3B v="" />
+</root>
