@@ -44,6 +44,10 @@ class BaseTemplate(IBaseTemplate):
                 if Config.VERBOSE:
                     print(f'len(self.tag_parse.rootTagInst.childs) == 0 in {self.full_filepath}')
 
+    def getTagGroup(self):
+        super(BaseTemplate, self).getTagGroup()
+        return self.tagLayoutExt
+        
     def readParameterByName(self, str_name):
         return self.tag_parse.readTagDefinitionByNamePathSelfAddress(str_name)
 

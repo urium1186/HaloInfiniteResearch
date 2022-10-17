@@ -1,6 +1,8 @@
 import json
+import os
 import pathlib
 import re
+import xml.etree.ElementTree as ET
 
 from configs.config import Config
 from tag_reader.headers.header import Header
@@ -33,7 +35,7 @@ def createTagNamesInUseFormUnPath():
                 if dict_str.keys().__contains__(hash):
                     exist_path = dict_str[hash]
                     path_to_hash_w = path_to_hash_e
-                    hash_str=hash_str + f" {exist_path}"
+                    hash_str = hash_str + f" {exist_path}"
                     pass
                 with open(path_to_hash_w, 'a') as f:
                     try:
@@ -43,6 +45,7 @@ def createTagNamesInUseFormUnPath():
             dict_str[hash] = x_s
         except:
             pass
+
 
 def createTempStringHashFormUnPath():
     path_root = Config.BASE_UNPACKED_PATH
@@ -56,9 +59,10 @@ def createTempStringHashFormUnPath():
         parse.load()
         for str_v in parse.first_child['language references'].childs[0]['string list resource'].childs[0][
             'string lookup info'].childs:
-            x_1 = str_v['string id'].extra_data['str_'].replace(' ','')
+            x_1 = str_v['string id'].extra_data['str_'].replace(' ', '')
             if x_1 != '':
                 addStrValid(x_1)
+
 
 def createTempStringHashFormStringList():
     path_root = Config.BASE_UNPACKED_PATH
@@ -143,7 +147,7 @@ def splitStr(x, p_a):
         str_a.extend(x.split(sp))
     if len(str_a) == 1:
         result = re.findall(r"{(.+?)}", str_a[0])
-        if len(result)!=0:
+        if len(result) != 0:
             debug = True
         str_a_r = [re.sub(r"{(.+?)}", '', str_a[0])]
         return str_a_r
@@ -179,8 +183,8 @@ def addStrValid(x):
                         pass
             dict_str[x_s] = ''
 
-def recursiveReadTag(unique_path_dict: list, hast_tag_dict: dict, in_path: str):
 
+def recursiveReadTag(unique_path_dict: list, hast_tag_dict: dict, in_path: str):
     if unique_path_dict.__contains__(in_path):
         return
     else:
@@ -190,12 +194,54 @@ def recursiveReadTag(unique_path_dict: list, hast_tag_dict: dict, in_path: str):
             file_header.readHeader(f)
     pass
 
+
 def searchTagNamesbyTagInPaths():
     pass
 
+
+def readTagObjectDef():
+    path_to_hash = Config.ROOT_DIR + '\\tag_reader\\tags\\'
+    dict_temp = {}
+    tree_dict = {}
+    for path in pathlib.Path(path_to_hash).rglob('*.xml'):
+        if True and (path.name.__contains__('')):
+            with open(path, 'rb') as f:
+                xd = ET.parse(path)
+                xn = xd.getroot()
+                class_type_o = xn.attrib['item_name_2']
+                if class_type_o.__contains__('::'):
+                    class_type = class_type_o.split('::')
+                    temp = {}
+                    for i in range(class_type.__len__()-1):
+                        if i ==0:
+                            if not tree_dict.keys().__contains__(class_type[i]):
+                                tree_dict[class_type[i]]={}
+                            temp = tree_dict[class_type[i]]
+                        else:
+                            if not temp.keys().__contains__(class_type[i]):
+                                temp[class_type[i]] = {}
+                            temp = temp[class_type[i]]
+                    temp[class_type[-2]] = class_type[-1]
+
+                else:
+                    tree_dict[class_type_o] = os.path.basename(path).replace('.xml', '')
+
+
+                assert xn.attrib['item_name_1'] == xn.attrib['item_name_2']
+                assert not dict_temp.keys().__contains__(class_type_o)
+
+                dict_temp[class_type_o] =  (os.path.basename(path).replace('.xml', ''), class_type_o)
+
+                xnl = list(xn)
+                current_offset = 0
+    print(dict_temp)
+
+
+
 if __name__ == "__main__":
     # createTempStringHashFormWebJson()
-    #createTempStringHashFormUnPath()
-    createTagNamesInUseFormUnPath()
+    # createTempStringHashFormUnPath()
+    #createTagNamesInUseFormUnPath()
+    readTagObjectDef()
     # createTempStringHashFormUnPath()
     exit()

@@ -174,7 +174,7 @@ def extract_module(module):
         # if not (temp.__contains__('coatings')):
         # if not (temp.__contains__('objects')) or (temp.__contains__('pc__')):
         # if not (temp.__contains__('objects/characters')):
-        if not (temp.__contains__('drill_sergeant')):
+        if not (temp.__contains__('spartan_armor/gear')):
         # if not (t1e.save_path.__contains__('.')):
         # if not (temp.__contains__('brute_atriox')):
         #if not (temp.__contains__('hum_base_fabric_oriental_pattern_01_normal{pc}')):

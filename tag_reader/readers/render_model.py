@@ -35,6 +35,8 @@ class RenderModel(BaseTemplate):
     def getBonesInfo(self):
         bones = {'skeletons': []}
         i = 0
+        if self.tag_parse.rootTagInst is None or self.tag_parse.rootTagInst.childs[0]['nodes'] is None:
+            return bones
         for bone_inst in self.tag_parse.rootTagInst.childs[0]['nodes'].childs:
             b_name = bone_inst['name'].value
             b_name = getStrInMmr3Hash(b_name)

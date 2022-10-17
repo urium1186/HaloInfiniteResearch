@@ -182,9 +182,9 @@ def extract_module(module):
             continue
         #print(t1e.save_path)
         #os.makedirs('/'.join(t1e.save_path.split('/')[:-1]), exist_ok=True)
-        #asd('', t1e)
+        asd('', t1e)
         #getPlataformExtra(t1e)
-        #continue
+        continue
         in_file_offset = data_offset + t1e.local_data_offset
 
         if in_file_offset >= file_size:
@@ -236,7 +236,7 @@ def extract_module(module):
             debug = True
         else:
             continue
-        getMapExtension(decomp_save_data,t1e)
+        #getMapExtension(decomp_save_data,t1e)
         #asd_save(decomp_save_data,t1e)
 
 def extract_all_modules():
@@ -278,7 +278,7 @@ if __name__ == "__main__":
     print(count_file_mapped_exp.__len__())
 
     path_to_hash = Config.ROOT_DIR + '\\tag_reader\\tag_names\\tag_names_iu_generated.txt'
-
+    """ 
     with open(path_to_hash, 'w') as file:
         pass
     with open(path_to_hash, 'a') as f:
@@ -286,7 +286,7 @@ if __name__ == "__main__":
             f.writelines(count_file_mapped_exp)
         except UnicodeEncodeError:
             pass
-
+    """
     print(len(map_tag_names))
     print(map_ext)
     print(ma_guid_ext)

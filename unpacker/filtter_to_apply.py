@@ -20,9 +20,10 @@ def validString(in_string: str) -> bool:
     # if (temp.__contains__('string')):
     # if (temp.__contains__('brute_atriox')):
     #return in_string.__contains__('color_black{pc}.bitmap')
+    return (not (in_string.__contains__('[') and in_string.__contains__(']')))
     #return (not (in_string.__contains__('[') and in_string.__contains__(']'))) and (not (in_string.__contains__('{') and in_string.__contains__('}'))) # not in_string.__contains__('{ds}')
     #return (not (in_string.__contains__('[') and in_string.__contains__(']'))) and ((in_string.__contains__('{') and in_string.__contains__('}'))) # not in_string.__contains__('{ds}')
-    return (not (in_string.__contains__('[') and in_string.__contains__(']'))) and (in_string.__contains__('weapons\\rifle\\provoker\\provoker'))
+    #return (not (in_string.__contains__('[') and in_string.__contains__(']'))) and (in_string.__contains__('weapons\\rifle\\provoker\\provoker'))
 
 
 

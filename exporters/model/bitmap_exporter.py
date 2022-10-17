@@ -1,7 +1,7 @@
 import os
 
 from configs.config import Config
-from exporters.base_exporter import BaseExporter
+from exporters.model.base_exporter import BaseExporter
 from exporters.to.image.dds_utilts.bitmap_2_dds import BitmapToDds, MipmapIndexException
 from exporters.to.image.export_to_img_nconvert import ExportImgNConvertImpl
 from exporters.to.image.export_to_img_pillow import ExportImgPillowImpl

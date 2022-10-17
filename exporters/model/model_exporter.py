@@ -1,21 +1,14 @@
-import io
 import json
 import os
 
-import numpy as np
-import mathutils
-import utils
-from commons.debug_utils import vertx_data_arrays, fillDebugDict
+from commons.logs import Log
 from configs.config import Config
-from exporters.base_exporter import BaseExporter
-from exporters.domain.domain_types import *
+from exporters.model.base_exporter import BaseExporter
 from exporters.model.render_model_exporter import RenderModelExporter
 from exporters.to.fbx.export_to_fbx import FbxModel
-from exporters.to.fbx.import_from_fbx import FbxModelImporter
 from tag_reader.readers.model import Model
 from tag_reader.readers.reader_factory import ReaderFactory
-from tag_reader.readers.render_model import RenderModel
-from tag_reader.var_names import getMmr3HashFromInt, Mmr3Hash_str_iu
+from tag_reader.var_names import getMmr3HashFromInt, Mmr3Hash_str_iu, TAG_NAMES
 
 
 class ModelExporter(BaseExporter):
@@ -61,6 +54,7 @@ class ModelExporter(BaseExporter):
             os.makedirs(f"{self.filepath_export}{sub_dir}", exist_ok=True)
             save_path = f"{self.filepath_export}{sub_dir}{ch['name'].str_value}.fbx"
             fbx_model.export(save_path, True)
+            Log.Print(f"Saved model to {save_path}")
             print(f"Saved model to {save_path}")
             #break
 
@@ -88,6 +82,15 @@ class ModelExporter(BaseExporter):
                             if os.path.exists(temp_json_path):
                                 with open(temp_json_path, 'rb') as sub_f:
                                     sub_data = json.load(sub_f)
+                                    if sub_data.keys().__contains__('TagId'):
+                                        sub_tag_id_hash = getMmr3HashFromInt(sub_data['TagId'])
+                                        if TAG_NAMES.keys().__contains__(sub_tag_id_hash):
+                                            filename = TAG_NAMES[sub_tag_id_hash]
+
+                                            temp_reader = ReaderFactory.create_reader(filename)
+                                            temp_reader.load_recursive = True
+                                            temp_reader.load()
+                                            print(f"External file {filename}")
                                     if isinstance(sub_data, dict):
                                         if sub_data.keys().__contains__('RegionData'):
                                             region_data = sub_data['RegionData']
