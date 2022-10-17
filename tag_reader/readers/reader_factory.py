@@ -11,6 +11,7 @@ class ReaderFactory:
     class_map = {
         'bitm': ('bitmap', 'Bitmap'),
         'bipd': ('biped', 'Biped'),
+        'ocad': ('i343.ObjectCustomization.AttachmentConfiguration', 'AttachmentConfiguration'),
         'mat ': ('material', 'Material'),
         'mwpl': ('materialpalette', 'MaterialPalette'),
         'mwsy': ('materialstyles', 'MaterialStyles'),

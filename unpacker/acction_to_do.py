@@ -3,6 +3,7 @@ import os
 import re
 import struct
 
+from commons.common_utils import resolvePathFile
 from commons.tag_group_extension_map import ma_guid_ext_no_magic, ma_guid_ext_resource, map_ext, ma_guid_ext
 from configs.config import Config
 from tag_reader.readers.reader_factory import ReaderFactory
@@ -107,6 +108,12 @@ def asd(decomp_save_data, t1e):
         count_file_mapped_error.append(f"{hash_temp} - {filename} - {map_tag_names[hash_temp]}")
     else:
         map_tag_names[hash_temp] = filename
+        """
+        tag_key = t1e.tag[::-1].decode("utf-8")
+        temp_save_path = resolvePathFile(t1e.save_path, grouptag=tag_key)
+        """
+        if t1e.save_path.__contains__('reach_wrist_gear_004'):
+            debug = True
         if os.path.isfile(t1e.save_path):
             count_file_mapped_exp.append(f"{hash_temp} : {filename}" + '\n')
 

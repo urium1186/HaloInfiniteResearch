@@ -1,18 +1,16 @@
 import binascii
 import io
-import json
 import os
 import struct
 
-import numpy
 import numpy as np
 import mathutils
 import utils
 from commons.classes import Chunk
 from commons.debug_utils import fillDebugDict, vertx_data_arrays
-from commons.enums_struct_def import PcVertexBuffersFormat, PcVertexBuffersUsage
+from commons.enums_struct_def import PcVertexBuffersFormat
 from configs.config import Config
-from exporters.base_exporter import BaseExporter
+from exporters.model.base_exporter import BaseExporter
 from exporters.domain.domain_types import *
 from exporters.to.fbx.export_to_fbx import FbxModel
 from tag_reader.readers.render_model import RenderModel
@@ -531,6 +529,7 @@ class RenderModelExporter(BaseExporter):
 
     def getMeshListByJson(self, data) -> []:
         array_info = data['CoreRegionData']['BaseRegionData']
+        """
         self.overridesRegions(array_info,data['CoreRegionData']['BodyTypeSmallOverrides'])
         self.overridesRegions(array_info,data['CoreRegionData']['BodyTypeLargeOverrides'])
         self.overridesRegions(array_info,data['CoreRegionData']['BodyTypeLargeOverrides'])
@@ -550,7 +549,7 @@ class RenderModelExporter(BaseExporter):
         self.overridesRegions(array_info,data['CoreRegionData']['ProstheticRightLegOverrides']['Full'])
         self.overridesRegions(array_info,data['CoreRegionData']['ProstheticRightLegOverrides']['Half'])
         self.overridesRegions(array_info,data['CoreRegionData']['ProstheticRightLegOverrides']['Extremity'])
-
+        """
         if not self.render_model.is_loaded():
             self.render_model.load()
         if self.render_model_inst is None:
@@ -802,6 +801,8 @@ class RenderModelExporter(BaseExporter):
 
         keys = list(self._chunk_data_map.keys())
         init_key = 0
+        if len(keys)==0:
+            raise Exception("EmptyData")
         if keys.__contains__(offset):
             init_key = keys.index(offset)
         else:
@@ -809,6 +810,9 @@ class RenderModelExporter(BaseExporter):
             while offset > keys[ki]:
                 ki += 1
                 if ki == len(keys) - 1:
+                    break
+                if ki > len(keys) - 1:
+                    ki-= 1
                     break
 
             temp_ki = keys[ki]

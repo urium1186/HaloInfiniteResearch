@@ -9,6 +9,7 @@ import configs
 from commons.debug_utils import normal_artifact_files, Intersection_meth3, Difference_meth3, artifact_on_all_comp, \
     vertx_data_arrays
 from exporters.model.bitmap_exporter import BitmapExporter
+from exporters.model.exporter_factory import ExporterFactory
 from exporters.model.model_exporter import ModelExporter
 from configs.config import Config
 from exporters.model.render_model_exporter import RenderModelExporter
@@ -112,7 +113,7 @@ with open(saveTo, 'wb') as fw:
     json.dump(parse_model.json_base, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
     fw.close()
 """
-exporter = ModelExporter(parse_model)
+exporter = ExporterFactory.create_exporter(parse_model) # ModelExporter(parse_model)
 json_filename_list = [Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-emile-a239-ki-0903655e.json',
 Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-carter-a259-k-0c240b9a.json',
 Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-catherine-b32-0903655e.json',

@@ -17,7 +17,7 @@ def dk(i):
 def dh(i):
   return "h"+str(i)
 
-def solve():
+def solve(data):
   s = SolverFor("BV")
   s.set("local_ctx",True)
   
@@ -224,4 +224,4 @@ else:
  """
 hash_result = 1138711306
 length = 10
-solve() 
+solve([])
