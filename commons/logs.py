@@ -1,3 +1,4 @@
+from configs.config import Config
 from events import Event
 
 
@@ -17,4 +18,6 @@ class Log:
 
     @staticmethod
     def Print(message):
+        if Config.VERBOSE:
+            print(message)
         Log.onPrint(message)

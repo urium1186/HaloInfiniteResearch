@@ -9,6 +9,7 @@ import utils
 from commons.classes import Chunk
 from commons.debug_utils import fillDebugDict, vertx_data_arrays
 from commons.enums_struct_def import PcVertexBuffersFormat
+from commons.logs import Log
 from configs.config import Config
 from exporters.model.base_exporter import BaseExporter
 from exporters.domain.domain_types import *
@@ -351,7 +352,7 @@ class RenderModelExporter(BaseExporter):
                         os.makedirs(f"{self.filepath_export}{sub_dir}", exist_ok=True)
                         save_path = f"{self.filepath_export}{sub_dir}{permutation['name'].str_value}-{mesh_name}.fbx"
                         fbx_model.export(save_path, True)
-                        print(f"Saved model to {save_path}")
+                        Log.Print(f"Saved model to {save_path}")
         else:
             filter_meshs = [7, 28, 123, 143, 220, 235, 249, 264, 275, 288, 293, 318, 326, 331, 350, 360, 402, 406, 465,
                             687, 695]
@@ -375,7 +376,7 @@ class RenderModelExporter(BaseExporter):
                 # mesh_name = string_table.name_string.split('\\')[-2] + "." + material_path.split('\\')[-1]
                 if mesh_name == '':
                     mesh_name = "unknown mesh"
-                print(mesh_name)
+                Log.Print(mesh_name)
 
                 if mesh_name.find(self.filterArmorCore.getString()) == -1:
                     continue
@@ -395,9 +396,9 @@ class RenderModelExporter(BaseExporter):
                 os.makedirs(f"{self.filepath_export}{sub_dir}", exist_ok=True)
                 save_path = f"{self.filepath_export}{sub_dir}{t_m.name}.fbx"
                 fbx_model.export(save_path, True)
-                print(f"Saved model to {save_path}")
+                Log.Print(f"Saved model to {save_path}")
 
-        print('end Export')
+        Log.Print('end Export')
 
     def _get_mesh_list(self, str_filter='') -> []:
         if not self.render_model.is_loaded():
@@ -459,8 +460,8 @@ class RenderModelExporter(BaseExporter):
                 mesh_unic += 1
             else:
                 mesh_no_unic += 1
-        print(str(result[4].keys()))
-        print("Fin de análice")
+        Log.Print(str(result[4].keys()))
+        Log.Print("Fin de análice")
 
     def _get_mesh_by_region(self, regions: [], str_filter='') -> {}:
         if not self.render_model.is_loaded():
@@ -513,7 +514,7 @@ class RenderModelExporter(BaseExporter):
                     if not t_m.name.__contains__(
                             str_filter):  # False and olympus_spartan_l_armup_001_s001_2_lod_0 'olympus_spartan_l_glove_001_s001'
                         continue
-                    print(mesh_name)
+                    Log.Print(mesh_name)
                     result_per[permutation['name'].value].append(t_m)
 
             result[region['name'].value] = result_per
@@ -628,7 +629,7 @@ class RenderModelExporter(BaseExporter):
                     # False and olympus_spartan_l_armup_001_s001_2_lod_0
                     continue
                 """
-                print(mesh_name)
+                Log.Print(mesh_name)
                 mesh_list.append(t_m)
                 if m_count != 1:
                     debug = True
@@ -730,7 +731,7 @@ class RenderModelExporter(BaseExporter):
                             # False and olympus_spartan_l_armup_001_s001_2_lod_0
                             continue
                         """
-                        print(mesh_name)
+                        Log.Print(mesh_name)
                         mesh_list.append(t_m)
                         if m_count != 1:
                             debug = True
@@ -765,7 +766,7 @@ class RenderModelExporter(BaseExporter):
                 ch_offset += temp_len
                 self._chunk_data += bytes(temp_len)
             assert mesh_resource['Streaming Buffers'].childs[0]['buffer size'].value == len(self._chunk_data)
-            print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
+            Log.Print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
 
     def initChunksDataSave(self):
         if self._chunk_data is None:
@@ -893,7 +894,7 @@ class RenderModelExporter(BaseExporter):
                     nChunk += 1
                 except:
                     more_chunks = False
-            print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
+            Log.Print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
 
     def processMeshInst(self, mesh, mesh_resource, m_i=-1) -> ObjMesh:
         obj_mesh = ObjMesh()

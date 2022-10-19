@@ -4,6 +4,7 @@ from commons.common_utils import getGUID
 from commons.debug_utils import debug_TagStruct, fillDebugDict, debug_TagStruct_Type
 from commons.enums_struct_def import TagStructType
 from commons.exception.read_tag_struct_exception import ReadTagStructException
+from commons.logs import Log
 from tag_reader.headers.data_block_table import DataBlock
 
 
@@ -222,5 +223,5 @@ class TagStructTable:
                 entry_found = i
                 return entry_found
         if count > 1:
-            print(count)
+            Log.Print(count)
         return entry_found

@@ -55,10 +55,9 @@ class ModelExporter(BaseExporter):
             save_path = f"{self.filepath_export}{sub_dir}{ch['name'].str_value}.fbx"
             fbx_model.export(save_path, True)
             Log.Print(f"Saved model to {save_path}")
-            print(f"Saved model to {save_path}")
             #break
 
-        print('end Export')
+        Log.Print(f'end Export')
 
     def exportByJson(self, json_path):
         if not self.model.is_loaded():
@@ -90,7 +89,7 @@ class ModelExporter(BaseExporter):
                                             temp_reader = ReaderFactory.create_reader(filename)
                                             temp_reader.load_recursive = True
                                             temp_reader.load()
-                                            print(f"External file {filename}")
+                                            Log.Print(f"External file {filename}")
                                     if isinstance(sub_data, dict):
                                         if sub_data.keys().__contains__('RegionData'):
                                             region_data = sub_data['RegionData']
@@ -98,7 +97,7 @@ class ModelExporter(BaseExporter):
 
         tag_id = data['TagId']
         tag_id_hash = getMmr3HashFromInt(data['TagId'])
-        print(f"tag id hash {tag_id_hash}")
+        Log.Print(f"tag id hash {tag_id_hash}")
         variant_name_hash = getMmr3HashFromInt(data['VariantId']['m_identifier'])
         variant_name = variant_name_hash
         if Mmr3Hash_str_iu.keys().__contains__(variant_name_hash):
@@ -118,4 +117,4 @@ class ModelExporter(BaseExporter):
         os.makedirs(f"{self.filepath_export}{sub_dir}", exist_ok=True)
         save_path = f"{self.filepath_export}{sub_dir}{variant_name}_{file_name_temp}.fbx"
         fbx_model.export(save_path, True)
-        print(f"Saved model to {save_path}")
+        Log.Print(f"Saved model to {save_path}")

@@ -7,6 +7,7 @@ import numpy
 from fbx import FbxDeformer, FbxSkin, FbxCluster
 
 from commons.common_utils import inSphere
+from commons.logs import Log
 from exporters.domain.domain_types import *
 from configs.config import Config
 from exporters.to.fbx.import_from_fbx import FbxModelImporter
@@ -39,7 +40,7 @@ class FbxModel:
         self.bones = []
         self.bones_index_used = {}
         self.nodes = []
-        print("Fin init**********")
+        Log.Print("Fin init**********")
         return
 
     def fillBonesFromSkeletalInfo(self, data=None, numerate_bones=True):

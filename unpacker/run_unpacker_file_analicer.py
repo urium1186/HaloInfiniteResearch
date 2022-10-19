@@ -5,6 +5,7 @@ import gf
 import os
 from ctypes import cdll, c_char_p, create_string_buffer
 
+from commons.logs import Log
 from configs.config import Config
 from tag_group_extension_map import ma_guid_ext, ma_guid_ext_resource, ma_guid_ext_no_magic, map_ext
 from unpacker.acction_to_do import asd, asd_save, getPlataformExtra, getMapExtension
@@ -23,7 +24,7 @@ class OodleDecompressor:
         Initialize instance and try to load the library.
         """
         if not os.path.exists(library_path):
-            print(f'Looking in {library_path}')
+            Log.Print(f'Looking in {library_path}')
             raise Exception("Could not open Oodle DLL, make sure it is configured correctly.")
 
         try:
@@ -162,7 +163,7 @@ def extract_module(module):
     data_offset = fb.seek(-1, 1)
 
     decompressor = OodleDecompressor('oo2core_8_win64.dll')
-    print(f"File count: {len(files)}")
+    Log.Print(f"File count: {len(files)}")
     for i, t1e in enumerate(files):
         # Cleaning string to be savable
 
@@ -243,7 +244,7 @@ def extract_all_modules():
     # Ignoring module hd files
     p = [os.path.join(dp, f)[len(deploy_path):].replace("\\", "/") for dp, dn, fn in os.walk(os.path.expanduser(deploy_path)) for f in fn if ".module" in f and ".module_" not in f]
     for file in p:
-        print(file)
+        Log.Print(file)
         extract_module(file.replace(".module", ""))
 
 
@@ -272,10 +273,10 @@ if __name__ == "__main__":
     #module_name = "any/globals/forge/"
     #extract_module(module_path)
     extract_all_modules()
-    print(count_file_mapped.__len__())
-    print(count_file_mapped_not.__len__())
-    print(count_file_mapped_error.__len__())
-    print(count_file_mapped_exp.__len__())
+    Log.Print(count_file_mapped.__len__())
+    Log.Print(count_file_mapped_not.__len__())
+    Log.Print(count_file_mapped_error.__len__())
+    Log.Print(count_file_mapped_exp.__len__())
 
     path_to_hash = Config.ROOT_DIR + '\\tag_reader\\tag_names\\tag_names_iu_generated.txt'
     """ 
@@ -287,12 +288,12 @@ if __name__ == "__main__":
         except UnicodeEncodeError:
             pass
     """
-    print(len(map_tag_names))
-    print(map_ext)
-    print(ma_guid_ext)
+    Log.Print(len(map_tag_names))
+    Log.Print(map_ext)
+    Log.Print(ma_guid_ext)
 
-    print(ma_guid_ext_resource)
-    print(ma_guid_ext_no_magic)
-    print('end extract')
+    Log.Print(ma_guid_ext_resource)
+    Log.Print(ma_guid_ext_no_magic)
+    Log.Print('end extract')
 
     ## pc/globals/forge/forge_objects-rtx-new.module is broken

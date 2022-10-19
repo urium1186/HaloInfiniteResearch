@@ -17,8 +17,9 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
 from PySide6.QtWidgets import (QApplication, QHBoxLayout, QHeaderView, QLineEdit,
-    QMainWindow, QMenu, QMenuBar, QSizePolicy,
-    QStatusBar, QTreeView, QVBoxLayout, QWidget)
+    QMainWindow, QMenu, QMenuBar, QScrollArea,
+    QSizePolicy, QStatusBar, QTreeView, QVBoxLayout,
+    QWidget)
 
 class Ui_MainWindow(QObject):
     def setupUi(self, MainWindow):
@@ -44,12 +45,19 @@ class Ui_MainWindow(QObject):
 
         self.horizontalLayout.addLayout(self.verticalLayout_2)
 
-        self.widget = QWidget(self.centralwidget)
-        self.widget.setObjectName(u"widget")
+        self.scrollArea = QScrollArea(self.centralwidget)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 516, 537))
+        self.verticalLayout = QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
-        self.horizontalLayout.addWidget(self.widget)
+        self.horizontalLayout.addWidget(self.scrollArea)
 
-        self.horizontalLayout.setStretch(1, 2)
+        self.horizontalLayout.setStretch(1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")

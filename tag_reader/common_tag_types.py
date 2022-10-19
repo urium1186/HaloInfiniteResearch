@@ -7,6 +7,7 @@ import struct
 from typing.io import BinaryIO
 
 from commons.constant import ADDRESS_UNSET
+from commons.logs import Log
 from tag_reader.headers.data_reference_table import DataReference
 
 #from tag_reader.readers.reader_factory import ReaderFactory
@@ -94,7 +95,7 @@ class TagStructData(TagInstance):
 
     def hasMoreTagStructData(self):
         if self.tagDef.B != {}:
-            print(self.tagDef.B)
+            Log.Print(self.tagDef.B)
 
     def readIn(self, f: BinaryIO, header=None):
         super().readIn(f, header)
