@@ -54,7 +54,10 @@ class ModelExporter(BaseExporter):
             os.makedirs(f"{self.filepath_export}{sub_dir}", exist_ok=True)
             save_path = f"{self.filepath_export}{sub_dir}{ch['name'].str_value}.fbx"
             fbx_model.export(save_path, True)
-            Log.Print(f"Saved model to {save_path}")
+            if os.path.isfile(save_path):
+                Log.Print(f"Saved model to {save_path}")
+            else:
+                Log.Print(f"There was a iuse on export model to {save_path}")
             #break
 
         Log.Print(f'end Export')
