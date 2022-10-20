@@ -137,8 +137,9 @@ class FbxModel:
 
     def export(self, save_path=None, ascii_format=False):
         """Export the scene to an fbx file."""
-
-        os.makedirs('/'.join(save_path.split('/')[:-1]), exist_ok=True)
+        temp_dir  = '/'.join(save_path.split('/')[:-1])
+        Log.Print("Directory "+temp_dir)
+        os.makedirs(temp_dir, exist_ok=True)
         if not self.manager.GetIOSettings():
             self.ios = fbx.FbxIOSettings.Create(self.manager, fbx.IOSROOT)
             self.manager.SetIOSettings(self.ios)
@@ -154,9 +155,12 @@ class FbxModel:
             b_ascii = 1
         else:
             b_ascii = -1
-        self.exporter.Initialize(save_path, b_ascii, self.manager.GetIOSettings())
-        self.exporter.Export(self.scene)
-        self.exporter.Destroy()
+        try:
+            self.exporter.Initialize(save_path, b_ascii, self.manager.GetIOSettings())
+            self.exporter.Export(self.scene)
+            self.exporter.Destroy()
+        except Exception as e:
+            Log.Print(f"Error in export_to_fbx.py: {e}")
 
     def scaleVector(self, x, y, z, scl=254.0, rot=90):
         lT = fbx.FbxVector4(0.0, 0.0, 0.0)
