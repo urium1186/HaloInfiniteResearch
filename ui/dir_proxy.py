@@ -61,7 +61,7 @@ class DirProxy(QSortFilterProxyModel):
         if not self.dirModel.hasChildren(sourceParent):
             return False
         qdir = QDir(self.dirModel.filePath(sourceParent))
-        return bool(qdir.entryInfoList(qdir.NoDotAndDotDot | qdir.AllEntries | qdir.AllDirs))
+        return bool(qdir.entryInfoList(QDir.NoDotAndDotDot | QDir.AllEntries | QDir.AllDirs))
 
     def filterAcceptsRow(self, row, parent):
         source = self.dirModel.index(row, 0, parent)
