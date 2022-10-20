@@ -155,6 +155,7 @@ class F_Ui_MainWindow(Ui_MainWindow):
         print("THREAD COMPLETE!")
 
     def execute_export(self, filename):
+        Log.Print(filename)
         parse = ReaderFactory.create_reader(filename)
         parse.load()
         exporter = ExporterFactory.create_exporter(parse)
