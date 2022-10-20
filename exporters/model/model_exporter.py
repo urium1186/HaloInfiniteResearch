@@ -18,7 +18,7 @@ class ModelExporter(BaseExporter):
         self.render_model_exporter = None
         self.model = model
         self.render_model_inst = None
-        self.filepath_export = 'J:/Games/Halo Infinite Stuf/Extracted/Converted/RE_OtherGames/HI/models/'
+        self.filepath_export = Config.MODEL_EXPORT_PATH
 
     def export(self):
         super(ModelExporter, self).export()
