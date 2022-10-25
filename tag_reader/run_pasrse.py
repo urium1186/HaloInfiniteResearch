@@ -21,7 +21,7 @@ from tag_reader.readers.render_model import RenderModel
 from tag_reader.readers.stringlist import StringList
 from tag_reader.readers.swatch import Swatch
 from tag_reader.tag_reader_utils import readStringInPlace
-from tag_reader.var_names import map_alt_name_id, getMmr3HashFromInt, TAG_NAMES
+from tag_reader.var_names import map_alt_name_id, getMmr3HashFromInt, TAG_NAMES, getMmr3HashIntFrom
 
 
 def evaluateTag(p_tag):
@@ -143,7 +143,28 @@ def run_recursive_reader_in_paths():
         else:
             print(f'no existe {filename}')
 
+def onInstanceLoad(instance):
+    if instance.tagDef.N == 'marker groups':
+        for  child in instance.childs:
+            for sub_ch in child['markers'].childs:
+                r_i = sub_ch['region index'].value
+                p_i = sub_ch['permutation index'].value
+                n_i = sub_ch['node index'].value
+                if n_i == -1:
+                    debug = True
+                if r_i != -1:
+                   if not (p_i == n_i == -1):
+                       debug = True
+                elif p_i != -1:
+                   if not (r_i == n_i == -1):
+                       debug = True
+                elif n_i != -1:
+                   if not (r_i == p_i == -1):
+                       debug = True
 
+
+
+        #print(instance)
 
 """"""
 
@@ -196,8 +217,13 @@ filename = 'objects\\characters\\spartan_armor\\spartan_armor.biped'
 filename = '__chore/pc__/shaders/default_bitmaps/bitmaps/color_black{pc}.bitmap'
 #filename = 'fx/library_olympus/levels/mp/nar/sn_02/mp02_200/_parts/nar_m02200_sun_particle_flare.particle'
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
+#filename = 'objects\\characters\\spartan_armor\\materials\\samurai\\shoulderpad\\shoulderpad_004\\samurai_spartan_r_shoulderpad_004_s001.material'
+#filename = 'objects\\characters\\spartan_armor\\spartan_armor.frame_event_list'
+#filename = 'objects\\characters\\spartan_armor\\spartan_armor.model_animation_graph'
+#filename = 'objects\\characters\\spartan_armor\\spartan_armor.biped'
 #filename = 'objects\\characters\\spartan_armor\\materials\\olympus\\armfor\\armfor_001\\olympus_spartan_l_armfor_001_s001.material'
-
+print(getMmr3HashIntFrom("samurai_004_render:samurai_spartan_r_shoulderpad_004_s001MatSG"))
+print(getMmr3HashIntFrom("Title"))
 
 parse = ReaderFactory.create_reader(filename)
 # 1073741824
@@ -206,7 +232,8 @@ parse = ReaderFactory.create_reader(filename)
 #if TAG_NAMES.keys().__contains__(hash):
 #    debu = TAG_NAMES[hash]
 
-parse.load_recursive = True
+#parse.load_recursive = True
+parse.AddSubForOnInstanceLoad(onInstanceLoad)
 parse.load()
 print(filename)
 print(len(map_ext_not))

@@ -16,3 +16,9 @@ class IBaseTemplate:
 
     def onInstanceLoad(self, instance):
         pass
+
+    def AddSubForOnInstanceLoad(self, objMethod):
+        pass
+
+    def RemoveSubOnInstanceLoad(self, objMethod):
+        pass

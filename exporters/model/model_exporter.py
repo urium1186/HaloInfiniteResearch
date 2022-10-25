@@ -62,7 +62,13 @@ class ModelExporter(BaseExporter):
 
         Log.Print(f'end Export')
 
-    def exportByJson(self, json_path):
+    def exportByJson(self, json_path, p_data = {}):
+        if isinstance(p_data, dict) and p_data != {}:
+            data = p_data
+        else:
+            with open(json_path, 'rb') as f:
+                data = json.load(f)
+
         if not self.model.is_loaded():
             self.model.load()
         if self.model.render_model is None:
@@ -72,8 +78,7 @@ class ModelExporter(BaseExporter):
             self.model.render_model.load()
 
         nodes_data = self.model.render_model.getBonesInfo()
-        with open(json_path, 'rb') as f:
-            data = json.load(f)
+
         for k, v in data.items():
             if isinstance(v, dict):
                 if v.keys().__contains__('IsRequired'):
@@ -114,8 +119,12 @@ class ModelExporter(BaseExporter):
         for mesh in mesh_list:
             mesh.bones_data = nodes_data
             fbx_model.add(mesh)
-        file_name_temp= json_path.split('\\')[-1].replace('.json','')
-        temp_str = self.model.full_filepath.split('\\')[-1].replace('.', '_')
+
+        path_splitter = '\\'
+        if json_path.__contains__('/'):
+            path_splitter = '/'
+        file_name_temp= json_path.split(path_splitter)[-1].replace('.json','')
+        temp_str = self.model.full_filepath.split(path_splitter)[-1].replace('.', '_')
         sub_dir = f"{temp_str}/variants/"
         os.makedirs(f"{self.filepath_export}{sub_dir}", exist_ok=True)
         save_path = f"{self.filepath_export}{sub_dir}{variant_name}_{file_name_temp}.fbx"

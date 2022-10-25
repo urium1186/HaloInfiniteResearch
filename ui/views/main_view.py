@@ -4,13 +4,16 @@ import pathlib
 import time
 
 from PySide6.QtCore import QEvent, QThreadPool
-from PySide6.QtWidgets import QMenu, QGroupBox, QFrame, QFormLayout
+from PySide6.QtWidgets import QMenu, QGroupBox, QFrame, QFormLayout, QFileDialog
 
 from commons.logs import Log
 from commons.tag_group_extension_map import map_ext
 from configs.config import Config
+from exporters.model.biped_exporter import BipedExporter
 from exporters.model.exporter_factory import ExporterFactory
+from tag_reader.readers.biped import Biped
 from tag_reader.readers.reader_factory import ReaderFactory
+from tag_reader.var_names import getMmr3HashFromInt, TAG_NAMES
 from ui.View import View
 from ui.dir_proxy import DirProxy
 from ui.multithread.worker import Worker
@@ -70,6 +73,7 @@ class F_Ui_MainWindow(Ui_MainWindow):
         self.scrollArea.widget().layout().addWidget(frame1)
         self.temp_widget = Ui_GroupBox_View()
         temp = QGroupBox()
+        self.actionFrom_Json_Them.triggered["bool"].connect(self.actionFromJsonTheme)
         self.temp_widget.setupUi(temp, {"temp": "asdasd",
                                         "asdasd": 21321,
                                         "temp1": "asdasd",
@@ -88,6 +92,14 @@ class F_Ui_MainWindow(Ui_MainWindow):
         #temp.layout().addWidget(frame2)
         #temp.layout().setWidget(10, QFormLayout.LabelRole, frame2)
         Log.AddSubscribersForOnPrint(self.printInStatusBar)
+
+    def actionFromJsonTheme(self):
+        fname = QFileDialog.getOpenFileName(self.parent(), 'Open file',
+                                            Config.WEB_DOWNLOAD_DATA, "Json files (*007-*.json)")
+
+        filepath = fname[0]
+        self.execute_export_from_json_theme(filepath)
+
 
     def printInStatusBar(self, message):
         self.statusbar.showMessage(message)
@@ -160,6 +172,24 @@ class F_Ui_MainWindow(Ui_MainWindow):
         parse.load()
         exporter = ExporterFactory.create_exporter(parse)
         exporter.export()
+
+    def execute_export_from_json_theme(self, json_path):
+        Log.Print(json_path)
+        try:
+            with open(json_path, 'rb') as f:
+                data = json.load(f)
+            ref_id = getMmr3HashFromInt(data['TagId'])
+            filename = TAG_NAMES[ref_id]
+            parse = ReaderFactory.create_reader(filename)
+            parse.load()
+            model_parser = None
+            exporter = ExporterFactory.create_exporter(parse)
+            if isinstance(exporter, BipedExporter):
+                exporter.exportByThemeJson(json_path,data)
+        except Exception as e:
+            Log.Print(str(e))
+
+
 
     def oh_no(self, filename):
         # Pass the function to execute

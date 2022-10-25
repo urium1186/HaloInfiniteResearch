@@ -26,6 +26,14 @@ class Ui_MainWindow(QObject):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(800, 600)
+        self.actionCoatings = QAction(MainWindow)
+        self.actionCoatings.setObjectName(u"actionCoatings")
+        self.actionFrom_Json_Them = QAction(MainWindow)
+        self.actionFrom_Json_Them.setObjectName(u"actionFrom_Json_Them")
+        self.actionOpen = QAction(MainWindow)
+        self.actionOpen.setObjectName(u"actionOpen")
+        self.actionSetting = QAction(MainWindow)
+        self.actionSetting.setObjectName(u"actionSetting")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.horizontalLayout = QHBoxLayout(self.centralwidget)
@@ -64,20 +72,39 @@ class Ui_MainWindow(QObject):
         self.menubar.setGeometry(QRect(0, 0, 800, 22))
         self.menuMenu = QMenu(self.menubar)
         self.menuMenu.setObjectName(u"menuMenu")
+        self.menuTools = QMenu(self.menubar)
+        self.menuTools.setObjectName(u"menuTools")
+        self.menuExports = QMenu(self.menuTools)
+        self.menuExports.setObjectName(u"menuExports")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
         self.menubar.addAction(self.menuMenu.menuAction())
+        self.menubar.addAction(self.menuTools.menuAction())
+        self.menuMenu.addSeparator()
+        self.menuMenu.addAction(self.actionOpen)
+        self.menuMenu.addAction(self.actionSetting)
+        self.menuTools.addAction(self.menuExports.menuAction())
+        self.menuExports.addSeparator()
+        self.menuExports.addAction(self.actionCoatings)
+        self.menuExports.addAction(self.actionFrom_Json_Them)
 
         self.retranslateUi(MainWindow)
+
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.actionCoatings.setText(QCoreApplication.translate("MainWindow", u"Coatings", None))
+        self.actionFrom_Json_Them.setText(QCoreApplication.translate("MainWindow", u"From Json Theme", None))
+        self.actionOpen.setText(QCoreApplication.translate("MainWindow", u"Open", None))
+        self.actionSetting.setText(QCoreApplication.translate("MainWindow", u"Setting", None))
         self.menuMenu.setTitle(QCoreApplication.translate("MainWindow", u"Menu", None))
+        self.menuTools.setTitle(QCoreApplication.translate("MainWindow", u"Tools", None))
+        self.menuExports.setTitle(QCoreApplication.translate("MainWindow", u"Exports", None))
     # retranslateUi
 

@@ -1,3 +1,4 @@
+import codecs
 import json
 import os
 import pathlib
@@ -7,7 +8,7 @@ import xml.etree.ElementTree as ET
 from configs.config import Config
 from tag_reader.headers.header import Header
 from tag_reader.readers.reader_factory import ReaderFactory
-from tag_reader.var_names import getMmr3HashFrom, Mmr3Hash_str_iu, change_case, getMmr3HashFromInt
+from tag_reader.var_names import getMmr3HashFrom, Mmr3Hash_str_iu, change_case, getMmr3HashFromInt, getMmr3HashIntFrom
 
 dict_str = {}
 
@@ -86,6 +87,49 @@ def createTempStringHashFormWebJson():
                 capitalize(data)
             except:
                 deb = True
+
+
+def createTempStringHashFormWebInfoJson():
+    web_json_path = Config.WEB_DOWNLOAD_DATA
+    path_to_hash = Config.ROOT_DIR + '\\tag_reader\\hash\\in_use.json'
+    """ 
+    with open(path_to_hash, 'w') as file:
+        pass
+    """
+    for path in pathlib.Path(web_json_path).rglob('*info_*.json'):
+        with open(path, 'rb') as f:
+            try:
+                data = json.load(f)
+                getAltNameVsIdHash(data)
+            except Exception as e:
+                deb = True
+
+    with open(path_to_hash, 'wb') as fw:
+        json.dump(Mmr3Hash_str_iu, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
+        fw.close()
+
+def getAltNameVsIdHash(data):
+    m_identifier = -1
+    for key in data.keys():
+        if not isinstance(data[key], dict):
+            continue
+
+        if data[key].__contains__('m_identifier'):
+            if data[key]['m_identifier'] != -1:
+                m_identifier = data[key]['m_identifier']
+
+    if data.keys().__contains__('CommonData'):
+        data_temp = data['CommonData']
+        if data_temp.keys().__contains__('AltName'):
+            int_temp = getMmr3HashIntFrom(data_temp['AltName'])
+            str_temp = getMmr3HashFrom(data_temp['AltName'])
+            if m_identifier != -1:
+                if m_identifier == int_temp:
+                    if not Mmr3Hash_str_iu.keys().__contains__(str_temp):
+                        print(f"{data_temp['Type']} : {data_temp['Title']}")
+                        print(f"{str_temp} : {data_temp['AltName']}")
+                        print(f"")
+                        Mmr3Hash_str_iu[str_temp] = data_temp['AltName']
 
 
 def capitalize(x):
@@ -212,10 +256,10 @@ def readTagObjectDef():
                 if class_type_o.__contains__('::'):
                     class_type = class_type_o.split('::')
                     temp = {}
-                    for i in range(class_type.__len__()-1):
-                        if i ==0:
+                    for i in range(class_type.__len__() - 1):
+                        if i == 0:
                             if not tree_dict.keys().__contains__(class_type[i]):
-                                tree_dict[class_type[i]]={}
+                                tree_dict[class_type[i]] = {}
                             temp = tree_dict[class_type[i]]
                         else:
                             if not temp.keys().__contains__(class_type[i]):
@@ -226,22 +270,21 @@ def readTagObjectDef():
                 else:
                     tree_dict[class_type_o] = os.path.basename(path).replace('.xml', '')
 
-
                 assert xn.attrib['item_name_1'] == xn.attrib['item_name_2']
                 assert not dict_temp.keys().__contains__(class_type_o)
 
-                dict_temp[class_type_o] =  (os.path.basename(path).replace('.xml', ''), class_type_o)
+                dict_temp[class_type_o] = (os.path.basename(path).replace('.xml', ''), class_type_o)
 
                 xnl = list(xn)
                 current_offset = 0
     print(dict_temp)
 
 
-
 if __name__ == "__main__":
     # createTempStringHashFormWebJson()
     # createTempStringHashFormUnPath()
-    #createTagNamesInUseFormUnPath()
-    readTagObjectDef()
+    # createTagNamesInUseFormUnPath()
+    #readTagObjectDef()
+    createTempStringHashFormWebInfoJson()
     # createTempStringHashFormUnPath()
     exit()

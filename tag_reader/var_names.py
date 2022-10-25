@@ -1,3 +1,4 @@
+import json
 import pathlib
 from functools import reduce
 
@@ -287,8 +288,15 @@ Mmr3Hash_str_save = {
 Mmr3Hash_str_dupl = {}
 Mmr3Hash_str_iu = {}
 
+def loadInUseHashNamesFileJson():
+    path_to_hash = Config.ROOT_DIR + '\\tag_reader\\hash\\in_use.json'
+    data = {}
+    with open(path_to_hash, 'rb') as f:
+        data = json.load(f)
 
-def loadInUseHashNamesFile():
+    return data
+
+def loadInUseHashNamesFileTxt():
     path_to_hash = Config.ROOT_DIR + '\\tag_reader\\hash\\in_use.txt'
     with open(path_to_hash, 'rb') as f:
         hash_lines = f.readlines()
@@ -353,7 +361,8 @@ def loadAlternativeHashNamesFiles():
 
 readTagNames()
 
-loadInUseHashNamesFile()
+Mmr3Hash_str_iu = loadInUseHashNamesFileJson()
+#loadInUseHashNamesFileTxt()
 
 #loadAlternativeHashNames()
 

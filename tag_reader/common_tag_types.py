@@ -642,6 +642,8 @@ class Mmr3Hash(TagInstance):
         self.value = bin_data.hex().upper()
         self.str_value = getStrInMmr3Hash(self.value)
         self.int_value = int.from_bytes(bin_data, byteorder="little", signed=True)
+        if self.int_value == 395074097:
+            debug = True
         # assert self.value == getMmr3HashFromInt(self.int_value), "Han de ser iguales"
 
     def toJson(self):

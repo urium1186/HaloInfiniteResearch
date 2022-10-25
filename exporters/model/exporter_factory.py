@@ -9,6 +9,7 @@ class ExporterFactory:
     class_map = {
         'bitm': ('bitmap_exporter', 'BitmapExporter'),
         'hlmt': ('model_exporter', 'ModelExporter'),
+        'bipd': ('biped_exporter', 'BipedExporter'),
         'mode': ('render_model_exporter', 'RenderModelExporter')
     }
     path_import = 'tag_reader.readers'
