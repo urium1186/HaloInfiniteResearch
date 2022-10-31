@@ -2,13 +2,15 @@ import codecs
 import json
 import pathlib
 
+from commons.logs import Log
 from configs.config import Config
 
 from tag_reader.readers.reader_factory import ReaderFactory
 from tag_reader.var_names import map_alt_name_id
 
-if __name__ == "__main__":
-    print('comienzo')
+
+def exportArmorCoatings():
+    Log.Print("inicio export cores coatings")
     dict_core = {
         'iron_eagle_spartan_style{ct}': "eag",
         'lone_wolves_spartan_style{ct}': "wlv",
@@ -35,7 +37,7 @@ if __name__ == "__main__":
                 parse_mwsy.default_style = i
                 parse_mwsy.toJson()
                 coat_file_name = dict_core[path.stem] + '____' + parse_mwsy.json_base['name']
-                #print('00000000:' + parse_mwsy.json_base['name'])
+                # print('00000000:' + parse_mwsy.json_base['name'])
                 if map_alt_name_id.keys().__contains__(coat_file_name):
                     coat_file_name = map_alt_name_id[coat_file_name]
                 else:
@@ -47,4 +49,8 @@ if __name__ == "__main__":
 
             f.close()
     # print("parse_mwsy")
-    print("fin")
+    Log.Print("fin export cores coatings")
+
+
+if __name__ == "__main__":
+    exportArmorCoatings()

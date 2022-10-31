@@ -65,6 +65,15 @@ class ObjCompressionInfo:
         self.scale = {}
 
 
+class AttachmentInfo:
+    def __init__(self):
+        self.node_index = -1
+        self.translation = (0, 0, 0)
+        self.rotation = (0, 0, 0)
+        self.scale = (1, 1, 1)
+        self.direction = (0, 0, 0)
+
+
 class ObjMesh:
     def __init__(self):
         self.LOD_render_data: [ObjLOD] = []
@@ -78,6 +87,7 @@ class ObjMesh:
         self.mesh_flags = {}
         self.vert_type: VertType = VertType.rigid
         self.index_buffer_type: IndexBufferType = IndexBufferType.DEFAULT
+        self.attachment_info: AttachmentInfo = None
 
     def generateFaceIndexOfLod(self, lod_index):
         return self.LOD_render_data[lod_index].generateFaceIndex(self.index_buffer_type)
@@ -114,7 +124,7 @@ class ObjLOD:
         self.weight_pairs = []
         self.mesh_container: ObjMesh = p_mesh
 
-    def generateFaceIndex(self, index_buffer_type):
+    def generateFaceIndex(self, index_buffer_type = IndexBufferType.triangle_list):
         self.faces = []
         if index_buffer_type == IndexBufferType.triangle_list:
             faces = {}

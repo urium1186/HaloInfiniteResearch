@@ -114,15 +114,17 @@ with open(saveTo, 'wb') as fw:
     fw.close()
 """
 exporter = ExporterFactory.create_exporter(parse_model) # ModelExporter(parse_model)
-json_filename_list = [Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-emile-a239-ki-0903655e.json',
-Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-carter-a259-k-0c240b9a.json',
-Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-catherine-b32-0903655e.json',
-Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-jorge-052-kit-0903655e.json',
-Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-jun-a266-kit-0903655e.json',
-Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-lone-wolf-0903655e.json',
-Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-space-station-0903655e.json',
-Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-spartan-djin-0903655e.json',
-Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-spartan-eklun-0903655e.json']
+json_filename_list = [
+    Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-emile-a239-ki-0903655e.json',
+    Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-carter-a259-k-0c240b9a.json',
+    Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-catherine-b32-0903655e.json',
+    Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-jorge-052-kit-0903655e.json',
+    Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-jun-a266-kit-0903655e.json',
+    Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-lone-wolf-0903655e.json',
+    Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-space-station-0903655e.json',
+    Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-spartan-djin-0903655e.json',
+    Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-spartan-eklun-0903655e.json'
+                      ]
 for json_filename in json_filename_list:
     exporter.exportByJson(json_filename)
 exit(0)

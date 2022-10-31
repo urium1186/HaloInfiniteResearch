@@ -4,7 +4,7 @@ import fbx
 import sys
 
 import numpy
-from fbx import FbxDeformer, FbxSkin, FbxCluster
+from fbx import FbxDeformer, FbxSkin, FbxCluster, FbxAMatrix
 
 from commons.common_utils import inSphere
 from commons.logs import Log
@@ -96,7 +96,7 @@ class FbxModel:
         for lod_i, lod in enumerate(submesh.LOD_render_data):
             lod.name = submesh.name + f"_lod_{lod_i}"
             self.count = self.count + 1
-            node, mesh = self.create_mesh(lod, submesh.index_buffer_type)
+            node, mesh = self.create_mesh(lod, submesh)
 
             if not mesh.GetLayer(0):
                 mesh.CreateLayer()
@@ -175,19 +175,36 @@ class FbxModel:
         lTransformMatrix.SetTRS(lT, lR, lS)
         return lTransformMatrix.MultNormalize(fbx.FbxVector4(x, y, z))
 
-    def create_mesh(self, lod_n: ObjLOD, index_buffer_type=IndexBufferType.triangle_list):
+    def create_mesh(self, lod_n: ObjLOD, subMesh: ObjMesh):
+
+        index_buffer_type = subMesh.index_buffer_type
         mesh = fbx.FbxMesh.Create(self.scene, lod_n.name)
-
-        lT = fbx.FbxVector4(0.0, 0.0, 0.0)
-        # lR = fbx.FbxVector4(0.0, 90.0, 0.0)
-        # lR = fbx.FbxVector4(-90.0, 180.0, 0.0)
-        lR = fbx.FbxVector4(0.0, 0.0, 0.0)
-        # lS = fbx.FbxVector4(254.0, 254.0, 254.0)
-        # lS = fbx.FbxVector4(25.4, 25.4, 25.4)
-        lS = fbx.FbxVector4(1.0, 1.0, 1.0)
-
         lTransformMatrix = fbx.FbxMatrix()
-        lTransformMatrix.SetTRS(lT, lR, lS)
+        if subMesh.attachment_info is not None:
+            if len(self.bones) == 0:
+                self.add_bones()
+            debug = True
+            vScl = self.scaleVector(subMesh.attachment_info.translation['x'], subMesh.attachment_info.translation['y'], subMesh.attachment_info.translation['z'], rot=0)
+            lT = fbx.FbxVector4(vScl)
+            # lR = fbx.FbxVector4(0.0, 90.0, 0.0)
+            # lR = fbx.FbxVector4(-90.0, 180.0, 0.0)
+            lR = fbx.FbxVector4(subMesh.attachment_info.rotation['x'], subMesh.attachment_info.rotation['y'], subMesh.attachment_info.rotation['z'])
+            # lS = fbx.FbxVector4(254.0, 254.0, 254.0)
+            # lS = fbx.FbxVector4(25.4, 25.4, 25.4)
+            lS = fbx.FbxVector4(subMesh.attachment_info.scale, subMesh.attachment_info.scale, subMesh.attachment_info.scale)
+
+            lTransformMatrix.SetTRS(lT, lR, lS)
+        else:
+            lT = fbx.FbxVector4(0.0, 0.0, 0.0)
+            # lR = fbx.FbxVector4(0.0, 90.0, 0.0)
+            # lR = fbx.FbxVector4(-90.0, 180.0, 0.0)
+            lR = fbx.FbxVector4(0.0, 0.0, 0.0)
+            # lS = fbx.FbxVector4(254.0, 254.0, 254.0)
+            # lS = fbx.FbxVector4(25.4, 25.4, 25.4)
+            lS = fbx.FbxVector4(1.0, 1.0, 1.0)
+
+
+            lTransformMatrix.SetTRS(lT, lR, lS)
 
         if not mesh.GetLayer(0):
             mesh.CreateLayer()
@@ -225,6 +242,32 @@ class FbxModel:
         # lod_group_attr.
         # lod_group_attr.
         node.SetNodeAttribute(mesh)
+        if subMesh.attachment_info is not None:
+            bone_cluster = self.getFbxCluster(subMesh.attachment_info.node_index)
+
+            lMatrix = fbx.FbxAMatrix()
+
+
+            lMatrix = bone_cluster.GetTransformLinkMatrix(lMatrix)
+            lMatrix1 = fbx.FbxMatrix(lMatrix)
+            tras = fbx.FbxVector4()
+            rota = fbx.FbxQuaternion()
+            pShearing = fbx.FbxVector4()
+            pScaling = fbx.FbxVector4()
+            pSign = 0.0
+
+            moved = lMatrix1 * lTransformMatrix
+            moved.GetElements(tras, rota, pShearing, pScaling)
+            #print("        Transform Translation: ", moved.GetT())
+            print("        Transform Translation: ",tras)
+            #print("        Transform Rotation: ", moved.GetR())
+            print("        Transform Rotation: ", rota)
+            #print("        Transform Scaling: ", moved.GetS())
+            print("        Transform Scaling: ", pScaling)
+            """"""
+            node.LclTranslation.Set(fbx.FbxDouble3(tras[0], tras[1], tras[2]))
+            #node.LclRotation.Set(fbx.FbxDouble3(lMatrix.GetR()[0], lMatrix.GetR()[1], lMatrix.GetR()[2]))
+            #node.LclScaling.Set(fbx.FbxDouble3(lMatrix.GetS()[0], lMatrix.GetS()[1], lMatrix.GetS()[2]))
         # node.SetNodeAttribute(lod_group_attr)
         # node.LclRotation.Set(fbx.FbxDouble3(0, 90, 0))
         return node, mesh

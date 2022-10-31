@@ -11,12 +11,15 @@ from commons.tag_group_extension_map import map_ext
 from configs.config import Config
 from exporters.model.biped_exporter import BipedExporter
 from exporters.model.exporter_factory import ExporterFactory
+from exporters.run_coating_export import exportArmorCoatings
 from tag_reader.readers.biped import Biped
 from tag_reader.readers.reader_factory import ReaderFactory
 from tag_reader.var_names import getMmr3HashFromInt, TAG_NAMES
 from ui.View import View
 from ui.dir_proxy import DirProxy
+from ui.gltriangle import TriangleGL
 from ui.multithread.worker import Worker
+from ui.opengl_example import Window
 from ui.views.list_obj_view import Ui_List_Obj_View
 from ui.views.simple_obj_view import Ui_GroupBox_View
 from ui.ui_main import Ui_MainWindow
@@ -74,6 +77,8 @@ class F_Ui_MainWindow(Ui_MainWindow):
         self.temp_widget = Ui_GroupBox_View()
         temp = QGroupBox()
         self.actionFrom_Json_Them.triggered["bool"].connect(self.actionFromJsonTheme)
+        self.actionCoatings.triggered["bool"].connect(self.actionExportCoatings)
+
         self.temp_widget.setupUi(temp, {"temp": "asdasd",
                                         "asdasd": 21321,
                                         "temp1": "asdasd",
@@ -91,7 +96,14 @@ class F_Ui_MainWindow(Ui_MainWindow):
         self.scrollArea.widget().layout().addWidget(frame2)
         #temp.layout().addWidget(frame2)
         #temp.layout().setWidget(10, QFormLayout.LabelRole, frame2)
+        temp = TriangleGL(self.openGLWidget)
+        #temp_parent = self.openGLWidget.parent()
+        #self.openGLWidget = Window(None,parent=temp_parent)
         Log.AddSubscribersForOnPrint(self.printInStatusBar)
+
+    def actionExportCoatings(self):
+        config = {}
+        self.execute_export_all_coating(config)
 
     def actionFromJsonTheme(self):
         fname = QFileDialog.getOpenFileName(self.parent(), 'Open file',
@@ -172,6 +184,10 @@ class F_Ui_MainWindow(Ui_MainWindow):
         parse.load()
         exporter = ExporterFactory.create_exporter(parse)
         exporter.export()
+
+    def execute_export_all_coating(self, config):
+        exportArmorCoatings()
+        pass
 
     def execute_export_from_json_theme(self, json_path):
         Log.Print(json_path)

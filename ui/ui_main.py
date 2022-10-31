@@ -16,10 +16,11 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
+from PySide6.QtOpenGLWidgets import QOpenGLWidget
 from PySide6.QtWidgets import (QApplication, QHBoxLayout, QHeaderView, QLineEdit,
     QMainWindow, QMenu, QMenuBar, QScrollArea,
-    QSizePolicy, QStatusBar, QTreeView, QVBoxLayout,
-    QWidget)
+    QSizePolicy, QStatusBar, QTabWidget, QTreeView,
+    QVBoxLayout, QWidget)
 
 class Ui_MainWindow(QObject):
     def setupUi(self, MainWindow):
@@ -53,19 +54,38 @@ class Ui_MainWindow(QObject):
 
         self.horizontalLayout.addLayout(self.verticalLayout_2)
 
-        self.scrollArea = QScrollArea(self.centralwidget)
+        self.tabWidget = QTabWidget(self.centralwidget)
+        self.tabWidget.setObjectName(u"tabWidget")
+        self.tab = QWidget()
+        self.tab.setObjectName(u"tab")
+        self.verticalLayout_3 = QVBoxLayout(self.tab)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.scrollArea = QScrollArea(self.tab)
         self.scrollArea.setObjectName(u"scrollArea")
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 516, 537))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 362, 490))
         self.verticalLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
-        self.horizontalLayout.addWidget(self.scrollArea)
+        self.verticalLayout_3.addWidget(self.scrollArea)
 
-        self.horizontalLayout.setStretch(1, 1)
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_2 = QWidget()
+        self.tab_2.setObjectName(u"tab_2")
+        self.verticalLayout_4 = QVBoxLayout(self.tab_2)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.openGLWidget = QOpenGLWidget(self.tab_2)
+        self.openGLWidget.setObjectName(u"openGLWidget")
+
+        self.verticalLayout_4.addWidget(self.openGLWidget)
+
+        self.tabWidget.addTab(self.tab_2, "")
+
+        self.horizontalLayout.addWidget(self.tabWidget)
+
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -92,6 +112,10 @@ class Ui_MainWindow(QObject):
         self.menuExports.addAction(self.actionFrom_Json_Them)
 
         self.retranslateUi(MainWindow)
+        self.actionFrom_Json_Them.triggered["bool"].connect(MainWindow.update)
+        self.actionCoatings.triggered["bool"].connect(MainWindow.update)
+
+        self.tabWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -103,6 +127,8 @@ class Ui_MainWindow(QObject):
         self.actionFrom_Json_Them.setText(QCoreApplication.translate("MainWindow", u"From Json Theme", None))
         self.actionOpen.setText(QCoreApplication.translate("MainWindow", u"Open", None))
         self.actionSetting.setText(QCoreApplication.translate("MainWindow", u"Setting", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Tab 1", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Tab 2", None))
         self.menuMenu.setTitle(QCoreApplication.translate("MainWindow", u"Menu", None))
         self.menuTools.setTitle(QCoreApplication.translate("MainWindow", u"Tools", None))
         self.menuExports.setTitle(QCoreApplication.translate("MainWindow", u"Exports", None))

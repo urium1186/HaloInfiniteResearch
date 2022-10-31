@@ -329,6 +329,16 @@ class TagRef(TagInstance):
         self.ref_id_center_int = struct.unpack('i', self.ref_id_center)[0]
         self.ref_id_center = self.ref_id_center.hex().upper()
         self.tagGroup = struct.unpack('4s', f.read(4))[0]
+
+        if self.ref_id_int == 801559339:
+            debug = True
+
+        if self.ref_id_sub_int == 801559339:
+            debug = True
+
+        if self.ref_id_center_int == 801559339:
+            debug = True
+
         if self.tagGroup != b'\xff\xff\xff\xff':
             self.tagGroupRev = self.tagGroup[::-1].decode("utf-8")
         self.local_handle = f.read(4).hex().upper()

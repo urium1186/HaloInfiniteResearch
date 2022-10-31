@@ -4,6 +4,14 @@ class Chunk:
         self.len = p_len
         self.data = p_data
 
+
+class RegionData:
+    def __init__(self):
+        self.region_id = -1
+        self.permutation_id = -1
+        self.style_id_override = -1
+
+
 class Event(object):
 
     def __init__(self):
