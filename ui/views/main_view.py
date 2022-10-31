@@ -19,7 +19,7 @@ from ui.View import View
 from ui.dir_proxy import DirProxy
 from ui.gltriangle import TriangleGL
 from ui.multithread.worker import Worker
-from ui.opengl_example import Window
+from ui.opengl_example import  GlWindow
 from ui.views.list_obj_view import Ui_List_Obj_View
 from ui.views.simple_obj_view import Ui_GroupBox_View
 from ui.ui_main import Ui_MainWindow
@@ -96,8 +96,11 @@ class F_Ui_MainWindow(Ui_MainWindow):
         self.scrollArea.widget().layout().addWidget(frame2)
         #temp.layout().addWidget(frame2)
         #temp.layout().setWidget(10, QFormLayout.LabelRole, frame2)
-        temp = TriangleGL(self.openGLWidget)
-        #temp_parent = self.openGLWidget.parent()
+        temp_parent = self.openGLWidget.parent()
+        #temp = TriangleGL(temp_parent)
+        temp = GlWindow(None)
+        self.openGLWidget.setParent(None)
+        temp_parent.layout().addWidget(temp)
         #self.openGLWidget = Window(None,parent=temp_parent)
         Log.AddSubscribersForOnPrint(self.printInStatusBar)
 

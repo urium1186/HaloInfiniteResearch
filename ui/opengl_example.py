@@ -39,7 +39,7 @@ except ImportError:
     sys.exit(1)
 
 
-class Window(QWidget):
+class GlWindow(QWidget):
     def __init__(self, transparent, parent=None):
         QWidget.__init__(self, parent)
 
@@ -88,7 +88,7 @@ class Window(QWidget):
         if event.key() == Qt.Key_Escape:
             self.close()
         else:
-            super(Window, self).keyPressEvent(event)
+            super(GlWindow, self).keyPressEvent(event)
 
 
 class Logo():
@@ -461,7 +461,7 @@ if __name__ == '__main__':
         fmt.setVersion(3, 2)
         fmt.setProfile(QSurfaceFormat.CoreProfile)
     QSurfaceFormat.setDefaultFormat(fmt)
-    main_window = Window(options.transparent)
+    main_window = GlWindow(options.transparent)
     main_window.resize(main_window.sizeHint())
     main_window.show()
 
