@@ -104,21 +104,23 @@ class Logo():
         y3 = +0.00
         x4 = +0.30
         y4 = +0.22
-
-        filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
+        #getVariantsMeshList
+        filename = 'objects\\characters\\spartan_armor\\spartan_armor.model'
         parse_model = ReaderFactory().create_reader(filename)
         parse_model.load()
         exporter = ExporterFactory.create_exporter(parse_model)
         t_r_d = RegionData()
         t_r_d.region_id = -436735957
         t_r_d.permutation_id = 1211706527
-        m_l = exporter.getMeshListByRegionPermutation(t_r_d)
-        face_list = m_l[0].LOD_render_data[0].generateFaceIndex()
-        for face in face_list:
-            v1 = m_l[0].LOD_render_data[0].vert_pos[face[0]]
-            v2 = m_l[0].LOD_render_data[0].vert_pos[face[1]]
-            v3 = m_l[0].LOD_render_data[0].vert_pos[face[2]]
-            self.tri(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2],  v3[0], v3[1], v3[2])
+
+        m_l = exporter.getVariantsMeshList(['1F4FD213'])['1F4FD213']
+        for mesh in m_l:
+            face_list = mesh.LOD_render_data[0].generateFaceIndex()
+            for face in face_list:
+                v1 = mesh.LOD_render_data[0].vert_pos[face[0]]
+                v2 = mesh.LOD_render_data[0].vert_pos[face[1]]
+                v3 = mesh.LOD_render_data[0].vert_pos[face[2]]
+                self.tri(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2],  v3[0], v3[1], v3[2])
         #self.quad(x1, y1, x2, y2, y2, x2, y1, x1)
         #self.quad(x3, y3, x4, y4, y4, x4, y3, x3)
 
