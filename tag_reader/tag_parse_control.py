@@ -33,6 +33,18 @@ class TagParseControl:
         self.hasFunction = 0
         self.byte_stream = None
 
+    def __getstate__(self):
+        state = self.__dict__.copy()
+        # Don't pickle baz
+        del state["f"]
+        return state
+
+    def __setstate__(self, state):
+        self.__dict__.update(state)
+        # Add baz back since it doesn't exist in the pickle
+        self.f = None
+
+
     def reset(self):
         self.tag = None
         self.f: BinaryIO = None
@@ -46,7 +58,7 @@ class TagParseControl:
         try:
             with open(self.filename, 'rb') as self.f:
                 if Config.VERBOSE:
-                    print(f"Reading {self.filename} ")
+                    Log.Print(f"Reading {self.filename} ")
                 self.full_header.readIn(self.f)
                 analizarCabecera(self.full_header)
                 if self.tagLayout is None:
@@ -58,7 +70,7 @@ class TagParseControl:
                 self.readTagsAndCreateInstances(self.rootTagInst)
                 self.f.close()
                 if Config.VERBOSE:
-                    print(f"Read end in {self.filename} ")
+                    Log.Print(f"Read end in {self.filename} ")
                 if self.hasFunction == 0:
                     assert self.full_header.file_header.data_reference_count == 0
                 else:
@@ -66,7 +78,7 @@ class TagParseControl:
                     assert self.hasFunction == self.full_header.file_header.data_reference_count
         except FileNotFoundError as e:
             if Config.VERBOSE:
-                print(f"Can not read file {self.filename} not found. Exception {e.__class__} {e.args}")
+                Log.Print(f"Can not read file {self.filename} not found. Exception {e.__class__} {e.args}")
 
     def hasTagBlock(self, tagDefinitions) -> bool:
         for entry in tagDefinitions:
@@ -82,7 +94,7 @@ class TagParseControl:
                 self.f = open(self.filename, 'rb')
 
             if Config.VERBOSE:
-                print(f"Reading {self.filename} name path {name_path} ")
+                Log.Print(f"Reading {self.filename} name path {name_path} ")
             self.full_header.readInOnlyHeader(self.f)
             if self.tagLayout is None:
                 self.tagLayout = TagLayouts.Tags(self.tagLayoutTemplate)
@@ -97,7 +109,7 @@ class TagParseControl:
 
         except FileNotFoundError as e:
             if Config.VERBOSE:
-                print(f"Can not read file {self.filename} not found. Exception {e.__class__} {e.args}")
+                Log.Print(f"Can not read file {self.filename} not found. Exception {e.__class__} {e.args}")
 
     def readTagDefinitionSelfAddress(self, parent, parcial_address=0, f=None, ref_it={'i': 0, 'f': 0, 'r': 0}):
         tagInstanceTemp = {}
@@ -307,7 +319,7 @@ class TagParseControl:
                 assert entry.type_id_tg == TagStructType.Tagblock, f'Coinciden en tipo Tagblock in {self.filename},  {instance_parent.tagDef.N}, {tag_child_inst.tagDef.N}'
                 if entry.unknown_property_bool_0_1 == 1:
                     debug = True
-                    assert self.full_header.file_header.section_2_size != 0 or self.full_header.file_header.section_3_size != 0
+                    #assert self.full_header.file_header.section_2_size != 0 or self.full_header.file_header.section_3_size != 0
             tag_child_inst.content_entry = entry
             tag_child_inst.parent = instance_parent
             self.readTagsAndCreateInstances(tag_child_inst)

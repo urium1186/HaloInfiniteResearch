@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="test_tag_definition" item_name_2="test_tag_definition" db1="2704" db2="0" db3="0" db4="0" db5="1" db6="0" db7="2688" db8="1299">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="test_tag_definition" item_name_2="test_tag_definition" db1="2936" db2="0" db3="0" db4="0" db5="1" db6="0" db7="2920" db8="1299">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -76,8 +76,6 @@
 	<_1E v="plane 3d" />
 	<_1F v="real rgb color" />
 	<_20 v="real argb color" />
-	<_21 v="real hsv color" />
-	<_22 v="real ahsv color" />
 	<_23 v="short bounds" />
 	<_24 v="angle bounds" />
 	<_25 v="real bounds" />
@@ -100,6 +98,7 @@
 	<_2F v="short block index custom" />
 	<_31 v="long block index custom" />
 	<_42 v="data" />
+	<_44 v="data path" />
 	<_36 v="explanation" />
 	<_38 v="basic struct" item_name_1="s_basic_struct" item_name_2="s_basic_struct" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 		<_6 v="long in struct" />
@@ -123,10 +122,6 @@
 		<_6 v="long in array" />
 		<_3B v="" />
 	</_39>
-	<_43 v="basic resource" item_name_1="s_basic_resource" item_name_2="s_basic_resource" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-		<_6 v="long in resource" />
-		<_3B v="" />
-	</_43>
 	<_40 v="block with struct" item_name_1="s_block_with_struct" item_name_2="s_block_with_struct" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 		<_38 v="struct in block" item_name_1="s_basic_struct" item_name_2="s_basic_struct" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="long in struct" />
@@ -697,5 +692,14 @@
 		</_40>
 		<_3B v="" />
 	</_38>
+	<_40 v="taggraph structs" item_name_1="s_struct_with_taggraph_attributes" item_name_2="s_struct_with_taggraph_attributes" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+		<_14 v="aFloat" />
+		<_14 v="aDifferentlyNamedFloat" />
+		<_38 v="anEmbeddedStruct" item_name_1="s_simple_embedded_taggraph_struct" item_name_2="s_simple_embedded_taggraph_struct" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_14 v="sensibleFloatName" />
+			<_3B v="" />
+		</_38>
+		<_3B v="" />
+	</_40>
 	<_3B v="" />
 </root>

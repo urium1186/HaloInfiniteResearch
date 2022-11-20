@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="DynamicWorldStateGlobals" item_name_2="DynamicWorldStateGlobals" db1="6832" db2="0" db3="0" db4="0" db5="1" db6="0" db7="6816" db8="3383">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="DynamicWorldStateGlobals" item_name_2="DynamicWorldStateGlobals" db1="6592" db2="0" db3="0" db4="0" db5="1" db6="0" db7="6576" db8="3383">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -24,7 +24,7 @@
 		<_14 v="Volume Poll Time" />
 		<_3B v="" />
 	</_38>
-	<_38 v="Global State" item_name_1="StateDefinition" item_name_2="StateDefinition" db1="6748" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
+	<_38 v="Global State" item_name_1="StateDefinition" item_name_2="StateDefinition" db1="6508" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
 		<_D v="Flags">
 			<Flag v="Override Sun" />
 			<Flag v="Has Multiple Suns" />
@@ -73,7 +73,7 @@
 			<_14 v="Size" />
 			<_3B v="" />
 		</_40>
-		<_38 v="Dynamic Sky" item_name_1="DynamicSkyDefinition" item_name_2="DynamicSkyDefinition" db1="228" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+		<_38 v="Dynamic Sky" item_name_1="DynamicSkyDefinition" item_name_2="DynamicSkyDefinition" db1="236" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 			<_D v="Flags">
 				<Flag v="Override Sky Color" />
 				<Flag v="Override Sky Intensity" />
@@ -97,6 +97,8 @@
 				<Flag v="Override Master Scalar Near Distance" />
 				<Flag v="Override Master Scalar Far" />
 				<Flag v="Override Master Scalar Far Distance" />
+				<Flag v="Override Probe Region Fade Max Angle" />
+				<Flag v="Override Probe Region Fade Min Angle" />
 			</_D>
 			<_1F v="Static Tint" />
 			<_14 v="Static Tint Intensity" />
@@ -120,6 +122,8 @@
 			<_14 v="Indirect Lighting Master Scalar Near Distance" />
 			<_14 v="Indirect Lighting Master Scalar Far" />
 			<_14 v="Indirect Lighting Master Scalar Far Distance" />
+			<_14 v="Probe Region Fade Min Angle" />
+			<_14 v="Probe Region Fade Max Angle" />
 			<_38 v="Probe Set 0" item_name_1="DynamicProbeDefinition" item_name_2="DynamicProbeDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_F v="Flags">
 					<Flag v="Override Probe Scalar" />
@@ -235,7 +239,7 @@
 			<_14 v="Cubemap Max Count" />
 			<_3B v="" />
 		</_38>
-		<_38 v="Dynamic Camera FX" item_name_1="DynamicCameraFXDefinition" item_name_2="DynamicCameraFXDefinition" db1="1120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
+		<_38 v="Dynamic Camera FX" item_name_1="DynamicCameraFXDefinition" item_name_2="DynamicCameraFXDefinition" db1="1040" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
 			<_E v="Flags">
 				<Flag v="Override Camera Exposure" />
 				<Flag v="Override Bloom" />
@@ -492,7 +496,7 @@
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_38 v="Self Illum" item_name_1="SelfIllumParameterDefinition" item_name_2="SelfIllumParameterDefinition" db1="96" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+			<_38 v="Self Illum" item_name_1="SelfIllumParameterDefinition" item_name_2="SelfIllumParameterDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 				<_E v="Flags">
 					<Flag v="Override Exposure Flags" />
 					<Flag v="Override Exposure" />
@@ -537,78 +541,6 @@
 					</_E>
 					<_34 v="generated_pad5a4a" length="2" />
 					<_14 v="exposure change" />
-					<_14 v="maximum change" />
-					<_14 v="blend speed (0-1)" />
-					<_3B v="" />
-				</_38>
-				<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (UNSC)" />
-				<_38 v="Scale Unsc" item_name_1="SelfIllumScaleUnscParameterDefinition" item_name_2="SelfIllumScaleUnscParameterDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-					<_F v="Flags">
-						<Flag v="Override Flags" />
-						<Flag v="Override Value" />
-						<Flag v="Override Max Change" />
-						<Flag v="Override Blend Speed" />
-					</_F>
-					<_34 v="generated_pad0718" length="3" />
-					<_E v="flags">
-						<Flag v="use default (ignore these values)" />
-						<Flag v="maximum change is relative" />
-						<Flag v="(unused)" />
-						<Flag v="bit3" />
-						<Flag v="fixed" />
-						<Flag v="(unused2)" />
-						<Flag v="fixed2" />
-					</_E>
-					<_34 v="generated_pad7166" length="2" />
-					<_14 v="parameter value" />
-					<_14 v="maximum change" />
-					<_14 v="blend speed (0-1)" />
-					<_3B v="" />
-				</_38>
-				<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Covenant)" />
-				<_38 v="Scale Covenant" item_name_1="SelfIllumScaleCovenantParameterDefinition" item_name_2="SelfIllumScaleCovenantParameterDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-					<_F v="Flags">
-						<Flag v="Override Flags" />
-						<Flag v="Override Value" />
-						<Flag v="Override Max Change" />
-						<Flag v="Override Blend Speed" />
-					</_F>
-					<_34 v="generated_pad9d65" length="3" />
-					<_E v="flags">
-						<Flag v="use default (ignore these values)" />
-						<Flag v="maximum change is relative" />
-						<Flag v="(unused)" />
-						<Flag v="bit3" />
-						<Flag v="fixed" />
-						<Flag v="(unused2)" />
-						<Flag v="fixed2" />
-					</_E>
-					<_34 v="generated_pad7166" length="2" />
-					<_14 v="parameter value" />
-					<_14 v="maximum change" />
-					<_14 v="blend speed (0-1)" />
-					<_3B v="" />
-				</_38>
-				<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Forerunner)" />
-				<_38 v="Scale Forerunner" item_name_1="SelfIllumScaleForerunnerParameterDefinition" item_name_2="SelfIllumScaleForerunnerParameterDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-					<_F v="Flags">
-						<Flag v="Override Flags" />
-						<Flag v="Override Value" />
-						<Flag v="Override Max Change" />
-						<Flag v="Override Blend Speed" />
-					</_F>
-					<_34 v="generated_padf24d" length="3" />
-					<_E v="flags">
-						<Flag v="use default (ignore these values)" />
-						<Flag v="maximum change is relative" />
-						<Flag v="(unused)" />
-						<Flag v="bit3" />
-						<Flag v="fixed" />
-						<Flag v="(unused2)" />
-						<Flag v="fixed2" />
-					</_E>
-					<_34 v="generated_pad7166" length="2" />
-					<_14 v="parameter value" />
 					<_14 v="maximum change" />
 					<_14 v="blend speed (0-1)" />
 					<_3B v="" />
@@ -660,7 +592,7 @@
 				<_14 v="Gain Luma" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Deferred Reflections" item_name_1="DeferredReflectionsParameterDefinition" item_name_2="DeferredReflectionsParameterDefinition" db1="172" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Deferred Reflections" item_name_1="DeferredReflectionsParameterDefinition" item_name_2="DeferredReflectionsParameterDefinition" db1="164" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_D v="Flags">
 					<Flag v="Override Flags" />
 					<Flag v="Override Deferred Reflection Flags" />
@@ -679,7 +611,7 @@
 					<Flag v="Override Resolution" />
 					<Flag v="Override SSR Enabled" />
 				</_D>
-				<_38 v="Parameters" item_name_1="camera_fx_settings::DeferredReflectionsParameter" item_name_2="camera_fx_settings::DeferredReflectionsParameter" db1="168" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="Parameters" item_name_1="camera_fx_settings::DeferredReflectionsParameter" item_name_2="camera_fx_settings::DeferredReflectionsParameter" db1="160" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_36 v="Deferred Reflections settings" />
 					<_E v="flags">
 						<Flag v="use default (ignore these values)" />
@@ -699,7 +631,7 @@
 					<_14 v="Intensity First Person" />
 					<_14 v="Fade to Cubemap" />
 					<_14 v="Border Fade Size" />
-					<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_A v="Type">
 							<Flag v="Default" />
 							<Flag v="Sync" />
@@ -732,7 +664,6 @@
 							<Flag v="Override Input" />
 						</_D>
 						<_6 v="Input" />
-						<_14 v="Very Low" />
 						<_14 v="Low" />
 						<_14 v="Medium" />
 						<_14 v="High" />
@@ -755,7 +686,7 @@
 					<_14 v="SSR Roughness Threshold" />
 					<_14 v="SSR Tonemap Strength" />
 					<_14 v="SSR Tonemap Clamp" />
-					<_38 v="Resolution" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Resolution" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_A v="Type">
 							<Flag v="Default" />
 							<Flag v="Sync" />
@@ -788,7 +719,6 @@
 							<Flag v="Override Input" />
 						</_D>
 						<_14 v="Input" />
-						<_14 v="Very Low" />
 						<_14 v="Low" />
 						<_14 v="Medium" />
 						<_14 v="High" />
@@ -961,7 +891,7 @@
 				</_38>
 				<_3B v="" />
 			</_38>
-			<_38 v="Contact Shadows" item_name_1="ContactShadowsParameterDefinition" item_name_2="ContactShadowsParameterDefinition" db1="376" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Contact Shadows" item_name_1="ContactShadowsParameterDefinition" item_name_2="ContactShadowsParameterDefinition" db1="364" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_D v="Flags">
 					<Flag v="Override Flags" />
 					<Flag v="Override Enabled" />
@@ -992,7 +922,7 @@
 					<Flag v="Override FOV Slope Near Bias Scalar" />
 					<Flag v="Override Per-Spec Near Bias Scalar" />
 				</_D>
-				<_38 v="Parameters" item_name_1="camera_fx_settings::ContactShadowsParameter" item_name_2="camera_fx_settings::ContactShadowsParameter" db1="372" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="Parameters" item_name_1="camera_fx_settings::ContactShadowsParameter" item_name_2="camera_fx_settings::ContactShadowsParameter" db1="360" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_36 v="Sun Contact Shadow Settings" />
 					<_E v="flags">
 						<Flag v="use default (ignore these values)" />
@@ -1037,7 +967,6 @@
 						</_A>
 						<_34 v="generated_padfbf4" length="1" />
 						<_E v="Flags">
-							<Flag v="Very Low" />
 							<Flag v="Low" />
 							<Flag v="Medium" />
 							<Flag v="High" />
@@ -1045,7 +974,7 @@
 						</_E>
 						<_3B v="" />
 					</_38>
-					<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_A v="Type">
 							<Flag v="Default" />
 							<Flag v="Sync" />
@@ -1078,7 +1007,6 @@
 							<Flag v="Override Input" />
 						</_D>
 						<_6 v="Input" />
-						<_14 v="Very Low" />
 						<_14 v="Low" />
 						<_14 v="Medium" />
 						<_14 v="High" />
@@ -1095,7 +1023,7 @@
 						<_3B v="" />
 					</_38>
 					<_14 v="Ray Steps First Person Scalar" />
-					<_38 v="Maximum Shadow Ray Length" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Maximum Shadow Ray Length" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_A v="Type">
 							<Flag v="Default" />
 							<Flag v="Sync" />
@@ -1128,7 +1056,6 @@
 							<Flag v="Override Input" />
 						</_D>
 						<_14 v="Input" />
-						<_14 v="Very Low" />
 						<_14 v="Low" />
 						<_14 v="Medium" />
 						<_14 v="High" />
@@ -1145,7 +1072,7 @@
 						<_3B v="" />
 					</_38>
 					<_14 v="Maximum Shadow Ray Length First Person Scalar" />
-					<_38 v="Ray Pixel Stride" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+					<_38 v="Ray Pixel Stride" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_A v="Type">
 							<Flag v="Default" />
 							<Flag v="Sync" />
@@ -1178,7 +1105,6 @@
 							<Flag v="Override Input" />
 						</_D>
 						<_14 v="Input" />
-						<_14 v="Very Low" />
 						<_14 v="Low" />
 						<_14 v="Medium" />
 						<_14 v="High" />
@@ -2584,7 +2510,7 @@
 			</_38>
 			<_3B v="" />
 		</_38>
-		<_38 v="Dynamic Sun Shadow" item_name_1="DynamicSunShadowDefinition" item_name_2="DynamicSunShadowDefinition" db1="3176" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2323">
+		<_38 v="Dynamic Sun Shadow" item_name_1="DynamicSunShadowDefinition" item_name_2="DynamicSunShadowDefinition" db1="3008" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2323">
 			<_D v="Flags">
 				<Flag v="Override Max Shadow Count Scale" />
 				<Flag v="Override Floating Shadow Quality" />
@@ -2601,15 +2527,7 @@
 			</_D>
 			<_14 v="Max Shadow Count Scale" />
 			<_37 v="Floating Shadows Settings" />
-			<_38 v="Floating Shadow Quality" item_name_1="SpecControlNodeShadowQuality" item_name_2="SpecControlNodeShadowQuality" db1="5" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-				<_A v="Very Low">
-					<Flag v="8 tap" />
-					<Flag v="12 tap" />
-					<Flag v="6 tap" />
-					<Flag v="PCSS Low Quality" />
-					<Flag v="PCSS Medium Quality" />
-					<Flag v="PCSS High Quality" />
-				</_A>
+			<_38 v="Floating Shadow Quality" item_name_1="SpecControlNodeShadowQuality" item_name_2="SpecControlNodeShadowQuality" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_A v="Low">
 					<Flag v="8 tap" />
 					<Flag v="12 tap" />
@@ -2648,7 +2566,7 @@
 				<Flag v="No Shadow" />
 				<Flag v="Apply Everywhere" />
 			</_A>
-			<_34 v="generated_pad1856" length="2" />
+			<_34 v="generated_pad1856" length="3" />
 			<_14 v="Cascade Overlap" />
 			<_14 v="Min Shadow Caster Pixel Radius" />
 			<_37 v="PCSS Settings" />
@@ -2714,7 +2632,7 @@
 				<_3B v="" />
 			</_38>
 			<_34 v="generated_pad650b" length="3" />
-			<_38 v="Frustum 1" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Frustum 1" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_37 v="CASCADE" />
 				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
@@ -2776,7 +2694,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2809,7 +2727,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -2825,7 +2742,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -2859,7 +2776,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3060,7 +2976,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3093,7 +3009,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3109,7 +3024,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3142,7 +3057,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3158,7 +3072,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3192,7 +3106,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3208,7 +3121,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3242,7 +3155,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3258,7 +3170,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3292,7 +3204,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3370,7 +3281,7 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Frustum 2" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Frustum 2" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_37 v="CASCADE" />
 				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
@@ -3432,7 +3343,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3465,7 +3376,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3481,7 +3391,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3515,7 +3425,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3716,7 +3625,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3749,7 +3658,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3765,7 +3673,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3798,7 +3706,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3814,7 +3721,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3848,7 +3755,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3864,7 +3770,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3898,7 +3804,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -3914,7 +3819,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -3948,7 +3853,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -4026,7 +3930,7 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Frustum 3" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Frustum 3" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_37 v="CASCADE" />
 				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
@@ -4088,7 +3992,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4121,7 +4025,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -4137,7 +4040,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4171,7 +4074,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -4372,7 +4274,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4405,7 +4307,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -4421,7 +4322,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4454,7 +4355,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -4470,7 +4370,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4504,7 +4404,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -4520,7 +4419,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4554,7 +4453,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -4570,7 +4468,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4604,7 +4502,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -4682,7 +4579,7 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Frustum 4" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Frustum 4" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_37 v="CASCADE" />
 				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
@@ -4744,7 +4641,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4777,7 +4674,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -4793,7 +4689,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -4827,7 +4723,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5028,7 +4923,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5061,7 +4956,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5077,7 +4971,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5110,7 +5004,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5126,7 +5019,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5160,7 +5053,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5176,7 +5068,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5210,7 +5102,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5226,7 +5117,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5260,7 +5151,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5338,7 +5228,7 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Frustum 5" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Frustum 5" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_37 v="CASCADE" />
 				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
@@ -5400,7 +5290,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5433,7 +5323,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5449,7 +5338,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5483,7 +5372,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5684,7 +5572,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5717,7 +5605,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5733,7 +5620,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5766,7 +5653,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5782,7 +5668,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5816,7 +5702,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5832,7 +5717,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5866,7 +5751,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5882,7 +5766,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -5916,7 +5800,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -5994,7 +5877,7 @@
 				<_37 v="" />
 				<_3B v="" />
 			</_38>
-			<_38 v="Frustum 6" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+			<_38 v="Frustum 6" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 				<_37 v="CASCADE" />
 				<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_A v="Type">
@@ -6056,7 +5939,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="bias" />
-				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -6089,7 +5972,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -6105,7 +5987,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -6139,7 +6021,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -6340,7 +6221,7 @@
 					<_3B v="" />
 				</_38>
 				<_14 v="Interpolation occluder search step" />
-				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -6373,7 +6254,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -6389,7 +6269,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -6422,7 +6302,6 @@
 						<Flag v="Override Input" />
 					</_D>
 					<_14 v="Input" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -6438,7 +6317,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -6472,7 +6351,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -6488,7 +6366,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -6522,7 +6400,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -6538,7 +6415,7 @@
 					<_14 v="4 Player Splitscreen" />
 					<_3B v="" />
 				</_38>
-				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+				<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 					<_A v="Type">
 						<Flag v="Default" />
 						<Flag v="Sync" />
@@ -6572,7 +6449,6 @@
 					</_D>
 					<_5 v="Input" />
 					<_34 v="generated_pad21dd" length="2" />
-					<_14 v="Very Low" />
 					<_14 v="Low" />
 					<_14 v="Medium" />
 					<_14 v="High" />
@@ -6778,10 +6654,10 @@
 		</_A>
 		<_34 v="generated_pad8aff" length="2" />
 		<_6 v="Number of Runs" />
-		<_40 v="States" item_name_1="LocalStateDefinition" item_name_2="LocalStateDefinition" db1="6760" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
+		<_40 v="States" item_name_1="LocalStateDefinition" item_name_2="LocalStateDefinition" db1="6520" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
 			<_6 v="Guid" />
 			<_2 v="Name" />
-			<_38 v="State" item_name_1="StateDefinition" item_name_2="StateDefinition" db1="6748" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
+			<_38 v="State" item_name_1="StateDefinition" item_name_2="StateDefinition" db1="6508" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
 				<_D v="Flags">
 					<Flag v="Override Sun" />
 					<Flag v="Has Multiple Suns" />
@@ -6830,7 +6706,7 @@
 					<_14 v="Size" />
 					<_3B v="" />
 				</_40>
-				<_38 v="Dynamic Sky" item_name_1="DynamicSkyDefinition" item_name_2="DynamicSkyDefinition" db1="228" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+				<_38 v="Dynamic Sky" item_name_1="DynamicSkyDefinition" item_name_2="DynamicSkyDefinition" db1="236" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 					<_D v="Flags">
 						<Flag v="Override Sky Color" />
 						<Flag v="Override Sky Intensity" />
@@ -6854,6 +6730,8 @@
 						<Flag v="Override Master Scalar Near Distance" />
 						<Flag v="Override Master Scalar Far" />
 						<Flag v="Override Master Scalar Far Distance" />
+						<Flag v="Override Probe Region Fade Max Angle" />
+						<Flag v="Override Probe Region Fade Min Angle" />
 					</_D>
 					<_1F v="Static Tint" />
 					<_14 v="Static Tint Intensity" />
@@ -6877,6 +6755,8 @@
 					<_14 v="Indirect Lighting Master Scalar Near Distance" />
 					<_14 v="Indirect Lighting Master Scalar Far" />
 					<_14 v="Indirect Lighting Master Scalar Far Distance" />
+					<_14 v="Probe Region Fade Min Angle" />
+					<_14 v="Probe Region Fade Max Angle" />
 					<_38 v="Probe Set 0" item_name_1="DynamicProbeDefinition" item_name_2="DynamicProbeDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_F v="Flags">
 							<Flag v="Override Probe Scalar" />
@@ -6992,7 +6872,7 @@
 					<_14 v="Cubemap Max Count" />
 					<_3B v="" />
 				</_38>
-				<_38 v="Dynamic Camera FX" item_name_1="DynamicCameraFXDefinition" item_name_2="DynamicCameraFXDefinition" db1="1120" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
+				<_38 v="Dynamic Camera FX" item_name_1="DynamicCameraFXDefinition" item_name_2="DynamicCameraFXDefinition" db1="1040" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
 					<_E v="Flags">
 						<Flag v="Override Camera Exposure" />
 						<Flag v="Override Bloom" />
@@ -7249,7 +7129,7 @@
 						</_38>
 						<_3B v="" />
 					</_38>
-					<_38 v="Self Illum" item_name_1="SelfIllumParameterDefinition" item_name_2="SelfIllumParameterDefinition" db1="96" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+					<_38 v="Self Illum" item_name_1="SelfIllumParameterDefinition" item_name_2="SelfIllumParameterDefinition" db1="36" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
 						<_E v="Flags">
 							<Flag v="Override Exposure Flags" />
 							<Flag v="Override Exposure" />
@@ -7294,78 +7174,6 @@
 							</_E>
 							<_34 v="generated_pad5a4a" length="2" />
 							<_14 v="exposure change" />
-							<_14 v="maximum change" />
-							<_14 v="blend speed (0-1)" />
-							<_3B v="" />
-						</_38>
-						<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (UNSC)" />
-						<_38 v="Scale Unsc" item_name_1="SelfIllumScaleUnscParameterDefinition" item_name_2="SelfIllumScaleUnscParameterDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_F v="Flags">
-								<Flag v="Override Flags" />
-								<Flag v="Override Value" />
-								<Flag v="Override Max Change" />
-								<Flag v="Override Blend Speed" />
-							</_F>
-							<_34 v="generated_pad0718" length="3" />
-							<_E v="flags">
-								<Flag v="use default (ignore these values)" />
-								<Flag v="maximum change is relative" />
-								<Flag v="(unused)" />
-								<Flag v="bit3" />
-								<Flag v="fixed" />
-								<Flag v="(unused2)" />
-								<Flag v="fixed2" />
-							</_E>
-							<_34 v="generated_pad7166" length="2" />
-							<_14 v="parameter value" />
-							<_14 v="maximum change" />
-							<_14 v="blend speed (0-1)" />
-							<_3B v="" />
-						</_38>
-						<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Covenant)" />
-						<_38 v="Scale Covenant" item_name_1="SelfIllumScaleCovenantParameterDefinition" item_name_2="SelfIllumScaleCovenantParameterDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_F v="Flags">
-								<Flag v="Override Flags" />
-								<Flag v="Override Value" />
-								<Flag v="Override Max Change" />
-								<Flag v="Override Blend Speed" />
-							</_F>
-							<_34 v="generated_pad9d65" length="3" />
-							<_E v="flags">
-								<Flag v="use default (ignore these values)" />
-								<Flag v="maximum change is relative" />
-								<Flag v="(unused)" />
-								<Flag v="bit3" />
-								<Flag v="fixed" />
-								<Flag v="(unused2)" />
-								<Flag v="fixed2" />
-							</_E>
-							<_34 v="generated_pad7166" length="2" />
-							<_14 v="parameter value" />
-							<_14 v="maximum change" />
-							<_14 v="blend speed (0-1)" />
-							<_3B v="" />
-						</_38>
-						<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Forerunner)" />
-						<_38 v="Scale Forerunner" item_name_1="SelfIllumScaleForerunnerParameterDefinition" item_name_2="SelfIllumScaleForerunnerParameterDefinition" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-							<_F v="Flags">
-								<Flag v="Override Flags" />
-								<Flag v="Override Value" />
-								<Flag v="Override Max Change" />
-								<Flag v="Override Blend Speed" />
-							</_F>
-							<_34 v="generated_padf24d" length="3" />
-							<_E v="flags">
-								<Flag v="use default (ignore these values)" />
-								<Flag v="maximum change is relative" />
-								<Flag v="(unused)" />
-								<Flag v="bit3" />
-								<Flag v="fixed" />
-								<Flag v="(unused2)" />
-								<Flag v="fixed2" />
-							</_E>
-							<_34 v="generated_pad7166" length="2" />
-							<_14 v="parameter value" />
 							<_14 v="maximum change" />
 							<_14 v="blend speed (0-1)" />
 							<_3B v="" />
@@ -7417,7 +7225,7 @@
 						<_14 v="Gain Luma" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Deferred Reflections" item_name_1="DeferredReflectionsParameterDefinition" item_name_2="DeferredReflectionsParameterDefinition" db1="172" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+					<_38 v="Deferred Reflections" item_name_1="DeferredReflectionsParameterDefinition" item_name_2="DeferredReflectionsParameterDefinition" db1="164" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 						<_D v="Flags">
 							<Flag v="Override Flags" />
 							<Flag v="Override Deferred Reflection Flags" />
@@ -7436,7 +7244,7 @@
 							<Flag v="Override Resolution" />
 							<Flag v="Override SSR Enabled" />
 						</_D>
-						<_38 v="Parameters" item_name_1="camera_fx_settings::DeferredReflectionsParameter" item_name_2="camera_fx_settings::DeferredReflectionsParameter" db1="168" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+						<_38 v="Parameters" item_name_1="camera_fx_settings::DeferredReflectionsParameter" item_name_2="camera_fx_settings::DeferredReflectionsParameter" db1="160" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 							<_36 v="Deferred Reflections settings" />
 							<_E v="flags">
 								<Flag v="use default (ignore these values)" />
@@ -7456,7 +7264,7 @@
 							<_14 v="Intensity First Person" />
 							<_14 v="Fade to Cubemap" />
 							<_14 v="Border Fade Size" />
-							<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+							<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 								<_A v="Type">
 									<Flag v="Default" />
 									<Flag v="Sync" />
@@ -7489,7 +7297,6 @@
 									<Flag v="Override Input" />
 								</_D>
 								<_6 v="Input" />
-								<_14 v="Very Low" />
 								<_14 v="Low" />
 								<_14 v="Medium" />
 								<_14 v="High" />
@@ -7512,7 +7319,7 @@
 							<_14 v="SSR Roughness Threshold" />
 							<_14 v="SSR Tonemap Strength" />
 							<_14 v="SSR Tonemap Clamp" />
-							<_38 v="Resolution" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+							<_38 v="Resolution" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 								<_A v="Type">
 									<Flag v="Default" />
 									<Flag v="Sync" />
@@ -7545,7 +7352,6 @@
 									<Flag v="Override Input" />
 								</_D>
 								<_14 v="Input" />
-								<_14 v="Very Low" />
 								<_14 v="Low" />
 								<_14 v="Medium" />
 								<_14 v="High" />
@@ -7718,7 +7524,7 @@
 						</_38>
 						<_3B v="" />
 					</_38>
-					<_38 v="Contact Shadows" item_name_1="ContactShadowsParameterDefinition" item_name_2="ContactShadowsParameterDefinition" db1="376" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+					<_38 v="Contact Shadows" item_name_1="ContactShadowsParameterDefinition" item_name_2="ContactShadowsParameterDefinition" db1="364" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 						<_D v="Flags">
 							<Flag v="Override Flags" />
 							<Flag v="Override Enabled" />
@@ -7749,7 +7555,7 @@
 							<Flag v="Override FOV Slope Near Bias Scalar" />
 							<Flag v="Override Per-Spec Near Bias Scalar" />
 						</_D>
-						<_38 v="Parameters" item_name_1="camera_fx_settings::ContactShadowsParameter" item_name_2="camera_fx_settings::ContactShadowsParameter" db1="372" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+						<_38 v="Parameters" item_name_1="camera_fx_settings::ContactShadowsParameter" item_name_2="camera_fx_settings::ContactShadowsParameter" db1="360" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 							<_36 v="Sun Contact Shadow Settings" />
 							<_E v="flags">
 								<Flag v="use default (ignore these values)" />
@@ -7794,7 +7600,6 @@
 								</_A>
 								<_34 v="generated_padfbf4" length="1" />
 								<_E v="Flags">
-									<Flag v="Very Low" />
 									<Flag v="Low" />
 									<Flag v="Medium" />
 									<Flag v="High" />
@@ -7802,7 +7607,7 @@
 								</_E>
 								<_3B v="" />
 							</_38>
-							<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+							<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 								<_A v="Type">
 									<Flag v="Default" />
 									<Flag v="Sync" />
@@ -7835,7 +7640,6 @@
 									<Flag v="Override Input" />
 								</_D>
 								<_6 v="Input" />
-								<_14 v="Very Low" />
 								<_14 v="Low" />
 								<_14 v="Medium" />
 								<_14 v="High" />
@@ -7852,7 +7656,7 @@
 								<_3B v="" />
 							</_38>
 							<_14 v="Ray Steps First Person Scalar" />
-							<_38 v="Maximum Shadow Ray Length" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+							<_38 v="Maximum Shadow Ray Length" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 								<_A v="Type">
 									<Flag v="Default" />
 									<Flag v="Sync" />
@@ -7885,7 +7689,6 @@
 									<Flag v="Override Input" />
 								</_D>
 								<_14 v="Input" />
-								<_14 v="Very Low" />
 								<_14 v="Low" />
 								<_14 v="Medium" />
 								<_14 v="High" />
@@ -7902,7 +7705,7 @@
 								<_3B v="" />
 							</_38>
 							<_14 v="Maximum Shadow Ray Length First Person Scalar" />
-							<_38 v="Ray Pixel Stride" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+							<_38 v="Ray Pixel Stride" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 								<_A v="Type">
 									<Flag v="Default" />
 									<Flag v="Sync" />
@@ -7935,7 +7738,6 @@
 									<Flag v="Override Input" />
 								</_D>
 								<_14 v="Input" />
-								<_14 v="Very Low" />
 								<_14 v="Low" />
 								<_14 v="Medium" />
 								<_14 v="High" />
@@ -9341,7 +9143,7 @@
 					</_38>
 					<_3B v="" />
 				</_38>
-				<_38 v="Dynamic Sun Shadow" item_name_1="DynamicSunShadowDefinition" item_name_2="DynamicSunShadowDefinition" db1="3176" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2323">
+				<_38 v="Dynamic Sun Shadow" item_name_1="DynamicSunShadowDefinition" item_name_2="DynamicSunShadowDefinition" db1="3008" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="2323">
 					<_D v="Flags">
 						<Flag v="Override Max Shadow Count Scale" />
 						<Flag v="Override Floating Shadow Quality" />
@@ -9358,15 +9160,7 @@
 					</_D>
 					<_14 v="Max Shadow Count Scale" />
 					<_37 v="Floating Shadows Settings" />
-					<_38 v="Floating Shadow Quality" item_name_1="SpecControlNodeShadowQuality" item_name_2="SpecControlNodeShadowQuality" db1="5" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-						<_A v="Very Low">
-							<Flag v="8 tap" />
-							<Flag v="12 tap" />
-							<Flag v="6 tap" />
-							<Flag v="PCSS Low Quality" />
-							<Flag v="PCSS Medium Quality" />
-							<Flag v="PCSS High Quality" />
-						</_A>
+					<_38 v="Floating Shadow Quality" item_name_1="SpecControlNodeShadowQuality" item_name_2="SpecControlNodeShadowQuality" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 						<_A v="Low">
 							<Flag v="8 tap" />
 							<Flag v="12 tap" />
@@ -9405,7 +9199,7 @@
 						<Flag v="No Shadow" />
 						<Flag v="Apply Everywhere" />
 					</_A>
-					<_34 v="generated_pad1856" length="2" />
+					<_34 v="generated_pad1856" length="3" />
 					<_14 v="Cascade Overlap" />
 					<_14 v="Min Shadow Caster Pixel Radius" />
 					<_37 v="PCSS Settings" />
@@ -9471,7 +9265,7 @@
 						<_3B v="" />
 					</_38>
 					<_34 v="generated_pad650b" length="3" />
-					<_38 v="Frustum 1" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+					<_38 v="Frustum 1" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 						<_37 v="CASCADE" />
 						<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 							<_A v="Type">
@@ -9533,7 +9327,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="bias" />
-						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -9566,7 +9360,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -9582,7 +9375,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -9616,7 +9409,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -9817,7 +9609,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="Interpolation occluder search step" />
-						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -9850,7 +9642,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -9866,7 +9657,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -9899,7 +9690,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -9915,7 +9705,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -9949,7 +9739,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -9965,7 +9754,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -9999,7 +9788,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10015,7 +9803,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10049,7 +9837,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10127,7 +9914,7 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Frustum 2" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+					<_38 v="Frustum 2" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 						<_37 v="CASCADE" />
 						<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 							<_A v="Type">
@@ -10189,7 +9976,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="bias" />
-						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10222,7 +10009,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10238,7 +10024,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10272,7 +10058,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10473,7 +10258,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="Interpolation occluder search step" />
-						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10506,7 +10291,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10522,7 +10306,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10555,7 +10339,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10571,7 +10354,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10605,7 +10388,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10621,7 +10403,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10655,7 +10437,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10671,7 +10452,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10705,7 +10486,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10783,7 +10563,7 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Frustum 3" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+					<_38 v="Frustum 3" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 						<_37 v="CASCADE" />
 						<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 							<_A v="Type">
@@ -10845,7 +10625,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="bias" />
-						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10878,7 +10658,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -10894,7 +10673,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -10928,7 +10707,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11129,7 +10907,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="Interpolation occluder search step" />
-						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11162,7 +10940,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11178,7 +10955,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11211,7 +10988,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11227,7 +11003,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11261,7 +11037,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11277,7 +11052,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11311,7 +11086,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11327,7 +11101,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11361,7 +11135,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11439,7 +11212,7 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Frustum 4" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+					<_38 v="Frustum 4" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 						<_37 v="CASCADE" />
 						<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 							<_A v="Type">
@@ -11501,7 +11274,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="bias" />
-						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11534,7 +11307,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11550,7 +11322,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11584,7 +11356,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11785,7 +11556,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="Interpolation occluder search step" />
-						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11818,7 +11589,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11834,7 +11604,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11867,7 +11637,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11883,7 +11652,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11917,7 +11686,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11933,7 +11701,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -11967,7 +11735,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -11983,7 +11750,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12017,7 +11784,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -12095,7 +11861,7 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Frustum 5" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+					<_38 v="Frustum 5" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 						<_37 v="CASCADE" />
 						<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 							<_A v="Type">
@@ -12157,7 +11923,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="bias" />
-						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12190,7 +11956,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -12206,7 +11971,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12240,7 +12005,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -12441,7 +12205,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="Interpolation occluder search step" />
-						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12474,7 +12238,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -12490,7 +12253,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12523,7 +12286,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -12539,7 +12301,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12573,7 +12335,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -12589,7 +12350,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12623,7 +12384,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -12639,7 +12399,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12673,7 +12433,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -12751,7 +12510,7 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
-					<_38 v="Frustum 6" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="516" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+					<_38 v="Frustum 6" item_name_1="FloatingShadowCascadeSettings" item_name_2="FloatingShadowCascadeSettings" db1="488" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 						<_37 v="CASCADE" />
 						<_38 v="cascade half-width" item_name_1="SpecControlNodeFloatExact" item_name_2="SpecControlNodeFloatExact" db1="68" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 							<_A v="Type">
@@ -12813,7 +12572,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="bias" />
-						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="filter width" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12846,7 +12605,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -12862,7 +12620,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="resolution" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -12896,7 +12654,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -13097,7 +12854,7 @@
 							<_3B v="" />
 						</_38>
 						<_14 v="Interpolation occluder search step" />
-						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Static Geo Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -13130,7 +12887,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -13146,7 +12902,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Minimum Shadow Caster Dynamic Object Bounding Sphere Radius" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -13179,7 +12935,6 @@
 								<Flag v="Override Input" />
 							</_D>
 							<_14 v="Input" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -13195,7 +12950,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Shadow Caster LOD Bias" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -13229,7 +12984,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -13245,7 +12999,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="Force shadow LOD. 0 = Use default behavior, 1 = Force lowest LOD, 2 = Next higher LOD, and so forth." item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -13279,7 +13033,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />
@@ -13295,7 +13048,7 @@
 							<_14 v="4 Player Splitscreen" />
 							<_3B v="" />
 						</_38>
-						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+						<_38 v="HexGrid shadows. 0 = render as hexes, 1 = render simplified, anything else = disable hex shadows" item_name_1="SpecControlNodeShort" item_name_2="SpecControlNodeShort" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 							<_A v="Type">
 								<Flag v="Default" />
 								<Flag v="Sync" />
@@ -13329,7 +13082,6 @@
 							</_D>
 							<_5 v="Input" />
 							<_34 v="generated_pad21dd" length="2" />
-							<_14 v="Very Low" />
 							<_14 v="Low" />
 							<_14 v="Medium" />
 							<_14 v="High" />

@@ -1,29 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="MaterialStylesTag" item_name_2="MaterialStylesTag" db1="168" db2="0" db3="1" db4="0" db5="1" db6="2" db7="152" db8="1299">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="MaterialStylesTag" item_name_2="MaterialStylesTag" db1="176" db2="0" db3="1" db4="0" db5="1" db6="2" db7="160" db8="1299">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="regions" item_name_1="MaterialRegion" item_name_2="MaterialRegion" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+	<_40 v="regions" item_name_1="MaterialRegion" item_name_2="MaterialRegion" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="4993">
 		<_2 v="name" />
 		<_3B v="" />
 	</_40>
 	<_6 v="regions Flags" />
 	<_6 v="regions Vector1" />
 	<_6 v="regions Vector2" />
-	<_40 v="coatingMaterialSets" item_name_1="CoatingMaterialSetReference" item_name_2="CoatingMaterialSetReference" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="coatingMaterialSets" item_name_1="CoatingMaterialSetReference" item_name_2="CoatingMaterialSetReference" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="12561">
+		<_3F v="elementID" />
 		<_41 v="coatingMaterialSet" />
+		<_34 v="generated_pad2ed3" length="4" />
 		<_3B v="" />
 	</_40>
 	<_6 v="coatingMaterialSets Flags" />
 	<_6 v="coatingMaterialSets Vector1" />
 	<_6 v="coatingMaterialSets Vector2" />
-	<_40 v="style" item_name_1="MaterialStyle" item_name_2="MaterialStyle" db1="92" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="273">
+	<_40 v="style" item_name_1="MaterialStyle" item_name_2="MaterialStyle" db1="92" db2="0" db3="1" db4="0" db5="1" db6="2" db7="0" db8="4369">
 		<_2 v="name" />
 		<_41 v="palette" />
 		<_2 v="global_damage" />
@@ -33,11 +35,12 @@
 		<_14 v="scratch_amount" />
 		<_2 v="grime_type" />
 		<_14 v="grime_amount" />
-		<_40 v="regions" item_name_1="MaterialStyleRegion" item_name_2="MaterialStyleRegion" db1="40" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="273">
+		<_40 v="regions" item_name_1="MaterialStyleRegion" item_name_2="MaterialStyleRegion" db1="40" db2="0" db3="0" db4="0" db5="1" db6="2" db7="0" db8="4369">
 			<_2 v="name" />
 			<_2E v="Coating Material Set" />
 			<_34 v="generated_pad4b96" length="2" />
-			<_40 v="layers" item_name_1="MaterialLayer" item_name_2="MaterialLayer" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2433">
+			<_40 v="layers" item_name_1="MaterialLayer" item_name_2="MaterialLayer" db1="72" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="14721">
+				<_3F v="elementID" />
 				<_2 v="name" />
 				<_A v="Hero_Reveal">
 					<Flag v="disabled" />
@@ -69,7 +72,7 @@
 					<Flag v="disabled" />
 					<Flag v="enabled" />
 				</_A>
-				<_34 v="generated_pad910e" length="2" />
+				<_34 v="generated_pad910e" length="6" />
 				<_3B v="" />
 			</_40>
 			<_6 v="layers Flags" />
@@ -93,9 +96,13 @@
 		<Flag v="Dont Preload Swatches" />
 	</_F>
 	<_34 v="generated_pad245e" length="3" />
-	<_40 v="Preloaded Swatches" item_name_1="PreloadSwatchEntry" item_name_2="PreloadSwatchEntry" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+	<_40 v="Preloaded Swatches" item_name_1="PreloadSwatchEntry" item_name_2="PreloadSwatchEntry" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="12561">
+		<_3F v="elementID" />
 		<_41 v="swatch" />
+		<_34 v="generated_pad863f" length="4" />
 		<_3B v="" />
 	</_40>
+	<_3E v="Material Style Hash" />
+	<_34 v="generated_padd7a9" length="4" />
 	<_3B v="" />
 </root>

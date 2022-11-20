@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root item_name_1="i343::Weapon::AttachmentDefinition" item_name_2="i343::Weapon::AttachmentDefinition" db1="296" db2="0" db3="0" db4="0" db5="1" db6="0" db7="280" db8="1331">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -18,7 +18,7 @@
 			<_2 v="permutation name" />
 			<_3B v="" />
 		</_40>
-		<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" db1="208" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="name" />
 			<_41 v="type" />
 			<_41 v="tag graph output" />
@@ -26,6 +26,24 @@
 			<_40 v="tag graph float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_14 v="value" />
+				<_3B v="" />
+			</_40>
+			<_40 v="tag graph bool params" item_name_1="TagGraph::TagGraphBoolParam" item_name_2="TagGraph::TagGraphBoolParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="name" />
+				<_F v="value">
+					<Flag v="value" />
+				</_F>
+				<_34 v="generated_pad0473" length="3" />
+				<_3B v="" />
+			</_40>
+			<_40 v="taggraph instance variables - strings" item_name_1="TagGraph::TagGraphInstanceVariableString" item_name_2="TagGraph::TagGraphInstanceVariableString" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="name" />
+				<_2 v="value" />
+				<_3B v="" />
+			</_40>
+			<_40 v="taggraph instance variables - tag references" item_name_1="TagGraph::TagGraphInstanceVariableTagRef" item_name_2="TagGraph::TagGraphInstanceVariableTagRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+				<_2 v="name" />
+				<_41 v="value" />
 				<_3B v="" />
 			</_40>
 			<_41 v="override type" />

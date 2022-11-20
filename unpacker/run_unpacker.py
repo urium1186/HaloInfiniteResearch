@@ -59,7 +59,8 @@ def extract_module(module):
     version = gf.read_uint32(fb)
     # version 48: first flight
     # version 51: second flight
-    assert version == 51, "Unsupported file version"
+    # assert version == 51, "Unsupported file version"
+    assert version == 52, "Unsupported file version"
     unk0x08 = gf.read_uint32(fb)
     unk0x0C = gf.read_uint32(fb)
     files_count = gf.read_uint32(fb)
@@ -169,12 +170,13 @@ def extract_module(module):
         temp = ('/'.join(t1e.save_path.split('/')[:-1]))
         #if not (temp.__contains__('spartan_armor') or temp.__contains__('gear')):
         #if not (temp.__contains__('pc__/objects/characters/spartan_armor/bitmaps/')):
-        # if not (temp.__contains__('materials/generic/')):
+        if not (temp.__contains__('materials/generic/')):
         # if not (temp.__contains__('__chore/pc__/shaders/')):
-        # if not (temp.__contains__('coatings')):
+        #if not (temp.__contains__('coatings')):
+        #if not (temp.__contains__('materialswatch')):
         # if not (temp.__contains__('objects')) or (temp.__contains__('pc__')):
         # if not (temp.__contains__('objects/characters')):
-        if not (temp.__contains__('spartan_armor/gear')):
+        # if not (temp.__contains__('spartan_armor/gear')):
         # if not (t1e.save_path.__contains__('.')):
         # if not (temp.__contains__('brute_atriox')):
         #if not (temp.__contains__('hum_base_fabric_oriental_pattern_01_normal{pc}')):

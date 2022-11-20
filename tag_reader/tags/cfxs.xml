@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="c_camera_fx_settings" item_name_2="c_camera_fx_settings" db1="1040" db2="0" db3="6" db4="0" db5="1" db6="0" db7="1024" db8="3383">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="c_camera_fx_settings" item_name_2="c_camera_fx_settings" db1="968" db2="0" db3="6" db4="0" db5="1" db6="0" db7="952" db8="3383">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -231,57 +231,6 @@
 		<_14 v="blend speed (0-1)" />
 		<_3B v="" />
 	</_38>
-	<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (UNSC)" />
-	<_38 v="self_illum_scale_unsc" item_name_1="camera_fx_settings::CameraFXSelfIllumScalePerRace" item_name_2="camera_fx_settings::CameraFXSelfIllumScalePerRace" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-		<_E v="flags">
-			<Flag v="use default (ignore these values)" />
-			<Flag v="maximum change is relative" />
-			<Flag v="(unused)" />
-			<Flag v="bit3" />
-			<Flag v="fixed" />
-			<Flag v="(unused2)" />
-			<Flag v="fixed2" />
-		</_E>
-		<_34 v="generated_pad7166" length="2" />
-		<_14 v="parameter value" />
-		<_14 v="maximum change" />
-		<_14 v="blend speed (0-1)" />
-		<_3B v="" />
-	</_38>
-	<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Covenant)" />
-	<_38 v="self_illum_scale_covenant" item_name_1="camera_fx_settings::CameraFXSelfIllumScalePerRace" item_name_2="camera_fx_settings::CameraFXSelfIllumScalePerRace" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-		<_E v="flags">
-			<Flag v="use default (ignore these values)" />
-			<Flag v="maximum change is relative" />
-			<Flag v="(unused)" />
-			<Flag v="bit3" />
-			<Flag v="fixed" />
-			<Flag v="(unused2)" />
-			<Flag v="fixed2" />
-		</_E>
-		<_34 v="generated_pad7166" length="2" />
-		<_14 v="parameter value" />
-		<_14 v="maximum change" />
-		<_14 v="blend speed (0-1)" />
-		<_3B v="" />
-	</_38>
-	<_36 v="SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Forerunner)" />
-	<_38 v="self_illum_scale_forerunner" item_name_1="camera_fx_settings::CameraFXSelfIllumScalePerRace" item_name_2="camera_fx_settings::CameraFXSelfIllumScalePerRace" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-		<_E v="flags">
-			<Flag v="use default (ignore these values)" />
-			<Flag v="maximum change is relative" />
-			<Flag v="(unused)" />
-			<Flag v="bit3" />
-			<Flag v="fixed" />
-			<Flag v="(unused2)" />
-			<Flag v="fixed2" />
-		</_E>
-		<_34 v="generated_pad7166" length="2" />
-		<_14 v="parameter value" />
-		<_14 v="maximum change" />
-		<_14 v="blend speed (0-1)" />
-		<_3B v="" />
-	</_38>
 	<_36 v="EFFECT EXPOSURE OVERRIDE" />
 	<_41 v="effect exposure override" />
 	<_38 v="color_grading" item_name_1="camera_fx_settings::s_color_grading_parameter" item_name_2="camera_fx_settings::s_color_grading_parameter" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
@@ -332,7 +281,7 @@
 		<_14 v="Omni Light AO" />
 		<_3B v="" />
 	</_38>
-	<_38 v="deferred_reflections_settings" item_name_1="camera_fx_settings::DeferredReflectionsParameter" item_name_2="camera_fx_settings::DeferredReflectionsParameter" db1="168" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_38 v="deferred_reflections_settings" item_name_1="camera_fx_settings::DeferredReflectionsParameter" item_name_2="camera_fx_settings::DeferredReflectionsParameter" db1="160" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_36 v="Deferred Reflections settings" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -352,7 +301,7 @@
 		<_14 v="Intensity First Person" />
 		<_14 v="Fade to Cubemap" />
 		<_14 v="Border Fade Size" />
-		<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -385,7 +334,6 @@
 				<Flag v="Override Input" />
 			</_D>
 			<_6 v="Input" />
-			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -408,7 +356,7 @@
 		<_14 v="SSR Roughness Threshold" />
 		<_14 v="SSR Tonemap Strength" />
 		<_14 v="SSR Tonemap Clamp" />
-		<_38 v="Resolution" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Resolution" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -441,7 +389,6 @@
 				<Flag v="Override Input" />
 			</_D>
 			<_14 v="Input" />
-			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -571,7 +518,7 @@
 		<_34 v="generated_pad409c" length="3" />
 		<_3B v="" />
 	</_38>
-	<_38 v="contact shadows" item_name_1="camera_fx_settings::ContactShadowsParameter" item_name_2="camera_fx_settings::ContactShadowsParameter" db1="372" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_38 v="contact shadows" item_name_1="camera_fx_settings::ContactShadowsParameter" item_name_2="camera_fx_settings::ContactShadowsParameter" db1="360" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_36 v="Sun Contact Shadow Settings" />
 		<_E v="flags">
 			<Flag v="use default (ignore these values)" />
@@ -616,7 +563,6 @@
 			</_A>
 			<_34 v="generated_padfbf4" length="1" />
 			<_E v="Flags">
-				<Flag v="Very Low" />
 				<Flag v="Low" />
 				<Flag v="Medium" />
 				<Flag v="High" />
@@ -624,7 +570,7 @@
 			</_E>
 			<_3B v="" />
 		</_38>
-		<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Ray Steps" item_name_1="SpecControlNodeInt" item_name_2="SpecControlNodeInt" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -657,7 +603,6 @@
 				<Flag v="Override Input" />
 			</_D>
 			<_6 v="Input" />
-			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -674,7 +619,7 @@
 			<_3B v="" />
 		</_38>
 		<_14 v="Ray Steps First Person Scalar" />
-		<_38 v="Maximum Shadow Ray Length" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Maximum Shadow Ray Length" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -707,7 +652,6 @@
 				<Flag v="Override Input" />
 			</_D>
 			<_14 v="Input" />
-			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -724,7 +668,7 @@
 			<_3B v="" />
 		</_38>
 		<_14 v="Maximum Shadow Ray Length First Person Scalar" />
-		<_38 v="Ray Pixel Stride" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="48" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+		<_38 v="Ray Pixel Stride" item_name_1="SpecControlNodeFloat" item_name_2="SpecControlNodeFloat" db1="44" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_A v="Type">
 				<Flag v="Default" />
 				<Flag v="Sync" />
@@ -757,7 +701,6 @@
 				<Flag v="Override Input" />
 			</_D>
 			<_14 v="Input" />
-			<_14 v="Very Low" />
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -912,6 +855,5 @@
 		<_3B v="" />
 	</_38>
 	<_37 v="" />
-	<_34 v="generated_pad3e12" length="4" />
 	<_3B v="" />
 </root>

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root item_name_1="c_model_animation_graph" item_name_2="c_model_animation_graph" db1="1160" db2="0" db3="32" db4="0" db5="1" db6="0" db7="1144" db8="1331">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -293,9 +293,13 @@
 				</_39>
 				<_3B v="" />
 			</_40>
-			<_40 v="user parameters" item_name_1="AnimationGraphUserParameter" item_name_2="AnimationGraphUserParameter" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_40 v="user parameters" item_name_1="AnimationGraphUserParameter" item_name_2="AnimationGraphUserParameter" db1="12" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_14 v="default value" />
+				<_F v="flags">
+					<Flag v="SteppedCurve" />
+				</_F>
+				<_34 v="generated_pad54cc" length="3" />
 				<_3B v="" />
 			</_40>
 			<_40 v="user parameter masks" item_name_1="s_animation_userparam_mask" item_name_2="s_animation_userparam_mask" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="275">

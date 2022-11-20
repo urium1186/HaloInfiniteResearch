@@ -7,6 +7,7 @@ import struct
 from typing.io import BinaryIO
 
 from commons.constant import ADDRESS_UNSET
+from commons.logs import Log
 from tag_reader.headers.data_reference_table import DataReference
 
 #from tag_reader.readers.reader_factory import ReaderFactory
@@ -94,7 +95,7 @@ class TagStructData(TagInstance):
 
     def hasMoreTagStructData(self):
         if self.tagDef.B != {}:
-            print(self.tagDef.B)
+            Log.Print(self.tagDef.B)
 
     def readIn(self, f: BinaryIO, header=None):
         super().readIn(f, header)
@@ -150,7 +151,7 @@ class FUNCTION(TagInstance):
             if self.leftoverbytes > 0:
                 self.curvature_bytes = struct.unpack(f'{self.leftoverbytes}p', f.read(self.leftoverbytes))[0]
 
-    def readBinData(self, f, header=None):
+    def readBinData(self, f=None, header=None):
         if self.data_reference is not None:
             if not self.data_reference.loaded_bin_data:
                 self.data_reference.readBinData(f)
@@ -328,6 +329,16 @@ class TagRef(TagInstance):
         self.ref_id_center_int = struct.unpack('i', self.ref_id_center)[0]
         self.ref_id_center = self.ref_id_center.hex().upper()
         self.tagGroup = struct.unpack('4s', f.read(4))[0]
+
+        if self.ref_id_int == 801559339:
+            debug = True
+
+        if self.ref_id_sub_int == 801559339:
+            debug = True
+
+        if self.ref_id_center_int == 801559339:
+            debug = True
+
         if self.tagGroup != b'\xff\xff\xff\xff':
             self.tagGroupRev = self.tagGroup[::-1].decode("utf-8")
         self.local_handle = f.read(4).hex().upper()
@@ -349,8 +360,6 @@ class TagRef(TagInstance):
         if self.in_game_path is None:
             self.in_game_path = ''
             try:
-                if self.path.__contains__('color_black'):
-                    debug = True
                 self.in_game_path = TAG_NAMES[self.ref_id]
             except KeyError as e:
                 try:
@@ -641,6 +650,10 @@ class Mmr3Hash(TagInstance):
         self.value = bin_data.hex().upper()
         self.str_value = getStrInMmr3Hash(self.value)
         self.int_value = int.from_bytes(bin_data, byteorder="little", signed=True)
+        if self.int_value == 395074097:
+            debug = True
+        if self.int_value == 996187240: #"menu:stance:pop_culture:epic:athletic_point"
+            debug = True
         # assert self.value == getMmr3HashFromInt(self.int_value), "Han de ser iguales"
 
     def toJson(self):

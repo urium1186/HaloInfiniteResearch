@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root item_name_1="s_ai_globals_definition" item_name_2="s_ai_globals_definition" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="24" db8="1331">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_40 v="data" item_name_1="s_ai_globals_data" item_name_2="s_ai_globals_data" db1="784" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="data" item_name_1="s_ai_globals_data" item_name_2="s_ai_globals_data" db1="780" db2="0" db3="6" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_14 v="AI infantry-on-AI weapon damage scale" />
 		<_14 v="AI vehicle-on-AI weapon damage scale" />
 		<_14 v="AI player vehicle-on-AI weapon damage scale" />
@@ -207,7 +207,6 @@
 		<_37 v="" />
 		<_37 v="AI Networking Parameters" />
 		<_36 v="IMPORTANT" />
-		<_14 v="Position discrepancy below which throttle fixups are used exclusively" />
 		<_14 v="Positional discrepancy below which throttle fixups are NOT used if authority is stopped" />
 		<_14 v="Predict ahead time" />
 		<_36 v="Interpolation Settings" />

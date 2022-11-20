@@ -6,9 +6,10 @@ import struct
 import numpy as np
 import mathutils
 import utils
-from commons.classes import Chunk
+from commons.classes import Chunk, RegionData
 from commons.debug_utils import fillDebugDict, vertx_data_arrays
 from commons.enums_struct_def import PcVertexBuffersFormat
+from commons.logs import Log
 from configs.config import Config
 from exporters.model.base_exporter import BaseExporter
 from exporters.domain.domain_types import *
@@ -25,6 +26,7 @@ class RenderModelExporter(BaseExporter):
 
     def __init__(self, render_model: RenderModel):
         super(RenderModelExporter, self).__init__()
+        self.mesh_list_dict = {}
         self.coun_index_dic = {}
         self.export_by_regions = False
         self.flipUv = True
@@ -185,15 +187,56 @@ class RenderModelExporter(BaseExporter):
             full = f'{x_big_bit}{y_big_bit}{z_big_bit}{w_big_bit}'
             temp = f_from_bytes(chunk_data[0:4], 'little')
             data = f_from_bytes(chunk_data[0:4], 'little')
+            data_1 = f_from_bytes(chunk_data[0:4], 'big')
             m = ((data & 0x3FF) / 1023 - 0.5) / 2 ** 0.5
             n = ((((data >> 10) & 0x3FF) - 0.5) / 1023) / 2 ** 0.5
             o = ((((data >> 20) & 0x3FF) - 0.5) / 1023) / 2 ** 0.5
-            p = (data >> 30)
+            p = (data >> 30) & 0x003
+
+            val_array = [
+                (((data >> 10) & 0x000003FF) / 0x000003FF),
+                (((data >> 20) & 0x000003FF) / 0x000003FF),
+                (((data >> 30) & 0x000003FF) / 0x000003FF),
+
+            ]
 
             m1 = ((data & 0x3FF) / 1023)
             n1 = ((((data >> 10) & 0x3FF)) / 1023)
             o1 = ((((data >> 20) & 0x3FF)) / 1023)
-            p1 = (data >> 30) / 3
+            p_i = (data >> 30) & 0x003
+            p1 = p_i / 1023
+
+            full_1 = full[0:8][::-1] + full[8:16][::-1] + full[16:24][::-1] + full[24:32][::-1]
+            r10_1 = full_1[0:10]
+            g10_1 = full_1[10:20]
+            b10_1 = full_1[20:30]
+            a02_1 = full_1[30:32]
+            int_t_1 = [int(r10_1, 2), int(g10_1, 2), int(b10_1, 2), int(a02_1, 2)]
+            divisor = 511.0 # 1023
+            float_t_1 = [int(r10_1, 2) / divisor, int(g10_1, 2) / divisor, int(b10_1, 2) / divisor, int(a02_1, 2)]
+            suma_1 = sum(float_t_1[0:3])
+
+
+            r10 = full[0:10]
+            g10 = full[10:20]
+            b10 = full[20:30]
+            a02 = full[30:32]
+            int_t = [int(r10, 2),int(g10, 2),int(b10, 2),int(a02, 2)]
+            float_t = [int(r10, 2) / 1023,int(g10, 2)/ 1023,int(b10, 2)/ 1023,int(a02, 2)]
+            _a02 = full[0:2]
+            _r10 = full[2:12]
+            _g10 = full[12:22]
+            _b10 = full[22:32]
+            _int_t = [int(_r10, 2), int(_g10, 2), int(_b10, 2), int(_a02, 2)]
+            _float_t = [int(_r10, 2)/ 1023, int(_g10, 2)/ 1023, int(_b10, 2)/ 1023, int(_a02, 2)]
+            if not (_a02 == '00' or _a02 == '01'):
+                debug = True
+
+            m2 = ((data_1 & 0x3FF) / 1023)
+            n2 = ((((data_1 >> 10) & 0x3FF)) / 1023)
+            o2 = ((((data_1 >> 20) & 0x3FF)) / 1023)
+            p2_i = (data_1 >> 30) & 0x003
+            p2 = p_i / 1023
             temp_bin = '{:<032b}'.format(temp)[::-1]  # format(temp, "b").zfill(32, ) [::-1]
             n = 10
             chunks = [full[i:i + n] for i in range(0, len(full), n)]
@@ -209,12 +252,32 @@ class RenderModelExporter(BaseExporter):
             temp >>= 10
             v3 = temp & 0x3ff
             v33 = int(chunks[2][::-1], 2)  # [::-1]
-            Wnormalized = (v11 / (2 ** 10 - 1), v22 / (2 ** 10 - 1), v33 / (2 ** 10 - 1))
-            normalized = (m1, n1, o1)
+
+            v44 = int(chunks[3][::-1], 2)  # [::-1]
+            Wnormalized = (v11 / (2 ** 10 - 1), v22 / (2 ** 10 - 1), v33 / (2 ** 10 - 1), v44 / (2 ** 10 - 1))
+            normalized_1 = (m1, n1, o1, p_i)
+            normalized = (m, n, o, p)
             rest = 1 - m1 - n1 - o1
+
+
+            t1 = ((data & 0x3ff00000) >> 20) / (2 ** 10 - 1);
+
+            t2 = ((data & 0x000003ff) << 20) / (2 ** 10 - 1);
+
+            t3 = ((data & 0x000ffc00)) / (2 ** 10 - 1);
+
             if rest > 1 or rest < 0:
                 debug = True
-            vert_data_array.append(normalized)
+            result = float_t_1
+            result.append({
+                "float_t_1": float_t_1,
+                "float_t": float_t,
+                "_float_t": _float_t,
+                "Wnormalized": Wnormalized,
+                "normalized_1": normalized_1,
+                "normalized": normalized
+            })
+            vert_data_array.append(result)
         return vert_data_array
 
     def readF_10_10_10_2_signedNormalizedPackedAsUnorm(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
@@ -321,7 +384,7 @@ class RenderModelExporter(BaseExporter):
 
                         if self._chunk_data is None:
                             return
-                        t_m = self.processMeshInst(mesh, mesh_resource)
+                        t_m = self.processMeshInst(mesh, mesh_resource, m_index)
 
                         material_path = t_m.LOD_render_data[0].parts[0].material_path
                         mesh_name = ''
@@ -351,7 +414,7 @@ class RenderModelExporter(BaseExporter):
                         os.makedirs(f"{self.filepath_export}{sub_dir}", exist_ok=True)
                         save_path = f"{self.filepath_export}{sub_dir}{permutation['name'].str_value}-{mesh_name}.fbx"
                         fbx_model.export(save_path, True)
-                        print(f"Saved model to {save_path}")
+                        Log.Print(f"Saved model to {save_path}")
         else:
             filter_meshs = [7, 28, 123, 143, 220, 235, 249, 264, 275, 288, 293, 318, 326, 331, 350, 360, 402, 406, 465,
                             687, 695]
@@ -375,7 +438,7 @@ class RenderModelExporter(BaseExporter):
                 # mesh_name = string_table.name_string.split('\\')[-2] + "." + material_path.split('\\')[-1]
                 if mesh_name == '':
                     mesh_name = "unknown mesh"
-                print(mesh_name)
+                Log.Print(mesh_name)
 
                 if mesh_name.find(self.filterArmorCore.getString()) == -1:
                     continue
@@ -395,9 +458,9 @@ class RenderModelExporter(BaseExporter):
                 os.makedirs(f"{self.filepath_export}{sub_dir}", exist_ok=True)
                 save_path = f"{self.filepath_export}{sub_dir}{t_m.name}.fbx"
                 fbx_model.export(save_path, True)
-                print(f"Saved model to {save_path}")
+                Log.Print(f"Saved model to {save_path}")
 
-        print('end Export')
+        Log.Print('end Export')
 
     def _get_mesh_list(self, str_filter='') -> []:
         if not self.render_model.is_loaded():
@@ -416,7 +479,7 @@ class RenderModelExporter(BaseExporter):
         for i, mesh in enumerate(temp_mesh_s):
             if False and i != 31:
                 continue
-            t_m = self.processMeshInst(mesh, mesh_resource)
+            t_m = self.processMeshInst(mesh, mesh_resource, i)
             file_name = self.render_model.in_game_path.split('\\')[-1].replace('.', '_')
             t_m.name = f"{file_name}_mesh_{i}"
             mesh_list.append(t_m)
@@ -459,8 +522,8 @@ class RenderModelExporter(BaseExporter):
                 mesh_unic += 1
             else:
                 mesh_no_unic += 1
-        print(str(result[4].keys()))
-        print("Fin de análice")
+        Log.Print(str(result[4].keys()))
+        Log.Print("Fin de análice")
 
     def _get_mesh_by_region(self, regions: [], str_filter='') -> {}:
         if not self.render_model.is_loaded():
@@ -494,7 +557,7 @@ class RenderModelExporter(BaseExporter):
                                      m_index_ + permutation['mesh_count'].value):
                     mesh = temp_mesh_s[m_index]
 
-                    t_m = self.processMeshInst(mesh, mesh_resource)
+                    t_m = self.processMeshInst(mesh, mesh_resource, m_index)
 
                     material_path = t_m.LOD_render_data[0].parts[0].material_path
                     mesh_name = ''
@@ -513,7 +576,7 @@ class RenderModelExporter(BaseExporter):
                     if not t_m.name.__contains__(
                             str_filter):  # False and olympus_spartan_l_armup_001_s001_2_lod_0 'olympus_spartan_l_glove_001_s001'
                         continue
-                    print(mesh_name)
+                    Log.Print(mesh_name)
                     result_per[permutation['name'].value].append(t_m)
 
             result[region['name'].value] = result_per
@@ -526,6 +589,160 @@ class RenderModelExporter(BaseExporter):
                 if to_override_region['RegionId'] == region['RegionId']:
                     regions[i] = to_override_region
                     break
+
+    def getMeshListByRegionPermutationIndex(self, r_i, p_i) -> []:
+        if not self.render_model.is_loaded():
+            self.render_model.load()
+        if self.render_model_inst is None:
+            self.render_model_inst = self.render_model.tag_parse.rootTagInst.childs[0]
+        mesh_resource = \
+            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource'].childs[0]
+        self.createScaleInfo()
+        temp_mesh_s = self.render_model_inst['meshes'].childs
+        temp_mesh_r = self.render_model_inst['regions'].childs
+        self.initChunksData()
+
+        if self._chunk_data is None:
+            return []
+
+        mesh_list = []
+
+        region_to_export = temp_mesh_r[r_i]
+        permutation_to_export = region_to_export['permutations'].childs[p_i]
+
+        if permutation_to_export is None:
+            return mesh_list
+        region_name = region_to_export['name'].str_value
+        permu_name = permutation_to_export['name'].str_value
+        per_mesh_index_1 = permutation_to_export['mesh index'].value
+        if per_mesh_index_1 == -1:
+            return mesh_list
+        temp_name = '-1'
+
+        m_count = permutation_to_export['mesh count'].value
+        mesh_in_permutation = temp_mesh_s[per_mesh_index_1:per_mesh_index_1 + m_count]
+        for m_index, mesh in enumerate(mesh_in_permutation):
+            # mesh = temp_mesh_s[m_index]
+
+            t_m = self.processMeshInst(mesh, mesh_resource, per_mesh_index_1 + m_index)
+
+            material_path = t_m.LOD_render_data[0].parts[0].material_path
+
+            mesh_name = f'{region_name}_{permu_name}_mesh_{m_index}_'
+
+            if len(material_path.split('\\')) >= 1:
+                mesh_name += material_path.split('\\')[-1]
+
+            """    
+            if temp_name == mesh_name:
+                continue
+            """
+            if mesh_name.__contains__('hip_gear'):
+                debug = True
+
+            if mesh_name == '':
+                mesh_name = "unknown mesh"
+
+            temp_name = mesh_name
+            temp_mesh = mesh
+
+            t_m.name = mesh_name
+            t_m.name = utils.getNamePart(t_m)
+            """
+            if t_m.name.__contains__(
+                    'hair') \
+                    or t_m.name.__contains__('beard')\
+                    or t_m.name.__contains__('lashes'):
+
+                # False and olympus_spartan_l_armup_001_s001_2_lod_0
+                continue
+            """
+            Log.Print(mesh_name)
+            mesh_list.append(t_m)
+
+        return mesh_list
+
+    def getMeshListByRegionPermutation(self, region_data:RegionData) -> []:
+        region_id = region_data.region_id
+        permutation_id = region_data.permutation_id
+        if not self.render_model.is_loaded():
+            self.render_model.load()
+        if self.render_model_inst is None:
+            self.render_model_inst = self.render_model.tag_parse.rootTagInst.childs[0]
+        mesh_resource = \
+            self.render_model_inst['mesh resource groups'].childs[0]['mesh resource'].childs[0]
+        self.createScaleInfo()
+        temp_mesh_s = self.render_model_inst['meshes'].childs
+        temp_mesh_r = self.render_model_inst['regions'].childs
+        self.initChunksData()
+
+        if self._chunk_data is None:
+            return []
+
+        mesh_list = []
+        if region_id == -1:
+            return mesh_list
+        region_to_export = None
+        permutation_to_export = None
+        for render_model_region in temp_mesh_r:
+            if render_model_region['name'].int_value == region_id:
+                region_to_export = render_model_region
+                for permutation in render_model_region['permutations'].childs:
+                    if permutation['name'].int_value == permutation_id:
+                        permutation_to_export = permutation
+                        break
+                break
+        if permutation_to_export is None:
+            return mesh_list
+        region_name = region_to_export['name'].str_value
+        permu_name = permutation_to_export['name'].str_value
+        per_mesh_index_1 = permutation_to_export['mesh index'].value
+        if per_mesh_index_1 == -1:
+            return mesh_list
+        temp_name = '-1'
+
+        m_count = permutation_to_export['mesh count'].value
+        mesh_in_permutation = temp_mesh_s[per_mesh_index_1:per_mesh_index_1 + m_count]
+        for m_index, mesh in enumerate(mesh_in_permutation):
+            # mesh = temp_mesh_s[m_index]
+
+            t_m = self.processMeshInst(mesh, mesh_resource, per_mesh_index_1 + m_index)
+
+            material_path = t_m.LOD_render_data[0].parts[0].material_path
+
+            mesh_name = f'{region_name}_{permu_name}_mesh_{m_index}_'
+
+            if len(material_path.split('\\')) >= 1:
+                mesh_name += material_path.split('\\')[-1]
+
+            """    
+            if temp_name == mesh_name:
+                continue
+            """
+            if mesh_name.__contains__('hip_gear'):
+                debug = True
+
+            if mesh_name == '':
+                mesh_name = "unknown mesh"
+
+            temp_name = mesh_name
+            temp_mesh = mesh
+
+            t_m.name = mesh_name
+            t_m.name = utils.getNamePart(t_m)
+            """
+            if t_m.name.__contains__(
+                    'hair') \
+                    or t_m.name.__contains__('beard')\
+                    or t_m.name.__contains__('lashes'):
+
+                # False and olympus_spartan_l_armup_001_s001_2_lod_0
+                continue
+            """
+            Log.Print(mesh_name)
+            mesh_list.append(t_m)
+
+        return mesh_list
 
     def getMeshListByJson(self, data) -> []:
         array_info = data['CoreRegionData']['BaseRegionData']
@@ -594,8 +811,9 @@ class RenderModelExporter(BaseExporter):
             for m_index, mesh in enumerate(mesh_in_permutation):
                 #mesh = temp_mesh_s[m_index]
 
-                t_m = self.processMeshInst(mesh, mesh_resource)
-
+                t_m = self.processMeshInst(mesh, mesh_resource, per_mesh_index_1 + m_index)
+                if len(t_m.LOD_render_data)==0:
+                    debug = True
                 material_path = t_m.LOD_render_data[0].parts[0].material_path
 
                 mesh_name = f'{region_name}_{permu_name}_mesh_{m_index}_'
@@ -628,7 +846,7 @@ class RenderModelExporter(BaseExporter):
                     # False and olympus_spartan_l_armup_001_s001_2_lod_0
                     continue
                 """
-                print(mesh_name)
+                Log.Print(mesh_name)
                 mesh_list.append(t_m)
                 if m_count != 1:
                     debug = True
@@ -696,7 +914,7 @@ class RenderModelExporter(BaseExporter):
                     for m_index, mesh in enumerate(mesh_in_permutation):
                         #mesh = temp_mesh_s[m_index]
 
-                        t_m = self.processMeshInst(mesh, mesh_resource)
+                        t_m = self.processMeshInst(mesh, mesh_resource,per_mesh_index_1+m_index)
 
                         material_path = t_m.LOD_render_data[0].parts[0].material_path
 
@@ -730,7 +948,7 @@ class RenderModelExporter(BaseExporter):
                             # False and olympus_spartan_l_armup_001_s001_2_lod_0
                             continue
                         """
-                        print(mesh_name)
+                        Log.Print(mesh_name)
                         mesh_list.append(t_m)
                         if m_count != 1:
                             debug = True
@@ -765,7 +983,7 @@ class RenderModelExporter(BaseExporter):
                 ch_offset += temp_len
                 self._chunk_data += bytes(temp_len)
             assert mesh_resource['Streaming Buffers'].childs[0]['buffer size'].value == len(self._chunk_data)
-            print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
+            Log.Print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
 
     def initChunksDataSave(self):
         if self._chunk_data is None:
@@ -893,9 +1111,11 @@ class RenderModelExporter(BaseExporter):
                     nChunk += 1
                 except:
                     more_chunks = False
-            print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
+            Log.Print(f"Read {nChunk} chunks ({hex(len(self._chunk_data))} bytes)")
 
     def processMeshInst(self, mesh, mesh_resource, m_i=-1) -> ObjMesh:
+        if self.mesh_list_dict.keys().__contains__(m_i):
+            return self.mesh_list_dict[m_i]
         obj_mesh = ObjMesh()
         obj_mesh.clone_index = mesh["clone index"].value
         obj_mesh.mesh_flags = mesh["mesh flags"].options
@@ -996,6 +1216,7 @@ class RenderModelExporter(BaseExporter):
                 obj_lod.sub_parts.append(obj_subpart)
 
             obj_mesh.LOD_render_data.append(obj_lod)
+        self.mesh_list_dict[m_i] = obj_mesh
         return obj_mesh
 
     def analyzeMeshInst(self, mesh, mesh_resource, m_i=-1) -> ObjMesh:

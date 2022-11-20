@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root item_name_1="control_definition" item_name_2="control_definition" db1="2264" db2="0" db3="3" db4="0" db5="1" db6="0" db7="248" db8="3379">
-	<_38 v="device" item_name_1="device_definition" item_name_2="device_definition" db1="2016" db2="0" db3="5" db4="0" db5="1" db6="0" db7="296" db8="3379">
+	<_38 v="device" item_name_1="device_definition" item_name_2="device_definition" db1="2016" db2="0" db3="6" db4="0" db5="1" db6="0" db7="296" db8="3379">
 		<_38 v="object" item_name_1="ObjectDefinition" item_name_2="ObjectDefinition" db1="1720" db2="0" db3="36" db4="0" db5="1" db6="0" db7="1704" db8="3379">
-			<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-				<_7 v="vtable space" />
-				<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-					<_6 v="global tag ID" />
-					<_34 v="local tag handle" length="4" />
+			<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+				<_7 v="" />
+				<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_6 v="" />
+					<_34 v="" length="4" />
 					<_3B v="" />
 				</_38>
 				<_3B v="" />
@@ -57,7 +57,7 @@
 				<Flag v="vaultable" />
 				<Flag v="collides with own projectiles" />
 				<Flag v="object rejects dynamic decals" />
-				<Flag v="Do not network" />
+				<Flag v="Client side only" />
 				<Flag v="Wake when visible to player" />
 				<Flag v="Sleep when not visible to player" />
 				<Flag v="Does not accept active camouflage" />
@@ -329,11 +329,12 @@
 				<Flag v="Enable Damage Hit Ticks" />
 				<Flag v="Blocks grapple aim assist" />
 				<Flag v="Send Damage Aftermath to Parent" />
+				<Flag v="Pre size attachments for customization" />
 			</_D>
 			<_37 v="Customization" />
 			<_2 v="customization set" />
 			<_37 v="" />
-			<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" db1="208" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="name" />
 				<_41 v="type" />
 				<_41 v="tag graph output" />
@@ -341,6 +342,24 @@
 				<_40 v="tag graph float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="name" />
 					<_14 v="value" />
+					<_3B v="" />
+				</_40>
+				<_40 v="tag graph bool params" item_name_1="TagGraph::TagGraphBoolParam" item_name_2="TagGraph::TagGraphBoolParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_2 v="name" />
+					<_F v="value">
+						<Flag v="value" />
+					</_F>
+					<_34 v="generated_pad0473" length="3" />
+					<_3B v="" />
+				</_40>
+				<_40 v="taggraph instance variables - strings" item_name_1="TagGraph::TagGraphInstanceVariableString" item_name_2="TagGraph::TagGraphInstanceVariableString" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_2 v="name" />
+					<_2 v="value" />
+					<_3B v="" />
+				</_40>
+				<_40 v="taggraph instance variables - tag references" item_name_1="TagGraph::TagGraphInstanceVariableTagRef" item_name_2="TagGraph::TagGraphInstanceVariableTagRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+					<_2 v="name" />
+					<_41 v="value" />
 					<_3B v="" />
 				</_40>
 				<_41 v="override type" />
@@ -573,6 +592,7 @@
 					<Flag v="cubemap volume" />
 					<Flag v="navgenerator volume" />
 					<Flag v="navcutter volume" />
+					<Flag v="light probe volume" />
 				</_A>
 				<_F v="teleporter passability">
 					<Flag v="disallow players" />
@@ -1268,8 +1288,9 @@
 			<Flag v="huge device" />
 			<Flag v="interactor can't move" />
 			<Flag v="Disable Weapon Down/Up Animations on Interact" />
-			<Flag v="Disable Unit Interaction Animations" />
+			<Flag v="Enable Unit Interaction Animations" />
 			<Flag v="high priority interaction device" />
+			<Flag v="Allow weapon actions" />
 		</_D>
 		<_14 v="power transition time" />
 		<_14 v="power acceleration time" />

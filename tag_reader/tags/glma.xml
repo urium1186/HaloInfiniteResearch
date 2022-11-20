@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::MaterialGlobals" item_name_2="i343::MaterialGlobals" db1="72" db2="0" db3="0" db4="0" db5="1" db6="0" db7="56" db8="1395">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="i343::MaterialGlobals" item_name_2="i343::MaterialGlobals" db1="72" db2="0" db3="1" db4="0" db5="1" db6="0" db7="56" db8="1395">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -27,6 +27,7 @@
 			<Flag v="does not block grapple line of sight" />
 			<Flag v="does not block callout raycasts" />
 			<Flag v="blocks grapple aim assist" />
+			<Flag v="non-physical melee pass through" />
 		</_E>
 		<_34 v="generated_pad3ced" length="2" />
 		<_2 v="general armor" />
@@ -145,6 +146,7 @@
 			<Flag v="does not block grapple line of sight" />
 			<Flag v="does not block callout raycasts" />
 			<Flag v="blocks grapple aim assist" />
+			<Flag v="non-physical melee pass through" />
 		</_E>
 		<_34 v="generated_pad3ced" length="2" />
 		<_2 v="general armor" />

@@ -20,7 +20,8 @@ class ReaderFactory:
         'mode': ('render_model', 'RenderModel'),
         'uslg': ('stringlist', 'StringList'),
         'mwsw': ('swatch', 'Swatch'),
-        'shbc': ('shader_bytecode', 'ShaderBytecode')
+        'shbc': ('shader_bytecode', 'ShaderBytecode'),
+        'jmad': ('c_model_animation_graph', 'ModelAnimationGraph')
     }
     path_import = 'tag_reader.readers'
     pluginname = 'swatch'

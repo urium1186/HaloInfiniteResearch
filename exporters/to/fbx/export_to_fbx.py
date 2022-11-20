@@ -4,9 +4,10 @@ import fbx
 import sys
 
 import numpy
-from fbx import FbxDeformer, FbxSkin, FbxCluster
+from fbx import FbxDeformer, FbxSkin, FbxCluster, FbxAMatrix
 
 from commons.common_utils import inSphere
+from commons.logs import Log
 from exporters.domain.domain_types import *
 from configs.config import Config
 from exporters.to.fbx.import_from_fbx import FbxModelImporter
@@ -20,7 +21,7 @@ import utils
 class FbxModel:
     def __init__(self, p_export_skl=True, p_skl_filepath='', p_skl_data=None):
         self.export_colours = False
-        self.export_skl = False # p_export_skl
+        self.export_skl = p_export_skl
         self.export_normals = False
         self.export_tangent = False
         self.skl_data = p_skl_data
@@ -39,7 +40,7 @@ class FbxModel:
         self.bones = []
         self.bones_index_used = {}
         self.nodes = []
-        print("Fin init**********")
+        Log.Print("Fin init**********")
         return
 
     def fillBonesFromSkeletalInfo(self, data=None, numerate_bones=True):
@@ -95,7 +96,7 @@ class FbxModel:
         for lod_i, lod in enumerate(submesh.LOD_render_data):
             lod.name = submesh.name + f"_lod_{lod_i}"
             self.count = self.count + 1
-            node, mesh = self.create_mesh(lod, submesh.index_buffer_type)
+            node, mesh = self.create_mesh(lod, submesh)
 
             if not mesh.GetLayer(0):
                 mesh.CreateLayer()
@@ -136,8 +137,9 @@ class FbxModel:
 
     def export(self, save_path=None, ascii_format=False):
         """Export the scene to an fbx file."""
-
-        os.makedirs('/'.join(save_path.split('/')[:-1]), exist_ok=True)
+        temp_dir  = '/'.join(save_path.split('/')[:-1])
+        Log.Print("Directory "+temp_dir)
+        os.makedirs(temp_dir, exist_ok=True)
         if not self.manager.GetIOSettings():
             self.ios = fbx.FbxIOSettings.Create(self.manager, fbx.IOSROOT)
             self.manager.SetIOSettings(self.ios)
@@ -153,9 +155,12 @@ class FbxModel:
             b_ascii = 1
         else:
             b_ascii = -1
-        self.exporter.Initialize(save_path, b_ascii, self.manager.GetIOSettings())
-        self.exporter.Export(self.scene)
-        self.exporter.Destroy()
+        try:
+            self.exporter.Initialize(save_path, b_ascii, self.manager.GetIOSettings())
+            self.exporter.Export(self.scene)
+            self.exporter.Destroy()
+        except Exception as e:
+            Log.Print(f"Error in export_to_fbx.py: {e}")
 
     def scaleVector(self, x, y, z, scl=254.0, rot=90):
         lT = fbx.FbxVector4(0.0, 0.0, 0.0)
@@ -170,19 +175,36 @@ class FbxModel:
         lTransformMatrix.SetTRS(lT, lR, lS)
         return lTransformMatrix.MultNormalize(fbx.FbxVector4(x, y, z))
 
-    def create_mesh(self, lod_n: ObjLOD, index_buffer_type=IndexBufferType.triangle_list):
+    def create_mesh(self, lod_n: ObjLOD, subMesh: ObjMesh):
+
+        index_buffer_type = subMesh.index_buffer_type
         mesh = fbx.FbxMesh.Create(self.scene, lod_n.name)
-
-        lT = fbx.FbxVector4(0.0, 0.0, 0.0)
-        # lR = fbx.FbxVector4(0.0, 90.0, 0.0)
-        # lR = fbx.FbxVector4(-90.0, 180.0, 0.0)
-        lR = fbx.FbxVector4(0.0, 0.0, 0.0)
-        # lS = fbx.FbxVector4(254.0, 254.0, 254.0)
-        # lS = fbx.FbxVector4(25.4, 25.4, 25.4)
-        lS = fbx.FbxVector4(1.0, 1.0, 1.0)
-
         lTransformMatrix = fbx.FbxMatrix()
-        lTransformMatrix.SetTRS(lT, lR, lS)
+        if subMesh.attachment_info is not None:
+            if len(self.bones) == 0:
+                self.add_bones()
+            debug = True
+            vScl = self.scaleVector(subMesh.attachment_info.translation['x'], subMesh.attachment_info.translation['y'], subMesh.attachment_info.translation['z'], rot=0)
+            lT = fbx.FbxVector4(vScl)
+            # lR = fbx.FbxVector4(0.0, 90.0, 0.0)
+            # lR = fbx.FbxVector4(-90.0, 180.0, 0.0)
+            lR = fbx.FbxVector4(subMesh.attachment_info.rotation['x'], subMesh.attachment_info.rotation['y'], subMesh.attachment_info.rotation['z'])
+            # lS = fbx.FbxVector4(254.0, 254.0, 254.0)
+            # lS = fbx.FbxVector4(25.4, 25.4, 25.4)
+            lS = fbx.FbxVector4(subMesh.attachment_info.scale, subMesh.attachment_info.scale, subMesh.attachment_info.scale)
+
+            lTransformMatrix.SetTRS(lT, lR, lS)
+        else:
+            lT = fbx.FbxVector4(0.0, 0.0, 0.0)
+            # lR = fbx.FbxVector4(0.0, 90.0, 0.0)
+            # lR = fbx.FbxVector4(-90.0, 180.0, 0.0)
+            lR = fbx.FbxVector4(0.0, 0.0, 0.0)
+            # lS = fbx.FbxVector4(254.0, 254.0, 254.0)
+            # lS = fbx.FbxVector4(25.4, 25.4, 25.4)
+            lS = fbx.FbxVector4(1.0, 1.0, 1.0)
+
+
+            lTransformMatrix.SetTRS(lT, lR, lS)
 
         if not mesh.GetLayer(0):
             mesh.CreateLayer()
@@ -220,6 +242,32 @@ class FbxModel:
         # lod_group_attr.
         # lod_group_attr.
         node.SetNodeAttribute(mesh)
+        if subMesh.attachment_info is not None:
+            bone_cluster = self.getFbxCluster(subMesh.attachment_info.node_index)
+
+            lMatrix = fbx.FbxAMatrix()
+
+
+            lMatrix = bone_cluster.GetTransformLinkMatrix(lMatrix)
+            lMatrix1 = fbx.FbxMatrix(lMatrix)
+            tras = fbx.FbxVector4()
+            rota = fbx.FbxQuaternion()
+            pShearing = fbx.FbxVector4()
+            pScaling = fbx.FbxVector4()
+            pSign = 0.0
+
+            moved = lMatrix1 * lTransformMatrix
+            moved.GetElements(tras, rota, pShearing, pScaling)
+            #print("        Transform Translation: ", moved.GetT())
+            print("        Transform Translation: ",tras)
+            #print("        Transform Rotation: ", moved.GetR())
+            print("        Transform Rotation: ", rota)
+            #print("        Transform Scaling: ", moved.GetS())
+            print("        Transform Scaling: ", pScaling)
+            """"""
+            node.LclTranslation.Set(fbx.FbxDouble3(tras[0], tras[1], tras[2]))
+            #node.LclRotation.Set(fbx.FbxDouble3(lMatrix.GetR()[0], lMatrix.GetR()[1], lMatrix.GetR()[2]))
+            #node.LclScaling.Set(fbx.FbxDouble3(lMatrix.GetS()[0], lMatrix.GetS()[1], lMatrix.GetS()[2]))
         # node.SetNodeAttribute(lod_group_attr)
         # node.LclRotation.Set(fbx.FbxDouble3(0, 90, 0))
         return node, mesh
@@ -495,7 +543,7 @@ class FbxModel:
         return map_ref_vertex_key_pos, lControlPoints, dict_skin_w_info, bones_name_pos, lSkinDeformer
 
     def compareToDataInFbx(self, lod: ObjLOD):
-        importer_model = FbxModelImporter(Config.ROOT_DIR + "\\exporters\\ref\\lef_glove_ref.fbx")
+        importer_model = FbxModelImporter(Config.ROOT_DIR + "\\exporters\\ref\\c_waist_1F4FD213_mesh_0_olympus_spartan_torso_001_s001_1_ref.fbx")
         importer_model.importModel()
         mesh_ref = importer_model.getMesh()[0]
         mesh_ref_data = self._getMeshData(mesh_ref)
@@ -523,7 +571,19 @@ class FbxModel:
 
         bones_name_pos = mesh_ref_data[3]
         bones_name_pos_iu = mesh_in_use_data[3]
-
+        """
+        Verificar q para los vertices en la misma posicion tienen la misma info de Skin
+        
+        for key_iu in map_ref_vertex_key_pos_iu.keys():
+            if len(map_ref_vertex_key_pos_iu[key_iu])>1:
+                wi_list_0 = lod.weight_indices[map_ref_vertex_key_pos_iu[key_iu][0]]
+                wi_list_1 = lod.weights[map_ref_vertex_key_pos_iu[key_iu][0]]
+                for i in range(1,len(map_ref_vertex_key_pos_iu[key_iu])):
+                     wi_list = lod.weight_indices[map_ref_vertex_key_pos_iu[key_iu][i]]
+                     wi_list_2 = lod.weights[map_ref_vertex_key_pos_iu[key_iu][i]]
+                     assert wi_list_0 == wi_list
+                     assert wi_list_1 == wi_list_2
+        """
         count = 0
         # 248
         vert_pos_pair = {}
@@ -559,9 +619,38 @@ class FbxModel:
             bone_name_list = []
             bone_w_map = dict_skin_w_info[map_ref_vertex_key_pos[key][0]]
             v_i = map_ref_vertex_key_pos_iu[vert_pos_pair[key]][0]
-
-            wi_list = lod.weight_indices[v_i]
             b_weights = lod.weights[v_i]
+            wi_list = lod.weight_indices[v_i]
+            wi_list_names = [
+                lod.mesh_container.bones_data['skeletons'][wi_list[0]]['name'],
+                lod.mesh_container.bones_data['skeletons'][wi_list[1]]['name'],
+                lod.mesh_container.bones_data['skeletons'][wi_list[2]]['name'],
+                lod.mesh_container.bones_data['skeletons'][wi_list[3]]['name'],
+                             ]
+            final_new_menu = list(dict.fromkeys(wi_list_names))
+
+
+            intersaction = list(set(list(bone_w_map.keys())) & set(wi_list_names))
+            assert len(intersaction) != 0
+            temp = list(bone_w_map.keys())
+            assert intersaction.sort() == temp.sort()
+            b_weights = lod.weights[v_i]
+            if sum(b_weights[0:3]) >1:
+                debug = True
+
+            if len(final_new_menu)==2:
+                value_to_comp = {}
+                for i, name in enumerate(wi_list_names):
+                    value_to_comp[name] = b_weights[i]
+                rest = 1-value_to_comp[list(value_to_comp.keys())[0]]
+                value_to_comp[list(value_to_comp.keys())[1]] = rest
+                sorted_dict = {}
+                for k_n in sorted(value_to_comp):
+                    sorted_dict[k_n] = value_to_comp[k_n]
+                if rest <0:
+                    debug = True
+                debug = True
+
             wi_w={}
             for i in map_ref_vertex_key_pos_iu[vert_pos_pair[key]]:
                 for b_name in bone_w_map:
@@ -574,7 +663,10 @@ class FbxModel:
                 bone_name_list.append(bone_info_name)
                 if wi_w.__contains__(bone_info_name):
                     debug = True
-                ws = b_weights[4+i]
+                #ws = b_weights[4+i]
+                if not i <len(b_weights):
+                    debug = True
+                ws = b_weights[i]
                 wi_w[bone_info_name] = ws
                 if w_maps.keys().__contains__(ws):
                     w_maps[ws] += 1

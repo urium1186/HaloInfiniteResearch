@@ -4,6 +4,7 @@ import re
 import struct
 
 from commons.common_utils import resolvePathFile
+from commons.logs import Log
 from commons.tag_group_extension_map import ma_guid_ext_no_magic, ma_guid_ext_resource, map_ext, ma_guid_ext
 from configs.config import Config
 from tag_reader.readers.reader_factory import ReaderFactory
@@ -34,7 +35,7 @@ def getMapExtension(decomp_save_data, t1e):
         ext1 = ext1[ext1.index('_') + 1:]
         ext = t1e.save_path.split('/')[-1].split('[')[0].split('.')[-1]
         if ext1 == "bitmap_resource_handle]":
-            print(f"bitmap_resource_handle] in {t1e.save_path}")
+            Log.Print(f"bitmap_resource_handle] in {t1e.save_path}")
         key_ext = f"{ext1}|{ext}"
         if not ma_guid_ext_no_magic.__contains__(key_ext):
             ma_guid_ext_no_magic.append(key_ext)

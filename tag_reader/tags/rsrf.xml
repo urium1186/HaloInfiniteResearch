@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root item_name_1="i343::SurfacingRuntimeTag" item_name_2="i343::SurfacingRuntimeTag" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="80" db8="1363">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -30,7 +30,7 @@
 		<_3B v="" />
 	</_40>
 	<_40 v="Placement Layers" item_name_1="i343::SurfacingPlacementLayer" item_name_2="i343::SurfacingPlacementLayer" db1="24" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="337">
-		<_40 v="Placement Descriptions" item_name_1="i343::SurfacingPlacementDescription" item_name_2="i343::SurfacingPlacementDescription" db1="220" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2387">
+		<_40 v="Placement Descriptions" item_name_1="i343::SurfacingPlacementDescription" item_name_2="i343::SurfacingPlacementDescription" db1="280" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2387">
 			<_2 v="Id" />
 			<_6 v="GPU Interpreter Density Instructions" />
 			<_6 v="GPU Interpreter Scale Instructions" />
@@ -45,33 +45,26 @@
 				<Flag v="Random" />
 			</_A>
 			<_34 v="generated_pada2d4" length="3" />
-			<_38 v="Cull Distance Scale" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-				<_14 v="Very Low" />
-				<_14 v="Low" />
-				<_14 v="Medium" />
-				<_14 v="High" />
-				<_14 v="Ultra" />
-				<_14 v="2 Player Splitscreen" />
-				<_14 v="3 Player Splitscreen" />
-				<_14 v="4 Player Splitscreen" />
-				<_3B v="" />
-			</_38>
-			<_38 v="Density Multiplier" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-				<_14 v="Very Low" />
-				<_14 v="Low" />
-				<_14 v="Medium" />
-				<_14 v="High" />
-				<_14 v="Ultra" />
-				<_14 v="2 Player Splitscreen" />
-				<_14 v="3 Player Splitscreen" />
-				<_14 v="4 Player Splitscreen" />
-				<_3B v="" />
-			</_38>
+			<_14 v="Cull Distance Scale Low" />
+			<_17 v="Cull Distance Scale Splitscreen Multiplier Low" />
+			<_14 v="Cull Distance Scale Medium" />
+			<_17 v="Cull Distance Scale Splitscreen Multiplier Medium" />
+			<_14 v="Cull Distance Scale High" />
+			<_17 v="Cull Distance Scale Splitscreen Multiplier High" />
+			<_14 v="Cull Distance Scale Ultra" />
+			<_17 v="Cull Distance Scale Splitscreen Multiplier Ultra" />
+			<_14 v="Density Multiplier Low" />
+			<_17 v="Density Multiplier Splitscreen Multiplier Low" />
+			<_14 v="Density Multiplier Medium" />
+			<_17 v="Density Multiplier Splitscreen Multiplier Medium" />
+			<_14 v="Density Multiplier High" />
+			<_17 v="Density Multiplier Splitscreen Multiplier High" />
+			<_14 v="Density Multiplier Ultra" />
+			<_17 v="Density Multiplier Splitscreen Multiplier Ultra" />
 			<_2 v="Variant Name" />
 			<_20 v="Debug Color" />
 			<_6 v="Precompiled Technique Index" />
-			<_38 v="Distance Dither Start" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-				<_14 v="Very Low" />
+			<_38 v="Distance Dither Start" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_14 v="Low" />
 				<_14 v="Medium" />
 				<_14 v="High" />

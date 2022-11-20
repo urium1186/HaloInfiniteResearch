@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root item_name_1="PresetDefinitionsTag" item_name_2="PresetDefinitionsTag" db1="576" db2="0" db3="0" db4="0" db5="1" db6="0" db7="560" db8="1331">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -757,8 +757,33 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_40>
-	<_40 v="Lighting Presets" item_name_1="LightingPresetDefinition" item_name_2="LightingPresetDefinition" db1="40" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="899">
+	<_40 v="Lighting Presets" item_name_1="LightingPresetDefinition" item_name_2="LightingPresetDefinition" db1="60" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_0 v="Preset" />
+		<_14 v="Light Simulation Radius Scale" />
+		<_37 v="Single Screen" />
+		<_38 v="Single Screen Preset" item_name_1="LightingPresetDefinition::SplitscreenPreset" item_name_2="LightingPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_14 v="Light Simulation Radius Scale" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="2 Player Splitscreen" />
+		<_38 v="2 Player Splitscreen Preset" item_name_1="LightingPresetDefinition::SplitscreenPreset" item_name_2="LightingPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_14 v="Light Simulation Radius Scale" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="3 Player Splitscreen" />
+		<_38 v="3 Player Splitscreen Preset" item_name_1="LightingPresetDefinition::SplitscreenPreset" item_name_2="LightingPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_14 v="Light Simulation Radius Scale" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
+		<_37 v="4 Player Splitscreen" />
+		<_38 v="4 Player Splitscreen Preset" item_name_1="LightingPresetDefinition::SplitscreenPreset" item_name_2="LightingPresetDefinition::SplitscreenPreset" db1="4" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
+			<_14 v="Light Simulation Radius Scale" />
+			<_3B v="" />
+		</_38>
+		<_37 v="" />
 		<_37 v="VRAM" />
 		<_38 v="vram" item_name_1="SpecControlVramSettings" item_name_2="SpecControlVramSettings" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
 			<_6 v="Initial VRAM usage" />

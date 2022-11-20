@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root item_name_1="BotGlobals" item_name_2="BotGlobals" db1="96" db2="0" db3="0" db4="0" db5="1" db6="0" db7="80" db8="3379">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -18,7 +18,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_38>
-	<_40 v="Difficulty Specific Tuning" item_name_1="BotDifficultyLevelTuningDefinition" item_name_2="BotDifficultyLevelTuningDefinition" db1="592" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
+	<_40 v="Difficulty Specific Tuning" item_name_1="BotDifficultyLevelTuningDefinition" item_name_2="BotDifficultyLevelTuningDefinition" db1="600" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2359">
 		<_B v="Difficulty Level">
 			<Flag v="Unused 1" />
 			<Flag v="Unused 2" />
@@ -73,7 +73,7 @@
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
-		<_38 v="Combat Tuning" item_name_1="BotCombatTuningDefinition" item_name_2="BotCombatTuningDefinition" db1="288" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
+		<_38 v="Combat Tuning" item_name_1="BotCombatTuningDefinition" item_name_2="BotCombatTuningDefinition" db1="296" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2467">
 			<_37 v="Combat" />
 			<_38 v="Melee" item_name_1="BotMeleeTuningDefinition" item_name_2="BotMeleeTuningDefinition" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2464">
 				<_37 v="Melee" />
@@ -136,6 +136,8 @@
 			<_14 v="Deploy drop wall confidence threshold" />
 			<_14 v="Min drop wall delay time" />
 			<_14 v="Max drop wall delay time" />
+			<_14 v="Min active camo delay time" />
+			<_14 v="Max active camo delay time" />
 			<_14 v="Disengage confidence threshold" />
 			<_14 v="Evade min delay time" />
 			<_14 v="Evade max delay time" />

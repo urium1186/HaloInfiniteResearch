@@ -1,6 +1,7 @@
 import io
 
 from commons.exception.read_tag_struct_exception import ReadTagStructException
+from commons.logs import Log
 from tag_reader.headers.general_class import PreLoadSections
 from tag_reader.headers.tag_struct_table import TagStructTable
 from tag_reader.headers.data_reference_table import DataReferenceTable
@@ -30,7 +31,7 @@ class TagBaseReader:
         try:
             self.tag_struct_table.readTable(f, self.file_header, self.data_block_table)
         except ReadTagStructException as e:
-            print(f"ReadTagStructException in {e.file_name} on {e.tag_struct} ")
+            Log.Print(f"ReadTagStructException in {e.file_name} on {e.tag_struct} ")
         self.data_reference_table.readTable(f, self.file_header,self.data_block_table,self.tag_struct_table, self.read_ref_entry_data)
         self.tag_reference_fixup_table.readStrings(f, self.file_header, self.data_block_table, self.tag_struct_table,self.tag_dependency_table)
 

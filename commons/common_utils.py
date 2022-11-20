@@ -3,6 +3,7 @@ import pathlib
 
 import numpy as np
 
+from commons.logs import Log
 from commons.tag_group_extension_map import map_ext, map_ext_not
 from configs.config import Config
 
@@ -22,7 +23,7 @@ def resolvePathFile(path, grouptag, inSubPath=''):
     path_to_find = base_path + path
     t_tag_group = grouptag  # .replace(' ', '')
     if not map_ext.keys().__contains__(t_tag_group):
-        print(grouptag)
+        Log.Print(grouptag)
         print(path)
         print(path_to_find)
         map_ext_not[grouptag] = path

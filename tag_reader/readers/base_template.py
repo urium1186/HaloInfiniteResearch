@@ -2,6 +2,7 @@ import os
 
 from commons.common_utils import resolvePathFile
 from configs.config import Config
+from events import Event
 
 from tag_reader.readers.interfaces import IBaseTemplate
 from tag_reader.readers.reader_factory import ReaderFactory
@@ -13,6 +14,8 @@ import json
 class BaseTemplate(IBaseTemplate):
 
     def __init__(self, p_in_game_path, tagLayoutExt):
+        self.tigger_event_on_parent = True
+        self.EventOnInstanceLoad = Event()
         self.json_str_base = "{}"
         self.json_base = None
         self.in_game_path = p_in_game_path
@@ -77,4 +80,12 @@ class BaseTemplate(IBaseTemplate):
                 else:
                     debug = True
                     #print(f'Error missing file {instance.path }')
+        if self.tigger_event_on_parent:
+            self.EventOnInstanceLoad(instance)
         pass
+
+    def AddSubForOnInstanceLoad(self, objMethod):
+        self.EventOnInstanceLoad += objMethod
+
+    def RemoveSubOnInstanceLoad(self, objMethod):
+        self.EventOnInstanceLoad -= objMethod
