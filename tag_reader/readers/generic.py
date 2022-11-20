@@ -22,4 +22,4 @@ class Generic(BaseTemplate):
 
 
     def load(self):
-        super().load()
+        super().load(True)
