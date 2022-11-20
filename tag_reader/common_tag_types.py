@@ -151,7 +151,7 @@ class FUNCTION(TagInstance):
             if self.leftoverbytes > 0:
                 self.curvature_bytes = struct.unpack(f'{self.leftoverbytes}p', f.read(self.leftoverbytes))[0]
 
-    def readBinData(self, f, header=None):
+    def readBinData(self, f=None, header=None):
         if self.data_reference is not None:
             if not self.data_reference.loaded_bin_data:
                 self.data_reference.readBinData(f)
@@ -360,8 +360,6 @@ class TagRef(TagInstance):
         if self.in_game_path is None:
             self.in_game_path = ''
             try:
-                if self.path.__contains__('color_black'):
-                    debug = True
                 self.in_game_path = TAG_NAMES[self.ref_id]
             except KeyError as e:
                 try:
@@ -653,6 +651,8 @@ class Mmr3Hash(TagInstance):
         self.str_value = getStrInMmr3Hash(self.value)
         self.int_value = int.from_bytes(bin_data, byteorder="little", signed=True)
         if self.int_value == 395074097:
+            debug = True
+        if self.int_value == 996187240: #"menu:stance:pop_culture:epic:athletic_point"
             debug = True
         # assert self.value == getMmr3HashFromInt(self.int_value), "Han de ser iguales"
 

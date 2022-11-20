@@ -20,8 +20,10 @@ class DataReference:
         self.bin_data = b''
         self.bin_data_hex = ""
         self.loaded_bin_data = False
+        self.path_file = ''
 
     def readIn(self, f, header=None):
+        self.path_file = f.name
         self.parent_struct_index = struct.unpack('i', f.read(4))[0]
         assert self.parent_struct_index < header.tag_struct_count
         self.unknown_property = struct.unpack('i', f.read(4))[0]
@@ -33,12 +35,18 @@ class DataReference:
         self.field_offset = struct.unpack('i', f.read(4))[0]
         # self.offset_plus = self.offset + header.data_offset
 
-    def readBinData(self, f, header=None):
+    def readBinData(self, f=None, header=None):
         if self.field_data_block_index != -1:
+            f_close = False
+            if f is None:
+                f = open(self.path_file, 'rb')
+                f_close = True
             pos_on_init = f.tell()
             f.seek(self.field_data_block.offset_plus)
             self.bin_data = f.read(self.field_data_block.size)
             f.seek(pos_on_init)
+            if f_close:
+                f.close()
             self.bin_data_hex = self.bin_data.hex()
         self.loaded_bin_data = True
 
@@ -47,9 +55,11 @@ class DataReferenceTable:
 
     def __init__(self):
         self.entries = []
+
         pass
 
     def readTable(self, f, header, data_block_table, tag_struct_table, read_entry_data=False):
+
         f.seek(header.data_reference_offset)
         for x in range(header.data_reference_count):
             entry = DataReference()

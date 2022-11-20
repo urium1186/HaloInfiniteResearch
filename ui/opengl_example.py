@@ -104,6 +104,9 @@ class Logo():
         y3 = +0.00
         x4 = +0.30
         y4 = +0.22
+        self.quad(x1, y1, x2, y2, y2, x2, y1, x1)
+        self.quad(x3, y3, x4, y4, y4, x4, y3, x3)
+        return
         #getVariantsMeshList
         filename = 'objects\\characters\\spartan_armor\\spartan_armor.model'
         parse_model = ReaderFactory().create_reader(filename)

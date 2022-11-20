@@ -21,7 +21,7 @@ import utils
 class FbxModel:
     def __init__(self, p_export_skl=True, p_skl_filepath='', p_skl_data=None):
         self.export_colours = False
-        self.export_skl = False # p_export_skl
+        self.export_skl = p_export_skl
         self.export_normals = False
         self.export_tangent = False
         self.skl_data = p_skl_data
@@ -543,7 +543,7 @@ class FbxModel:
         return map_ref_vertex_key_pos, lControlPoints, dict_skin_w_info, bones_name_pos, lSkinDeformer
 
     def compareToDataInFbx(self, lod: ObjLOD):
-        importer_model = FbxModelImporter(Config.ROOT_DIR + "\\exporters\\ref\\lef_glove_ref.fbx")
+        importer_model = FbxModelImporter(Config.ROOT_DIR + "\\exporters\\ref\\c_waist_1F4FD213_mesh_0_olympus_spartan_torso_001_s001_1_ref.fbx")
         importer_model.importModel()
         mesh_ref = importer_model.getMesh()[0]
         mesh_ref_data = self._getMeshData(mesh_ref)
@@ -571,7 +571,19 @@ class FbxModel:
 
         bones_name_pos = mesh_ref_data[3]
         bones_name_pos_iu = mesh_in_use_data[3]
-
+        """
+        Verificar q para los vertices en la misma posicion tienen la misma info de Skin
+        
+        for key_iu in map_ref_vertex_key_pos_iu.keys():
+            if len(map_ref_vertex_key_pos_iu[key_iu])>1:
+                wi_list_0 = lod.weight_indices[map_ref_vertex_key_pos_iu[key_iu][0]]
+                wi_list_1 = lod.weights[map_ref_vertex_key_pos_iu[key_iu][0]]
+                for i in range(1,len(map_ref_vertex_key_pos_iu[key_iu])):
+                     wi_list = lod.weight_indices[map_ref_vertex_key_pos_iu[key_iu][i]]
+                     wi_list_2 = lod.weights[map_ref_vertex_key_pos_iu[key_iu][i]]
+                     assert wi_list_0 == wi_list
+                     assert wi_list_1 == wi_list_2
+        """
         count = 0
         # 248
         vert_pos_pair = {}
@@ -607,9 +619,38 @@ class FbxModel:
             bone_name_list = []
             bone_w_map = dict_skin_w_info[map_ref_vertex_key_pos[key][0]]
             v_i = map_ref_vertex_key_pos_iu[vert_pos_pair[key]][0]
-
-            wi_list = lod.weight_indices[v_i]
             b_weights = lod.weights[v_i]
+            wi_list = lod.weight_indices[v_i]
+            wi_list_names = [
+                lod.mesh_container.bones_data['skeletons'][wi_list[0]]['name'],
+                lod.mesh_container.bones_data['skeletons'][wi_list[1]]['name'],
+                lod.mesh_container.bones_data['skeletons'][wi_list[2]]['name'],
+                lod.mesh_container.bones_data['skeletons'][wi_list[3]]['name'],
+                             ]
+            final_new_menu = list(dict.fromkeys(wi_list_names))
+
+
+            intersaction = list(set(list(bone_w_map.keys())) & set(wi_list_names))
+            assert len(intersaction) != 0
+            temp = list(bone_w_map.keys())
+            assert intersaction.sort() == temp.sort()
+            b_weights = lod.weights[v_i]
+            if sum(b_weights[0:3]) >1:
+                debug = True
+
+            if len(final_new_menu)==2:
+                value_to_comp = {}
+                for i, name in enumerate(wi_list_names):
+                    value_to_comp[name] = b_weights[i]
+                rest = 1-value_to_comp[list(value_to_comp.keys())[0]]
+                value_to_comp[list(value_to_comp.keys())[1]] = rest
+                sorted_dict = {}
+                for k_n in sorted(value_to_comp):
+                    sorted_dict[k_n] = value_to_comp[k_n]
+                if rest <0:
+                    debug = True
+                debug = True
+
             wi_w={}
             for i in map_ref_vertex_key_pos_iu[vert_pos_pair[key]]:
                 for b_name in bone_w_map:
@@ -622,7 +663,10 @@ class FbxModel:
                 bone_name_list.append(bone_info_name)
                 if wi_w.__contains__(bone_info_name):
                     debug = True
-                ws = b_weights[4+i]
+                #ws = b_weights[4+i]
+                if not i <len(b_weights):
+                    debug = True
+                ws = b_weights[i]
                 wi_w[bone_info_name] = ws
                 if w_maps.keys().__contains__(ws):
                     w_maps[ws] += 1

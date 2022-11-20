@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::SpartanAbilities::GrappleHookDefinitionTag" item_name_2="i343::SpartanAbilities::GrappleHookDefinitionTag" db1="1240" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1224" db8="3379">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="i343::SpartanAbilities::GrappleHookDefinitionTag" item_name_2="i343::SpartanAbilities::GrappleHookDefinitionTag" db1="1248" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1232" db8="3379">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
 	</_38>
-	<_38 v="data" item_name_1="i343::SpartanAbilities::GrappleHookDefinition" item_name_2="i343::SpartanAbilities::GrappleHookDefinition" db1="1220" db2="0" db3="17" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_38 v="data" item_name_1="i343::SpartanAbilities::GrappleHookDefinition" item_name_2="i343::SpartanAbilities::GrappleHookDefinition" db1="1228" db2="0" db3="18" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_38 v="common ability parameters" item_name_1="i343::SpartanAbilities::SpartanAbilityCommonParameters" item_name_2="i343::SpartanAbilities::SpartanAbilityCommonParameters" db1="120" db2="0" db3="6" db4="0" db5="0" db6="0" db7="0" db8="305">
 			<_37 v="common ability parameters" />
 			<_C v="input">
@@ -99,10 +99,12 @@
 		<_2 v="deploy animation" />
 		<_14 v="deploy duration override" />
 		<_14 v="max range" />
+		<_14 v="deploy exit min fraction" />
 		<_37 v="" />
 		<_37 v="attaching" />
 		<_2 v="biped attach marker" />
 		<_19 v="biped attach offset" />
+		<_2 v="item attach marker" />
 		<_37 v="" />
 		<_37 v="pull stage" />
 		<_2 v="pull animation (airborne)" />

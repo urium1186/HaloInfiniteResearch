@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="ForgeGlobalsDefinition" item_name_2="ForgeGlobalsDefinition" db1="1272" db2="0" db3="18" db4="0" db5="1" db6="2" db7="1256" db8="3379">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="ForgeGlobalsDefinition" item_name_2="ForgeGlobalsDefinition" db1="1368" db2="0" db3="18" db4="0" db5="1" db6="2" db7="1352" db8="3379">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -17,12 +17,6 @@
 	<_40 v="Forge Colors Lighting" item_name_1="s_named_rgb_color" item_name_2="s_named_rgb_color" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_1F v="color" />
-		<_3B v="" />
-	</_40>
-	<_40 v="Forge Color References" item_name_1="ForgeColorReference" item_name_2="ForgeColorReference" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="385">
-		<_2C v="Default Value" />
-		<_34 v="generated_pad6d1d" length="3" />
-		<_2 v="name" />
 		<_3B v="" />
 	</_40>
 	<_36 v="Magnets" />
@@ -168,6 +162,7 @@
 	</_40>
 	<_41 v="forge required resources" />
 	<_41 v="rotation handle shader" />
+	<_41 v="magnet marker shader" />
 	<_41 v="path preview shader" />
 	<_41 v="ai navmesh shader" />
 	<_40 v="global label values" item_name_1="ForgeLabelDefinition" item_name_2="ForgeLabelDefinition" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
@@ -231,6 +226,11 @@
 		<_41 v="coatingMaterialSet" />
 		<_3B v="" />
 	</_40>
+	<_40 v="Forge Enabled Shaders" item_name_1="ForgeEnabledShader" item_name_2="ForgeEnabledShader" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_41 v="forgeShader" />
+		<_3B v="" />
+	</_40>
+	<_34 v="generated_padd2ca" length="4" />
 	<_7 v="m_rotationHandlePipelineState" />
 	<_7 v="m_pathPreviewPipelineState" />
 	<_7 v="m_defaultBoundaryPipelineState" />
@@ -272,8 +272,24 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_38>
+	<_38 v="Forge Game Mode Sounds" item_name_1="ForgeGameModeSounds" item_name_2="ForgeGameModeSounds" db1="20" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="Game Mode Sounds" item_name_1="LoopingSoundDefinition" item_name_2="LoopingSoundDefinition" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_41 v="Looping Sound Reference" />
+			<_2 v="name" />
+			<_3B v="" />
+		</_40>
+		<_3B v="" />
+	</_38>
 	<_41 v="Forge Looping Sound Categories" />
+	<_38 v="Forge Looping Sound Property IDs" item_name_1="ForgeEmitterSoundPropertyIDs" item_name_2="ForgeEmitterSoundPropertyIDs" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="Friendly Category Property ID" />
+		<_2 v="Enemy Category Property ID" />
+		<_2 v="Friendly Name Property ID" />
+		<_2 v="Enemy Name Property ID" />
+		<_3B v="" />
+	</_38>
 	<_41 v="Forge Sound Response Sounds" />
 	<_41 v="Forge Nav Mesh Seed Tag Reference" />
+	<_41 v="Forge Baking Overlay screen reference" />
 	<_3B v="" />
 </root>

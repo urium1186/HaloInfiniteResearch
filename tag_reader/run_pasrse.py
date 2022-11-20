@@ -217,14 +217,17 @@ filename = 'objects\\characters\\spartan_armor\\spartan_armor.biped'
 filename = '__chore/pc__/shaders/default_bitmaps/bitmaps/color_black{pc}.bitmap'
 #filename = 'fx/library_olympus/levels/mp/nar/sn_02/mp02_200/_parts/nar_m02200_sun_particle_flare.particle'
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
-filename = 'objects\\characters\\spartan_armor\\customization\\samurai.customizationthemeconfiguration'
+#filename = 'objects\\characters\\spartan_armor\\customization\\samurai.customizationthemeconfiguration'
 filename = 'objects\\characters\\spartan_armor\\customization\\olympus.customizationthemeconfiguration'
-filename = 'objects\\characters\\spartan_armor\\customization\\reach.customizationthemeconfiguration'
+#filename = 'objects\\characters\\spartan_armor\\customization\\reach.customizationthemeconfiguration'
 #filename = 'objects\\characters\\spartan_armor\\materials\\samurai\\shoulderpad\\shoulderpad_004\\samurai_spartan_r_shoulderpad_004_s001.material'
 #filename = 'objects\\characters\\spartan_armor\\spartan_armor.frame_event_list'
-#filename = 'objects\\characters\\spartan_armor\\spartan_armor.model_animation_graph'
-filename = 'objects\\characters\\spartan_armor\\spartan_armor.biped'
-#filename = 'objects\\characters\\spartan_armor\\materials\\olympus\\armfor\\armfor_001\\olympus_spartan_l_armfor_001_s001.material'
+filename = 'objects\\characters\\spartan_armor\\spartan_armor.model_animation_graph'
+#filename = 'objects\\characters\\spartan_armor\\spartan_armor.biped'
+#filename = 'objects\\characters\\spartan_armor\\spartan_armor.biped'
+filename = 'objects\\characters\\drill_sergeant_with_face\\drill_sergeant_with_face.biped'
+filename = '__chore\\gen__\\objects\\characters\\drill_sergeant_with_face\\2c57aca7124a4d7b{g}.model'
+filename = '__chore\\gen__\\objects\\characters\\drill_sergeant_with_face\\2c57aca7124a4d7b{g}.render_model'
 print(getMmr3HashIntFrom("samurai_004_render:samurai_spartan_r_shoulderpad_004_s001MatSG"))
 print(getMmr3HashIntFrom("Title"))
 
@@ -238,6 +241,9 @@ parse = ReaderFactory.create_reader(filename)
 #parse.load_recursive = True
 parse.AddSubForOnInstanceLoad(onInstanceLoad)
 parse.load()
+for anim in parse.first_child['animations'].childs:
+    parse.readAnimationFuctionData(anim)
+
 print(filename)
 print(len(map_ext_not))
 exit(0)

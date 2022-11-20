@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="i343::TerrainSystemTag" item_name_2="i343::TerrainSystemTag" db1="712" db2="0" db3="0" db4="0" db5="1" db6="0" db7="696" db8="3379">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="i343::TerrainSystemTag" item_name_2="i343::TerrainSystemTag" db1="680" db2="0" db3="0" db4="0" db5="1" db6="0" db7="664" db8="3379">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -82,10 +82,9 @@
 	<_14 v="Macro Color Far Distance" />
 	<_14 v="Macro Color Near Opacity" />
 	<_14 v="Macro Color Far Opacity" />
-	<_38 v="Micro Height Vertex Density" item_name_1="s_splitscreen_spec_control_setting_float" item_name_2="s_splitscreen_spec_control_setting_float" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_38 v="Micro Height Vertex Density" item_name_1="s_splitscreen_spec_control_setting_float" item_name_2="s_splitscreen_spec_control_setting_float" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_37 v="Single Player" />
-		<_38 v="Single Player" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-			<_14 v="Very Low" />
+		<_38 v="Single Player" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -94,8 +93,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-			<_14 v="Very Low" />
+		<_38 v="2 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -104,8 +102,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-			<_14 v="Very Low" />
+		<_38 v="3 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -114,8 +111,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-			<_14 v="Very Low" />
+		<_38 v="4 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -125,10 +121,9 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_38>
-	<_38 v="Micro Height Radius" item_name_1="s_splitscreen_spec_control_setting_float" item_name_2="s_splitscreen_spec_control_setting_float" db1="80" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
+	<_38 v="Micro Height Radius" item_name_1="s_splitscreen_spec_control_setting_float" item_name_2="s_splitscreen_spec_control_setting_float" db1="64" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2435">
 		<_37 v="Single Player" />
-		<_38 v="Single Player" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-			<_14 v="Very Low" />
+		<_38 v="Single Player" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -137,8 +132,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="2 Player Splitscreen" />
-		<_38 v="2 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-			<_14 v="Very Low" />
+		<_38 v="2 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -147,8 +141,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="3 Player Splitscreen" />
-		<_38 v="3 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-			<_14 v="Very Low" />
+		<_38 v="3 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -157,8 +150,7 @@
 		</_38>
 		<_37 v="" />
 		<_37 v="4 Player Splitscreen" />
-		<_38 v="4 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-			<_14 v="Very Low" />
+		<_38 v="4 Player Splitscreen" item_name_1="s_core_spec_control_setting_float" item_name_2="s_core_spec_control_setting_float" db1="16" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 			<_14 v="Low" />
 			<_14 v="Medium" />
 			<_14 v="High" />
@@ -168,8 +160,7 @@
 		<_37 v="" />
 		<_3B v="" />
 	</_38>
-	<_38 v="Micro Height Mip Level" item_name_1="s_basic_spec_control_setting_int" item_name_2="s_basic_spec_control_setting_int" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-		<_6 v="Very Low" />
+	<_38 v="Micro Height Mip Level" item_name_1="s_basic_spec_control_setting_int" item_name_2="s_basic_spec_control_setting_int" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_6 v="Low" />
 		<_6 v="Medium" />
 		<_6 v="High" />
@@ -183,5 +174,6 @@
 	<_D v="Flags">
 		<Flag v="Enable Erosion" />
 	</_D>
+	<_34 v="generated_pad544d" length="4" />
 	<_3B v="" />
 </root>

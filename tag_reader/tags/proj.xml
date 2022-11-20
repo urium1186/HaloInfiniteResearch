@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="projectile_definition" item_name_2="projectile_definition" db1="3096" db2="0" db3="14" db4="0" db5="1" db6="0" db7="1376" db8="3443">
+<root item_name_1="projectile_definition" item_name_2="projectile_definition" db1="3216" db2="0" db3="14" db4="0" db5="1" db6="0" db7="1496" db8="3443">
 	<_38 v="object" item_name_1="ObjectDefinition" item_name_2="ObjectDefinition" db1="1720" db2="0" db3="36" db4="0" db5="1" db6="0" db7="1704" db8="3379">
-		<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-			<_7 v="vtable space" />
-			<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-				<_6 v="global tag ID" />
-				<_34 v="local tag handle" length="4" />
+		<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+			<_7 v="" />
+			<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+				<_6 v="" />
+				<_34 v="" length="4" />
 				<_3B v="" />
 			</_38>
 			<_3B v="" />
@@ -56,7 +56,7 @@
 			<Flag v="vaultable" />
 			<Flag v="collides with own projectiles" />
 			<Flag v="object rejects dynamic decals" />
-			<Flag v="Do not network" />
+			<Flag v="Client side only" />
 			<Flag v="Wake when visible to player" />
 			<Flag v="Sleep when not visible to player" />
 			<Flag v="Does not accept active camouflage" />
@@ -328,11 +328,12 @@
 			<Flag v="Enable Damage Hit Ticks" />
 			<Flag v="Blocks grapple aim assist" />
 			<Flag v="Send Damage Aftermath to Parent" />
+			<Flag v="Pre size attachments for customization" />
 		</_D>
 		<_37 v="Customization" />
 		<_2 v="customization set" />
 		<_37 v="" />
-		<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+		<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" db1="208" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 			<_2 v="name" />
 			<_41 v="type" />
 			<_41 v="tag graph output" />
@@ -340,6 +341,24 @@
 			<_40 v="tag graph float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 				<_2 v="name" />
 				<_14 v="value" />
+				<_3B v="" />
+			</_40>
+			<_40 v="tag graph bool params" item_name_1="TagGraph::TagGraphBoolParam" item_name_2="TagGraph::TagGraphBoolParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="name" />
+				<_F v="value">
+					<Flag v="value" />
+				</_F>
+				<_34 v="generated_pad0473" length="3" />
+				<_3B v="" />
+			</_40>
+			<_40 v="taggraph instance variables - strings" item_name_1="TagGraph::TagGraphInstanceVariableString" item_name_2="TagGraph::TagGraphInstanceVariableString" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+				<_2 v="name" />
+				<_2 v="value" />
+				<_3B v="" />
+			</_40>
+			<_40 v="taggraph instance variables - tag references" item_name_1="TagGraph::TagGraphInstanceVariableTagRef" item_name_2="TagGraph::TagGraphInstanceVariableTagRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+				<_2 v="name" />
+				<_41 v="value" />
 				<_3B v="" />
 			</_40>
 			<_41 v="override type" />
@@ -572,6 +591,7 @@
 				<Flag v="cubemap volume" />
 				<Flag v="navgenerator volume" />
 				<Flag v="navcutter volume" />
+				<Flag v="light probe volume" />
 			</_A>
 			<_F v="teleporter passability">
 				<Flag v="disallow players" />
@@ -1385,6 +1405,24 @@
 		<_14 v="value" />
 		<_3B v="" />
 	</_40>
+	<_40 v="bool params" item_name_1="TagGraph::TagGraphBoolParam" item_name_2="TagGraph::TagGraphBoolParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="name" />
+		<_F v="value">
+			<Flag v="value" />
+		</_F>
+		<_34 v="generated_pad0473" length="3" />
+		<_3B v="" />
+	</_40>
+	<_40 v="taggraph instance variables - strings" item_name_1="TagGraph::TagGraphInstanceVariableString" item_name_2="TagGraph::TagGraphInstanceVariableString" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="name" />
+		<_2 v="value" />
+		<_3B v="" />
+	</_40>
+	<_40 v="taggraph instance variables - tag references" item_name_1="TagGraph::TagGraphInstanceVariableTagRef" item_name_2="TagGraph::TagGraphInstanceVariableTagRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="name" />
+		<_41 v="value" />
+		<_3B v="" />
+	</_40>
 	<_41 v="super detonation" />
 	<_38 v="your momma" item_name_1="SuperDetonationDamageStruct" item_name_2="SuperDetonationDamageStruct" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 		<_41 v="super detonation damage" />
@@ -1431,6 +1469,24 @@
 	<_40 v="impact float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 		<_2 v="name" />
 		<_14 v="value" />
+		<_3B v="" />
+	</_40>
+	<_40 v="impact bool params" item_name_1="TagGraph::TagGraphBoolParam" item_name_2="TagGraph::TagGraphBoolParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="name" />
+		<_F v="value">
+			<Flag v="value" />
+		</_F>
+		<_34 v="generated_pad0473" length="3" />
+		<_3B v="" />
+	</_40>
+	<_40 v="impact taggraph instance variables - strings" item_name_1="TagGraph::TagGraphInstanceVariableString" item_name_2="TagGraph::TagGraphInstanceVariableString" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+		<_2 v="name" />
+		<_2 v="value" />
+		<_3B v="" />
+	</_40>
+	<_40 v="impact taggraph instance variables - tag references" item_name_1="TagGraph::TagGraphInstanceVariableTagRef" item_name_2="TagGraph::TagGraphInstanceVariableTagRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+		<_2 v="name" />
+		<_41 v="value" />
 		<_3B v="" />
 	</_40>
 	<_36 v="boarding fields" />
@@ -1620,8 +1676,33 @@
 		<_3B v="" />
 	</_40>
 	<_14 v="sound projectile rtpc weight" />
-	<_40 v="submunition events" item_name_1="i343::Projectiles::SubmunitionEventDefinition" item_name_2="i343::Projectiles::SubmunitionEventDefinition" db1="212" db2="0" db3="9" db4="0" db5="0" db6="0" db7="0" db8="307">
+	<_40 v="submunition events" item_name_1="i343::Projectiles::SubmunitionEventDefinition" item_name_2="i343::Projectiles::SubmunitionEventDefinition" db1="324" db2="0" db3="9" db4="0" db5="1" db6="0" db7="0" db8="371">
 		<_41 v="type" />
+		<_41 v="tag graph output" />
+		<_2 v="output node name" />
+		<_40 v="float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="name" />
+			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="bool params" item_name_1="TagGraph::TagGraphBoolParam" item_name_2="TagGraph::TagGraphBoolParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="name" />
+			<_F v="value">
+				<Flag v="value" />
+			</_F>
+			<_34 v="generated_pad0473" length="3" />
+			<_3B v="" />
+		</_40>
+		<_40 v="taggraph instance variables - strings" item_name_1="TagGraph::TagGraphInstanceVariableString" item_name_2="TagGraph::TagGraphInstanceVariableString" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="name" />
+			<_2 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="taggraph instance variables - tag references" item_name_1="TagGraph::TagGraphInstanceVariableTagRef" item_name_2="TagGraph::TagGraphInstanceVariableTagRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_2 v="name" />
+			<_41 v="value" />
+			<_3B v="" />
+		</_40>
 		<_5 v="count" />
 		<_A v="network prediction">
 			<Flag v="inherited" />
@@ -1717,6 +1798,7 @@
 				<Flag v="must have an unobstructed path to target" />
 				<Flag v="can target neutral" />
 				<Flag v="can target last impacted object" />
+				<Flag v="can target unaffiliated vehicles" />
 			</_F>
 			<_E v="target types">
 				<Flag v="ground units" />
@@ -1760,6 +1842,7 @@
 				<Flag v="must have an unobstructed path to target" />
 				<Flag v="can target neutral" />
 				<Flag v="can target last impacted object" />
+				<Flag v="can target unaffiliated vehicles" />
 			</_F>
 			<_E v="target types">
 				<Flag v="ground units" />
@@ -1810,6 +1893,7 @@
 			<Flag v="must have an unobstructed path to target" />
 			<Flag v="can target neutral" />
 			<Flag v="can target last impacted object" />
+			<Flag v="can target unaffiliated vehicles" />
 		</_F>
 		<_E v="target types">
 			<Flag v="ground units" />

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root item_name_1="DecoratorAssetTag" item_name_2="DecoratorAssetTag" db1="288" db2="0" db3="0" db4="0" db5="1" db6="2" db7="272" db8="3411">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+<root item_name_1="DecoratorAssetTag" item_name_2="DecoratorAssetTag" db1="344" db2="0" db3="0" db4="0" db5="1" db6="2" db7="328" db8="3411">
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -31,19 +31,15 @@
 		<Flag v="Impostor" />
 	</_C>
 	<_37 v="Spec Control - LOD Multiplier" />
-	<_38 v="LOD Multiplier" item_name_1="s_throttle_spec_control_setting_float" item_name_2="s_throttle_spec_control_setting_float" db1="52" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-		<_25 v="Very Low" />
-		<_25 v="Low" />
-		<_25 v="Medium" />
-		<_25 v="High" />
-		<_25 v="Ultra" />
-		<_14 v="2 Player Splitscreen" />
-		<_14 v="3 Player Splitscreen" />
-		<_14 v="4 Player Splitscreen" />
-		<_3B v="" />
-	</_38>
-	<_38 v="Distance Dither Start" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-		<_14 v="Very Low" />
+	<_25 v="LOD Multiplier Low" />
+	<_17 v="LOD Multiplier Splitscreen Multiplier Low" />
+	<_25 v="LOD Multiplier Medium" />
+	<_17 v="LOD Multiplier Splitscreen Multiplier Medium" />
+	<_25 v="LOD Multiplier High" />
+	<_17 v="LOD Multiplier Splitscreen Multiplier High" />
+	<_25 v="LOD Multiplier Ultra" />
+	<_17 v="LOD Multiplier Splitscreen Multiplier Ultra" />
+	<_38 v="Distance Dither Start" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="28" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 		<_14 v="Low" />
 		<_14 v="Medium" />
 		<_14 v="High" />
@@ -54,17 +50,14 @@
 		<_3B v="" />
 	</_38>
 	<_14 v="Distance Dither Transition Width" />
-	<_38 v="Distance Dither Density Multiplier" item_name_1="s_basic_spec_control_setting_float" item_name_2="s_basic_spec_control_setting_float" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
-		<_14 v="Very Low" />
-		<_14 v="Low" />
-		<_14 v="Medium" />
-		<_14 v="High" />
-		<_14 v="Ultra" />
-		<_14 v="2 Player Splitscreen" />
-		<_14 v="3 Player Splitscreen" />
-		<_14 v="4 Player Splitscreen" />
-		<_3B v="" />
-	</_38>
+	<_14 v="Distance Dither Density Multiplier Low" />
+	<_17 v="Distance Dither Density Multiplier Splitscreen Multiplier Low" />
+	<_14 v="Distance Dither Density Multiplier Medium" />
+	<_17 v="Distance Dither Density Multiplier Splitscreen Multiplier Medium" />
+	<_14 v="Distance Dither Density Multiplier High" />
+	<_17 v="Distance Dither Density Multiplier Splitscreen Multiplier High" />
+	<_14 v="Distance Dither Density Multiplier Ultra" />
+	<_17 v="Distance Dither Density Multiplier Splitscreen Multiplier Ultra" />
 	<_37 v="" />
 	<_37 v="" />
 	<_37 v="Terrain influence" />

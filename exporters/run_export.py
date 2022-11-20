@@ -1,4 +1,5 @@
 import codecs
+import pickle
 from datetime import datetime
 import json
 import os
@@ -6,6 +7,7 @@ import shutil
 import time
 
 import configs
+from commons.classes import RegionData
 from commons.debug_utils import normal_artifact_files, Intersection_meth3, Difference_meth3, artifact_on_all_comp, \
     vertx_data_arrays
 from exporters.model.bitmap_exporter import BitmapExporter
@@ -15,6 +17,7 @@ from configs.config import Config
 from exporters.model.render_model_exporter import RenderModelExporter
 from exporters.model.shader_bytecode_exporter import ShaderBytecodeExporter
 from exporters.model.shader_root_signature_exporter import ShaderRootSignatureExporter
+from exporters.to.fbx.export_to_fbx import FbxModel
 from exporters.to.fbx.import_from_fbx import FbxModelImporter
 from exporters.to.image.export_to_img_pillow import ExportImgPillowImpl
 
@@ -28,6 +31,53 @@ now = datetime.now()
 
 current_time = now.strftime("%H:%M:%S")
 print("Current Time =", current_time)
+
+
+def debug_skin_info(read_parse = False, generate_mesh = False):
+    filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
+    r_d = RegionData()
+    r_d.region_id = 1923396739
+    r_d.permutation_id = 332549919
+    # filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.render_model'
+    if read_parse:
+        parse_render_model = RenderModel(filename)
+        parse_render_model.load()
+        nodes_data = parse_render_model.getBonesInfo()
+
+    saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.json'
+
+    if generate_mesh:
+        exporter = RenderModelExporter(parse_render_model)
+
+        mesh_l = exporter.getMeshListByRegionPermutation(r_d)
+        saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.pkl'
+        mesh_save = mesh_l[0]
+        mesh_save.bones_data = nodes_data
+        with open(saveTo, 'wb') as fw:
+            pickle.dump(exporter, fw)
+            fw.close()
+
+    mesh_load = None
+    saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.pkl'
+    with open(saveTo, 'rb') as inp:
+        exporter = pickle.load(inp)
+        exporter.mesh_list_dict = {}
+        mesh_l = exporter.getMeshListByRegionPermutation(r_d)
+        mesh_load = mesh_l[0]
+        mesh_load.bones_data = exporter.render_model.getBonesInfo()
+
+    save_path = Config.MODEL_EXPORT_PATH.replace('\\', '/') + 'test_mesh.fbx'
+
+    fbx_model = FbxModel(p_skl_data=mesh_load.bones_data, p_export_skl=True)
+    fbx_model.add(mesh_load)
+    fbx_model.compareToDataInFbx(mesh_load.LOD_render_data[0])
+    # fbx_model.export(save_path, True)
+    exit(0)
+
+
+#debug_skin_info(read_parse = True, generate_mesh = True)
+#debug_skin_info()
+
 """
 #filename = '__chore\\gen__\\objects\\characters\\jacob_keyes\\5c7777b9614e46b3{g}.model'
 #filename = '__chore\\gen__\\objects\\characters\\inquisitor\\889eab6be2c9348f{g}.model'
@@ -65,25 +115,48 @@ with open(filename, 'rb') as f:
     f.close()
 
 
-
-# filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
-filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.render_model'
-parse_render_model = RenderModel(filename)
-parse_render_model.load()"""
 """
+filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
+# filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.render_model'
+"""
+
+parse_render_model = RenderModel(filename)
+parse_render_model.load()
+
 parse_render_model.toJson()
 saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.json'
+
 with open(saveTo, 'wb') as fw:
     json.dump(parse_render_model.json_base, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
     fw.close()
 
-exporter = RenderModelExporter(parse_render_model)
 
-exporter.export()
+exporter = RenderModelExporter(parse_render_model)
+r_d = RegionData()
+r_d.region_id = 1923396739
+r_d.permutation_id = 332549919
+mesh_l = exporter.getMeshListByRegionPermutation(r_d)
+saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.pkl'
+with open(saveTo, 'wb') as fw:
+    pickle.dump(mesh_l[0], fw)
+    fw.close()
+
+mesh_load = None
+saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.pkl'
+with open(saveTo, 'rb') as inp:
+    mesh_load = pickle.load(inp)
+
+save_path = Config.MODEL_EXPORT_PATH.replace('\\','/') + 'test_mesh.fbx'
+
+fbx_model = FbxModel(p_skl_data=mesh_load.bones_data, p_export_skl=True)
+fbx_model.add(mesh_load)
+fbx_model.compareToDataInFbx(mesh_load.LOD_render_data[0])
+#fbx_model.export(save_path, True)
+exit(0)
 """
 """
 # exporter.debugAnalyzeMeshInfo()
-"""
+
 filename = '__chore\\gen__\\shaders\\bytecode\\ffe\\9549cd680282f0b704a503b96b920_pc.shader_bytecode'
 parse_shader_bytecode = ReaderFactory.create_reader(filename)
 parse_shader_bytecode.load()
@@ -97,7 +170,7 @@ parse_shader_root_signature.load()
 
 exporter = ShaderRootSignatureExporter(parse_shader_root_signature)
 #exporter.export()
-
+"""
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.model'
 #filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.model'
 #filename = '__chore\\gen__\\objects\\characters\\spartan_eklund\\cf5c5fd3383d7f8c{g}.model'

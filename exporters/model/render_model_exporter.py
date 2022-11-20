@@ -187,15 +187,56 @@ class RenderModelExporter(BaseExporter):
             full = f'{x_big_bit}{y_big_bit}{z_big_bit}{w_big_bit}'
             temp = f_from_bytes(chunk_data[0:4], 'little')
             data = f_from_bytes(chunk_data[0:4], 'little')
+            data_1 = f_from_bytes(chunk_data[0:4], 'big')
             m = ((data & 0x3FF) / 1023 - 0.5) / 2 ** 0.5
             n = ((((data >> 10) & 0x3FF) - 0.5) / 1023) / 2 ** 0.5
             o = ((((data >> 20) & 0x3FF) - 0.5) / 1023) / 2 ** 0.5
-            p = (data >> 30)
+            p = (data >> 30) & 0x003
+
+            val_array = [
+                (((data >> 10) & 0x000003FF) / 0x000003FF),
+                (((data >> 20) & 0x000003FF) / 0x000003FF),
+                (((data >> 30) & 0x000003FF) / 0x000003FF),
+
+            ]
 
             m1 = ((data & 0x3FF) / 1023)
             n1 = ((((data >> 10) & 0x3FF)) / 1023)
             o1 = ((((data >> 20) & 0x3FF)) / 1023)
-            p1 = (data >> 30) / 3
+            p_i = (data >> 30) & 0x003
+            p1 = p_i / 1023
+
+            full_1 = full[0:8][::-1] + full[8:16][::-1] + full[16:24][::-1] + full[24:32][::-1]
+            r10_1 = full_1[0:10]
+            g10_1 = full_1[10:20]
+            b10_1 = full_1[20:30]
+            a02_1 = full_1[30:32]
+            int_t_1 = [int(r10_1, 2), int(g10_1, 2), int(b10_1, 2), int(a02_1, 2)]
+            divisor = 511.0 # 1023
+            float_t_1 = [int(r10_1, 2) / divisor, int(g10_1, 2) / divisor, int(b10_1, 2) / divisor, int(a02_1, 2)]
+            suma_1 = sum(float_t_1[0:3])
+
+
+            r10 = full[0:10]
+            g10 = full[10:20]
+            b10 = full[20:30]
+            a02 = full[30:32]
+            int_t = [int(r10, 2),int(g10, 2),int(b10, 2),int(a02, 2)]
+            float_t = [int(r10, 2) / 1023,int(g10, 2)/ 1023,int(b10, 2)/ 1023,int(a02, 2)]
+            _a02 = full[0:2]
+            _r10 = full[2:12]
+            _g10 = full[12:22]
+            _b10 = full[22:32]
+            _int_t = [int(_r10, 2), int(_g10, 2), int(_b10, 2), int(_a02, 2)]
+            _float_t = [int(_r10, 2)/ 1023, int(_g10, 2)/ 1023, int(_b10, 2)/ 1023, int(_a02, 2)]
+            if not (_a02 == '00' or _a02 == '01'):
+                debug = True
+
+            m2 = ((data_1 & 0x3FF) / 1023)
+            n2 = ((((data_1 >> 10) & 0x3FF)) / 1023)
+            o2 = ((((data_1 >> 20) & 0x3FF)) / 1023)
+            p2_i = (data_1 >> 30) & 0x003
+            p2 = p_i / 1023
             temp_bin = '{:<032b}'.format(temp)[::-1]  # format(temp, "b").zfill(32, ) [::-1]
             n = 10
             chunks = [full[i:i + n] for i in range(0, len(full), n)]
@@ -211,12 +252,32 @@ class RenderModelExporter(BaseExporter):
             temp >>= 10
             v3 = temp & 0x3ff
             v33 = int(chunks[2][::-1], 2)  # [::-1]
-            Wnormalized = (v11 / (2 ** 10 - 1), v22 / (2 ** 10 - 1), v33 / (2 ** 10 - 1))
-            normalized = (m1, n1, o1)
+
+            v44 = int(chunks[3][::-1], 2)  # [::-1]
+            Wnormalized = (v11 / (2 ** 10 - 1), v22 / (2 ** 10 - 1), v33 / (2 ** 10 - 1), v44 / (2 ** 10 - 1))
+            normalized_1 = (m1, n1, o1, p_i)
+            normalized = (m, n, o, p)
             rest = 1 - m1 - n1 - o1
+
+
+            t1 = ((data & 0x3ff00000) >> 20) / (2 ** 10 - 1);
+
+            t2 = ((data & 0x000003ff) << 20) / (2 ** 10 - 1);
+
+            t3 = ((data & 0x000ffc00)) / (2 ** 10 - 1);
+
             if rest > 1 or rest < 0:
                 debug = True
-            vert_data_array.append(normalized)
+            result = float_t_1
+            result.append({
+                "float_t_1": float_t_1,
+                "float_t": float_t,
+                "_float_t": _float_t,
+                "Wnormalized": Wnormalized,
+                "normalized_1": normalized_1,
+                "normalized": normalized
+            })
+            vert_data_array.append(result)
         return vert_data_array
 
     def readF_10_10_10_2_signedNormalizedPackedAsUnorm(self, bin_stream, vertex_count, vertex_stride, m_v_t_index):
@@ -751,7 +812,8 @@ class RenderModelExporter(BaseExporter):
                 #mesh = temp_mesh_s[m_index]
 
                 t_m = self.processMeshInst(mesh, mesh_resource, per_mesh_index_1 + m_index)
-
+                if len(t_m.LOD_render_data)==0:
+                    debug = True
                 material_path = t_m.LOD_render_data[0].parts[0].material_path
 
                 mesh_name = f'{region_name}_{permu_name}_mesh_{m_index}_'

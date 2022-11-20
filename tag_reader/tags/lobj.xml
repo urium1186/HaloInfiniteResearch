@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root item_name_1="LevelObjects" item_name_2="LevelObjects" db1="1760" db2="0" db3="0" db4="0" db5="1" db6="0" db7="1744" db8="1395">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -111,6 +111,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -229,7 +230,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -545,6 +546,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -663,7 +665,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -976,6 +978,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -1094,7 +1097,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -1417,6 +1420,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -1535,7 +1539,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -1831,6 +1835,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -1949,7 +1954,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -2280,6 +2285,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -2398,7 +2404,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -2735,6 +2741,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -2853,7 +2860,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -2989,6 +2996,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -3107,7 +3115,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -3439,6 +3447,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -3557,7 +3566,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -3882,6 +3891,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -4000,7 +4010,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -4136,6 +4146,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -4254,7 +4265,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -4546,6 +4557,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -4664,7 +4676,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -4977,6 +4989,7 @@
 				<Flag v="Subtract" />
 				<Flag v="override CVW lighting" />
 				<Flag v="override CVW lighting - disable CVW for this placement" />
+				<Flag v="client only no relevancy" />
 			</_D>
 			<_17 v="position" />
 			<_1C v="rotation" />
@@ -5095,7 +5108,7 @@
 			<_2 v="in-game-maps material id" />
 			<_14 v="Directional Acceleration Mult. " />
 			<_41 v="Custom Object Lighting Reference" />
-			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_40 v="Man Cannon Ballistic Arc Data" item_name_1="i343::Physics::ManCannonBallisticArcData" item_name_2="i343::Physics::ManCannonBallisticArcData" db1="20" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="2432">
 				<_17 v="Man Cannon End Point" />
 				<_14 v="Man Cannon Apex Height" />
 				<_6 v="Man Cannon Phantom Index" />
@@ -5458,7 +5471,7 @@
 		</_38>
 		<_3B v="" />
 	</_40>
-	<_40 v="effect placements" item_name_1="EffectPlacement" item_name_2="EffectPlacement" db1="168" db2="0" db3="4" db4="0" db5="1" db6="2" db7="0" db8="2387">
+	<_40 v="effect placements" item_name_1="EffectPlacement" item_name_2="EffectPlacement" db1="228" db2="0" db3="4" db4="0" db5="1" db6="2" db7="0" db8="2387">
 		<_2 v="name" />
 		<_6 v="guid" />
 		<_2 v="lighting variant" />
@@ -5488,6 +5501,24 @@
 		<_40 v="float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 			<_2 v="name" />
 			<_14 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="bool params" item_name_1="TagGraph::TagGraphBoolParam" item_name_2="TagGraph::TagGraphBoolParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="name" />
+			<_F v="value">
+				<Flag v="value" />
+			</_F>
+			<_34 v="generated_pad0473" length="3" />
+			<_3B v="" />
+		</_40>
+		<_40 v="taggraph instance variables - strings" item_name_1="TagGraph::TagGraphInstanceVariableString" item_name_2="TagGraph::TagGraphInstanceVariableString" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+			<_2 v="name" />
+			<_2 v="value" />
+			<_3B v="" />
+		</_40>
+		<_40 v="taggraph instance variables - tag references" item_name_1="TagGraph::TagGraphInstanceVariableTagRef" item_name_2="TagGraph::TagGraphInstanceVariableTagRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+			<_2 v="name" />
+			<_41 v="value" />
 			<_3B v="" />
 		</_40>
 		<_6 v="handle" />
@@ -9490,7 +9521,7 @@
 		<_6 v="Guid" />
 		<_3B v="" />
 	</_40>
-	<_40 v="acoustic zones" item_name_1="AcousticsTagZone" item_name_2="AcousticsTagZone" db1="272" db2="0" db3="9" db4="0" db5="1" db6="0" db7="0" db8="2355">
+	<_40 v="acoustic zones" item_name_1="AcousticsTagZone" item_name_2="AcousticsTagZone" db1="276" db2="0" db3="10" db4="0" db5="1" db6="0" db7="0" db8="2355">
 		<_6 v="guid" />
 		<_2 v="name" />
 		<_F v="placement flags">
@@ -9517,6 +9548,12 @@
 		<_14 v="transition speed" />
 		<_41 v="base air sound" />
 		<_41 v="base air sweetener sound" />
+		<_C v="environment type">
+			<Flag v="Use Enviroment Tag" />
+			<Flag v="Use Parent Zone" />
+			<Flag v="Interior" />
+			<Flag v="Exterior" />
+		</_C>
 		<_41 v="reverb settings" />
 		<_2 v="mix state group" />
 		<_2 v="mix state value" />
@@ -11275,7 +11312,7 @@
 		<_41 v="recording" />
 		<_3B v="" />
 	</_40>
-	<_40 v="prefab placements" item_name_1="ScenarioStaticAssetPlacement" item_name_2="ScenarioStaticAssetPlacement" db1="292" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2325">
+	<_40 v="prefab placements" item_name_1="ScenarioStaticAssetPlacement" item_name_2="ScenarioStaticAssetPlacement" db1="272" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2325">
 		<_2 v="name" />
 		<_6 v="guid" />
 		<_41 v="prefab reference" />
@@ -11375,16 +11412,6 @@
 		</_40>
 		<_40 v="material overrides" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Original material ref" />
-			<_41 v="Override material ref" />
-			<_3B v="" />
-		</_40>
-		<_40 v="mask painting material bitmap overrides" item_name_1="MaterialBitmapOverrides" item_name_2="MaterialBitmapOverrides" db1="76" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_41 v="Original material ref" />
-			<_40 v="bitmap overrides" item_name_1="MaterialBitmapOverrideEntry" item_name_2="MaterialBitmapOverrideEntry" db1="32" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
-				<_2 v="parameter name" />
-				<_41 v="bitmap" />
-				<_3B v="" />
-			</_40>
 			<_41 v="Override material ref" />
 			<_3B v="" />
 		</_40>
@@ -11396,7 +11423,7 @@
 		<_41 v="owner bsp" />
 		<_3B v="" />
 	</_40>
-	<_40 v="asset collection placements" item_name_1="ScenarioAssetCollectionPlacement" item_name_2="ScenarioAssetCollectionPlacement" db1="320" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2325">
+	<_40 v="asset collection placements" item_name_1="ScenarioAssetCollectionPlacement" item_name_2="ScenarioAssetCollectionPlacement" db1="300" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2325">
 		<_2 v="name" />
 		<_6 v="guid" />
 		<_41 v="prefab reference" />
@@ -11496,16 +11523,6 @@
 		</_40>
 		<_40 v="material overrides" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Original material ref" />
-			<_41 v="Override material ref" />
-			<_3B v="" />
-		</_40>
-		<_40 v="mask painting material bitmap overrides" item_name_1="MaterialBitmapOverrides" item_name_2="MaterialBitmapOverrides" db1="76" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_41 v="Original material ref" />
-			<_40 v="bitmap overrides" item_name_1="MaterialBitmapOverrideEntry" item_name_2="MaterialBitmapOverrideEntry" db1="32" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
-				<_2 v="parameter name" />
-				<_41 v="bitmap" />
-				<_3B v="" />
-			</_40>
 			<_41 v="Override material ref" />
 			<_3B v="" />
 		</_40>
@@ -11518,7 +11535,7 @@
 		<_41 v="asset collection" />
 		<_3B v="" />
 	</_40>
-	<_40 v="foliage placements" item_name_1="FoliageAssetPlacement" item_name_2="FoliageAssetPlacement" db1="320" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2325">
+	<_40 v="foliage placements" item_name_1="FoliageAssetPlacement" item_name_2="FoliageAssetPlacement" db1="300" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2325">
 		<_2 v="name" />
 		<_6 v="guid" />
 		<_41 v="prefab reference" />
@@ -11618,16 +11635,6 @@
 		</_40>
 		<_40 v="material overrides" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 			<_41 v="Original material ref" />
-			<_41 v="Override material ref" />
-			<_3B v="" />
-		</_40>
-		<_40 v="mask painting material bitmap overrides" item_name_1="MaterialBitmapOverrides" item_name_2="MaterialBitmapOverrides" db1="76" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
-			<_41 v="Original material ref" />
-			<_40 v="bitmap overrides" item_name_1="MaterialBitmapOverrideEntry" item_name_2="MaterialBitmapOverrideEntry" db1="32" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
-				<_2 v="parameter name" />
-				<_41 v="bitmap" />
-				<_3B v="" />
-			</_40>
 			<_41 v="Override material ref" />
 			<_3B v="" />
 		</_40>

@@ -3,7 +3,7 @@
 	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
 		<_7 v="" />
 		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
+			<_6 v="" />
 			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
@@ -48,7 +48,7 @@
 	</_40>
 	<_40 v="phantom types" item_name_1="i343::PhysicsModel::PhantomType" item_name_2="i343::PhysicsModel::PhantomType" db1="212" db2="0" db3="3" db4="0" db5="0" db6="0" db7="0" db8="337">
 		<_D v="flags">
-			<Flag v="UNUSED" />
+			<Flag v="only affects authoritative gameplay" />
 			<Flag v="use acc as force" />
 			<Flag v="negates gravity" />
 			<Flag v="ignores players" />

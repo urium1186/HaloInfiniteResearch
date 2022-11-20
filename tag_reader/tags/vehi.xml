@@ -2,11 +2,11 @@
 <root item_name_1="VehicleDefinition" item_name_2="VehicleDefinition" db1="4336" db2="0" db3="0" db4="0" db5="1" db6="0" db7="880" db8="3379">
 	<_38 v="unit" item_name_1="UnitDefinition" item_name_2="UnitDefinition" db1="3456" db2="0" db3="18" db4="0" db5="1" db6="0" db7="1736" db8="3379">
 		<_38 v="object" item_name_1="ObjectDefinition" item_name_2="ObjectDefinition" db1="1720" db2="0" db3="36" db4="0" db5="1" db6="0" db7="1704" db8="3379">
-			<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-				<_7 v="vtable space" />
-				<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-					<_6 v="global tag ID" />
-					<_34 v="local tag handle" length="4" />
+			<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+				<_7 v="" />
+				<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+					<_6 v="" />
+					<_34 v="" length="4" />
 					<_3B v="" />
 				</_38>
 				<_3B v="" />
@@ -57,7 +57,7 @@
 				<Flag v="vaultable" />
 				<Flag v="collides with own projectiles" />
 				<Flag v="object rejects dynamic decals" />
-				<Flag v="Do not network" />
+				<Flag v="Client side only" />
 				<Flag v="Wake when visible to player" />
 				<Flag v="Sleep when not visible to player" />
 				<Flag v="Does not accept active camouflage" />
@@ -329,11 +329,12 @@
 				<Flag v="Enable Damage Hit Ticks" />
 				<Flag v="Blocks grapple aim assist" />
 				<Flag v="Send Damage Aftermath to Parent" />
+				<Flag v="Pre size attachments for customization" />
 			</_D>
 			<_37 v="Customization" />
 			<_2 v="customization set" />
 			<_37 v="" />
-			<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" db1="148" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
+			<_40 v="attachments" item_name_1="object_attachment_definition" item_name_2="object_attachment_definition" db1="208" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 				<_2 v="name" />
 				<_41 v="type" />
 				<_41 v="tag graph output" />
@@ -341,6 +342,24 @@
 				<_40 v="tag graph float params" item_name_1="TagGraph::TagGraphFloatParam" item_name_2="TagGraph::TagGraphFloatParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
 					<_2 v="name" />
 					<_14 v="value" />
+					<_3B v="" />
+				</_40>
+				<_40 v="tag graph bool params" item_name_1="TagGraph::TagGraphBoolParam" item_name_2="TagGraph::TagGraphBoolParam" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_2 v="name" />
+					<_F v="value">
+						<Flag v="value" />
+					</_F>
+					<_34 v="generated_pad0473" length="3" />
+					<_3B v="" />
+				</_40>
+				<_40 v="taggraph instance variables - strings" item_name_1="TagGraph::TagGraphInstanceVariableString" item_name_2="TagGraph::TagGraphInstanceVariableString" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="897">
+					<_2 v="name" />
+					<_2 v="value" />
+					<_3B v="" />
+				</_40>
+				<_40 v="taggraph instance variables - tag references" item_name_1="TagGraph::TagGraphInstanceVariableTagRef" item_name_2="TagGraph::TagGraphInstanceVariableTagRef" db1="32" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
+					<_2 v="name" />
+					<_41 v="value" />
 					<_3B v="" />
 				</_40>
 				<_41 v="override type" />
@@ -573,6 +592,7 @@
 					<Flag v="cubemap volume" />
 					<Flag v="navgenerator volume" />
 					<Flag v="navcutter volume" />
+					<Flag v="light probe volume" />
 				</_A>
 				<_F v="teleporter passability">
 					<Flag v="disallow players" />
@@ -1414,7 +1434,7 @@
 			<_3B v="" />
 		</_40>
 		<_14 v="camera stiffness" />
-		<_38 v="unit camera" item_name_1="s_unit_camera" item_name_2="s_unit_camera" db1="112" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_38 v="unit camera" item_name_1="s_unit_camera" item_name_2="s_unit_camera" db1="112" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
 			<_37 v="Unit Camera" />
 			<_E v="flags">
 				<Flag v="pitch bounds absolute space" />
@@ -1450,18 +1470,23 @@
 				<_14 v="obstruction return delay" />
 				<_3B v="" />
 			</_38>
-			<_40 v="camera acceleration" item_name_1="s_unit_camera_acceleration" item_name_2="s_unit_camera_acceleration" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_40 v="displacement" item_name_1="i343::Units::CameraDisplacementDefinition" item_name_2="i343::Units::CameraDisplacementDefinition" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_14 v="maximum camera velocity" />
-				<_36 v="" />
-				<_38 v="forward/back" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_37 v="Forward/Back" />
+				<_38 v="forward/back" item_name_1="i343::Units::CameraDisplacementFunction" item_name_2="i343::Units::CameraDisplacementFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
-						<Flag v="yaw" />
-						<Flag v="pitch" />
-						<Flag v="roll" />
+						<Flag v="angular velocity yaw" />
+						<Flag v="angular velocity pitch" />
+						<Flag v="angular velocity roll" />
+						<Flag v="angle yaw" />
+						<Flag v="angle pitch" />
+						<Flag v="angle roll" />
+						<Flag v="aim screen yaw" />
+						<Flag v="aim screen pitch" />
 					</_A>
-					<_34 v="generated_padd066" length="3" />
+					<_34 v="generated_pad101c" length="3" />
 					<_37 v="mapping" />
 					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
@@ -1469,20 +1494,29 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
+					<_37 v="Velocity and Acceleration Input Modifiers" />
 					<_14 v="maximum value" />
 					<_14 v="camera scale (axial)" />
 					<_14 v="camera scale (perpendicular)" />
+					<_37 v="" />
 					<_3B v="" />
 				</_38>
-				<_38 v="left/right" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_37 v="" />
+				<_37 v="Left/Right" />
+				<_38 v="left/right" item_name_1="i343::Units::CameraDisplacementFunction" item_name_2="i343::Units::CameraDisplacementFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
-						<Flag v="yaw" />
-						<Flag v="pitch" />
-						<Flag v="roll" />
+						<Flag v="angular velocity yaw" />
+						<Flag v="angular velocity pitch" />
+						<Flag v="angular velocity roll" />
+						<Flag v="angle yaw" />
+						<Flag v="angle pitch" />
+						<Flag v="angle roll" />
+						<Flag v="aim screen yaw" />
+						<Flag v="aim screen pitch" />
 					</_A>
-					<_34 v="generated_padd066" length="3" />
+					<_34 v="generated_pad101c" length="3" />
 					<_37 v="mapping" />
 					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
@@ -1490,20 +1524,29 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
+					<_37 v="Velocity and Acceleration Input Modifiers" />
 					<_14 v="maximum value" />
 					<_14 v="camera scale (axial)" />
 					<_14 v="camera scale (perpendicular)" />
+					<_37 v="" />
 					<_3B v="" />
 				</_38>
-				<_38 v="up/down" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_37 v="" />
+				<_37 v="Up/Down" />
+				<_38 v="up/down" item_name_1="i343::Units::CameraDisplacementFunction" item_name_2="i343::Units::CameraDisplacementFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
-						<Flag v="yaw" />
-						<Flag v="pitch" />
-						<Flag v="roll" />
+						<Flag v="angular velocity yaw" />
+						<Flag v="angular velocity pitch" />
+						<Flag v="angular velocity roll" />
+						<Flag v="angle yaw" />
+						<Flag v="angle pitch" />
+						<Flag v="angle roll" />
+						<Flag v="aim screen yaw" />
+						<Flag v="aim screen pitch" />
 					</_A>
-					<_34 v="generated_padd066" length="3" />
+					<_34 v="generated_pad101c" length="3" />
 					<_37 v="mapping" />
 					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
@@ -1511,18 +1554,21 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
+					<_37 v="Velocity and Acceleration Input Modifiers" />
 					<_14 v="maximum value" />
 					<_14 v="camera scale (axial)" />
 					<_14 v="camera scale (perpendicular)" />
+					<_37 v="" />
 					<_3B v="" />
 				</_38>
+				<_37 v="" />
 				<_3B v="" />
 			</_40>
 			<_37 v="" />
 			<_3B v="" />
 		</_38>
 		<_36 v="sync action camera fields" />
-		<_38 v="sync action camera" item_name_1="s_unit_camera" item_name_2="s_unit_camera" db1="112" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+		<_38 v="sync action camera" item_name_1="s_unit_camera" item_name_2="s_unit_camera" db1="112" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
 			<_37 v="Unit Camera" />
 			<_E v="flags">
 				<Flag v="pitch bounds absolute space" />
@@ -1558,18 +1604,23 @@
 				<_14 v="obstruction return delay" />
 				<_3B v="" />
 			</_38>
-			<_40 v="camera acceleration" item_name_1="s_unit_camera_acceleration" item_name_2="s_unit_camera_acceleration" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+			<_40 v="displacement" item_name_1="i343::Units::CameraDisplacementDefinition" item_name_2="i343::Units::CameraDisplacementDefinition" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 				<_14 v="maximum camera velocity" />
-				<_36 v="" />
-				<_38 v="forward/back" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_37 v="Forward/Back" />
+				<_38 v="forward/back" item_name_1="i343::Units::CameraDisplacementFunction" item_name_2="i343::Units::CameraDisplacementFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
-						<Flag v="yaw" />
-						<Flag v="pitch" />
-						<Flag v="roll" />
+						<Flag v="angular velocity yaw" />
+						<Flag v="angular velocity pitch" />
+						<Flag v="angular velocity roll" />
+						<Flag v="angle yaw" />
+						<Flag v="angle pitch" />
+						<Flag v="angle roll" />
+						<Flag v="aim screen yaw" />
+						<Flag v="aim screen pitch" />
 					</_A>
-					<_34 v="generated_padd066" length="3" />
+					<_34 v="generated_pad101c" length="3" />
 					<_37 v="mapping" />
 					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
@@ -1577,20 +1628,29 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
+					<_37 v="Velocity and Acceleration Input Modifiers" />
 					<_14 v="maximum value" />
 					<_14 v="camera scale (axial)" />
 					<_14 v="camera scale (perpendicular)" />
+					<_37 v="" />
 					<_3B v="" />
 				</_38>
-				<_38 v="left/right" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_37 v="" />
+				<_37 v="Left/Right" />
+				<_38 v="left/right" item_name_1="i343::Units::CameraDisplacementFunction" item_name_2="i343::Units::CameraDisplacementFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
-						<Flag v="yaw" />
-						<Flag v="pitch" />
-						<Flag v="roll" />
+						<Flag v="angular velocity yaw" />
+						<Flag v="angular velocity pitch" />
+						<Flag v="angular velocity roll" />
+						<Flag v="angle yaw" />
+						<Flag v="angle pitch" />
+						<Flag v="angle roll" />
+						<Flag v="aim screen yaw" />
+						<Flag v="aim screen pitch" />
 					</_A>
-					<_34 v="generated_padd066" length="3" />
+					<_34 v="generated_pad101c" length="3" />
 					<_37 v="mapping" />
 					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
@@ -1598,20 +1658,29 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
+					<_37 v="Velocity and Acceleration Input Modifiers" />
 					<_14 v="maximum value" />
 					<_14 v="camera scale (axial)" />
 					<_14 v="camera scale (perpendicular)" />
+					<_37 v="" />
 					<_3B v="" />
 				</_38>
-				<_38 v="up/down" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_37 v="" />
+				<_37 v="Up/Down" />
+				<_38 v="up/down" item_name_1="i343::Units::CameraDisplacementFunction" item_name_2="i343::Units::CameraDisplacementFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_A v="Input Variable">
 						<Flag v="linear velocity" />
 						<Flag v="linear acceleration" />
-						<Flag v="yaw" />
-						<Flag v="pitch" />
-						<Flag v="roll" />
+						<Flag v="angular velocity yaw" />
+						<Flag v="angular velocity pitch" />
+						<Flag v="angular velocity roll" />
+						<Flag v="angle yaw" />
+						<Flag v="angle pitch" />
+						<Flag v="angle roll" />
+						<Flag v="aim screen yaw" />
+						<Flag v="aim screen pitch" />
 					</_A>
-					<_34 v="generated_padd066" length="3" />
+					<_34 v="generated_pad101c" length="3" />
 					<_37 v="mapping" />
 					<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 						<_37 v="" />
@@ -1619,11 +1688,14 @@
 						<_37 v="" />
 						<_3B v="" />
 					</_38>
+					<_37 v="Velocity and Acceleration Input Modifiers" />
 					<_14 v="maximum value" />
 					<_14 v="camera scale (axial)" />
 					<_14 v="camera scale (perpendicular)" />
+					<_37 v="" />
 					<_3B v="" />
 				</_38>
+				<_37 v="" />
 				<_3B v="" />
 			</_40>
 			<_37 v="" />
@@ -2087,7 +2159,7 @@
 			<_14 v="max speed reference" />
 			<_14 v="speed exponent" />
 			<_36 v="camera fields" />
-			<_38 v="unit camera" item_name_1="s_unit_camera" item_name_2="s_unit_camera" db1="112" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="307">
+			<_38 v="unit camera" item_name_1="s_unit_camera" item_name_2="s_unit_camera" db1="112" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="307">
 				<_37 v="Unit Camera" />
 				<_E v="flags">
 					<Flag v="pitch bounds absolute space" />
@@ -2123,18 +2195,23 @@
 					<_14 v="obstruction return delay" />
 					<_3B v="" />
 				</_38>
-				<_40 v="camera acceleration" item_name_1="s_unit_camera_acceleration" item_name_2="s_unit_camera_acceleration" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+				<_40 v="displacement" item_name_1="i343::Units::CameraDisplacementDefinition" item_name_2="i343::Units::CameraDisplacementDefinition" db1="124" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 					<_14 v="maximum camera velocity" />
-					<_36 v="" />
-					<_38 v="forward/back" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_37 v="Forward/Back" />
+					<_38 v="forward/back" item_name_1="i343::Units::CameraDisplacementFunction" item_name_2="i343::Units::CameraDisplacementFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_A v="Input Variable">
 							<Flag v="linear velocity" />
 							<Flag v="linear acceleration" />
-							<Flag v="yaw" />
-							<Flag v="pitch" />
-							<Flag v="roll" />
+							<Flag v="angular velocity yaw" />
+							<Flag v="angular velocity pitch" />
+							<Flag v="angular velocity roll" />
+							<Flag v="angle yaw" />
+							<Flag v="angle pitch" />
+							<Flag v="angle roll" />
+							<Flag v="aim screen yaw" />
+							<Flag v="aim screen pitch" />
 						</_A>
-						<_34 v="generated_padd066" length="3" />
+						<_34 v="generated_pad101c" length="3" />
 						<_37 v="mapping" />
 						<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 							<_37 v="" />
@@ -2142,20 +2219,29 @@
 							<_37 v="" />
 							<_3B v="" />
 						</_38>
+						<_37 v="Velocity and Acceleration Input Modifiers" />
 						<_14 v="maximum value" />
 						<_14 v="camera scale (axial)" />
 						<_14 v="camera scale (perpendicular)" />
+						<_37 v="" />
 						<_3B v="" />
 					</_38>
-					<_38 v="left/right" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_37 v="" />
+					<_37 v="Left/Right" />
+					<_38 v="left/right" item_name_1="i343::Units::CameraDisplacementFunction" item_name_2="i343::Units::CameraDisplacementFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_A v="Input Variable">
 							<Flag v="linear velocity" />
 							<Flag v="linear acceleration" />
-							<Flag v="yaw" />
-							<Flag v="pitch" />
-							<Flag v="roll" />
+							<Flag v="angular velocity yaw" />
+							<Flag v="angular velocity pitch" />
+							<Flag v="angular velocity roll" />
+							<Flag v="angle yaw" />
+							<Flag v="angle pitch" />
+							<Flag v="angle roll" />
+							<Flag v="aim screen yaw" />
+							<Flag v="aim screen pitch" />
 						</_A>
-						<_34 v="generated_padd066" length="3" />
+						<_34 v="generated_pad101c" length="3" />
 						<_37 v="mapping" />
 						<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 							<_37 v="" />
@@ -2163,20 +2249,29 @@
 							<_37 v="" />
 							<_3B v="" />
 						</_38>
+						<_37 v="Velocity and Acceleration Input Modifiers" />
 						<_14 v="maximum value" />
 						<_14 v="camera scale (axial)" />
 						<_14 v="camera scale (perpendicular)" />
+						<_37 v="" />
 						<_3B v="" />
 					</_38>
-					<_38 v="up/down" item_name_1="s_unit_camera_acceleration_displacement_function" item_name_2="s_unit_camera_acceleration_displacement_function" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
+					<_37 v="" />
+					<_37 v="Up/Down" />
+					<_38 v="up/down" item_name_1="i343::Units::CameraDisplacementFunction" item_name_2="i343::Units::CameraDisplacementFunction" db1="40" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2355">
 						<_A v="Input Variable">
 							<Flag v="linear velocity" />
 							<Flag v="linear acceleration" />
-							<Flag v="yaw" />
-							<Flag v="pitch" />
-							<Flag v="roll" />
+							<Flag v="angular velocity yaw" />
+							<Flag v="angular velocity pitch" />
+							<Flag v="angular velocity roll" />
+							<Flag v="angle yaw" />
+							<Flag v="angle pitch" />
+							<Flag v="angle roll" />
+							<Flag v="aim screen yaw" />
+							<Flag v="aim screen pitch" />
 						</_A>
-						<_34 v="generated_padd066" length="3" />
+						<_34 v="generated_pad101c" length="3" />
 						<_37 v="mapping" />
 						<_38 v="mapping" item_name_1="FunctionDefinition" item_name_2="FunctionDefinition" db1="24" db2="0" db3="2" db4="0" db5="1" db6="0" db7="0" db8="2353">
 							<_37 v="" />
@@ -2184,11 +2279,14 @@
 							<_37 v="" />
 							<_3B v="" />
 						</_38>
+						<_37 v="Velocity and Acceleration Input Modifiers" />
 						<_14 v="maximum value" />
 						<_14 v="camera scale (axial)" />
 						<_14 v="camera scale (perpendicular)" />
+						<_37 v="" />
 						<_3B v="" />
 					</_38>
+					<_37 v="" />
 					<_3B v="" />
 				</_40>
 				<_37 v="" />
@@ -4031,21 +4129,12 @@
 		</_C>
 		<_3B v="" />
 	</_40>
-	<_A v="player training vehicle type">
-		<Flag v="none" />
-		<Flag v="warthog" />
-		<Flag v="warthog turret" />
-		<Flag v="ghost" />
-		<Flag v="banshee" />
-		<Flag v="tank" />
-		<Flag v="wraith" />
-	</_A>
 	<_A v="vehicle size">
 		<Flag v="small" />
 		<Flag v="large" />
 	</_A>
 	<_4 v="complex suspension sample count" />
-	<_34 v="generated_pad9b33" length="1" />
+	<_34 v="generated_pad9b33" length="2" />
 	<_8 v="complex suspension distribution angle" />
 	<_14 v="complex suspension wheel diameter" />
 	<_14 v="complex suspension wheel width" />

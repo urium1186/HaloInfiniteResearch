@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root item_name_1="i343::LevelStaticGeoTag" item_name_2="i343::LevelStaticGeoTag" db1="80" db2="0" db3="3" db4="0" db5="1" db6="0" db7="64" db8="3347">
-	<_38 v="AnyTag" item_name_1="AnyTag_struct_definition" item_name_2="AnyTag_struct_definition" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
-		<_7 v="vtable space" />
-		<_38 v="internal struct" item_name_1="s_anyTagGuts" item_name_2="s_anyTagGuts" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
-			<_6 v="global tag ID" />
-			<_34 v="local tag handle" length="4" />
+	<_38 v="AnyTag" item_name_1="" item_name_2="" db1="16" db2="0" db3="1" db4="0" db5="0" db6="0" db7="16" db8="1923">
+		<_7 v="" />
+		<_38 v="" item_name_1="" item_name_2="" db1="8" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="896">
+			<_6 v="" />
+			<_34 v="" length="4" />
 			<_3B v="" />
 		</_38>
 		<_3B v="" />
@@ -19,8 +19,8 @@
 	<_14 v="Minimum screen size" />
 	<_40 v="bsps" item_name_1="i343::LevelStaticGeoBsp" item_name_2="i343::LevelStaticGeoBsp" db1="68" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="273">
 		<_41 v="Bsp" />
-		<_40 v="static placements" item_name_1="i343::LevelStaticGeoPlacement" item_name_2="i343::LevelStaticGeoPlacement" db1="312" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2327">
-			<_38 v="Placement" item_name_1="ScenarioStaticAssetPlacement" item_name_2="ScenarioStaticAssetPlacement" db1="292" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2325">
+		<_40 v="static placements" item_name_1="i343::LevelStaticGeoPlacement" item_name_2="i343::LevelStaticGeoPlacement" db1="292" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2327">
+			<_38 v="Placement" item_name_1="ScenarioStaticAssetPlacement" item_name_2="ScenarioStaticAssetPlacement" db1="272" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2325">
 				<_2 v="name" />
 				<_6 v="guid" />
 				<_41 v="prefab reference" />
@@ -120,16 +120,6 @@
 				</_40>
 				<_40 v="material overrides" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 					<_41 v="Original material ref" />
-					<_41 v="Override material ref" />
-					<_3B v="" />
-				</_40>
-				<_40 v="mask painting material bitmap overrides" item_name_1="MaterialBitmapOverrides" item_name_2="MaterialBitmapOverrides" db1="76" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
-					<_41 v="Original material ref" />
-					<_40 v="bitmap overrides" item_name_1="MaterialBitmapOverrideEntry" item_name_2="MaterialBitmapOverrideEntry" db1="32" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
-						<_2 v="parameter name" />
-						<_41 v="bitmap" />
-						<_3B v="" />
-					</_40>
 					<_41 v="Override material ref" />
 					<_3B v="" />
 				</_40>
@@ -146,8 +136,8 @@
 			<_14 v="Streaming Radius" />
 			<_3B v="" />
 		</_40>
-		<_40 v="foliage placements" item_name_1="i343::LevelStaticGeoPlacement" item_name_2="i343::LevelStaticGeoPlacement" db1="312" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2327">
-			<_38 v="Placement" item_name_1="ScenarioStaticAssetPlacement" item_name_2="ScenarioStaticAssetPlacement" db1="292" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2325">
+		<_40 v="foliage placements" item_name_1="i343::LevelStaticGeoPlacement" item_name_2="i343::LevelStaticGeoPlacement" db1="292" db2="0" db3="0" db4="0" db5="1" db6="0" db7="0" db8="2327">
+			<_38 v="Placement" item_name_1="ScenarioStaticAssetPlacement" item_name_2="ScenarioStaticAssetPlacement" db1="272" db2="0" db3="3" db4="0" db5="1" db6="0" db7="0" db8="2325">
 				<_2 v="name" />
 				<_6 v="guid" />
 				<_41 v="prefab reference" />
@@ -247,16 +237,6 @@
 				</_40>
 				<_40 v="material overrides" item_name_1="MaterialOverrideEntry" item_name_2="MaterialOverrideEntry" db1="56" db2="0" db3="0" db4="0" db5="0" db6="0" db7="0" db8="273">
 					<_41 v="Original material ref" />
-					<_41 v="Override material ref" />
-					<_3B v="" />
-				</_40>
-				<_40 v="mask painting material bitmap overrides" item_name_1="MaterialBitmapOverrides" item_name_2="MaterialBitmapOverrides" db1="76" db2="0" db3="1" db4="0" db5="1" db6="0" db7="0" db8="273">
-					<_41 v="Original material ref" />
-					<_40 v="bitmap overrides" item_name_1="MaterialBitmapOverrideEntry" item_name_2="MaterialBitmapOverrideEntry" db1="32" db2="0" db3="1" db4="0" db5="0" db6="0" db7="0" db8="273">
-						<_2 v="parameter name" />
-						<_41 v="bitmap" />
-						<_3B v="" />
-					</_40>
 					<_41 v="Override material ref" />
 					<_3B v="" />
 				</_40>
