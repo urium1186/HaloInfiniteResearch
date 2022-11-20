@@ -20,6 +20,5 @@ class Generic(BaseTemplate):
         else:
             raise Exception(f'No tag group for {file_ext} in {filename}')
 
-
-    def load(self):
-        super().load()
+    def toJson(self, from_first_child=False):
+        super().toJson(True)
