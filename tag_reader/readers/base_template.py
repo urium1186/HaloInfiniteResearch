@@ -57,8 +57,16 @@ class BaseTemplate(IBaseTemplate):
     def is_loaded(self):
         return self._loaded
 
-    def toJson(self):
-        self.json_base = json.loads(self.json_str_base)
+    def toJson(self, from_first_child=False):
+        if not from_first_child:
+            self.json_base = json.loads(self.json_str_base)
+        else:
+            if self.first_child is None:
+                return self.json_str_base
+
+            self.json_str_base =json.dumps( self.tag_parse.rootTagInst.toJson())
+            self.json_base = json.loads(self.json_str_base)
+        return self.json_base
 
     def onInstanceLoad(self, instance):
         if self.load_recursive and instance.tagDef.T == 'TagRef':
