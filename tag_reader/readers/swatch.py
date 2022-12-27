@@ -14,12 +14,12 @@ class Swatch(BaseTemplate):
                               "ior": 0.0,\
                               "colorVariant": {\
                                   "botColor": [],\
-                                  "id": "",\
                                   "topColor": [],\
                                   "midColor": []\
                               },\
                               "normalPath": "",\
                               "normalTextureTransform": [],\
+                              "colorAndRoughnessTextureTransform": [],\
                               "scratchAlbedoTint": 0,\
                               "scratchColor": [],\
                               "metallic": 0.0,\
@@ -57,10 +57,10 @@ class Swatch(BaseTemplate):
         self.json_base["colorVariant"]["botColor"] = [color_variant['gradient_bottom_color'].r_value, color_variant['gradient_bottom_color'].g_value, color_variant['gradient_bottom_color'].b_value]
         self.json_base["colorVariant"]["topColor"] = [color_variant['gradient_top_color'].r_value, color_variant['gradient_top_color'].g_value, color_variant['gradient_top_color'].b_value]
         self.json_base["colorVariant"]["midColor"] = [color_variant['gradient_mid_color'].r_value, color_variant['gradient_mid_color'].g_value, color_variant['gradient_mid_color'].b_value]
-        self.json_base["colorVariant"]["id"] = color_variant['name'].value
         self.json_base["normalPath"] = root['normal_detail_map'].path
         checkFileExistInUE5Project(self.json_base["normalPath"])
         self.json_base["normalTextureTransform"] = [root['normalTextureTransform'].x,root['normalTextureTransform'].y]
+        self.json_base["colorAndRoughnessTextureTransform"] = [root['colorAndRoughnessTextureTransform'].x,root['colorAndRoughnessTextureTransform'].y]
         self.json_base["scratchAlbedoTint"] = root['scratch_albedo_tint_spec'].value
         self.json_base["scratchColor"] = [root['scratch_color'].r_value,root['scratch_color'].g_value,root['scratch_color'].b_value]
         self.json_base["metallic"] = root['metallic'].value
