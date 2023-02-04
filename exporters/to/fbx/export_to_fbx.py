@@ -1,10 +1,11 @@
 import math
 
 import fbx
+#import pyfbx as fbx
 import sys
 
 import numpy
-from fbx import FbxDeformer, FbxSkin, FbxCluster, FbxAMatrix
+#from fbx import FbxDeformer, FbxSkin, FbxCluster, FbxAMatrix
 
 from commons.common_utils import inSphere
 from commons.logs import Log
@@ -507,14 +508,14 @@ class FbxModel:
 
         dict_skin_w_info = {}
 
-        lSkinCount = mesh.GetDeformerCount(FbxDeformer.eSkin)
+        lSkinCount = mesh.GetDeformerCount(fbx.FbxDeformer.eSkin)
         bones_name_pos = {}
-        lSkinDeformer: FbxSkin = None
+        lSkinDeformer: fbx.FbxSkin = None
         for lSkinIndex in range(lSkinCount):
-            lSkinDeformer = mesh.GetDeformer(lSkinIndex, FbxDeformer.eSkin)
+            lSkinDeformer = mesh.GetDeformer(lSkinIndex, fbx.FbxDeformer.eSkin)
             lClusterCount = lSkinDeformer.GetClusterCount()
             for lClusterIndex in range(lClusterCount):
-                lCluster: FbxCluster = lSkinDeformer.GetCluster(lClusterIndex)
+                lCluster: fbx.FbxCluster = lSkinDeformer.GetCluster(lClusterIndex)
                 link = lCluster.GetLink()
                 link_name = str(link.GetName())
                 if link_name.__contains__(':'):
