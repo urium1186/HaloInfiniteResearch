@@ -1,8 +1,7 @@
 import os
 import sys
 
-import fbx
-from fbx import FbxStatus, FbxLayerElement, FbxDeformer, FbxSkin, FbxCluster
+import pyfbx as fbx
 
 from configs.config import Config
 
@@ -42,7 +41,7 @@ class FbxModelImporter:
             error = self.importer.GetStatus().GetErrorString()
             print("Call to FbxImporter::Initialize() failed.")
             print("Error returned: %s", error.Buffer())
-            if self.importer.GetStatus().GetCode() == FbxStatus.eInvalidFileVersion:
+            if self.importer.GetStatus().GetCode() == fbx.FbxStatus.eInvalidFileVersion:
                 print("FBX version number for this FBX SDK is %d.%d.%d")
                 print("FBX version number for file %s is %d.%d.%d")
 
@@ -86,13 +85,13 @@ class FbxModelImporter:
         lVertexCount = lControlPointsCount = pMesh.GetControlPointsCount()
         lControlPoints = pMesh.GetControlPoints()
         print("    Control Points")
-        lSkinCount = pMesh.GetDeformerCount(FbxDeformer.eSkin)
+        lSkinCount = pMesh.GetDeformerCount(fbx.FbxDeformer.eSkin)
 
         for lSkinIndex in range(lSkinCount):
-            lSkinDeformer:FbxSkin = pMesh.GetDeformer(lSkinIndex, FbxDeformer.eSkin)
+            lSkinDeformer:fbx.FbxSkin = pMesh.GetDeformer(lSkinIndex, fbx.FbxDeformer.eSkin)
             lClusterCount = lSkinDeformer.GetClusterCount()
             for lClusterIndex in range(lClusterCount):
-                lCluster: FbxCluster = lSkinDeformer.GetCluster(lClusterIndex)
+                lCluster: fbx.FbxCluster = lSkinDeformer.GetCluster(lClusterIndex)
                 link = lCluster.GetLink()
                 link_name = str(link.GetName())
                 if link_name.__contains__(':'):
@@ -116,8 +115,8 @@ class FbxModelImporter:
             print("            Coordinates: ", lControlPoints[i])
             for j in  range(pMesh.GetElementNormalCount()):
                 leNormals = pMesh.GetElementNormal( j)
-                if leNormals.GetMappingMode() == FbxLayerElement.eByControlPoint:
-                    if leNormals.GetReferenceMode() == FbxLayerElement.eDirect: # FbxGeometryElement
+                if leNormals.GetMappingMode() == fbx.FbxLayerElement.eByControlPoint:
+                    if leNormals.GetReferenceMode() == fbx.FbxLayerElement.eDirect: # FbxGeometryElement
                         print(leNormals.GetDirectArray().GetAt(i))
 
 

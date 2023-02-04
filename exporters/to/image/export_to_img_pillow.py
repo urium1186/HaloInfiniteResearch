@@ -3,7 +3,7 @@ from io import BytesIO
 
 from PIL import Image
 from PIL.DdsImagePlugin import DdsImageFile
-from sympy import re
+#from sympy import re
 
 from commons.debug_utils import normal_artifact_files, fillDebugDict
 from configs.config import Config

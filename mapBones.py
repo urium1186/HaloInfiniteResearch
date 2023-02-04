@@ -1,6 +1,4 @@
-import fbx
-import sys
-import os
+
 class MapBones:
     def __init__(self):
         self.mapBones = {

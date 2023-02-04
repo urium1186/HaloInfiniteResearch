@@ -5,9 +5,28 @@ import gf
 import os
 from ctypes import cdll, c_char_p, create_string_buffer
 
-from tag_group_extension_map import ma_guid_ext
+from configs.config import Config
 
+#from tag_group_extension_map import ma_guid_ext
 
+"""
+So basically
+V51:
+if(hd1){
+    offset = item.offset + module.dataoffset - module.hd1_delta
+} else {
+    offset = item.offset + module.dataoffset
+}
+
+V52:
+if(hd1){
+    offset = item.offset + module.hd1_delta
+} else {
+    offset = item.offset + module.dataoffset
+}
+
+(module.dataoffset in this case is the end of the block table aligned)
+"""
 class OodleDecompressor:
     """
     Oodle decompression implementation.
@@ -49,8 +68,9 @@ def getGUID(hex_string):
            + temp_s[12:16] + "-" + temp_s[16:20] + "-" + temp_s[21:32] + "}"
 
 
-def extract_module(module):
+def extract_module(module, filter = '', save_to_files = True, unpack_path = '', deploy_path = '', out_memo_files = []):
     fb = open(f"{deploy_path}/{module}.module", "rb")
+    #fb = open("C:\\Program Files (x86)\\Steam\\steamapps\\common\\Halo Infinite\\deploy\\any\\globals\\globals-rtx-new.module", "rb")
     file_size = fb.seek(0, 2)
     fb.seek(0)
     # Parsing header
@@ -120,12 +140,12 @@ def extract_module(module):
         t1e.hash = fb.read(0x10).hex().upper()  # 0x48 -> 0x58
 
         files.append(t1e)
-
+    pos = fb.tell()
     fb.seek(8, 1)
     string_table_offset = fb.tell()
     for t1e in files:
         t1e.string = gf.offset_to_string(fb, string_table_offset + t1e.string_offset)
-
+    pos2 = fb.tell()
     # Table 3
     t3es = []
     for i in range(table3_count):
@@ -151,9 +171,12 @@ def extract_module(module):
     # To skip zeros
     while fb.read(1) == b"\x00":
         continue
-    data_offset = fb.seek(-1, 1)
 
-    decompressor = OodleDecompressor('oo2core_8_win64.dll')
+    data_offset = fb.seek(-1, 1)
+    #return
+    oodleDllPath = Config.ROOT_DIR + "\\unpacker\\oo2core_8_win64.dll"
+    decompressor = OodleDecompressor(oodleDllPath)
+
     #print(f"File count: {len(files)}")
     for i, t1e in enumerate(files):
         # Cleaning string to be savable
@@ -170,7 +193,7 @@ def extract_module(module):
         temp = ('/'.join(t1e.save_path.split('/')[:-1]))
         #if not (temp.__contains__('spartan_armor') or temp.__contains__('gear')):
         #if not (temp.__contains__('pc__/objects/characters/spartan_armor/bitmaps/')):
-        if not (temp.__contains__('materials/generic/')):
+        #if not (temp.__contains__('materials/generic/')):
         # if not (temp.__contains__('__chore/pc__/shaders/')):
         #if not (temp.__contains__('coatings')):
         #if not (temp.__contains__('materialswatch')):
@@ -182,6 +205,7 @@ def extract_module(module):
         #if not (temp.__contains__('hum_base_fabric_oriental_pattern_01_normal{pc}')):
         #if not (t1e.save_path.__contains__('hum_base_fabric_oriental_pattern_02_normal{pc}')):
         #if not (t1e.save_path.__contains__('_normal{pc}') and t1e.save_path.__contains__('__chore/pc__/materials/generic/')):
+        if not (temp.__contains__(filter)):
             continue
         # print(t1e.save_path)
         # os.makedirs('/'.join(t1e.save_path.split('/')[:-1]), exist_ok=True)
@@ -225,40 +249,46 @@ def extract_module(module):
                         raise Exception("Skipped data fix")
                     decomp_save_data += decomp
         else:
+            tmp.seek(file_data_offset)
             if t1e.comp_size == t1e.decomp_size:
                 decomp_save_data = tmp.read(t1e.comp_size)
                 #print(t1e.save_path)
             else:
-                tmp.seek(file_data_offset)
                 decomp_save_data = decompressor.decompress(tmp.read(t1e.comp_size), t1e.decomp_size)
-        new_dir_path = os.path.dirname(t1e.save_path)
-        if not os.path.exists(new_dir_path):
-            os.makedirs(new_dir_path, exist_ok=True)
-        with open(t1e.save_path, "wb") as f:
-            f.write(decomp_save_data)
-            print(t1e.save_path)
+
+        if save_to_files:
+            new_dir_path = os.path.dirname(t1e.save_path)
+            if not os.path.exists(new_dir_path):
+                os.makedirs(new_dir_path, exist_ok=True)
+            with open(t1e.save_path, "wb") as f:
+                f.write(decomp_save_data)
+                print(t1e.save_path)
+        else:
+            out_memo_files.append(decomp_save_data)
 
 
-def extract_all_modules():
+def extract_all_modules(filter = '', save_to_files = True, unpack_path = '', deploy_path = '',  out_memo_files = []):
     # Ignoring module hd files
     p = [os.path.join(dp, f)[len(deploy_path):].replace("\\", "/") for dp, dn, fn in
          os.walk(os.path.expanduser(deploy_path)) for f in fn if ".module" in f and ".module_" not in f]
     for file in p:
         # print(file)
-        extract_module(file.replace(".module", ""))
+        extract_module(file.replace(".module", ""), filter, save_to_files, unpack_path, deploy_path)
 
 
-unpack_directory = "J:/Games/Halo Infinite Stuf/Extracted/HI/models/beta 1/"
-directory = f"{unpack_directory}/__chore\pc__\objects\weapons/"
-directory = f"{unpack_directory}/__chore\pc__\materials\generic/"
-directory = f"{unpack_directory}/__chore\pc__\objects\characters\spartan_armor/"
-directory = f"{unpack_directory}/__chore\pc__\shaders/"
-directory = directory.replace("\\", "/")
-path_to_create = [
-    f"{unpack_directory}/__chore\pc__\objects\characters".replace("\\", "/"),
-]
+
 
 if __name__ == "__main__":
+    unpack_directory = "J:/Games/Halo Infinite Stuf/Extracted/HI/models/beta 1/"
+    directory = f"{unpack_directory}/__chore\pc__\objects\weapons/"
+    directory = f"{unpack_directory}/__chore\pc__\materials\generic/"
+    directory = f"{unpack_directory}/__chore\pc__\objects\characters\spartan_armor/"
+    directory = f"{unpack_directory}/__chore\pc__\shaders/"
+    directory = directory.replace("\\", "/")
+    path_to_create = [
+        f"{unpack_directory}/__chore\pc__\objects\characters".replace("\\", "/"),
+    ]
+
     # unpack_path = "C:/Users/Jorge/Downloads/Compressed/deploy1/HIU1/"
     # unpack_path = "J:/Games/Halo Infinite Stuf/Extracted/HI/models/beta 1/"
     # unpack_path = "J:/Games/Halo Infinite Stuf/Extracted/UnPaked/season2/models/"
@@ -272,8 +302,11 @@ if __name__ == "__main__":
     # module_path = "pc/globals/forge/forge_objects-rtx-new"
     # module_name = "any/globals/forge/"
     # extract_module(module_path)
-    extract_all_modules()
-    print(ma_guid_ext)
+    out_memo_files = []
+    save_to_files = False
+    filter = ''
+    extract_all_modules(filter, save_to_files, unpack_path, deploy_path, out_memo_files)
+    #print(ma_guid_ext)
     print('end extract')
 
     ## pc/globals/forge/forge_objects-rtx-new.module is broken

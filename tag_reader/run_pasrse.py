@@ -217,8 +217,9 @@ filename = 'objects\\characters\\spartan_armor\\spartan_armor.biped'
 filename = '__chore/pc__/shaders/default_bitmaps/bitmaps/color_black{pc}.bitmap'
 #filename = 'fx/library_olympus/levels/mp/nar/sn_02/mp02_200/_parts/nar_m02200_sun_particle_flare.particle'
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
+filename = 'levels\\design\\example_room\\devices\\control_example_2\\control_example_2.render_model'
 #filename = 'objects\\characters\\spartan_armor\\customization\\samurai.customizationthemeconfiguration'
-filename = 'objects\\characters\\spartan_armor\\customization\\olympus.customizationthemeconfiguration'
+#filename = 'objects\\characters\\spartan_armor\\customization\\olympus.customizationthemeconfiguration'
 #filename = 'objects\\characters\\spartan_armor\\customization\\reach.customizationthemeconfiguration'
 #filename = 'objects\\characters\\spartan_armor\\materials\\samurai\\shoulderpad\\shoulderpad_004\\samurai_spartan_r_shoulderpad_004_s001.material'
 #filename = 'objects\\characters\\spartan_armor\\spartan_armor.frame_event_list'
@@ -241,6 +242,7 @@ parse = ReaderFactory.create_reader(filename)
 #parse.load_recursive = True
 parse.AddSubForOnInstanceLoad(onInstanceLoad)
 parse.load()
+exit(0)
 #json_temp = parse.toJson(True)
 for anim in parse.first_child['animations'].childs:
     parse.readAnimationFuctionData(anim)

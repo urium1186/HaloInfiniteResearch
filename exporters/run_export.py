@@ -25,6 +25,7 @@ from tag_reader.readers.bitmap import Bitmap
 from tag_reader.readers.model import Model
 from tag_reader.readers.reader_factory import ReaderFactory
 from tag_reader.readers.render_model import RenderModel
+from unpacker.run_unpacker import extract_all_modules
 
 print(time.time())
 now = datetime.now()
@@ -118,10 +119,14 @@ with open(filename, 'rb') as f:
 """
 filename = 'objects\\characters\\spartan_armor\\spartan_armor.render_model'
 # filename = '__chore\\gen__\\objects\\characters\\spartan_dinh\\28ca8142b9ac566d{g}.render_model'
-"""
+
 
 parse_render_model = RenderModel(filename)
 parse_render_model.load()
+exporter = RenderModelExporter(parse_render_model)
+exporter.export()
+exit(0)
+"""
 
 parse_render_model.toJson()
 saveTo = Config.MODEL_EXPORT_PATH + 'spartan_armor_render_model.json'
@@ -186,6 +191,14 @@ with open(saveTo, 'wb') as fw:
     json.dump(parse_model.json_base, codecs.getwriter('utf-8')(fw), ensure_ascii=False)
     fw.close()
 """
+unpack_path = "J:/Games/Halo Infinite Stuf/Extracted/UnPacked/season2/"
+deploy_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Halo Infinite\\deploy\\"
+out_memo_files = []
+save_to_files = False
+filter = 'objects/characters/spartan_armor/spartan_armor'
+filter = 'objects/characters'
+extract_all_modules(filter, save_to_files, unpack_path, deploy_path, out_memo_files)
+
 exporter = ExporterFactory.create_exporter(parse_model) # ModelExporter(parse_model)
 json_filename_list = [
     Config.WEB_DOWNLOAD_DATA + 'seasson 2\\info_007-000-emile-a239-ki-0903655e.json',

@@ -148,8 +148,8 @@ class FUNCTION(TagInstance):
             self.unk_min = round(struct.unpack('f', f.read(4))[0], 4)
             self.unk_max = round(struct.unpack('f', f.read(4))[0], 4)
             self.leftover_bytes = struct.unpack('i', f.read(4))[0]
-            if self.leftoverbytes > 0:
-                self.curvature_bytes = struct.unpack(f'{self.leftoverbytes}p', f.read(self.leftoverbytes))[0]
+            if self.leftover_bytes > 0:
+                self.curvature_bytes = struct.unpack(f'{self.leftover_bytes}p', f.read(self.leftover_bytes))[0]
 
     def readBinData(self, f=None, header=None):
         if self.data_reference is not None:
